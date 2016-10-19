@@ -144,7 +144,18 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a1a1be1f46f0bc704e6387833b9528909"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_linked_list.html#a1a1be1f46f0bc704e6387833b9528909">m_size</a></td></tr>
 <tr class="separator:a1a1be1f46f0bc704e6387833b9528909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class mage::LinkedList&lt; T &gt;</h3>
+
+<p>A class of (doubly) linked lists.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of data stored in the linked list. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a44b43c51b9515695016c8664d898aa6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44b43c51b9515695016c8664d898aa6b">&sect;&nbsp;</a></span>LinkedList()</h2>
 
@@ -161,6 +172,13 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs an empty linked list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the data. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -188,6 +206,8 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this linked list.</p>
+<dl class="section note"><dt>Note</dt><dd>The data associated with the elements in this linked list will be destructed as well. </dd></dl>
 
 </div>
 </div>
@@ -209,6 +229,14 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Adds the given data to the end of this linked list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the data. </dd></dl>
 
 </div>
 </div>
@@ -230,6 +258,13 @@ template&lt;typename bool no_data_destruction&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Destroys all the elements in this linked list.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">no_data_destruction</td><td>if <code>true</code> the data associated with the elements in this linkedlist will not be destructed. if <code>false</code> the data associated with the elements in this linkedlist will be destructed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -250,6 +285,16 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a pointer to the data of the element in this linked list at the given index.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>NULL</code> if the index is out of bounds. </dd>
+<dd>
+A pointer to the data of the element in this linked list at index <em>index</em>. </dd></dl>
 
 </div>
 </div>
@@ -270,6 +315,16 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the (complete) element in this linked list associated with the given data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>NULL</code> if no element in this linkedlist is associated with the given data. </dd>
+<dd>
+The (complete) element in this linked list associated with <em>data</em>. </dd></dl>
 
 </div>
 </div>
@@ -289,6 +344,10 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a pointer to the data of the first element in this linked list.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>NULL</code> if this linked list contains no elements. </dd>
+<dd>
+A pointer to the data of the first element in this linked list. </dd></dl>
 
 </div>
 </div>
@@ -308,6 +367,8 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a forward iterator for this linked list.</p>
+<dl class="section return"><dt>Returns</dt><dd>An iterator for this linked list. </dd></dl>
 
 </div>
 </div>
@@ -327,6 +388,10 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a pointer to the data of the last element in this linked list.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>NULL</code> if this linked list contains no elements. </dd>
+<dd>
+A pointer to the data of the last element in this linked list. </dd></dl>
 
 </div>
 </div>
@@ -347,6 +412,16 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a pointer to the data of the next element in this linked list from the element corresponding to the given data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>NULL</code> if  is associated with the first element in this linked list. </dd>
+<dd>
+A pointer to the data of the next element in this linked list from the element corresponding to <em>data</em>. </dd></dl>
 
 </div>
 </div>
@@ -367,6 +442,16 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a pointer to the data of the previous element in this linked list from the element corresponding to the given data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>NULL</code> if  is associated with the last element in this linked list. </dd>
+<dd>
+A pointer to the data of the previous element in this linked list from the element corresponding to <em>data</em>. </dd></dl>
 
 </div>
 </div>
@@ -386,6 +471,8 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a pointer to the data of a random element in this linked list.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the data of a random element in this linked list. </dd></dl>
 
 </div>
 </div>
@@ -405,6 +492,8 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the size of this linked list.</p>
+<dl class="section return"><dt>Returns</dt><dd>The size of this linked list. </dd></dl>
 
 </div>
 </div>
@@ -435,6 +524,15 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Inserts the given data into this linked list just after the given element in this linked list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prev_element</td><td>A pointer to the previous element in this linked list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the data. </dd></dl>
 
 </div>
 </div>
@@ -465,6 +563,15 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Inserts the given data into this linked list just before the given element in this linked list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">next_element</td><td>A pointer to the next element in this linked list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the data. </dd></dl>
 
 </div>
 </div>
@@ -487,6 +594,13 @@ template&lt;typename bool no_data_destruction&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Removes the given data from this linked list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>A pointer to a pointer to the data which will point to <code>NULL</code> after removal. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -512,6 +626,7 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Pointer to first element in this linked list. </p>
 
 </div>
 </div>
@@ -536,6 +651,7 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Pointer to last element in this linked list. </p>
 
 </div>
 </div>
@@ -560,6 +676,7 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Total number of elements in this linked list. </p>
 
 </div>
 </div>

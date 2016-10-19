@@ -10,6 +10,6 @@ var searchData=
   ['reset',['Reset',['../classmage_1_1_timer.html#a0675ff7bc0a8e7343b5a35f865cc9c1a',1,'mage::Timer']]],
   ['resource',['Resource',['../classmage_1_1_resource.html#a7b4febc86646d51ac116732af01abcaf',1,'mage::Resource']]],
   ['resourcemanager',['ResourceManager',['../classmage_1_1_resource_manager.html#aad8d61f96551b9ddd59593ed52eac241',1,'mage::ResourceManager']]],
-  ['round2int',['Round2Int',['../namespacemage.html#ab805d3dbf487d18acb039c6a6b57f39b',1,'mage']]],
+  ['restart',['Restart',['../classmage_1_1_timer.html#a4e1ba19d02c290a18981db1766f006c3',1,'mage::Timer']]],
   ['run',['Run',['../classmage_1_1_engine.html#afdc05e214d3f47a6ea3a40dfffd86f80',1,'mage::Engine::Run()'],['../classmage_1_1_task.html#af400f88a357ccfa15b860a6b58dc0598',1,'mage::Task::Run()']]]
 ];

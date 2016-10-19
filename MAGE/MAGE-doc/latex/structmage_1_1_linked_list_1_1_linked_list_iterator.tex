@@ -22,6 +22,12 @@ T $\ast$ \hyperlink{structmage_1_1_linked_list_1_1_linked_list_iterator_aaffb4ff
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+struct mage\+::\+Linked\+List$<$ T $>$\+::\+Linked\+List\+Iterator}
+
+A struct of forward iterators for a \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List$<$\+T$>$}. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{structmage_1_1_linked_list_1_1_linked_list_iterator_a5353da2850d87cebb02f04833061c7a0}{}\label{structmage_1_1_linked_list_1_1_linked_list_iterator_a5353da2850d87cebb02f04833061c7a0} 
 \index{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator@{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator}!Linked\+List\+Iterator@{Linked\+List\+Iterator}}
@@ -30,6 +36,13 @@ T $\ast$ \hyperlink{structmage_1_1_linked_list_1_1_linked_list_iterator_aaffb4ff
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Linked\+List\+Iterator\+::\+Linked\+List\+Iterator (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_linked_list}{Linked\+List}$<$ T $>$ \&}]{list }\end{DoxyParamCaption})}
 
+Constructs a linked list iterator for the given linked list.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em list} & A reference to a linked list. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_linked_list_1_1_linked_list_iterator_a16631a6dc7aaaad10ba676f569da62b9}{}\label{structmage_1_1_linked_list_1_1_linked_list_iterator_a16631a6dc7aaaad10ba676f569da62b9} 
 \index{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator@{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator}!````~Linked\+List\+Iterator@{$\sim$\+Linked\+List\+Iterator}}
 \index{````~Linked\+List\+Iterator@{$\sim$\+Linked\+List\+Iterator}!mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator@{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator}}
@@ -37,7 +50,7 @@ T $\ast$ \hyperlink{structmage_1_1_linked_list_1_1_linked_list_iterator_aaffb4ff
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 virtual \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Linked\+List\+Iterator\+::$\sim$\+Linked\+List\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-
+Destructs this linked list iterator. 
 
 \subsection{Member Function Documentation}
 \hypertarget{structmage_1_1_linked_list_1_1_linked_list_iterator_ae23127f7be560d81bbda5321690a7ef9}{}\label{structmage_1_1_linked_list_1_1_linked_list_iterator_ae23127f7be560d81bbda5321690a7ef9} 
@@ -47,6 +60,11 @@ virtual \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 bool \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Linked\+List\+Iterator\+::\+Has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Checks whether there is a next element in the linked list of this linked list iterator.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if there is a next element in the linked list of this linked list iterator.  otherwise. 
+\end{DoxyReturn}
 \hypertarget{structmage_1_1_linked_list_1_1_linked_list_iterator_aaffb4ff395841103f65d09b2784ad61f}{}\label{structmage_1_1_linked_list_1_1_linked_list_iterator_aaffb4ff395841103f65d09b2784ad61f} 
 \index{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator@{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator}!Next@{Next}}
 \index{Next@{Next}!mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator@{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator}}
@@ -54,6 +72,11 @@ bool \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::L
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Linked\+List\+Iterator\+::\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Returns a pointer to the data of the next element in the linked list of this linked list iterator.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the data of the next element in the linked list of this linked list iterator. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -64,3 +87,4 @@ T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element}$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Linked\+List\+Iterator\+::m\+\_\+next\hspace{0.3cm}{\ttfamily [private]}}
 
+Pointer to the next element in the linked list. 

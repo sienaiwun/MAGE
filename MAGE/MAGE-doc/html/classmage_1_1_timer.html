@@ -103,13 +103,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abf234f1e2ee9e760f316bd49500d5a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0675ff7bc0a8e7343b5a35f865cc9c1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a0675ff7bc0a8e7343b5a35f865cc9c1a">Reset</a> ()</td></tr>
 <tr class="separator:a0675ff7bc0a8e7343b5a35f865cc9c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1ba19d02c290a18981db1766f006c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a4e1ba19d02c290a18981db1766f006c3">Restart</a> ()</td></tr>
+<tr class="separator:a4e1ba19d02c290a18981db1766f006c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e4655ac296cc8971b54e5a76082f00f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a5e4655ac296cc8971b54e5a76082f00f">Time</a> ()</td></tr>
 <tr class="separator:a5e4655ac296cc8971b54e5a76082f00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ab6ae538071bb62bdf86de5344788c124"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#ab6ae538071bb62bdf86de5344788c124">GetTime</a> ()</td></tr>
-<tr class="separator:ab6ae538071bb62bdf86de5344788c124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782882e9dbe9a2843b5203ba13309b23"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a782882e9dbe9a2843b5203ba13309b23">time</a> ()</td></tr>
+<tr class="separator:a782882e9dbe9a2843b5203ba13309b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -123,10 +125,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a70bdbf53f8cd69a46db8b75e08d3ead8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1618c4901b6f898165a2d79d02a2518e"><td class="memItemLeft" align="right" valign="top">LARGE_INTEGER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a1618c4901b6f898165a2d79d02a2518e">m_performance_frequency</a></td></tr>
 <tr class="separator:a1618c4901b6f898165a2d79d02a2518e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e73b09880114bc7ab47c8698a40c976"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a8e73b09880114bc7ab47c8698a40c976">m_one_over_frequency</a></td></tr>
-<tr class="separator:a8e73b09880114bc7ab47c8698a40c976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5831e973d64389b1d98fbb6c51de6436"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a5831e973d64389b1d98fbb6c51de6436">m_performance_period</a></td></tr>
+<tr class="separator:a5831e973d64389b1d98fbb6c51de6436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of (high precision) timers. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5e1c0a3bb4491b3a43ce05874ad24055"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e1c0a3bb4491b3a43ce05874ad24055">&sect;&nbsp;</a></span>Timer()</h2>
 
@@ -141,6 +145,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs a timer. </p>
 
 </div>
 </div>
@@ -166,35 +171,11 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this timer. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab6ae538071bb62bdf86de5344788c124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6ae538071bb62bdf86de5344788c124">&sect;&nbsp;</a></span>GetTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mage::Timer::GetTime </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a0675ff7bc0a8e7343b5a35f865cc9c1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0675ff7bc0a8e7343b5a35f865cc9c1a">&sect;&nbsp;</a></span>Reset()</h2>
 
@@ -209,6 +190,25 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Resets this timer. </p>
+
+</div>
+</div>
+<a id="a4e1ba19d02c290a18981db1766f006c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1ba19d02c290a18981db1766f006c3">&sect;&nbsp;</a></span>Restart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Timer::Restart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Restarts this timer. </p>
 
 </div>
 </div>
@@ -226,6 +226,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Starts this timer. </p>
 
 </div>
 </div>
@@ -243,6 +244,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Stops this timer. </p>
 
 </div>
 </div>
@@ -260,6 +262,36 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the elapsed time of this timer.</p>
+<dl class="section return"><dt>Returns</dt><dd>The elapsed time of this timer. </dd></dl>
+
+</div>
+</div>
+<a id="a782882e9dbe9a2843b5203ba13309b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a782882e9dbe9a2843b5203ba13309b23">&sect;&nbsp;</a></span>time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mage::Timer::time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the time of this timer.</p>
+<dl class="section return"><dt>Returns</dt><dd>The time of this timer. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This member method encapsulates the performance of the underlying counter/frequency processing. </dd></dl>
 
 </div>
 </div>
@@ -283,28 +315,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8e73b09880114bc7ab47c8698a40c976"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e73b09880114bc7ab47c8698a40c976">&sect;&nbsp;</a></span>m_one_over_frequency</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mage::Timer::m_one_over_frequency</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>The elapsed time of this timer. </p>
 
 </div>
 </div>
@@ -327,6 +338,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The counter of this timer. </p>
 
 </div>
 </div>
@@ -349,6 +361,30 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The frequency of this timer. </p>
+
+</div>
+</div>
+<a id="a5831e973d64389b1d98fbb6c51de6436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5831e973d64389b1d98fbb6c51de6436">&sect;&nbsp;</a></span>m_performance_period</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mage::Timer::m_performance_period</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The period of this timer. </p>
 
 </div>
 </div>
@@ -371,6 +407,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Flag indicating whether this timer is running. </p>
 
 </div>
 </div>
@@ -393,6 +430,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The initial time stamp of this timer. </p>
 
 </div>
 </div>

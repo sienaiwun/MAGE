@@ -32,6 +32,19 @@ T $\ast$ \hyperlink{classmage_1_1_reference_aa3d84127867c389254b7257cd3ed0733}{m
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class mage\+::\+Reference$<$ T $>$}
+
+A class of references.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of reference. \\
+\hline
+\end{DoxyTemplParams}
+
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_reference_a62039d823993670fdb8c3ddedcc794c7}{}\label{classmage_1_1_reference_a62039d823993670fdb8c3ddedcc794c7} 
 \index{mage\+::\+Reference@{mage\+::\+Reference}!Reference@{Reference}}
@@ -40,6 +53,13 @@ T $\ast$ \hyperlink{classmage_1_1_reference_aa3d84127867c389254b7257cd3ed0733}{m
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::\hyperlink{classmage_1_1_reference}{Reference} (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr = {\ttfamily NULL} }\end{DoxyParamCaption})}
 
+Constructs a reference for the given pointer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr} & The pointer. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_reference_abc471d0d652884353af99f7c668a467d}{}\label{classmage_1_1_reference_abc471d0d652884353af99f7c668a467d} 
 \index{mage\+::\+Reference@{mage\+::\+Reference}!Reference@{Reference}}
 \index{Reference@{Reference}!mage\+::\+Reference@{mage\+::\+Reference}}
@@ -47,6 +67,13 @@ T $\ast$ \hyperlink{classmage_1_1_reference_aa3d84127867c389254b7257cd3ed0733}{m
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::\hyperlink{classmage_1_1_reference}{Reference} (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_reference}{Reference}$<$ T $>$ \&}]{reference }\end{DoxyParamCaption})}
 
+Constructs a reference from the given reference.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reference} & The reference. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_reference_a88dd14871881ba478b5a86ce011775e7}{}\label{classmage_1_1_reference_a88dd14871881ba478b5a86ce011775e7} 
 \index{mage\+::\+Reference@{mage\+::\+Reference}!````~Reference@{$\sim$\+Reference}}
 \index{````~Reference@{$\sim$\+Reference}!mage\+::\+Reference@{mage\+::\+Reference}}
@@ -54,7 +81,7 @@ T $\ast$ \hyperlink{classmage_1_1_reference_aa3d84127867c389254b7257cd3ed0733}{m
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 virtual \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::$\sim$\hyperlink{classmage_1_1_reference}{Reference} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-
+Destructs this reference. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_reference_a88ee2da25d2ce963e8015080565c9bd1}{}\label{classmage_1_1_reference_a88ee2da25d2ce963e8015080565c9bd1} 
@@ -64,6 +91,11 @@ virtual \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::$\s
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 const T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::Get\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the pointer of this reference.
+
+\begin{DoxyReturn}{Returns}
+The pointer of this reference. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_reference_ab662fe14ad3fa6a22ba5cc8d51354630}{}\label{classmage_1_1_reference_ab662fe14ad3fa6a22ba5cc8d51354630} 
 \index{mage\+::\+Reference@{mage\+::\+Reference}!operator bool@{operator bool}}
 \index{operator bool@{operator bool}!mage\+::\+Reference@{mage\+::\+Reference}}
@@ -71,6 +103,11 @@ const T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Checks whether the pointer of this reference does not point to {\ttfamily N\+U\+LL}.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the pointer of this reference does not point to {\ttfamily N\+U\+LL}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_reference_a70e8990c4f4d879692fc2cd28cb6dd88}{}\label{classmage_1_1_reference_a70e8990c4f4d879692fc2cd28cb6dd88} 
 \index{mage\+::\+Reference@{mage\+::\+Reference}!operator-\/$>$@{operator-\/$>$}}
 \index{operator-\/$>$@{operator-\/$>$}!mage\+::\+Reference@{mage\+::\+Reference}}
@@ -78,6 +115,11 @@ const T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Dereferences this reference.
+
+\begin{DoxyReturn}{Returns}
+The pointer of this reference. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_reference_ab0f3ae3e1c9f71c211db4b1ec6dcca83}{}\label{classmage_1_1_reference_ab0f3ae3e1c9f71c211db4b1ec6dcca83} 
 \index{mage\+::\+Reference@{mage\+::\+Reference}!operator-\/$>$@{operator-\/$>$}}
 \index{operator-\/$>$@{operator-\/$>$}!mage\+::\+Reference@{mage\+::\+Reference}}
@@ -85,6 +127,11 @@ T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::ope
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 const T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Dereferences this reference.
+
+\begin{DoxyReturn}{Returns}
+The pointer of this reference. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_reference_abf1457f709eefcc56e23ad6f127cd9a4}{}\label{classmage_1_1_reference_abf1457f709eefcc56e23ad6f127cd9a4} 
 \index{mage\+::\+Reference@{mage\+::\+Reference}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Reference@{mage\+::\+Reference}}
@@ -92,6 +139,16 @@ const T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classmage_1_1_reference}{Reference}\& \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr }\end{DoxyParamCaption})}
 
+Copies the given pointer into a reference.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pointer} & The pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference for {\itshape pointer}. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_reference_a0e0fadab4a752fb78124380feeafb2a2}{}\label{classmage_1_1_reference_a0e0fadab4a752fb78124380feeafb2a2} 
 \index{mage\+::\+Reference@{mage\+::\+Reference}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Reference@{mage\+::\+Reference}}
@@ -99,6 +156,16 @@ const T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classmage_1_1_reference}{Reference}\& \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_reference}{Reference}$<$ T $>$ \&}]{reference }\end{DoxyParamCaption})}
 
+Copies the given reference into a reference.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reference} & The reference. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference for {\itshape reference}. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -109,3 +176,4 @@ const T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 T$\ast$ \hyperlink{classmage_1_1_reference}{mage\+::\+Reference}$<$ T $>$\+::m\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
 
+The pointer of this reference. 

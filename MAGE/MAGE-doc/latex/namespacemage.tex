@@ -81,8 +81,6 @@ void \hyperlink{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4}{Severe} (const 
 \item 
 int \hyperlink{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{Terminal\+Width} ()
 \item 
-int \hyperlink{namespacemage_ab805d3dbf487d18acb039c6a6b57f39b}{Round2\+Int} (float val)
-\item 
 void $\ast$ \hyperlink{namespacemage_a7d706913bb9fb322c938cd3e4d8eaede}{Alloc\+Aligned} (size\+\_\+t size)
 \item 
 {\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_ae2f31ba64620694aa0dfc8ca6e5d5941}{Alloc\+Aligned} (uint32\+\_\+t count)
@@ -136,6 +134,9 @@ static \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable} $\ast$ 
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+The namespace for all the M\+A\+GE functionality. 
+
 \subsection{Enumeration Type Documentation}
 \hypertarget{namespacemage_afd76fcca37ce5c5b2227671290973c74}{}\label{namespacemage_afd76fcca37ce5c5b2227671290973c74} 
 \index{mage@{mage}!Read\+Write\+Mutex\+Lock\+Type@{Read\+Write\+Mutex\+Lock\+Type}}
@@ -162,7 +163,7 @@ W\+R\+I\+TE&\\
 \subsubsection{\texorpdfstring{Alloc\+Aligned()}{AllocAligned()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void$\ast$ mage\+::\+Alloc\+Aligned (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
 
-Allocates memory on an alignment boundary of 64 bytes.
+Allocates memory on an alignment boundary of 64 bytes of the given size.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -235,6 +236,13 @@ T$\ast$ mage\+::\+Atomic\+Compare\+And\+Swap\+Pointer (\begin{DoxyParamCaption}\
 \subsubsection{\texorpdfstring{Error()}{Error()}}
 {\footnotesize\ttfamily void mage\+::\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
+Notifies an error message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_ab2e62d950dc620167f4128cb16033998}{}\label{namespacemage_ab2e62d950dc620167f4128cb16033998} 
 \index{mage@{mage}!Find\+Word\+End@{Find\+Word\+End}}
 \index{Find\+Word\+End@{Find\+Word\+End}!mage@{mage}}
@@ -260,23 +268,29 @@ Frees a block of memory that was allocated with \hyperlink{namespacemage_a7d7069
 \subsubsection{\texorpdfstring{Info()}{Info()}}
 {\footnotesize\ttfamily void mage\+::\+Info (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
+Notifies an info message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_ab972a47121b68775bf2545b826a1d5be}{}\label{namespacemage_ab972a47121b68775bf2545b826a1d5be} 
 \index{mage@{mage}!Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}}
 \index{Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}!mage@{mage}}
 \subsubsection{\texorpdfstring{Number\+Of\+System\+Cores()}{NumberOfSystemCores()}}
 {\footnotesize\ttfamily int mage\+::\+Number\+Of\+System\+Cores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Returns the number of system cores (i.\+e. logical processors).
+
+\begin{DoxyReturn}{Returns}
+The number of system cores (i.\+e. logical processors). 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd}{}\label{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd} 
 \index{mage@{mage}!Process\+Error@{Process\+Error}}
 \index{Process\+Error@{Process\+Error}!mage@{mage}}
 \subsubsection{\texorpdfstring{Process\+Error()}{ProcessError()}}
 {\footnotesize\ttfamily static void mage\+::\+Process\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{va\+\_\+list}]{args,  }\item[{const char $\ast$}]{error\+\_\+type,  }\item[{int}]{disposition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\hypertarget{namespacemage_ab805d3dbf487d18acb039c6a6b57f39b}{}\label{namespacemage_ab805d3dbf487d18acb039c6a6b57f39b} 
-\index{mage@{mage}!Round2\+Int@{Round2\+Int}}
-\index{Round2\+Int@{Round2\+Int}!mage@{mage}}
-\subsubsection{\texorpdfstring{Round2\+Int()}{Round2Int()}}
-{\footnotesize\ttfamily int mage\+::\+Round2\+Int (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4}{}\label{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4} 
 \index{mage@{mage}!Severe@{Severe}}
@@ -284,6 +298,13 @@ Frees a block of memory that was allocated with \hyperlink{namespacemage_a7d7069
 \subsubsection{\texorpdfstring{Severe()}{Severe()}}
 {\footnotesize\ttfamily void mage\+::\+Severe (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
+Notifies a severe message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a9c89df2a328f65db59728cbea3fd1720}{}\label{namespacemage_a9c89df2a328f65db59728cbea3fd1720} 
 \index{mage@{mage}!task\+\_\+entry@{task\+\_\+entry}}
 \index{task\+\_\+entry@{task\+\_\+entry}!mage@{mage}}
@@ -308,6 +329,11 @@ Frees a block of memory that was allocated with \hyperlink{namespacemage_a7d7069
 \subsubsection{\texorpdfstring{Terminal\+Width()}{TerminalWidth()}}
 {\footnotesize\ttfamily int mage\+::\+Terminal\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Returns the fixed terminal width.
+
+\begin{DoxyReturn}{Returns}
+The fixed terminal width. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a7da78c39175a029c92ed42d8fb9f30af}{}\label{namespacemage_a7da78c39175a029c92ed42d8fb9f30af} 
 \index{mage@{mage}!Wait\+For\+All\+Tasks@{Wait\+For\+All\+Tasks}}
 \index{Wait\+For\+All\+Tasks@{Wait\+For\+All\+Tasks}!mage@{mage}}
@@ -320,6 +346,13 @@ Frees a block of memory that was allocated with \hyperlink{namespacemage_a7d7069
 \subsubsection{\texorpdfstring{Warning()}{Warning()}}
 {\footnotesize\ttfamily void mage\+::\+Warning (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
 
+Notifies a warning message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a3b7426a2b3c10a52791dac481c2495a3}{}\label{namespacemage_a3b7426a2b3c10a52791dac481c2495a3} 
 \index{mage@{mage}!Window\+Proc@{Window\+Proc}}
 \index{Window\+Proc@{Window\+Proc}!mage@{mage}}
@@ -335,13 +368,13 @@ Frees a block of memory that was allocated with \hyperlink{namespacemage_a7d7069
 \subsubsection{\texorpdfstring{g\+\_\+engine}{g\_engine}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_engine}{Engine} $\ast$ mage\+::g\+\_\+engine = N\+U\+LL}
 
-\hypertarget{namespacemage_a1f4290d574030d412ca0f2f51b1a2057}{}\label{namespacemage_a1f4290d574030d412ca0f2f51b1a2057} 
+The engine used by the user. \hypertarget{namespacemage_a1f4290d574030d412ca0f2f51b1a2057}{}\label{namespacemage_a1f4290d574030d412ca0f2f51b1a2057} 
 \index{mage@{mage}!general\+\_\+configuration@{general\+\_\+configuration}}
 \index{general\+\_\+configuration@{general\+\_\+configuration}!mage@{mage}}
 \subsubsection{\texorpdfstring{general\+\_\+configuration}{general\_configuration}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_general_configuration}{General\+Configuration} mage\+::general\+\_\+configuration}
 
-\hypertarget{namespacemage_a1a0bf329bff9193febe0c16632c62d1b}{}\label{namespacemage_a1a0bf329bff9193febe0c16632c62d1b} 
+The general configuration defined by the user and used by the engine. \hypertarget{namespacemage_a1a0bf329bff9193febe0c16632c62d1b}{}\label{namespacemage_a1a0bf329bff9193febe0c16632c62d1b} 
 \index{mage@{mage}!lvertex\+\_\+input\+\_\+element\+\_\+desc@{lvertex\+\_\+input\+\_\+element\+\_\+desc}}
 \index{lvertex\+\_\+input\+\_\+element\+\_\+desc@{lvertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
 \subsubsection{\texorpdfstring{lvertex\+\_\+input\+\_\+element\+\_\+desc}{lvertex\_input\_element\_desc}}

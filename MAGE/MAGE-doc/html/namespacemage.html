@@ -169,8 +169,6 @@ Functions</h2></td></tr>
 <tr class="separator:a95c8b0820c579bbde59062fd9d05e4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c12a51bf3468b372932ffc1138a4ddc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a0c12a51bf3468b372932ffc1138a4ddc">TerminalWidth</a> ()</td></tr>
 <tr class="separator:a0c12a51bf3468b372932ffc1138a4ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab805d3dbf487d18acb039c6a6b57f39b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ab805d3dbf487d18acb039c6a6b57f39b">Round2Int</a> (float val)</td></tr>
-<tr class="separator:ab805d3dbf487d18acb039c6a6b57f39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d706913bb9fb322c938cd3e4d8eaede"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a7d706913bb9fb322c938cd3e4d8eaede">AllocAligned</a> (size_t size)</td></tr>
 <tr class="separator:a7d706913bb9fb322c938cd3e4d8eaede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f31ba64620694aa0dfc8ca6e5d5941"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -225,7 +223,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a8c04b4285ebbc0fb416b1905c01cf149"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmage_1_1_condition_variable.html">ConditionVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a8c04b4285ebbc0fb416b1905c01cf149">tasks_running_condition</a></td></tr>
 <tr class="separator:a8c04b4285ebbc0fb416b1905c01cf149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The namespace for all the MAGE functionality. </p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="afd76fcca37ce5c5b2227671290973c74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd76fcca37ce5c5b2227671290973c74">&sect;&nbsp;</a></span>ReadWriteMutexLockType</h2>
 
@@ -260,7 +260,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Allocates memory on an alignment boundary of 64 bytes.</p>
+<p>Allocates memory on an alignment boundary of 64 bytes of the given size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The requested size in bytes to allocate in memory. </td></tr>
@@ -478,6 +478,13 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Notifies an error message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Pointer to the message format. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -549,6 +556,13 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Notifies an info message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Pointer to the message format. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -566,6 +580,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the number of system cores (i.e. logical processors).</p>
+<dl class="section return"><dt>Returns</dt><dd>The number of system cores (i.e. logical processors). </dd></dl>
 
 </div>
 </div>
@@ -617,24 +633,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab805d3dbf487d18acb039c6a6b57f39b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab805d3dbf487d18acb039c6a6b57f39b">&sect;&nbsp;</a></span>Round2Int()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mage::Round2Int </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a95c8b0820c579bbde59062fd9d05e4f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95c8b0820c579bbde59062fd9d05e4f4">&sect;&nbsp;</a></span>Severe()</h2>
 
@@ -660,6 +658,13 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Notifies a severe message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Pointer to the message format. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -737,6 +742,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the fixed terminal width.</p>
+<dl class="section return"><dt>Returns</dt><dd>The fixed terminal width. </dd></dl>
 
 </div>
 </div>
@@ -782,6 +789,13 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Notifies a warning message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Pointer to the message format. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -837,6 +851,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The engine used by the user. </p>
 
 </div>
 </div>
@@ -851,6 +866,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The general configuration defined by the user and used by the engine. </p>
 
 </div>
 </div>

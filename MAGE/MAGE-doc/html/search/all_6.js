@@ -2,11 +2,11 @@ var searchData=
 [
   ['g_5fengine',['g_engine',['../namespacemage.html#a84bf83f1e8779d884452cdf08f56c19a',1,'mage']]],
   ['general_5fconfiguration',['general_configuration',['../namespacemage.html#a1f4290d574030d412ca0f2f51b1a2057',1,'mage']]],
-  ['generalconfiguration',['GeneralConfiguration',['../structmage_1_1_general_configuration.html',1,'mage']]],
   ['generalconfiguration',['GeneralConfiguration',['../structmage_1_1_general_configuration.html#a9a8040da771683b795ad9016ed0dd733',1,'mage::GeneralConfiguration']]],
+  ['generalconfiguration',['GeneralConfiguration',['../structmage_1_1_general_configuration.html',1,'mage']]],
   ['getat',['GetAt',['../classmage_1_1_linked_list.html#a97922b200a12979e5c8692dd5f3f73d1',1,'mage::LinkedList']]],
   ['getcompletelinkedlistelement',['GetCompleteLinkedListElement',['../classmage_1_1_linked_list.html#a0da4ff247abafd3a496b379673c111c1',1,'mage::LinkedList']]],
-  ['getfilename',['GetFilename',['../classmage_1_1_resource.html#a1e5163aed4ec9f73c477df2fe7ca2c03',1,'mage::Resource']]],
+  ['getfilename',['GetFilename',['../classmage_1_1_resource.html#a3235bf2744390d5957b9b4038e4bb512',1,'mage::Resource']]],
   ['getfirst',['GetFirst',['../classmage_1_1_linked_list.html#a8394fd1c390b806b9daafdff497b02fb',1,'mage::LinkedList']]],
   ['getiterator',['GetIterator',['../classmage_1_1_linked_list.html#a7e4016d051e44eb5d8a7bde3d193b9e8',1,'mage::LinkedList']]],
   ['getlast',['GetLast',['../classmage_1_1_linked_list.html#a734f6dc6d073edd99eb9a0ac1f605900',1,'mage::LinkedList']]],
@@ -19,6 +19,5 @@ var searchData=
   ['getresource',['GetResource',['../classmage_1_1_resource_manager.html#ad22e0920555c376752b8448a81df59c6',1,'mage::ResourceManager']]],
   ['getresources',['GetResources',['../classmage_1_1_resource_manager.html#a33c327ebcff3a851892b7efc26bea295',1,'mage::ResourceManager']]],
   ['getsize',['GetSize',['../classmage_1_1_linked_list.html#a8d033278680a0053e30cba91b27941a1',1,'mage::LinkedList']]],
-  ['gettime',['GetTime',['../classmage_1_1_timer.html#ab6ae538071bb62bdf86de5344788c124',1,'mage::Timer']]],
   ['getwindow',['GetWindow',['../classmage_1_1_engine.html#a1c5f9d8c68045b36f404251359aa41e4',1,'mage::Engine']]]
 ];

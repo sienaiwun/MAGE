@@ -106,7 +106,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a2936c8e80e5ef746150a8a93ef1300cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_linked_list_1_1_linked_list_element.html">LinkedListElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_linked_list_1_1_linked_list_iterator.html#a2936c8e80e5ef746150a8a93ef1300cb">m_next</a></td></tr>
 <tr class="separator:a2936c8e80e5ef746150a8a93ef1300cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct mage::LinkedList&lt; T &gt;::LinkedListIterator</h3>
+
+<p>A struct of forward iterators for a <a class="el" href="classmage_1_1_linked_list.html">mage::LinkedList&lt;T&gt;</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5353da2850d87cebb02f04833061c7a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5353da2850d87cebb02f04833061c7a0">&sect;&nbsp;</a></span>LinkedListIterator()</h2>
 
@@ -124,6 +129,13 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs a linked list iterator for the given linked list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>A reference to a linked list. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -151,6 +163,7 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructs this linked list iterator. </p>
 
 </div>
 </div>
@@ -171,6 +184,8 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks whether there is a next element in the linked list of this linked list iterator.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there is a next element in the linked list of this linked list iterator.  otherwise. </dd></dl>
 
 </div>
 </div>
@@ -190,6 +205,8 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a pointer to the data of the next element in the linked list of this linked list iterator.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the data of the next element in the linked list of this linked list iterator. </dd></dl>
 
 </div>
 </div>
@@ -215,6 +232,7 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Pointer to the next element in the linked list. </p>
 
 </div>
 </div>

@@ -7,22 +7,57 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+uint32\+\_\+t \hyperlink{classmage_1_1_reference_counted_a3d625b492edec2844b4733b82ec5fd3f}{Increment\+Reference\+Count} ()
+\item 
+uint32\+\_\+t \hyperlink{classmage_1_1_reference_counted_a11304e23189f970ad2f10268b318549f}{Decrement\+Reference\+Count} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
 \hyperlink{classmage_1_1_reference_counted_a3775f5ae578b97eb8cd6c963c077faea}{Reference\+Counted} ()
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
+\subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Atomic\+Int32 \hyperlink{classmage_1_1_reference_counted_a8ff45f2437be26148d0efcd271adaf45}{m\+\_\+reference\+\_\+count}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A class of reference counted objects. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_reference_counted_a3775f5ae578b97eb8cd6c963c077faea}{}\label{classmage_1_1_reference_counted_a3775f5ae578b97eb8cd6c963c077faea} 
 \index{mage\+::\+Reference\+Counted@{mage\+::\+Reference\+Counted}!Reference\+Counted@{Reference\+Counted}}
 \index{Reference\+Counted@{Reference\+Counted}!mage\+::\+Reference\+Counted@{mage\+::\+Reference\+Counted}}
 \subsubsection{\texorpdfstring{Reference\+Counted()}{ReferenceCounted()}}
-{\footnotesize\ttfamily mage\+::\+Reference\+Counted\+::\+Reference\+Counted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Reference\+Counted\+::\+Reference\+Counted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
+Constructs a reference counted object. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_reference_counted_a11304e23189f970ad2f10268b318549f}{}\label{classmage_1_1_reference_counted_a11304e23189f970ad2f10268b318549f} 
+\index{mage\+::\+Reference\+Counted@{mage\+::\+Reference\+Counted}!Decrement\+Reference\+Count@{Decrement\+Reference\+Count}}
+\index{Decrement\+Reference\+Count@{Decrement\+Reference\+Count}!mage\+::\+Reference\+Counted@{mage\+::\+Reference\+Counted}}
+\subsubsection{\texorpdfstring{Decrement\+Reference\+Count()}{DecrementReferenceCount()}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Reference\+Counted\+::\+Decrement\+Reference\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Decrements the reference count of this reference counted object.
+
+\begin{DoxyReturn}{Returns}
+The final reference count of this reference counted object. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_reference_counted_a3d625b492edec2844b4733b82ec5fd3f}{}\label{classmage_1_1_reference_counted_a3d625b492edec2844b4733b82ec5fd3f} 
+\index{mage\+::\+Reference\+Counted@{mage\+::\+Reference\+Counted}!Increment\+Reference\+Count@{Increment\+Reference\+Count}}
+\index{Increment\+Reference\+Count@{Increment\+Reference\+Count}!mage\+::\+Reference\+Counted@{mage\+::\+Reference\+Counted}}
+\subsubsection{\texorpdfstring{Increment\+Reference\+Count()}{IncrementReferenceCount()}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Reference\+Counted\+::\+Increment\+Reference\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increments the reference count of this reference counted object.
+
+\begin{DoxyReturn}{Returns}
+The final reference count of this reference counted object. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -30,5 +65,6 @@ Atomic\+Int32 \hyperlink{classmage_1_1_reference_counted_a8ff45f2437be26148d0efc
 \index{mage\+::\+Reference\+Counted@{mage\+::\+Reference\+Counted}!m\+\_\+reference\+\_\+count@{m\+\_\+reference\+\_\+count}}
 \index{m\+\_\+reference\+\_\+count@{m\+\_\+reference\+\_\+count}!mage\+::\+Reference\+Counted@{mage\+::\+Reference\+Counted}}
 \subsubsection{\texorpdfstring{m\+\_\+reference\+\_\+count}{m\_reference\_count}}
-{\footnotesize\ttfamily Atomic\+Int32 mage\+::\+Reference\+Counted\+::m\+\_\+reference\+\_\+count}
+{\footnotesize\ttfamily Atomic\+Int32 mage\+::\+Reference\+Counted\+::m\+\_\+reference\+\_\+count\hspace{0.3cm}{\ttfamily [private]}}
 
+The reference count of this reference counted object. 

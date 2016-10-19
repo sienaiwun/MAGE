@@ -30,6 +30,9 @@ bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+d
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A class of engines. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_engine_a5b49f3adf1dd889bb38f5325fd6db317}{}\label{classmage_1_1_engine_a5b49f3adf1dd889bb38f5325fd6db317} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Engine@{Engine}}
@@ -37,13 +40,20 @@ bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+d
 \subsubsection{\texorpdfstring{Engine()}{Engine()}}
 {\footnotesize\ttfamily mage\+::\+Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} $\ast$}]{setup = {\ttfamily NULL} }\end{DoxyParamCaption})}
 
+Constructs an engine from the given engine setup.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em setup} & A pointer to an engine setup. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_engine_a34628556f8397d70ed018d71e343c2f5}{}\label{classmage_1_1_engine_a34628556f8397d70ed018d71e343c2f5} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!````~Engine@{$\sim$\+Engine}}
 \index{````~Engine@{$\sim$\+Engine}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{$\sim$\+Engine()}{~Engine()}}
 {\footnotesize\ttfamily mage\+::\+Engine\+::$\sim$\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-
+Destructs this engine. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_engine_a1c5f9d8c68045b36f404251359aa41e4}{}\label{classmage_1_1_engine_a1c5f9d8c68045b36f404251359aa41e4} 
@@ -52,18 +62,25 @@ bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+d
 \subsubsection{\texorpdfstring{Get\+Window()}{GetWindow()}}
 {\footnotesize\ttfamily H\+W\+ND mage\+::\+Engine\+::\+Get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{classmage_1_1_engine_afdc05e214d3f47a6ea3a40dfffd86f80}{}\label{classmage_1_1_engine_afdc05e214d3f47a6ea3a40dfffd86f80} 
+Returns a handle to the window of this engine. \hypertarget{classmage_1_1_engine_afdc05e214d3f47a6ea3a40dfffd86f80}{}\label{classmage_1_1_engine_afdc05e214d3f47a6ea3a40dfffd86f80} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Run@{Run}}
 \index{Run@{Run}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Run()}{Run()}}
 {\footnotesize\ttfamily void mage\+::\+Engine\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732}{}\label{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732} 
+Runs the engine setup. \hypertarget{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732}{}\label{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Set\+Deactive\+Flag@{Set\+Deactive\+Flag}}
 \index{Set\+Deactive\+Flag@{Set\+Deactive\+Flag}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Set\+Deactive\+Flag()}{SetDeactiveFlag()}}
 {\footnotesize\ttfamily void mage\+::\+Engine\+::\+Set\+Deactive\+Flag (\begin{DoxyParamCaption}\item[{bool}]{deactive }\end{DoxyParamCaption})}
 
+Sets the deactive flag of this engine to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em deactive} & The new value for the deactive flag. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -73,21 +90,22 @@ bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+d
 \subsubsection{\texorpdfstring{m\+\_\+deactive}{m\_deactive}}
 {\footnotesize\ttfamily bool mage\+::\+Engine\+::m\+\_\+deactive\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_engine_a2f8783761b9629dd507d0a6bc456125b}{}\label{classmage_1_1_engine_a2f8783761b9629dd507d0a6bc456125b} 
+Flag indicating whether the application is active or not. \hypertarget{classmage_1_1_engine_a2f8783761b9629dd507d0a6bc456125b}{}\label{classmage_1_1_engine_a2f8783761b9629dd507d0a6bc456125b} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+loaded@{m\+\_\+loaded}}
 \index{m\+\_\+loaded@{m\+\_\+loaded}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+loaded}{m\_loaded}}
 {\footnotesize\ttfamily bool mage\+::\+Engine\+::m\+\_\+loaded\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_engine_a4a16598b741fa040600b45a277d38233}{}\label{classmage_1_1_engine_a4a16598b741fa040600b45a277d38233} 
+Flag indicating whether this engine is loaded. \hypertarget{classmage_1_1_engine_a4a16598b741fa040600b45a277d38233}{}\label{classmage_1_1_engine_a4a16598b741fa040600b45a277d38233} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+setup@{m\+\_\+setup}}
 \index{m\+\_\+setup@{m\+\_\+setup}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+setup}{m\_setup}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} mage\+::\+Engine\+::m\+\_\+setup\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_engine_a48989d564438791281ff5e7bdb78d8bc}{}\label{classmage_1_1_engine_a48989d564438791281ff5e7bdb78d8bc} 
+Copy of the engine setup structure. \hypertarget{classmage_1_1_engine_a48989d564438791281ff5e7bdb78d8bc}{}\label{classmage_1_1_engine_a48989d564438791281ff5e7bdb78d8bc} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+window@{m\+\_\+window}}
 \index{m\+\_\+window@{m\+\_\+window}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+window}{m\_window}}
 {\footnotesize\ttfamily H\+W\+ND mage\+::\+Engine\+::m\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
 
+Main window handle of this engine. 
