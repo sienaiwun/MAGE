@@ -1,0 +1,119 @@
+\hypertarget{classmage_1_1_resource}{}\section{mage\+:\+:Resource Class Reference}
+\label{classmage_1_1_resource}\index{mage\+::\+Resource@{mage\+::\+Resource}}
+
+
+{\ttfamily \#include $<$resource.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_resource_a7b4febc86646d51ac116732af01abcaf}{Resource} (const string \&name, const string \&path=\char`\"{}./\char`\"{})
+\item 
+virtual \hyperlink{classmage_1_1_resource_a80112db991a7dfd1dc0b24967981ac60}{$\sim$\+Resource} ()
+\item 
+const string \& \hyperlink{classmage_1_1_resource_a77713b0c74f8983afc2d42843afe8cbe}{Get\+Name} () const
+\item 
+const string \& \hyperlink{classmage_1_1_resource_a2ef6c6937947b56cbabc569e3a63ca71}{Get\+Path} () const
+\item 
+const string \& \hyperlink{classmage_1_1_resource_a1e5163aed4ec9f73c477df2fe7ca2c03}{Get\+Filename} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{classmage_1_1_resource_a828bf8678979bfa92f2d2df81b60c57f}{Increment\+Reference\+Count} ()
+\item 
+uint32\+\_\+t \hyperlink{classmage_1_1_resource_a80b053a65f76bcb61ce9a81478277fc0}{Decrement\+Reference\+Count} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \hyperlink{classmage_1_1_resource_a93019b74e9665195f1af17c60b6d171a}{m\+\_\+name}
+\item 
+const string \hyperlink{classmage_1_1_resource_a983470902250a8d16b6d5d01c332804b}{m\+\_\+path}
+\item 
+Atomic\+Int32 \hyperlink{classmage_1_1_resource_a7b54e6436afe7128383ab19172878cd9}{m\+\_\+reference\+\_\+count}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\class \hyperlink{classmage_1_1_resource_a51a7bf7c13d389aeee09c16059ca41c9}{Resource\+Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_resource_a7b4febc86646d51ac116732af01abcaf}{}\label{classmage_1_1_resource_a7b4febc86646d51ac116732af01abcaf} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!Resource@{Resource}}
+\index{Resource@{Resource}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{Resource()}{Resource()}}
+{\footnotesize\ttfamily mage\+::\+Resource\+::\+Resource (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{path = {\ttfamily \char`\"{}./\char`\"{}} }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_resource_a80112db991a7dfd1dc0b24967981ac60}{}\label{classmage_1_1_resource_a80112db991a7dfd1dc0b24967981ac60} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!````~Resource@{$\sim$\+Resource}}
+\index{````~Resource@{$\sim$\+Resource}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{$\sim$\+Resource()}{~Resource()}}
+{\footnotesize\ttfamily virtual mage\+::\+Resource\+::$\sim$\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_resource_a80b053a65f76bcb61ce9a81478277fc0}{}\label{classmage_1_1_resource_a80b053a65f76bcb61ce9a81478277fc0} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!Decrement\+Reference\+Count@{Decrement\+Reference\+Count}}
+\index{Decrement\+Reference\+Count@{Decrement\+Reference\+Count}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{Decrement\+Reference\+Count()}{DecrementReferenceCount()}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Resource\+::\+Decrement\+Reference\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_resource_a1e5163aed4ec9f73c477df2fe7ca2c03}{}\label{classmage_1_1_resource_a1e5163aed4ec9f73c477df2fe7ca2c03} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!Get\+Filename@{Get\+Filename}}
+\index{Get\+Filename@{Get\+Filename}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
+{\footnotesize\ttfamily const string\& mage\+::\+Resource\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_resource_a77713b0c74f8983afc2d42843afe8cbe}{}\label{classmage_1_1_resource_a77713b0c74f8983afc2d42843afe8cbe} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily const string\& mage\+::\+Resource\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_resource_a2ef6c6937947b56cbabc569e3a63ca71}{}\label{classmage_1_1_resource_a2ef6c6937947b56cbabc569e3a63ca71} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!Get\+Path@{Get\+Path}}
+\index{Get\+Path@{Get\+Path}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{Get\+Path()}{GetPath()}}
+{\footnotesize\ttfamily const string\& mage\+::\+Resource\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_resource_a828bf8678979bfa92f2d2df81b60c57f}{}\label{classmage_1_1_resource_a828bf8678979bfa92f2d2df81b60c57f} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!Increment\+Reference\+Count@{Increment\+Reference\+Count}}
+\index{Increment\+Reference\+Count@{Increment\+Reference\+Count}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{Increment\+Reference\+Count()}{IncrementReferenceCount()}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Resource\+::\+Increment\+Reference\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmage_1_1_resource_a51a7bf7c13d389aeee09c16059ca41c9}{}\label{classmage_1_1_resource_a51a7bf7c13d389aeee09c16059ca41c9} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!Resource\+Manager@{Resource\+Manager}}
+\index{Resource\+Manager@{Resource\+Manager}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{Resource\+Manager}{ResourceManager}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+friend class \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_resource_a93019b74e9665195f1af17c60b6d171a}{}\label{classmage_1_1_resource_a93019b74e9665195f1af17c60b6d171a} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
+{\footnotesize\ttfamily const string mage\+::\+Resource\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_resource_a983470902250a8d16b6d5d01c332804b}{}\label{classmage_1_1_resource_a983470902250a8d16b6d5d01c332804b} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!m\+\_\+path@{m\+\_\+path}}
+\index{m\+\_\+path@{m\+\_\+path}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{m\+\_\+path}{m\_path}}
+{\footnotesize\ttfamily const string mage\+::\+Resource\+::m\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_resource_a7b54e6436afe7128383ab19172878cd9}{}\label{classmage_1_1_resource_a7b54e6436afe7128383ab19172878cd9} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!m\+\_\+reference\+\_\+count@{m\+\_\+reference\+\_\+count}}
+\index{m\+\_\+reference\+\_\+count@{m\+\_\+reference\+\_\+count}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{m\+\_\+reference\+\_\+count}{m\_reference\_count}}
+{\footnotesize\ttfamily Atomic\+Int32 mage\+::\+Resource\+::m\+\_\+reference\+\_\+count\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,102 @@
+\hypertarget{classmage_1_1_memory_arena}{}\section{mage\+:\+:Memory\+Arena Class Reference}
+\label{classmage_1_1_memory_arena}\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+
+
+{\ttfamily \#include $<$arena.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_memory_arena_aa243c458adb14e211f4dd944c4c82148}{Memory\+Arena} (uint32\+\_\+t block\+\_\+size=32768)
+\item 
+\hyperlink{classmage_1_1_memory_arena_acfee6fc205e2eaf6aeef4acf19948e6e}{$\sim$\+Memory\+Arena} ()
+\item 
+void \hyperlink{classmage_1_1_memory_arena_a30452ffc5813f5c62232713020fbe405}{Free\+All} ()
+\item 
+void $\ast$ \hyperlink{classmage_1_1_memory_arena_a01e00ac6e109249bd80a1e9e79eb0b28}{Alloc} (uint32\+\_\+t size)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{classmage_1_1_memory_arena_a16431dbfc49ddaee803fb0ab52303302}{Alloc} (uint32\+\_\+t count=1)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{classmage_1_1_memory_arena_a3874097398455749a85fe50a9e4984c0}{m\+\_\+current\+\_\+block\+\_\+pos}
+\item 
+uint32\+\_\+t \hyperlink{classmage_1_1_memory_arena_a82b0c7432237699b85a92e8a8f0c96fe}{m\+\_\+block\+\_\+size}
+\item 
+char $\ast$ \hyperlink{classmage_1_1_memory_arena_a13eba6e2a9f8d9db2df5674aa7ce0428}{m\+\_\+current\+\_\+block}
+\item 
+vector$<$ char $\ast$ $>$ \hyperlink{classmage_1_1_memory_arena_affb37aae6087014287b43d50521dd0fb}{m\+\_\+used\+\_\+blocks}
+\item 
+vector$<$ char $\ast$ $>$ \hyperlink{classmage_1_1_memory_arena_a2295aae794acabd26ef9c1ff4908b029}{m\+\_\+available\+\_\+blocks}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_memory_arena_aa243c458adb14e211f4dd944c4c82148}{}\label{classmage_1_1_memory_arena_aa243c458adb14e211f4dd944c4c82148} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Memory\+Arena@{Memory\+Arena}}
+\index{Memory\+Arena@{Memory\+Arena}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{Memory\+Arena()}{MemoryArena()}}
+{\footnotesize\ttfamily mage\+::\+Memory\+Arena\+::\+Memory\+Arena (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{block\+\_\+size = {\ttfamily 32768} }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_memory_arena_acfee6fc205e2eaf6aeef4acf19948e6e}{}\label{classmage_1_1_memory_arena_acfee6fc205e2eaf6aeef4acf19948e6e} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!````~Memory\+Arena@{$\sim$\+Memory\+Arena}}
+\index{````~Memory\+Arena@{$\sim$\+Memory\+Arena}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{$\sim$\+Memory\+Arena()}{~MemoryArena()}}
+{\footnotesize\ttfamily mage\+::\+Memory\+Arena\+::$\sim$\+Memory\+Arena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_memory_arena_a01e00ac6e109249bd80a1e9e79eb0b28}{}\label{classmage_1_1_memory_arena_a01e00ac6e109249bd80a1e9e79eb0b28} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{Alloc()}{Alloc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void$\ast$ mage\+::\+Memory\+Arena\+::\+Alloc (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_memory_arena_a16431dbfc49ddaee803fb0ab52303302}{}\label{classmage_1_1_memory_arena_a16431dbfc49ddaee803fb0ab52303302} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{Alloc()}{Alloc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ mage\+::\+Memory\+Arena\+::\+Alloc (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{count = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_memory_arena_a30452ffc5813f5c62232713020fbe405}{}\label{classmage_1_1_memory_arena_a30452ffc5813f5c62232713020fbe405} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Free\+All@{Free\+All}}
+\index{Free\+All@{Free\+All}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{Free\+All()}{FreeAll()}}
+{\footnotesize\ttfamily void mage\+::\+Memory\+Arena\+::\+Free\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_memory_arena_a2295aae794acabd26ef9c1ff4908b029}{}\label{classmage_1_1_memory_arena_a2295aae794acabd26ef9c1ff4908b029} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+available\+\_\+blocks@{m\+\_\+available\+\_\+blocks}}
+\index{m\+\_\+available\+\_\+blocks@{m\+\_\+available\+\_\+blocks}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{m\+\_\+available\+\_\+blocks}{m\_available\_blocks}}
+{\footnotesize\ttfamily vector$<$char $\ast$$>$ mage\+::\+Memory\+Arena\+::m\+\_\+available\+\_\+blocks\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_memory_arena_a82b0c7432237699b85a92e8a8f0c96fe}{}\label{classmage_1_1_memory_arena_a82b0c7432237699b85a92e8a8f0c96fe} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+block\+\_\+size@{m\+\_\+block\+\_\+size}}
+\index{m\+\_\+block\+\_\+size@{m\+\_\+block\+\_\+size}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{m\+\_\+block\+\_\+size}{m\_block\_size}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Memory\+Arena\+::m\+\_\+block\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_memory_arena_a13eba6e2a9f8d9db2df5674aa7ce0428}{}\label{classmage_1_1_memory_arena_a13eba6e2a9f8d9db2df5674aa7ce0428} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+current\+\_\+block@{m\+\_\+current\+\_\+block}}
+\index{m\+\_\+current\+\_\+block@{m\+\_\+current\+\_\+block}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+\_\+block}{m\_current\_block}}
+{\footnotesize\ttfamily char$\ast$ mage\+::\+Memory\+Arena\+::m\+\_\+current\+\_\+block\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_memory_arena_a3874097398455749a85fe50a9e4984c0}{}\label{classmage_1_1_memory_arena_a3874097398455749a85fe50a9e4984c0} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+current\+\_\+block\+\_\+pos@{m\+\_\+current\+\_\+block\+\_\+pos}}
+\index{m\+\_\+current\+\_\+block\+\_\+pos@{m\+\_\+current\+\_\+block\+\_\+pos}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+\_\+block\+\_\+pos}{m\_current\_block\_pos}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Memory\+Arena\+::m\+\_\+current\+\_\+block\+\_\+pos\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_memory_arena_affb37aae6087014287b43d50521dd0fb}{}\label{classmage_1_1_memory_arena_affb37aae6087014287b43d50521dd0fb} 
+\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+used\+\_\+blocks@{m\+\_\+used\+\_\+blocks}}
+\index{m\+\_\+used\+\_\+blocks@{m\+\_\+used\+\_\+blocks}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
+\subsubsection{\texorpdfstring{m\+\_\+used\+\_\+blocks}{m\_used\_blocks}}
+{\footnotesize\ttfamily vector$<$char $\ast$$>$ mage\+::\+Memory\+Arena\+::m\+\_\+used\+\_\+blocks\hspace{0.3cm}{\ttfamily [private]}}
+

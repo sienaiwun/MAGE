@@ -1,0 +1,125 @@
+\hypertarget{classmage_1_1_progress_reporter}{}\section{mage\+:\+:Progress\+Reporter Class Reference}
+\label{classmage_1_1_progress_reporter}\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+
+
+{\ttfamily \#include $<$progressreporter.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_progress_reporter_a8820bc575fee3e8cbc217707d4931fc1}{Progress\+Reporter} (int nb\+\_\+work, const string \&title, int bar\+\_\+length=-\/1)
+\item 
+virtual \hyperlink{classmage_1_1_progress_reporter_aa543239c6dd4474a77cf4cf6904c1b26}{$\sim$\+Progress\+Reporter} ()
+\item 
+void \hyperlink{classmage_1_1_progress_reporter_ae865c4bb647c14dad318ea34f6933f1d}{Update} (int num=1)
+\item 
+void \hyperlink{classmage_1_1_progress_reporter_a11d758647ac2082bc296ab53a7454eaa}{Done} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classmage_1_1_progress_reporter_a8913c6a98282aaf1d4a5b1d0644a8824}{m\+\_\+nb\+\_\+work}
+\item 
+int \hyperlink{classmage_1_1_progress_reporter_a0b773635d4366e0603b8ea83abdd01b5}{m\+\_\+work\+\_\+done}
+\item 
+int \hyperlink{classmage_1_1_progress_reporter_a5aeccd74959514c3db9b36f6abe4cc70}{m\+\_\+nb\+\_\+plusses\+\_\+printed}
+\item 
+int \hyperlink{classmage_1_1_progress_reporter_abee761d058d9a3d6d56189b86e6daae6}{m\+\_\+nb\+\_\+plusses}
+\item 
+\hyperlink{classmage_1_1_timer}{Timer} $\ast$ \hyperlink{classmage_1_1_progress_reporter_aaca483b46968f0d39262305b5400a3e1}{m\+\_\+timer}
+\item 
+F\+I\+LE $\ast$ \hyperlink{classmage_1_1_progress_reporter_ad325ee5978fd1d16a97acbe37a977982}{m\+\_\+fout}
+\item 
+char $\ast$ \hyperlink{classmage_1_1_progress_reporter_a3aa49d5b886263402d9a9ecb4851670c}{m\+\_\+buffer}
+\item 
+char $\ast$ \hyperlink{classmage_1_1_progress_reporter_a93faeed07adf849e7351c85f06f2b4a7}{m\+\_\+current\+\_\+space}
+\item 
+\hyperlink{classmage_1_1_mutex}{Mutex} $\ast$ \hyperlink{classmage_1_1_progress_reporter_abda37942e51b682b2871e49883d58da1}{m\+\_\+mutex}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_progress_reporter_a8820bc575fee3e8cbc217707d4931fc1}{}\label{classmage_1_1_progress_reporter_a8820bc575fee3e8cbc217707d4931fc1} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!Progress\+Reporter@{Progress\+Reporter}}
+\index{Progress\+Reporter@{Progress\+Reporter}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{Progress\+Reporter()}{ProgressReporter()}}
+{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::\+Progress\+Reporter (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+work,  }\item[{const string \&}]{title,  }\item[{int}]{bar\+\_\+length = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_progress_reporter_aa543239c6dd4474a77cf4cf6904c1b26}{}\label{classmage_1_1_progress_reporter_aa543239c6dd4474a77cf4cf6904c1b26} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!````~Progress\+Reporter@{$\sim$\+Progress\+Reporter}}
+\index{````~Progress\+Reporter@{$\sim$\+Progress\+Reporter}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{$\sim$\+Progress\+Reporter()}{~ProgressReporter()}}
+{\footnotesize\ttfamily mage\+::\+Progress\+Reporter\+::$\sim$\+Progress\+Reporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_progress_reporter_a11d758647ac2082bc296ab53a7454eaa}{}\label{classmage_1_1_progress_reporter_a11d758647ac2082bc296ab53a7454eaa} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!Done@{Done}}
+\index{Done@{Done}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{Done()}{Done()}}
+{\footnotesize\ttfamily void mage\+::\+Progress\+Reporter\+::\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_progress_reporter_ae865c4bb647c14dad318ea34f6933f1d}{}\label{classmage_1_1_progress_reporter_ae865c4bb647c14dad318ea34f6933f1d} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!Update@{Update}}
+\index{Update@{Update}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void mage\+::\+Progress\+Reporter\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{num = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_progress_reporter_a3aa49d5b886263402d9a9ecb4851670c}{}\label{classmage_1_1_progress_reporter_a3aa49d5b886263402d9a9ecb4851670c} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+buffer@{m\+\_\+buffer}}
+\index{m\+\_\+buffer@{m\+\_\+buffer}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{m\+\_\+buffer}{m\_buffer}}
+{\footnotesize\ttfamily char$\ast$ mage\+::\+Progress\+Reporter\+::m\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_progress_reporter_a93faeed07adf849e7351c85f06f2b4a7}{}\label{classmage_1_1_progress_reporter_a93faeed07adf849e7351c85f06f2b4a7} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+current\+\_\+space@{m\+\_\+current\+\_\+space}}
+\index{m\+\_\+current\+\_\+space@{m\+\_\+current\+\_\+space}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+\_\+space}{m\_current\_space}}
+{\footnotesize\ttfamily char$\ast$ mage\+::\+Progress\+Reporter\+::m\+\_\+current\+\_\+space\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_progress_reporter_ad325ee5978fd1d16a97acbe37a977982}{}\label{classmage_1_1_progress_reporter_ad325ee5978fd1d16a97acbe37a977982} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+fout@{m\+\_\+fout}}
+\index{m\+\_\+fout@{m\+\_\+fout}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{m\+\_\+fout}{m\_fout}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ mage\+::\+Progress\+Reporter\+::m\+\_\+fout\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_progress_reporter_abda37942e51b682b2871e49883d58da1}{}\label{classmage_1_1_progress_reporter_abda37942e51b682b2871e49883d58da1} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+mutex@{m\+\_\+mutex}}
+\index{m\+\_\+mutex@{m\+\_\+mutex}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{m\+\_\+mutex}{m\_mutex}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_mutex}{Mutex}$\ast$ mage\+::\+Progress\+Reporter\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_progress_reporter_abee761d058d9a3d6d56189b86e6daae6}{}\label{classmage_1_1_progress_reporter_abee761d058d9a3d6d56189b86e6daae6} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+nb\+\_\+plusses@{m\+\_\+nb\+\_\+plusses}}
+\index{m\+\_\+nb\+\_\+plusses@{m\+\_\+nb\+\_\+plusses}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+plusses}{m\_nb\_plusses}}
+{\footnotesize\ttfamily int mage\+::\+Progress\+Reporter\+::m\+\_\+nb\+\_\+plusses\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_progress_reporter_a5aeccd74959514c3db9b36f6abe4cc70}{}\label{classmage_1_1_progress_reporter_a5aeccd74959514c3db9b36f6abe4cc70} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+nb\+\_\+plusses\+\_\+printed@{m\+\_\+nb\+\_\+plusses\+\_\+printed}}
+\index{m\+\_\+nb\+\_\+plusses\+\_\+printed@{m\+\_\+nb\+\_\+plusses\+\_\+printed}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+plusses\+\_\+printed}{m\_nb\_plusses\_printed}}
+{\footnotesize\ttfamily int mage\+::\+Progress\+Reporter\+::m\+\_\+nb\+\_\+plusses\+\_\+printed\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_progress_reporter_a8913c6a98282aaf1d4a5b1d0644a8824}{}\label{classmage_1_1_progress_reporter_a8913c6a98282aaf1d4a5b1d0644a8824} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+nb\+\_\+work@{m\+\_\+nb\+\_\+work}}
+\index{m\+\_\+nb\+\_\+work@{m\+\_\+nb\+\_\+work}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+work}{m\_nb\_work}}
+{\footnotesize\ttfamily const int mage\+::\+Progress\+Reporter\+::m\+\_\+nb\+\_\+work\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_progress_reporter_aaca483b46968f0d39262305b5400a3e1}{}\label{classmage_1_1_progress_reporter_aaca483b46968f0d39262305b5400a3e1} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+timer@{m\+\_\+timer}}
+\index{m\+\_\+timer@{m\+\_\+timer}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{m\+\_\+timer}{m\_timer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_timer}{Timer}$\ast$ mage\+::\+Progress\+Reporter\+::m\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_progress_reporter_a0b773635d4366e0603b8ea83abdd01b5}{}\label{classmage_1_1_progress_reporter_a0b773635d4366e0603b8ea83abdd01b5} 
+\index{mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}!m\+\_\+work\+\_\+done@{m\+\_\+work\+\_\+done}}
+\index{m\+\_\+work\+\_\+done@{m\+\_\+work\+\_\+done}!mage\+::\+Progress\+Reporter@{mage\+::\+Progress\+Reporter}}
+\subsubsection{\texorpdfstring{m\+\_\+work\+\_\+done}{m\_work\_done}}
+{\footnotesize\ttfamily int mage\+::\+Progress\+Reporter\+::m\+\_\+work\+\_\+done\hspace{0.3cm}{\ttfamily [private]}}
+

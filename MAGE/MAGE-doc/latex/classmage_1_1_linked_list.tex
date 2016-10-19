@@ -1,0 +1,201 @@
+\hypertarget{classmage_1_1_linked_list}{}\section{mage\+:\+:Linked\+List$<$ T $>$ Class Template Reference}
+\label{classmage_1_1_linked_list}\index{mage\+::\+Linked\+List$<$ T $>$@{mage\+::\+Linked\+List$<$ T $>$}}
+
+
+{\ttfamily \#include $<$linkedlist.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element}
+\item 
+struct \hyperlink{structmage_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_linked_list_a44b43c51b9515695016c8664d898aa6b}{Linked\+List} ()
+\item 
+virtual \hyperlink{classmage_1_1_linked_list_a88cb2ec52e90f3658d9735b4948cccdb}{$\sim$\+Linked\+List} ()
+\item 
+T $\ast$ \hyperlink{classmage_1_1_linked_list_ac6cd236aab89f296d3c112c05b2337e2}{Add} (T $\ast$data)
+\item 
+T $\ast$ \hyperlink{classmage_1_1_linked_list_a5744f0c1ae3b9e752dffdd3fdb518f5c}{Insert\+Before} (T $\ast$data, \hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$next\+\_\+element)
+\item 
+T $\ast$ \hyperlink{classmage_1_1_linked_list_a25424001f549e03d785a219d99231044}{Insert\+After} (T $\ast$data, \hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$prev\+\_\+element)
+\item 
+{\footnotesize template$<$typename bool no\+\_\+data\+\_\+destruction$>$ }\\void \hyperlink{classmage_1_1_linked_list_a37af908f76d8e21f7591104ed85226df}{Remove} (T $\ast$$\ast$data)
+\item 
+{\footnotesize template$<$typename bool no\+\_\+data\+\_\+destruction$>$ }\\void \hyperlink{classmage_1_1_linked_list_a6f57c11ad87c0f6d8f6ae8e785431c39}{Empty} ()
+\item 
+T $\ast$ \hyperlink{classmage_1_1_linked_list_a8394fd1c390b806b9daafdff497b02fb}{Get\+First} () const
+\item 
+T $\ast$ \hyperlink{classmage_1_1_linked_list_a734f6dc6d073edd99eb9a0ac1f605900}{Get\+Last} () const
+\item 
+T $\ast$ \hyperlink{classmage_1_1_linked_list_a48a61ad79c7a7f4d460d56867ce62cf4}{Get\+Previous} (T $\ast$data) const
+\item 
+T $\ast$ \hyperlink{classmage_1_1_linked_list_a992390dbc48cf24705f9e79baef37061}{Get\+Next} (T $\ast$data) const
+\item 
+T $\ast$ \hyperlink{classmage_1_1_linked_list_a97922b200a12979e5c8692dd5f3f73d1}{Get\+At} (uint64\+\_\+t index) const
+\item 
+T $\ast$ \hyperlink{classmage_1_1_linked_list_aec571022e5fa10e0afea286e4427eb89}{Get\+Random} () const
+\item 
+\hyperlink{structmage_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator} \hyperlink{classmage_1_1_linked_list_a7e4016d051e44eb5d8a7bde3d193b9e8}{Get\+Iterator} () const
+\item 
+\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$ \hyperlink{classmage_1_1_linked_list_a0da4ff247abafd3a496b379673c111c1}{Get\+Complete\+Linked\+List\+Element} (T $\ast$data) const
+\item 
+uint64\+\_\+t \hyperlink{classmage_1_1_linked_list_a8d033278680a0053e30cba91b27941a1}{Get\+Size} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$ \hyperlink{classmage_1_1_linked_list_a194ecd23a82c83e2735717b32073340c}{m\+\_\+first}
+\item 
+\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$ \hyperlink{classmage_1_1_linked_list_acb461a96b93fa3917b7ed2e30fe67fce}{m\+\_\+last}
+\item 
+uint64\+\_\+t \hyperlink{classmage_1_1_linked_list_a1a1be1f46f0bc704e6387833b9528909}{m\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_linked_list_a44b43c51b9515695016c8664d898aa6b}{}\label{classmage_1_1_linked_list_a44b43c51b9515695016c8664d898aa6b} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Linked\+List@{Linked\+List}}
+\index{Linked\+List@{Linked\+List}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Linked\+List()}{LinkedList()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::\hyperlink{classmage_1_1_linked_list}{Linked\+List} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_linked_list_a88cb2ec52e90f3658d9735b4948cccdb}{}\label{classmage_1_1_linked_list_a88cb2ec52e90f3658d9735b4948cccdb} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!````~Linked\+List@{$\sim$\+Linked\+List}}
+\index{````~Linked\+List@{$\sim$\+Linked\+List}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{$\sim$\+Linked\+List()}{~LinkedList()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::$\sim$\hyperlink{classmage_1_1_linked_list}{Linked\+List} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_linked_list_ac6cd236aab89f296d3c112c05b2337e2}{}\label{classmage_1_1_linked_list_ac6cd236aab89f296d3c112c05b2337e2} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Add@{Add}}
+\index{Add@{Add}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Add (\begin{DoxyParamCaption}\item[{T $\ast$}]{data }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_linked_list_a6f57c11ad87c0f6d8f6ae8e785431c39}{}\label{classmage_1_1_linked_list_a6f57c11ad87c0f6d8f6ae8e785431c39} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Empty@{Empty}}
+\index{Empty@{Empty}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Empty()}{Empty()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename bool no\+\_\+data\+\_\+destruction$>$ \\
+void \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_linked_list_a97922b200a12979e5c8692dd5f3f73d1}{}\label{classmage_1_1_linked_list_a97922b200a12979e5c8692dd5f3f73d1} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+At@{Get\+At}}
+\index{Get\+At@{Get\+At}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Get\+At()}{GetAt()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Get\+At (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{index }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_linked_list_a0da4ff247abafd3a496b379673c111c1}{}\label{classmage_1_1_linked_list_a0da4ff247abafd3a496b379673c111c1} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+Complete\+Linked\+List\+Element@{Get\+Complete\+Linked\+List\+Element}}
+\index{Get\+Complete\+Linked\+List\+Element@{Get\+Complete\+Linked\+List\+Element}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Get\+Complete\+Linked\+List\+Element()}{GetCompleteLinkedListElement()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element}$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Get\+Complete\+Linked\+List\+Element (\begin{DoxyParamCaption}\item[{T $\ast$}]{data }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_linked_list_a8394fd1c390b806b9daafdff497b02fb}{}\label{classmage_1_1_linked_list_a8394fd1c390b806b9daafdff497b02fb} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+First@{Get\+First}}
+\index{Get\+First@{Get\+First}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Get\+First()}{GetFirst()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Get\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_linked_list_a7e4016d051e44eb5d8a7bde3d193b9e8}{}\label{classmage_1_1_linked_list_a7e4016d051e44eb5d8a7bde3d193b9e8} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+Iterator@{Get\+Iterator}}
+\index{Get\+Iterator@{Get\+Iterator}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Get\+Iterator()}{GetIterator()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{structmage_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator} \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Get\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_linked_list_a734f6dc6d073edd99eb9a0ac1f605900}{}\label{classmage_1_1_linked_list_a734f6dc6d073edd99eb9a0ac1f605900} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+Last@{Get\+Last}}
+\index{Get\+Last@{Get\+Last}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Get\+Last()}{GetLast()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Get\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_linked_list_a992390dbc48cf24705f9e79baef37061}{}\label{classmage_1_1_linked_list_a992390dbc48cf24705f9e79baef37061} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+Next@{Get\+Next}}
+\index{Get\+Next@{Get\+Next}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Get\+Next()}{GetNext()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Get\+Next (\begin{DoxyParamCaption}\item[{T $\ast$}]{data }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_linked_list_a48a61ad79c7a7f4d460d56867ce62cf4}{}\label{classmage_1_1_linked_list_a48a61ad79c7a7f4d460d56867ce62cf4} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+Previous@{Get\+Previous}}
+\index{Get\+Previous@{Get\+Previous}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Get\+Previous()}{GetPrevious()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Get\+Previous (\begin{DoxyParamCaption}\item[{T $\ast$}]{data }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_linked_list_aec571022e5fa10e0afea286e4427eb89}{}\label{classmage_1_1_linked_list_aec571022e5fa10e0afea286e4427eb89} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+Random@{Get\+Random}}
+\index{Get\+Random@{Get\+Random}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Get\+Random()}{GetRandom()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Get\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_linked_list_a8d033278680a0053e30cba91b27941a1}{}\label{classmage_1_1_linked_list_a8d033278680a0053e30cba91b27941a1} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+uint64\+\_\+t \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_linked_list_a25424001f549e03d785a219d99231044}{}\label{classmage_1_1_linked_list_a25424001f549e03d785a219d99231044} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Insert\+After@{Insert\+After}}
+\index{Insert\+After@{Insert\+After}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Insert\+After()}{InsertAfter()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Insert\+After (\begin{DoxyParamCaption}\item[{T $\ast$}]{data,  }\item[{\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$}]{prev\+\_\+element }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_linked_list_a5744f0c1ae3b9e752dffdd3fdb518f5c}{}\label{classmage_1_1_linked_list_a5744f0c1ae3b9e752dffdd3fdb518f5c} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Insert\+Before@{Insert\+Before}}
+\index{Insert\+Before@{Insert\+Before}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Insert\+Before()}{InsertBefore()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Insert\+Before (\begin{DoxyParamCaption}\item[{T $\ast$}]{data,  }\item[{\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$}]{next\+\_\+element }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_linked_list_a37af908f76d8e21f7591104ed85226df}{}\label{classmage_1_1_linked_list_a37af908f76d8e21f7591104ed85226df} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Remove@{Remove}}
+\index{Remove@{Remove}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename bool no\+\_\+data\+\_\+destruction$>$ \\
+void \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Remove (\begin{DoxyParamCaption}\item[{T $\ast$$\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_linked_list_a194ecd23a82c83e2735717b32073340c}{}\label{classmage_1_1_linked_list_a194ecd23a82c83e2735717b32073340c} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!m\+\_\+first@{m\+\_\+first}}
+\index{m\+\_\+first@{m\+\_\+first}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{m\+\_\+first}{m\_first}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element}$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::m\+\_\+first\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_linked_list_acb461a96b93fa3917b7ed2e30fe67fce}{}\label{classmage_1_1_linked_list_acb461a96b93fa3917b7ed2e30fe67fce} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!m\+\_\+last@{m\+\_\+last}}
+\index{m\+\_\+last@{m\+\_\+last}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{m\+\_\+last}{m\_last}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element}$\ast$ \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::m\+\_\+last\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_linked_list_a1a1be1f46f0bc704e6387833b9528909}{}\label{classmage_1_1_linked_list_a1a1be1f46f0bc704e6387833b9528909} 
+\index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!m\+\_\+size@{m\+\_\+size}}
+\index{m\+\_\+size@{m\+\_\+size}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
+\subsubsection{\texorpdfstring{m\+\_\+size}{m\_size}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+uint64\+\_\+t \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::m\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,128 @@
+\hypertarget{classmage_1_1_timer}{}\section{mage\+:\+:Timer Class Reference}
+\label{classmage_1_1_timer}\index{mage\+::\+Timer@{mage\+::\+Timer}}
+
+
+{\ttfamily \#include $<$timer.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_timer_a5e1c0a3bb4491b3a43ce05874ad24055}{Timer} ()
+\item 
+virtual \hyperlink{classmage_1_1_timer_aa91cebe8c59c189fde93932fde10265c}{$\sim$\+Timer} ()
+\item 
+void \hyperlink{classmage_1_1_timer_a5855c9df8ad1a2b6774942e566833647}{Start} ()
+\item 
+void \hyperlink{classmage_1_1_timer_abf234f1e2ee9e760f316bd49500d5a3a}{Stop} ()
+\item 
+void \hyperlink{classmage_1_1_timer_a0675ff7bc0a8e7343b5a35f865cc9c1a}{Reset} ()
+\item 
+double \hyperlink{classmage_1_1_timer_a5e4655ac296cc8971b54e5a76082f00f}{Time} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classmage_1_1_timer_ab6ae538071bb62bdf86de5344788c124}{Get\+Time} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classmage_1_1_timer_a73fa08d14bfa273f158f967a8e58f96f}{m\+\_\+time0}
+\item 
+double \hyperlink{classmage_1_1_timer_aa2c50b9ffa85600791a21e2db4c43e91}{m\+\_\+elapsed}
+\item 
+bool \hyperlink{classmage_1_1_timer_ac8d975843e5b2199848284de910d3291}{m\+\_\+running}
+\item 
+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER \hyperlink{classmage_1_1_timer_a70bdbf53f8cd69a46db8b75e08d3ead8}{m\+\_\+performance\+\_\+counter}
+\item 
+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER \hyperlink{classmage_1_1_timer_a1618c4901b6f898165a2d79d02a2518e}{m\+\_\+performance\+\_\+frequency}
+\item 
+double \hyperlink{classmage_1_1_timer_a8e73b09880114bc7ab47c8698a40c976}{m\+\_\+one\+\_\+over\+\_\+frequency}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_timer_a5e1c0a3bb4491b3a43ce05874ad24055}{}\label{classmage_1_1_timer_a5e1c0a3bb4491b3a43ce05874ad24055} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily mage\+::\+Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_timer_aa91cebe8c59c189fde93932fde10265c}{}\label{classmage_1_1_timer_aa91cebe8c59c189fde93932fde10265c} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!````~Timer@{$\sim$\+Timer}}
+\index{````~Timer@{$\sim$\+Timer}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{$\sim$\+Timer()}{~Timer()}}
+{\footnotesize\ttfamily virtual mage\+::\+Timer\+::$\sim$\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_timer_ab6ae538071bb62bdf86de5344788c124}{}\label{classmage_1_1_timer_ab6ae538071bb62bdf86de5344788c124} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Get\+Time@{Get\+Time}}
+\index{Get\+Time@{Get\+Time}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Get\+Time()}{GetTime()}}
+{\footnotesize\ttfamily double mage\+::\+Timer\+::\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_timer_a0675ff7bc0a8e7343b5a35f865cc9c1a}{}\label{classmage_1_1_timer_a0675ff7bc0a8e7343b5a35f865cc9c1a} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Reset@{Reset}}
+\index{Reset@{Reset}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void mage\+::\+Timer\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_timer_a5855c9df8ad1a2b6774942e566833647}{}\label{classmage_1_1_timer_a5855c9df8ad1a2b6774942e566833647} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Start@{Start}}
+\index{Start@{Start}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void mage\+::\+Timer\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_timer_abf234f1e2ee9e760f316bd49500d5a3a}{}\label{classmage_1_1_timer_abf234f1e2ee9e760f316bd49500d5a3a} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Stop@{Stop}}
+\index{Stop@{Stop}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void mage\+::\+Timer\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_timer_a5e4655ac296cc8971b54e5a76082f00f}{}\label{classmage_1_1_timer_a5e4655ac296cc8971b54e5a76082f00f} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Time@{Time}}
+\index{Time@{Time}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Time()}{Time()}}
+{\footnotesize\ttfamily double mage\+::\+Timer\+::\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_timer_aa2c50b9ffa85600791a21e2db4c43e91}{}\label{classmage_1_1_timer_aa2c50b9ffa85600791a21e2db4c43e91} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+elapsed@{m\+\_\+elapsed}}
+\index{m\+\_\+elapsed@{m\+\_\+elapsed}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{m\+\_\+elapsed}{m\_elapsed}}
+{\footnotesize\ttfamily double mage\+::\+Timer\+::m\+\_\+elapsed\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_timer_a8e73b09880114bc7ab47c8698a40c976}{}\label{classmage_1_1_timer_a8e73b09880114bc7ab47c8698a40c976} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+one\+\_\+over\+\_\+frequency@{m\+\_\+one\+\_\+over\+\_\+frequency}}
+\index{m\+\_\+one\+\_\+over\+\_\+frequency@{m\+\_\+one\+\_\+over\+\_\+frequency}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{m\+\_\+one\+\_\+over\+\_\+frequency}{m\_one\_over\_frequency}}
+{\footnotesize\ttfamily double mage\+::\+Timer\+::m\+\_\+one\+\_\+over\+\_\+frequency\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_timer_a70bdbf53f8cd69a46db8b75e08d3ead8}{}\label{classmage_1_1_timer_a70bdbf53f8cd69a46db8b75e08d3ead8} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+performance\+\_\+counter@{m\+\_\+performance\+\_\+counter}}
+\index{m\+\_\+performance\+\_\+counter@{m\+\_\+performance\+\_\+counter}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{m\+\_\+performance\+\_\+counter}{m\_performance\_counter}}
+{\footnotesize\ttfamily L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER mage\+::\+Timer\+::m\+\_\+performance\+\_\+counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_timer_a1618c4901b6f898165a2d79d02a2518e}{}\label{classmage_1_1_timer_a1618c4901b6f898165a2d79d02a2518e} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+performance\+\_\+frequency@{m\+\_\+performance\+\_\+frequency}}
+\index{m\+\_\+performance\+\_\+frequency@{m\+\_\+performance\+\_\+frequency}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{m\+\_\+performance\+\_\+frequency}{m\_performance\_frequency}}
+{\footnotesize\ttfamily L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+ER mage\+::\+Timer\+::m\+\_\+performance\+\_\+frequency\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_timer_ac8d975843e5b2199848284de910d3291}{}\label{classmage_1_1_timer_ac8d975843e5b2199848284de910d3291} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+running@{m\+\_\+running}}
+\index{m\+\_\+running@{m\+\_\+running}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{m\+\_\+running}{m\_running}}
+{\footnotesize\ttfamily bool mage\+::\+Timer\+::m\+\_\+running\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_timer_a73fa08d14bfa273f158f967a8e58f96f}{}\label{classmage_1_1_timer_a73fa08d14bfa273f158f967a8e58f96f} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!m\+\_\+time0@{m\+\_\+time0}}
+\index{m\+\_\+time0@{m\+\_\+time0}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{m\+\_\+time0}{m\_time0}}
+{\footnotesize\ttfamily double mage\+::\+Timer\+::m\+\_\+time0\hspace{0.3cm}{\ttfamily [private]}}
+

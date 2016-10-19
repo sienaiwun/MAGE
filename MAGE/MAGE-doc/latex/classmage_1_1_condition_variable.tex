@@ -1,0 +1,130 @@
+\hypertarget{classmage_1_1_condition_variable}{}\section{mage\+:\+:Condition\+Variable Class Reference}
+\label{classmage_1_1_condition_variable}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+
+
+{\ttfamily \#include $<$lock.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_condition_variable_a09073f0affc601f052fce541a17ba559}{Condition\+Variable} ()
+\item 
+\hyperlink{classmage_1_1_condition_variable_accd5253beb65b2904428afdb889cf00b}{$\sim$\+Condition\+Variable} ()
+\item 
+void \hyperlink{classmage_1_1_condition_variable_acb0fa4a842b6979ac35c70dab0f43813}{Lock} ()
+\item 
+void \hyperlink{classmage_1_1_condition_variable_a3b3fe63417b7d7adedc9fe015fc7feea}{Unlock} ()
+\item 
+void \hyperlink{classmage_1_1_condition_variable_abc279c54285145d981f409c2d110c85a}{Wait} ()
+\item 
+void \hyperlink{classmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9}{Signal} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a83361ddf52d1973875f7a48ac4bccf94}{S\+I\+G\+N\+AL} = 0, 
+\hyperlink{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a5863233d3c1e62ca806753b0d175199f}{B\+R\+O\+A\+D\+C\+A\+ST} = 1, 
+\hyperlink{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac}{N\+U\+M\+\_\+\+E\+V\+E\+N\+TS} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{classmage_1_1_condition_variable_ac02cb14000a597ec91b8546bdcbb9dd1}{m\+\_\+nb\+\_\+waiters}
+\item 
+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON \hyperlink{classmage_1_1_condition_variable_a0686e682d62d44ff1eb9ac45acbb0eab}{m\+\_\+nb\+\_\+waiters\+\_\+mutex}
+\item 
+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON \hyperlink{classmage_1_1_condition_variable_ab5ff870b2881a1979ccaec986d762441}{m\+\_\+condition\+\_\+mutex}
+\item 
+H\+A\+N\+D\+LE \hyperlink{classmage_1_1_condition_variable_aa3eeb3cf7cdcc70e651ee67800b713f5}{m\+\_\+events} \mbox{[}\hyperlink{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac}{N\+U\+M\+\_\+\+E\+V\+E\+N\+TS}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945}{}\label{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I\+G\+N\+AL@{S\+I\+G\+N\+AL}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!S\+I\+G\+N\+AL@{S\+I\+G\+N\+AL}}}\hypertarget{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a83361ddf52d1973875f7a48ac4bccf94}{}\label{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a83361ddf52d1973875f7a48ac4bccf94} 
+S\+I\+G\+N\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+R\+O\+A\+D\+C\+A\+ST@{B\+R\+O\+A\+D\+C\+A\+ST}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!B\+R\+O\+A\+D\+C\+A\+ST@{B\+R\+O\+A\+D\+C\+A\+ST}}}\hypertarget{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a5863233d3c1e62ca806753b0d175199f}{}\label{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a5863233d3c1e62ca806753b0d175199f} 
+B\+R\+O\+A\+D\+C\+A\+ST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+U\+M\+\_\+\+E\+V\+E\+N\+TS@{N\+U\+M\+\_\+\+E\+V\+E\+N\+TS}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!N\+U\+M\+\_\+\+E\+V\+E\+N\+TS@{N\+U\+M\+\_\+\+E\+V\+E\+N\+TS}}}\hypertarget{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac}{}\label{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac} 
+N\+U\+M\+\_\+\+E\+V\+E\+N\+TS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_condition_variable_a09073f0affc601f052fce541a17ba559}{}\label{classmage_1_1_condition_variable_a09073f0affc601f052fce541a17ba559} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Condition\+Variable@{Condition\+Variable}}
+\index{Condition\+Variable@{Condition\+Variable}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{Condition\+Variable()}{ConditionVariable()}}
+{\footnotesize\ttfamily mage\+::\+Condition\+Variable\+::\+Condition\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_condition_variable_accd5253beb65b2904428afdb889cf00b}{}\label{classmage_1_1_condition_variable_accd5253beb65b2904428afdb889cf00b} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!````~Condition\+Variable@{$\sim$\+Condition\+Variable}}
+\index{````~Condition\+Variable@{$\sim$\+Condition\+Variable}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{$\sim$\+Condition\+Variable()}{~ConditionVariable()}}
+{\footnotesize\ttfamily mage\+::\+Condition\+Variable\+::$\sim$\+Condition\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_condition_variable_acb0fa4a842b6979ac35c70dab0f43813}{}\label{classmage_1_1_condition_variable_acb0fa4a842b6979ac35c70dab0f43813} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Lock@{Lock}}
+\index{Lock@{Lock}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{Lock()}{Lock()}}
+{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9}{}\label{classmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Signal@{Signal}}
+\index{Signal@{Signal}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{Signal()}{Signal()}}
+{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_condition_variable_a3b3fe63417b7d7adedc9fe015fc7feea}{}\label{classmage_1_1_condition_variable_a3b3fe63417b7d7adedc9fe015fc7feea} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{Unlock()}{Unlock()}}
+{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_condition_variable_abc279c54285145d981f409c2d110c85a}{}\label{classmage_1_1_condition_variable_abc279c54285145d981f409c2d110c85a} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Wait@{Wait}}
+\index{Wait@{Wait}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{Wait()}{Wait()}}
+{\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_condition_variable_ab5ff870b2881a1979ccaec986d762441}{}\label{classmage_1_1_condition_variable_ab5ff870b2881a1979ccaec986d762441} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!m\+\_\+condition\+\_\+mutex@{m\+\_\+condition\+\_\+mutex}}
+\index{m\+\_\+condition\+\_\+mutex@{m\+\_\+condition\+\_\+mutex}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{m\+\_\+condition\+\_\+mutex}{m\_condition\_mutex}}
+{\footnotesize\ttfamily C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON mage\+::\+Condition\+Variable\+::m\+\_\+condition\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_condition_variable_aa3eeb3cf7cdcc70e651ee67800b713f5}{}\label{classmage_1_1_condition_variable_aa3eeb3cf7cdcc70e651ee67800b713f5} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!m\+\_\+events@{m\+\_\+events}}
+\index{m\+\_\+events@{m\+\_\+events}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{m\+\_\+events}{m\_events}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE mage\+::\+Condition\+Variable\+::m\+\_\+events\mbox{[}\hyperlink{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac}{N\+U\+M\+\_\+\+E\+V\+E\+N\+TS}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_condition_variable_ac02cb14000a597ec91b8546bdcbb9dd1}{}\label{classmage_1_1_condition_variable_ac02cb14000a597ec91b8546bdcbb9dd1} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!m\+\_\+nb\+\_\+waiters@{m\+\_\+nb\+\_\+waiters}}
+\index{m\+\_\+nb\+\_\+waiters@{m\+\_\+nb\+\_\+waiters}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+waiters}{m\_nb\_waiters}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Condition\+Variable\+::m\+\_\+nb\+\_\+waiters\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_condition_variable_a0686e682d62d44ff1eb9ac45acbb0eab}{}\label{classmage_1_1_condition_variable_a0686e682d62d44ff1eb9ac45acbb0eab} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!m\+\_\+nb\+\_\+waiters\+\_\+mutex@{m\+\_\+nb\+\_\+waiters\+\_\+mutex}}
+\index{m\+\_\+nb\+\_\+waiters\+\_\+mutex@{m\+\_\+nb\+\_\+waiters\+\_\+mutex}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+waiters\+\_\+mutex}{m\_nb\_waiters\_mutex}}
+{\footnotesize\ttfamily C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON mage\+::\+Condition\+Variable\+::m\+\_\+nb\+\_\+waiters\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
+
