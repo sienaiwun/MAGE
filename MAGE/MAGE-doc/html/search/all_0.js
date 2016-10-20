@@ -9,5 +9,6 @@ var searchData=
   ['allocaligned',['AllocAligned',['../namespacemage.html#a7d706913bb9fb322c938cd3e4d8eaede',1,'mage::AllocAligned(size_t size)'],['../namespacemage.html#ae2f31ba64620694aa0dfc8ca6e5d5941',1,'mage::AllocAligned(uint32_t count)']]],
   ['atomicadd',['AtomicAdd',['../namespacemage.html#a56e179559b923b1997495c1bc8e3778e',1,'mage::AtomicAdd(AtomicInt32 *v, int32_t delta)'],['../namespacemage.html#a7c863b965835307770946964a76098ce',1,'mage::AtomicAdd(volatile float *v, float delta)']]],
   ['atomiccompareandswap',['AtomicCompareAndSwap',['../namespacemage.html#a299b0e2de7b6225ad86eab118bca4627',1,'mage']]],
-  ['atomiccompareandswappointer',['AtomicCompareAndSwapPointer',['../namespacemage.html#a1a36a24cbbc8aea1abb809a10bfdf4d1',1,'mage']]]
+  ['atomiccompareandswappointer',['AtomicCompareAndSwapPointer',['../namespacemage.html#a1a36a24cbbc8aea1abb809a10bfdf4d1',1,'mage']]],
+  ['attachconsole',['AttachConsole',['../namespacemage.html#a720768843a1d752ebf061e1475fa004f',1,'mage']]]
 ];

@@ -5,6 +5,7 @@ var searchData=
   ['p_5fmin',['p_min',['../structmage_1_1_a_a_b_b.html#aca78eb314738b73f2d21dcf75130b6eb',1,'mage::AABB']]],
   ['post',['Post',['../classmage_1_1_semaphore.html#a354ea9743f9794b14a3f032e0443b214',1,'mage::Semaphore']]],
   ['prev',['prev',['../structmage_1_1_linked_list_1_1_linked_list_element.html#a6aa1a290fa0c06efae90730220bb4c57',1,'mage::LinkedList::LinkedListElement']]],
+  ['printconsoleheader',['PrintConsoleHeader',['../namespacemage.html#afb64e5bf4755b0a56a7b0d086bc5f4be',1,'mage']]],
   ['processerror',['ProcessError',['../namespacemage.html#a0325f02cf9fd84c5b61ff249630fb0cd',1,'mage']]],
   ['progressreporter',['ProgressReporter',['../classmage_1_1_progress_reporter.html#a8820bc575fee3e8cbc217707d4931fc1',1,'mage::ProgressReporter']]],
   ['progressreporter',['ProgressReporter',['../classmage_1_1_progress_reporter.html',1,'mage']]]

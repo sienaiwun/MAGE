@@ -67,6 +67,10 @@ enum \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{Read\+Write\+Mu
 \item 
 L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a327147b1d76dcb41c17c23f9603d80c1}{Window\+Proc} (H\+W\+ND hwnd, U\+I\+NT msg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
 \item 
+static bool \hyperlink{namespacemage_a720768843a1d752ebf061e1475fa004f}{Attach\+Console} ()
+\item 
+static void \hyperlink{namespacemage_afb64e5bf4755b0a56a7b0d086bc5f4be}{Print\+Console\+Header} ()
+\item 
 const char $\ast$ \hyperlink{namespacemage_ab2e62d950dc620167f4128cb16033998}{Find\+Word\+End} (const char $\ast$buffer)
 \item 
 static void \hyperlink{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd}{Process\+Error} (const char $\ast$format, va\+\_\+list args, const char $\ast$error\+\_\+type, int disposition)
@@ -114,11 +118,11 @@ void \hyperlink{namespacemage_a7da78c39175a029c92ed42d8fb9f30af}{Wait\+For\+All\
 \item 
 \hyperlink{classmage_1_1_engine}{Engine} $\ast$ \hyperlink{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{g\+\_\+engine} = N\+U\+LL
 \item 
-D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_af852db837cfb700d168b6786abf62723}{vertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
+const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119}{vertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
 \item 
-D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a1a0bf329bff9193febe0c16632c62d1b}{lvertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
+const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3}{lvertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
 \item 
-D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a53479d051c51213305d6ea7bcba7a5e8}{tlvertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
+const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a0f27594da3814c163fe995326acf6c5e}{tlvertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
 \item 
 static H\+A\+N\+D\+LE $\ast$ \hyperlink{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c}{threads}
 \item 
@@ -224,6 +228,17 @@ A pointer to the memory block that was allocated. The pointer is a multiple of t
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 T$\ast$ mage\+::\+Atomic\+Compare\+And\+Swap\+Pointer (\begin{DoxyParamCaption}\item[{T $\ast$$\ast$}]{v,  }\item[{T $\ast$}]{new\+\_\+value,  }\item[{T $\ast$}]{old\+\_\+value }\end{DoxyParamCaption})}
 
+\hypertarget{namespacemage_a720768843a1d752ebf061e1475fa004f}{}\label{namespacemage_a720768843a1d752ebf061e1475fa004f} 
+\index{mage@{mage}!Attach\+Console@{Attach\+Console}}
+\index{Attach\+Console@{Attach\+Console}!mage@{mage}}
+\subsubsection{\texorpdfstring{Attach\+Console()}{AttachConsole()}}
+{\footnotesize\ttfamily static bool mage\+::\+Attach\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Allocates a console to the engine for basic io and redirects stdin, stdout and stderr to the allocated console.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if a console is successfully attached. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a0f0fa32534696afa66b313ffebbf9caf}{}\label{namespacemage_a0f0fa32534696afa66b313ffebbf9caf} 
 \index{mage@{mage}!Enqueue\+Tasks@{Enqueue\+Tasks}}
 \index{Enqueue\+Tasks@{Enqueue\+Tasks}!mage@{mage}}
@@ -286,7 +301,13 @@ Returns the number of system cores (i.\+e. logical processors).
 \begin{DoxyReturn}{Returns}
 The number of system cores (i.\+e. logical processors). 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd}{}\label{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd} 
+\hypertarget{namespacemage_afb64e5bf4755b0a56a7b0d086bc5f4be}{}\label{namespacemage_afb64e5bf4755b0a56a7b0d086bc5f4be} 
+\index{mage@{mage}!Print\+Console\+Header@{Print\+Console\+Header}}
+\index{Print\+Console\+Header@{Print\+Console\+Header}!mage@{mage}}
+\subsubsection{\texorpdfstring{Print\+Console\+Header()}{PrintConsoleHeader()}}
+{\footnotesize\ttfamily static void mage\+::\+Print\+Console\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Prints the header of the engine to the console. \hypertarget{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd}{}\label{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd} 
 \index{mage@{mage}!Process\+Error@{Process\+Error}}
 \index{Process\+Error@{Process\+Error}!mage@{mage}}
 \subsubsection{\texorpdfstring{Process\+Error()}{ProcessError()}}
@@ -390,11 +411,11 @@ The engine used by the user. \hypertarget{namespacemage_a1f4290d574030d412ca0f2f
 \subsubsection{\texorpdfstring{general\+\_\+configuration}{general\_configuration}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_general_configuration}{General\+Configuration} mage\+::general\+\_\+configuration}
 
-The general configuration defined by the user and used by the engine. \hypertarget{namespacemage_a1a0bf329bff9193febe0c16632c62d1b}{}\label{namespacemage_a1a0bf329bff9193febe0c16632c62d1b} 
+The general configuration defined by the user and used by the engine. \hypertarget{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3}{}\label{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3} 
 \index{mage@{mage}!lvertex\+\_\+input\+\_\+element\+\_\+desc@{lvertex\+\_\+input\+\_\+element\+\_\+desc}}
 \index{lvertex\+\_\+input\+\_\+element\+\_\+desc@{lvertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
 \subsubsection{\texorpdfstring{lvertex\+\_\+input\+\_\+element\+\_\+desc}{lvertex\_input\_element\_desc}}
-{\footnotesize\ttfamily D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC mage\+::lvertex\+\_\+input\+\_\+element\+\_\+desc\mbox{[}$\,$\mbox{]}}
+{\footnotesize\ttfamily const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC mage\+::lvertex\+\_\+input\+\_\+element\+\_\+desc\mbox{[}$\,$\mbox{]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
@@ -437,11 +458,11 @@ The general configuration defined by the user and used by the engine. \hypertarg
 \subsubsection{\texorpdfstring{threads}{threads}}
 {\footnotesize\ttfamily H\+A\+N\+D\+LE$\ast$ mage\+::threads\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a53479d051c51213305d6ea7bcba7a5e8}{}\label{namespacemage_a53479d051c51213305d6ea7bcba7a5e8} 
+\hypertarget{namespacemage_a0f27594da3814c163fe995326acf6c5e}{}\label{namespacemage_a0f27594da3814c163fe995326acf6c5e} 
 \index{mage@{mage}!tlvertex\+\_\+input\+\_\+element\+\_\+desc@{tlvertex\+\_\+input\+\_\+element\+\_\+desc}}
 \index{tlvertex\+\_\+input\+\_\+element\+\_\+desc@{tlvertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
 \subsubsection{\texorpdfstring{tlvertex\+\_\+input\+\_\+element\+\_\+desc}{tlvertex\_input\_element\_desc}}
-{\footnotesize\ttfamily D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC mage\+::tlvertex\+\_\+input\+\_\+element\+\_\+desc\mbox{[}$\,$\mbox{]}}
+{\footnotesize\ttfamily const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC mage\+::tlvertex\+\_\+input\+\_\+element\+\_\+desc\mbox{[}$\,$\mbox{]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
@@ -454,11 +475,11 @@ The general configuration defined by the user and used by the engine. \hypertarg
       0 \}
     \}
 \end{DoxyCode}
-\hypertarget{namespacemage_af852db837cfb700d168b6786abf62723}{}\label{namespacemage_af852db837cfb700d168b6786abf62723} 
+\hypertarget{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119}{}\label{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119} 
 \index{mage@{mage}!vertex\+\_\+input\+\_\+element\+\_\+desc@{vertex\+\_\+input\+\_\+element\+\_\+desc}}
 \index{vertex\+\_\+input\+\_\+element\+\_\+desc@{vertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
 \subsubsection{\texorpdfstring{vertex\+\_\+input\+\_\+element\+\_\+desc}{vertex\_input\_element\_desc}}
-{\footnotesize\ttfamily D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC mage\+::vertex\+\_\+input\+\_\+element\+\_\+desc\mbox{[}$\,$\mbox{]}}
+{\footnotesize\ttfamily const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC mage\+::vertex\+\_\+input\+\_\+element\+\_\+desc\mbox{[}$\,$\mbox{]}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
