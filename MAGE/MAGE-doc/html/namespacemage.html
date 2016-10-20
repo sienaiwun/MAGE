@@ -153,8 +153,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3b7426a2b3c10a52791dac481c2495a3"><td class="memItemLeft" align="right" valign="top">LRESULT CALLBACK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a3b7426a2b3c10a52791dac481c2495a3">WindowProc</a> (HWND wnd, UINT msg, WPARAM wparam, LPARAM lparam)</td></tr>
-<tr class="separator:a3b7426a2b3c10a52791dac481c2495a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327147b1d76dcb41c17c23f9603d80c1"><td class="memItemLeft" align="right" valign="top">LRESULT CALLBACK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a327147b1d76dcb41c17c23f9603d80c1">WindowProc</a> (HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)</td></tr>
+<tr class="separator:a327147b1d76dcb41c17c23f9603d80c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e62d950dc620167f4128cb16033998"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ab2e62d950dc620167f4128cb16033998">FindWordEnd</a> (const char *buffer)</td></tr>
 <tr class="separator:ab2e62d950dc620167f4128cb16033998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0325f02cf9fd84c5b61ff249630fb0cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a0325f02cf9fd84c5b61ff249630fb0cd">ProcessError</a> (const char *format, va_list args, const char *error_type, int disposition)</td></tr>
@@ -799,8 +799,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a3b7426a2b3c10a52791dac481c2495a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b7426a2b3c10a52791dac481c2495a3">&sect;&nbsp;</a></span>WindowProc()</h2>
+<a id="a327147b1d76dcb41c17c23f9603d80c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327147b1d76dcb41c17c23f9603d80c1">&sect;&nbsp;</a></span>WindowProc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -809,7 +809,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">LRESULT CALLBACK mage::WindowProc </td>
           <td>(</td>
           <td class="paramtype">HWND&#160;</td>
-          <td class="paramname"><em>wnd</em>, </td>
+          <td class="paramname"><em>hwnd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -836,6 +836,17 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The application-defined function that processes messages sent to the engine window. The WindowProc type defines a pointer to this callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hwnd</td><td>A handle to the window. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>The message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wparam</td><td>Additional message information. The contents of this parameter depend on the value of <em>msg</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lparam</td><td>Additional message information. The contents of this parameter depend on the value of <em>msg</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The return value is the result of the message processing and depends on the message sent. </dd></dl>
 
 </div>
 </div>

@@ -65,7 +65,7 @@ enum \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{Read\+Write\+Mu
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a3b7426a2b3c10a52791dac481c2495a3}{Window\+Proc} (H\+W\+ND wnd, U\+I\+NT msg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a327147b1d76dcb41c17c23f9603d80c1}{Window\+Proc} (H\+W\+ND hwnd, U\+I\+NT msg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
 \item 
 const char $\ast$ \hyperlink{namespacemage_ab2e62d950dc620167f4128cb16033998}{Find\+Word\+End} (const char $\ast$buffer)
 \item 
@@ -353,12 +353,28 @@ Notifies a warning message.
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_a3b7426a2b3c10a52791dac481c2495a3}{}\label{namespacemage_a3b7426a2b3c10a52791dac481c2495a3} 
+\hypertarget{namespacemage_a327147b1d76dcb41c17c23f9603d80c1}{}\label{namespacemage_a327147b1d76dcb41c17c23f9603d80c1} 
 \index{mage@{mage}!Window\+Proc@{Window\+Proc}}
 \index{Window\+Proc@{Window\+Proc}!mage@{mage}}
 \subsubsection{\texorpdfstring{Window\+Proc()}{WindowProc()}}
-{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK mage\+::\+Window\+Proc (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{wnd,  }\item[{U\+I\+NT}]{msg,  }\item[{W\+P\+A\+R\+AM}]{wparam,  }\item[{L\+P\+A\+R\+AM}]{lparam }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK mage\+::\+Window\+Proc (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwnd,  }\item[{U\+I\+NT}]{msg,  }\item[{W\+P\+A\+R\+AM}]{wparam,  }\item[{L\+P\+A\+R\+AM}]{lparam }\end{DoxyParamCaption})}
 
+The application-\/defined function that processes messages sent to the engine window. The Window\+Proc type defines a pointer to this callback function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hwnd} & A handle to the window. \\
+\hline
+\mbox{\tt in}  & {\em msg} & The message. \\
+\hline
+\mbox{\tt in}  & {\em wparam} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
+\hline
+\mbox{\tt in}  & {\em lparam} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value is the result of the message processing and depends on the message sent. 
+\end{DoxyReturn}
 
 
 \subsection{Variable Documentation}
