@@ -73,7 +73,7 @@ static void \hyperlink{namespacemage_afb64e5bf4755b0a56a7b0d086bc5f4be}{Print\+C
 \item 
 const char $\ast$ \hyperlink{namespacemage_ab2e62d950dc620167f4128cb16033998}{Find\+Word\+End} (const char $\ast$buffer)
 \item 
-static void \hyperlink{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd}{Process\+Error} (const char $\ast$format, va\+\_\+list args, const char $\ast$error\+\_\+type, int disposition)
+void \hyperlink{namespacemage_a958c4a88b6cd58f950e1c9b9e46f6906}{Process\+Error} (const char $\ast$format, const va\+\_\+list args, const string \&error\+\_\+type, int error\+\_\+disposition)
 \item 
 void \hyperlink{namespacemage_add6aa5f13960ce07b20f48d273956a91}{Info} (const char $\ast$format,...)
 \item 
@@ -91,17 +91,17 @@ void $\ast$ \hyperlink{namespacemage_a7d706913bb9fb322c938cd3e4d8eaede}{Alloc\+A
 \item 
 void \hyperlink{namespacemage_a401c54df21447c491c527735647b5f80}{Free\+Aligned} (void $\ast$ptr)
 \item 
-int32\+\_\+t \hyperlink{namespacemage_a56e179559b923b1997495c1bc8e3778e}{Atomic\+Add} (Atomic\+Int32 $\ast$v, int32\+\_\+t delta)
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_aed89242e67231f3ddef77bdc63b32b6c}{Atomic\+Compare\+And\+Swap\+Pointer} (T $\ast$$\ast$destination, T $\ast$exchange, T $\ast$comparand)
 \item 
-int32\+\_\+t \hyperlink{namespacemage_a299b0e2de7b6225ad86eab118bca4627}{Atomic\+Compare\+And\+Swap} (Atomic\+Int32 $\ast$v, int32\+\_\+t new\+\_\+value, int32\+\_\+t old\+\_\+value)
+int32\+\_\+t \hyperlink{namespacemage_ad397e742fa7e3532686fd46bb50e8166}{Atomic\+Add} (Atomic\+Int32 $\ast$addend, int32\+\_\+t value)
 \item 
-{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_a1a36a24cbbc8aea1abb809a10bfdf4d1}{Atomic\+Compare\+And\+Swap\+Pointer} (T $\ast$$\ast$v, T $\ast$new\+\_\+value, T $\ast$old\+\_\+value)
+int32\+\_\+t \hyperlink{namespacemage_a03da57cfa5ba14d4aa0472ae49ec5c7e}{Atomic\+Compare\+And\+Swap} (Atomic\+Int32 $\ast$destination, int32\+\_\+t exchange, int32\+\_\+t comparand)
 \item 
-float \hyperlink{namespacemage_a7c863b965835307770946964a76098ce}{Atomic\+Add} (volatile float $\ast$v, float delta)
+float \hyperlink{namespacemage_a0de5ff6241a0474f4572c7c3ba342098}{Atomic\+Add} (volatile float $\ast$addend, float value)
 \item 
 int \hyperlink{namespacemage_ab972a47121b68775bf2545b826a1d5be}{Number\+Of\+System\+Cores} ()
 \item 
-static D\+W\+O\+RD W\+I\+N\+A\+PI \hyperlink{namespacemage_a9c89df2a328f65db59728cbea3fd1720}{task\+\_\+entry} (L\+P\+V\+O\+ID)
+static D\+W\+O\+RD W\+I\+N\+A\+PI \hyperlink{namespacemage_a1f113843a26e671776ec469adf7ccc51}{task\+\_\+entry} (L\+P\+V\+O\+ID lp\+Parameter)
 \item 
 void \hyperlink{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac}{Tasks\+Init} ()
 \item 
@@ -128,7 +128,7 @@ static H\+A\+N\+D\+LE $\ast$ \hyperlink{namespacemage_a15e9f7d36194ec1b768a82a22
 \item 
 static \hyperlink{classmage_1_1_mutex}{Mutex} $\ast$ \hyperlink{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f}{task\+\_\+queue\+\_\+mutex} = \hyperlink{classmage_1_1_mutex_a48d784fa6bffd4088d9f89a2a9cca84e}{Mutex\+::\+Create}()
 \item 
-static std\+::vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ \hyperlink{namespacemage_adc0172060af06a43cdcc54a5bb2b046c}{task\+\_\+queue}
+static vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ \hyperlink{namespacemage_af4824558d428695e4661c5e7cdfa4419}{task\+\_\+queue}
 \item 
 static \hyperlink{classmage_1_1_semaphore}{Semaphore} $\ast$ \hyperlink{namespacemage_a17c3448f9fba7521d188d30bdfb77e33}{worker\+\_\+semaphore}
 \item 
@@ -203,31 +203,83 @@ Allocates memory on an alignment boundary of 64 bytes.
 
 A pointer to the memory block that was allocated. The pointer is a multiple of the alignment of 64 bytes. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a56e179559b923b1997495c1bc8e3778e}{}\label{namespacemage_a56e179559b923b1997495c1bc8e3778e} 
+\hypertarget{namespacemage_ad397e742fa7e3532686fd46bb50e8166}{}\label{namespacemage_ad397e742fa7e3532686fd46bb50e8166} 
 \index{mage@{mage}!Atomic\+Add@{Atomic\+Add}}
 \index{Atomic\+Add@{Atomic\+Add}!mage@{mage}}
 \subsubsection{\texorpdfstring{Atomic\+Add()}{AtomicAdd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int32\+\_\+t mage\+::\+Atomic\+Add (\begin{DoxyParamCaption}\item[{Atomic\+Int32 $\ast$}]{v,  }\item[{int32\+\_\+t}]{delta }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int32\+\_\+t mage\+::\+Atomic\+Add (\begin{DoxyParamCaption}\item[{Atomic\+Int32 $\ast$}]{addend,  }\item[{int32\+\_\+t}]{value }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a7c863b965835307770946964a76098ce}{}\label{namespacemage_a7c863b965835307770946964a76098ce} 
+Performs an atomic addition operation on the specified values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em addend} & A pointer to the first operand. This value will be replaced with the result of the operation. \\
+\hline
+\mbox{\tt in}  & {\em value} & The second operand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns the result of the operation. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a0de5ff6241a0474f4572c7c3ba342098}{}\label{namespacemage_a0de5ff6241a0474f4572c7c3ba342098} 
 \index{mage@{mage}!Atomic\+Add@{Atomic\+Add}}
 \index{Atomic\+Add@{Atomic\+Add}!mage@{mage}}
 \subsubsection{\texorpdfstring{Atomic\+Add()}{AtomicAdd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily float mage\+::\+Atomic\+Add (\begin{DoxyParamCaption}\item[{volatile float $\ast$}]{v,  }\item[{float}]{delta }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float mage\+::\+Atomic\+Add (\begin{DoxyParamCaption}\item[{volatile float $\ast$}]{addend,  }\item[{float}]{value }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a299b0e2de7b6225ad86eab118bca4627}{}\label{namespacemage_a299b0e2de7b6225ad86eab118bca4627} 
+Performs an atomic addition operation on the specified values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em addend} & A pointer to the first operand. This value will be replaced with the result of the operation. \\
+\hline
+\mbox{\tt in}  & {\em value} & The second operand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns the result of the operation. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a03da57cfa5ba14d4aa0472ae49ec5c7e}{}\label{namespacemage_a03da57cfa5ba14d4aa0472ae49ec5c7e} 
 \index{mage@{mage}!Atomic\+Compare\+And\+Swap@{Atomic\+Compare\+And\+Swap}}
 \index{Atomic\+Compare\+And\+Swap@{Atomic\+Compare\+And\+Swap}!mage@{mage}}
 \subsubsection{\texorpdfstring{Atomic\+Compare\+And\+Swap()}{AtomicCompareAndSwap()}}
-{\footnotesize\ttfamily int32\+\_\+t mage\+::\+Atomic\+Compare\+And\+Swap (\begin{DoxyParamCaption}\item[{Atomic\+Int32 $\ast$}]{v,  }\item[{int32\+\_\+t}]{new\+\_\+value,  }\item[{int32\+\_\+t}]{old\+\_\+value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int32\+\_\+t mage\+::\+Atomic\+Compare\+And\+Swap (\begin{DoxyParamCaption}\item[{Atomic\+Int32 $\ast$}]{destination,  }\item[{int32\+\_\+t}]{exchange,  }\item[{int32\+\_\+t}]{comparand }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a1a36a24cbbc8aea1abb809a10bfdf4d1}{}\label{namespacemage_a1a36a24cbbc8aea1abb809a10bfdf4d1} 
+Performs an atomic compare-\/and-\/exchange operation on the specified values. The function compares the original value against a given comparand value and exchanges the original value with a given exchange value in case of equality.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em destination} & \\
+\hline
+\mbox{\tt in}  & {\em exchange} & The exchange value. \\
+\hline
+\mbox{\tt in}  & {\em comparand} & The value to compare to {\itshape destination}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns the initial value of {\itshape destination}. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aed89242e67231f3ddef77bdc63b32b6c}{}\label{namespacemage_aed89242e67231f3ddef77bdc63b32b6c} 
 \index{mage@{mage}!Atomic\+Compare\+And\+Swap\+Pointer@{Atomic\+Compare\+And\+Swap\+Pointer}}
 \index{Atomic\+Compare\+And\+Swap\+Pointer@{Atomic\+Compare\+And\+Swap\+Pointer}!mage@{mage}}
 \subsubsection{\texorpdfstring{Atomic\+Compare\+And\+Swap\+Pointer()}{AtomicCompareAndSwapPointer()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-T$\ast$ mage\+::\+Atomic\+Compare\+And\+Swap\+Pointer (\begin{DoxyParamCaption}\item[{T $\ast$$\ast$}]{v,  }\item[{T $\ast$}]{new\+\_\+value,  }\item[{T $\ast$}]{old\+\_\+value }\end{DoxyParamCaption})}
+T$\ast$ mage\+::\+Atomic\+Compare\+And\+Swap\+Pointer (\begin{DoxyParamCaption}\item[{T $\ast$$\ast$}]{destination,  }\item[{T $\ast$}]{exchange,  }\item[{T $\ast$}]{comparand }\end{DoxyParamCaption})}
 
+Performs an atomic compare-\/and-\/exchange operation on the specified pointers. The function compares the original pointer against a given comparand pointer and exchanges the original pointer with a given exchange pointer in case of equality.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em destination} & \\
+\hline
+\mbox{\tt in}  & {\em exchange} & The exchange pointer. \\
+\hline
+\mbox{\tt in}  & {\em comparand} & The pointer to compare to {\itshape destination}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns the initial pointer of {\itshape destination}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a720768843a1d752ebf061e1475fa004f}{}\label{namespacemage_a720768843a1d752ebf061e1475fa004f} 
 \index{mage@{mage}!Attach\+Console@{Attach\+Console}}
 \index{Attach\+Console@{Attach\+Console}!mage@{mage}}
@@ -243,8 +295,15 @@ Allocates a console to the engine for basic io and redirects stdin, stdout and s
 \index{mage@{mage}!Enqueue\+Tasks@{Enqueue\+Tasks}}
 \index{Enqueue\+Tasks@{Enqueue\+Tasks}!mage@{mage}}
 \subsubsection{\texorpdfstring{Enqueue\+Tasks()}{EnqueueTasks()}}
-{\footnotesize\ttfamily void mage\+::\+Enqueue\+Tasks (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$$>$ \&}]{tasks }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Enqueue\+Tasks (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ \&}]{tasks }\end{DoxyParamCaption})}
 
+Enqueues the given tasks.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tasks} & The tasks. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a52a7fe8c9ce39afd9e0b0299373db0fa}{}\label{namespacemage_a52a7fe8c9ce39afd9e0b0299373db0fa} 
 \index{mage@{mage}!Error@{Error}}
 \index{Error@{Error}!mage@{mage}}
@@ -264,6 +323,16 @@ Notifies an error message.
 \subsubsection{\texorpdfstring{Find\+Word\+End()}{FindWordEnd()}}
 {\footnotesize\ttfamily const char$\ast$ mage\+::\+Find\+Word\+End (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buffer }\end{DoxyParamCaption})}
 
+Finds the end of a word.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & Pointer to the first character. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the end of the word. This means the pointer points to a space or null-\/terminating character. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a401c54df21447c491c527735647b5f80}{}\label{namespacemage_a401c54df21447c491c527735647b5f80} 
 \index{mage@{mage}!Free\+Aligned@{Free\+Aligned}}
 \index{Free\+Aligned@{Free\+Aligned}!mage@{mage}}
@@ -307,12 +376,25 @@ The number of system cores (i.\+e. logical processors).
 \subsubsection{\texorpdfstring{Print\+Console\+Header()}{PrintConsoleHeader()}}
 {\footnotesize\ttfamily static void mage\+::\+Print\+Console\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Prints the header of the engine to the console. \hypertarget{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd}{}\label{namespacemage_a0325f02cf9fd84c5b61ff249630fb0cd} 
+Prints the header of the engine to the console. \hypertarget{namespacemage_a958c4a88b6cd58f950e1c9b9e46f6906}{}\label{namespacemage_a958c4a88b6cd58f950e1c9b9e46f6906} 
 \index{mage@{mage}!Process\+Error@{Process\+Error}}
 \index{Process\+Error@{Process\+Error}!mage@{mage}}
 \subsubsection{\texorpdfstring{Process\+Error()}{ProcessError()}}
-{\footnotesize\ttfamily static void mage\+::\+Process\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{va\+\_\+list}]{args,  }\item[{const char $\ast$}]{error\+\_\+type,  }\item[{int}]{disposition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void mage\+::\+Process\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{const va\+\_\+list}]{args,  }\item[{const string \&}]{error\+\_\+type,  }\item[{int}]{error\+\_\+disposition }\end{DoxyParamCaption})}
 
+Process the given error.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & The format of the error string. \\
+\hline
+\mbox{\tt in}  & {\em args} & The arguments of the format string. \\
+\hline
+\mbox{\tt in}  & {\em error\+\_\+type} & The type of the error. \\
+\hline
+\mbox{\tt in}  & {\em error\+\_\+disposition} & Disposition of the error. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4}{}\label{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4} 
 \index{mage@{mage}!Severe@{Severe}}
 \index{Severe@{Severe}!mage@{mage}}
@@ -326,25 +408,35 @@ Notifies a severe message.
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_a9c89df2a328f65db59728cbea3fd1720}{}\label{namespacemage_a9c89df2a328f65db59728cbea3fd1720} 
+\hypertarget{namespacemage_a1f113843a26e671776ec469adf7ccc51}{}\label{namespacemage_a1f113843a26e671776ec469adf7ccc51} 
 \index{mage@{mage}!task\+\_\+entry@{task\+\_\+entry}}
 \index{task\+\_\+entry@{task\+\_\+entry}!mage@{mage}}
 \subsubsection{\texorpdfstring{task\+\_\+entry()}{task\_entry()}}
-{\footnotesize\ttfamily static D\+W\+O\+RD W\+I\+N\+A\+PI mage\+::task\+\_\+entry (\begin{DoxyParamCaption}\item[{L\+P\+V\+O\+ID}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static D\+W\+O\+RD W\+I\+N\+A\+PI mage\+::task\+\_\+entry (\begin{DoxyParamCaption}\item[{L\+P\+V\+O\+ID}]{lp\+Parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+An application-\/defined function that serves as the starting address for a thread.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lp\+Parameter} & The thread data passed to the function using the {\ttfamily lp\+Parameter} parameter of Create\+Thread. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value indicating success or failure. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a118ddaa5d9606328a0af412c85832e6b}{}\label{namespacemage_a118ddaa5d9606328a0af412c85832e6b} 
 \index{mage@{mage}!Tasks\+Cleanup@{Tasks\+Cleanup}}
 \index{Tasks\+Cleanup@{Tasks\+Cleanup}!mage@{mage}}
 \subsubsection{\texorpdfstring{Tasks\+Cleanup()}{TasksCleanup()}}
 {\footnotesize\ttfamily void mage\+::\+Tasks\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac}{}\label{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac} 
+Clean the tasks. \hypertarget{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac}{}\label{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac} 
 \index{mage@{mage}!Tasks\+Init@{Tasks\+Init}}
 \index{Tasks\+Init@{Tasks\+Init}!mage@{mage}}
 \subsubsection{\texorpdfstring{Tasks\+Init()}{TasksInit()}}
 {\footnotesize\ttfamily void mage\+::\+Tasks\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{}\label{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc} 
+Initialize the tasks. \hypertarget{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{}\label{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc} 
 \index{mage@{mage}!Terminal\+Width@{Terminal\+Width}}
 \index{Terminal\+Width@{Terminal\+Width}!mage@{mage}}
 \subsubsection{\texorpdfstring{Terminal\+Width()}{TerminalWidth()}}
@@ -361,7 +453,7 @@ The fixed terminal width.
 \subsubsection{\texorpdfstring{Wait\+For\+All\+Tasks()}{WaitForAllTasks()}}
 {\footnotesize\ttfamily void mage\+::\+Wait\+For\+All\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5}{}\label{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5} 
+Waits for all the tasks to finish. \hypertarget{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5}{}\label{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5} 
 \index{mage@{mage}!Warning@{Warning}}
 \index{Warning@{Warning}!mage@{mage}}
 \subsubsection{\texorpdfstring{Warning()}{Warning()}}
@@ -434,31 +526,31 @@ The general configuration defined by the user and used by the engine. \hypertarg
 \subsubsection{\texorpdfstring{nb\+\_\+unfinished\+\_\+tasks}{nb\_unfinished\_tasks}}
 {\footnotesize\ttfamily uint32\+\_\+t mage\+::nb\+\_\+unfinished\+\_\+tasks\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_adc0172060af06a43cdcc54a5bb2b046c}{}\label{namespacemage_adc0172060af06a43cdcc54a5bb2b046c} 
+The number of unfinished tasks. \hypertarget{namespacemage_af4824558d428695e4661c5e7cdfa4419}{}\label{namespacemage_af4824558d428695e4661c5e7cdfa4419} 
 \index{mage@{mage}!task\+\_\+queue@{task\+\_\+queue}}
 \index{task\+\_\+queue@{task\+\_\+queue}!mage@{mage}}
 \subsubsection{\texorpdfstring{task\+\_\+queue}{task\_queue}}
-{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classmage_1_1_task}{Task} $\ast$$>$ mage\+::task\+\_\+queue\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classmage_1_1_task}{Task} $\ast$$>$ mage\+::task\+\_\+queue\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f}{}\label{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f} 
+The task queue. \hypertarget{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f}{}\label{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f} 
 \index{mage@{mage}!task\+\_\+queue\+\_\+mutex@{task\+\_\+queue\+\_\+mutex}}
 \index{task\+\_\+queue\+\_\+mutex@{task\+\_\+queue\+\_\+mutex}!mage@{mage}}
 \subsubsection{\texorpdfstring{task\+\_\+queue\+\_\+mutex}{task\_queue\_mutex}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_mutex}{Mutex}$\ast$ mage\+::task\+\_\+queue\+\_\+mutex = \hyperlink{classmage_1_1_mutex_a48d784fa6bffd4088d9f89a2a9cca84e}{Mutex\+::\+Create}()\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a8c04b4285ebbc0fb416b1905c01cf149}{}\label{namespacemage_a8c04b4285ebbc0fb416b1905c01cf149} 
+The mutex for exclusive access to the task queue. \hypertarget{namespacemage_a8c04b4285ebbc0fb416b1905c01cf149}{}\label{namespacemage_a8c04b4285ebbc0fb416b1905c01cf149} 
 \index{mage@{mage}!tasks\+\_\+running\+\_\+condition@{tasks\+\_\+running\+\_\+condition}}
 \index{tasks\+\_\+running\+\_\+condition@{tasks\+\_\+running\+\_\+condition}!mage@{mage}}
 \subsubsection{\texorpdfstring{tasks\+\_\+running\+\_\+condition}{tasks\_running\_condition}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable}$\ast$ mage\+::tasks\+\_\+running\+\_\+condition\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c}{}\label{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c} 
+The running condition variable for exclusive access to the number of number of unfinished tasks and for signaling on updates. \hypertarget{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c}{}\label{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c} 
 \index{mage@{mage}!threads@{threads}}
 \index{threads@{threads}!mage@{mage}}
 \subsubsection{\texorpdfstring{threads}{threads}}
 {\footnotesize\ttfamily H\+A\+N\+D\+LE$\ast$ mage\+::threads\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a0f27594da3814c163fe995326acf6c5e}{}\label{namespacemage_a0f27594da3814c163fe995326acf6c5e} 
+The thread handles. \hypertarget{namespacemage_a0f27594da3814c163fe995326acf6c5e}{}\label{namespacemage_a0f27594da3814c163fe995326acf6c5e} 
 \index{mage@{mage}!tlvertex\+\_\+input\+\_\+element\+\_\+desc@{tlvertex\+\_\+input\+\_\+element\+\_\+desc}}
 \index{tlvertex\+\_\+input\+\_\+element\+\_\+desc@{tlvertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
 \subsubsection{\texorpdfstring{tlvertex\+\_\+input\+\_\+element\+\_\+desc}{tlvertex\_input\_element\_desc}}
@@ -498,3 +590,4 @@ The general configuration defined by the user and used by the engine. \hypertarg
 \subsubsection{\texorpdfstring{worker\+\_\+semaphore}{worker\_semaphore}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_semaphore}{Semaphore}$\ast$ mage\+::worker\+\_\+semaphore\hspace{0.3cm}{\ttfamily [static]}}
 
+The worker semaphore for being able to work. 

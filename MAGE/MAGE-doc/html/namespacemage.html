@@ -161,8 +161,8 @@ Functions</h2></td></tr>
 <tr class="separator:afb64e5bf4755b0a56a7b0d086bc5f4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e62d950dc620167f4128cb16033998"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ab2e62d950dc620167f4128cb16033998">FindWordEnd</a> (const char *buffer)</td></tr>
 <tr class="separator:ab2e62d950dc620167f4128cb16033998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0325f02cf9fd84c5b61ff249630fb0cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a0325f02cf9fd84c5b61ff249630fb0cd">ProcessError</a> (const char *format, va_list args, const char *error_type, int disposition)</td></tr>
-<tr class="separator:a0325f02cf9fd84c5b61ff249630fb0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958c4a88b6cd58f950e1c9b9e46f6906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a958c4a88b6cd58f950e1c9b9e46f6906">ProcessError</a> (const char *format, const va_list args, const string &amp;error_type, int error_disposition)</td></tr>
+<tr class="separator:a958c4a88b6cd58f950e1c9b9e46f6906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add6aa5f13960ce07b20f48d273956a91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#add6aa5f13960ce07b20f48d273956a91">Info</a> (const char *format,...)</td></tr>
 <tr class="separator:add6aa5f13960ce07b20f48d273956a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eccd8065c75d5f2bf86b48a5be3bfe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a0eccd8065c75d5f2bf86b48a5be3bfe5">Warning</a> (const char *format,...)</td></tr>
@@ -180,19 +180,19 @@ Functions</h2></td></tr>
 <tr class="separator:ae2f31ba64620694aa0dfc8ca6e5d5941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a401c54df21447c491c527735647b5f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a401c54df21447c491c527735647b5f80">FreeAligned</a> (void *ptr)</td></tr>
 <tr class="separator:a401c54df21447c491c527735647b5f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e179559b923b1997495c1bc8e3778e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a56e179559b923b1997495c1bc8e3778e">AtomicAdd</a> (AtomicInt32 *v, int32_t delta)</td></tr>
-<tr class="separator:a56e179559b923b1997495c1bc8e3778e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a299b0e2de7b6225ad86eab118bca4627"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a299b0e2de7b6225ad86eab118bca4627">AtomicCompareAndSwap</a> (AtomicInt32 *v, int32_t new_value, int32_t old_value)</td></tr>
-<tr class="separator:a299b0e2de7b6225ad86eab118bca4627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a36a24cbbc8aea1abb809a10bfdf4d1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1a36a24cbbc8aea1abb809a10bfdf4d1"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemage.html#a1a36a24cbbc8aea1abb809a10bfdf4d1">AtomicCompareAndSwapPointer</a> (T **v, T *new_value, T *old_value)</td></tr>
-<tr class="separator:a1a36a24cbbc8aea1abb809a10bfdf4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c863b965835307770946964a76098ce"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a7c863b965835307770946964a76098ce">AtomicAdd</a> (volatile float *v, float delta)</td></tr>
-<tr class="separator:a7c863b965835307770946964a76098ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed89242e67231f3ddef77bdc63b32b6c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aed89242e67231f3ddef77bdc63b32b6c"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemage.html#aed89242e67231f3ddef77bdc63b32b6c">AtomicCompareAndSwapPointer</a> (T **destination, T *exchange, T *comparand)</td></tr>
+<tr class="separator:aed89242e67231f3ddef77bdc63b32b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad397e742fa7e3532686fd46bb50e8166"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ad397e742fa7e3532686fd46bb50e8166">AtomicAdd</a> (AtomicInt32 *addend, int32_t value)</td></tr>
+<tr class="separator:ad397e742fa7e3532686fd46bb50e8166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03da57cfa5ba14d4aa0472ae49ec5c7e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a03da57cfa5ba14d4aa0472ae49ec5c7e">AtomicCompareAndSwap</a> (AtomicInt32 *destination, int32_t exchange, int32_t comparand)</td></tr>
+<tr class="separator:a03da57cfa5ba14d4aa0472ae49ec5c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de5ff6241a0474f4572c7c3ba342098"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a0de5ff6241a0474f4572c7c3ba342098">AtomicAdd</a> (volatile float *addend, float value)</td></tr>
+<tr class="separator:a0de5ff6241a0474f4572c7c3ba342098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab972a47121b68775bf2545b826a1d5be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#ab972a47121b68775bf2545b826a1d5be">NumberOfSystemCores</a> ()</td></tr>
 <tr class="separator:ab972a47121b68775bf2545b826a1d5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c89df2a328f65db59728cbea3fd1720"><td class="memItemLeft" align="right" valign="top">static DWORD WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a9c89df2a328f65db59728cbea3fd1720">task_entry</a> (LPVOID)</td></tr>
-<tr class="separator:a9c89df2a328f65db59728cbea3fd1720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f113843a26e671776ec469adf7ccc51"><td class="memItemLeft" align="right" valign="top">static DWORD WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a1f113843a26e671776ec469adf7ccc51">task_entry</a> (LPVOID lpParameter)</td></tr>
+<tr class="separator:a1f113843a26e671776ec469adf7ccc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8252f7acebefd3efe34a15cc51e4a7ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a8252f7acebefd3efe34a15cc51e4a7ac">TasksInit</a> ()</td></tr>
 <tr class="separator:a8252f7acebefd3efe34a15cc51e4a7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a118ddaa5d9606328a0af412c85832e6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a118ddaa5d9606328a0af412c85832e6b">TasksCleanup</a> ()</td></tr>
@@ -218,8 +218,8 @@ Variables</h2></td></tr>
 <tr class="separator:a15e9f7d36194ec1b768a82a2294cce6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de4544ddddcf8e0d54dbfdc0778f13f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmage_1_1_mutex.html">Mutex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a7de4544ddddcf8e0d54dbfdc0778f13f">task_queue_mutex</a> = <a class="el" href="classmage_1_1_mutex.html#a48d784fa6bffd4088d9f89a2a9cca84e">Mutex::Create</a>()</td></tr>
 <tr class="separator:a7de4544ddddcf8e0d54dbfdc0778f13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc0172060af06a43cdcc54a5bb2b046c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classmage_1_1_task.html">Task</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#adc0172060af06a43cdcc54a5bb2b046c">task_queue</a></td></tr>
-<tr class="separator:adc0172060af06a43cdcc54a5bb2b046c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4824558d428695e4661c5e7cdfa4419"><td class="memItemLeft" align="right" valign="top">static vector&lt; <a class="el" href="classmage_1_1_task.html">Task</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#af4824558d428695e4661c5e7cdfa4419">task_queue</a></td></tr>
+<tr class="separator:af4824558d428695e4661c5e7cdfa4419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17c3448f9fba7521d188d30bdfb77e33"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmage_1_1_semaphore.html">Semaphore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a17c3448f9fba7521d188d30bdfb77e33">worker_semaphore</a></td></tr>
 <tr class="separator:a17c3448f9fba7521d188d30bdfb77e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a390e8652d67667609daf3aa64e3c00a8"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemage.html#a390e8652d67667609daf3aa64e3c00a8">nb_unfinished_tasks</a></td></tr>
@@ -313,8 +313,8 @@ A pointer to the memory block that was allocated. The pointer is a multiple of t
 
 </div>
 </div>
-<a id="a56e179559b923b1997495c1bc8e3778e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56e179559b923b1997495c1bc8e3778e">&sect;&nbsp;</a></span>AtomicAdd() <span class="overload">[1/2]</span></h2>
+<a id="ad397e742fa7e3532686fd46bb50e8166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad397e742fa7e3532686fd46bb50e8166">&sect;&nbsp;</a></span>AtomicAdd() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,13 +323,13 @@ A pointer to the memory block that was allocated. The pointer is a multiple of t
           <td class="memname">int32_t mage::AtomicAdd </td>
           <td>(</td>
           <td class="paramtype">AtomicInt32 *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
+          <td class="paramname"><em>addend</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>delta</em>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -338,11 +338,20 @@ A pointer to the memory block that was allocated. The pointer is a multiple of t
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Performs an atomic addition operation on the specified values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">addend</td><td>A pointer to the first operand. This value will be replaced with the result of the operation. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The second operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The function returns the result of the operation. </dd></dl>
 
 </div>
 </div>
-<a id="a7c863b965835307770946964a76098ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c863b965835307770946964a76098ce">&sect;&nbsp;</a></span>AtomicAdd() <span class="overload">[2/2]</span></h2>
+<a id="a0de5ff6241a0474f4572c7c3ba342098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de5ff6241a0474f4572c7c3ba342098">&sect;&nbsp;</a></span>AtomicAdd() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,13 +360,13 @@ A pointer to the memory block that was allocated. The pointer is a multiple of t
           <td class="memname">float mage::AtomicAdd </td>
           <td>(</td>
           <td class="paramtype">volatile float *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
+          <td class="paramname"><em>addend</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>delta</em>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -366,11 +375,20 @@ A pointer to the memory block that was allocated. The pointer is a multiple of t
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Performs an atomic addition operation on the specified values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">addend</td><td>A pointer to the first operand. This value will be replaced with the result of the operation. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The second operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The function returns the result of the operation. </dd></dl>
 
 </div>
 </div>
-<a id="a299b0e2de7b6225ad86eab118bca4627"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a299b0e2de7b6225ad86eab118bca4627">&sect;&nbsp;</a></span>AtomicCompareAndSwap()</h2>
+<a id="a03da57cfa5ba14d4aa0472ae49ec5c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03da57cfa5ba14d4aa0472ae49ec5c7e">&sect;&nbsp;</a></span>AtomicCompareAndSwap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,19 +397,19 @@ A pointer to the memory block that was allocated. The pointer is a multiple of t
           <td class="memname">int32_t mage::AtomicCompareAndSwap </td>
           <td>(</td>
           <td class="paramtype">AtomicInt32 *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
+          <td class="paramname"><em>destination</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>new_value</em>, </td>
+          <td class="paramname"><em>exchange</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>old_value</em>&#160;</td>
+          <td class="paramname"><em>comparand</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -400,11 +418,21 @@ A pointer to the memory block that was allocated. The pointer is a multiple of t
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Performs an atomic compare-and-exchange operation on the specified values. The function compares the original value against a given comparand value and exchanges the original value with a given exchange value in case of equality.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">destination</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exchange</td><td>The exchange value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comparand</td><td>The value to compare to <em>destination</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The function returns the initial value of <em>destination</em>. </dd></dl>
 
 </div>
 </div>
-<a id="a1a36a24cbbc8aea1abb809a10bfdf4d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a36a24cbbc8aea1abb809a10bfdf4d1">&sect;&nbsp;</a></span>AtomicCompareAndSwapPointer()</h2>
+<a id="aed89242e67231f3ddef77bdc63b32b6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed89242e67231f3ddef77bdc63b32b6c">&sect;&nbsp;</a></span>AtomicCompareAndSwapPointer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,19 +443,19 @@ template&lt;typename T &gt; </div>
           <td class="memname">T* mage::AtomicCompareAndSwapPointer </td>
           <td>(</td>
           <td class="paramtype">T **&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
+          <td class="paramname"><em>destination</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>new_value</em>, </td>
+          <td class="paramname"><em>exchange</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>old_value</em>&#160;</td>
+          <td class="paramname"><em>comparand</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -436,6 +464,16 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Performs an atomic compare-and-exchange operation on the specified pointers. The function compares the original pointer against a given comparand pointer and exchanges the original pointer with a given exchange pointer in case of equality.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">destination</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exchange</td><td>The exchange pointer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comparand</td><td>The pointer to compare to <em>destination</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The function returns the initial pointer of <em>destination</em>. </dd></dl>
 
 </div>
 </div>
@@ -475,12 +513,19 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void mage::EnqueueTasks </td>
           <td>(</td>
-          <td class="paramtype">const vector&lt; <a class="el" href="classmage_1_1_task.html">Task</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="classmage_1_1_task.html">Task</a> * &gt; &amp;&#160;</td>
           <td class="paramname"><em>tasks</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Enqueues the given tasks.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tasks</td><td>The tasks. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -534,6 +579,14 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Finds the end of a word.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>Pointer to the first character. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the end of the word. This means the pointer points to a space or null-terminating character. </dd></dl>
 
 </div>
 </div>
@@ -642,17 +695,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0325f02cf9fd84c5b61ff249630fb0cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0325f02cf9fd84c5b61ff249630fb0cd">&sect;&nbsp;</a></span>ProcessError()</h2>
+<a id="a958c4a88b6cd58f950e1c9b9e46f6906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a958c4a88b6cd58f950e1c9b9e46f6906">&sect;&nbsp;</a></span>ProcessError()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void mage::ProcessError </td>
+          <td class="memname">void mage::ProcessError </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>format</em>, </td>
@@ -660,20 +710,20 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">va_list&#160;</td>
+          <td class="paramtype">const va_list&#160;</td>
           <td class="paramname"><em>args</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>error_type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>disposition</em>&#160;</td>
+          <td class="paramname"><em>error_disposition</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -681,12 +731,17 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<p>Process the given error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The format of the error string. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>The arguments of the format string. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error_type</td><td>The type of the error. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error_disposition</td><td>Disposition of the error. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -725,8 +780,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a9c89df2a328f65db59728cbea3fd1720"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c89df2a328f65db59728cbea3fd1720">&sect;&nbsp;</a></span>task_entry()</h2>
+<a id="a1f113843a26e671776ec469adf7ccc51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f113843a26e671776ec469adf7ccc51">&sect;&nbsp;</a></span>task_entry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -738,7 +793,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">static DWORD WINAPI mage::task_entry </td>
           <td>(</td>
           <td class="paramtype">LPVOID&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>lpParameter</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -748,6 +803,14 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>An application-defined function that serves as the starting address for a thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpParameter</td><td>The thread data passed to the function using the <code>lpParameter</code> parameter of CreateThread. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A value indicating success or failure. </dd></dl>
 
 </div>
 </div>
@@ -765,6 +828,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Clean the tasks. </p>
 
 </div>
 </div>
@@ -782,6 +846,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Initialize the tasks. </p>
 
 </div>
 </div>
@@ -818,6 +883,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Waits for all the tasks to finish. </p>
 
 </div>
 </div>
@@ -971,11 +1037,12 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The number of unfinished tasks. </p>
 
 </div>
 </div>
-<a id="adc0172060af06a43cdcc54a5bb2b046c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc0172060af06a43cdcc54a5bb2b046c">&sect;&nbsp;</a></span>task_queue</h2>
+<a id="af4824558d428695e4661c5e7cdfa4419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4824558d428695e4661c5e7cdfa4419">&sect;&nbsp;</a></span>task_queue</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -984,7 +1051,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classmage_1_1_task.html">Task</a> *&gt; mage::task_queue</td>
+          <td class="memname">vector&lt;<a class="el" href="classmage_1_1_task.html">Task</a> *&gt; mage::task_queue</td>
         </tr>
       </table>
   </td>
@@ -993,6 +1060,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The task queue. </p>
 
 </div>
 </div>
@@ -1015,6 +1083,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The mutex for exclusive access to the task queue. </p>
 
 </div>
 </div>
@@ -1037,6 +1106,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The running condition variable for exclusive access to the number of number of unfinished tasks and for signaling on updates. </p>
 
 </div>
 </div>
@@ -1059,6 +1129,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The thread handles. </p>
 
 </div>
 </div>
@@ -1109,6 +1180,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The worker semaphore for being able to work. </p>
 
 </div>
 </div>

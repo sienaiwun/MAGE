@@ -8,7 +8,7 @@ var searchData=
   ['m_5fcritical_5fsection',['m_critical_section',['../classmage_1_1_mutex.html#a18414337aef28b7ed261e7a805d2c103',1,'mage::Mutex::m_critical_section()'],['../classmage_1_1_read_write_mutex.html#a77fe51b87e5205d60ea045fa53bc1fa3',1,'mage::ReadWriteMutex::m_critical_section()']]],
   ['m_5fcurrent_5fblock',['m_current_block',['../classmage_1_1_memory_arena.html#a13eba6e2a9f8d9db2df5674aa7ce0428',1,'mage::MemoryArena']]],
   ['m_5fcurrent_5fblock_5fpos',['m_current_block_pos',['../classmage_1_1_memory_arena.html#a3874097398455749a85fe50a9e4984c0',1,'mage::MemoryArena']]],
-  ['m_5fcurrent_5fspace',['m_current_space',['../classmage_1_1_progress_reporter.html#a93faeed07adf849e7351c85f06f2b4a7',1,'mage::ProgressReporter']]],
+  ['m_5fcurrent_5fpos',['m_current_pos',['../classmage_1_1_progress_reporter.html#a7adafaaf90edf29c8c27f4008aea41c9',1,'mage::ProgressReporter']]],
   ['m_5fdeactive',['m_deactive',['../classmage_1_1_engine.html#ab8a4b0157403708ae7d1d018a95b4c63',1,'mage::Engine']]],
   ['m_5felapsed',['m_elapsed',['../classmage_1_1_timer.html#aa2c50b9ffa85600791a21e2db4c43e91',1,'mage::Timer']]],
   ['m_5fevents',['m_events',['../classmage_1_1_condition_variable.html#aa3eeb3cf7cdcc70e651ee67800b713f5',1,'mage::ConditionVariable']]],
@@ -20,12 +20,13 @@ var searchData=
   ['m_5floaded',['m_loaded',['../classmage_1_1_engine.html#a2f8783761b9629dd507d0a6bc456125b',1,'mage::Engine']]],
   ['m_5fmutex',['m_mutex',['../classmage_1_1_progress_reporter.html#abda37942e51b682b2871e49883d58da1',1,'mage::ProgressReporter::m_mutex()'],['../structmage_1_1_mutex_lock.html#a1c796e1e66bd49007fe746d1425b82f4',1,'mage::MutexLock::m_mutex()'],['../structmage_1_1_read_write_mutex_lock.html#a6ee9034fa984e11ec07c20ec77ab1bfe',1,'mage::ReadWriteMutexLock::m_mutex()']]],
   ['m_5fname',['m_name',['../structmage_1_1_engine_setup.html#a3866920e44c0752a89265f9f0c5c5d05',1,'mage::EngineSetup::m_name()'],['../classmage_1_1_resource.html#a93019b74e9665195f1af17c60b6d171a',1,'mage::Resource::m_name()']]],
-  ['m_5fnb_5fplusses',['m_nb_plusses',['../classmage_1_1_progress_reporter.html#abee761d058d9a3d6d56189b86e6daae6',1,'mage::ProgressReporter']]],
-  ['m_5fnb_5fplusses_5fprinted',['m_nb_plusses_printed',['../classmage_1_1_progress_reporter.html#a5aeccd74959514c3db9b36f6abe4cc70',1,'mage::ProgressReporter']]],
+  ['m_5fnb_5fplusses_5fprinted',['m_nb_plusses_printed',['../classmage_1_1_progress_reporter.html#a17d7a4f8b2c8a6de255786f6165726bd',1,'mage::ProgressReporter']]],
+  ['m_5fnb_5fplusses_5ftotal',['m_nb_plusses_total',['../classmage_1_1_progress_reporter.html#aeae54fa7c542ccfbdaa44c0942c483fd',1,'mage::ProgressReporter']]],
   ['m_5fnb_5freaders_5fwaiting',['m_nb_readers_waiting',['../classmage_1_1_read_write_mutex.html#acbe7553fff7cca2656f6f2b8f0471484',1,'mage::ReadWriteMutex']]],
   ['m_5fnb_5fwaiters',['m_nb_waiters',['../classmage_1_1_condition_variable.html#ac02cb14000a597ec91b8546bdcbb9dd1',1,'mage::ConditionVariable']]],
   ['m_5fnb_5fwaiters_5fmutex',['m_nb_waiters_mutex',['../classmage_1_1_condition_variable.html#a0686e682d62d44ff1eb9ac45acbb0eab',1,'mage::ConditionVariable']]],
-  ['m_5fnb_5fwork',['m_nb_work',['../classmage_1_1_progress_reporter.html#a8913c6a98282aaf1d4a5b1d0644a8824',1,'mage::ProgressReporter']]],
+  ['m_5fnb_5fwork_5fdone',['m_nb_work_done',['../classmage_1_1_progress_reporter.html#ad3cb941594f138c208fa522a355a985b',1,'mage::ProgressReporter']]],
+  ['m_5fnb_5fwork_5ftotal',['m_nb_work_total',['../classmage_1_1_progress_reporter.html#a1b0c8d8f3cde82161b34897c5e95e09b',1,'mage::ProgressReporter']]],
   ['m_5fnb_5fwriters_5fwaiting',['m_nb_writers_waiting',['../classmage_1_1_read_write_mutex.html#a003313794a9b43f80bd9b258b039438d',1,'mage::ReadWriteMutex']]],
   ['m_5fnext',['m_next',['../structmage_1_1_linked_list_1_1_linked_list_iterator.html#a2936c8e80e5ef746150a8a93ef1300cb',1,'mage::LinkedList::LinkedListIterator']]],
   ['m_5fpath',['m_path',['../classmage_1_1_resource.html#a983470902250a8d16b6d5d01c332804b',1,'mage::Resource']]],
@@ -47,6 +48,5 @@ var searchData=
   ['m_5ftype',['m_type',['../structmage_1_1_read_write_mutex_lock.html#aa117ffe94f6850ddc91ad6d1389fb6e2',1,'mage::ReadWriteMutexLock']]],
   ['m_5fused_5fblocks',['m_used_blocks',['../classmage_1_1_memory_arena.html#affb37aae6087014287b43d50521dd0fb',1,'mage::MemoryArena']]],
   ['m_5fverbose',['m_verbose',['../structmage_1_1_general_configuration.html#aacc88850ee46834ab0ee52bbfa8a3a80',1,'mage::GeneralConfiguration']]],
-  ['m_5fwindow',['m_window',['../classmage_1_1_engine.html#a48989d564438791281ff5e7bdb78d8bc',1,'mage::Engine']]],
-  ['m_5fwork_5fdone',['m_work_done',['../classmage_1_1_progress_reporter.html#a0b773635d4366e0603b8ea83abdd01b5',1,'mage::ProgressReporter']]]
+  ['m_5fwindow',['m_window',['../classmage_1_1_engine.html#a48989d564438791281ff5e7bdb78d8bc',1,'mage::Engine']]]
 ];
