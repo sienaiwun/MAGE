@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_condition_variable.html'
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_condition_variable-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">mage::ConditionVariable Class Reference</div>  </div>
+<div class="title">mage::ConditionVariable Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -125,7 +125,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aa3eeb3cf7cdcc70e651ee67800b713f5"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_condition_variable.html#aa3eeb3cf7cdcc70e651ee67800b713f5">m_events</a> [<a class="el" href="classmage_1_1_condition_variable.html#a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac">NUM_EVENTS</a>]</td></tr>
 <tr class="separator:aa3eeb3cf7cdcc70e651ee67800b713f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of condition variables. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a600fb5094237230f6b260b31d6fb0945"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a600fb5094237230f6b260b31d6fb0945">&sect;&nbsp;</a></span>anonymous enum</h2>
 
@@ -145,6 +147,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Type of events (indices). </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a600fb5094237230f6b260b31d6fb0945a83361ddf52d1973875f7a48ac4bccf94"></a>SIGNAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a600fb5094237230f6b260b31d6fb0945a5863233d3c1e62ca806753b0d175199f"></a>BROADCAST&#160;</td><td class="fielddoc"></td></tr>
@@ -168,6 +171,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs a condition variable. </p>
 
 </div>
 </div>
@@ -185,6 +189,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Destructs this condition variable. </p>
 
 </div>
 </div>
@@ -203,6 +208,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Locks this condition variable. </p>
 
 </div>
 </div>
@@ -220,6 +226,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Signal a condition change. </p>
 
 </div>
 </div>
@@ -237,6 +244,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Unlocks this condition variable. </p>
 
 </div>
 </div>
@@ -254,6 +262,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Wait for a signal indicating a condition change. </p>
 
 </div>
 </div>
@@ -277,6 +286,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The critical section object for the mutex guarding the condition of this condition variable. </p>
 
 </div>
 </div>
@@ -299,6 +309,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Signal and broadcast event handles of this condition variable. </p>
 
 </div>
 </div>
@@ -321,6 +332,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The number of waiters of this condition variable. </p>
 
 </div>
 </div>
@@ -343,6 +355,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The critical section object for the mutex guarding <code>m_nb_waiters</code> of this condition variable. </p>
 
 </div>
 </div>

@@ -24,6 +24,9 @@ H\+A\+N\+D\+LE \hyperlink{classmage_1_1_semaphore_ac1ded856984b4ac3739d9ff627838
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A class of semaphores. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_semaphore_a7b4f53c18b9a244ed98ef58fa5cfa2bb}{}\label{classmage_1_1_semaphore_a7b4f53c18b9a244ed98ef58fa5cfa2bb} 
 \index{mage\+::\+Semaphore@{mage\+::\+Semaphore}!Semaphore@{Semaphore}}
@@ -31,13 +34,13 @@ H\+A\+N\+D\+LE \hyperlink{classmage_1_1_semaphore_ac1ded856984b4ac3739d9ff627838
 \subsubsection{\texorpdfstring{Semaphore()}{Semaphore()}}
 {\footnotesize\ttfamily mage\+::\+Semaphore\+::\+Semaphore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{classmage_1_1_semaphore_a991ed365c28e4a9c63ff34a5efeb012d}{}\label{classmage_1_1_semaphore_a991ed365c28e4a9c63ff34a5efeb012d} 
+Constructs a semaphore. \hypertarget{classmage_1_1_semaphore_a991ed365c28e4a9c63ff34a5efeb012d}{}\label{classmage_1_1_semaphore_a991ed365c28e4a9c63ff34a5efeb012d} 
 \index{mage\+::\+Semaphore@{mage\+::\+Semaphore}!````~Semaphore@{$\sim$\+Semaphore}}
 \index{````~Semaphore@{$\sim$\+Semaphore}!mage\+::\+Semaphore@{mage\+::\+Semaphore}}
 \subsubsection{\texorpdfstring{$\sim$\+Semaphore()}{~Semaphore()}}
 {\footnotesize\ttfamily mage\+::\+Semaphore\+::$\sim$\+Semaphore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-
+Destructs this semaphore. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_semaphore_a354ea9743f9794b14a3f032e0443b214}{}\label{classmage_1_1_semaphore_a354ea9743f9794b14a3f032e0443b214} 
@@ -46,19 +49,35 @@ H\+A\+N\+D\+LE \hyperlink{classmage_1_1_semaphore_ac1ded856984b4ac3739d9ff627838
 \subsubsection{\texorpdfstring{Post()}{Post()}}
 {\footnotesize\ttfamily void mage\+::\+Semaphore\+::\+Post (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{count = {\ttfamily 1} }\end{DoxyParamCaption})}
 
+Increments the value of this semaphore variable by the given value.
+
+The process executing wait is blocked until the value of the semaphore is greater or equal to 1.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em count} & The increment value. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_semaphore_ab34cdf4e9b7388dbdb30aab167c074f6}{}\label{classmage_1_1_semaphore_ab34cdf4e9b7388dbdb30aab167c074f6} 
 \index{mage\+::\+Semaphore@{mage\+::\+Semaphore}!Try\+Wait@{Try\+Wait}}
 \index{Try\+Wait@{Try\+Wait}!mage\+::\+Semaphore@{mage\+::\+Semaphore}}
 \subsubsection{\texorpdfstring{Try\+Wait()}{TryWait()}}
 {\footnotesize\ttfamily bool mage\+::\+Semaphore\+::\+Try\+Wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Checks whether waiting for this semaphore would be necessary.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if waiting for this semaphore would be necessary. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_semaphore_ae63599939b6bcc3939cbeddd7ffa5f66}{}\label{classmage_1_1_semaphore_ae63599939b6bcc3939cbeddd7ffa5f66} 
 \index{mage\+::\+Semaphore@{mage\+::\+Semaphore}!Wait@{Wait}}
 \index{Wait@{Wait}!mage\+::\+Semaphore@{mage\+::\+Semaphore}}
 \subsubsection{\texorpdfstring{Wait()}{Wait()}}
 {\footnotesize\ttfamily void mage\+::\+Semaphore\+::\+Wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Decrements the value of this semaphore variable by one.
 
+If the initial value of the semaphore is negative, the waiting queue is not empty and thus one blocked process can be transferred to the ready queue. 
 
 \subsection{Member Data Documentation}
 \hypertarget{classmage_1_1_semaphore_ac1ded856984b4ac3739d9ff627838fda}{}\label{classmage_1_1_semaphore_ac1ded856984b4ac3739d9ff627838fda} 
@@ -67,3 +86,4 @@ H\+A\+N\+D\+LE \hyperlink{classmage_1_1_semaphore_ac1ded856984b4ac3739d9ff627838
 \subsubsection{\texorpdfstring{m\+\_\+handle}{m\_handle}}
 {\footnotesize\ttfamily H\+A\+N\+D\+LE mage\+::\+Semaphore\+::m\+\_\+handle\hspace{0.3cm}{\ttfamily [private]}}
 
+The handle of this semaphore. 

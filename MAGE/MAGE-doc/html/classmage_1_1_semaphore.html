@@ -84,7 +84,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_semaphore.html','');});
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_semaphore-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">mage::Semaphore Class Reference</div>  </div>
+<div class="title">mage::Semaphore Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -108,7 +108,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac1ded856984b4ac3739d9ff627838fda"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_semaphore.html#ac1ded856984b4ac3739d9ff627838fda">m_handle</a></td></tr>
 <tr class="separator:ac1ded856984b4ac3739d9ff627838fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of semaphores. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7b4f53c18b9a244ed98ef58fa5cfa2bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b4f53c18b9a244ed98ef58fa5cfa2bb">&sect;&nbsp;</a></span>Semaphore()</h2>
 
@@ -123,6 +125,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs a semaphore. </p>
 
 </div>
 </div>
@@ -140,6 +143,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Destructs this semaphore. </p>
 
 </div>
 </div>
@@ -159,6 +163,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Increments the value of this semaphore variable by the given value.</p>
+<p>The process executing wait is blocked until the value of the semaphore is greater or equal to 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>The increment value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -176,6 +188,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks whether waiting for this semaphore would be necessary.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if waiting for this semaphore would be necessary. <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -193,6 +207,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Decrements the value of this semaphore variable by one.</p>
+<p>If the initial value of the semaphore is negative, the waiting queue is not empty and thus one blocked process can be transferred to the ready queue. </p>
 
 </div>
 </div>
@@ -216,6 +232,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The handle of this semaphore. </p>
 
 </div>
 </div>

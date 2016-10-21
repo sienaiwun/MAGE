@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('structmage_1_1_mutex_lock.html','');})
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="structmage_1_1_mutex_lock-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">mage::MutexLock Struct Reference</div>  </div>
+<div class="title">mage::MutexLock Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -110,7 +110,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a1c796e1e66bd49007fe746d1425b82f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_mutex.html">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_mutex_lock.html#a1c796e1e66bd49007fe746d1425b82f4">m_mutex</a></td></tr>
 <tr class="separator:a1c796e1e66bd49007fe746d1425b82f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A struct of mutex locks. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa8cd93677eec2656ca217fdf79f911c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8cd93677eec2656ca217fdf79f911c4">&sect;&nbsp;</a></span>MutexLock() <span class="overload">[1/2]</span></h2>
 
@@ -126,6 +128,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs a mutex lock for the given mutex.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>A reference to a mutex. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -143,6 +152,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Destructs this mutex lock. </p>
 
 </div>
 </div>
@@ -169,6 +179,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a mutex lock from the given mutex lock.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to a mutex lock. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -196,6 +213,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given mutex lock to this mutex lock.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex_lock</td><td>A reference to a mutex lock. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of <em>mutex_lock</em>. </dd></dl>
 
 </div>
 </div>
@@ -219,6 +244,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The mutex of this mutex lock. </p>
 
 </div>
 </div>

@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_mutex.html','');});
 <a href="#friends">Friends</a> &#124;
 <a href="classmage_1_1_mutex-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">mage::Mutex Class Reference</div>  </div>
+<div class="title">mage::Mutex Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -103,10 +103,10 @@ Static Public Member Functions</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ab22db01311271ef54642b10ea53dfd8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mutex.html#ab22db01311271ef54642b10ea53dfd8a">Mutex</a> ()</td></tr>
 <tr class="separator:ab22db01311271ef54642b10ea53dfd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a143d82ec7bb43f953a1703caa7972e9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mutex.html#a143d82ec7bb43f953a1703caa7972e9d">~Mutex</a> ()</td></tr>
-<tr class="separator:a143d82ec7bb43f953a1703caa7972e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f38f170668eb1fe3c2f110738edc39e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mutex.html#a0f38f170668eb1fe3c2f110738edc39e">Mutex</a> (<a class="el" href="classmage_1_1_mutex.html">Mutex</a> &amp;mutex)</td></tr>
 <tr class="separator:a0f38f170668eb1fe3c2f110738edc39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a143d82ec7bb43f953a1703caa7972e9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mutex.html#a143d82ec7bb43f953a1703caa7972e9d">~Mutex</a> ()</td></tr>
+<tr class="separator:a143d82ec7bb43f953a1703caa7972e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaab2190729234e0da465ed0196111f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_mutex.html">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mutex.html#aeaab2190729234e0da465ed0196111f0">operator=</a> (const <a class="el" href="classmage_1_1_mutex.html">Mutex</a> &amp;mutex)</td></tr>
 <tr class="separator:aeaab2190729234e0da465ed0196111f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -120,7 +120,9 @@ Friends</h2></td></tr>
 <tr class="memitem:a058473d070063e5098732f355f432bd9"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mutex.html#a058473d070063e5098732f355f432bd9">MutexLock</a></td></tr>
 <tr class="separator:a058473d070063e5098732f355f432bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class of mutexes. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab22db01311271ef54642b10ea53dfd8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab22db01311271ef54642b10ea53dfd8a">&sect;&nbsp;</a></span>Mutex() <span class="overload">[1/2]</span></h2>
 
@@ -143,31 +145,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a143d82ec7bb43f953a1703caa7972e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a143d82ec7bb43f953a1703caa7972e9d">&sect;&nbsp;</a></span>~Mutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">mage::Mutex::~Mutex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Constructs a mutex. </p>
 
 </div>
 </div>
@@ -194,6 +172,39 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs a mutex from the given mutex.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>A reference to a mutex. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a143d82ec7bb43f953a1703caa7972e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a143d82ec7bb43f953a1703caa7972e9d">&sect;&nbsp;</a></span>~Mutex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::Mutex::~Mutex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructs this mutex. </p>
 
 </div>
 </div>
@@ -220,6 +231,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Creates a mutex. </p>
 
 </div>
 </div>
@@ -246,6 +258,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destroys a given mutex.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>The mutex to destroy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -272,6 +291,14 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Copies the given mutex to this mutex.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>A reference to a mutex. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of <em>mutex</em>. </dd></dl>
 
 </div>
 </div>
@@ -318,6 +345,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The critical section object of this mutex. </p>
 
 </div>
 </div>

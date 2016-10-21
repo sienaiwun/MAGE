@@ -16,9 +16,9 @@ static void \hyperlink{classmage_1_1_mutex_a78cd1aff434b1d7cefce4c8339c25d8f}{De
 \item 
 \hyperlink{classmage_1_1_mutex_ab22db01311271ef54642b10ea53dfd8a}{Mutex} ()
 \item 
-\hyperlink{classmage_1_1_mutex_a143d82ec7bb43f953a1703caa7972e9d}{$\sim$\+Mutex} ()
-\item 
 \hyperlink{classmage_1_1_mutex_a0f38f170668eb1fe3c2f110738edc39e}{Mutex} (\hyperlink{classmage_1_1_mutex}{Mutex} \&mutex)
+\item 
+\hyperlink{classmage_1_1_mutex_a143d82ec7bb43f953a1703caa7972e9d}{$\sim$\+Mutex} ()
 \item 
 \hyperlink{classmage_1_1_mutex}{Mutex} \& \hyperlink{classmage_1_1_mutex_aeaab2190729234e0da465ed0196111f0}{operator=} (const \hyperlink{classmage_1_1_mutex}{Mutex} \&mutex)
 \end{DoxyCompactItemize}
@@ -34,6 +34,9 @@ struct \hyperlink{classmage_1_1_mutex_a058473d070063e5098732f355f432bd9}{Mutex\+
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A class of mutexes. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classmage_1_1_mutex_ab22db01311271ef54642b10ea53dfd8a}{}\label{classmage_1_1_mutex_ab22db01311271ef54642b10ea53dfd8a} 
 \index{mage\+::\+Mutex@{mage\+::\+Mutex}!Mutex@{Mutex}}
@@ -41,19 +44,26 @@ struct \hyperlink{classmage_1_1_mutex_a058473d070063e5098732f355f432bd9}{Mutex\+
 \subsubsection{\texorpdfstring{Mutex()}{Mutex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Mutex\+::\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Constructs a mutex. \hypertarget{classmage_1_1_mutex_a0f38f170668eb1fe3c2f110738edc39e}{}\label{classmage_1_1_mutex_a0f38f170668eb1fe3c2f110738edc39e} 
+\index{mage\+::\+Mutex@{mage\+::\+Mutex}!Mutex@{Mutex}}
+\index{Mutex@{Mutex}!mage\+::\+Mutex@{mage\+::\+Mutex}}
+\subsubsection{\texorpdfstring{Mutex()}{Mutex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Mutex\+::\+Mutex (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mutex}{Mutex} \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Constructs a mutex from the given mutex.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mutex} & A reference to a mutex. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_mutex_a143d82ec7bb43f953a1703caa7972e9d}{}\label{classmage_1_1_mutex_a143d82ec7bb43f953a1703caa7972e9d} 
 \index{mage\+::\+Mutex@{mage\+::\+Mutex}!````~Mutex@{$\sim$\+Mutex}}
 \index{````~Mutex@{$\sim$\+Mutex}!mage\+::\+Mutex@{mage\+::\+Mutex}}
 \subsubsection{\texorpdfstring{$\sim$\+Mutex()}{~Mutex()}}
 {\footnotesize\ttfamily mage\+::\+Mutex\+::$\sim$\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{classmage_1_1_mutex_a0f38f170668eb1fe3c2f110738edc39e}{}\label{classmage_1_1_mutex_a0f38f170668eb1fe3c2f110738edc39e} 
-\index{mage\+::\+Mutex@{mage\+::\+Mutex}!Mutex@{Mutex}}
-\index{Mutex@{Mutex}!mage\+::\+Mutex@{mage\+::\+Mutex}}
-\subsubsection{\texorpdfstring{Mutex()}{Mutex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily mage\+::\+Mutex\+::\+Mutex (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mutex}{Mutex} \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-
+Destructs this mutex. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_mutex_a48d784fa6bffd4088d9f89a2a9cca84e}{}\label{classmage_1_1_mutex_a48d784fa6bffd4088d9f89a2a9cca84e} 
@@ -62,18 +72,35 @@ struct \hyperlink{classmage_1_1_mutex_a058473d070063e5098732f355f432bd9}{Mutex\+
 \subsubsection{\texorpdfstring{Create()}{Create()}}
 {\footnotesize\ttfamily static \hyperlink{classmage_1_1_mutex}{Mutex}$\ast$ mage\+::\+Mutex\+::\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{classmage_1_1_mutex_a78cd1aff434b1d7cefce4c8339c25d8f}{}\label{classmage_1_1_mutex_a78cd1aff434b1d7cefce4c8339c25d8f} 
+Creates a mutex. \hypertarget{classmage_1_1_mutex_a78cd1aff434b1d7cefce4c8339c25d8f}{}\label{classmage_1_1_mutex_a78cd1aff434b1d7cefce4c8339c25d8f} 
 \index{mage\+::\+Mutex@{mage\+::\+Mutex}!Destroy@{Destroy}}
 \index{Destroy@{Destroy}!mage\+::\+Mutex@{mage\+::\+Mutex}}
 \subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
 {\footnotesize\ttfamily static void mage\+::\+Mutex\+::\+Destroy (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_mutex}{Mutex} $\ast$}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+Destroys a given mutex.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mutex} & The mutex to destroy. \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmage_1_1_mutex_aeaab2190729234e0da465ed0196111f0}{}\label{classmage_1_1_mutex_aeaab2190729234e0da465ed0196111f0} 
 \index{mage\+::\+Mutex@{mage\+::\+Mutex}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Mutex@{mage\+::\+Mutex}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_mutex}{Mutex}\& mage\+::\+Mutex\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mutex}{Mutex} \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Copies the given mutex to this mutex.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mutex} & A reference to a mutex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of {\itshape mutex}. 
+\end{DoxyReturn}
 
 
 \subsection{Friends And Related Function Documentation}
@@ -92,3 +119,4 @@ struct \hyperlink{classmage_1_1_mutex_a058473d070063e5098732f355f432bd9}{Mutex\+
 \subsubsection{\texorpdfstring{m\+\_\+critical\+\_\+section}{m\_critical\_section}}
 {\footnotesize\ttfamily C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+ON mage\+::\+Mutex\+::m\+\_\+critical\+\_\+section\hspace{0.3cm}{\ttfamily [private]}}
 
+The critical section object of this mutex. 

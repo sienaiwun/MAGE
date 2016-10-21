@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_read_write_mutex_lock_aaa0fb4b6a699c32a7df4d30a9ab842f3}{Read\+Write\+Mutex\+Lock} (\hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&mutex, \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{Read\+Write\+Mutex\+Lock\+Type} mutex\+\_\+type)
+\hyperlink{structmage_1_1_read_write_mutex_lock_a323e2f45646caa23c4ee21452c8f8d4a}{Read\+Write\+Mutex\+Lock} (\hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&mutex, \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{Read\+Write\+Mutex\+Lock\+Type} lock\+\_\+type)
 \item 
 \hyperlink{structmage_1_1_read_write_mutex_lock_a64b600234d29ba7307fcd77a17486582}{$\sim$\+Read\+Write\+Mutex\+Lock} ()
 \item 
@@ -18,9 +18,9 @@ void \hyperlink{structmage_1_1_read_write_mutex_lock_ad3292e579d09107c7361989657
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_read_write_mutex_lock_ae86e8f5da7eb0426b5f0f5207da0884a}{Read\+Write\+Mutex\+Lock} (const \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \&mutex)
+\hyperlink{structmage_1_1_read_write_mutex_lock_a5c040abe418a5d4d3a15420503568529}{Read\+Write\+Mutex\+Lock} (const \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \&mutex\+\_\+lock)
 \item 
-\hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \& \hyperlink{structmage_1_1_read_write_mutex_lock_afc54567101211f92e710e3e67176c73c}{operator=} (const \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \&mutex)
+\hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \& \hyperlink{structmage_1_1_read_write_mutex_lock_a549fcb16f155d96f69cb0b3fdaf98fa7}{operator=} (const \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \&mutex\+\_\+lock)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -31,25 +31,44 @@ void \hyperlink{structmage_1_1_read_write_mutex_lock_ad3292e579d09107c7361989657
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A struct of read write mutex locks. 
+
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{structmage_1_1_read_write_mutex_lock_aaa0fb4b6a699c32a7df4d30a9ab842f3}{}\label{structmage_1_1_read_write_mutex_lock_aaa0fb4b6a699c32a7df4d30a9ab842f3} 
+\hypertarget{structmage_1_1_read_write_mutex_lock_a323e2f45646caa23c4ee21452c8f8d4a}{}\label{structmage_1_1_read_write_mutex_lock_a323e2f45646caa23c4ee21452c8f8d4a} 
 \index{mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}!Read\+Write\+Mutex\+Lock@{Read\+Write\+Mutex\+Lock}}
 \index{Read\+Write\+Mutex\+Lock@{Read\+Write\+Mutex\+Lock}!mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}}
 \subsubsection{\texorpdfstring{Read\+Write\+Mutex\+Lock()}{ReadWriteMutexLock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Read\+Write\+Mutex\+Lock\+::\+Read\+Write\+Mutex\+Lock (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&}]{mutex,  }\item[{\hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{Read\+Write\+Mutex\+Lock\+Type}}]{mutex\+\_\+type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Read\+Write\+Mutex\+Lock\+::\+Read\+Write\+Mutex\+Lock (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex} \&}]{mutex,  }\item[{\hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{Read\+Write\+Mutex\+Lock\+Type}}]{lock\+\_\+type }\end{DoxyParamCaption})}
 
+Constructs a read write mutex lock for the given read write mutex and lock type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mutex} & A reference to a read write mutex. \\
+\hline
+\mbox{\tt in}  & {\em lock\+\_\+type} & The lock type. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_read_write_mutex_lock_a64b600234d29ba7307fcd77a17486582}{}\label{structmage_1_1_read_write_mutex_lock_a64b600234d29ba7307fcd77a17486582} 
 \index{mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}!````~Read\+Write\+Mutex\+Lock@{$\sim$\+Read\+Write\+Mutex\+Lock}}
 \index{````~Read\+Write\+Mutex\+Lock@{$\sim$\+Read\+Write\+Mutex\+Lock}!mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}}
 \subsubsection{\texorpdfstring{$\sim$\+Read\+Write\+Mutex\+Lock()}{~ReadWriteMutexLock()}}
 {\footnotesize\ttfamily mage\+::\+Read\+Write\+Mutex\+Lock\+::$\sim$\+Read\+Write\+Mutex\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{structmage_1_1_read_write_mutex_lock_ae86e8f5da7eb0426b5f0f5207da0884a}{}\label{structmage_1_1_read_write_mutex_lock_ae86e8f5da7eb0426b5f0f5207da0884a} 
+Destructs this read write mutex lock. \hypertarget{structmage_1_1_read_write_mutex_lock_a5c040abe418a5d4d3a15420503568529}{}\label{structmage_1_1_read_write_mutex_lock_a5c040abe418a5d4d3a15420503568529} 
 \index{mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}!Read\+Write\+Mutex\+Lock@{Read\+Write\+Mutex\+Lock}}
 \index{Read\+Write\+Mutex\+Lock@{Read\+Write\+Mutex\+Lock}!mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}}
 \subsubsection{\texorpdfstring{Read\+Write\+Mutex\+Lock()}{ReadWriteMutexLock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily mage\+::\+Read\+Write\+Mutex\+Lock\+::\+Read\+Write\+Mutex\+Lock (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily mage\+::\+Read\+Write\+Mutex\+Lock\+::\+Read\+Write\+Mutex\+Lock (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \&}]{mutex\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Constructs a read write mutex lock from the given read write mutex lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to a read write mutex lock. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
@@ -59,19 +78,29 @@ void \hyperlink{structmage_1_1_read_write_mutex_lock_ad3292e579d09107c7361989657
 \subsubsection{\texorpdfstring{Downgrade\+To\+Read()}{DowngradeToRead()}}
 {\footnotesize\ttfamily void mage\+::\+Read\+Write\+Mutex\+Lock\+::\+Downgrade\+To\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{structmage_1_1_read_write_mutex_lock_afc54567101211f92e710e3e67176c73c}{}\label{structmage_1_1_read_write_mutex_lock_afc54567101211f92e710e3e67176c73c} 
+Downgrades this read write lock to read. \hypertarget{structmage_1_1_read_write_mutex_lock_a549fcb16f155d96f69cb0b3fdaf98fa7}{}\label{structmage_1_1_read_write_mutex_lock_a549fcb16f155d96f69cb0b3fdaf98fa7} 
 \index{mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock}\& mage\+::\+Read\+Write\+Mutex\+Lock\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \&}]{mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock}\& mage\+::\+Read\+Write\+Mutex\+Lock\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock} \&}]{mutex\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+Copies the given read write mutex lock to this read write mutex lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mutex\+\_\+lock} & A reference to a read write mutex lock. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of {\itshape mutex\+\_\+lock}. 
+\end{DoxyReturn}
 \hypertarget{structmage_1_1_read_write_mutex_lock_a01843784e8dbf0d3dfd6100562f699be}{}\label{structmage_1_1_read_write_mutex_lock_a01843784e8dbf0d3dfd6100562f699be} 
 \index{mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}!Upgrade\+To\+Write@{Upgrade\+To\+Write}}
 \index{Upgrade\+To\+Write@{Upgrade\+To\+Write}!mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}}
 \subsubsection{\texorpdfstring{Upgrade\+To\+Write()}{UpgradeToWrite()}}
 {\footnotesize\ttfamily void mage\+::\+Read\+Write\+Mutex\+Lock\+::\+Upgrade\+To\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-
+Upgrades this read write lock to write. 
 
 \subsection{Member Data Documentation}
 \hypertarget{structmage_1_1_read_write_mutex_lock_a6ee9034fa984e11ec07c20ec77ab1bfe}{}\label{structmage_1_1_read_write_mutex_lock_a6ee9034fa984e11ec07c20ec77ab1bfe} 
@@ -80,9 +109,10 @@ void \hyperlink{structmage_1_1_read_write_mutex_lock_ad3292e579d09107c7361989657
 \subsubsection{\texorpdfstring{m\+\_\+mutex}{m\_mutex}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex}\& mage\+::\+Read\+Write\+Mutex\+Lock\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{structmage_1_1_read_write_mutex_lock_aa117ffe94f6850ddc91ad6d1389fb6e2}{}\label{structmage_1_1_read_write_mutex_lock_aa117ffe94f6850ddc91ad6d1389fb6e2} 
+The read write mutex of this read write mutex lock. \hypertarget{structmage_1_1_read_write_mutex_lock_aa117ffe94f6850ddc91ad6d1389fb6e2}{}\label{structmage_1_1_read_write_mutex_lock_aa117ffe94f6850ddc91ad6d1389fb6e2} 
 \index{mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}!m\+\_\+type@{m\+\_\+type}}
 \index{m\+\_\+type@{m\+\_\+type}!mage\+::\+Read\+Write\+Mutex\+Lock@{mage\+::\+Read\+Write\+Mutex\+Lock}}
 \subsubsection{\texorpdfstring{m\+\_\+type}{m\_type}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_afd76fcca37ce5c5b2227671290973c74}{Read\+Write\+Mutex\+Lock\+Type} mage\+::\+Read\+Write\+Mutex\+Lock\+::m\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
 
+The lock type of this read write mutex lock. 
