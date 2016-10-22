@@ -5,6 +5,7 @@ var searchData=
   ['getcompletelinkedlistelement',['GetCompleteLinkedListElement',['../classmage_1_1_linked_list.html#a0da4ff247abafd3a496b379673c111c1',1,'mage::LinkedList']]],
   ['getfilename',['GetFilename',['../classmage_1_1_resource.html#a3235bf2744390d5957b9b4038e4bb512',1,'mage::Resource']]],
   ['getfirst',['GetFirst',['../classmage_1_1_linked_list.html#a8394fd1c390b806b9daafdff497b02fb',1,'mage::LinkedList']]],
+  ['getid',['GetId',['../classmage_1_1_state.html#a07c383a809204ba12a2bbfb22d2977d5',1,'mage::State']]],
   ['getiterator',['GetIterator',['../classmage_1_1_linked_list.html#a7e4016d051e44eb5d8a7bde3d193b9e8',1,'mage::LinkedList']]],
   ['getlast',['GetLast',['../classmage_1_1_linked_list.html#a734f6dc6d073edd99eb9a0ac1f605900',1,'mage::LinkedList']]],
   ['getname',['GetName',['../classmage_1_1_resource.html#a77713b0c74f8983afc2d42843afe8cbe',1,'mage::Resource']]],

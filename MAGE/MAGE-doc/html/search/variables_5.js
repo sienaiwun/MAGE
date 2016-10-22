@@ -15,6 +15,7 @@ var searchData=
   ['m_5ffirst',['m_first',['../classmage_1_1_linked_list.html#a194ecd23a82c83e2735717b32073340c',1,'mage::LinkedList']]],
   ['m_5ffout',['m_fout',['../classmage_1_1_progress_reporter.html#ad325ee5978fd1d16a97acbe37a977982',1,'mage::ProgressReporter']]],
   ['m_5fhandle',['m_handle',['../classmage_1_1_semaphore.html#ac1ded856984b4ac3739d9ff627838fda',1,'mage::Semaphore']]],
+  ['m_5fid',['m_id',['../classmage_1_1_state.html#ab135514ec2250e9680b35cfab4e91cab',1,'mage::State']]],
   ['m_5finstance',['m_instance',['../structmage_1_1_engine_setup.html#a13e9577c9762cccf127b51c1188d9477',1,'mage::EngineSetup']]],
   ['m_5flast',['m_last',['../classmage_1_1_linked_list.html#acb461a96b93fa3917b7ed2e30fe67fce',1,'mage::LinkedList']]],
   ['m_5floaded',['m_loaded',['../classmage_1_1_engine.html#a2f8783761b9629dd507d0a6bc456125b',1,'mage::Engine']]],
@@ -48,5 +49,6 @@ var searchData=
   ['m_5ftype',['m_type',['../structmage_1_1_read_write_mutex_lock.html#aa117ffe94f6850ddc91ad6d1389fb6e2',1,'mage::ReadWriteMutexLock']]],
   ['m_5fused_5fblocks',['m_used_blocks',['../classmage_1_1_memory_arena.html#affb37aae6087014287b43d50521dd0fb',1,'mage::MemoryArena']]],
   ['m_5fverbose',['m_verbose',['../structmage_1_1_general_configuration.html#aacc88850ee46834ab0ee52bbfa8a3a80',1,'mage::GeneralConfiguration']]],
+  ['m_5fview_5fclear_5fflags',['m_view_clear_flags',['../structmage_1_1_viewer_setup.html#aed7b78b5437c46627949142f628c331d',1,'mage::ViewerSetup']]],
   ['m_5fwindow',['m_window',['../classmage_1_1_engine.html#a48989d564438791281ff5e7bdb78d8bc',1,'mage::Engine']]]
 ];

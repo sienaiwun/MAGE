@@ -1,0 +1,123 @@
+\hypertarget{classmage_1_1_state}{}\section{mage\+:\+:State Class Reference}
+\label{classmage_1_1_state}\index{mage\+::\+State@{mage\+::\+State}}
+
+
+{\ttfamily \#include $<$state.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_state_ac21bb6de22bb3b9c1b18d98b53e92100}{State} (uint64\+\_\+t id=0)
+\item 
+virtual \hyperlink{classmage_1_1_state_a8e5220ebfb74db1ed95f4d3b3ec8fb2d}{$\sim$\+State} ()
+\item 
+virtual void \hyperlink{classmage_1_1_state_aa88ace504c82ad372e5e599746f3ebda}{Load} ()
+\item 
+virtual void \hyperlink{classmage_1_1_state_a1edd5d756566f5b689c7a381f4e6b301}{Close} ()
+\item 
+virtual void \hyperlink{classmage_1_1_state_ab86748cfd13a65da65d3a639a0de2077}{Request\+Viewer} (\hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup} $\ast$viewer\+\_\+setup)
+\item 
+virtual void \hyperlink{classmage_1_1_state_a7c0703187ade99e55d4e86945602eb15}{Update} (float elapsed\+\_\+time)
+\item 
+virtual void \hyperlink{classmage_1_1_state_a6e3b3f55bfd5be86a02783a2f76c9709}{Render} ()
+\item 
+uint64\+\_\+t \hyperlink{classmage_1_1_state_a07c383a809204ba12a2bbfb22d2977d5}{Get\+Id} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const uint64\+\_\+t \hyperlink{classmage_1_1_state_ab135514ec2250e9680b35cfab4e91cab}{m\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of states 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_state_ac21bb6de22bb3b9c1b18d98b53e92100}{}\label{classmage_1_1_state_ac21bb6de22bb3b9c1b18d98b53e92100} 
+\index{mage\+::\+State@{mage\+::\+State}!State@{State}}
+\index{State@{State}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily mage\+::\+State\+::\+State (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Constructs a state with given id.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id} & The id. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_state_a8e5220ebfb74db1ed95f4d3b3ec8fb2d}{}\label{classmage_1_1_state_a8e5220ebfb74db1ed95f4d3b3ec8fb2d} 
+\index{mage\+::\+State@{mage\+::\+State}!````~State@{$\sim$\+State}}
+\index{````~State@{$\sim$\+State}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{$\sim$\+State()}{~State()}}
+{\footnotesize\ttfamily virtual mage\+::\+State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs this state. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_state_a1edd5d756566f5b689c7a381f4e6b301}{}\label{classmage_1_1_state_a1edd5d756566f5b689c7a381f4e6b301} 
+\index{mage\+::\+State@{mage\+::\+State}!Close@{Close}}
+\index{Close@{Close}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily virtual void mage\+::\+State\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Closes this state. Allows this state to preform any post-\/processing destruction. \hypertarget{classmage_1_1_state_a07c383a809204ba12a2bbfb22d2977d5}{}\label{classmage_1_1_state_a07c383a809204ba12a2bbfb22d2977d5} 
+\index{mage\+::\+State@{mage\+::\+State}!Get\+Id@{Get\+Id}}
+\index{Get\+Id@{Get\+Id}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{Get\+Id()}{GetId()}}
+{\footnotesize\ttfamily uint64\+\_\+t mage\+::\+State\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the id of this state.
+
+\begin{DoxyReturn}{Returns}
+The id of this state. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_state_aa88ace504c82ad372e5e599746f3ebda}{}\label{classmage_1_1_state_aa88ace504c82ad372e5e599746f3ebda} 
+\index{mage\+::\+State@{mage\+::\+State}!Load@{Load}}
+\index{Load@{Load}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily virtual void mage\+::\+State\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Loads this state. Allows this state to preform any pre-\/processing construction. \hypertarget{classmage_1_1_state_a6e3b3f55bfd5be86a02783a2f76c9709}{}\label{classmage_1_1_state_a6e3b3f55bfd5be86a02783a2f76c9709} 
+\index{mage\+::\+State@{mage\+::\+State}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void mage\+::\+State\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Render this state. \hypertarget{classmage_1_1_state_ab86748cfd13a65da65d3a639a0de2077}{}\label{classmage_1_1_state_ab86748cfd13a65da65d3a639a0de2077} 
+\index{mage\+::\+State@{mage\+::\+State}!Request\+Viewer@{Request\+Viewer}}
+\index{Request\+Viewer@{Request\+Viewer}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{Request\+Viewer()}{RequestViewer()}}
+{\footnotesize\ttfamily virtual void mage\+::\+State\+::\+Request\+Viewer (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup} $\ast$}]{viewer\+\_\+setup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Requests the view setup details for the given frame.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em viewer\+\_\+setup} & A pointer to a viewer setup. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_state_a7c0703187ade99e55d4e86945602eb15}{}\label{classmage_1_1_state_a7c0703187ade99e55d4e86945602eb15} 
+\index{mage\+::\+State@{mage\+::\+State}!Update@{Update}}
+\index{Update@{Update}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void mage\+::\+State\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates this state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em elapsed\+\_\+time} & The elapsed time since the previous update. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_state_ab135514ec2250e9680b35cfab4e91cab}{}\label{classmage_1_1_state_ab135514ec2250e9680b35cfab4e91cab} 
+\index{mage\+::\+State@{mage\+::\+State}!m\+\_\+id@{m\+\_\+id}}
+\index{m\+\_\+id@{m\+\_\+id}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{m\+\_\+id}{m\_id}}
+{\footnotesize\ttfamily const uint64\+\_\+t mage\+::\+State\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+Application defined identifier (must be unique for state switching) of this state. 

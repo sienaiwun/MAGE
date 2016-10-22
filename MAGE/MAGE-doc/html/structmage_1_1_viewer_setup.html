@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MAGE: Class Members</title>
+<title>MAGE: mage::ViewerSetup Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_s.html','');});
+$(document).ready(function(){initNavTree('structmage_1_1_viewer_setup.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -78,37 +78,71 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structmage_1_1_viewer_setup-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mage::ViewerSetup Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
-<h3><a id="index_s"></a>- s -</h3><ul>
-<li>Semaphore()
-: <a class="el" href="classmage_1_1_semaphore.html#a7b4f53c18b9a244ed98ef58fa5cfa2bb">mage::Semaphore</a>
-</li>
-<li>SetDeactiveFlag()
-: <a class="el" href="classmage_1_1_engine.html#a942bfa9892fa79bb1068d7c7ec4e6732">mage::Engine</a>
-</li>
-<li>Signal()
-: <a class="el" href="classmage_1_1_condition_variable.html#a09e52f0d51c10ee565a895d2444175d9">mage::ConditionVariable</a>
-</li>
-<li>SIGNAL
-: <a class="el" href="classmage_1_1_condition_variable.html#a600fb5094237230f6b260b31d6fb0945a83361ddf52d1973875f7a48ac4bccf94">mage::ConditionVariable</a>
-</li>
-<li>Start()
-: <a class="el" href="classmage_1_1_timer.html#a5855c9df8ad1a2b6774942e566833647">mage::Timer</a>
-</li>
-<li>State()
-: <a class="el" href="classmage_1_1_state.html#ac21bb6de22bb3b9c1b18d98b53e92100">mage::State</a>
-</li>
-<li>Stop()
-: <a class="el" href="classmage_1_1_timer.html#abf234f1e2ee9e760f316bd49500d5a3a">mage::Timer</a>
-</li>
-</ul>
+<p><code>#include &lt;<a class="el" href="state_8hpp_source.html">state.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a41acbd3bd1b8df2e175a57ee9bd07bda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_viewer_setup.html#a41acbd3bd1b8df2e175a57ee9bd07bda">ViewerSetup</a> ()</td></tr>
+<tr class="separator:a41acbd3bd1b8df2e175a57ee9bd07bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aed7b78b5437c46627949142f628c331d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_viewer_setup.html#aed7b78b5437c46627949142f628c331d">m_view_clear_flags</a></td></tr>
+<tr class="separator:aed7b78b5437c46627949142f628c331d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A struct of viewer setups. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a41acbd3bd1b8df2e175a57ee9bd07bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41acbd3bd1b8df2e175a57ee9bd07bda">&sect;&nbsp;</a></span>ViewerSetup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::ViewerSetup::ViewerSetup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a viewer setup. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aed7b78b5437c46627949142f628c331d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7b78b5437c46627949142f628c331d">&sect;&nbsp;</a></span>m_view_clear_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t mage::ViewerSetup::m_view_clear_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flags used for clearing the view. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="namespacemage.html">mage</a></li><li class="navelem"><a class="el" href="structmage_1_1_viewer_setup.html">ViewerSetup</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
