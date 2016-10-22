@@ -5,6 +5,8 @@ var searchData=
   ['indexededge',['IndexedEdge',['../structmage_1_1_indexed_edge.html',1,'mage']]],
   ['indexedface',['IndexedFace',['../structmage_1_1_indexed_face.html',1,'mage']]],
   ['info',['Info',['../namespacemage.html#add6aa5f13960ce07b20f48d273956a91',1,'mage']]],
+  ['input',['Input',['../classmage_1_1_input.html#a036b38f787b45d14ff92f360303b33af',1,'mage::Input']]],
+  ['input',['Input',['../classmage_1_1_input.html',1,'mage']]],
   ['insertafter',['InsertAfter',['../classmage_1_1_linked_list.html#a25424001f549e03d785a219d99231044',1,'mage::LinkedList']]],
   ['insertbefore',['InsertBefore',['../classmage_1_1_linked_list.html#a5744f0c1ae3b9e752dffdd3fdb518f5c',1,'mage::LinkedList']]],
   ['inside',['Inside',['../structmage_1_1_a_a_b_b.html#ad1c2ec1aab58a383219ba1082e72b020',1,'mage::AABB::Inside(AABB &amp;aabb) const'],['../structmage_1_1_a_a_b_b.html#ad8b5d30287d5dcb98ad2dfcfb90c5e22',1,'mage::AABB::Inside(Face &amp;face) const']]],

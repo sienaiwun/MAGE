@@ -1,0 +1,181 @@
+\hypertarget{class_input}{}\section{Input Class Reference}
+\label{class_input}\index{Input@{Input}}
+
+
+{\ttfamily \#include $<$input.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_input_ab6dcffe87310e5260061b007d9367d7b}{Input} (H\+W\+ND window)
+\item 
+virtual \hyperlink{class_input_a230646fa6e6433b4d9ac3535b7d52087}{$\sim$\+Input} ()
+\item 
+void \hyperlink{class_input_af80dcfde6dbfe39bf3bc0345c75595ce}{Update} ()
+\item 
+bool \hyperlink{class_input_af1b5b0b8d188e4fb42b57cf9453073d8}{Get\+Key\+Press} (char key, bool ignore\+Press\+Stamp=false)
+\item 
+bool \hyperlink{class_input_ad7f07b1c067eb0d7107359dce7676b96}{Get\+Button\+Press} (char button, bool ignore\+Press\+Stamp=false)
+\item 
+long \hyperlink{class_input_a06cd932d855b618964ddced8178ab831}{Get\+PosX} () const
+\item 
+long \hyperlink{class_input_ac0e08246889f7ce5d765dbb4876ceeb2}{Get\+PosY} () const
+\item 
+long \hyperlink{class_input_aa94c7181f990a4c7be6c82fb4a3bd382}{Get\+DeltaX} () const
+\item 
+long \hyperlink{class_input_a6aa19d7395fe668fdce3a5295ae3e786}{Get\+DeltaY} () const
+\item 
+long \hyperlink{class_input_a98f464509993520aec2dad1b6eab4845}{Get\+Delta\+Wheel} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+H\+W\+ND \hyperlink{class_input_a6485841e7ce6e512ba04a8802481bf42}{m\+\_\+window}
+\item 
+I\+Direct\+Input8 $\ast$ \hyperlink{class_input_ade5b2cbf3dd9072d6c2c7466097c3679}{m\+\_\+di}
+\item 
+unsigned long \hyperlink{class_input_a301f123d7ad61e21568a514d08219bf7}{m\+\_\+press\+Stamp}
+\item 
+I\+Direct\+Input\+Device8 $\ast$ \hyperlink{class_input_a4b5ec5d30c7d36dd1c2032b400223417}{m\+\_\+keyboard}
+\item 
+char \hyperlink{class_input_a2fe5036aba8044c756ce7d63faa142b5}{m\+\_\+key\+State} \mbox{[}256\mbox{]}
+\item 
+unsigned long \hyperlink{class_input_ae2bac0249b4c1bf1c984162e642fdf93}{m\+\_\+key\+Press\+Stamp} \mbox{[}256\mbox{]}
+\item 
+I\+Direct\+Input\+Device8 $\ast$ \hyperlink{class_input_a53463bab2adf6daaed152db1276387dc}{m\+\_\+mouse}
+\item 
+D\+I\+M\+O\+U\+S\+E\+S\+T\+A\+TE \hyperlink{class_input_a6507d3096421698410d71e6a160a5d16}{m\+\_\+mouse\+\_\+state}
+\item 
+unsigned long \hyperlink{class_input_a9435776adeb594cd2b48e97aeda88231}{m\+\_\+button\+Press\+Stamp} \mbox{[}3\mbox{]}
+\item 
+P\+O\+I\+NT \hyperlink{class_input_a974fd68343b833561316619976a90ec1}{m\+\_\+position}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_input_ab6dcffe87310e5260061b007d9367d7b}{}\label{class_input_ab6dcffe87310e5260061b007d9367d7b} 
+\index{Input@{Input}!Input@{Input}}
+\index{Input@{Input}!Input@{Input}}
+\subsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily Input\+::\+Input (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{window }\end{DoxyParamCaption})}
+
+\hypertarget{class_input_a230646fa6e6433b4d9ac3535b7d52087}{}\label{class_input_a230646fa6e6433b4d9ac3535b7d52087} 
+\index{Input@{Input}!````~Input@{$\sim$\+Input}}
+\index{````~Input@{$\sim$\+Input}!Input@{Input}}
+\subsubsection{\texorpdfstring{$\sim$\+Input()}{~Input()}}
+{\footnotesize\ttfamily virtual Input\+::$\sim$\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_input_ad7f07b1c067eb0d7107359dce7676b96}{}\label{class_input_ad7f07b1c067eb0d7107359dce7676b96} 
+\index{Input@{Input}!Get\+Button\+Press@{Get\+Button\+Press}}
+\index{Get\+Button\+Press@{Get\+Button\+Press}!Input@{Input}}
+\subsubsection{\texorpdfstring{Get\+Button\+Press()}{GetButtonPress()}}
+{\footnotesize\ttfamily bool Input\+::\+Get\+Button\+Press (\begin{DoxyParamCaption}\item[{char}]{button,  }\item[{bool}]{ignore\+Press\+Stamp = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\hypertarget{class_input_a98f464509993520aec2dad1b6eab4845}{}\label{class_input_a98f464509993520aec2dad1b6eab4845} 
+\index{Input@{Input}!Get\+Delta\+Wheel@{Get\+Delta\+Wheel}}
+\index{Get\+Delta\+Wheel@{Get\+Delta\+Wheel}!Input@{Input}}
+\subsubsection{\texorpdfstring{Get\+Delta\+Wheel()}{GetDeltaWheel()}}
+{\footnotesize\ttfamily long Input\+::\+Get\+Delta\+Wheel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_input_aa94c7181f990a4c7be6c82fb4a3bd382}{}\label{class_input_aa94c7181f990a4c7be6c82fb4a3bd382} 
+\index{Input@{Input}!Get\+DeltaX@{Get\+DeltaX}}
+\index{Get\+DeltaX@{Get\+DeltaX}!Input@{Input}}
+\subsubsection{\texorpdfstring{Get\+Delta\+X()}{GetDeltaX()}}
+{\footnotesize\ttfamily long Input\+::\+Get\+DeltaX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_input_a6aa19d7395fe668fdce3a5295ae3e786}{}\label{class_input_a6aa19d7395fe668fdce3a5295ae3e786} 
+\index{Input@{Input}!Get\+DeltaY@{Get\+DeltaY}}
+\index{Get\+DeltaY@{Get\+DeltaY}!Input@{Input}}
+\subsubsection{\texorpdfstring{Get\+Delta\+Y()}{GetDeltaY()}}
+{\footnotesize\ttfamily long Input\+::\+Get\+DeltaY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_input_af1b5b0b8d188e4fb42b57cf9453073d8}{}\label{class_input_af1b5b0b8d188e4fb42b57cf9453073d8} 
+\index{Input@{Input}!Get\+Key\+Press@{Get\+Key\+Press}}
+\index{Get\+Key\+Press@{Get\+Key\+Press}!Input@{Input}}
+\subsubsection{\texorpdfstring{Get\+Key\+Press()}{GetKeyPress()}}
+{\footnotesize\ttfamily bool Input\+::\+Get\+Key\+Press (\begin{DoxyParamCaption}\item[{char}]{key,  }\item[{bool}]{ignore\+Press\+Stamp = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\hypertarget{class_input_a06cd932d855b618964ddced8178ab831}{}\label{class_input_a06cd932d855b618964ddced8178ab831} 
+\index{Input@{Input}!Get\+PosX@{Get\+PosX}}
+\index{Get\+PosX@{Get\+PosX}!Input@{Input}}
+\subsubsection{\texorpdfstring{Get\+Pos\+X()}{GetPosX()}}
+{\footnotesize\ttfamily long Input\+::\+Get\+PosX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_input_ac0e08246889f7ce5d765dbb4876ceeb2}{}\label{class_input_ac0e08246889f7ce5d765dbb4876ceeb2} 
+\index{Input@{Input}!Get\+PosY@{Get\+PosY}}
+\index{Get\+PosY@{Get\+PosY}!Input@{Input}}
+\subsubsection{\texorpdfstring{Get\+Pos\+Y()}{GetPosY()}}
+{\footnotesize\ttfamily long Input\+::\+Get\+PosY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_input_af80dcfde6dbfe39bf3bc0345c75595ce}{}\label{class_input_af80dcfde6dbfe39bf3bc0345c75595ce} 
+\index{Input@{Input}!Update@{Update}}
+\index{Update@{Update}!Input@{Input}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Input\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_input_a9435776adeb594cd2b48e97aeda88231}{}\label{class_input_a9435776adeb594cd2b48e97aeda88231} 
+\index{Input@{Input}!m\+\_\+button\+Press\+Stamp@{m\+\_\+button\+Press\+Stamp}}
+\index{m\+\_\+button\+Press\+Stamp@{m\+\_\+button\+Press\+Stamp}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+button\+Press\+Stamp}{m\_buttonPressStamp}}
+{\footnotesize\ttfamily unsigned long Input\+::m\+\_\+button\+Press\+Stamp\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_input_ade5b2cbf3dd9072d6c2c7466097c3679}{}\label{class_input_ade5b2cbf3dd9072d6c2c7466097c3679} 
+\index{Input@{Input}!m\+\_\+di@{m\+\_\+di}}
+\index{m\+\_\+di@{m\+\_\+di}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+di}{m\_di}}
+{\footnotesize\ttfamily I\+Direct\+Input8$\ast$ Input\+::m\+\_\+di\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_input_a4b5ec5d30c7d36dd1c2032b400223417}{}\label{class_input_a4b5ec5d30c7d36dd1c2032b400223417} 
+\index{Input@{Input}!m\+\_\+keyboard@{m\+\_\+keyboard}}
+\index{m\+\_\+keyboard@{m\+\_\+keyboard}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+keyboard}{m\_keyboard}}
+{\footnotesize\ttfamily I\+Direct\+Input\+Device8$\ast$ Input\+::m\+\_\+keyboard\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_input_ae2bac0249b4c1bf1c984162e642fdf93}{}\label{class_input_ae2bac0249b4c1bf1c984162e642fdf93} 
+\index{Input@{Input}!m\+\_\+key\+Press\+Stamp@{m\+\_\+key\+Press\+Stamp}}
+\index{m\+\_\+key\+Press\+Stamp@{m\+\_\+key\+Press\+Stamp}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+key\+Press\+Stamp}{m\_keyPressStamp}}
+{\footnotesize\ttfamily unsigned long Input\+::m\+\_\+key\+Press\+Stamp\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_input_a2fe5036aba8044c756ce7d63faa142b5}{}\label{class_input_a2fe5036aba8044c756ce7d63faa142b5} 
+\index{Input@{Input}!m\+\_\+key\+State@{m\+\_\+key\+State}}
+\index{m\+\_\+key\+State@{m\+\_\+key\+State}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+key\+State}{m\_keyState}}
+{\footnotesize\ttfamily char Input\+::m\+\_\+key\+State\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_input_a53463bab2adf6daaed152db1276387dc}{}\label{class_input_a53463bab2adf6daaed152db1276387dc} 
+\index{Input@{Input}!m\+\_\+mouse@{m\+\_\+mouse}}
+\index{m\+\_\+mouse@{m\+\_\+mouse}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+mouse}{m\_mouse}}
+{\footnotesize\ttfamily I\+Direct\+Input\+Device8$\ast$ Input\+::m\+\_\+mouse\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_input_a6507d3096421698410d71e6a160a5d16}{}\label{class_input_a6507d3096421698410d71e6a160a5d16} 
+\index{Input@{Input}!m\+\_\+mouse\+\_\+state@{m\+\_\+mouse\+\_\+state}}
+\index{m\+\_\+mouse\+\_\+state@{m\+\_\+mouse\+\_\+state}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+mouse\+\_\+state}{m\_mouse\_state}}
+{\footnotesize\ttfamily D\+I\+M\+O\+U\+S\+E\+S\+T\+A\+TE Input\+::m\+\_\+mouse\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_input_a974fd68343b833561316619976a90ec1}{}\label{class_input_a974fd68343b833561316619976a90ec1} 
+\index{Input@{Input}!m\+\_\+position@{m\+\_\+position}}
+\index{m\+\_\+position@{m\+\_\+position}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+position}{m\_position}}
+{\footnotesize\ttfamily P\+O\+I\+NT Input\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_input_a301f123d7ad61e21568a514d08219bf7}{}\label{class_input_a301f123d7ad61e21568a514d08219bf7} 
+\index{Input@{Input}!m\+\_\+press\+Stamp@{m\+\_\+press\+Stamp}}
+\index{m\+\_\+press\+Stamp@{m\+\_\+press\+Stamp}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+press\+Stamp}{m\_pressStamp}}
+{\footnotesize\ttfamily unsigned long Input\+::m\+\_\+press\+Stamp\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_input_a6485841e7ce6e512ba04a8802481bf42}{}\label{class_input_a6485841e7ce6e512ba04a8802481bf42} 
+\index{Input@{Input}!m\+\_\+window@{m\+\_\+window}}
+\index{m\+\_\+window@{m\+\_\+window}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+window}{m\_window}}
+{\footnotesize\ttfamily H\+W\+ND Input\+::m\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+

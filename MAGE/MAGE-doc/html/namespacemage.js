@@ -9,6 +9,7 @@ var namespacemage =
     [ "GeneralConfiguration", "structmage_1_1_general_configuration.html", "structmage_1_1_general_configuration" ],
     [ "IndexedEdge", "structmage_1_1_indexed_edge.html", "structmage_1_1_indexed_edge" ],
     [ "IndexedFace", "structmage_1_1_indexed_face.html", "structmage_1_1_indexed_face" ],
+    [ "Input", "classmage_1_1_input.html", "classmage_1_1_input" ],
     [ "LinkedList", "classmage_1_1_linked_list.html", "classmage_1_1_linked_list" ],
     [ "LVertex", "structmage_1_1_l_vertex.html", "structmage_1_1_l_vertex" ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html", "classmage_1_1_memory_arena" ],

@@ -2,6 +2,7 @@ var searchData=
 [
   ['_7econditionvariable',['~ConditionVariable',['../classmage_1_1_condition_variable.html#accd5253beb65b2904428afdb889cf00b',1,'mage::ConditionVariable']]],
   ['_7eengine',['~Engine',['../classmage_1_1_engine.html#a34628556f8397d70ed018d71e343c2f5',1,'mage::Engine']]],
+  ['_7einput',['~Input',['../classmage_1_1_input.html#a52324bfe97e7245176f77ac9e635df53',1,'mage::Input']]],
   ['_7elinkedlist',['~LinkedList',['../classmage_1_1_linked_list.html#a88cb2ec52e90f3658d9735b4948cccdb',1,'mage::LinkedList']]],
   ['_7elinkedlistelement',['~LinkedListElement',['../structmage_1_1_linked_list_1_1_linked_list_element.html#a89ff38c90ddf8854abb821d1497e8e1c',1,'mage::LinkedList::LinkedListElement']]],
   ['_7elinkedlistiterator',['~LinkedListIterator',['../structmage_1_1_linked_list_1_1_linked_list_iterator.html#a16631a6dc7aaaad10ba676f569da62b9',1,'mage::LinkedList::LinkedListIterator']]],
