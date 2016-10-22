@@ -2,6 +2,7 @@ var searchData=
 [
   ['linkedlist',['LinkedList',['../classmage_1_1_linked_list.html',1,'mage']]],
   ['linkedlist',['LinkedList',['../classmage_1_1_linked_list.html#a44b43c51b9515695016c8664d898aa6b',1,'mage::LinkedList']]],
+  ['linkedlist_3c_20mage_3a_3astate_20_3e',['LinkedList&lt; mage::State &gt;',['../classmage_1_1_linked_list.html',1,'mage']]],
   ['linkedlistelement',['LinkedListElement',['../structmage_1_1_linked_list_1_1_linked_list_element.html',1,'mage::LinkedList']]],
   ['linkedlistelement',['LinkedListElement',['../structmage_1_1_linked_list_1_1_linked_list_element.html#a7bb2d9bd1aef7790f675a09a607f4160',1,'mage::LinkedList::LinkedListElement']]],
   ['linkedlistiterator',['LinkedListIterator',['../structmage_1_1_linked_list_1_1_linked_list_iterator.html',1,'mage::LinkedList']]],

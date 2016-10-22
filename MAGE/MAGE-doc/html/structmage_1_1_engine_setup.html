@@ -99,10 +99,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a13e9577c9762cccf127b51c1188d9477"><td class="memItemLeft" align="right" valign="top">HINSTANCE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a13e9577c9762cccf127b51c1188d9477">m_instance</a></td></tr>
-<tr class="separator:a13e9577c9762cccf127b51c1188d9477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91461305cd9aa60e22fa770395d2238"><td class="memItemLeft" align="right" valign="top">HINSTANCE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#af91461305cd9aa60e22fa770395d2238">m_hinstance</a></td></tr>
+<tr class="separator:af91461305cd9aa60e22fa770395d2238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3866920e44c0752a89265f9f0c5c5d05"><td class="memItemLeft" align="right" valign="top">wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a3866920e44c0752a89265f9f0c5c5d05">m_name</a></td></tr>
 <tr class="separator:a3866920e44c0752a89265f9f0c5c5d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a3c8a316c63e6c90ee9dd6efb82c0c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a36a3c8a316c63e6c90ee9dd6efb82c0c">StateSetup</a> )()</td></tr>
+<tr class="separator:a36a3c8a316c63e6c90ee9dd6efb82c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A struct of engine setups. </p>
@@ -158,14 +160,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a13e9577c9762cccf127b51c1188d9477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e9577c9762cccf127b51c1188d9477">&sect;&nbsp;</a></span>m_instance</h2>
+<a id="af91461305cd9aa60e22fa770395d2238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91461305cd9aa60e22fa770395d2238">&sect;&nbsp;</a></span>m_hinstance</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HINSTANCE mage::EngineSetup::m_instance</td>
+          <td class="memname">HINSTANCE mage::EngineSetup::m_hinstance</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -185,6 +187,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Name of the application. </p>
+
+</div>
+</div>
+<a id="a36a3c8a316c63e6c90ee9dd6efb82c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a3c8a316c63e6c90ee9dd6efb82c0c">&sect;&nbsp;</a></span>StateSetup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* mage::EngineSetup::StateSetup) ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The state setup function. </p>
 
 </div>
 </div>
