@@ -6,7 +6,7 @@ var searchData=
   ['generalconfiguration',['GeneralConfiguration',['../structmage_1_1_general_configuration.html',1,'mage']]],
   ['getat',['GetAt',['../classmage_1_1_linked_list.html#a97922b200a12979e5c8692dd5f3f73d1',1,'mage::LinkedList']]],
   ['getcompletelinkedlistelement',['GetCompleteLinkedListElement',['../classmage_1_1_linked_list.html#a0da4ff247abafd3a496b379673c111c1',1,'mage::LinkedList']]],
-  ['getcurrentstate',['GetCurrentState',['../classmage_1_1_engine.html#a4750928e48c3ae2e38d10bf8ec0e4816',1,'mage::Engine']]],
+  ['getcurrentstate',['GetCurrentState',['../classmage_1_1_state_manager.html#ab3a37b1ef0d2e9960ff4c98747c64d3f',1,'mage::StateManager']]],
   ['getdeltawheel',['GetDeltaWheel',['../classmage_1_1_input.html#a59c042bc18b47bca3010eb4df7de44c2',1,'mage::Input']]],
   ['getdeltax',['GetDeltaX',['../classmage_1_1_input.html#a6fcfe61fc9f5a2575375c7e2c39507f5',1,'mage::Input']]],
   ['getdeltay',['GetDeltaY',['../classmage_1_1_input.html#ac63b55db4438989d2c6729a358ace296',1,'mage::Input']]],
@@ -15,9 +15,9 @@ var searchData=
   ['getid',['GetId',['../classmage_1_1_state.html#a07c383a809204ba12a2bbfb22d2977d5',1,'mage::State']]],
   ['getinput',['GetInput',['../classmage_1_1_engine.html#a55d099d040e8895803f15e214f3b6d9e',1,'mage::Engine']]],
   ['getiterator',['GetIterator',['../classmage_1_1_linked_list.html#a7e4016d051e44eb5d8a7bde3d193b9e8',1,'mage::LinkedList']]],
-  ['getkeypress',['GetKeyPress',['../classmage_1_1_input.html#a3d944c0dc60299561e6eb135f0494743',1,'mage::Input']]],
+  ['getkeypress',['GetKeyPress',['../classmage_1_1_input.html#aed069ebf04f32b924a9f1d5a1371f69a',1,'mage::Input']]],
   ['getlast',['GetLast',['../classmage_1_1_linked_list.html#a734f6dc6d073edd99eb9a0ac1f605900',1,'mage::LinkedList']]],
-  ['getmousebuttonpress',['GetMouseButtonPress',['../classmage_1_1_input.html#a00bee37b589ac6e67293e0261ac50e9f',1,'mage::Input']]],
+  ['getmousebuttonpress',['GetMouseButtonPress',['../classmage_1_1_input.html#a8995df2b027f8a168feea5c2927251fb',1,'mage::Input']]],
   ['getname',['GetName',['../classmage_1_1_resource.html#a77713b0c74f8983afc2d42843afe8cbe',1,'mage::Resource']]],
   ['getnext',['GetNext',['../classmage_1_1_linked_list.html#a992390dbc48cf24705f9e79baef37061',1,'mage::LinkedList']]],
   ['getpath',['GetPath',['../classmage_1_1_resource.html#a2ef6c6937947b56cbabc569e3a63ca71',1,'mage::Resource']]],
@@ -29,5 +29,6 @@ var searchData=
   ['getresource',['GetResource',['../classmage_1_1_resource_manager.html#ad22e0920555c376752b8448a81df59c6',1,'mage::ResourceManager']]],
   ['getresources',['GetResources',['../classmage_1_1_resource_manager.html#a33c327ebcff3a851892b7efc26bea295',1,'mage::ResourceManager']]],
   ['getsize',['GetSize',['../classmage_1_1_linked_list.html#a8d033278680a0053e30cba91b27941a1',1,'mage::LinkedList']]],
+  ['getstatemanager',['GetStateManager',['../classmage_1_1_engine.html#a4f35bccc3784de531245a2549d537745',1,'mage::Engine']]],
   ['getwindow',['GetWindow',['../classmage_1_1_engine.html#a1c5f9d8c68045b36f404251359aa41e4',1,'mage::Engine']]]
 ];

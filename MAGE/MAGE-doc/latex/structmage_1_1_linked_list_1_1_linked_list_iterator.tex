@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_linked_list_1_1_linked_list_iterator_a5353da2850d87cebb02f04833061c7a0}{Linked\+List\+Iterator} (const \hyperlink{classmage_1_1_linked_list}{Linked\+List}$<$ T $>$ \&list)
+\hyperlink{structmage_1_1_linked_list_1_1_linked_list_iterator_a23efb79b0ab097c9d238feca8bab6e42}{Linked\+List\+Iterator} (\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$first)
 \item 
 virtual \hyperlink{structmage_1_1_linked_list_1_1_linked_list_iterator_a16631a6dc7aaaad10ba676f569da62b9}{$\sim$\+Linked\+List\+Iterator} ()
 \item 
@@ -29,18 +29,18 @@ struct mage\+::\+Linked\+List$<$ T $>$\+::\+Linked\+List\+Iterator}
 A struct of forward iterators for a \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List$<$\+T$>$}. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{structmage_1_1_linked_list_1_1_linked_list_iterator_a5353da2850d87cebb02f04833061c7a0}{}\label{structmage_1_1_linked_list_1_1_linked_list_iterator_a5353da2850d87cebb02f04833061c7a0} 
+\hypertarget{structmage_1_1_linked_list_1_1_linked_list_iterator_a23efb79b0ab097c9d238feca8bab6e42}{}\label{structmage_1_1_linked_list_1_1_linked_list_iterator_a23efb79b0ab097c9d238feca8bab6e42} 
 \index{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator@{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator}!Linked\+List\+Iterator@{Linked\+List\+Iterator}}
 \index{Linked\+List\+Iterator@{Linked\+List\+Iterator}!mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator@{mage\+::\+Linked\+List\+::\+Linked\+List\+Iterator}}
 \subsubsection{\texorpdfstring{Linked\+List\+Iterator()}{LinkedListIterator()}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
-\hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Linked\+List\+Iterator\+::\+Linked\+List\+Iterator (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_linked_list}{Linked\+List}$<$ T $>$ \&}]{list }\end{DoxyParamCaption})}
+\hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Linked\+List\+Iterator\+::\+Linked\+List\+Iterator (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$}]{first }\end{DoxyParamCaption})}
 
-Constructs a linked list iterator for the given linked list.
+Constructs a linked list iterator starting from the given first element of a linked list.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em list} & A reference to a linked list. \\
+\mbox{\tt in}  & {\em first} & A pointer to the first element of a linked list. \\
 \hline
 \end{DoxyParams}
 \hypertarget{structmage_1_1_linked_list_1_1_linked_list_iterator_a16631a6dc7aaaad10ba676f569da62b9}{}\label{structmage_1_1_linked_list_1_1_linked_list_iterator_a16631a6dc7aaaad10ba676f569da62b9} 

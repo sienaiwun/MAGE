@@ -17,6 +17,7 @@ var searchData=
   ['_7eresourcemanager',['~ResourceManager',['../classmage_1_1_resource_manager.html#af3b6bf56e57bd3df0eb569510dd1483b',1,'mage::ResourceManager']]],
   ['_7esemaphore',['~Semaphore',['../classmage_1_1_semaphore.html#a991ed365c28e4a9c63ff34a5efeb012d',1,'mage::Semaphore']]],
   ['_7estate',['~State',['../classmage_1_1_state.html#a8e5220ebfb74db1ed95f4d3b3ec8fb2d',1,'mage::State']]],
+  ['_7estatemanager',['~StateManager',['../classmage_1_1_state_manager.html#af4bc45cc90437f54e2776e2a8ee747e1',1,'mage::StateManager']]],
   ['_7etask',['~Task',['../classmage_1_1_task.html#a66a892ec09928a904c7c156098a1abbf',1,'mage::Task']]],
   ['_7etimer',['~Timer',['../classmage_1_1_timer.html#aa91cebe8c59c189fde93932fde10265c',1,'mage::Timer']]]
 ];

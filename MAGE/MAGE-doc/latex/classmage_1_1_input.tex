@@ -13,9 +13,9 @@ virtual \hyperlink{classmage_1_1_input_a52324bfe97e7245176f77ac9e635df53}{$\sim$
 \item 
 void \hyperlink{classmage_1_1_input_ab152509540c3f41d337296edc2aea660}{Update} ()
 \item 
-{\footnotesize template$<$bool include\+\_\+press\+\_\+stamp$>$ }\\bool \hyperlink{classmage_1_1_input_a3d944c0dc60299561e6eb135f0494743}{Get\+Key\+Press} (char key)
+bool \hyperlink{classmage_1_1_input_aed069ebf04f32b924a9f1d5a1371f69a}{Get\+Key\+Press} (char key, bool ignore\+\_\+press\+\_\+stamp=false)
 \item 
-{\footnotesize template$<$bool include\+\_\+press\+\_\+stamp$>$ }\\bool \hyperlink{classmage_1_1_input_a00bee37b589ac6e67293e0261ac50e9f}{Get\+Mouse\+Button\+Press} (char mouse\+\_\+button)
+bool \hyperlink{classmage_1_1_input_a8995df2b027f8a168feea5c2927251fb}{Get\+Mouse\+Button\+Press} (char mouse\+\_\+button, bool ignore\+\_\+press\+\_\+stamp=false)
 \item 
 long \hyperlink{classmage_1_1_input_a5b839b6ead23e1c0ec623fb82c5d6e45}{Get\+PosX} () const
 \item 
@@ -111,45 +111,37 @@ Returns the change in the mouse\textquotesingle{}s vertical coordinate.
 \begin{DoxyReturn}{Returns}
 The change in the mouse\textquotesingle{}s vertical coordinate. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_input_a3d944c0dc60299561e6eb135f0494743}{}\label{classmage_1_1_input_a3d944c0dc60299561e6eb135f0494743} 
+\hypertarget{classmage_1_1_input_aed069ebf04f32b924a9f1d5a1371f69a}{}\label{classmage_1_1_input_aed069ebf04f32b924a9f1d5a1371f69a} 
 \index{mage\+::\+Input@{mage\+::\+Input}!Get\+Key\+Press@{Get\+Key\+Press}}
 \index{Get\+Key\+Press@{Get\+Key\+Press}!mage\+::\+Input@{mage\+::\+Input}}
 \subsubsection{\texorpdfstring{Get\+Key\+Press()}{GetKeyPress()}}
-{\footnotesize\ttfamily template$<$bool include\+\_\+press\+\_\+stamp$>$ \\
-bool mage\+::\+Input\+::\+Get\+Key\+Press (\begin{DoxyParamCaption}\item[{char}]{key }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool mage\+::\+Input\+::\+Get\+Key\+Press (\begin{DoxyParamCaption}\item[{char}]{key,  }\item[{bool}]{ignore\+\_\+press\+\_\+stamp = {\ttfamily false} }\end{DoxyParamCaption})}
 
 Checks whether the given key is pressed.
 
 
-\begin{DoxyTemplParams}{Template Parameters}
-{\em include\+\_\+press\+\_\+stamp} & Consistent presses will return false when including the press stamp. \\
-\hline
-\end{DoxyTemplParams}
-
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em key} & The key. \\
+\hline
+\mbox{\tt in}  & {\em ignore\+\_\+press\+\_\+stamp} & Flag indicating whether press stamps should be ignored. Consistent presses will return false when using the press stamp. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the given key is pressed. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_input_a00bee37b589ac6e67293e0261ac50e9f}{}\label{classmage_1_1_input_a00bee37b589ac6e67293e0261ac50e9f} 
+\hypertarget{classmage_1_1_input_a8995df2b027f8a168feea5c2927251fb}{}\label{classmage_1_1_input_a8995df2b027f8a168feea5c2927251fb} 
 \index{mage\+::\+Input@{mage\+::\+Input}!Get\+Mouse\+Button\+Press@{Get\+Mouse\+Button\+Press}}
 \index{Get\+Mouse\+Button\+Press@{Get\+Mouse\+Button\+Press}!mage\+::\+Input@{mage\+::\+Input}}
 \subsubsection{\texorpdfstring{Get\+Mouse\+Button\+Press()}{GetMouseButtonPress()}}
-{\footnotesize\ttfamily template$<$bool include\+\_\+press\+\_\+stamp$>$ \\
-bool mage\+::\+Input\+::\+Get\+Mouse\+Button\+Press (\begin{DoxyParamCaption}\item[{char}]{mouse\+\_\+button }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool mage\+::\+Input\+::\+Get\+Mouse\+Button\+Press (\begin{DoxyParamCaption}\item[{char}]{mouse\+\_\+button,  }\item[{bool}]{ignore\+\_\+press\+\_\+stamp = {\ttfamily false} }\end{DoxyParamCaption})}
 
 Checks whether the given mouse button is pressed.
 
 
-\begin{DoxyTemplParams}{Template Parameters}
-{\em include\+\_\+press\+\_\+stamp} & Consistent presses will return false when including the press stamp. \\
-\hline
-\end{DoxyTemplParams}
-
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em mouse\+\_\+button} & The mouse button. \\
+\hline
+\mbox{\tt in}  & {\em ignore\+\_\+press\+\_\+stamp} & Flag indicating whether press stamps should be ignored. Consistent presses will return false when using the press stamp. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

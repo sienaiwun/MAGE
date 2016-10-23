@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('structmage_1_1_linked_list_1_1_linked_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5353da2850d87cebb02f04833061c7a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_linked_list_1_1_linked_list_iterator.html#a5353da2850d87cebb02f04833061c7a0">LinkedListIterator</a> (const <a class="el" href="classmage_1_1_linked_list.html">LinkedList</a>&lt; T &gt; &amp;list)</td></tr>
-<tr class="separator:a5353da2850d87cebb02f04833061c7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23efb79b0ab097c9d238feca8bab6e42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_linked_list_1_1_linked_list_iterator.html#a23efb79b0ab097c9d238feca8bab6e42">LinkedListIterator</a> (<a class="el" href="structmage_1_1_linked_list_1_1_linked_list_element.html">LinkedListElement</a> *first)</td></tr>
+<tr class="separator:a23efb79b0ab097c9d238feca8bab6e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16631a6dc7aaaad10ba676f569da62b9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_linked_list_1_1_linked_list_iterator.html#a16631a6dc7aaaad10ba676f569da62b9">~LinkedListIterator</a> ()</td></tr>
 <tr class="separator:a16631a6dc7aaaad10ba676f569da62b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae23127f7be560d81bbda5321690a7ef9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_linked_list_1_1_linked_list_iterator.html#ae23127f7be560d81bbda5321690a7ef9">HasNext</a> () const</td></tr>
@@ -112,8 +112,8 @@ struct mage::LinkedList&lt; T &gt;::LinkedListIterator</h3>
 
 <p>A struct of forward iterators for a <a class="el" href="classmage_1_1_linked_list.html">mage::LinkedList&lt;T&gt;</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5353da2850d87cebb02f04833061c7a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5353da2850d87cebb02f04833061c7a0">&sect;&nbsp;</a></span>LinkedListIterator()</h2>
+<a id="a23efb79b0ab097c9d238feca8bab6e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23efb79b0ab097c9d238feca8bab6e42">&sect;&nbsp;</a></span>LinkedListIterator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,16 +123,16 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classmage_1_1_linked_list.html">mage::LinkedList</a>&lt; T &gt;::LinkedListIterator::LinkedListIterator </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_linked_list.html">LinkedList</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>list</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmage_1_1_linked_list_1_1_linked_list_element.html">LinkedListElement</a> *&#160;</td>
+          <td class="paramname"><em>first</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs a linked list iterator for the given linked list.</p>
+<p>Constructs a linked list iterator starting from the given first element of a linked list.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>A reference to a linked list. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">first</td><td>A pointer to the first element of a linked list. </td></tr>
   </table>
   </dd>
 </dl>

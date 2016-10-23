@@ -5,7 +5,7 @@ var classmage_1_1_linked_list =
     [ "LinkedList", "classmage_1_1_linked_list.html#a44b43c51b9515695016c8664d898aa6b", null ],
     [ "~LinkedList", "classmage_1_1_linked_list.html#a88cb2ec52e90f3658d9735b4948cccdb", null ],
     [ "Add", "classmage_1_1_linked_list.html#ac6cd236aab89f296d3c112c05b2337e2", null ],
-    [ "Empty", "classmage_1_1_linked_list.html#a6f57c11ad87c0f6d8f6ae8e785431c39", null ],
+    [ "Empty", "classmage_1_1_linked_list.html#a4176d80548f1ec5ca98fb18c16339de8", null ],
     [ "GetAt", "classmage_1_1_linked_list.html#a97922b200a12979e5c8692dd5f3f73d1", null ],
     [ "GetCompleteLinkedListElement", "classmage_1_1_linked_list.html#a0da4ff247abafd3a496b379673c111c1", null ],
     [ "GetFirst", "classmage_1_1_linked_list.html#a8394fd1c390b806b9daafdff497b02fb", null ],
@@ -17,7 +17,7 @@ var classmage_1_1_linked_list =
     [ "GetSize", "classmage_1_1_linked_list.html#a8d033278680a0053e30cba91b27941a1", null ],
     [ "InsertAfter", "classmage_1_1_linked_list.html#a25424001f549e03d785a219d99231044", null ],
     [ "InsertBefore", "classmage_1_1_linked_list.html#a5744f0c1ae3b9e752dffdd3fdb518f5c", null ],
-    [ "Remove", "classmage_1_1_linked_list.html#a37af908f76d8e21f7591104ed85226df", null ],
+    [ "Remove", "classmage_1_1_linked_list.html#a3bf5b2c799c9439804949ffed0c79a13", null ],
     [ "m_first", "classmage_1_1_linked_list.html#a194ecd23a82c83e2735717b32073340c", null ],
     [ "m_last", "classmage_1_1_linked_list.html#acb461a96b93fa3917b7ed2e30fe67fce", null ],
     [ "m_size", "classmage_1_1_linked_list.html#a1a1be1f46f0bc704e6387833b9528909", null ]

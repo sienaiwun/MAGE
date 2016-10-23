@@ -98,12 +98,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a52324bfe97e7245176f77ac9e635df53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab152509540c3f41d337296edc2aea660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#ab152509540c3f41d337296edc2aea660">Update</a> ()</td></tr>
 <tr class="separator:ab152509540c3f41d337296edc2aea660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d944c0dc60299561e6eb135f0494743"><td class="memTemplParams" colspan="2">template&lt;bool include_press_stamp&gt; </td></tr>
-<tr class="memitem:a3d944c0dc60299561e6eb135f0494743"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a3d944c0dc60299561e6eb135f0494743">GetKeyPress</a> (char key)</td></tr>
-<tr class="separator:a3d944c0dc60299561e6eb135f0494743"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00bee37b589ac6e67293e0261ac50e9f"><td class="memTemplParams" colspan="2">template&lt;bool include_press_stamp&gt; </td></tr>
-<tr class="memitem:a00bee37b589ac6e67293e0261ac50e9f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a00bee37b589ac6e67293e0261ac50e9f">GetMouseButtonPress</a> (char mouse_button)</td></tr>
-<tr class="separator:a00bee37b589ac6e67293e0261ac50e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed069ebf04f32b924a9f1d5a1371f69a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#aed069ebf04f32b924a9f1d5a1371f69a">GetKeyPress</a> (char key, bool ignore_press_stamp=false)</td></tr>
+<tr class="separator:aed069ebf04f32b924a9f1d5a1371f69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8995df2b027f8a168feea5c2927251fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a8995df2b027f8a168feea5c2927251fb">GetMouseButtonPress</a> (char mouse_button, bool ignore_press_stamp=false)</td></tr>
+<tr class="separator:a8995df2b027f8a168feea5c2927251fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b839b6ead23e1c0ec623fb82c5d6e45"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a5b839b6ead23e1c0ec623fb82c5d6e45">GetPosX</a> () const</td></tr>
 <tr class="separator:a5b839b6ead23e1c0ec623fb82c5d6e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7d46233ccf74d45c28549e5ecdd244"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a4c7d46233ccf74d45c28549e5ecdd244">GetPosY</a> () const</td></tr>
@@ -250,33 +248,36 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3d944c0dc60299561e6eb135f0494743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d944c0dc60299561e6eb135f0494743">&sect;&nbsp;</a></span>GetKeyPress()</h2>
+<a id="aed069ebf04f32b924a9f1d5a1371f69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed069ebf04f32b924a9f1d5a1371f69a">&sect;&nbsp;</a></span>GetKeyPress()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;bool include_press_stamp&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool mage::Input::GetKeyPress </td>
           <td>(</td>
           <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_press_stamp</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Checks whether the given key is pressed.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">include_press_stamp</td><td>Consistent presses will return false when including the press stamp. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The key. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ignore_press_stamp</td><td>Flag indicating whether press stamps should be ignored. Consistent presses will return false when using the press stamp. </td></tr>
   </table>
   </dd>
 </dl>
@@ -284,33 +285,36 @@ template&lt;bool include_press_stamp&gt; </div>
 
 </div>
 </div>
-<a id="a00bee37b589ac6e67293e0261ac50e9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00bee37b589ac6e67293e0261ac50e9f">&sect;&nbsp;</a></span>GetMouseButtonPress()</h2>
+<a id="a8995df2b027f8a168feea5c2927251fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8995df2b027f8a168feea5c2927251fb">&sect;&nbsp;</a></span>GetMouseButtonPress()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;bool include_press_stamp&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool mage::Input::GetMouseButtonPress </td>
           <td>(</td>
           <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>mouse_button</em></td><td>)</td>
+          <td class="paramname"><em>mouse_button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_press_stamp</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Checks whether the given mouse button is pressed.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">include_press_stamp</td><td>Consistent presses will return false when including the press stamp. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mouse_button</td><td>The mouse button. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ignore_press_stamp</td><td>Flag indicating whether press stamps should be ignored. Consistent presses will return false when using the press stamp. </td></tr>
   </table>
   </dd>
 </dl>

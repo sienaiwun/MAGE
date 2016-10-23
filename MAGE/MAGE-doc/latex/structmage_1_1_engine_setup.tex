@@ -9,7 +9,7 @@
 \item 
 \hyperlink{structmage_1_1_engine_setup_a75ee36366d3035c9600e1dbe98973aa4}{Engine\+Setup} (const wstring \&name=L\char`\"{}Application\char`\"{})
 \item 
-\hyperlink{structmage_1_1_engine_setup_a2399c7966ed02ce9e9ab951b7483aac1}{Engine\+Setup} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&setup)
+\hyperlink{structmage_1_1_engine_setup_a767bc519dffa2d4cdba61529d12831d8}{Engine\+Setup} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} $\ast$setup)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -39,17 +39,20 @@ Constructs an engine setup with the given application name.
 \mbox{\tt in}  & {\em name} & A reference to the name of the application. \\
 \hline
 \end{DoxyParams}
-\hypertarget{structmage_1_1_engine_setup_a2399c7966ed02ce9e9ab951b7483aac1}{}\label{structmage_1_1_engine_setup_a2399c7966ed02ce9e9ab951b7483aac1} 
+\hypertarget{structmage_1_1_engine_setup_a767bc519dffa2d4cdba61529d12831d8}{}\label{structmage_1_1_engine_setup_a767bc519dffa2d4cdba61529d12831d8} 
 \index{mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}!Engine\+Setup@{Engine\+Setup}}
 \index{Engine\+Setup@{Engine\+Setup}!mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}}
 \subsubsection{\texorpdfstring{Engine\+Setup()}{EngineSetup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily mage\+::\+Engine\+Setup\+::\+Engine\+Setup (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&}]{setup }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Engine\+Setup\+::\+Engine\+Setup (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} $\ast$}]{setup }\end{DoxyParamCaption})}
 
 Constructs an engine setup from the given engine setup.
 
+\begin{DoxyPrecond}{Precondition}
+setup does not point to {\ttfamily N\+U\+LL}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em setup} & A reference to the engine setup. \\
+\mbox{\tt in}  & {\em setup} & A pointer to the engine setup. \\
 \hline
 \end{DoxyParams}
 

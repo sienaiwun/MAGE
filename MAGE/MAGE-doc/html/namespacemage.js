@@ -24,6 +24,7 @@ var namespacemage =
     [ "ResourceManager", "classmage_1_1_resource_manager.html", "classmage_1_1_resource_manager" ],
     [ "Semaphore", "classmage_1_1_semaphore.html", "classmage_1_1_semaphore" ],
     [ "State", "classmage_1_1_state.html", "classmage_1_1_state" ],
+    [ "StateManager", "classmage_1_1_state_manager.html", "classmage_1_1_state_manager" ],
     [ "Task", "classmage_1_1_task.html", "classmage_1_1_task" ],
     [ "Timer", "classmage_1_1_timer.html", "classmage_1_1_timer" ],
     [ "TLVertex", "structmage_1_1_t_l_vertex.html", "structmage_1_1_t_l_vertex" ],

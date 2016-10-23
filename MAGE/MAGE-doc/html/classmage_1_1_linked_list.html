@@ -110,12 +110,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5744f0c1ae3b9e752dffdd3fdb518f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25424001f549e03d785a219d99231044"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_linked_list.html#a25424001f549e03d785a219d99231044">InsertAfter</a> (T *data, <a class="el" href="structmage_1_1_linked_list_1_1_linked_list_element.html">LinkedListElement</a> *prev_element)</td></tr>
 <tr class="separator:a25424001f549e03d785a219d99231044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37af908f76d8e21f7591104ed85226df"><td class="memTemplParams" colspan="2">template&lt;typename bool no_data_destruction&gt; </td></tr>
-<tr class="memitem:a37af908f76d8e21f7591104ed85226df"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_linked_list.html#a37af908f76d8e21f7591104ed85226df">Remove</a> (T **data)</td></tr>
-<tr class="separator:a37af908f76d8e21f7591104ed85226df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f57c11ad87c0f6d8f6ae8e785431c39"><td class="memTemplParams" colspan="2">template&lt;typename bool no_data_destruction&gt; </td></tr>
-<tr class="memitem:a6f57c11ad87c0f6d8f6ae8e785431c39"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_linked_list.html#a6f57c11ad87c0f6d8f6ae8e785431c39">Empty</a> ()</td></tr>
-<tr class="separator:a6f57c11ad87c0f6d8f6ae8e785431c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf5b2c799c9439804949ffed0c79a13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_linked_list.html#a3bf5b2c799c9439804949ffed0c79a13">Remove</a> (T **data, bool data_destruction=true)</td></tr>
+<tr class="separator:a3bf5b2c799c9439804949ffed0c79a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4176d80548f1ec5ca98fb18c16339de8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_linked_list.html#a4176d80548f1ec5ca98fb18c16339de8">Empty</a> (bool data_destruction=true)</td></tr>
+<tr class="separator:a4176d80548f1ec5ca98fb18c16339de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8394fd1c390b806b9daafdff497b02fb"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_linked_list.html#a8394fd1c390b806b9daafdff497b02fb">GetFirst</a> () const</td></tr>
 <tr class="separator:a8394fd1c390b806b9daafdff497b02fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a734f6dc6d073edd99eb9a0ac1f605900"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_linked_list.html#a734f6dc6d073edd99eb9a0ac1f605900">GetLast</a> () const</td></tr>
@@ -234,28 +232,27 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a6f57c11ad87c0f6d8f6ae8e785431c39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f57c11ad87c0f6d8f6ae8e785431c39">&sect;&nbsp;</a></span>Empty()</h2>
+<a id="a4176d80548f1ec5ca98fb18c16339de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4176d80548f1ec5ca98fb18c16339de8">&sect;&nbsp;</a></span>Empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
-<div class="memtemplate">
-template&lt;typename bool no_data_destruction&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classmage_1_1_linked_list.html">mage::LinkedList</a>&lt; T &gt;::Empty </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>data_destruction</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Destroys all the elements in this linked list.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">no_data_destruction</td><td>if <code>true</code> the data associated with the elements in this linkedlist will not be destructed. if <code>false</code> the data associated with the elements in this linkedlist will be destructed. </td></tr>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_destruction</td><td>if <code>true</code> the data associated with the elements in this linkedlist will be destructed. if <code>false</code> the data associated with the elements in this linkedlist will not be destructed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -569,22 +566,30 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a37af908f76d8e21f7591104ed85226df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37af908f76d8e21f7591104ed85226df">&sect;&nbsp;</a></span>Remove()</h2>
+<a id="a3bf5b2c799c9439804949ffed0c79a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf5b2c799c9439804949ffed0c79a13">&sect;&nbsp;</a></span>Remove()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
-<div class="memtemplate">
-template&lt;typename bool no_data_destruction&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classmage_1_1_linked_list.html">mage::LinkedList</a>&lt; T &gt;::Remove </td>
           <td>(</td>
           <td class="paramtype">T **&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>data_destruction</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -592,6 +597,7 @@ template&lt;typename bool no_data_destruction&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>A pointer to a pointer to the data which will point to <code>NULL</code> after removal. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_destruction</td><td>if <code>true</code> the data will be destructed. if <code>false</code> the data will not be destructed. </td></tr>
   </table>
   </dd>
 </dl>

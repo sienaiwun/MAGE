@@ -24,9 +24,9 @@ T $\ast$ \hyperlink{classmage_1_1_linked_list_a5744f0c1ae3b9e752dffdd3fdb518f5c}
 \item 
 T $\ast$ \hyperlink{classmage_1_1_linked_list_a25424001f549e03d785a219d99231044}{Insert\+After} (T $\ast$data, \hyperlink{structmage_1_1_linked_list_1_1_linked_list_element}{Linked\+List\+Element} $\ast$prev\+\_\+element)
 \item 
-{\footnotesize template$<$typename bool no\+\_\+data\+\_\+destruction$>$ }\\void \hyperlink{classmage_1_1_linked_list_a37af908f76d8e21f7591104ed85226df}{Remove} (T $\ast$$\ast$data)
+void \hyperlink{classmage_1_1_linked_list_a3bf5b2c799c9439804949ffed0c79a13}{Remove} (T $\ast$$\ast$data, bool data\+\_\+destruction=true)
 \item 
-{\footnotesize template$<$typename bool no\+\_\+data\+\_\+destruction$>$ }\\void \hyperlink{classmage_1_1_linked_list_a6f57c11ad87c0f6d8f6ae8e785431c39}{Empty} ()
+void \hyperlink{classmage_1_1_linked_list_a4176d80548f1ec5ca98fb18c16339de8}{Empty} (bool data\+\_\+destruction=true)
 \item 
 T $\ast$ \hyperlink{classmage_1_1_linked_list_a8394fd1c390b806b9daafdff497b02fb}{Get\+First} () const
 \item 
@@ -110,21 +110,20 @@ Adds the given data to the end of this linked list.
 \begin{DoxyReturn}{Returns}
 A pointer to the data. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_linked_list_a6f57c11ad87c0f6d8f6ae8e785431c39}{}\label{classmage_1_1_linked_list_a6f57c11ad87c0f6d8f6ae8e785431c39} 
+\hypertarget{classmage_1_1_linked_list_a4176d80548f1ec5ca98fb18c16339de8}{}\label{classmage_1_1_linked_list_a4176d80548f1ec5ca98fb18c16339de8} 
 \index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Empty@{Empty}}
 \index{Empty@{Empty}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
 \subsubsection{\texorpdfstring{Empty()}{Empty()}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
-template$<$typename bool no\+\_\+data\+\_\+destruction$>$ \\
-void \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+void \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Empty (\begin{DoxyParamCaption}\item[{bool}]{data\+\_\+destruction = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Destroys all the elements in this linked list.
 
 
-\begin{DoxyTemplParams}{Template Parameters}
-{\em no\+\_\+data\+\_\+destruction} & if {\ttfamily true} the data associated with the elements in this linkedlist will not be destructed. if {\ttfamily false} the data associated with the elements in this linkedlist will be destructed. \\
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data\+\_\+destruction} & if {\ttfamily true} the data associated with the elements in this linkedlist will be destructed. if {\ttfamily false} the data associated with the elements in this linkedlist will not be destructed. \\
 \hline
-\end{DoxyTemplParams}
+\end{DoxyParams}
 \hypertarget{classmage_1_1_linked_list_a97922b200a12979e5c8692dd5f3f73d1}{}\label{classmage_1_1_linked_list_a97922b200a12979e5c8692dd5f3f73d1} 
 \index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Get\+At@{Get\+At}}
 \index{Get\+At@{Get\+At}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
@@ -303,19 +302,20 @@ Inserts the given data into this linked list just before the given element in th
 \begin{DoxyReturn}{Returns}
 A pointer to the data. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_linked_list_a37af908f76d8e21f7591104ed85226df}{}\label{classmage_1_1_linked_list_a37af908f76d8e21f7591104ed85226df} 
+\hypertarget{classmage_1_1_linked_list_a3bf5b2c799c9439804949ffed0c79a13}{}\label{classmage_1_1_linked_list_a3bf5b2c799c9439804949ffed0c79a13} 
 \index{mage\+::\+Linked\+List@{mage\+::\+Linked\+List}!Remove@{Remove}}
 \index{Remove@{Remove}!mage\+::\+Linked\+List@{mage\+::\+Linked\+List}}
 \subsubsection{\texorpdfstring{Remove()}{Remove()}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
-template$<$typename bool no\+\_\+data\+\_\+destruction$>$ \\
-void \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Remove (\begin{DoxyParamCaption}\item[{T $\ast$$\ast$}]{data }\end{DoxyParamCaption})}
+void \hyperlink{classmage_1_1_linked_list}{mage\+::\+Linked\+List}$<$ T $>$\+::Remove (\begin{DoxyParamCaption}\item[{T $\ast$$\ast$}]{data,  }\item[{bool}]{data\+\_\+destruction = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Removes the given data from this linked list.
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in,out}  & {\em data} & A pointer to a pointer to the data which will point to {\ttfamily N\+U\+LL} after removal. \\
+\hline
+\mbox{\tt in}  & {\em data\+\_\+destruction} & if {\ttfamily true} the data will be destructed. if {\ttfamily false} the data will not be destructed. \\
 \hline
 \end{DoxyParams}
 
