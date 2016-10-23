@@ -24,6 +24,9 @@ float \hyperlink{structmage_1_1_l_vertex_ab5e712d5befd3b8e3b58c772e6d3bf50}{tv}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A struct of lit vertices. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{structmage_1_1_l_vertex_abfc69fb38d5f37b07d1c420a23a3e7f9}{}\label{structmage_1_1_l_vertex_abfc69fb38d5f37b07d1c420a23a3e7f9} 
 \index{mage\+::\+L\+Vertex@{mage\+::\+L\+Vertex}!L\+Vertex@{L\+Vertex}}
@@ -31,12 +34,25 @@ float \hyperlink{structmage_1_1_l_vertex_ab5e712d5befd3b8e3b58c772e6d3bf50}{tv}
 \subsubsection{\texorpdfstring{L\+Vertex()}{LVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+L\+Vertex\+::\+L\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{structmage_1_1_l_vertex_a262af68c7c50c1003bcbd941b504fe70}{}\label{structmage_1_1_l_vertex_a262af68c7c50c1003bcbd941b504fe70} 
+Constructs a lit vertex. \hypertarget{structmage_1_1_l_vertex_a262af68c7c50c1003bcbd941b504fe70}{}\label{structmage_1_1_l_vertex_a262af68c7c50c1003bcbd941b504fe70} 
 \index{mage\+::\+L\+Vertex@{mage\+::\+L\+Vertex}!L\+Vertex@{L\+Vertex}}
 \index{L\+Vertex@{L\+Vertex}!mage\+::\+L\+Vertex@{mage\+::\+L\+Vertex}}
 \subsubsection{\texorpdfstring{L\+Vertex()}{LVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily mage\+::\+L\+Vertex\+::\+L\+Vertex (\begin{DoxyParamCaption}\item[{X\+M\+F\+L\+O\+A\+T3}]{p,  }\item[{X\+M\+F\+L\+O\+A\+T4}]{diffuse,  }\item[{float}]{tu,  }\item[{float}]{tv }\end{DoxyParamCaption})}
 
+Constructs a lit vertex.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & Position of the lit vertex (in world space). \\
+\hline
+\mbox{\tt in}  & {\em diffuse} & Diffuse colour of the lit vertex. \\
+\hline
+\mbox{\tt in}  & {\em tu} & Texture u coordinate of the lit vertex. \\
+\hline
+\mbox{\tt in}  & {\em tv} & Texture v coordinate of the lit vertex. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -46,21 +62,22 @@ float \hyperlink{structmage_1_1_l_vertex_ab5e712d5befd3b8e3b58c772e6d3bf50}{tv}
 \subsubsection{\texorpdfstring{diffuse}{diffuse}}
 {\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T4 mage\+::\+L\+Vertex\+::diffuse}
 
-\hypertarget{structmage_1_1_l_vertex_afdf01d172b1992d4e4f37b9ad9fb2d27}{}\label{structmage_1_1_l_vertex_afdf01d172b1992d4e4f37b9ad9fb2d27} 
+Diffuse colour of this lit vertex. \hypertarget{structmage_1_1_l_vertex_afdf01d172b1992d4e4f37b9ad9fb2d27}{}\label{structmage_1_1_l_vertex_afdf01d172b1992d4e4f37b9ad9fb2d27} 
 \index{mage\+::\+L\+Vertex@{mage\+::\+L\+Vertex}!p@{p}}
 \index{p@{p}!mage\+::\+L\+Vertex@{mage\+::\+L\+Vertex}}
 \subsubsection{\texorpdfstring{p}{p}}
 {\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+L\+Vertex\+::p}
 
-\hypertarget{structmage_1_1_l_vertex_a820b1dba91a65e4be9a41c4297970dd6}{}\label{structmage_1_1_l_vertex_a820b1dba91a65e4be9a41c4297970dd6} 
+Position of this lit vertex (in world space). \hypertarget{structmage_1_1_l_vertex_a820b1dba91a65e4be9a41c4297970dd6}{}\label{structmage_1_1_l_vertex_a820b1dba91a65e4be9a41c4297970dd6} 
 \index{mage\+::\+L\+Vertex@{mage\+::\+L\+Vertex}!tu@{tu}}
 \index{tu@{tu}!mage\+::\+L\+Vertex@{mage\+::\+L\+Vertex}}
 \subsubsection{\texorpdfstring{tu}{tu}}
 {\footnotesize\ttfamily float mage\+::\+L\+Vertex\+::tu}
 
-\hypertarget{structmage_1_1_l_vertex_ab5e712d5befd3b8e3b58c772e6d3bf50}{}\label{structmage_1_1_l_vertex_ab5e712d5befd3b8e3b58c772e6d3bf50} 
+Texture u coordinate of this lit vertex. \hypertarget{structmage_1_1_l_vertex_ab5e712d5befd3b8e3b58c772e6d3bf50}{}\label{structmage_1_1_l_vertex_ab5e712d5befd3b8e3b58c772e6d3bf50} 
 \index{mage\+::\+L\+Vertex@{mage\+::\+L\+Vertex}!tv@{tv}}
 \index{tv@{tv}!mage\+::\+L\+Vertex@{mage\+::\+L\+Vertex}}
 \subsubsection{\texorpdfstring{tv}{tv}}
 {\footnotesize\ttfamily float mage\+::\+L\+Vertex\+::tv}
 
+Texture v coordinate of this lit vertex. 

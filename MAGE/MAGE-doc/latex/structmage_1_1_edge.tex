@@ -18,6 +18,9 @@
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A struct of edges. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{structmage_1_1_edge_ae02d9b1c72160ca43f053b742d04fc32}{}\label{structmage_1_1_edge_ae02d9b1c72160ca43f053b742d04fc32} 
 \index{mage\+::\+Edge@{mage\+::\+Edge}!Edge@{Edge}}
@@ -25,6 +28,15 @@
 \subsubsection{\texorpdfstring{Edge()}{Edge()}}
 {\footnotesize\ttfamily mage\+::\+Edge\+::\+Edge (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_vertex}{Vertex} $\ast$}]{v0,  }\item[{\hyperlink{structmage_1_1_vertex}{Vertex} $\ast$}]{v1 }\end{DoxyParamCaption})}
 
+Constructs an edge between the two given vertices.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v0} & A pointer to the first vertex. \\
+\hline
+\mbox{\tt in}  & {\em v1} & A pointer to the second vertex. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -34,9 +46,10 @@
 \subsubsection{\texorpdfstring{v0}{v0}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_vertex}{Vertex}$\ast$ mage\+::\+Edge\+::v0}
 
-\hypertarget{structmage_1_1_edge_a10072b2b5d8897431d0e4beb6eaf1ad1}{}\label{structmage_1_1_edge_a10072b2b5d8897431d0e4beb6eaf1ad1} 
+The first vertex of this edge. \hypertarget{structmage_1_1_edge_a10072b2b5d8897431d0e4beb6eaf1ad1}{}\label{structmage_1_1_edge_a10072b2b5d8897431d0e4beb6eaf1ad1} 
 \index{mage\+::\+Edge@{mage\+::\+Edge}!v1@{v1}}
 \index{v1@{v1}!mage\+::\+Edge@{mage\+::\+Edge}}
 \subsubsection{\texorpdfstring{v1}{v1}}
 {\footnotesize\ttfamily \hyperlink{structmage_1_1_vertex}{Vertex}$\ast$ mage\+::\+Edge\+::v1}
 
+The second vertex of this edge. 

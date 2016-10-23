@@ -24,6 +24,9 @@ float \hyperlink{structmage_1_1_vertex_a08bf58ceae5197299c71204024b09ed2}{tv}
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A struct of vertices. 
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{structmage_1_1_vertex_a8bf3578fcb5595eab057dc2d1f916dce}{}\label{structmage_1_1_vertex_a8bf3578fcb5595eab057dc2d1f916dce} 
 \index{mage\+::\+Vertex@{mage\+::\+Vertex}!Vertex@{Vertex}}
@@ -31,12 +34,25 @@ float \hyperlink{structmage_1_1_vertex_a08bf58ceae5197299c71204024b09ed2}{tv}
 \subsubsection{\texorpdfstring{Vertex()}{Vertex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Vertex\+::\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{structmage_1_1_vertex_a615029fe190db540ad0adb73b81ee8f5}{}\label{structmage_1_1_vertex_a615029fe190db540ad0adb73b81ee8f5} 
+Constructs a vertex. \hypertarget{structmage_1_1_vertex_a615029fe190db540ad0adb73b81ee8f5}{}\label{structmage_1_1_vertex_a615029fe190db540ad0adb73b81ee8f5} 
 \index{mage\+::\+Vertex@{mage\+::\+Vertex}!Vertex@{Vertex}}
 \index{Vertex@{Vertex}!mage\+::\+Vertex@{mage\+::\+Vertex}}
 \subsubsection{\texorpdfstring{Vertex()}{Vertex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily mage\+::\+Vertex\+::\+Vertex (\begin{DoxyParamCaption}\item[{X\+M\+F\+L\+O\+A\+T3}]{p,  }\item[{X\+M\+F\+L\+O\+A\+T3}]{n,  }\item[{float}]{tu,  }\item[{float}]{tv }\end{DoxyParamCaption})}
 
+Constructs a vertex.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & Position of the vertex (in world space). \\
+\hline
+\mbox{\tt in}  & {\em n} & Normal of the vertex. \\
+\hline
+\mbox{\tt in}  & {\em tu} & Texture u coordinate of the vertex. \\
+\hline
+\mbox{\tt in}  & {\em tv} & Texture v coordinate of the vertex. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -46,21 +62,22 @@ float \hyperlink{structmage_1_1_vertex_a08bf58ceae5197299c71204024b09ed2}{tv}
 \subsubsection{\texorpdfstring{n}{n}}
 {\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Vertex\+::n}
 
-\hypertarget{structmage_1_1_vertex_a9d726a508934b3baccfb01ea912420e7}{}\label{structmage_1_1_vertex_a9d726a508934b3baccfb01ea912420e7} 
+Normal of this vertex. \hypertarget{structmage_1_1_vertex_a9d726a508934b3baccfb01ea912420e7}{}\label{structmage_1_1_vertex_a9d726a508934b3baccfb01ea912420e7} 
 \index{mage\+::\+Vertex@{mage\+::\+Vertex}!p@{p}}
 \index{p@{p}!mage\+::\+Vertex@{mage\+::\+Vertex}}
 \subsubsection{\texorpdfstring{p}{p}}
 {\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Vertex\+::p}
 
-\hypertarget{structmage_1_1_vertex_a76d6a0ace40807f67c87e0dacd66da0d}{}\label{structmage_1_1_vertex_a76d6a0ace40807f67c87e0dacd66da0d} 
+Position of this vertex (in world space). \hypertarget{structmage_1_1_vertex_a76d6a0ace40807f67c87e0dacd66da0d}{}\label{structmage_1_1_vertex_a76d6a0ace40807f67c87e0dacd66da0d} 
 \index{mage\+::\+Vertex@{mage\+::\+Vertex}!tu@{tu}}
 \index{tu@{tu}!mage\+::\+Vertex@{mage\+::\+Vertex}}
 \subsubsection{\texorpdfstring{tu}{tu}}
 {\footnotesize\ttfamily float mage\+::\+Vertex\+::tu}
 
-\hypertarget{structmage_1_1_vertex_a08bf58ceae5197299c71204024b09ed2}{}\label{structmage_1_1_vertex_a08bf58ceae5197299c71204024b09ed2} 
+Texture u coordinate of this vertex. \hypertarget{structmage_1_1_vertex_a08bf58ceae5197299c71204024b09ed2}{}\label{structmage_1_1_vertex_a08bf58ceae5197299c71204024b09ed2} 
 \index{mage\+::\+Vertex@{mage\+::\+Vertex}!tv@{tv}}
 \index{tv@{tv}!mage\+::\+Vertex@{mage\+::\+Vertex}}
 \subsubsection{\texorpdfstring{tv}{tv}}
 {\footnotesize\ttfamily float mage\+::\+Vertex\+::tv}
 
+Texture v coordinate of this vertex. 
