@@ -23,6 +23,7 @@ var namespacemage =
     [ "Resource", "classmage_1_1_resource.html", "classmage_1_1_resource" ],
     [ "ResourceManager", "classmage_1_1_resource_manager.html", "classmage_1_1_resource_manager" ],
     [ "Semaphore", "classmage_1_1_semaphore.html", "classmage_1_1_semaphore" ],
+    [ "Sphere", "structmage_1_1_sphere.html", "structmage_1_1_sphere" ],
     [ "State", "classmage_1_1_state.html", "classmage_1_1_state" ],
     [ "StateManager", "classmage_1_1_state_manager.html", "classmage_1_1_state_manager" ],
     [ "Task", "classmage_1_1_task.html", "classmage_1_1_task" ],

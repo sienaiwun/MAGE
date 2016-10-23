@@ -1,0 +1,92 @@
+\hypertarget{structmage_1_1_sphere}{}\section{mage\+:\+:Sphere Struct Reference}
+\label{structmage_1_1_sphere}\index{mage\+::\+Sphere@{mage\+::\+Sphere}}
+
+
+{\ttfamily \#include $<$geometry.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_sphere_a65bbd9465f6e42b22f3f522ed7053758}{Sphere} ()
+\item 
+\hyperlink{structmage_1_1_sphere_a8b0d8c45a933c4863cd0727c5ef00b23}{Sphere} (X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_sphere_a3eaad90e13e18fe66a5f927a40e4a96b}{p}, float \hyperlink{structmage_1_1_sphere_af9121b33471e72b3df2fb032f5f68151}{r})
+\item 
+bool \hyperlink{structmage_1_1_sphere_ad03a36fda37c1b832dee7aacfb4989fa}{Encloses} (const \hyperlink{classmage_1_1_linked_list}{Linked\+List}$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&planes)
+\item 
+bool \hyperlink{structmage_1_1_sphere_a0f19a650a33b855d0e49000d0a508838}{Collides} (const \hyperlink{structmage_1_1_sphere}{Sphere} \&sphere, const X\+M\+F\+L\+O\+A\+T3 velocity\+\_\+sum, float $\ast$collision\+\_\+distance)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_sphere_a3eaad90e13e18fe66a5f927a40e4a96b}{p}
+\item 
+float \hyperlink{structmage_1_1_sphere_af9121b33471e72b3df2fb032f5f68151}{r}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A struct of spheres. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_sphere_a65bbd9465f6e42b22f3f522ed7053758}{}\label{structmage_1_1_sphere_a65bbd9465f6e42b22f3f522ed7053758} 
+\index{mage\+::\+Sphere@{mage\+::\+Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!mage\+::\+Sphere@{mage\+::\+Sphere}}
+\subsubsection{\texorpdfstring{Sphere()}{Sphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Sphere\+::\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a sphere. \hypertarget{structmage_1_1_sphere_a8b0d8c45a933c4863cd0727c5ef00b23}{}\label{structmage_1_1_sphere_a8b0d8c45a933c4863cd0727c5ef00b23} 
+\index{mage\+::\+Sphere@{mage\+::\+Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!mage\+::\+Sphere@{mage\+::\+Sphere}}
+\subsubsection{\texorpdfstring{Sphere()}{Sphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{X\+M\+F\+L\+O\+A\+T3}]{p,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+Constructs a sphere.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & The position \\
+\hline
+\mbox{\tt in}  & {\em r} & The radius. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_sphere_a0f19a650a33b855d0e49000d0a508838}{}\label{structmage_1_1_sphere_a0f19a650a33b855d0e49000d0a508838} 
+\index{mage\+::\+Sphere@{mage\+::\+Sphere}!Collides@{Collides}}
+\index{Collides@{Collides}!mage\+::\+Sphere@{mage\+::\+Sphere}}
+\subsubsection{\texorpdfstring{Collides()}{Collides()}}
+{\footnotesize\ttfamily bool mage\+::\+Sphere\+::\+Collides (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_sphere}{Sphere} \&}]{sphere,  }\item[{const X\+M\+F\+L\+O\+A\+T3}]{velocity\+\_\+sum,  }\item[{float $\ast$}]{collision\+\_\+distance }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_sphere_ad03a36fda37c1b832dee7aacfb4989fa}{}\label{structmage_1_1_sphere_ad03a36fda37c1b832dee7aacfb4989fa} 
+\index{mage\+::\+Sphere@{mage\+::\+Sphere}!Encloses@{Encloses}}
+\index{Encloses@{Encloses}!mage\+::\+Sphere@{mage\+::\+Sphere}}
+\subsubsection{\texorpdfstring{Encloses()}{Encloses()}}
+{\footnotesize\ttfamily bool mage\+::\+Sphere\+::\+Encloses (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_linked_list}{Linked\+List}$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&}]{planes }\end{DoxyParamCaption})}
+
+Checks whether this sphere completely encloses the given (closed) volume.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em planes} & A reference to a linked list containing the planes of the volume (each plane\textquotesingle{}s coefficients are represented as a {\ttfamily X\+M\+F\+L\+O\+A\+T4}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this sphere completely encloses {\itshape planes}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_sphere_a3eaad90e13e18fe66a5f927a40e4a96b}{}\label{structmage_1_1_sphere_a3eaad90e13e18fe66a5f927a40e4a96b} 
+\index{mage\+::\+Sphere@{mage\+::\+Sphere}!p@{p}}
+\index{p@{p}!mage\+::\+Sphere@{mage\+::\+Sphere}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Sphere\+::p}
+
+The position of this sphere. \hypertarget{structmage_1_1_sphere_af9121b33471e72b3df2fb032f5f68151}{}\label{structmage_1_1_sphere_af9121b33471e72b3df2fb032f5f68151} 
+\index{mage\+::\+Sphere@{mage\+::\+Sphere}!r@{r}}
+\index{r@{r}!mage\+::\+Sphere@{mage\+::\+Sphere}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily float mage\+::\+Sphere\+::r}
+
+The radius of this sphere. 

@@ -9,9 +9,13 @@
 \item 
 \hyperlink{structmage_1_1_a_a_b_b_ae6db94dcb9165eb008f0be8741f0eb62}{A\+A\+BB} ()
 \item 
-bool \hyperlink{structmage_1_1_a_a_b_b_ad1c2ec1aab58a383219ba1082e72b020}{Inside} (\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb) const
+\hyperlink{structmage_1_1_a_a_b_b_ad22d7de6abeebb3af7dde0fb848069ca}{A\+A\+BB} (X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_a_a_b_b_aca78eb314738b73f2d21dcf75130b6eb}{p\+\_\+min}, X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_a_a_b_b_aa5c60af6413a01158acd81d67ebe828c}{p\+\_\+max})
 \item 
-bool \hyperlink{structmage_1_1_a_a_b_b_ad8b5d30287d5dcb98ad2dfcfb90c5e22}{Inside} (\hyperlink{structmage_1_1_face}{Face} \&face) const
+bool \hyperlink{structmage_1_1_a_a_b_b_a0d6619404376bacf956b4a0c6662696f}{Encloses} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb) const
+\item 
+bool \hyperlink{structmage_1_1_a_a_b_b_ab57318f2ea79779ed357a7ecdd101132}{Encloses} (const \hyperlink{structmage_1_1_face}{Face} \&face) const
+\item 
+bool \hyperlink{structmage_1_1_a_a_b_b_a64a287138be71aa19358b916cafa5c18}{Enclosed\+By} (const \hyperlink{classmage_1_1_linked_list}{Linked\+List}$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&planes) const
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -29,19 +33,50 @@ A struct of Axis-\/\+Aligned Bounding Boxes (A\+A\+B\+Bs).
 \hypertarget{structmage_1_1_a_a_b_b_ae6db94dcb9165eb008f0be8741f0eb62}{}\label{structmage_1_1_a_a_b_b_ae6db94dcb9165eb008f0be8741f0eb62} 
 \index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!A\+A\+BB@{A\+A\+BB}}
 \index{A\+A\+BB@{A\+A\+BB}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{A\+A\+B\+B()}{AABB()}}
+\subsubsection{\texorpdfstring{A\+A\+B\+B()}{AABB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+A\+A\+B\+B\+::\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Constructs an \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. 
+Constructs an \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \hypertarget{structmage_1_1_a_a_b_b_ad22d7de6abeebb3af7dde0fb848069ca}{}\label{structmage_1_1_a_a_b_b_ad22d7de6abeebb3af7dde0fb848069ca} 
+\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!A\+A\+BB@{A\+A\+BB}}
+\index{A\+A\+BB@{A\+A\+BB}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
+\subsubsection{\texorpdfstring{A\+A\+B\+B()}{AABB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+A\+A\+B\+B\+::\+A\+A\+BB (\begin{DoxyParamCaption}\item[{X\+M\+F\+L\+O\+A\+T3}]{p\+\_\+min,  }\item[{X\+M\+F\+L\+O\+A\+T3}]{p\+\_\+max }\end{DoxyParamCaption})}
+
+Constructs an \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+min} & The minimum extents. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+max} & The maximum extents. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Function Documentation}
-\hypertarget{structmage_1_1_a_a_b_b_ad1c2ec1aab58a383219ba1082e72b020}{}\label{structmage_1_1_a_a_b_b_ad1c2ec1aab58a383219ba1082e72b020} 
-\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Inside@{Inside}}
-\index{Inside@{Inside}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{Inside()}{Inside()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Inside (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb }\end{DoxyParamCaption}) const}
+\hypertarget{structmage_1_1_a_a_b_b_a64a287138be71aa19358b916cafa5c18}{}\label{structmage_1_1_a_a_b_b_a64a287138be71aa19358b916cafa5c18} 
+\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Enclosed\+By@{Enclosed\+By}}
+\index{Enclosed\+By@{Enclosed\+By}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
+\subsubsection{\texorpdfstring{Enclosed\+By()}{EnclosedBy()}}
+{\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Enclosed\+By (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_linked_list}{Linked\+List}$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&}]{planes }\end{DoxyParamCaption}) const}
 
-Checks whether the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is contained inside this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
+Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is completely enclosed by the given (closed) volume.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em planes} & A reference to a linked list containing the planes of the volume (each plane\textquotesingle{}s coefficients are represented as a {\ttfamily X\+M\+F\+L\+O\+A\+T4}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is completely enclosed by {\itshape planes}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_a_a_b_b_a0d6619404376bacf956b4a0c6662696f}{}\label{structmage_1_1_a_a_b_b_a0d6619404376bacf956b4a0c6662696f} 
+\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Encloses@{Encloses}}
+\index{Encloses@{Encloses}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
+\subsubsection{\texorpdfstring{Encloses()}{Encloses()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Encloses (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb }\end{DoxyParamCaption}) const}
+
+Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -49,15 +84,15 @@ Checks whether the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is contain
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily true} if {\itshape aabb} is contained inside this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. {\ttfamily false} otherwise. 
+{\ttfamily true} if this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses {\itshape aabb}. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{structmage_1_1_a_a_b_b_ad8b5d30287d5dcb98ad2dfcfb90c5e22}{}\label{structmage_1_1_a_a_b_b_ad8b5d30287d5dcb98ad2dfcfb90c5e22} 
-\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Inside@{Inside}}
-\index{Inside@{Inside}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{Inside()}{Inside()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Inside (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_face}{Face} \&}]{face }\end{DoxyParamCaption}) const}
+\hypertarget{structmage_1_1_a_a_b_b_ab57318f2ea79779ed357a7ecdd101132}{}\label{structmage_1_1_a_a_b_b_ab57318f2ea79779ed357a7ecdd101132} 
+\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Encloses@{Encloses}}
+\index{Encloses@{Encloses}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
+\subsubsection{\texorpdfstring{Encloses()}{Encloses()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Encloses (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_face}{Face} \&}]{face }\end{DoxyParamCaption}) const}
 
-Checks whether the given face is contained inside this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
+Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses the given face.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -65,7 +100,7 @@ Checks whether the given face is contained inside this \hyperlink{structmage_1_1
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily true} if {\itshape facse} is contained inside this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. {\ttfamily false} otherwise. 
+{\ttfamily true} if this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses {\itshape face}. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 
 
