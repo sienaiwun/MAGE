@@ -58,6 +58,20 @@ Constructs a sphere.
 \subsubsection{\texorpdfstring{Collides()}{Collides()}}
 {\footnotesize\ttfamily bool mage\+::\+Sphere\+::\+Collides (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_sphere}{Sphere} \&}]{sphere,  }\item[{const X\+M\+F\+L\+O\+A\+T3}]{velocity\+\_\+sum,  }\item[{float $\ast$}]{collision\+\_\+distance }\end{DoxyParamCaption})}
 
+Checks whether this sphere collides with a given sphere.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sphere} & The sphere. \\
+\hline
+\mbox{\tt in}  & {\em velocity\+\_\+sum} & The sum of the velocities of both spheres. \\
+\hline
+\mbox{\tt out}  & {\em collision\+\_\+distance} & The collision distance (in case of collision). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this sphere collides with {\itshape sphere}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{structmage_1_1_sphere_ad03a36fda37c1b832dee7aacfb4989fa}{}\label{structmage_1_1_sphere_ad03a36fda37c1b832dee7aacfb4989fa} 
 \index{mage\+::\+Sphere@{mage\+::\+Sphere}!Encloses@{Encloses}}
 \index{Encloses@{Encloses}!mage\+::\+Sphere@{mage\+::\+Sphere}}
