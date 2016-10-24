@@ -19,6 +19,8 @@ void \hyperlink{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732}{Set\+Dea
 \item 
 \hyperlink{classmage_1_1_state_manager}{State\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a4f35bccc3784de531245a2549d537745}{Get\+State\+Manager} () const
 \item 
+\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_script}{Script} $>$ $\ast$ \hyperlink{classmage_1_1_engine_a22e0e2bf1a42a3d4e79d7b768d9bbe15}{Get\+Script\+Manager} () const
+\item 
 \hyperlink{classmage_1_1_input}{Input} $\ast$ \hyperlink{classmage_1_1_engine_a55d099d040e8895803f15e214f3b6d9e}{Get\+Input} () const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
@@ -33,6 +35,8 @@ H\+W\+ND \hyperlink{classmage_1_1_engine_a1dda09f0ed656180f926616a0d3f95f1}{m\+\
 bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+deactive}
 \item 
 \hyperlink{classmage_1_1_state_manager}{State\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a7a0c463c67c3375b896809be9046113d}{m\+\_\+state\+\_\+manager}
+\item 
+\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_script}{Script} $>$ $\ast$ \hyperlink{classmage_1_1_engine_a18fdbe3d9cf290ed13be3a169fabbaa3}{m\+\_\+script\+\_\+manager}
 \item 
 \hyperlink{classmage_1_1_input}{Input} $\ast$ \hyperlink{classmage_1_1_engine_a432ac639c593fd0fb8cede2463fe10c2}{m\+\_\+input}
 \end{DoxyCompactItemize}
@@ -74,6 +78,17 @@ Returns the input object of this engine.
 
 \begin{DoxyReturn}{Returns}
 A pointer to the input object of this engine 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_engine_a22e0e2bf1a42a3d4e79d7b768d9bbe15}{}\label{classmage_1_1_engine_a22e0e2bf1a42a3d4e79d7b768d9bbe15} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Script\+Manager@{Get\+Script\+Manager}}
+\index{Get\+Script\+Manager@{Get\+Script\+Manager}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Get\+Script\+Manager()}{GetScriptManager()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_script}{Script} $>$$\ast$ mage\+::\+Engine\+::\+Get\+Script\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the script manager of this engine.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the script manager of this engine 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_engine_a4f35bccc3784de531245a2549d537745}{}\label{classmage_1_1_engine_a4f35bccc3784de531245a2549d537745} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+State\+Manager@{Get\+State\+Manager}}
@@ -138,7 +153,13 @@ A pointer to the input object of this engine. \hypertarget{classmage_1_1_engine_
 \subsubsection{\texorpdfstring{m\+\_\+loaded}{m\_loaded}}
 {\footnotesize\ttfamily bool mage\+::\+Engine\+::m\+\_\+loaded\hspace{0.3cm}{\ttfamily [private]}}
 
-Flag indicating whether this engine is loaded. \hypertarget{classmage_1_1_engine_a825715684015ac2a43cfc5b6bf3b083f}{}\label{classmage_1_1_engine_a825715684015ac2a43cfc5b6bf3b083f} 
+Flag indicating whether this engine is loaded. \hypertarget{classmage_1_1_engine_a18fdbe3d9cf290ed13be3a169fabbaa3}{}\label{classmage_1_1_engine_a18fdbe3d9cf290ed13be3a169fabbaa3} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+script\+\_\+manager@{m\+\_\+script\+\_\+manager}}
+\index{m\+\_\+script\+\_\+manager@{m\+\_\+script\+\_\+manager}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+script\+\_\+manager}{m\_script\_manager}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_script}{Script} $>$$\ast$ mage\+::\+Engine\+::m\+\_\+script\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer the script manager of this engine \hypertarget{classmage_1_1_engine_a825715684015ac2a43cfc5b6bf3b083f}{}\label{classmage_1_1_engine_a825715684015ac2a43cfc5b6bf3b083f} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+setup@{m\+\_\+setup}}
 \index{m\+\_\+setup@{m\+\_\+setup}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+setup}{m\_setup}}

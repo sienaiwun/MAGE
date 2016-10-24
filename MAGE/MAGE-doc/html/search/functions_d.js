@@ -8,6 +8,7 @@ var searchData=
   ['releasewrite',['ReleaseWrite',['../classmage_1_1_read_write_mutex.html#ad0fd296bdaa212f54a58372c8dfe1d1d',1,'mage::ReadWriteMutex']]],
   ['remove',['Remove',['../classmage_1_1_linked_list.html#a3bf5b2c799c9439804949ffed0c79a13',1,'mage::LinkedList::Remove()'],['../classmage_1_1_resource_manager.html#a9fdc16b5f1627d0684c5a7e870290461',1,'mage::ResourceManager::Remove()']]],
   ['removestate',['RemoveState',['../classmage_1_1_state_manager.html#ad1589f7792508f0568f673b925a2bdba',1,'mage::StateManager']]],
+  ['removevariable',['RemoveVariable',['../classmage_1_1_script.html#ae1c57c3cbfe451dc22a018a31ba7670d',1,'mage::Script']]],
   ['render',['Render',['../classmage_1_1_state.html#a6e3b3f55bfd5be86a02783a2f76c9709',1,'mage::State']]],
   ['requestviewer',['RequestViewer',['../classmage_1_1_state.html#ab86748cfd13a65da65d3a639a0de2077',1,'mage::State']]],
   ['reset',['Reset',['../classmage_1_1_timer.html#a0675ff7bc0a8e7343b5a35f865cc9c1a',1,'mage::Timer']]],

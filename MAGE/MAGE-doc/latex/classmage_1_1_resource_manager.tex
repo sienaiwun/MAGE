@@ -48,7 +48,7 @@ A class of resource managers.
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Resource\+Manager@{Resource\+Manager}}
 \index{Resource\+Manager@{Resource\+Manager}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{Resource\+Manager()}{ResourceManager()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
+{\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} (\begin{DoxyParamCaption}\item[{void($\ast$)(T $\ast$$\ast$resource, const string \&name, const string \&path)}]{Create\+Resource\+Function = {\ttfamily NULL} }\end{DoxyParamCaption})}
 
 Constructs a resource manager.
@@ -62,7 +62,7 @@ Constructs a resource manager.
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!````~Resource\+Manager@{$\sim$\+Resource\+Manager}}
 \index{````~Resource\+Manager@{$\sim$\+Resource\+Manager}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{$\sim$\+Resource\+Manager()}{~ResourceManager()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
+{\footnotesize\ttfamily template$<$typename T$>$ \\
 virtual \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::$\sim$\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Destructs this resource manager. 
@@ -91,7 +91,7 @@ A pointer to the resource.
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Empty\+Destroy@{Empty\+Destroy}}
 \index{Empty\+Destroy@{Empty\+Destroy}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{Empty\+Destroy()}{EmptyDestroy()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
+{\footnotesize\ttfamily template$<$typename T$>$ \\
 void \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::Empty\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Destroys all the resources of this resource manager. \hypertarget{classmage_1_1_resource_manager_ad22e0920555c376752b8448a81df59c6}{}\label{classmage_1_1_resource_manager_ad22e0920555c376752b8448a81df59c6} 
@@ -119,14 +119,14 @@ A pointer to the resource.
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Get\+Resources@{Get\+Resources}}
 \index{Get\+Resources@{Get\+Resources}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{Get\+Resources()}{GetResources()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
+{\footnotesize\ttfamily template$<$typename T$>$ \\
 const \hyperlink{classmage_1_1_linked_list}{Linked\+List}$<$ T $>$$\ast$ \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::Get\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \hypertarget{classmage_1_1_resource_manager_a9fdc16b5f1627d0684c5a7e870290461}{}\label{classmage_1_1_resource_manager_a9fdc16b5f1627d0684c5a7e870290461} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Remove@{Remove}}
 \index{Remove@{Remove}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{Remove()}{Remove()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
+{\footnotesize\ttfamily template$<$typename T$>$ \\
 void \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::Remove (\begin{DoxyParamCaption}\item[{T $\ast$$\ast$}]{resource }\end{DoxyParamCaption})}
 
 Removes the given resource from this resource manager.
@@ -143,14 +143,14 @@ Removes the given resource from this resource manager.
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Create\+Resource@{Create\+Resource}}
 \index{Create\+Resource@{Create\+Resource}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{Create\+Resource}{CreateResource}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
+{\footnotesize\ttfamily template$<$typename T$>$ \\
 void($\ast$ \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::Create\+Resource) (T $\ast$$\ast$resource, const string \&name, const string \&path)\hspace{0.3cm}{\ttfamily [private]}}
 
 The application specific resource creation function for the resources of this resource manager. \hypertarget{classmage_1_1_resource_manager_a77b6bacdb28330b1587c7d18585fdea5}{}\label{classmage_1_1_resource_manager_a77b6bacdb28330b1587c7d18585fdea5} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+resources@{m\+\_\+resources}}
 \index{m\+\_\+resources@{m\+\_\+resources}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+resources}{m\_resources}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
+{\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classmage_1_1_linked_list}{Linked\+List}$<$ T $>$$\ast$ \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::m\+\_\+resources\hspace{0.3cm}{\ttfamily [private]}}
 
 The linked list containing the resources of this resource manager. 

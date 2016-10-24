@@ -104,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a942bfa9892fa79bb1068d7c7ec4e6732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f35bccc3784de531245a2549d537745"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_state_manager.html">StateManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a4f35bccc3784de531245a2549d537745">GetStateManager</a> () const</td></tr>
 <tr class="separator:a4f35bccc3784de531245a2549d537745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e0e2bf1a42a3d4e79d7b768d9bbe15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; <a class="el" href="classmage_1_1_script.html">Script</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a22e0e2bf1a42a3d4e79d7b768d9bbe15">GetScriptManager</a> () const</td></tr>
+<tr class="separator:a22e0e2bf1a42a3d4e79d7b768d9bbe15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d099d040e8895803f15e214f3b6d9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_input.html">Input</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a55d099d040e8895803f15e214f3b6d9e">GetInput</a> () const</td></tr>
 <tr class="separator:a55d099d040e8895803f15e214f3b6d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -119,6 +121,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab8a4b0157403708ae7d1d018a95b4c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0c463c67c3375b896809be9046113d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_state_manager.html">StateManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a7a0c463c67c3375b896809be9046113d">m_state_manager</a></td></tr>
 <tr class="separator:a7a0c463c67c3375b896809be9046113d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fdbe3d9cf290ed13be3a169fabbaa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; <a class="el" href="classmage_1_1_script.html">Script</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a18fdbe3d9cf290ed13be3a169fabbaa3">m_script_manager</a></td></tr>
+<tr class="separator:a18fdbe3d9cf290ed13be3a169fabbaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a432ac639c593fd0fb8cede2463fe10c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_input.html">Input</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a432ac639c593fd0fb8cede2463fe10c2">m_input</a></td></tr>
 <tr class="separator:a432ac639c593fd0fb8cede2463fe10c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -193,6 +197,25 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the input object of this engine.</p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the input object of this engine </dd></dl>
+
+</div>
+</div>
+<a id="a22e0e2bf1a42a3d4e79d7b768d9bbe15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e0e2bf1a42a3d4e79d7b768d9bbe15">&sect;&nbsp;</a></span>GetScriptManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; <a class="el" href="classmage_1_1_script.html">Script</a> &gt;* mage::Engine::GetScriptManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the script manager of this engine.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the script manager of this engine </dd></dl>
 
 </div>
 </div>
@@ -366,6 +389,29 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Flag indicating whether this engine is loaded. </p>
+
+</div>
+</div>
+<a id="a18fdbe3d9cf290ed13be3a169fabbaa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18fdbe3d9cf290ed13be3a169fabbaa3">&sect;&nbsp;</a></span>m_script_manager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; <a class="el" href="classmage_1_1_script.html">Script</a> &gt;* mage::Engine::m_script_manager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A pointer the script manager of this engine </p>
 
 </div>
 </div>

@@ -22,6 +22,7 @@ var namespacemage =
     [ "ReferenceCounted", "classmage_1_1_reference_counted.html", "classmage_1_1_reference_counted" ],
     [ "Resource", "classmage_1_1_resource.html", "classmage_1_1_resource" ],
     [ "ResourceManager", "classmage_1_1_resource_manager.html", "classmage_1_1_resource_manager" ],
+    [ "Script", "classmage_1_1_script.html", "classmage_1_1_script" ],
     [ "Semaphore", "classmage_1_1_semaphore.html", "classmage_1_1_semaphore" ],
     [ "Sphere", "structmage_1_1_sphere.html", "structmage_1_1_sphere" ],
     [ "State", "classmage_1_1_state.html", "classmage_1_1_state" ],
@@ -29,6 +30,7 @@ var namespacemage =
     [ "Task", "classmage_1_1_task.html", "classmage_1_1_task" ],
     [ "Timer", "classmage_1_1_timer.html", "classmage_1_1_timer" ],
     [ "TLVertex", "structmage_1_1_t_l_vertex.html", "structmage_1_1_t_l_vertex" ],
+    [ "Variable", "structmage_1_1_variable.html", "structmage_1_1_variable" ],
     [ "Vertex", "structmage_1_1_vertex.html", "structmage_1_1_vertex" ],
     [ "ViewerSetup", "structmage_1_1_viewer_setup.html", "structmage_1_1_viewer_setup" ]
 ];

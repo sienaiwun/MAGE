@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>AddState()
 : <a class="el" href="classmage_1_1_state_manager.html#ae5711ea7782384bc52b09a14cf1f3f5d">mage::StateManager</a>
 </li>
+<li>AddVariable()
+: <a class="el" href="classmage_1_1_script.html#ae8df115d6c2d44dc65c840d0cade7573">mage::Script</a>
+</li>
 <li>Alloc()
 : <a class="el" href="classmage_1_1_memory_arena.html#a01e00ac6e109249bd80a1e9e79eb0b28">mage::MemoryArena</a>
 </li>
@@ -228,6 +231,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>GetName()
 : <a class="el" href="classmage_1_1_resource.html#a77713b0c74f8983afc2d42843afe8cbe">mage::Resource</a>
+, <a class="el" href="structmage_1_1_variable.html#a7f70fdadf34cdf6b26adc9910eade11d">mage::Variable</a>
 </li>
 <li>GetNext()
 : <a class="el" href="classmage_1_1_linked_list.html#a992390dbc48cf24705f9e79baef37061">mage::LinkedList&lt; T &gt;</a>
@@ -256,11 +260,22 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>GetResources()
 : <a class="el" href="classmage_1_1_resource_manager.html#a33c327ebcff3a851892b7efc26bea295">mage::ResourceManager&lt; T &gt;</a>
 </li>
+<li>GetScriptManager()
+: <a class="el" href="classmage_1_1_engine.html#a22e0e2bf1a42a3d4e79d7b768d9bbe15">mage::Engine</a>
+</li>
 <li>GetSize()
 : <a class="el" href="classmage_1_1_linked_list.html#a8d033278680a0053e30cba91b27941a1">mage::LinkedList&lt; T &gt;</a>
 </li>
 <li>GetStateManager()
 : <a class="el" href="classmage_1_1_engine.html#a4f35bccc3784de531245a2549d537745">mage::Engine</a>
+</li>
+<li>GetValue()
+: <a class="el" href="structmage_1_1_variable_1_1_abstract_value.html#aede2a77b571b80794a4254e34144f4c1">mage::Variable::AbstractValue</a>
+, <a class="el" href="structmage_1_1_variable.html#a65ecc95bcdc26733394d3a32d3d698f1">mage::Variable</a>
+, <a class="el" href="structmage_1_1_variable_1_1_value.html#afd0b93364cba9a55182f126fdcc79b50">mage::Variable::Value&lt; T &gt;</a>
+</li>
+<li>GetValueOfVariable()
+: <a class="el" href="classmage_1_1_script.html#a7cac6a8798ea0d0117396d94ff556820">mage::Script</a>
 </li>
 <li>GetWindow()
 : <a class="el" href="classmage_1_1_engine.html#a1c5f9d8c68045b36f404251359aa41e4">mage::Engine</a>
@@ -276,6 +291,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
+<li>ImportVariable()
+: <a class="el" href="classmage_1_1_script.html#a831948e158eb3ee9f0bc5175cad89912">mage::Script</a>
+</li>
 <li>IncrementReferenceCount()
 : <a class="el" href="classmage_1_1_reference_counted.html#a3d625b492edec2844b4733b82ec5fd3f">mage::ReferenceCounted</a>
 </li>
@@ -398,6 +416,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>RemoveState()
 : <a class="el" href="classmage_1_1_state_manager.html#ad1589f7792508f0568f673b925a2bdba">mage::StateManager</a>
 </li>
+<li>RemoveVariable()
+: <a class="el" href="classmage_1_1_script.html#ae1c57c3cbfe451dc22a018a31ba7670d">mage::Script</a>
+</li>
 <li>Render()
 : <a class="el" href="classmage_1_1_state.html#a6e3b3f55bfd5be86a02783a2f76c9709">mage::State</a>
 </li>
@@ -424,11 +445,20 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>SaveScript()
+: <a class="el" href="classmage_1_1_script.html#a4b6ff9e33d49d58c0d6bfaa189542a64">mage::Script</a>
+</li>
+<li>Script()
+: <a class="el" href="classmage_1_1_script.html#aa82d3299c964e29ad23b41de3e26c511">mage::Script</a>
+</li>
 <li>Semaphore()
 : <a class="el" href="classmage_1_1_semaphore.html#a7b4f53c18b9a244ed98ef58fa5cfa2bb">mage::Semaphore</a>
 </li>
 <li>SetDeactiveFlag()
 : <a class="el" href="classmage_1_1_engine.html#a942bfa9892fa79bb1068d7c7ec4e6732">mage::Engine</a>
+</li>
+<li>SetValueOfVariable()
+: <a class="el" href="classmage_1_1_script.html#a27b5dc3d43c961fa590665d5b072f37a">mage::Script</a>
 </li>
 <li>Signal()
 : <a class="el" href="classmage_1_1_condition_variable.html#a09e52f0d51c10ee565a895d2444175d9">mage::ConditionVariable</a>
@@ -452,11 +482,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
-<li>Time()
-: <a class="el" href="classmage_1_1_timer.html#a5e4655ac296cc8971b54e5a76082f00f">mage::Timer</a>
-</li>
 <li>time()
 : <a class="el" href="classmage_1_1_timer.html#a782882e9dbe9a2843b5203ba13309b23">mage::Timer</a>
+</li>
+<li>Time()
+: <a class="el" href="classmage_1_1_timer.html#a5e4655ac296cc8971b54e5a76082f00f">mage::Timer</a>
 </li>
 <li>Timer()
 : <a class="el" href="classmage_1_1_timer.html#a5e1c0a3bb4491b3a43ce05874ad24055">mage::Timer</a>
@@ -487,6 +517,12 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a id="index_v"></a>- v -</h3><ul>
+<li>Value()
+: <a class="el" href="structmage_1_1_variable_1_1_value.html#a1e29cc5eaeb8356a11a1eca0232cf162">mage::Variable::Value&lt; T &gt;</a>
+</li>
+<li>Variable()
+: <a class="el" href="structmage_1_1_variable.html#a79e412d8882a5adc1d5c4ac8587ed7e8">mage::Variable</a>
+</li>
 <li>Vertex()
 : <a class="el" href="structmage_1_1_vertex.html#a8bf3578fcb5595eab057dc2d1f916dce">mage::Vertex</a>
 </li>
@@ -505,6 +541,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~AbstractValue()
+: <a class="el" href="structmage_1_1_variable_1_1_abstract_value.html#ae3334a01bd2e0a2ea6bd8d3530cf60eb">mage::Variable::AbstractValue</a>
+</li>
 <li>~ConditionVariable()
 : <a class="el" href="classmage_1_1_condition_variable.html#accd5253beb65b2904428afdb889cf00b">mage::ConditionVariable</a>
 </li>
@@ -550,6 +589,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>~ResourceManager()
 : <a class="el" href="classmage_1_1_resource_manager.html#af3b6bf56e57bd3df0eb569510dd1483b">mage::ResourceManager&lt; T &gt;</a>
 </li>
+<li>~Script()
+: <a class="el" href="classmage_1_1_script.html#a5ac07d9382cc28d5441e4fe6a9ca32e4">mage::Script</a>
+</li>
 <li>~Semaphore()
 : <a class="el" href="classmage_1_1_semaphore.html#a991ed365c28e4a9c63ff34a5efeb012d">mage::Semaphore</a>
 </li>
@@ -564,6 +606,12 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>~Timer()
 : <a class="el" href="classmage_1_1_timer.html#aa91cebe8c59c189fde93932fde10265c">mage::Timer</a>
+</li>
+<li>~Value()
+: <a class="el" href="structmage_1_1_variable_1_1_value.html#ab0b88d59c1049b89557fbaf649a3b459">mage::Variable::Value&lt; T &gt;</a>
+</li>
+<li>~Variable()
+: <a class="el" href="structmage_1_1_variable.html#a8f4d3e950b25b14e996ad074e42a5e9e">mage::Variable</a>
 </li>
 </ul>
 </div><!-- contents -->
