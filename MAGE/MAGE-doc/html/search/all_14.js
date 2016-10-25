@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7eabstractvalue',['~AbstractValue',['../structmage_1_1_variable_1_1_abstract_value.html#ae3334a01bd2e0a2ea6bd8d3530cf60eb',1,'mage::Variable::AbstractValue']]],
   ['_7econditionvariable',['~ConditionVariable',['../classmage_1_1_condition_variable.html#accd5253beb65b2904428afdb889cf00b',1,'mage::ConditionVariable']]],
   ['_7eengine',['~Engine',['../classmage_1_1_engine.html#a34628556f8397d70ed018d71e343c2f5',1,'mage::Engine']]],
   ['_7einput',['~Input',['../classmage_1_1_input.html#a52324bfe97e7245176f77ac9e635df53',1,'mage::Input']]],
@@ -22,6 +21,5 @@ var searchData=
   ['_7estatemanager',['~StateManager',['../classmage_1_1_state_manager.html#af4bc45cc90437f54e2776e2a8ee747e1',1,'mage::StateManager']]],
   ['_7etask',['~Task',['../classmage_1_1_task.html#a66a892ec09928a904c7c156098a1abbf',1,'mage::Task']]],
   ['_7etimer',['~Timer',['../classmage_1_1_timer.html#aa91cebe8c59c189fde93932fde10265c',1,'mage::Timer']]],
-  ['_7evalue',['~Value',['../structmage_1_1_variable_1_1_value.html#ab0b88d59c1049b89557fbaf649a3b459',1,'mage::Variable::Value']]],
   ['_7evariable',['~Variable',['../structmage_1_1_variable.html#a8f4d3e950b25b14e996ad074e42a5e9e',1,'mage::Variable']]]
 ];

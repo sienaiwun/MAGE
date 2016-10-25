@@ -28,7 +28,8 @@ var searchData=
   ['getscriptmanager',['GetScriptManager',['../classmage_1_1_engine.html#a22e0e2bf1a42a3d4e79d7b768d9bbe15',1,'mage::Engine']]],
   ['getsize',['GetSize',['../classmage_1_1_linked_list.html#a8d033278680a0053e30cba91b27941a1',1,'mage::LinkedList']]],
   ['getstatemanager',['GetStateManager',['../classmage_1_1_engine.html#a4f35bccc3784de531245a2549d537745',1,'mage::Engine']]],
-  ['getvalue',['GetValue',['../structmage_1_1_variable.html#a65ecc95bcdc26733394d3a32d3d698f1',1,'mage::Variable::GetValue()'],['../structmage_1_1_variable_1_1_abstract_value.html#aede2a77b571b80794a4254e34144f4c1',1,'mage::Variable::AbstractValue::GetValue()'],['../structmage_1_1_variable_1_1_value.html#afd0b93364cba9a55182f126fdcc79b50',1,'mage::Variable::Value::GetValue()']]],
-  ['getvalueofvariable',['GetValueOfVariable',['../classmage_1_1_script.html#a7cac6a8798ea0d0117396d94ff556820',1,'mage::Script']]],
+  ['gettype',['GetType',['../structmage_1_1_variable.html#a5265e80b2a1c280fad5886174dfc997a',1,'mage::Variable']]],
+  ['getvalue',['GetValue',['../structmage_1_1_variable.html#a65ecc95bcdc26733394d3a32d3d698f1',1,'mage::Variable']]],
+  ['getvalueofvariable',['GetValueOfVariable',['../classmage_1_1_script.html#ab210262788259c2b8178824731c56222',1,'mage::Script']]],
   ['getwindow',['GetWindow',['../classmage_1_1_engine.html#a1c5f9d8c68045b36f404251359aa41e4',1,'mage::Engine']]]
 ];

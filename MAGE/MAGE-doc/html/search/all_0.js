@@ -2,12 +2,11 @@ var searchData=
 [
   ['aabb',['AABB',['../structmage_1_1_a_a_b_b.html',1,'mage']]],
   ['aabb',['AABB',['../structmage_1_1_a_a_b_b.html#ae6db94dcb9165eb008f0be8741f0eb62',1,'mage::AABB::AABB()'],['../structmage_1_1_a_a_b_b.html#ad22d7de6abeebb3af7dde0fb848069ca',1,'mage::AABB::AABB(XMFLOAT3 p_min, XMFLOAT3 p_max)']]],
-  ['abstractvalue',['AbstractValue',['../structmage_1_1_variable_1_1_abstract_value.html',1,'mage::Variable']]],
   ['acquireread',['AcquireRead',['../classmage_1_1_read_write_mutex.html#af78045647078aaf3966c8f1b06e35c92',1,'mage::ReadWriteMutex']]],
   ['acquirewrite',['AcquireWrite',['../classmage_1_1_read_write_mutex.html#a76137013107a9c2c1fc05c1e0747965e',1,'mage::ReadWriteMutex']]],
   ['add',['Add',['../classmage_1_1_linked_list.html#ac6cd236aab89f296d3c112c05b2337e2',1,'mage::LinkedList::Add()'],['../classmage_1_1_resource_manager.html#a874e36ac94e4c2063833a5f858a79a04',1,'mage::ResourceManager::Add()']]],
   ['addstate',['AddState',['../classmage_1_1_state_manager.html#ae5711ea7782384bc52b09a14cf1f3f5d',1,'mage::StateManager']]],
-  ['addvariable',['AddVariable',['../classmage_1_1_script.html#ae8df115d6c2d44dc65c840d0cade7573',1,'mage::Script']]],
+  ['addvariable',['AddVariable',['../classmage_1_1_script.html#adddcf5845bd1e4e9f29fec3427661baf',1,'mage::Script']]],
   ['alloc',['Alloc',['../classmage_1_1_memory_arena.html#a01e00ac6e109249bd80a1e9e79eb0b28',1,'mage::MemoryArena::Alloc(uint32_t size)'],['../classmage_1_1_memory_arena.html#a16431dbfc49ddaee803fb0ab52303302',1,'mage::MemoryArena::Alloc(uint32_t count=1)']]],
   ['allocaligned',['AllocAligned',['../namespacemage.html#a7d706913bb9fb322c938cd3e4d8eaede',1,'mage::AllocAligned(size_t size)'],['../namespacemage.html#ae2f31ba64620694aa0dfc8ca6e5d5941',1,'mage::AllocAligned(uint32_t count)']]],
   ['atomicadd',['AtomicAdd',['../namespacemage.html#ad397e742fa7e3532686fd46bb50e8166',1,'mage::AtomicAdd(AtomicInt32 *addend, int32_t value)'],['../namespacemage.html#a0de5ff6241a0474f4572c7c3ba342098',1,'mage::AtomicAdd(volatile float *addend, float value)']]],

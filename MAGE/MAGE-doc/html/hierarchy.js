@@ -1,9 +1,6 @@
 var hierarchy =
 [
     [ "mage::AABB", "structmage_1_1_a_a_b_b.html", null ],
-    [ "mage::Variable::AbstractValue", "structmage_1_1_variable_1_1_abstract_value.html", [
-      [ "mage::Variable::Value< T >", "structmage_1_1_variable_1_1_value.html", null ]
-    ] ],
     [ "mage::ConditionVariable", "classmage_1_1_condition_variable.html", null ],
     [ "mage::Edge", "structmage_1_1_edge.html", null ],
     [ "mage::Engine", "classmage_1_1_engine.html", null ],

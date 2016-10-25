@@ -5,6 +5,8 @@ var menudata={children:[
 {text:'Namespace Members',url:'namespacemembers.html',children:[
 {text:'All',url:'namespacemembers.html',children:[
 {text:'a',url:'namespacemembers.html#index_a'},
+{text:'b',url:'namespacemembers.html#index_b'},
+{text:'c',url:'namespacemembers.html#index_c'},
 {text:'e',url:'namespacemembers.html#index_e'},
 {text:'f',url:'namespacemembers.html#index_f'},
 {text:'g',url:'namespacemembers.html#index_g'},
@@ -15,6 +17,7 @@ var menudata={children:[
 {text:'r',url:'namespacemembers.html#index_r'},
 {text:'s',url:'namespacemembers.html#index_s'},
 {text:'t',url:'namespacemembers.html#index_t'},
+{text:'u',url:'namespacemembers.html#index_u'},
 {text:'v',url:'namespacemembers.html#index_v'},
 {text:'w',url:'namespacemembers.html#index_w'}]},
 {text:'Functions',url:'namespacemembers_func.html'},

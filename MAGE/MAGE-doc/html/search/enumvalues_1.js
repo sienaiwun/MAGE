@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['num_5fevents',['NUM_EVENTS',['../classmage_1_1_condition_variable.html#a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac',1,'mage::ConditionVariable']]]
+  ['colourtype',['ColourType',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aab5fbb412d1d7febfc4131514995233fc',1,'mage']]]
 ];

@@ -62,9 +62,9 @@ var searchData=
   ['m_5fstates',['m_states',['../classmage_1_1_state_manager.html#a88d005af690874d3ed3b8d4600525b9c',1,'mage::StateManager']]],
   ['m_5ftime0',['m_time0',['../classmage_1_1_timer.html#a73fa08d14bfa273f158f967a8e58f96f',1,'mage::Timer']]],
   ['m_5ftimer',['m_timer',['../classmage_1_1_progress_reporter.html#aaca483b46968f0d39262305b5400a3e1',1,'mage::ProgressReporter']]],
-  ['m_5ftype',['m_type',['../structmage_1_1_read_write_mutex_lock.html#aa117ffe94f6850ddc91ad6d1389fb6e2',1,'mage::ReadWriteMutexLock']]],
+  ['m_5ftype',['m_type',['../structmage_1_1_read_write_mutex_lock.html#aa117ffe94f6850ddc91ad6d1389fb6e2',1,'mage::ReadWriteMutexLock::m_type()'],['../structmage_1_1_variable.html#acb45a61a0690e0efac614915595c4449',1,'mage::Variable::m_type()']]],
   ['m_5fused_5fblocks',['m_used_blocks',['../classmage_1_1_memory_arena.html#affb37aae6087014287b43d50521dd0fb',1,'mage::MemoryArena']]],
-  ['m_5fvalue',['m_value',['../structmage_1_1_variable_1_1_value.html#aa15243b8811b108a0c7bff05456e377c',1,'mage::Variable::Value::m_value()'],['../structmage_1_1_variable.html#a99388f3fbccf983b8d6954fd31d0eb27',1,'mage::Variable::m_value()']]],
+  ['m_5fvalue',['m_value',['../structmage_1_1_variable.html#a7c998b3fb5472ca3d1a747d8f456384a',1,'mage::Variable']]],
   ['m_5fvariables',['m_variables',['../classmage_1_1_script.html#a304cc7f5829a5e11ae260050863011f6',1,'mage::Script']]],
   ['m_5fverbose',['m_verbose',['../structmage_1_1_general_configuration.html#aacc88850ee46834ab0ee52bbfa8a3a80',1,'mage::GeneralConfiguration']]],
   ['m_5fview_5fclear_5fflags',['m_view_clear_flags',['../structmage_1_1_viewer_setup.html#aed7b78b5437c46627949142f628c331d',1,'mage::ViewerSetup']]]

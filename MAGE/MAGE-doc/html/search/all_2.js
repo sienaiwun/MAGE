@@ -3,6 +3,7 @@ var searchData=
   ['changestate',['ChangeState',['../classmage_1_1_state_manager.html#a2dfcae20e58167786a2772f204951657',1,'mage::StateManager::ChangeState(uint64_t id)'],['../classmage_1_1_state_manager.html#acb8123a0682394a7b7af001e6c5e25fe',1,'mage::StateManager::ChangeState(State *new_state)']]],
   ['close',['Close',['../classmage_1_1_state.html#a1edd5d756566f5b689c7a381f4e6b301',1,'mage::State']]],
   ['collides',['Collides',['../structmage_1_1_sphere.html#a0f19a650a33b855d0e49000d0a508838',1,'mage::Sphere']]],
+  ['colourtype',['ColourType',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aab5fbb412d1d7febfc4131514995233fc',1,'mage']]],
   ['conditionvariable',['ConditionVariable',['../classmage_1_1_condition_variable.html#a09073f0affc601f052fce541a17ba559',1,'mage::ConditionVariable']]],
   ['conditionvariable',['ConditionVariable',['../classmage_1_1_condition_variable.html',1,'mage']]],
   ['create',['Create',['../classmage_1_1_mutex.html#a48d784fa6bffd4088d9f89a2a9cca84e',1,'mage::Mutex::Create()'],['../classmage_1_1_read_write_mutex.html#ad184ba46c44446b5ebe1026801fcac9b',1,'mage::ReadWriteMutex::Create()']]],
