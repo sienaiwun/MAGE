@@ -1,21 +1,21 @@
 var hierarchy =
 [
     [ "mage::AABB", "structmage_1_1_a_a_b_b.html", null ],
+    [ "mage::Variable::AbstractValue", "structmage_1_1_variable_1_1_abstract_value.html", [
+      [ "mage::Variable::Value< T >", "structmage_1_1_variable_1_1_value.html", null ]
+    ] ],
     [ "mage::ConditionVariable", "classmage_1_1_condition_variable.html", null ],
+    [ "mage::DeviceEnumeration", "classmage_1_1_device_enumeration.html", null ],
+    [ "mage::DisplayMode", "structmage_1_1_display_mode.html", null ],
     [ "mage::Edge", "structmage_1_1_edge.html", null ],
     [ "mage::Engine", "classmage_1_1_engine.html", null ],
     [ "mage::EngineSetup", "structmage_1_1_engine_setup.html", null ],
     [ "mage::Face", "structmage_1_1_face.html", null ],
     [ "mage::GeneralConfiguration", "structmage_1_1_general_configuration.html", null ],
+    [ "mage::GraphicsManager", "classmage_1_1_graphics_manager.html", null ],
     [ "mage::IndexedEdge", "structmage_1_1_indexed_edge.html", null ],
     [ "mage::IndexedFace", "structmage_1_1_indexed_face.html", null ],
     [ "mage::Input", "classmage_1_1_input.html", null ],
-    [ "mage::LinkedList< T >", "classmage_1_1_linked_list.html", null ],
-    [ "mage::LinkedList< mage::Script >", "classmage_1_1_linked_list.html", null ],
-    [ "mage::LinkedList< mage::State >", "classmage_1_1_linked_list.html", null ],
-    [ "mage::LinkedList< mage::Variable >", "classmage_1_1_linked_list.html", null ],
-    [ "mage::LinkedList< T >::LinkedListElement", "structmage_1_1_linked_list_1_1_linked_list_element.html", null ],
-    [ "mage::LinkedList< T >::LinkedListIterator", "structmage_1_1_linked_list_1_1_linked_list_iterator.html", null ],
     [ "mage::LVertex", "structmage_1_1_l_vertex.html", null ],
     [ "mage::MemoryArena", "classmage_1_1_memory_arena.html", null ],
     [ "mage::Mutex", "classmage_1_1_mutex.html", null ],
@@ -26,11 +26,12 @@ var hierarchy =
     [ "mage::Reference< T >", "classmage_1_1_reference.html", null ],
     [ "mage::ReferenceCounted", "classmage_1_1_reference_counted.html", null ],
     [ "mage::Resource", "classmage_1_1_resource.html", [
-      [ "mage::Script", "classmage_1_1_script.html", null ]
+      [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ]
     ] ],
     [ "mage::ResourceManager< T >", "classmage_1_1_resource_manager.html", null ],
-    [ "mage::ResourceManager< mage::Script >", "classmage_1_1_resource_manager.html", null ],
+    [ "mage::ResourceManager< mage::VariableScript >", "classmage_1_1_resource_manager.html", null ],
     [ "mage::Semaphore", "classmage_1_1_semaphore.html", null ],
+    [ "mage::Sound", "classmage_1_1_sound.html", null ],
     [ "mage::Sphere", "structmage_1_1_sphere.html", null ],
     [ "mage::State", "classmage_1_1_state.html", null ],
     [ "mage::StateManager", "classmage_1_1_state_manager.html", null ],

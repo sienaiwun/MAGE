@@ -11,5 +11,5 @@ var classmage_1_1_state_manager =
     [ "Update", "classmage_1_1_state_manager.html#a48498596d478d107621b1752104e02e3", null ],
     [ "m_current_state", "classmage_1_1_state_manager.html#a737122d580b709e0d122db4a6e1d9006", null ],
     [ "m_state_changed", "classmage_1_1_state_manager.html#a8e905ec2358a18a5b56d44cf79799afa", null ],
-    [ "m_states", "classmage_1_1_state_manager.html#a88d005af690874d3ed3b8d4600525b9c", null ]
+    [ "m_states", "classmage_1_1_state_manager.html#a2181432805f365bfb8ccff0f959d2121", null ]
 ];

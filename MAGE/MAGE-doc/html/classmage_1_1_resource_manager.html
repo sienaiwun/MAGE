@@ -96,21 +96,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aad8d61f96551b9ddd59593ed52eac241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3b6bf56e57bd3df0eb569510dd1483b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#af3b6bf56e57bd3df0eb569510dd1483b">~ResourceManager</a> ()</td></tr>
 <tr class="separator:af3b6bf56e57bd3df0eb569510dd1483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874e36ac94e4c2063833a5f858a79a04"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a874e36ac94e4c2063833a5f858a79a04">Add</a> (const string &amp;name, const string &amp;path=&quot;./&quot;)</td></tr>
-<tr class="separator:a874e36ac94e4c2063833a5f858a79a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fdc16b5f1627d0684c5a7e870290461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a9fdc16b5f1627d0684c5a7e870290461">Remove</a> (T **resource)</td></tr>
-<tr class="separator:a9fdc16b5f1627d0684c5a7e870290461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d2dbdff0c68b3a3eb8c847848546141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a4d2dbdff0c68b3a3eb8c847848546141">EmptyDestroy</a> ()</td></tr>
-<tr class="separator:a4d2dbdff0c68b3a3eb8c847848546141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad22e0920555c376752b8448a81df59c6"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#ad22e0920555c376752b8448a81df59c6">GetResource</a> (const string &amp;name, const string &amp;path=&quot;./&quot;) const</td></tr>
-<tr class="separator:ad22e0920555c376752b8448a81df59c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c327ebcff3a851892b7efc26bea295"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmage_1_1_linked_list.html">LinkedList</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a33c327ebcff3a851892b7efc26bea295">GetResources</a> () const</td></tr>
-<tr class="separator:a33c327ebcff3a851892b7efc26bea295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358d8bcb9a0812cc69ff1e8cd8234988"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a358d8bcb9a0812cc69ff1e8cd8234988">AddResource</a> (const string &amp;name, const string &amp;path=&quot;./&quot;)</td></tr>
+<tr class="separator:a358d8bcb9a0812cc69ff1e8cd8234988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10959337c87b6454209b5116478cc21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#ab10959337c87b6454209b5116478cc21">RemoveResource</a> (T *resource)</td></tr>
+<tr class="separator:ab10959337c87b6454209b5116478cc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875ea647ed1d475ca2d3f39dc492215b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a875ea647ed1d475ca2d3f39dc492215b">ClearResources</a> ()</td></tr>
+<tr class="separator:a875ea647ed1d475ca2d3f39dc492215b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448a25bbe7ff37a88d1b19d50744d7ee"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a448a25bbe7ff37a88d1b19d50744d7ee">GetResource</a> (const string &amp;name, const string &amp;path=&quot;./&quot;) const</td></tr>
+<tr class="separator:a448a25bbe7ff37a88d1b19d50744d7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a77b6bacdb28330b1587c7d18585fdea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_linked_list.html">LinkedList</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a77b6bacdb28330b1587c7d18585fdea5">m_resources</a></td></tr>
-<tr class="separator:a77b6bacdb28330b1587c7d18585fdea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab058f7127d317bfe78b9f391a4351315"><td class="memItemLeft" align="right" valign="top">list&lt; T *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#ab058f7127d317bfe78b9f391a4351315">m_resources</a></td></tr>
+<tr class="separator:ab058f7127d317bfe78b9f391a4351315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1175cdd82a5407dd099b53a432ca9a95"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a1175cdd82a5407dd099b53a432ca9a95">CreateResource</a> )(T **resource, const string &amp;name, const string &amp;path)</td></tr>
 <tr class="separator:a1175cdd82a5407dd099b53a432ca9a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -182,16 +180,16 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a874e36ac94e4c2063833a5f858a79a04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a874e36ac94e4c2063833a5f858a79a04">&sect;&nbsp;</a></span>Add()</h2>
+<a id="a358d8bcb9a0812cc69ff1e8cd8234988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358d8bcb9a0812cc69ff1e8cd8234988">&sect;&nbsp;</a></span>AddResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T * <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::Add </td>
+          <td class="memname">T* <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::AddResource </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -221,8 +219,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a4d2dbdff0c68b3a3eb8c847848546141"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d2dbdff0c68b3a3eb8c847848546141">&sect;&nbsp;</a></span>EmptyDestroy()</h2>
+<a id="a875ea647ed1d475ca2d3f39dc492215b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875ea647ed1d475ca2d3f39dc492215b">&sect;&nbsp;</a></span>ClearResources()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,27 +228,27 @@ template&lt;typename T &gt; </div>
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::EmptyDestroy </td>
+          <td class="memname">void <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::ClearResources </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destroys all the resources of this resource manager. </p>
+<p>Removes and destructs all the resources from this resource manager, and leaving the resource manager with no resources. </p>
 
 </div>
 </div>
-<a id="ad22e0920555c376752b8448a81df59c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad22e0920555c376752b8448a81df59c6">&sect;&nbsp;</a></span>GetResource()</h2>
+<a id="a448a25bbe7ff37a88d1b19d50744d7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448a25bbe7ff37a88d1b19d50744d7ee">&sect;&nbsp;</a></span>GetResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T * <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::GetResource </td>
+          <td class="memname">T* <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::GetResource </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -282,8 +280,8 @@ A pointer to the resource. </dd></dl>
 
 </div>
 </div>
-<a id="a33c327ebcff3a851892b7efc26bea295"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33c327ebcff3a851892b7efc26bea295">&sect;&nbsp;</a></span>GetResources()</h2>
+<a id="ab10959337c87b6454209b5116478cc21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10959337c87b6454209b5116478cc21">&sect;&nbsp;</a></span>RemoveResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,28 +289,9 @@ A pointer to the resource. </dd></dl>
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classmage_1_1_linked_list.html">LinkedList</a>&lt; T &gt;* <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::GetResources </td>
+          <td class="memname">void <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::RemoveResource </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9fdc16b5f1627d0684c5a7e870290461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fdc16b5f1627d0684c5a7e870290461">&sect;&nbsp;</a></span>Remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::Remove </td>
-          <td>(</td>
-          <td class="paramtype">T **&#160;</td>
+          <td class="paramtype">T *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
           <td></td>
         </tr>
@@ -321,7 +300,7 @@ template&lt;typename T&gt; </div>
 <p>Removes the given resource from this resource manager.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">resource</td><td>A pointer to a pointer of the resource. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">resource</td><td>A pointer to the resource. </td></tr>
   </table>
   </dd>
 </dl>
@@ -354,8 +333,8 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a77b6bacdb28330b1587c7d18585fdea5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77b6bacdb28330b1587c7d18585fdea5">&sect;&nbsp;</a></span>m_resources</h2>
+<a id="ab058f7127d317bfe78b9f391a4351315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab058f7127d317bfe78b9f391a4351315">&sect;&nbsp;</a></span>m_resources</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +345,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmage_1_1_linked_list.html">LinkedList</a>&lt; T &gt;* <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::m_resources</td>
+          <td class="memname">list&lt; T * &gt; <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::m_resources</td>
         </tr>
       </table>
   </td>

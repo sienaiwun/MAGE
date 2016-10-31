@@ -7,6 +7,10 @@ struct \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}
 \item 
 class \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable}
 \item 
+class \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration}
+\item 
+struct \hyperlink{structmage_1_1_display_mode}{Display\+Mode}
+\item 
 struct \hyperlink{structmage_1_1_edge}{Edge}
 \item 
 class \hyperlink{classmage_1_1_engine}{Engine}
@@ -17,13 +21,13 @@ struct \hyperlink{structmage_1_1_face}{Face}
 \item 
 struct \hyperlink{structmage_1_1_general_configuration}{General\+Configuration}
 \item 
+class \hyperlink{classmage_1_1_graphics_manager}{Graphics\+Manager}
+\item 
 struct \hyperlink{structmage_1_1_indexed_edge}{Indexed\+Edge}
 \item 
 struct \hyperlink{structmage_1_1_indexed_face}{Indexed\+Face}
 \item 
 class \hyperlink{classmage_1_1_input}{Input}
-\item 
-class \hyperlink{classmage_1_1_linked_list}{Linked\+List}
 \item 
 struct \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}
 \item 
@@ -47,9 +51,9 @@ class \hyperlink{classmage_1_1_resource}{Resource}
 \item 
 class \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}
 \item 
-class \hyperlink{classmage_1_1_script}{Script}
-\item 
 class \hyperlink{classmage_1_1_semaphore}{Semaphore}
+\item 
+class \hyperlink{classmage_1_1_sound}{Sound}
 \item 
 struct \hyperlink{structmage_1_1_sphere}{Sphere}
 \item 
@@ -64,6 +68,8 @@ class \hyperlink{classmage_1_1_timer}{Timer}
 struct \hyperlink{structmage_1_1_t_l_vertex}{T\+L\+Vertex}
 \item 
 struct \hyperlink{structmage_1_1_variable}{Variable}
+\item 
+class \hyperlink{classmage_1_1_variable_script}{Variable\+Script}
 \item 
 struct \hyperlink{structmage_1_1_vertex}{Vertex}
 \item 
@@ -97,6 +103,22 @@ static bool \hyperlink{namespacemage_a720768843a1d752ebf061e1475fa004f}{Attach\+
 \item 
 static void \hyperlink{namespacemage_afb64e5bf4755b0a56a7b0d086bc5f4be}{Print\+Console\+Header} ()
 \item 
+I\+N\+T\+\_\+\+P\+TR C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130}{Settings\+Dialog\+Proc\+Delegate} (H\+W\+ND hwnd\+Dlg, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\item 
+void \hyperlink{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee}{Combo\+Box\+Add} (H\+W\+ND dialog, int id, const void $\ast$data, const wchar\+\_\+t $\ast$desc)
+\item 
+void \hyperlink{namespacemage_aa510d1e5e45102338fce66ae46b2b267}{Combo\+Box\+Select} (H\+W\+ND dialog, int id, int index)
+\item 
+void \hyperlink{namespacemage_a026dd5ecb1cea93f38193f403e878d23}{Combo\+Box\+Select} (H\+W\+ND dialog, int id, const void $\ast$data)
+\item 
+const void $\ast$ \hyperlink{namespacemage_affa0d91f266dfbe4ed4a29c26b04dcb8}{Combo\+Box\+Selected} (H\+W\+ND dialog, int id)
+\item 
+bool \hyperlink{namespacemage_afa2451527062c4213d21bdf01b1922c6}{Combo\+Box\+Something\+Selected} (H\+W\+ND dialog, int id)
+\item 
+int \hyperlink{namespacemage_a5c586938d7f59a82c8528fab41f17960}{Combo\+Box\+Count} (H\+W\+ND dialog, int id)
+\item 
+bool \hyperlink{namespacemage_a98228034fca63017765bcdf5966be239}{Combo\+Box\+Contains} (H\+W\+ND dialog, int id, const wchar\+\_\+t $\ast$desc)
+\item 
 const char $\ast$ \hyperlink{namespacemage_ab2e62d950dc620167f4128cb16033998}{Find\+Word\+End} (const char $\ast$buffer)
 \item 
 void \hyperlink{namespacemage_a958c4a88b6cd58f950e1c9b9e46f6906}{Process\+Error} (const char $\ast$format, const va\+\_\+list args, const string \&error\+\_\+type, int error\+\_\+disposition)
@@ -125,7 +147,7 @@ int32\+\_\+t \hyperlink{namespacemage_a03da57cfa5ba14d4aa0472ae49ec5c7e}{Atomic\
 \item 
 float \hyperlink{namespacemage_a0de5ff6241a0474f4572c7c3ba342098}{Atomic\+Add} (volatile float $\ast$addend, float value)
 \item 
-int \hyperlink{namespacemage_ab972a47121b68775bf2545b826a1d5be}{Number\+Of\+System\+Cores} ()
+uint32\+\_\+t \hyperlink{namespacemage_abc47a1cf24b1224ad55d8022a1f3b2dc}{Number\+Of\+System\+Cores} ()
 \item 
 static D\+W\+O\+RD W\+I\+N\+A\+PI \hyperlink{namespacemage_a1f113843a26e671776ec469adf7ccc51}{task\+\_\+entry} (L\+P\+V\+O\+ID lp\+Parameter)
 \item 
@@ -143,6 +165,8 @@ void \hyperlink{namespacemage_a7da78c39175a029c92ed42d8fb9f30af}{Wait\+For\+All\
 \hyperlink{structmage_1_1_general_configuration}{General\+Configuration} \hyperlink{namespacemage_a1f4290d574030d412ca0f2f51b1a2057}{general\+\_\+configuration}
 \item 
 \hyperlink{classmage_1_1_engine}{Engine} $\ast$ \hyperlink{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{g\+\_\+engine} = N\+U\+LL
+\item 
+\hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ \hyperlink{namespacemage_a73e54b9b368875ed0281ced59e2fca7e}{g\+\_\+device\+\_\+enumeration} = N\+U\+LL
 \item 
 const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119}{vertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
 \item 
@@ -357,6 +381,135 @@ Allocates a console to the engine for basic io and redirects stdin, stdout and s
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if a console is successfully attached. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee}{}\label{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee} 
+\index{mage@{mage}!Combo\+Box\+Add@{Combo\+Box\+Add}}
+\index{Combo\+Box\+Add@{Combo\+Box\+Add}!mage@{mage}}
+\subsubsection{\texorpdfstring{Combo\+Box\+Add()}{ComboBoxAdd()}}
+{\footnotesize\ttfamily void mage\+::\+Combo\+Box\+Add (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{dialog,  }\item[{int}]{id,  }\item[{const void $\ast$}]{data,  }\item[{const wchar\+\_\+t $\ast$}]{desc }\end{DoxyParamCaption})}
+
+Adds an item associated with the given data and described with the given descriptor to a combo box.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
+\hline
+\mbox{\tt in}  & {\em id} & The identifier of the control to be retrieved. \\
+\hline
+\mbox{\tt in}  & {\em data} & A pointer to the data of the item to add. \\
+\hline
+\mbox{\tt in}  & {\em desc} & The description of the item to add. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a98228034fca63017765bcdf5966be239}{}\label{namespacemage_a98228034fca63017765bcdf5966be239} 
+\index{mage@{mage}!Combo\+Box\+Contains@{Combo\+Box\+Contains}}
+\index{Combo\+Box\+Contains@{Combo\+Box\+Contains}!mage@{mage}}
+\subsubsection{\texorpdfstring{Combo\+Box\+Contains()}{ComboBoxContains()}}
+{\footnotesize\ttfamily bool mage\+::\+Combo\+Box\+Contains (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{dialog,  }\item[{int}]{id,  }\item[{const wchar\+\_\+t $\ast$}]{desc }\end{DoxyParamCaption})}
+
+Checks whether a combo box contains the given descriptor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
+\hline
+\mbox{\tt in}  & {\em id} & The identifier of the control to be retrieved. \\
+\hline
+\mbox{\tt in}  & {\em desc} & The string description to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given description is contained in the combo box. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a5c586938d7f59a82c8528fab41f17960}{}\label{namespacemage_a5c586938d7f59a82c8528fab41f17960} 
+\index{mage@{mage}!Combo\+Box\+Count@{Combo\+Box\+Count}}
+\index{Combo\+Box\+Count@{Combo\+Box\+Count}!mage@{mage}}
+\subsubsection{\texorpdfstring{Combo\+Box\+Count()}{ComboBoxCount()}}
+{\footnotesize\ttfamily int mage\+::\+Combo\+Box\+Count (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{dialog,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+Returns the number of items in a combo box.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
+\hline
+\mbox{\tt in}  & {\em id} & The identifier of the control to be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of items of a combo box. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aa510d1e5e45102338fce66ae46b2b267}{}\label{namespacemage_aa510d1e5e45102338fce66ae46b2b267} 
+\index{mage@{mage}!Combo\+Box\+Select@{Combo\+Box\+Select}}
+\index{Combo\+Box\+Select@{Combo\+Box\+Select}!mage@{mage}}
+\subsubsection{\texorpdfstring{Combo\+Box\+Select()}{ComboBoxSelect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void mage\+::\+Combo\+Box\+Select (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{dialog,  }\item[{int}]{id,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+Selects the item at the given index in a combo box.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
+\hline
+\mbox{\tt in}  & {\em id} & The identifier of the control to be retrieved. \\
+\hline
+\mbox{\tt in}  & {\em index} & The index of the item. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a026dd5ecb1cea93f38193f403e878d23}{}\label{namespacemage_a026dd5ecb1cea93f38193f403e878d23} 
+\index{mage@{mage}!Combo\+Box\+Select@{Combo\+Box\+Select}}
+\index{Combo\+Box\+Select@{Combo\+Box\+Select}!mage@{mage}}
+\subsubsection{\texorpdfstring{Combo\+Box\+Select()}{ComboBoxSelect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void mage\+::\+Combo\+Box\+Select (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{dialog,  }\item[{int}]{id,  }\item[{const void $\ast$}]{data }\end{DoxyParamCaption})}
+
+Selects the item associated with the given data in a combo box.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
+\hline
+\mbox{\tt in}  & {\em id} & The identifier of the control to be retrieved. \\
+\hline
+\mbox{\tt in}  & {\em data} & A pointer to the data of the item. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_affa0d91f266dfbe4ed4a29c26b04dcb8}{}\label{namespacemage_affa0d91f266dfbe4ed4a29c26b04dcb8} 
+\index{mage@{mage}!Combo\+Box\+Selected@{Combo\+Box\+Selected}}
+\index{Combo\+Box\+Selected@{Combo\+Box\+Selected}!mage@{mage}}
+\subsubsection{\texorpdfstring{Combo\+Box\+Selected()}{ComboBoxSelected()}}
+{\footnotesize\ttfamily const void $\ast$ mage\+::\+Combo\+Box\+Selected (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{dialog,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+Returns the data associated with the selected item in a combo box.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
+\hline
+\mbox{\tt in}  & {\em id} & The identifier of the control to be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily N\+U\+LL} if the combo box has no items. 
+
+A pointer to the data associated with the selected item in the combo box. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_afa2451527062c4213d21bdf01b1922c6}{}\label{namespacemage_afa2451527062c4213d21bdf01b1922c6} 
+\index{mage@{mage}!Combo\+Box\+Something\+Selected@{Combo\+Box\+Something\+Selected}}
+\index{Combo\+Box\+Something\+Selected@{Combo\+Box\+Something\+Selected}!mage@{mage}}
+\subsubsection{\texorpdfstring{Combo\+Box\+Something\+Selected()}{ComboBoxSomethingSelected()}}
+{\footnotesize\ttfamily bool mage\+::\+Combo\+Box\+Something\+Selected (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{dialog,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+Checks whether a valid item is selected in a combo box.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dialog} & A handle to the dialog box that contains the control. \\
+\hline
+\mbox{\tt in}  & {\em id} & The identifier of the control to be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if a valid item is selected in the combo box. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a0f0fa32534696afa66b313ffebbf9caf}{}\label{namespacemage_a0f0fa32534696afa66b313ffebbf9caf} 
 \index{mage@{mage}!Enqueue\+Tasks@{Enqueue\+Tasks}}
 \index{Enqueue\+Tasks@{Enqueue\+Tasks}!mage@{mage}}
@@ -425,11 +578,11 @@ Notifies an info message.
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_ab972a47121b68775bf2545b826a1d5be}{}\label{namespacemage_ab972a47121b68775bf2545b826a1d5be} 
+\hypertarget{namespacemage_abc47a1cf24b1224ad55d8022a1f3b2dc}{}\label{namespacemage_abc47a1cf24b1224ad55d8022a1f3b2dc} 
 \index{mage@{mage}!Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}}
 \index{Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}!mage@{mage}}
 \subsubsection{\texorpdfstring{Number\+Of\+System\+Cores()}{NumberOfSystemCores()}}
-{\footnotesize\ttfamily int mage\+::\+Number\+Of\+System\+Cores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Number\+Of\+System\+Cores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returns the number of system cores (i.\+e. logical processors).
 
@@ -459,6 +612,25 @@ Process the given error.
 \mbox{\tt in}  & {\em error\+\_\+type} & The type of the error. \\
 \hline
 \mbox{\tt in}  & {\em error\+\_\+disposition} & Disposition of the error. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130}{}\label{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130} 
+\index{mage@{mage}!Settings\+Dialog\+Proc\+Delegate@{Settings\+Dialog\+Proc\+Delegate}}
+\index{Settings\+Dialog\+Proc\+Delegate@{Settings\+Dialog\+Proc\+Delegate}!mage@{mage}}
+\subsubsection{\texorpdfstring{Settings\+Dialog\+Proc\+Delegate()}{SettingsDialogProcDelegate()}}
+{\footnotesize\ttfamily I\+N\+T\+\_\+\+P\+TR C\+A\+L\+L\+B\+A\+CK mage\+::\+Settings\+Dialog\+Proc\+Delegate (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwnd\+Dlg,  }\item[{U\+I\+NT}]{u\+Msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})}
+
+Engine-\/defined callback function used with the Create\+Dialog for device enumeration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hwnd\+Dlg} & A handle to the dialog box. \\
+\hline
+\mbox{\tt in}  & {\em u\+Msg} & The message. \\
+\hline
+\mbox{\tt in}  & {\em w\+Param} & Additional message-\/specific information. \\
+\hline
+\mbox{\tt in}  & {\em l\+Param} & Additional message-\/specific information. \\
 \hline
 \end{DoxyParams}
 \hypertarget{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4}{}\label{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4} 
@@ -557,7 +729,13 @@ The return value is the result of the message processing and depends on the mess
 
 
 \subsection{Variable Documentation}
-\hypertarget{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{}\label{namespacemage_a84bf83f1e8779d884452cdf08f56c19a} 
+\hypertarget{namespacemage_a73e54b9b368875ed0281ced59e2fca7e}{}\label{namespacemage_a73e54b9b368875ed0281ced59e2fca7e} 
+\index{mage@{mage}!g\+\_\+device\+\_\+enumeration@{g\+\_\+device\+\_\+enumeration}}
+\index{g\+\_\+device\+\_\+enumeration@{g\+\_\+device\+\_\+enumeration}!mage@{mage}}
+\subsubsection{\texorpdfstring{g\+\_\+device\+\_\+enumeration}{g\_device\_enumeration}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ mage\+::g\+\_\+device\+\_\+enumeration = N\+U\+LL}
+
+A (global) pointer to the device enumeration. \hypertarget{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{}\label{namespacemage_a84bf83f1e8779d884452cdf08f56c19a} 
 \index{mage@{mage}!g\+\_\+engine@{g\+\_\+engine}}
 \index{g\+\_\+engine@{g\+\_\+engine}!mage@{mage}}
 \subsubsection{\texorpdfstring{g\+\_\+engine}{g\_engine}}

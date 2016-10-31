@@ -80,6 +80,7 @@ $(document).ready(function(){initNavTree('structmage_1_1_variable.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="structmage_1_1_variable-members.html">List of all members</a>  </div>
@@ -90,12 +91,24 @@ $(document).ready(function(){initNavTree('structmage_1_1_variable.html','');});
 
 <p><code>#include &lt;<a class="el" href="variable_8hpp_source.html">variable.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable_1_1_abstract_value.html">AbstractValue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable_1_1_value.html">Value</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af740537965935cc8628267cdb44debde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#af740537965935cc8628267cdb44debde">Variable</a> (const string &amp;name, <a class="el" href="namespacemage.html#a530428e73bac0ba7fe84b29086a9e33a">VariableType</a> type, const void *value)</td></tr>
-<tr class="separator:af740537965935cc8628267cdb44debde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a59487f5ae51954f75a27b6c9487ce"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a86a59487f5ae51954f75a27b6c9487ce"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#a86a59487f5ae51954f75a27b6c9487ce">Variable</a> (const string &amp;name, <a class="el" href="namespacemage.html#a530428e73bac0ba7fe84b29086a9e33a">VariableType</a> type, const T *value)</td></tr>
+<tr class="separator:a86a59487f5ae51954f75a27b6c9487ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f4d3e950b25b14e996ad074e42a5e9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#a8f4d3e950b25b14e996ad074e42a5e9e">~Variable</a> ()</td></tr>
 <tr class="separator:a8f4d3e950b25b14e996ad074e42a5e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1f7965ca7d0e29f6879cda014e8fa9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#a5d1f7965ca7d0e29f6879cda014e8fa9">operator==</a> (const <a class="el" href="structmage_1_1_variable.html">Variable</a> &amp;variable) const</td></tr>
+<tr class="separator:a5d1f7965ca7d0e29f6879cda014e8fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7983cd74a25e3998abac8d89245d1fd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#a7983cd74a25e3998abac8d89245d1fd9">operator!=</a> (const <a class="el" href="structmage_1_1_variable.html">Variable</a> &amp;variable) const</td></tr>
+<tr class="separator:a7983cd74a25e3998abac8d89245d1fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f70fdadf34cdf6b26adc9910eade11d"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#a7f70fdadf34cdf6b26adc9910eade11d">GetName</a> () const</td></tr>
 <tr class="separator:a7f70fdadf34cdf6b26adc9910eade11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5265e80b2a1c280fad5886174dfc997a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacemage.html#a530428e73bac0ba7fe84b29086a9e33a">VariableType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#a5265e80b2a1c280fad5886174dfc997a">GetType</a> () const</td></tr>
@@ -109,17 +122,19 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afac262aa51bb1dfe447d501abcaa08d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb45a61a0690e0efac614915595c4449"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacemage.html#a530428e73bac0ba7fe84b29086a9e33a">VariableType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#acb45a61a0690e0efac614915595c4449">m_type</a></td></tr>
 <tr class="separator:acb45a61a0690e0efac614915595c4449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c998b3fb5472ca3d1a747d8f456384a"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#a7c998b3fb5472ca3d1a747d8f456384a">m_value</a></td></tr>
-<tr class="separator:a7c998b3fb5472ca3d1a747d8f456384a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99388f3fbccf983b8d6954fd31d0eb27"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structmage_1_1_variable_1_1_abstract_value.html">AbstractValue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#a99388f3fbccf983b8d6954fd31d0eb27">m_value</a></td></tr>
+<tr class="separator:a99388f3fbccf983b8d6954fd31d0eb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A struct of variables. </p>
+<div class="textblock"><p>A struct of (immutable) variables. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af740537965935cc8628267cdb44debde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af740537965935cc8628267cdb44debde">&sect;&nbsp;</a></span>Variable()</h2>
+<a id="a86a59487f5ae51954f75a27b6c9487ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a59487f5ae51954f75a27b6c9487ce">&sect;&nbsp;</a></span>Variable()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">mage::Variable::Variable </td>
@@ -136,7 +151,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype">const T *&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -147,6 +162,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Constructs a variable.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The (storage) type of the value. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name. </td></tr>
@@ -234,6 +255,58 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7983cd74a25e3998abac8d89245d1fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7983cd74a25e3998abac8d89245d1fd9">&sect;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::Variable::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmage_1_1_variable.html">Variable</a> &amp;&#160;</td>
+          <td class="paramname"><em>variable</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether the given variable is not equal to this variable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">variable</td><td>A reference to the variable to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if and only if this variable and <em>variable</em> have not the same name. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a5d1f7965ca7d0e29f6879cda014e8fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1f7965ca7d0e29f6879cda014e8fa9">&sect;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::Variable::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmage_1_1_variable.html">Variable</a> &amp;&#160;</td>
+          <td class="paramname"><em>variable</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether the given variable is equal to this variable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">variable</td><td>A reference to the variable to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if and only if this variable and <em>variable</em> have the same name. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="afac262aa51bb1dfe447d501abcaa08d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afac262aa51bb1dfe447d501abcaa08d0">&sect;&nbsp;</a></span>m_name</h2>
@@ -282,8 +355,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7c998b3fb5472ca3d1a747d8f456384a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c998b3fb5472ca3d1a747d8f456384a">&sect;&nbsp;</a></span>m_value</h2>
+<a id="a99388f3fbccf983b8d6954fd31d0eb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99388f3fbccf983b8d6954fd31d0eb27">&sect;&nbsp;</a></span>m_value</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +365,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const void* mage::Variable::m_value</td>
+          <td class="memname">const <a class="el" href="structmage_1_1_variable_1_1_abstract_value.html">AbstractValue</a>* mage::Variable::m_value</td>
         </tr>
       </table>
   </td>

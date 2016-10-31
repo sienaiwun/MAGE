@@ -4,12 +4,23 @@
 
 {\ttfamily \#include $<$variable.\+hpp$>$}
 
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value}
+\item 
+struct \hyperlink{structmage_1_1_variable_1_1_value}{Value}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_variable_af740537965935cc8628267cdb44debde}{Variable} (const string \&name, \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} type, const void $\ast$value)
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structmage_1_1_variable_a86a59487f5ae51954f75a27b6c9487ce}{Variable} (const string \&name, \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} type, const T $\ast$value)
 \item 
 \hyperlink{structmage_1_1_variable_a8f4d3e950b25b14e996ad074e42a5e9e}{$\sim$\+Variable} ()
+\item 
+bool \hyperlink{structmage_1_1_variable_a5d1f7965ca7d0e29f6879cda014e8fa9}{operator==} (const \hyperlink{structmage_1_1_variable}{Variable} \&variable) const
+\item 
+bool \hyperlink{structmage_1_1_variable_a7983cd74a25e3998abac8d89245d1fd9}{operator!=} (const \hyperlink{structmage_1_1_variable}{Variable} \&variable) const
 \item 
 const string \& \hyperlink{structmage_1_1_variable_a7f70fdadf34cdf6b26adc9910eade11d}{Get\+Name} () const
 \item 
@@ -24,22 +35,28 @@ const string \hyperlink{structmage_1_1_variable_afac262aa51bb1dfe447d501abcaa08d
 \item 
 const \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} \hyperlink{structmage_1_1_variable_acb45a61a0690e0efac614915595c4449}{m\+\_\+type}
 \item 
-const void $\ast$ \hyperlink{structmage_1_1_variable_a7c998b3fb5472ca3d1a747d8f456384a}{m\+\_\+value}
+const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} $\ast$ \hyperlink{structmage_1_1_variable_a99388f3fbccf983b8d6954fd31d0eb27}{m\+\_\+value}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A struct of variables. 
+A struct of (immutable) variables. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{structmage_1_1_variable_af740537965935cc8628267cdb44debde}{}\label{structmage_1_1_variable_af740537965935cc8628267cdb44debde} 
+\hypertarget{structmage_1_1_variable_a86a59487f5ae51954f75a27b6c9487ce}{}\label{structmage_1_1_variable_a86a59487f5ae51954f75a27b6c9487ce} 
 \index{mage\+::\+Variable@{mage\+::\+Variable}!Variable@{Variable}}
 \index{Variable@{Variable}!mage\+::\+Variable@{mage\+::\+Variable}}
 \subsubsection{\texorpdfstring{Variable()}{Variable()}}
-{\footnotesize\ttfamily mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type}}]{type,  }\item[{const void $\ast$}]{value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type}}]{type,  }\item[{const T $\ast$}]{value }\end{DoxyParamCaption})}
 
 Constructs a variable.
 
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The (storage) type of the value. \\
+\hline
+\end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em name} & The name. \\
@@ -91,6 +108,38 @@ Returns the value of this variable.
 \begin{DoxyReturn}{Returns}
 A pointer to the value of this variable. 
 \end{DoxyReturn}
+\hypertarget{structmage_1_1_variable_a7983cd74a25e3998abac8d89245d1fd9}{}\label{structmage_1_1_variable_a7983cd74a25e3998abac8d89245d1fd9} 
+\index{mage\+::\+Variable@{mage\+::\+Variable}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!mage\+::\+Variable@{mage\+::\+Variable}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool mage\+::\+Variable\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} \&}]{variable }\end{DoxyParamCaption}) const}
+
+Checks whether the given variable is not equal to this variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em variable} & A reference to the variable to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if this variable and {\itshape variable} have not the same name. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_variable_a5d1f7965ca7d0e29f6879cda014e8fa9}{}\label{structmage_1_1_variable_a5d1f7965ca7d0e29f6879cda014e8fa9} 
+\index{mage\+::\+Variable@{mage\+::\+Variable}!operator==@{operator==}}
+\index{operator==@{operator==}!mage\+::\+Variable@{mage\+::\+Variable}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool mage\+::\+Variable\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} \&}]{variable }\end{DoxyParamCaption}) const}
+
+Checks whether the given variable is equal to this variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em variable} & A reference to the variable to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if and only if this variable and {\itshape variable} have the same name. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -111,10 +160,10 @@ The type of this value.
 \begin{DoxyNote}{Note}
 It is not possible to use typeid(\+T).name() since this assumes a bijection between the scripting types and the storage types, which is not the case. Thus the type needs to be stored explicitly. 
 \end{DoxyNote}
-\hypertarget{structmage_1_1_variable_a7c998b3fb5472ca3d1a747d8f456384a}{}\label{structmage_1_1_variable_a7c998b3fb5472ca3d1a747d8f456384a} 
+\hypertarget{structmage_1_1_variable_a99388f3fbccf983b8d6954fd31d0eb27}{}\label{structmage_1_1_variable_a99388f3fbccf983b8d6954fd31d0eb27} 
 \index{mage\+::\+Variable@{mage\+::\+Variable}!m\+\_\+value@{m\+\_\+value}}
 \index{m\+\_\+value@{m\+\_\+value}!mage\+::\+Variable@{mage\+::\+Variable}}
 \subsubsection{\texorpdfstring{m\+\_\+value}{m\_value}}
-{\footnotesize\ttfamily const void$\ast$ mage\+::\+Variable\+::m\+\_\+value\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value}$\ast$ mage\+::\+Variable\+::m\+\_\+value\hspace{0.3cm}{\ttfamily [private]}}
 
 A pointer to the value of this variable. 

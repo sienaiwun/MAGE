@@ -85,6 +85,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_active_writer_readers
 : <a class="el" href="classmage_1_1_read_write_mutex.html#a1e0ad98e517236170faae5b27decfdce">mage::ReadWriteMutex</a>
 </li>
+<li>m_adapter_desc
+: <a class="el" href="classmage_1_1_device_enumeration.html#a3711b8294b7a02142be1e5b23fd2b161">mage::DeviceEnumeration</a>
+</li>
 <li>m_available_blocks
 : <a class="el" href="classmage_1_1_memory_arena.html#a2295aae794acabd26ef9c1ff4908b029">mage::MemoryArena</a>
 </li>
@@ -116,8 +119,17 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_deactive
 : <a class="el" href="classmage_1_1_engine.html#ab8a4b0157403708ae7d1d018a95b4c63">mage::Engine</a>
 </li>
+<li>m_device
+: <a class="el" href="classmage_1_1_graphics_manager.html#a81b093270faff50b5f13519cfff5b582">mage::GraphicsManager</a>
+</li>
 <li>m_di
 : <a class="el" href="classmage_1_1_input.html#a6169d17f5a782039c7aefd0ffc5ba1bf">mage::Input</a>
+</li>
+<li>m_display_mode
+: <a class="el" href="classmage_1_1_graphics_manager.html#a005c179f3c0c47487542babde894e752">mage::GraphicsManager</a>
+</li>
+<li>m_display_modes
+: <a class="el" href="classmage_1_1_device_enumeration.html#a550753adc4c077247675481724514620">mage::DeviceEnumeration</a>
 </li>
 <li>m_elapsed
 : <a class="el" href="classmage_1_1_timer.html#aa2c50b9ffa85600791a21e2db4c43e91">mage::Timer</a>
@@ -125,11 +137,11 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_events
 : <a class="el" href="classmage_1_1_condition_variable.html#aa3eeb3cf7cdcc70e651ee67800b713f5">mage::ConditionVariable</a>
 </li>
-<li>m_first
-: <a class="el" href="classmage_1_1_linked_list.html#a194ecd23a82c83e2735717b32073340c">mage::LinkedList&lt; T &gt;</a>
-</li>
 <li>m_fout
 : <a class="el" href="classmage_1_1_progress_reporter.html#ad325ee5978fd1d16a97acbe37a977982">mage::ProgressReporter</a>
+</li>
+<li>m_graphics_manager
+: <a class="el" href="classmage_1_1_engine.html#aa023fed16396e4730d525df547a5687b">mage::Engine</a>
 </li>
 <li>m_handle
 : <a class="el" href="classmage_1_1_semaphore.html#ac1ded856984b4ac3739d9ff627838fda">mage::Semaphore</a>
@@ -155,9 +167,6 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_keyboard
 : <a class="el" href="classmage_1_1_input.html#a18ffc2becd62b77e9c4830e92cdf9999">mage::Input</a>
-</li>
-<li>m_last
-: <a class="el" href="classmage_1_1_linked_list.html#acb461a96b93fa3917b7ed2e30fe67fce">mage::LinkedList&lt; T &gt;</a>
 </li>
 <li>m_loaded
 : <a class="el" href="classmage_1_1_engine.html#a2f8783761b9629dd507d0a6bc456125b">mage::Engine</a>
@@ -208,9 +217,6 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_nb_writers_waiting
 : <a class="el" href="classmage_1_1_read_write_mutex.html#a003313794a9b43f80bd9b258b039438d">mage::ReadWriteMutex</a>
 </li>
-<li>m_next
-: <a class="el" href="structmage_1_1_linked_list_1_1_linked_list_iterator.html#a2936c8e80e5ef746150a8a93ef1300cb">mage::LinkedList&lt; T &gt;::LinkedListIterator</a>
-</li>
 <li>m_path
 : <a class="el" href="classmage_1_1_resource.html#a983470902250a8d16b6d5d01c332804b">mage::Resource</a>
 </li>
@@ -245,19 +251,22 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1_resource.html#aa71f1ecac3436591032d2abd6a2f5c37">mage::Resource</a>
 </li>
 <li>m_resources
-: <a class="el" href="classmage_1_1_resource_manager.html#a77b6bacdb28330b1587c7d18585fdea5">mage::ResourceManager&lt; T &gt;</a>
+: <a class="el" href="classmage_1_1_resource_manager.html#ab058f7127d317bfe78b9f391a4351315">mage::ResourceManager&lt; T &gt;</a>
 </li>
 <li>m_running
 : <a class="el" href="classmage_1_1_timer.html#ac8d975843e5b2199848284de910d3291">mage::Timer</a>
 </li>
 <li>m_script_manager
-: <a class="el" href="classmage_1_1_engine.html#a18fdbe3d9cf290ed13be3a169fabbaa3">mage::Engine</a>
+: <a class="el" href="classmage_1_1_engine.html#a4faf1b8f94a84be27dd63054bf6fe36d">mage::Engine</a>
+</li>
+<li>m_selected_diplay_mode
+: <a class="el" href="classmage_1_1_device_enumeration.html#aadeabdccd5f14eb037de31a2a05a4d82">mage::DeviceEnumeration</a>
+</li>
+<li>m_settings_script
+: <a class="el" href="classmage_1_1_device_enumeration.html#a37fe23eef4ec5631831eb163a96d60f1">mage::DeviceEnumeration</a>
 </li>
 <li>m_setup
 : <a class="el" href="classmage_1_1_engine.html#a825715684015ac2a43cfc5b6bf3b083f">mage::Engine</a>
-</li>
-<li>m_size
-: <a class="el" href="classmage_1_1_linked_list.html#a1a1be1f46f0bc704e6387833b9528909">mage::LinkedList&lt; T &gt;</a>
 </li>
 <li>m_state_changed
 : <a class="el" href="classmage_1_1_state_manager.html#a8e905ec2358a18a5b56d44cf79799afa">mage::StateManager</a>
@@ -266,7 +275,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1_engine.html#a7a0c463c67c3375b896809be9046113d">mage::Engine</a>
 </li>
 <li>m_states
-: <a class="el" href="classmage_1_1_state_manager.html#a88d005af690874d3ed3b8d4600525b9c">mage::StateManager</a>
+: <a class="el" href="classmage_1_1_state_manager.html#a2181432805f365bfb8ccff0f959d2121">mage::StateManager</a>
 </li>
 <li>m_time0
 : <a class="el" href="classmage_1_1_timer.html#a73fa08d14bfa273f158f967a8e58f96f">mage::Timer</a>
@@ -282,10 +291,11 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1_memory_arena.html#affb37aae6087014287b43d50521dd0fb">mage::MemoryArena</a>
 </li>
 <li>m_value
-: <a class="el" href="structmage_1_1_variable.html#a7c998b3fb5472ca3d1a747d8f456384a">mage::Variable</a>
+: <a class="el" href="structmage_1_1_variable.html#a99388f3fbccf983b8d6954fd31d0eb27">mage::Variable</a>
+, <a class="el" href="structmage_1_1_variable_1_1_value.html#aa15243b8811b108a0c7bff05456e377c">mage::Variable::Value&lt; T &gt;</a>
 </li>
 <li>m_variables
-: <a class="el" href="classmage_1_1_script.html#a304cc7f5829a5e11ae260050863011f6">mage::Script</a>
+: <a class="el" href="classmage_1_1_variable_script.html#a14dfd0518fe06cbfaf409fd5223f63e5">mage::VariableScript</a>
 </li>
 <li>m_verbose
 : <a class="el" href="structmage_1_1_general_configuration.html#aacc88850ee46834ab0ee52bbfa8a3a80">mage::GeneralConfiguration</a>
@@ -293,15 +303,24 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_view_clear_flags
 : <a class="el" href="structmage_1_1_viewer_setup.html#aed7b78b5437c46627949142f628c331d">mage::ViewerSetup</a>
 </li>
+<li>m_vsync
+: <a class="el" href="classmage_1_1_device_enumeration.html#a027220f50649c40785e2b918411adfad">mage::DeviceEnumeration</a>
+</li>
+<li>m_windowed
+: <a class="el" href="classmage_1_1_device_enumeration.html#a277c5dae7861c9cb1175192a61274cc9">mage::DeviceEnumeration</a>
+</li>
 <li>MemoryArena()
 : <a class="el" href="classmage_1_1_memory_arena.html#aa243c458adb14e211f4dd944c4c82148">mage::MemoryArena</a>
+</li>
+<li>mode
+: <a class="el" href="structmage_1_1_display_mode.html#a3e077be11308ea3f49bdb10940a9912f">mage::DisplayMode</a>
 </li>
 <li>Mutex()
 : <a class="el" href="classmage_1_1_mutex.html#a0f38f170668eb1fe3c2f110738edc39e">mage::Mutex</a>
 </li>
 <li>MutexLock
 : <a class="el" href="classmage_1_1_mutex.html#a058473d070063e5098732f355f432bd9">mage::Mutex</a>
-, <a class="el" href="structmage_1_1_mutex_lock.html#a9bfeb564ac4563e10d8fe569870d0e18">mage::MutexLock</a>
+, <a class="el" href="structmage_1_1_mutex_lock.html#aa8cd93677eec2656ca217fdf79f911c4">mage::MutexLock</a>
 </li>
 </ul>
 </div><!-- contents -->

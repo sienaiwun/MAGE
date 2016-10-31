@@ -1,15 +1,11 @@
 var searchData=
 [
-  ['savescript',['SaveScript',['../classmage_1_1_script.html#a4b6ff9e33d49d58c0d6bfaa189542a64',1,'mage::Script']]],
-  ['script',['Script',['../classmage_1_1_script.html#aa82d3299c964e29ad23b41de3e26c511',1,'mage::Script']]],
-  ['semaphore',['Semaphore',['../classmage_1_1_semaphore.html#a7b4f53c18b9a244ed98ef58fa5cfa2bb',1,'mage::Semaphore']]],
-  ['setdeactiveflag',['SetDeactiveFlag',['../classmage_1_1_engine.html#a942bfa9892fa79bb1068d7c7ec4e6732',1,'mage::Engine']]],
-  ['setvalueofvariable',['SetValueOfVariable',['../classmage_1_1_script.html#a33c3bfd185386e12ab45b88862d7ca4e',1,'mage::Script']]],
-  ['severe',['Severe',['../namespacemage.html#a95c8b0820c579bbde59062fd9d05e4f4',1,'mage']]],
-  ['signal',['Signal',['../classmage_1_1_condition_variable.html#a09e52f0d51c10ee565a895d2444175d9',1,'mage::ConditionVariable']]],
-  ['sphere',['Sphere',['../structmage_1_1_sphere.html#a65bbd9465f6e42b22f3f522ed7053758',1,'mage::Sphere::Sphere()'],['../structmage_1_1_sphere.html#a8b0d8c45a933c4863cd0727c5ef00b23',1,'mage::Sphere::Sphere(XMFLOAT3 p, float r)']]],
-  ['start',['Start',['../classmage_1_1_timer.html#a5855c9df8ad1a2b6774942e566833647',1,'mage::Timer']]],
-  ['state',['State',['../classmage_1_1_state.html#ac21bb6de22bb3b9c1b18d98b53e92100',1,'mage::State']]],
-  ['statemanager',['StateManager',['../classmage_1_1_state_manager.html#a6c4504d0b50fe671299b080f3be30c8e',1,'mage::StateManager']]],
-  ['stop',['Stop',['../classmage_1_1_timer.html#abf234f1e2ee9e760f316bd49500d5a3a',1,'mage::Timer']]]
+  ['task_5fentry',['task_entry',['../namespacemage.html#a1f113843a26e671776ec469adf7ccc51',1,'mage']]],
+  ['taskscleanup',['TasksCleanup',['../namespacemage.html#a118ddaa5d9606328a0af412c85832e6b',1,'mage']]],
+  ['tasksinit',['TasksInit',['../namespacemage.html#a8252f7acebefd3efe34a15cc51e4a7ac',1,'mage']]],
+  ['terminalwidth',['TerminalWidth',['../namespacemage.html#a0c12a51bf3468b372932ffc1138a4ddc',1,'mage']]],
+  ['time',['Time',['../classmage_1_1_timer.html#a5e4655ac296cc8971b54e5a76082f00f',1,'mage::Timer::Time()'],['../classmage_1_1_timer.html#a782882e9dbe9a2843b5203ba13309b23',1,'mage::Timer::time()']]],
+  ['timer',['Timer',['../classmage_1_1_timer.html#a5e1c0a3bb4491b3a43ce05874ad24055',1,'mage::Timer']]],
+  ['tlvertex',['TLVertex',['../structmage_1_1_t_l_vertex.html#a281016b2cd959f1084fb69292b2e0609',1,'mage::TLVertex::TLVertex()'],['../structmage_1_1_t_l_vertex.html#a13e51ade415e514fce0065684e69b639',1,'mage::TLVertex::TLVertex(XMFLOAT4 p, XMFLOAT4 diffuse, float tu, float tv)']]],
+  ['trywait',['TryWait',['../classmage_1_1_semaphore.html#ab34cdf4e9b7388dbdb30aab167c074f6',1,'mage::Semaphore']]]
 ];
