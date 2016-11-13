@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bpp',['bpp',['../structmage_1_1_display_mode.html#a2a834c7b0ff872557c8be1a8f363593a',1,'mage::DisplayMode']]]
+  ['createresource',['CreateResource',['../classmage_1_1_resource_manager.html#a1175cdd82a5407dd099b53a432ca9a95',1,'mage::ResourceManager']]]
 ];

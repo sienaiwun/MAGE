@@ -7,10 +7,6 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_state_manager_a6c4504d0b50fe671299b080f3be30c8e}{State\+Manager} ()
-\item 
-virtual \hyperlink{classmage_1_1_state_manager_af4bc45cc90437f54e2776e2a8ee747e1}{$\sim$\+State\+Manager} ()
-\item 
 void \hyperlink{classmage_1_1_state_manager_ae5711ea7782384bc52b09a14cf1f3f5d}{Add\+State} (\hyperlink{classmage_1_1_state}{State} $\ast$state, bool change=true)
 \item 
 void \hyperlink{classmage_1_1_state_manager_ad1589f7792508f0568f673b925a2bdba}{Remove\+State} (\hyperlink{classmage_1_1_state}{State} $\ast$state)
@@ -20,15 +16,19 @@ void \hyperlink{classmage_1_1_state_manager_a2dfcae20e58167786a2772f204951657}{C
 \hyperlink{classmage_1_1_state}{State} $\ast$ \hyperlink{classmage_1_1_state_manager_ab3a37b1ef0d2e9960ff4c98747c64d3f}{Get\+Current\+State} () const
 \item 
 bool \hyperlink{classmage_1_1_state_manager_abd9c136e1a0f7e375450be5e50e2fc64}{Is\+State\+Changed} () const
-\item 
-bool \hyperlink{classmage_1_1_state_manager_a48498596d478d107621b1752104e02e3}{Update} (double elapsed\+\_\+time)
 \end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
+\subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmage_1_1_state_manager_acb8123a0682394a7b7af001e6c5e25fe}{Change\+State} (\hyperlink{classmage_1_1_state}{State} $\ast$new\+\_\+state)
+\hyperlink{classmage_1_1_state_manager_a6c4504d0b50fe671299b080f3be30c8e}{State\+Manager} ()
+\item 
+virtual \hyperlink{classmage_1_1_state_manager_af4bc45cc90437f54e2776e2a8ee747e1}{$\sim$\+State\+Manager} ()
+\item 
+bool \hyperlink{classmage_1_1_state_manager_a48498596d478d107621b1752104e02e3}{Update} (double elapsed\+\_\+time)
+\item 
+void \hyperlink{classmage_1_1_state_manager_aef491583e2e15f59aec1b98be1406fe5}{Change\+State} (\hyperlink{classmage_1_1_state}{State} $\ast$state)
 \end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 list$<$ \hyperlink{classmage_1_1_state}{State} $\ast$$>$ \hyperlink{classmage_1_1_state_manager_a2181432805f365bfb8ccff0f959d2121}{m\+\_\+states}
@@ -36,6 +36,11 @@ list$<$ \hyperlink{classmage_1_1_state}{State} $\ast$$>$ \hyperlink{classmage_1_
 \hyperlink{classmage_1_1_state}{State} $\ast$ \hyperlink{classmage_1_1_state_manager_a737122d580b709e0d122db4a6e1d9006}{m\+\_\+current\+\_\+state}
 \item 
 bool \hyperlink{classmage_1_1_state_manager_a8e905ec2358a18a5b56d44cf79799afa}{m\+\_\+state\+\_\+changed}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmage_1_1_state_manager_a3e1914489e4bed4f9f23cdeab34a43dc}{Engine}
 \end{DoxyCompactItemize}
 
 
@@ -47,13 +52,13 @@ A class of state managers.
 \index{mage\+::\+State\+Manager@{mage\+::\+State\+Manager}!State\+Manager@{State\+Manager}}
 \index{State\+Manager@{State\+Manager}!mage\+::\+State\+Manager@{mage\+::\+State\+Manager}}
 \subsubsection{\texorpdfstring{State\+Manager()}{StateManager()}}
-{\footnotesize\ttfamily mage\+::\+State\+Manager\+::\+State\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+State\+Manager\+::\+State\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Constructs a state manager. \hypertarget{classmage_1_1_state_manager_af4bc45cc90437f54e2776e2a8ee747e1}{}\label{classmage_1_1_state_manager_af4bc45cc90437f54e2776e2a8ee747e1} 
 \index{mage\+::\+State\+Manager@{mage\+::\+State\+Manager}!````~State\+Manager@{$\sim$\+State\+Manager}}
 \index{````~State\+Manager@{$\sim$\+State\+Manager}!mage\+::\+State\+Manager@{mage\+::\+State\+Manager}}
 \subsubsection{\texorpdfstring{$\sim$\+State\+Manager()}{~StateManager()}}
-{\footnotesize\ttfamily virtual mage\+::\+State\+Manager\+::$\sim$\+State\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual mage\+::\+State\+Manager\+::$\sim$\+State\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 Destructs this state manager. 
 
@@ -83,20 +88,23 @@ Changes the state of this state manager to the state with the given id.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em id} & The id. \\
+\mbox{\tt in}  & {\em id} & The id of the state to change to. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_state_manager_acb8123a0682394a7b7af001e6c5e25fe}{}\label{classmage_1_1_state_manager_acb8123a0682394a7b7af001e6c5e25fe} 
+\hypertarget{classmage_1_1_state_manager_aef491583e2e15f59aec1b98be1406fe5}{}\label{classmage_1_1_state_manager_aef491583e2e15f59aec1b98be1406fe5} 
 \index{mage\+::\+State\+Manager@{mage\+::\+State\+Manager}!Change\+State@{Change\+State}}
 \index{Change\+State@{Change\+State}!mage\+::\+State\+Manager@{mage\+::\+State\+Manager}}
 \subsubsection{\texorpdfstring{Change\+State()}{ChangeState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void mage\+::\+State\+Manager\+::\+Change\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_state}{State} $\ast$}]{new\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily void mage\+::\+State\+Manager\+::\+Change\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_state}{State} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Changes the state of this state manager to the given state.
 
+\begin{DoxyPrecond}{Precondition}
+{\itshape state} is not {\ttfamily N\+U\+LL}. 
+\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em new\+\_\+state} & A pointer to the new state. \\
+\mbox{\tt in}  & {\em state} & A pointer to the new state. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_state_manager_ab3a37b1ef0d2e9960ff4c98747c64d3f}{}\label{classmage_1_1_state_manager_ab3a37b1ef0d2e9960ff4c98747c64d3f} 
@@ -127,7 +135,7 @@ Checks whether the state of this state manager is changed.
 \subsubsection{\texorpdfstring{Remove\+State()}{RemoveState()}}
 {\footnotesize\ttfamily void mage\+::\+State\+Manager\+::\+Remove\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_state}{State} $\ast$}]{state }\end{DoxyParamCaption})}
 
-Removes the given state from the states of this state manager.
+Removes (and destructs) the given state from the states of this state manager.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -138,13 +146,13 @@ Removes the given state from the states of this state manager.
 \index{mage\+::\+State\+Manager@{mage\+::\+State\+Manager}!Update@{Update}}
 \index{Update@{Update}!mage\+::\+State\+Manager@{mage\+::\+State\+Manager}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily bool mage\+::\+State\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed\+\_\+time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool mage\+::\+State\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Updates this state manager and its current state.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em elapsed\+\_\+time} & The elapsed time since the previous update. \\
+\mbox{\tt in}  & {\em elapsed\+\_\+time} & The elapsed time since the previous frame. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -152,23 +160,32 @@ Updates this state manager and its current state.
 \end{DoxyReturn}
 
 
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmage_1_1_state_manager_a3e1914489e4bed4f9f23cdeab34a43dc}{}\label{classmage_1_1_state_manager_a3e1914489e4bed4f9f23cdeab34a43dc} 
+\index{mage\+::\+State\+Manager@{mage\+::\+State\+Manager}!Engine@{Engine}}
+\index{Engine@{Engine}!mage\+::\+State\+Manager@{mage\+::\+State\+Manager}}
+\subsubsection{\texorpdfstring{Engine}{Engine}}
+{\footnotesize\ttfamily friend class \hyperlink{classmage_1_1_engine}{Engine}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
 \subsection{Member Data Documentation}
 \hypertarget{classmage_1_1_state_manager_a737122d580b709e0d122db4a6e1d9006}{}\label{classmage_1_1_state_manager_a737122d580b709e0d122db4a6e1d9006} 
 \index{mage\+::\+State\+Manager@{mage\+::\+State\+Manager}!m\+\_\+current\+\_\+state@{m\+\_\+current\+\_\+state}}
 \index{m\+\_\+current\+\_\+state@{m\+\_\+current\+\_\+state}!mage\+::\+State\+Manager@{mage\+::\+State\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+current\+\_\+state}{m\_current\_state}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_state}{State}$\ast$ mage\+::\+State\+Manager\+::m\+\_\+current\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_state}{State}$\ast$ mage\+::\+State\+Manager\+::m\+\_\+current\+\_\+state\hspace{0.3cm}{\ttfamily [protected]}}
 
 A pointer to the current state of this state manager. \hypertarget{classmage_1_1_state_manager_a8e905ec2358a18a5b56d44cf79799afa}{}\label{classmage_1_1_state_manager_a8e905ec2358a18a5b56d44cf79799afa} 
 \index{mage\+::\+State\+Manager@{mage\+::\+State\+Manager}!m\+\_\+state\+\_\+changed@{m\+\_\+state\+\_\+changed}}
 \index{m\+\_\+state\+\_\+changed@{m\+\_\+state\+\_\+changed}!mage\+::\+State\+Manager@{mage\+::\+State\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+state\+\_\+changed}{m\_state\_changed}}
-{\footnotesize\ttfamily bool mage\+::\+State\+Manager\+::m\+\_\+state\+\_\+changed\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily bool mage\+::\+State\+Manager\+::m\+\_\+state\+\_\+changed\hspace{0.3cm}{\ttfamily [protected]}}
 
 Flag indicating if the state changed in the current frame. \hypertarget{classmage_1_1_state_manager_a2181432805f365bfb8ccff0f959d2121}{}\label{classmage_1_1_state_manager_a2181432805f365bfb8ccff0f959d2121} 
 \index{mage\+::\+State\+Manager@{mage\+::\+State\+Manager}!m\+\_\+states@{m\+\_\+states}}
 \index{m\+\_\+states@{m\+\_\+states}!mage\+::\+State\+Manager@{mage\+::\+State\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+states}{m\_states}}
-{\footnotesize\ttfamily list$<$ \hyperlink{classmage_1_1_state}{State} $\ast$ $>$ mage\+::\+State\+Manager\+::m\+\_\+states\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily list$<$ \hyperlink{classmage_1_1_state}{State} $\ast$ $>$ mage\+::\+State\+Manager\+::m\+\_\+states\hspace{0.3cm}{\ttfamily [protected]}}
 
 The states of this state manager. 

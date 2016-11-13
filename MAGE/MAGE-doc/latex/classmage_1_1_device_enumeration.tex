@@ -7,34 +7,48 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_device_enumeration_aa000048648beb6c2aca70e5ef04e0da2}{Device\+Enumeration} ()
+I\+D\+X\+G\+I\+Adapter2 $\ast$ \hyperlink{classmage_1_1_device_enumeration_a7bdbc5aad3cd2578db6ed8c4aaffd34d}{Get\+Adapter} () const
 \item 
-virtual \hyperlink{classmage_1_1_device_enumeration_a5124c80acce55a3d539665423f3872dc}{$\sim$\+Device\+Enumeration} ()
-\item 
-I\+N\+T\+\_\+\+P\+TR \hyperlink{classmage_1_1_device_enumeration_a8fa39b2b41cb32fefdff3652d216674a}{Enumerate} (I\+D\+X\+G\+I\+Device3 $\ast$device)
-\item 
-I\+N\+T\+\_\+\+P\+TR \hyperlink{classmage_1_1_device_enumeration_a5950a6575d9073d6d23b228779f5ace1}{Settings\+Dialog\+Proc} (H\+W\+ND hwnd\+Dlg, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
-\item 
-const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 $\ast$ \hyperlink{classmage_1_1_device_enumeration_a6677573cab3da88b0186e7807f257199}{Get\+Selected\+Display\+Mode} () const
+const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 $\ast$ \hyperlink{classmage_1_1_device_enumeration_a533ac2f6ea91604a3ea3cc8d93c3de87}{Get\+Display\+Mode} () const
 \item 
 bool \hyperlink{classmage_1_1_device_enumeration_a51479c8c85b286f78730c5622604e524}{Is\+Windowed} () const
 \item 
+bool \hyperlink{classmage_1_1_device_enumeration_a8957ecacc567708e80694b25aa141c4e}{Is\+Full\+Screen} () const
+\item 
 bool \hyperlink{classmage_1_1_device_enumeration_a035e2430142e4e4ffcbc712f83e1e7e0}{Is\+V\+Synced} () const
 \end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-D\+X\+G\+I\+\_\+\+A\+D\+A\+P\+T\+E\+R\+\_\+\+D\+E\+S\+C2 \hyperlink{classmage_1_1_device_enumeration_a3711b8294b7a02142be1e5b23fd2b161}{m\+\_\+adapter\+\_\+desc}
+\hyperlink{classmage_1_1_device_enumeration_aa000048648beb6c2aca70e5ef04e0da2}{Device\+Enumeration} ()
+\item 
+\hyperlink{classmage_1_1_device_enumeration_a6a8cfc259c1e8c98ba0a9780c42a5ffe}{$\sim$\+Device\+Enumeration} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_device_enumeration_a4fea0ffef733632456b281f74608a239}{Enumerate} ()
+\item 
+I\+N\+T\+\_\+\+P\+TR \hyperlink{classmage_1_1_device_enumeration_a5950a6575d9073d6d23b228779f5ace1}{Settings\+Dialog\+Proc} (H\+W\+ND hwnd\+Dlg, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D\+X\+G\+I\+Adapter2 $\ast$ \hyperlink{classmage_1_1_device_enumeration_a03dfd87e73148c16dd6e6a85b4f8d8ed}{m\+\_\+adapter}
 \item 
 \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $\ast$ \hyperlink{classmage_1_1_device_enumeration_a37fe23eef4ec5631831eb163a96d60f1}{m\+\_\+settings\+\_\+script}
 \item 
-list$<$ \hyperlink{structmage_1_1_display_mode}{Display\+Mode} $>$ \hyperlink{classmage_1_1_device_enumeration_a550753adc4c077247675481724514620}{m\+\_\+display\+\_\+modes}
+list$<$ D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 $>$ \hyperlink{classmage_1_1_device_enumeration_aae356ac476a35ce4074f61cfd75ecdbe}{m\+\_\+display\+\_\+modes}
 \item 
 D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 \hyperlink{classmage_1_1_device_enumeration_aadeabdccd5f14eb037de31a2a05a4d82}{m\+\_\+selected\+\_\+diplay\+\_\+mode}
 \item 
 bool \hyperlink{classmage_1_1_device_enumeration_a277c5dae7861c9cb1175192a61274cc9}{m\+\_\+windowed}
 \item 
 bool \hyperlink{classmage_1_1_device_enumeration_a027220f50649c40785e2b918411adfad}{m\+\_\+vsync}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmage_1_1_device_enumeration_a3e1914489e4bed4f9f23cdeab34a43dc}{Engine}
+\item 
+I\+N\+T\+\_\+\+P\+TR C\+A\+L\+L\+B\+A\+CK \hyperlink{classmage_1_1_device_enumeration_a3dff4eb8907e2e10f26cc616fe1c104d}{Settings\+Dialog\+Proc\+Delegate} (H\+W\+ND hwnd\+Dlg, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
 \end{DoxyCompactItemize}
 
 
@@ -46,40 +60,60 @@ A device enumeration.
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Device\+Enumeration@{Device\+Enumeration}}
 \index{Device\+Enumeration@{Device\+Enumeration}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
 \subsubsection{\texorpdfstring{Device\+Enumeration()}{DeviceEnumeration()}}
-{\footnotesize\ttfamily mage\+::\+Device\+Enumeration\+::\+Device\+Enumeration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Device\+Enumeration\+::\+Device\+Enumeration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Constructs a device enumeration. \hypertarget{classmage_1_1_device_enumeration_a5124c80acce55a3d539665423f3872dc}{}\label{classmage_1_1_device_enumeration_a5124c80acce55a3d539665423f3872dc} 
+Constructs a device enumeration. \hypertarget{classmage_1_1_device_enumeration_a6a8cfc259c1e8c98ba0a9780c42a5ffe}{}\label{classmage_1_1_device_enumeration_a6a8cfc259c1e8c98ba0a9780c42a5ffe} 
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!````~Device\+Enumeration@{$\sim$\+Device\+Enumeration}}
 \index{````~Device\+Enumeration@{$\sim$\+Device\+Enumeration}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
 \subsubsection{\texorpdfstring{$\sim$\+Device\+Enumeration()}{~DeviceEnumeration()}}
-{\footnotesize\ttfamily virtual mage\+::\+Device\+Enumeration\+::$\sim$\+Device\+Enumeration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily mage\+::\+Device\+Enumeration\+::$\sim$\+Device\+Enumeration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Destructs this device enumeration. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_device_enumeration_a8fa39b2b41cb32fefdff3652d216674a}{}\label{classmage_1_1_device_enumeration_a8fa39b2b41cb32fefdff3652d216674a} 
+\hypertarget{classmage_1_1_device_enumeration_a4fea0ffef733632456b281f74608a239}{}\label{classmage_1_1_device_enumeration_a4fea0ffef733632456b281f74608a239} 
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Enumerate@{Enumerate}}
 \index{Enumerate@{Enumerate}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
 \subsubsection{\texorpdfstring{Enumerate()}{Enumerate()}}
-{\footnotesize\ttfamily I\+N\+T\+\_\+\+P\+TR mage\+::\+Device\+Enumeration\+::\+Enumerate (\begin{DoxyParamCaption}\item[{I\+D\+X\+G\+I\+Device3 $\ast$}]{device }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Device\+Enumeration\+::\+Enumerate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Enumerates the available display modes on the default adapter output of the physical adapter associated with the given device.
+Enumerates the available display modes on the adapter output of the physical adapter with the most dedicated video memory.
 
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_device_enumeration_a7bdbc5aad3cd2578db6ed8c4aaffd34d}{}\label{classmage_1_1_device_enumeration_a7bdbc5aad3cd2578db6ed8c4aaffd34d} 
+\index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Get\+Adapter@{Get\+Adapter}}
+\index{Get\+Adapter@{Get\+Adapter}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
+\subsubsection{\texorpdfstring{Get\+Adapter()}{GetAdapter()}}
+{\footnotesize\ttfamily I\+D\+X\+G\+I\+Adapter2$\ast$ mage\+::\+Device\+Enumeration\+::\+Get\+Adapter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em device} & A pointer to the device. \\
-\hline
-\end{DoxyParams}
-\hypertarget{classmage_1_1_device_enumeration_a6677573cab3da88b0186e7807f257199}{}\label{classmage_1_1_device_enumeration_a6677573cab3da88b0186e7807f257199} 
-\index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Get\+Selected\+Display\+Mode@{Get\+Selected\+Display\+Mode}}
-\index{Get\+Selected\+Display\+Mode@{Get\+Selected\+Display\+Mode}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
-\subsubsection{\texorpdfstring{Get\+Selected\+Display\+Mode()}{GetSelectedDisplayMode()}}
-{\footnotesize\ttfamily const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1$\ast$ mage\+::\+Device\+Enumeration\+::\+Get\+Selected\+Display\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+Returns the adapter.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the adapter. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_device_enumeration_a533ac2f6ea91604a3ea3cc8d93c3de87}{}\label{classmage_1_1_device_enumeration_a533ac2f6ea91604a3ea3cc8d93c3de87} 
+\index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Get\+Display\+Mode@{Get\+Display\+Mode}}
+\index{Get\+Display\+Mode@{Get\+Display\+Mode}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
+\subsubsection{\texorpdfstring{Get\+Display\+Mode()}{GetDisplayMode()}}
+{\footnotesize\ttfamily const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1$\ast$ mage\+::\+Device\+Enumeration\+::\+Get\+Display\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the selected display mode by the user.
 
 \begin{DoxyReturn}{Returns}
 A pointer to the selected display mode. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_device_enumeration_a8957ecacc567708e80694b25aa141c4e}{}\label{classmage_1_1_device_enumeration_a8957ecacc567708e80694b25aa141c4e} 
+\index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Is\+Full\+Screen@{Is\+Full\+Screen}}
+\index{Is\+Full\+Screen@{Is\+Full\+Screen}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
+\subsubsection{\texorpdfstring{Is\+Full\+Screen()}{IsFullScreen()}}
+{\footnotesize\ttfamily bool mage\+::\+Device\+Enumeration\+::\+Is\+Full\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check whether the application should run in full screen mode.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the application should run in full screen mode. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_device_enumeration_a035e2430142e4e4ffcbc712f83e1e7e0}{}\label{classmage_1_1_device_enumeration_a035e2430142e4e4ffcbc712f83e1e7e0} 
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Is\+V\+Synced@{Is\+V\+Synced}}
@@ -107,7 +141,7 @@ Check whether the application should run in windowed mode.
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Settings\+Dialog\+Proc@{Settings\+Dialog\+Proc}}
 \index{Settings\+Dialog\+Proc@{Settings\+Dialog\+Proc}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
 \subsubsection{\texorpdfstring{Settings\+Dialog\+Proc()}{SettingsDialogProc()}}
-{\footnotesize\ttfamily I\+N\+T\+\_\+\+P\+TR mage\+::\+Device\+Enumeration\+::\+Settings\+Dialog\+Proc (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwnd\+Dlg,  }\item[{U\+I\+NT}]{u\+Msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily I\+N\+T\+\_\+\+P\+TR mage\+::\+Device\+Enumeration\+::\+Settings\+Dialog\+Proc (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwnd\+Dlg,  }\item[{U\+I\+NT}]{u\+Msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Engine-\/defined callback function used with the Create\+Dialog for device enumeration.
 
@@ -122,43 +156,77 @@ Engine-\/defined callback function used with the Create\+Dialog for device enume
 \mbox{\tt in}  & {\em l\+Param} & Additional message-\/specific information. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape u\+Msg} is processed. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmage_1_1_device_enumeration_a3e1914489e4bed4f9f23cdeab34a43dc}{}\label{classmage_1_1_device_enumeration_a3e1914489e4bed4f9f23cdeab34a43dc} 
+\index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Engine@{Engine}}
+\index{Engine@{Engine}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
+\subsubsection{\texorpdfstring{Engine}{Engine}}
+{\footnotesize\ttfamily friend class \hyperlink{classmage_1_1_engine}{Engine}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\hypertarget{classmage_1_1_device_enumeration_a3dff4eb8907e2e10f26cc616fe1c104d}{}\label{classmage_1_1_device_enumeration_a3dff4eb8907e2e10f26cc616fe1c104d} 
+\index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!Settings\+Dialog\+Proc\+Delegate@{Settings\+Dialog\+Proc\+Delegate}}
+\index{Settings\+Dialog\+Proc\+Delegate@{Settings\+Dialog\+Proc\+Delegate}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
+\subsubsection{\texorpdfstring{Settings\+Dialog\+Proc\+Delegate}{SettingsDialogProcDelegate}}
+{\footnotesize\ttfamily I\+N\+T\+\_\+\+P\+TR C\+A\+L\+L\+B\+A\+CK Settings\+Dialog\+Proc\+Delegate (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwnd\+Dlg,  }\item[{U\+I\+NT}]{u\+Msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Engine-\/defined callback function used with the Create\+Dialog for device enumeration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hwnd\+Dlg} & A handle to the dialog box. \\
+\hline
+\mbox{\tt in}  & {\em u\+Msg} & The message. \\
+\hline
+\mbox{\tt in}  & {\em w\+Param} & Additional message-\/specific information. \\
+\hline
+\mbox{\tt in}  & {\em l\+Param} & Additional message-\/specific information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape u\+Msg} is processed. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_device_enumeration_a3711b8294b7a02142be1e5b23fd2b161}{}\label{classmage_1_1_device_enumeration_a3711b8294b7a02142be1e5b23fd2b161} 
-\index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!m\+\_\+adapter\+\_\+desc@{m\+\_\+adapter\+\_\+desc}}
-\index{m\+\_\+adapter\+\_\+desc@{m\+\_\+adapter\+\_\+desc}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
-\subsubsection{\texorpdfstring{m\+\_\+adapter\+\_\+desc}{m\_adapter\_desc}}
-{\footnotesize\ttfamily D\+X\+G\+I\+\_\+\+A\+D\+A\+P\+T\+E\+R\+\_\+\+D\+E\+S\+C2 mage\+::\+Device\+Enumeration\+::m\+\_\+adapter\+\_\+desc\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classmage_1_1_device_enumeration_a03dfd87e73148c16dd6e6a85b4f8d8ed}{}\label{classmage_1_1_device_enumeration_a03dfd87e73148c16dd6e6a85b4f8d8ed} 
+\index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!m\+\_\+adapter@{m\+\_\+adapter}}
+\index{m\+\_\+adapter@{m\+\_\+adapter}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
+\subsubsection{\texorpdfstring{m\+\_\+adapter}{m\_adapter}}
+{\footnotesize\ttfamily I\+D\+X\+G\+I\+Adapter2$\ast$ mage\+::\+Device\+Enumeration\+::m\+\_\+adapter\hspace{0.3cm}{\ttfamily [protected]}}
 
-The description of the adapter (or video card). \hypertarget{classmage_1_1_device_enumeration_a550753adc4c077247675481724514620}{}\label{classmage_1_1_device_enumeration_a550753adc4c077247675481724514620} 
+A pointer to the adapter (or video card). \hypertarget{classmage_1_1_device_enumeration_aae356ac476a35ce4074f61cfd75ecdbe}{}\label{classmage_1_1_device_enumeration_aae356ac476a35ce4074f61cfd75ecdbe} 
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!m\+\_\+display\+\_\+modes@{m\+\_\+display\+\_\+modes}}
 \index{m\+\_\+display\+\_\+modes@{m\+\_\+display\+\_\+modes}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
 \subsubsection{\texorpdfstring{m\+\_\+display\+\_\+modes}{m\_display\_modes}}
-{\footnotesize\ttfamily list$<$ \hyperlink{structmage_1_1_display_mode}{Display\+Mode} $>$ mage\+::\+Device\+Enumeration\+::m\+\_\+display\+\_\+modes\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily list$<$ D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 $>$ mage\+::\+Device\+Enumeration\+::m\+\_\+display\+\_\+modes\hspace{0.3cm}{\ttfamily [protected]}}
 
 The linked list of enumerated display modes. \hypertarget{classmage_1_1_device_enumeration_aadeabdccd5f14eb037de31a2a05a4d82}{}\label{classmage_1_1_device_enumeration_aadeabdccd5f14eb037de31a2a05a4d82} 
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!m\+\_\+selected\+\_\+diplay\+\_\+mode@{m\+\_\+selected\+\_\+diplay\+\_\+mode}}
 \index{m\+\_\+selected\+\_\+diplay\+\_\+mode@{m\+\_\+selected\+\_\+diplay\+\_\+mode}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
 \subsubsection{\texorpdfstring{m\+\_\+selected\+\_\+diplay\+\_\+mode}{m\_selected\_diplay\_mode}}
-{\footnotesize\ttfamily D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 mage\+::\+Device\+Enumeration\+::m\+\_\+selected\+\_\+diplay\+\_\+mode\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 mage\+::\+Device\+Enumeration\+::m\+\_\+selected\+\_\+diplay\+\_\+mode\hspace{0.3cm}{\ttfamily [protected]}}
 
 The selected display mode by the user. \hypertarget{classmage_1_1_device_enumeration_a37fe23eef4ec5631831eb163a96d60f1}{}\label{classmage_1_1_device_enumeration_a37fe23eef4ec5631831eb163a96d60f1} 
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!m\+\_\+settings\+\_\+script@{m\+\_\+settings\+\_\+script}}
 \index{m\+\_\+settings\+\_\+script@{m\+\_\+settings\+\_\+script}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
 \subsubsection{\texorpdfstring{m\+\_\+settings\+\_\+script}{m\_settings\_script}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_script}{Variable\+Script}$\ast$ mage\+::\+Device\+Enumeration\+::m\+\_\+settings\+\_\+script\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_variable_script}{Variable\+Script}$\ast$ mage\+::\+Device\+Enumeration\+::m\+\_\+settings\+\_\+script\hspace{0.3cm}{\ttfamily [protected]}}
 
 A pointer to the script which stores the device configuration. \hypertarget{classmage_1_1_device_enumeration_a027220f50649c40785e2b918411adfad}{}\label{classmage_1_1_device_enumeration_a027220f50649c40785e2b918411adfad} 
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!m\+\_\+vsync@{m\+\_\+vsync}}
 \index{m\+\_\+vsync@{m\+\_\+vsync}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
 \subsubsection{\texorpdfstring{m\+\_\+vsync}{m\_vsync}}
-{\footnotesize\ttfamily bool mage\+::\+Device\+Enumeration\+::m\+\_\+vsync\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily bool mage\+::\+Device\+Enumeration\+::m\+\_\+vsync\hspace{0.3cm}{\ttfamily [protected]}}
 
 Flag indicating whether v-\/sync should be enabled. \hypertarget{classmage_1_1_device_enumeration_a277c5dae7861c9cb1175192a61274cc9}{}\label{classmage_1_1_device_enumeration_a277c5dae7861c9cb1175192a61274cc9} 
 \index{mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}!m\+\_\+windowed@{m\+\_\+windowed}}
 \index{m\+\_\+windowed@{m\+\_\+windowed}!mage\+::\+Device\+Enumeration@{mage\+::\+Device\+Enumeration}}
 \subsubsection{\texorpdfstring{m\+\_\+windowed}{m\_windowed}}
-{\footnotesize\ttfamily bool mage\+::\+Device\+Enumeration\+::m\+\_\+windowed\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily bool mage\+::\+Device\+Enumeration\+::m\+\_\+windowed\hspace{0.3cm}{\ttfamily [protected]}}
 
 Flag indicating whether the application should run in windowed mode. 

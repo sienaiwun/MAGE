@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['semaphore',['Semaphore',['../classmage_1_1_semaphore.html',1,'mage']]],
-  ['sound',['Sound',['../classmage_1_1_sound.html',1,'mage']]],
-  ['sphere',['Sphere',['../structmage_1_1_sphere.html',1,'mage']]],
-  ['state',['State',['../classmage_1_1_state.html',1,'mage']]],
-  ['statemanager',['StateManager',['../classmage_1_1_state_manager.html',1,'mage']]]
+  ['task',['Task',['../classmage_1_1_task.html',1,'mage']]],
+  ['timer',['Timer',['../classmage_1_1_timer.html',1,'mage']]],
+  ['tlvertex',['TLVertex',['../structmage_1_1_t_l_vertex.html',1,'mage']]]
 ];

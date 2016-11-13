@@ -81,7 +81,9 @@ $(document).ready(function(){initNavTree('classmage_1_1_input.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classmage_1_1_input-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::Input Class Reference</div>  </div>
@@ -89,19 +91,22 @@ $(document).ready(function(){initNavTree('classmage_1_1_input.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="input_8hpp_source.html">input.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for mage::Input:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classmage_1_1_input.png" usemap="#mage::Input_map" alt=""/>
+  <map id="mage::Input_map" name="mage::Input_map">
+<area href="classmage_1_1_loadable.html" alt="mage::Loadable" shape="rect" coords="0,0,100,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a036b38f787b45d14ff92f360303b33af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a036b38f787b45d14ff92f360303b33af">Input</a> (HWND hwindow)</td></tr>
-<tr class="separator:a036b38f787b45d14ff92f360303b33af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52324bfe97e7245176f77ac9e635df53"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a52324bfe97e7245176f77ac9e635df53">~Input</a> ()</td></tr>
-<tr class="separator:a52324bfe97e7245176f77ac9e635df53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab152509540c3f41d337296edc2aea660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#ab152509540c3f41d337296edc2aea660">Update</a> ()</td></tr>
-<tr class="separator:ab152509540c3f41d337296edc2aea660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed069ebf04f32b924a9f1d5a1371f69a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#aed069ebf04f32b924a9f1d5a1371f69a">GetKeyPress</a> (char key, bool ignore_press_stamp=false)</td></tr>
-<tr class="separator:aed069ebf04f32b924a9f1d5a1371f69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8995df2b027f8a168feea5c2927251fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a8995df2b027f8a168feea5c2927251fb">GetMouseButtonPress</a> (char mouse_button, bool ignore_press_stamp=false)</td></tr>
-<tr class="separator:a8995df2b027f8a168feea5c2927251fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a2cfde9c53f21c1d3cb88c6970480f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#af8a2cfde9c53f21c1d3cb88c6970480f">GetKeyPress</a> (char key, bool ignore_press_stamp=false) const</td></tr>
+<tr class="separator:af8a2cfde9c53f21c1d3cb88c6970480f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad035dee39b83fd49a85aa037b14b7f8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#ad035dee39b83fd49a85aa037b14b7f8a">GetMouseButtonPress</a> (char mouse_button, bool ignore_press_stamp=false) const</td></tr>
+<tr class="separator:ad035dee39b83fd49a85aa037b14b7f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b839b6ead23e1c0ec623fb82c5d6e45"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a5b839b6ead23e1c0ec623fb82c5d6e45">GetPosX</a> () const</td></tr>
 <tr class="separator:a5b839b6ead23e1c0ec623fb82c5d6e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7d46233ccf74d45c28549e5ecdd244"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a4c7d46233ccf74d45c28549e5ecdd244">GetPosY</a> () const</td></tr>
@@ -113,8 +118,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a59c042bc18b47bca3010eb4df7de44c2"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a59c042bc18b47bca3010eb4df7de44c2">GetDeltaWheel</a> () const</td></tr>
 <tr class="separator:a59c042bc18b47bca3010eb4df7de44c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a036b38f787b45d14ff92f360303b33af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a036b38f787b45d14ff92f360303b33af">Input</a> (HWND hwindow)</td></tr>
+<tr class="separator:a036b38f787b45d14ff92f360303b33af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0881945eee81e9a2bee7fe677c96fb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#add0881945eee81e9a2bee7fe677c96fb">~Input</a> ()</td></tr>
+<tr class="separator:add0881945eee81e9a2bee7fe677c96fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a010d3a793119e8f3cc3988bb867e5050"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a010d3a793119e8f3cc3988bb867e5050">InitializeDI</a> ()</td></tr>
+<tr class="separator:a010d3a793119e8f3cc3988bb867e5050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4bb88712da71911b5a5fe8e5643ba12"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#ab4bb88712da71911b5a5fe8e5643ba12">UninitializeDI</a> ()</td></tr>
+<tr class="separator:ab4bb88712da71911b5a5fe8e5643ba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e61b7a81ce17aa2f959a18387922a6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#ab7e61b7a81ce17aa2f959a18387922a6">InitializeKeyboard</a> ()</td></tr>
+<tr class="separator:ab7e61b7a81ce17aa2f959a18387922a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ecac65f7733e361181fecba896ae7bb"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a2ecac65f7733e361181fecba896ae7bb">UninitializeKeyboard</a> ()</td></tr>
+<tr class="separator:a2ecac65f7733e361181fecba896ae7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134b0a317bb6709b03995e04c2e3d3f1"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a134b0a317bb6709b03995e04c2e3d3f1">InitializeMouse</a> ()</td></tr>
+<tr class="separator:a134b0a317bb6709b03995e04c2e3d3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364ebf732efbd775e8f91ed646a36412"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a364ebf732efbd775e8f91ed646a36412">UninitializeMouse</a> ()</td></tr>
+<tr class="separator:a364ebf732efbd775e8f91ed646a36412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab152509540c3f41d337296edc2aea660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#ab152509540c3f41d337296edc2aea660">Update</a> ()</td></tr>
+<tr class="separator:ab152509540c3f41d337296edc2aea660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a1b33f0e27c18870391633b1883c3f615"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a1b33f0e27c18870391633b1883c3f615">m_hwindow</a></td></tr>
 <tr class="separator:a1b33f0e27c18870391633b1883c3f615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6169d17f5a782039c7aefd0ffc5ba1bf"><td class="memItemLeft" align="right" valign="top">IDirectInput8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a6169d17f5a782039c7aefd0ffc5ba1bf">m_di</a></td></tr>
@@ -135,6 +161,23 @@ Private Attributes</h2></td></tr>
 <tr class="separator:accf558cd7da26ec27b24fde21627a07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28b8ec250a8d0d0efe0da713060b8599"><td class="memItemLeft" align="right" valign="top">POINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a28b8ec250a8d0d0efe0da713060b8599">m_mouse_position</a></td></tr>
 <tr class="separator:a28b8ec250a8d0d0efe0da713060b8599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input.html#a3e1914489e4bed4f9f23cdeab34a43dc">Engine</a></td></tr>
+<tr class="separator:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_classmage_1_1_loadable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmage_1_1_loadable')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="classmage_1_1_loadable.html">mage::Loadable</a></td></tr>
+<tr class="memitem:a53cfa5beb9b44bbcda0d6166a54b8cb6 inherit pub_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a53cfa5beb9b44bbcda0d6166a54b8cb6">IsLoaded</a> () const</td></tr>
+<tr class="separator:a53cfa5beb9b44bbcda0d6166a54b8cb6 inherit pub_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdcb287b5e20583899a27a1c244bc7d inherit pub_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#afbdcb287b5e20583899a27a1c244bc7d">Loadable</a> (bool loaded=false)</td></tr>
+<tr class="separator:afbdcb287b5e20583899a27a1c244bc7d inherit pub_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a009ef5ebc9baf803b19110d937922b41 inherit pub_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a009ef5ebc9baf803b19110d937922b41">~Loadable</a> ()</td></tr>
+<tr class="separator:a009ef5ebc9baf803b19110d937922b41 inherit pub_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932ff8b287c8e68e30a13804cba08ff2 inherit pub_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a932ff8b287c8e68e30a13804cba08ff2">SetLoaded</a> (bool loaded=true)</td></tr>
+<tr class="separator:a932ff8b287c8e68e30a13804cba08ff2 inherit pub_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of input objects. </p>
@@ -144,6 +187,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">mage::Input::Input </td>
@@ -153,6 +199,11 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Constructs an input for the given window handle.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -164,8 +215,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a52324bfe97e7245176f77ac9e635df53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52324bfe97e7245176f77ac9e635df53">&sect;&nbsp;</a></span>~Input()</h2>
+<a id="add0881945eee81e9a2bee7fe677c96fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0881945eee81e9a2bee7fe677c96fb">&sect;&nbsp;</a></span>~Input()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +225,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual mage::Input::~Input </td>
+          <td class="memname">mage::Input::~Input </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -182,7 +233,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -248,8 +299,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aed069ebf04f32b924a9f1d5a1371f69a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed069ebf04f32b924a9f1d5a1371f69a">&sect;&nbsp;</a></span>GetKeyPress()</h2>
+<a id="af8a2cfde9c53f21c1d3cb88c6970480f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a2cfde9c53f21c1d3cb88c6970480f">&sect;&nbsp;</a></span>GetKeyPress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +320,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -285,8 +336,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8995df2b027f8a168feea5c2927251fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8995df2b027f8a168feea5c2927251fb">&sect;&nbsp;</a></span>GetMouseButtonPress()</h2>
+<a id="ad035dee39b83fd49a85aa037b14b7f8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad035dee39b83fd49a85aa037b14b7f8a">&sect;&nbsp;</a></span>GetMouseButtonPress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +357,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -360,11 +411,176 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a010d3a793119e8f3cc3988bb867e5050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a010d3a793119e8f3cc3988bb867e5050">&sect;&nbsp;</a></span>InitializeDI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Input::InitializeDI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes the DirectInput object of this input.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="ab7e61b7a81ce17aa2f959a18387922a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e61b7a81ce17aa2f959a18387922a6">&sect;&nbsp;</a></span>InitializeKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Input::InitializeKeyboard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes the keyboard of this input.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="a134b0a317bb6709b03995e04c2e3d3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134b0a317bb6709b03995e04c2e3d3f1">&sect;&nbsp;</a></span>InitializeMouse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Input::InitializeMouse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes the mouse of this input.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="ab4bb88712da71911b5a5fe8e5643ba12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4bb88712da71911b5a5fe8e5643ba12">&sect;&nbsp;</a></span>UninitializeDI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Input::UninitializeDI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Uninitializes the DirectInput object of this input.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="a2ecac65f7733e361181fecba896ae7bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ecac65f7733e361181fecba896ae7bb">&sect;&nbsp;</a></span>UninitializeKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Input::UninitializeKeyboard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Uninitializes the keyboard of this input.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="a364ebf732efbd775e8f91ed646a36412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364ebf732efbd775e8f91ed646a36412">&sect;&nbsp;</a></span>UninitializeMouse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Input::UninitializeMouse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Uninitializes the mouse of this input.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
 <a id="ab152509540c3f41d337296edc2aea660"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab152509540c3f41d337296edc2aea660">&sect;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void mage::Input::Update </td>
@@ -373,8 +589,36 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Updates the state of both the keyboard and mouse device of this input object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1914489e4bed4f9f23cdeab34a43dc">&sect;&nbsp;</a></span>Engine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classmage_1_1_engine.html">Engine</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -394,7 +638,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -418,7 +662,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -441,7 +685,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -464,7 +708,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -487,7 +731,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -511,7 +755,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -535,7 +779,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -558,7 +802,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -581,7 +825,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -605,7 +849,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -1,6 +1,6 @@
 var searchData=
 [
+  ['bitsperpixel',['BitsPerPixel',['../namespacemage.html#a782fb3970da2fbbc93627f7324c193aa',1,'mage']]],
   ['booltype',['BoolType',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aad329b4cfe2f7f84089d0bc9f75acdb42',1,'mage']]],
-  ['bpp',['bpp',['../structmage_1_1_display_mode.html#a2a834c7b0ff872557c8be1a8f363593a',1,'mage::DisplayMode']]],
   ['broadcast',['BROADCAST',['../classmage_1_1_condition_variable.html#a600fb5094237230f6b260b31d6fb0945a5863233d3c1e62ca806753b0d175199f',1,'mage::ConditionVariable']]]
 ];

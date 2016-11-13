@@ -81,7 +81,9 @@ $(document).ready(function(){initNavTree('classmage_1_1_device_enumeration.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classmage_1_1_device_enumeration-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::DeviceEnumeration Class Reference</div>  </div>
@@ -92,35 +94,49 @@ $(document).ready(function(){initNavTree('classmage_1_1_device_enumeration.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa000048648beb6c2aca70e5ef04e0da2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#aa000048648beb6c2aca70e5ef04e0da2">DeviceEnumeration</a> ()</td></tr>
-<tr class="separator:aa000048648beb6c2aca70e5ef04e0da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5124c80acce55a3d539665423f3872dc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a5124c80acce55a3d539665423f3872dc">~DeviceEnumeration</a> ()</td></tr>
-<tr class="separator:a5124c80acce55a3d539665423f3872dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fa39b2b41cb32fefdff3652d216674a"><td class="memItemLeft" align="right" valign="top">INT_PTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a8fa39b2b41cb32fefdff3652d216674a">Enumerate</a> (IDXGIDevice3 *device)</td></tr>
-<tr class="separator:a8fa39b2b41cb32fefdff3652d216674a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5950a6575d9073d6d23b228779f5ace1"><td class="memItemLeft" align="right" valign="top">INT_PTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a5950a6575d9073d6d23b228779f5ace1">SettingsDialogProc</a> (HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)</td></tr>
-<tr class="separator:a5950a6575d9073d6d23b228779f5ace1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6677573cab3da88b0186e7807f257199"><td class="memItemLeft" align="right" valign="top">const DXGI_MODE_DESC1 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a6677573cab3da88b0186e7807f257199">GetSelectedDisplayMode</a> () const</td></tr>
-<tr class="separator:a6677573cab3da88b0186e7807f257199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bdbc5aad3cd2578db6ed8c4aaffd34d"><td class="memItemLeft" align="right" valign="top">IDXGIAdapter2 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a7bdbc5aad3cd2578db6ed8c4aaffd34d">GetAdapter</a> () const</td></tr>
+<tr class="separator:a7bdbc5aad3cd2578db6ed8c4aaffd34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533ac2f6ea91604a3ea3cc8d93c3de87"><td class="memItemLeft" align="right" valign="top">const DXGI_MODE_DESC1 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a533ac2f6ea91604a3ea3cc8d93c3de87">GetDisplayMode</a> () const</td></tr>
+<tr class="separator:a533ac2f6ea91604a3ea3cc8d93c3de87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51479c8c85b286f78730c5622604e524"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a51479c8c85b286f78730c5622604e524">IsWindowed</a> () const</td></tr>
 <tr class="separator:a51479c8c85b286f78730c5622604e524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8957ecacc567708e80694b25aa141c4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a8957ecacc567708e80694b25aa141c4e">IsFullScreen</a> () const</td></tr>
+<tr class="separator:a8957ecacc567708e80694b25aa141c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a035e2430142e4e4ffcbc712f83e1e7e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a035e2430142e4e4ffcbc712f83e1e7e0">IsVSynced</a> () const</td></tr>
 <tr class="separator:a035e2430142e4e4ffcbc712f83e1e7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a3711b8294b7a02142be1e5b23fd2b161"><td class="memItemLeft" align="right" valign="top">DXGI_ADAPTER_DESC2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a3711b8294b7a02142be1e5b23fd2b161">m_adapter_desc</a></td></tr>
-<tr class="separator:a3711b8294b7a02142be1e5b23fd2b161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa000048648beb6c2aca70e5ef04e0da2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#aa000048648beb6c2aca70e5ef04e0da2">DeviceEnumeration</a> ()</td></tr>
+<tr class="separator:aa000048648beb6c2aca70e5ef04e0da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8cfc259c1e8c98ba0a9780c42a5ffe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a6a8cfc259c1e8c98ba0a9780c42a5ffe">~DeviceEnumeration</a> ()</td></tr>
+<tr class="separator:a6a8cfc259c1e8c98ba0a9780c42a5ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fea0ffef733632456b281f74608a239"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a4fea0ffef733632456b281f74608a239">Enumerate</a> ()</td></tr>
+<tr class="separator:a4fea0ffef733632456b281f74608a239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5950a6575d9073d6d23b228779f5ace1"><td class="memItemLeft" align="right" valign="top">INT_PTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a5950a6575d9073d6d23b228779f5ace1">SettingsDialogProc</a> (HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)</td></tr>
+<tr class="separator:a5950a6575d9073d6d23b228779f5ace1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a03dfd87e73148c16dd6e6a85b4f8d8ed"><td class="memItemLeft" align="right" valign="top">IDXGIAdapter2 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a03dfd87e73148c16dd6e6a85b4f8d8ed">m_adapter</a></td></tr>
+<tr class="separator:a03dfd87e73148c16dd6e6a85b4f8d8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37fe23eef4ec5631831eb163a96d60f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a37fe23eef4ec5631831eb163a96d60f1">m_settings_script</a></td></tr>
 <tr class="separator:a37fe23eef4ec5631831eb163a96d60f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a550753adc4c077247675481724514620"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="structmage_1_1_display_mode.html">DisplayMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a550753adc4c077247675481724514620">m_display_modes</a></td></tr>
-<tr class="separator:a550753adc4c077247675481724514620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae356ac476a35ce4074f61cfd75ecdbe"><td class="memItemLeft" align="right" valign="top">list&lt; DXGI_MODE_DESC1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#aae356ac476a35ce4074f61cfd75ecdbe">m_display_modes</a></td></tr>
+<tr class="separator:aae356ac476a35ce4074f61cfd75ecdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadeabdccd5f14eb037de31a2a05a4d82"><td class="memItemLeft" align="right" valign="top">DXGI_MODE_DESC1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#aadeabdccd5f14eb037de31a2a05a4d82">m_selected_diplay_mode</a></td></tr>
 <tr class="separator:aadeabdccd5f14eb037de31a2a05a4d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a277c5dae7861c9cb1175192a61274cc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a277c5dae7861c9cb1175192a61274cc9">m_windowed</a></td></tr>
 <tr class="separator:a277c5dae7861c9cb1175192a61274cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027220f50649c40785e2b918411adfad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a027220f50649c40785e2b918411adfad">m_vsync</a></td></tr>
 <tr class="separator:a027220f50649c40785e2b918411adfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a3e1914489e4bed4f9f23cdeab34a43dc">Engine</a></td></tr>
+<tr class="separator:a3e1914489e4bed4f9f23cdeab34a43dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dff4eb8907e2e10f26cc616fe1c104d"><td class="memItemLeft" align="right" valign="top">INT_PTR CALLBACK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_device_enumeration.html#a3dff4eb8907e2e10f26cc616fe1c104d">SettingsDialogProcDelegate</a> (HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)</td></tr>
+<tr class="separator:a3dff4eb8907e2e10f26cc616fe1c104d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A device enumeration. </p>
@@ -130,6 +146,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">mage::DeviceEnumeration::DeviceEnumeration </td>
@@ -138,13 +157,18 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Constructs a device enumeration. </p>
 
 </div>
 </div>
-<a id="a5124c80acce55a3d539665423f3872dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5124c80acce55a3d539665423f3872dc">&sect;&nbsp;</a></span>~DeviceEnumeration()</h2>
+<a id="a6a8cfc259c1e8c98ba0a9780c42a5ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8cfc259c1e8c98ba0a9780c42a5ffe">&sect;&nbsp;</a></span>~DeviceEnumeration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +177,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual mage::DeviceEnumeration::~DeviceEnumeration </td>
+          <td class="memname">mage::DeviceEnumeration::~DeviceEnumeration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -161,7 +185,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -170,39 +194,60 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8fa39b2b41cb32fefdff3652d216674a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fa39b2b41cb32fefdff3652d216674a">&sect;&nbsp;</a></span>Enumerate()</h2>
+<a id="a4fea0ffef733632456b281f74608a239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fea0ffef733632456b281f74608a239">&sect;&nbsp;</a></span>Enumerate()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">INT_PTR mage::DeviceEnumeration::Enumerate </td>
+          <td class="memname">HRESULT mage::DeviceEnumeration::Enumerate </td>
           <td>(</td>
-          <td class="paramtype">IDXGIDevice3 *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Enumerates the available display modes on the default adapter output of the physical adapter associated with the given device.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the device. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Enumerates the available display modes on the adapter output of the physical adapter with the most dedicated video memory.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
 
 </div>
 </div>
-<a id="a6677573cab3da88b0186e7807f257199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6677573cab3da88b0186e7807f257199">&sect;&nbsp;</a></span>GetSelectedDisplayMode()</h2>
+<a id="a7bdbc5aad3cd2578db6ed8c4aaffd34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bdbc5aad3cd2578db6ed8c4aaffd34d">&sect;&nbsp;</a></span>GetAdapter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const DXGI_MODE_DESC1* mage::DeviceEnumeration::GetSelectedDisplayMode </td>
+          <td class="memname">IDXGIAdapter2* mage::DeviceEnumeration::GetAdapter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the adapter.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the adapter. </dd></dl>
+
+</div>
+</div>
+<a id="a533ac2f6ea91604a3ea3cc8d93c3de87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a533ac2f6ea91604a3ea3cc8d93c3de87">&sect;&nbsp;</a></span>GetDisplayMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const DXGI_MODE_DESC1* mage::DeviceEnumeration::GetDisplayMode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -211,6 +256,25 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the selected display mode by the user.</p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the selected display mode. </dd></dl>
+
+</div>
+</div>
+<a id="a8957ecacc567708e80694b25aa141c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8957ecacc567708e80694b25aa141c4e">&sect;&nbsp;</a></span>IsFullScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::DeviceEnumeration::IsFullScreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether the application should run in full screen mode.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the application should run in full screen mode. <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -257,6 +321,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">INT_PTR mage::DeviceEnumeration::SettingsDialogProc </td>
@@ -288,6 +355,11 @@ Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Engine-defined callback function used with the CreateDialog for device enumeration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -299,12 +371,95 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <em>uMsg</em> is processed. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a3e1914489e4bed4f9f23cdeab34a43dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1914489e4bed4f9f23cdeab34a43dc">&sect;&nbsp;</a></span>Engine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classmage_1_1_engine.html">Engine</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dff4eb8907e2e10f26cc616fe1c104d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dff4eb8907e2e10f26cc616fe1c104d">&sect;&nbsp;</a></span>SettingsDialogProcDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT_PTR CALLBACK SettingsDialogProcDelegate </td>
+          <td>(</td>
+          <td class="paramtype">HWND&#160;</td>
+          <td class="paramname"><em>hwndDlg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>uMsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WPARAM&#160;</td>
+          <td class="paramname"><em>wParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPARAM&#160;</td>
+          <td class="paramname"><em>lParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Engine-defined callback function used with the CreateDialog for device enumeration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hwndDlg</td><td>A handle to the dialog box. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uMsg</td><td>The message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wParam</td><td>Additional message-specific information. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lParam</td><td>Additional message-specific information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <em>uMsg</em> is processed. <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3711b8294b7a02142be1e5b23fd2b161"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3711b8294b7a02142be1e5b23fd2b161">&sect;&nbsp;</a></span>m_adapter_desc</h2>
+<a id="a03dfd87e73148c16dd6e6a85b4f8d8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03dfd87e73148c16dd6e6a85b4f8d8ed">&sect;&nbsp;</a></span>m_adapter</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,21 +468,21 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DXGI_ADAPTER_DESC2 mage::DeviceEnumeration::m_adapter_desc</td>
+          <td class="memname">IDXGIAdapter2* mage::DeviceEnumeration::m_adapter</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The description of the adapter (or video card). </p>
+<p>A pointer to the adapter (or video card). </p>
 
 </div>
 </div>
-<a id="a550753adc4c077247675481724514620"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a550753adc4c077247675481724514620">&sect;&nbsp;</a></span>m_display_modes</h2>
+<a id="aae356ac476a35ce4074f61cfd75ecdbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae356ac476a35ce4074f61cfd75ecdbe">&sect;&nbsp;</a></span>m_display_modes</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,12 +491,12 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">list&lt; <a class="el" href="structmage_1_1_display_mode.html">DisplayMode</a> &gt; mage::DeviceEnumeration::m_display_modes</td>
+          <td class="memname">list&lt; DXGI_MODE_DESC1 &gt; mage::DeviceEnumeration::m_display_modes</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -364,7 +519,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -387,7 +542,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -410,7 +565,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -433,7 +588,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

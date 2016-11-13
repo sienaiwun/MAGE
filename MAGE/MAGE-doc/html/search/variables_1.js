@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['createresource',['CreateResource',['../classmage_1_1_resource_manager.html#a1175cdd82a5407dd099b53a432ca9a95',1,'mage::ResourceManager']]]
+  ['diffuse',['diffuse',['../structmage_1_1_l_vertex.html#abfe65c089e650ad20ed41de8e2b585dd',1,'mage::LVertex::diffuse()'],['../structmage_1_1_t_l_vertex.html#a78d60c6622bc1091f2c1c30da0715236',1,'mage::TLVertex::diffuse()']]]
 ];

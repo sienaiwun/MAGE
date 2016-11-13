@@ -9,8 +9,6 @@ class \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable}
 \item 
 class \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration}
 \item 
-struct \hyperlink{structmage_1_1_display_mode}{Display\+Mode}
-\item 
 struct \hyperlink{structmage_1_1_edge}{Edge}
 \item 
 class \hyperlink{classmage_1_1_engine}{Engine}
@@ -19,15 +17,17 @@ struct \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}
 \item 
 struct \hyperlink{structmage_1_1_face}{Face}
 \item 
-struct \hyperlink{structmage_1_1_general_configuration}{General\+Configuration}
-\item 
-class \hyperlink{classmage_1_1_graphics_manager}{Graphics\+Manager}
+class \hyperlink{classmage_1_1_font}{Font}
 \item 
 struct \hyperlink{structmage_1_1_indexed_edge}{Indexed\+Edge}
 \item 
 struct \hyperlink{structmage_1_1_indexed_face}{Indexed\+Face}
 \item 
 class \hyperlink{classmage_1_1_input}{Input}
+\item 
+class \hyperlink{classmage_1_1_loadable}{Loadable}
+\item 
+struct \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration}
 \item 
 struct \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}
 \item 
@@ -47,13 +47,13 @@ class \hyperlink{classmage_1_1_reference}{Reference}
 \item 
 class \hyperlink{classmage_1_1_reference_counted}{Reference\+Counted}
 \item 
+class \hyperlink{classmage_1_1_renderer}{Renderer}
+\item 
 class \hyperlink{classmage_1_1_resource}{Resource}
 \item 
 class \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}
 \item 
 class \hyperlink{classmage_1_1_semaphore}{Semaphore}
-\item 
-class \hyperlink{classmage_1_1_sound}{Sound}
 \item 
 struct \hyperlink{structmage_1_1_sphere}{Sphere}
 \item 
@@ -97,27 +97,9 @@ enum \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a327147b1d76dcb41c17c23f9603d80c1}{Window\+Proc} (H\+W\+ND hwnd, U\+I\+NT msg, W\+P\+A\+R\+AM wparam, L\+P\+A\+R\+AM lparam)
+L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_ab5db0adc49745ebb637f947bc3a3aaa5}{Window\+Proc} (H\+W\+ND h\+Wnd, U\+I\+NT msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
 \item 
-static bool \hyperlink{namespacemage_a720768843a1d752ebf061e1475fa004f}{Attach\+Console} ()
-\item 
-static void \hyperlink{namespacemage_afb64e5bf4755b0a56a7b0d086bc5f4be}{Print\+Console\+Header} ()
-\item 
-I\+N\+T\+\_\+\+P\+TR C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130}{Settings\+Dialog\+Proc\+Delegate} (H\+W\+ND hwnd\+Dlg, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
-\item 
-void \hyperlink{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee}{Combo\+Box\+Add} (H\+W\+ND dialog, int id, const void $\ast$data, const wchar\+\_\+t $\ast$desc)
-\item 
-void \hyperlink{namespacemage_aa510d1e5e45102338fce66ae46b2b267}{Combo\+Box\+Select} (H\+W\+ND dialog, int id, int index)
-\item 
-void \hyperlink{namespacemage_a026dd5ecb1cea93f38193f403e878d23}{Combo\+Box\+Select} (H\+W\+ND dialog, int id, const void $\ast$data)
-\item 
-const void $\ast$ \hyperlink{namespacemage_affa0d91f266dfbe4ed4a29c26b04dcb8}{Combo\+Box\+Selected} (H\+W\+ND dialog, int id)
-\item 
-bool \hyperlink{namespacemage_afa2451527062c4213d21bdf01b1922c6}{Combo\+Box\+Something\+Selected} (H\+W\+ND dialog, int id)
-\item 
-int \hyperlink{namespacemage_a5c586938d7f59a82c8528fab41f17960}{Combo\+Box\+Count} (H\+W\+ND dialog, int id)
-\item 
-bool \hyperlink{namespacemage_a98228034fca63017765bcdf5966be239}{Combo\+Box\+Contains} (H\+W\+ND dialog, int id, const wchar\+\_\+t $\ast$desc)
+void \hyperlink{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{Print\+Console\+Header} ()
 \item 
 const char $\ast$ \hyperlink{namespacemage_ab2e62d950dc620167f4128cb16033998}{Find\+Word\+End} (const char $\ast$buffer)
 \item 
@@ -158,15 +140,31 @@ void \hyperlink{namespacemage_a118ddaa5d9606328a0af412c85832e6b}{Tasks\+Cleanup}
 void \hyperlink{namespacemage_a0f0fa32534696afa66b313ffebbf9caf}{Enqueue\+Tasks} (const vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$$>$ \&tasks)
 \item 
 void \hyperlink{namespacemage_a7da78c39175a029c92ed42d8fb9f30af}{Wait\+For\+All\+Tasks} ()
+\item 
+I\+N\+T\+\_\+\+P\+TR C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130}{Settings\+Dialog\+Proc\+Delegate} (H\+W\+ND hwnd\+Dlg, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\item 
+size\+\_\+t \hyperlink{namespacemage_a782fb3970da2fbbc93627f7324c193aa}{Bits\+Per\+Pixel} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
+\item 
+void \hyperlink{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee}{Combo\+Box\+Add} (H\+W\+ND dialog, int id, const void $\ast$data, const wchar\+\_\+t $\ast$desc)
+\item 
+void \hyperlink{namespacemage_aa510d1e5e45102338fce66ae46b2b267}{Combo\+Box\+Select} (H\+W\+ND dialog, int id, int index)
+\item 
+void \hyperlink{namespacemage_a026dd5ecb1cea93f38193f403e878d23}{Combo\+Box\+Select} (H\+W\+ND dialog, int id, const void $\ast$data)
+\item 
+const void $\ast$ \hyperlink{namespacemage_affa0d91f266dfbe4ed4a29c26b04dcb8}{Combo\+Box\+Selected} (H\+W\+ND dialog, int id)
+\item 
+bool \hyperlink{namespacemage_afa2451527062c4213d21bdf01b1922c6}{Combo\+Box\+Something\+Selected} (H\+W\+ND dialog, int id)
+\item 
+int \hyperlink{namespacemage_a5c586938d7f59a82c8528fab41f17960}{Combo\+Box\+Count} (H\+W\+ND dialog, int id)
+\item 
+bool \hyperlink{namespacemage_a98228034fca63017765bcdf5966be239}{Combo\+Box\+Contains} (H\+W\+ND dialog, int id, const wchar\+\_\+t $\ast$desc)
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_general_configuration}{General\+Configuration} \hyperlink{namespacemage_a1f4290d574030d412ca0f2f51b1a2057}{general\+\_\+configuration}
+\hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration} \hyperlink{namespacemage_a162413669f92d91c7ee135d60f93fcf1}{g\+\_\+logging\+\_\+configuration}
 \item 
 \hyperlink{classmage_1_1_engine}{Engine} $\ast$ \hyperlink{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{g\+\_\+engine} = N\+U\+LL
-\item 
-\hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ \hyperlink{namespacemage_a73e54b9b368875ed0281ced59e2fca7e}{g\+\_\+device\+\_\+enumeration} = N\+U\+LL
 \item 
 const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119}{vertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
 \item 
@@ -185,11 +183,16 @@ static \hyperlink{classmage_1_1_semaphore}{Semaphore} $\ast$ \hyperlink{namespac
 static uint32\+\_\+t \hyperlink{namespacemage_a390e8652d67667609daf3aa64e3c00a8}{nb\+\_\+unfinished\+\_\+tasks}
 \item 
 static \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable} $\ast$ \hyperlink{namespacemage_a8c04b4285ebbc0fb416b1905c01cf149}{tasks\+\_\+running\+\_\+condition}
+\item 
+\hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ \hyperlink{namespacemage_a73e54b9b368875ed0281ced59e2fca7e}{g\+\_\+device\+\_\+enumeration} = N\+U\+LL
+\item 
+const D3\+D\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE \hyperlink{namespacemage_a79acb6a11738f00caf2390a2d623a0b4}{g\+\_\+driver\+\_\+types} \mbox{[}$\,$\mbox{]}
+\item 
+const D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL \hyperlink{namespacemage_add3b7e051df553262371e077d9d66fd9}{g\+\_\+feature\+\_\+levels} \mbox{[}$\,$\mbox{]}
+\item 
+const D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_a5a4e11b65061c618b85826ab6df480e0}{g\+\_\+pixel\+\_\+formats} \mbox{[}$\,$\mbox{]}
 \end{DoxyCompactItemize}
 
-
-\subsection{Detailed Description}
-The namespace for all the M\+A\+GE functionality. 
 
 \subsection{Enumeration Type Documentation}
 \hypertarget{namespacemage_afd76fcca37ce5c5b2227671290973c74}{}\label{namespacemage_afd76fcca37ce5c5b2227671290973c74} 
@@ -370,16 +373,16 @@ Performs an atomic compare-\/and-\/exchange operation on the specified pointers.
 \begin{DoxyReturn}{Returns}
 The function returns the initial pointer of {\itshape destination}. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a720768843a1d752ebf061e1475fa004f}{}\label{namespacemage_a720768843a1d752ebf061e1475fa004f} 
-\index{mage@{mage}!Attach\+Console@{Attach\+Console}}
-\index{Attach\+Console@{Attach\+Console}!mage@{mage}}
-\subsubsection{\texorpdfstring{Attach\+Console()}{AttachConsole()}}
-{\footnotesize\ttfamily static bool mage\+::\+Attach\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\hypertarget{namespacemage_a782fb3970da2fbbc93627f7324c193aa}{}\label{namespacemage_a782fb3970da2fbbc93627f7324c193aa} 
+\index{mage@{mage}!Bits\+Per\+Pixel@{Bits\+Per\+Pixel}}
+\index{Bits\+Per\+Pixel@{Bits\+Per\+Pixel}!mage@{mage}}
+\subsubsection{\texorpdfstring{Bits\+Per\+Pixel()}{BitsPerPixel()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Bits\+Per\+Pixel (\begin{DoxyParamCaption}\item[{D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})}
 
-Allocates a console to the engine for basic io and redirects stdin, stdout and stderr to the allocated console.
+Returns the number of bits per pixel of the given format.
 
 \begin{DoxyReturn}{Returns}
-{\ttfamily true} if a console is successfully attached. {\ttfamily false} otherwise. 
+The number of bits per pixel of the given format. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee}{}\label{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee} 
 \index{mage@{mage}!Combo\+Box\+Add@{Combo\+Box\+Add}}
@@ -589,11 +592,11 @@ Returns the number of system cores (i.\+e. logical processors).
 \begin{DoxyReturn}{Returns}
 The number of system cores (i.\+e. logical processors). 
 \end{DoxyReturn}
-\hypertarget{namespacemage_afb64e5bf4755b0a56a7b0d086bc5f4be}{}\label{namespacemage_afb64e5bf4755b0a56a7b0d086bc5f4be} 
+\hypertarget{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{}\label{namespacemage_a064756443bd8a1af6974f22c81d29ed0} 
 \index{mage@{mage}!Print\+Console\+Header@{Print\+Console\+Header}}
 \index{Print\+Console\+Header@{Print\+Console\+Header}!mage@{mage}}
 \subsubsection{\texorpdfstring{Print\+Console\+Header()}{PrintConsoleHeader()}}
-{\footnotesize\ttfamily static void mage\+::\+Print\+Console\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void mage\+::\+Print\+Console\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Prints the header of the engine to the console. \hypertarget{namespacemage_a958c4a88b6cd58f950e1c9b9e46f6906}{}\label{namespacemage_a958c4a88b6cd58f950e1c9b9e46f6906} 
 \index{mage@{mage}!Process\+Error@{Process\+Error}}
@@ -633,6 +636,9 @@ Engine-\/defined callback function used with the Create\+Dialog for device enume
 \mbox{\tt in}  & {\em l\+Param} & Additional message-\/specific information. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape u\+Msg} is processed. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4}{}\label{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4} 
 \index{mage@{mage}!Severe@{Severe}}
 \index{Severe@{Severe}!mage@{mage}}
@@ -704,23 +710,23 @@ Notifies a warning message.
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_a327147b1d76dcb41c17c23f9603d80c1}{}\label{namespacemage_a327147b1d76dcb41c17c23f9603d80c1} 
+\hypertarget{namespacemage_ab5db0adc49745ebb637f947bc3a3aaa5}{}\label{namespacemage_ab5db0adc49745ebb637f947bc3a3aaa5} 
 \index{mage@{mage}!Window\+Proc@{Window\+Proc}}
 \index{Window\+Proc@{Window\+Proc}!mage@{mage}}
 \subsubsection{\texorpdfstring{Window\+Proc()}{WindowProc()}}
-{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK mage\+::\+Window\+Proc (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwnd,  }\item[{U\+I\+NT}]{msg,  }\item[{W\+P\+A\+R\+AM}]{wparam,  }\item[{L\+P\+A\+R\+AM}]{lparam }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK mage\+::\+Window\+Proc (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{h\+Wnd,  }\item[{U\+I\+NT}]{msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})}
 
 The application-\/defined function that processes messages sent to the engine window. The Window\+Proc type defines a pointer to this callback function.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em hwnd} & A handle to the window. \\
+\mbox{\tt in}  & {\em h\+Wnd} & A handle to the window. \\
 \hline
 \mbox{\tt in}  & {\em msg} & The message. \\
 \hline
-\mbox{\tt in}  & {\em wparam} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
+\mbox{\tt in}  & {\em w\+Param} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
 \hline
-\mbox{\tt in}  & {\em lparam} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
+\mbox{\tt in}  & {\em l\+Param} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -735,19 +741,61 @@ The return value is the result of the message processing and depends on the mess
 \subsubsection{\texorpdfstring{g\+\_\+device\+\_\+enumeration}{g\_device\_enumeration}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ mage\+::g\+\_\+device\+\_\+enumeration = N\+U\+LL}
 
-A (global) pointer to the device enumeration. \hypertarget{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{}\label{namespacemage_a84bf83f1e8779d884452cdf08f56c19a} 
+A (global) pointer to the device enumeration. \hypertarget{namespacemage_a79acb6a11738f00caf2390a2d623a0b4}{}\label{namespacemage_a79acb6a11738f00caf2390a2d623a0b4} 
+\index{mage@{mage}!g\+\_\+driver\+\_\+types@{g\+\_\+driver\+\_\+types}}
+\index{g\+\_\+driver\+\_\+types@{g\+\_\+driver\+\_\+types}!mage@{mage}}
+\subsubsection{\texorpdfstring{g\+\_\+driver\+\_\+types}{g\_driver\_types}}
+{\footnotesize\ttfamily const D3\+D\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE mage\+::g\+\_\+driver\+\_\+types\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        D3D\_DRIVER\_TYPE\_HARDWARE,
+        D3D\_DRIVER\_TYPE\_WARP,
+        D3D\_DRIVER\_TYPE\_REFERENCE
+    \}
+\end{DoxyCode}
+The supported driver types. \hypertarget{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{}\label{namespacemage_a84bf83f1e8779d884452cdf08f56c19a} 
 \index{mage@{mage}!g\+\_\+engine@{g\+\_\+engine}}
 \index{g\+\_\+engine@{g\+\_\+engine}!mage@{mage}}
 \subsubsection{\texorpdfstring{g\+\_\+engine}{g\_engine}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_engine}{Engine} $\ast$ mage\+::g\+\_\+engine = N\+U\+LL}
 
-The engine used by the user. \hypertarget{namespacemage_a1f4290d574030d412ca0f2f51b1a2057}{}\label{namespacemage_a1f4290d574030d412ca0f2f51b1a2057} 
-\index{mage@{mage}!general\+\_\+configuration@{general\+\_\+configuration}}
-\index{general\+\_\+configuration@{general\+\_\+configuration}!mage@{mage}}
-\subsubsection{\texorpdfstring{general\+\_\+configuration}{general\_configuration}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_general_configuration}{General\+Configuration} mage\+::general\+\_\+configuration}
+The engine used by the user. \hypertarget{namespacemage_add3b7e051df553262371e077d9d66fd9}{}\label{namespacemage_add3b7e051df553262371e077d9d66fd9} 
+\index{mage@{mage}!g\+\_\+feature\+\_\+levels@{g\+\_\+feature\+\_\+levels}}
+\index{g\+\_\+feature\+\_\+levels@{g\+\_\+feature\+\_\+levels}!mage@{mage}}
+\subsubsection{\texorpdfstring{g\+\_\+feature\+\_\+levels}{g\_feature\_levels}}
+{\footnotesize\ttfamily const D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL mage\+::g\+\_\+feature\+\_\+levels\mbox{[}$\,$\mbox{]}}
 
-The general configuration defined by the user and used by the engine. \hypertarget{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3}{}\label{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3} 
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        D3D\_FEATURE\_LEVEL\_11\_1
+    \}
+\end{DoxyCode}
+The supported feature levels. \hypertarget{namespacemage_a162413669f92d91c7ee135d60f93fcf1}{}\label{namespacemage_a162413669f92d91c7ee135d60f93fcf1} 
+\index{mage@{mage}!g\+\_\+logging\+\_\+configuration@{g\+\_\+logging\+\_\+configuration}}
+\index{g\+\_\+logging\+\_\+configuration@{g\+\_\+logging\+\_\+configuration}!mage@{mage}}
+\subsubsection{\texorpdfstring{g\+\_\+logging\+\_\+configuration}{g\_logging\_configuration}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration} mage\+::g\+\_\+logging\+\_\+configuration}
+
+The logging configuration defined by the user and used by the engine. \hypertarget{namespacemage_a5a4e11b65061c618b85826ab6df480e0}{}\label{namespacemage_a5a4e11b65061c618b85826ab6df480e0} 
+\index{mage@{mage}!g\+\_\+pixel\+\_\+formats@{g\+\_\+pixel\+\_\+formats}}
+\index{g\+\_\+pixel\+\_\+formats@{g\+\_\+pixel\+\_\+formats}!mage@{mage}}
+\subsubsection{\texorpdfstring{g\+\_\+pixel\+\_\+formats}{g\_pixel\_formats}}
+{\footnotesize\ttfamily const D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::g\+\_\+pixel\+\_\+formats\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        DXGI\_FORMAT\_B5G5R5A1\_UNORM,    
+        DXGI\_FORMAT\_B5G6R5\_UNORM,      
+        DXGI\_FORMAT\_B8G8R8X8\_UNORM,    
+        DXGI\_FORMAT\_B8G8R8A8\_UNORM,    
+        DXGI\_FORMAT\_R10G10B10A2\_UNORM, 
+    \}
+\end{DoxyCode}
+The allowed pixel formats. \hypertarget{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3}{}\label{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3} 
 \index{mage@{mage}!lvertex\+\_\+input\+\_\+element\+\_\+desc@{lvertex\+\_\+input\+\_\+element\+\_\+desc}}
 \index{lvertex\+\_\+input\+\_\+element\+\_\+desc@{lvertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
 \subsubsection{\texorpdfstring{lvertex\+\_\+input\+\_\+element\+\_\+desc}{lvertex\_input\_element\_desc}}
@@ -756,15 +804,15 @@ The general configuration defined by the user and used by the engine. \hypertarg
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
 = \{
-        \{ \textcolor{stringliteral}{"POSITION"}, 0, DXGI\_FORMAT\_R32G32B32\_FLOAT, 0, UINT(offsetof(LVertex, p)), 
+        \{ \textcolor{stringliteral}{"POSITION"}, 0, DXGI\_FORMAT\_R32G32B32\_FLOAT,    0, UINT(offsetof(LVertex, p)),       
       D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"DIFFUSE"}, 0, DXGI\_FORMAT\_R32G32B32A32\_FLOAT, 0, UINT(offsetof(LVertex, diffuse)), 
+        \{ \textcolor{stringliteral}{"DIFFUSE"},  0, DXGI\_FORMAT\_R32G32B32A32\_FLOAT, 0, UINT(offsetof(LVertex, diffuse)), 
       D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"UV"}, 0, DXGI\_FORMAT\_R32G32\_FLOAT, 0, UINT(offsetof(LVertex, tu)), D3D11\_INPUT\_PER\_VERTEX\_DATA, 0
-       \}
+        \{ \textcolor{stringliteral}{"TEXCOORD"}, 0, DXGI\_FORMAT\_R32G32\_FLOAT,       0, UINT(offsetof(LVertex, tex)),     
+      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \}
     \}
 \end{DoxyCode}
-\hyperlink{classmage_1_1_input}{Input} element descriptor for a \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}. \hypertarget{namespacemage_a390e8652d67667609daf3aa64e3c00a8}{}\label{namespacemage_a390e8652d67667609daf3aa64e3c00a8} 
+The input element descriptor for a \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}. \hypertarget{namespacemage_a390e8652d67667609daf3aa64e3c00a8}{}\label{namespacemage_a390e8652d67667609daf3aa64e3c00a8} 
 \index{mage@{mage}!nb\+\_\+unfinished\+\_\+tasks@{nb\+\_\+unfinished\+\_\+tasks}}
 \index{nb\+\_\+unfinished\+\_\+tasks@{nb\+\_\+unfinished\+\_\+tasks}!mage@{mage}}
 \subsubsection{\texorpdfstring{nb\+\_\+unfinished\+\_\+tasks}{nb\_unfinished\_tasks}}
@@ -803,15 +851,15 @@ The thread handles. \hypertarget{namespacemage_a0f27594da3814c163fe995326acf6c5e
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
 = \{
-        \{ \textcolor{stringliteral}{"POSITION"}, 0, DXGI\_FORMAT\_R32G32B32A32\_FLOAT, 0, UINT(offsetof(TLVertex, p)), 
+        \{ \textcolor{stringliteral}{"POSITION"}, 0, DXGI\_FORMAT\_R32G32B32A32\_FLOAT, 0, UINT(offsetof(TLVertex, p)),       
       D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"DIFFUSE"}, 0, DXGI\_FORMAT\_R32G32B32A32\_FLOAT, 0, UINT(offsetof(TLVertex, diffuse)), 
+        \{ \textcolor{stringliteral}{"DIFFUSE"},  0, DXGI\_FORMAT\_R32G32B32A32\_FLOAT, 0, UINT(offsetof(TLVertex, diffuse)), 
       D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"UV"}, 0, DXGI\_FORMAT\_R32G32\_FLOAT, 0, UINT(offsetof(TLVertex, tu)), D3D11\_INPUT\_PER\_VERTEX\_DATA, 
-      0 \}
+        \{ \textcolor{stringliteral}{"TEXCOORD"}, 0, DXGI\_FORMAT\_R32G32\_FLOAT,       0, UINT(offsetof(TLVertex, tex)),     
+      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \}
     \}
 \end{DoxyCode}
-\hyperlink{classmage_1_1_input}{Input} element descriptor for a \hyperlink{structmage_1_1_t_l_vertex}{T\+L\+Vertex} \hypertarget{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119}{}\label{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119} 
+The input element descriptor for a \hyperlink{structmage_1_1_t_l_vertex}{T\+L\+Vertex} \hypertarget{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119}{}\label{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119} 
 \index{mage@{mage}!vertex\+\_\+input\+\_\+element\+\_\+desc@{vertex\+\_\+input\+\_\+element\+\_\+desc}}
 \index{vertex\+\_\+input\+\_\+element\+\_\+desc@{vertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
 \subsubsection{\texorpdfstring{vertex\+\_\+input\+\_\+element\+\_\+desc}{vertex\_input\_element\_desc}}
@@ -820,15 +868,15 @@ The thread handles. \hypertarget{namespacemage_a0f27594da3814c163fe995326acf6c5e
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
 = \{
-        \{ \textcolor{stringliteral}{"POSITION"}, 0, DXGI\_FORMAT\_R32G32B32\_FLOAT, 0, UINT(offsetof(Vertex, p)), 
+        \{ \textcolor{stringliteral}{"POSITION"}, 0, DXGI\_FORMAT\_R32G32B32\_FLOAT, 0, UINT(offsetof(Vertex, p)),   
       D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"NORMAL"}, 0, DXGI\_FORMAT\_R32G32B32\_FLOAT, 0, UINT(offsetof(Vertex, n)), 
+        \{ \textcolor{stringliteral}{"NORMAL"},   0, DXGI\_FORMAT\_R32G32B32\_FLOAT, 0, UINT(offsetof(Vertex, n)),   
       D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"UV"}, 0, DXGI\_FORMAT\_R32G32\_FLOAT, 0, UINT(offsetof(Vertex, tu)), D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 
-      \}
+        \{ \textcolor{stringliteral}{"TEXCOORD"}, 0, DXGI\_FORMAT\_R32G32\_FLOAT,    0, UINT(offsetof(Vertex, tex)), 
+      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \}
     \}
 \end{DoxyCode}
-\hyperlink{classmage_1_1_input}{Input} element descriptor for a \hyperlink{structmage_1_1_vertex}{Vertex}. \hypertarget{namespacemage_a17c3448f9fba7521d188d30bdfb77e33}{}\label{namespacemage_a17c3448f9fba7521d188d30bdfb77e33} 
+The input element descriptor for a \hyperlink{structmage_1_1_vertex}{Vertex}. \hypertarget{namespacemage_a17c3448f9fba7521d188d30bdfb77e33}{}\label{namespacemage_a17c3448f9fba7521d188d30bdfb77e33} 
 \index{mage@{mage}!worker\+\_\+semaphore@{worker\+\_\+semaphore}}
 \index{worker\+\_\+semaphore@{worker\+\_\+semaphore}!mage@{mage}}
 \subsubsection{\texorpdfstring{worker\+\_\+semaphore}{worker\_semaphore}}

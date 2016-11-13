@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['r',['r',['../structmage_1_1_sphere.html#af9121b33471e72b3df2fb032f5f68151',1,'mage::Sphere']]]
+  ['statesetup',['StateSetup',['../structmage_1_1_engine_setup.html#a36a3c8a316c63e6c90ee9dd6efb82c0c',1,'mage::EngineSetup']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['face',['Face',['../structmage_1_1_face.html',1,'mage']]]
+  ['face',['Face',['../structmage_1_1_face.html',1,'mage']]],
+  ['font',['Font',['../classmage_1_1_font.html',1,'mage']]]
 ];

@@ -11,7 +11,7 @@ var searchData=
   ['variablescript',['VariableScript',['../classmage_1_1_variable_script.html',1,'mage']]],
   ['variabletype',['VariableType',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33a',1,'mage']]],
   ['vertex',['Vertex',['../structmage_1_1_vertex.html',1,'mage']]],
-  ['vertex',['Vertex',['../structmage_1_1_vertex.html#a8bf3578fcb5595eab057dc2d1f916dce',1,'mage::Vertex::Vertex()'],['../structmage_1_1_vertex.html#a615029fe190db540ad0adb73b81ee8f5',1,'mage::Vertex::Vertex(XMFLOAT3 p, XMFLOAT3 n, float tu, float tv)']]],
+  ['vertex',['Vertex',['../structmage_1_1_vertex.html#a8bf3578fcb5595eab057dc2d1f916dce',1,'mage::Vertex::Vertex()'],['../structmage_1_1_vertex.html#a19ef5e9829752aa2134bc25617ce910d',1,'mage::Vertex::Vertex(XMFLOAT3 p, XMFLOAT3 n, XMFLOAT2 tex)']]],
   ['vertex_5finput_5felement_5fdesc',['vertex_input_element_desc',['../namespacemage.html#a8647e0bbbbe87e5c6d7a4d4622230119',1,'mage']]],
   ['viewersetup',['ViewerSetup',['../structmage_1_1_viewer_setup.html',1,'mage']]],
   ['viewersetup',['ViewerSetup',['../structmage_1_1_viewer_setup.html#a41acbd3bd1b8df2e175a57ee9bd07bda',1,'mage::ViewerSetup']]]

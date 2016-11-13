@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['changestate',['ChangeState',['../classmage_1_1_state_manager.html#a2dfcae20e58167786a2772f204951657',1,'mage::StateManager::ChangeState(uint64_t id)'],['../classmage_1_1_state_manager.html#acb8123a0682394a7b7af001e6c5e25fe',1,'mage::StateManager::ChangeState(State *new_state)']]],
+  ['changestate',['ChangeState',['../classmage_1_1_state_manager.html#a2dfcae20e58167786a2772f204951657',1,'mage::StateManager::ChangeState(uint64_t id)'],['../classmage_1_1_state_manager.html#aef491583e2e15f59aec1b98be1406fe5',1,'mage::StateManager::ChangeState(State *state)']]],
   ['clearresources',['ClearResources',['../classmage_1_1_resource_manager.html#a875ea647ed1d475ca2d3f39dc492215b',1,'mage::ResourceManager']]],
   ['close',['Close',['../classmage_1_1_state.html#a1edd5d756566f5b689c7a381f4e6b301',1,'mage::State']]],
   ['collides',['Collides',['../structmage_1_1_sphere.html#a0f19a650a33b855d0e49000d0a508838',1,'mage::Sphere']]],

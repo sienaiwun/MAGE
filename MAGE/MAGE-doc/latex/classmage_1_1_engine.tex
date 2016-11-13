@@ -4,6 +4,12 @@
 
 {\ttfamily \#include $<$engine.\+hpp$>$}
 
+Inheritance diagram for mage\+:\+:Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_engine}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -11,32 +17,43 @@
 \item 
 virtual \hyperlink{classmage_1_1_engine_a34628556f8397d70ed018d71e343c2f5}{$\sim$\+Engine} ()
 \item 
-void \hyperlink{classmage_1_1_engine_afdc05e214d3f47a6ea3a40dfffd86f80}{Run} ()
+void \hyperlink{classmage_1_1_engine_a246c82d0e55bc29e73aecbc365464ec8}{Run} (int n\+Cmd\+Show=S\+W\+\_\+\+N\+O\+R\+M\+AL)
 \item 
 H\+W\+ND \hyperlink{classmage_1_1_engine_a1c5f9d8c68045b36f404251359aa41e4}{Get\+Window} () const
 \item 
 void \hyperlink{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732}{Set\+Deactive\+Flag} (bool deactive)
 \item 
-\hyperlink{classmage_1_1_graphics_manager}{Graphics\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a7dde353835870f5db50143a1576b58e2}{Get\+Graphics\+Manager} () const
+\hyperlink{classmage_1_1_renderer}{Renderer} $\ast$ \hyperlink{classmage_1_1_engine_a45a5005c7072937cb54a3f2f6431c66c}{Get\+Renderer} () const
 \item 
 \hyperlink{classmage_1_1_state_manager}{State\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a4f35bccc3784de531245a2549d537745}{Get\+State\+Manager} () const
 \item 
 \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ $\ast$ \hyperlink{classmage_1_1_engine_af55c457336dcbc0e940578425c74d868}{Get\+Script\+Manager} () const
 \item 
-\hyperlink{classmage_1_1_input}{Input} $\ast$ \hyperlink{classmage_1_1_engine_a55d099d040e8895803f15e214f3b6d9e}{Get\+Input} () const
+const \hyperlink{classmage_1_1_input}{Input} $\ast$ \hyperlink{classmage_1_1_engine_a5f21f58416ff6a8afea615d55c8c6c54}{Get\+Input} () const
 \end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_engine_afdc1cf0de7880cdcfe766d12e56bc0e3}{Initialize\+Window} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_engine_a52544e3bdc0e62f5beab19e9c37ec022}{Uninitialize\+Window} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_engine_a82b2a8f29e537072ede0f2b032f49ded}{Initialize\+Console} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_engine_aa691369008f234bfe88bbe0b25f1155e}{Initialize\+Systems} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_engine_ad760164f873e1d15aa8826d532b6d551}{Uninitialize\+Systems} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} $\ast$ \hyperlink{classmage_1_1_engine_a825715684015ac2a43cfc5b6bf3b083f}{m\+\_\+setup}
-\item 
-bool \hyperlink{classmage_1_1_engine_a2f8783761b9629dd507d0a6bc456125b}{m\+\_\+loaded}
 \item 
 H\+W\+ND \hyperlink{classmage_1_1_engine_a1dda09f0ed656180f926616a0d3f95f1}{m\+\_\+hwindow}
 \item 
 bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+deactive}
 \item 
-\hyperlink{classmage_1_1_graphics_manager}{Graphics\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_aa023fed16396e4730d525df547a5687b}{m\+\_\+graphics\+\_\+manager}
+\hyperlink{classmage_1_1_renderer}{Renderer} $\ast$ \hyperlink{classmage_1_1_engine_ad2107f910b4471ee3d3934588c6d36c3}{m\+\_\+renderer}
 \item 
 \hyperlink{classmage_1_1_state_manager}{State\+Manager} $\ast$ \hyperlink{classmage_1_1_engine_a7a0c463c67c3375b896809be9046113d}{m\+\_\+state\+\_\+manager}
 \item 
@@ -44,6 +61,7 @@ bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+d
 \item 
 \hyperlink{classmage_1_1_input}{Input} $\ast$ \hyperlink{classmage_1_1_engine_a432ac639c593fd0fb8cede2463fe10c2}{m\+\_\+input}
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -72,27 +90,27 @@ Constructs an engine from the given engine setup.
 Destructs this engine. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_engine_a7dde353835870f5db50143a1576b58e2}{}\label{classmage_1_1_engine_a7dde353835870f5db50143a1576b58e2} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Graphics\+Manager@{Get\+Graphics\+Manager}}
-\index{Get\+Graphics\+Manager@{Get\+Graphics\+Manager}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{Get\+Graphics\+Manager()}{GetGraphicsManager()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_graphics_manager}{Graphics\+Manager}$\ast$ mage\+::\+Engine\+::\+Get\+Graphics\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-Returns the graphics manager of this engine.
-
-\begin{DoxyReturn}{Returns}
-A pointer to the graphics manager of this engine 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_engine_a55d099d040e8895803f15e214f3b6d9e}{}\label{classmage_1_1_engine_a55d099d040e8895803f15e214f3b6d9e} 
+\hypertarget{classmage_1_1_engine_a5f21f58416ff6a8afea615d55c8c6c54}{}\label{classmage_1_1_engine_a5f21f58416ff6a8afea615d55c8c6c54} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Input@{Get\+Input}}
 \index{Get\+Input@{Get\+Input}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Get\+Input()}{GetInput()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_input}{Input}$\ast$ mage\+::\+Engine\+::\+Get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_input}{Input}$\ast$ mage\+::\+Engine\+::\+Get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the input object of this engine.
 
 \begin{DoxyReturn}{Returns}
-A pointer to the input object of this engine 
+A pointer to the input object of this engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_engine_a45a5005c7072937cb54a3f2f6431c66c}{}\label{classmage_1_1_engine_a45a5005c7072937cb54a3f2f6431c66c} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Renderer@{Get\+Renderer}}
+\index{Get\+Renderer@{Get\+Renderer}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Get\+Renderer()}{GetRenderer()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_renderer}{Renderer}$\ast$ mage\+::\+Engine\+::\+Get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the renderer of this engine.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the renderer of this engine. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_engine_af55c457336dcbc0e940578425c74d868}{}\label{classmage_1_1_engine_af55c457336dcbc0e940578425c74d868} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Script\+Manager@{Get\+Script\+Manager}}
@@ -103,7 +121,7 @@ A pointer to the input object of this engine
 Returns the script manager of this engine.
 
 \begin{DoxyReturn}{Returns}
-A pointer to the script manager of this engine 
+A pointer to the script manager of this engine. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_engine_a4f35bccc3784de531245a2549d537745}{}\label{classmage_1_1_engine_a4f35bccc3784de531245a2549d537745} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+State\+Manager@{Get\+State\+Manager}}
@@ -114,7 +132,7 @@ A pointer to the script manager of this engine
 Returns the state manager of this engine.
 
 \begin{DoxyReturn}{Returns}
-A pointer to the state manager of this engine 
+A pointer to the state manager of this engine. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_engine_a1c5f9d8c68045b36f404251359aa41e4}{}\label{classmage_1_1_engine_a1c5f9d8c68045b36f404251359aa41e4} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Window@{Get\+Window}}
@@ -122,13 +140,58 @@ A pointer to the state manager of this engine
 \subsubsection{\texorpdfstring{Get\+Window()}{GetWindow()}}
 {\footnotesize\ttfamily H\+W\+ND mage\+::\+Engine\+::\+Get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns a handle to the window of this engine. \hypertarget{classmage_1_1_engine_afdc05e214d3f47a6ea3a40dfffd86f80}{}\label{classmage_1_1_engine_afdc05e214d3f47a6ea3a40dfffd86f80} 
+Returns a handle to the window of this engine.
+
+\begin{DoxyReturn}{Returns}
+A handle to the window of this engine. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_engine_a82b2a8f29e537072ede0f2b032f49ded}{}\label{classmage_1_1_engine_a82b2a8f29e537072ede0f2b032f49ded} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Initialize\+Console@{Initialize\+Console}}
+\index{Initialize\+Console@{Initialize\+Console}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Initialize\+Console()}{InitializeConsole()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Engine\+::\+Initialize\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Allocates a console to this engine for basic io and redirects stdin, stdout and stderr to the allocated console.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_engine_aa691369008f234bfe88bbe0b25f1155e}{}\label{classmage_1_1_engine_aa691369008f234bfe88bbe0b25f1155e} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Initialize\+Systems@{Initialize\+Systems}}
+\index{Initialize\+Systems@{Initialize\+Systems}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Initialize\+Systems()}{InitializeSystems()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Engine\+::\+Initialize\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initializes the different systems of this engine.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_engine_afdc1cf0de7880cdcfe766d12e56bc0e3}{}\label{classmage_1_1_engine_afdc1cf0de7880cdcfe766d12e56bc0e3} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Initialize\+Window@{Initialize\+Window}}
+\index{Initialize\+Window@{Initialize\+Window}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Initialize\+Window()}{InitializeWindow()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Engine\+::\+Initialize\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initializes the engine window of this engine.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_engine_a246c82d0e55bc29e73aecbc365464ec8}{}\label{classmage_1_1_engine_a246c82d0e55bc29e73aecbc365464ec8} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Run@{Run}}
 \index{Run@{Run}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Run()}{Run()}}
-{\footnotesize\ttfamily void mage\+::\+Engine\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Engine\+::\+Run (\begin{DoxyParamCaption}\item[{int}]{n\+Cmd\+Show = {\ttfamily SW\+\_\+NORMAL} }\end{DoxyParamCaption})}
 
-Runs the engine setup. \hypertarget{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732}{}\label{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732} 
+Runs this engine.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n\+Cmd\+Show} & Controls how the engine window is to be shown. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732}{}\label{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Set\+Deactive\+Flag@{Set\+Deactive\+Flag}}
 \index{Set\+Deactive\+Flag@{Set\+Deactive\+Flag}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Set\+Deactive\+Flag()}{SetDeactiveFlag()}}
@@ -141,6 +204,28 @@ Sets the deactive flag of this engine to the given value.
 \mbox{\tt in}  & {\em deactive} & The new value for the deactive flag. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1_engine_ad760164f873e1d15aa8826d532b6d551}{}\label{classmage_1_1_engine_ad760164f873e1d15aa8826d532b6d551} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Uninitialize\+Systems@{Uninitialize\+Systems}}
+\index{Uninitialize\+Systems@{Uninitialize\+Systems}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Uninitialize\+Systems()}{UninitializeSystems()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Engine\+::\+Uninitialize\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unitialize the different systems of this engine.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_engine_a52544e3bdc0e62f5beab19e9c37ec022}{}\label{classmage_1_1_engine_a52544e3bdc0e62f5beab19e9c37ec022} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Uninitialize\+Window@{Uninitialize\+Window}}
+\index{Uninitialize\+Window@{Uninitialize\+Window}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Uninitialize\+Window()}{UninitializeWindow()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Engine\+::\+Uninitialize\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unitializes the engine window of this engine.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -148,48 +233,42 @@ Sets the deactive flag of this engine to the given value.
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+deactive@{m\+\_\+deactive}}
 \index{m\+\_\+deactive@{m\+\_\+deactive}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+deactive}{m\_deactive}}
-{\footnotesize\ttfamily bool mage\+::\+Engine\+::m\+\_\+deactive\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily bool mage\+::\+Engine\+::m\+\_\+deactive\hspace{0.3cm}{\ttfamily [protected]}}
 
-Flag indicating whether the application is active or not. \hypertarget{classmage_1_1_engine_aa023fed16396e4730d525df547a5687b}{}\label{classmage_1_1_engine_aa023fed16396e4730d525df547a5687b} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+graphics\+\_\+manager@{m\+\_\+graphics\+\_\+manager}}
-\index{m\+\_\+graphics\+\_\+manager@{m\+\_\+graphics\+\_\+manager}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{m\+\_\+graphics\+\_\+manager}{m\_graphics\_manager}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_graphics_manager}{Graphics\+Manager}$\ast$ mage\+::\+Engine\+::m\+\_\+graphics\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
-
-A pointer to the graphics manager of this engine. \hypertarget{classmage_1_1_engine_a1dda09f0ed656180f926616a0d3f95f1}{}\label{classmage_1_1_engine_a1dda09f0ed656180f926616a0d3f95f1} 
+Flag indicating whether the application is active or not. \hypertarget{classmage_1_1_engine_a1dda09f0ed656180f926616a0d3f95f1}{}\label{classmage_1_1_engine_a1dda09f0ed656180f926616a0d3f95f1} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+hwindow@{m\+\_\+hwindow}}
 \index{m\+\_\+hwindow@{m\+\_\+hwindow}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+hwindow}{m\_hwindow}}
-{\footnotesize\ttfamily H\+W\+ND mage\+::\+Engine\+::m\+\_\+hwindow\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily H\+W\+ND mage\+::\+Engine\+::m\+\_\+hwindow\hspace{0.3cm}{\ttfamily [protected]}}
 
 Main window handle of this engine. \hypertarget{classmage_1_1_engine_a432ac639c593fd0fb8cede2463fe10c2}{}\label{classmage_1_1_engine_a432ac639c593fd0fb8cede2463fe10c2} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+input@{m\+\_\+input}}
 \index{m\+\_\+input@{m\+\_\+input}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+input}{m\_input}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_input}{Input}$\ast$ mage\+::\+Engine\+::m\+\_\+input\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_input}{Input}$\ast$ mage\+::\+Engine\+::m\+\_\+input\hspace{0.3cm}{\ttfamily [protected]}}
 
-A pointer to the input object of this engine. \hypertarget{classmage_1_1_engine_a2f8783761b9629dd507d0a6bc456125b}{}\label{classmage_1_1_engine_a2f8783761b9629dd507d0a6bc456125b} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+loaded@{m\+\_\+loaded}}
-\index{m\+\_\+loaded@{m\+\_\+loaded}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{m\+\_\+loaded}{m\_loaded}}
-{\footnotesize\ttfamily bool mage\+::\+Engine\+::m\+\_\+loaded\hspace{0.3cm}{\ttfamily [private]}}
+A pointer to the input object of this engine. \hypertarget{classmage_1_1_engine_ad2107f910b4471ee3d3934588c6d36c3}{}\label{classmage_1_1_engine_ad2107f910b4471ee3d3934588c6d36c3} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+renderer@{m\+\_\+renderer}}
+\index{m\+\_\+renderer@{m\+\_\+renderer}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+renderer}{m\_renderer}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_renderer}{Renderer}$\ast$ mage\+::\+Engine\+::m\+\_\+renderer\hspace{0.3cm}{\ttfamily [protected]}}
 
-Flag indicating whether this engine is loaded. \hypertarget{classmage_1_1_engine_a4faf1b8f94a84be27dd63054bf6fe36d}{}\label{classmage_1_1_engine_a4faf1b8f94a84be27dd63054bf6fe36d} 
+A pointer to the renderer of this engine. \hypertarget{classmage_1_1_engine_a4faf1b8f94a84be27dd63054bf6fe36d}{}\label{classmage_1_1_engine_a4faf1b8f94a84be27dd63054bf6fe36d} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+script\+\_\+manager@{m\+\_\+script\+\_\+manager}}
 \index{m\+\_\+script\+\_\+manager@{m\+\_\+script\+\_\+manager}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+script\+\_\+manager}{m\_script\_manager}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$$\ast$ mage\+::\+Engine\+::m\+\_\+script\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$$\ast$ mage\+::\+Engine\+::m\+\_\+script\+\_\+manager\hspace{0.3cm}{\ttfamily [protected]}}
 
 A pointer the script manager of this engine \hypertarget{classmage_1_1_engine_a825715684015ac2a43cfc5b6bf3b083f}{}\label{classmage_1_1_engine_a825715684015ac2a43cfc5b6bf3b083f} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+setup@{m\+\_\+setup}}
 \index{m\+\_\+setup@{m\+\_\+setup}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+setup}{m\_setup}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}$\ast$ mage\+::\+Engine\+::m\+\_\+setup\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}$\ast$ mage\+::\+Engine\+::m\+\_\+setup\hspace{0.3cm}{\ttfamily [protected]}}
 
 Pointer to a copy of the engine setup structure. \hypertarget{classmage_1_1_engine_a7a0c463c67c3375b896809be9046113d}{}\label{classmage_1_1_engine_a7a0c463c67c3375b896809be9046113d} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}}
 \index{m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{m\+\_\+state\+\_\+manager}{m\_state\_manager}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_state_manager}{State\+Manager}$\ast$ mage\+::\+Engine\+::m\+\_\+state\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_state_manager}{State\+Manager}$\ast$ mage\+::\+Engine\+::m\+\_\+state\+\_\+manager\hspace{0.3cm}{\ttfamily [protected]}}
 
 A pointer to the state manager of this engine. 

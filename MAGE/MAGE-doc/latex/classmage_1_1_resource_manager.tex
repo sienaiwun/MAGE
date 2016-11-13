@@ -2,7 +2,7 @@
 \label{classmage_1_1_resource_manager}\index{mage\+::\+Resource\+Manager$<$ T $>$@{mage\+::\+Resource\+Manager$<$ T $>$}}
 
 
-{\ttfamily \#include $<$resource.\+hpp$>$}
+{\ttfamily \#include $<$resource\+\_\+manager.\+hpp$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -19,7 +19,7 @@ void \hyperlink{classmage_1_1_resource_manager_a875ea647ed1d475ca2d3f39dc492215b
 \item 
 T $\ast$ \hyperlink{classmage_1_1_resource_manager_a448a25bbe7ff37a88d1b19d50744d7ee}{Get\+Resource} (const string \&name, const string \&path=\char`\"{}./\char`\"{}) const
 \end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 list$<$ T $\ast$$>$ \hyperlink{classmage_1_1_resource_manager_ab058f7127d317bfe78b9f391a4351315}{m\+\_\+resources}
@@ -135,13 +135,13 @@ Removes the given resource from this resource manager.
 \index{Create\+Resource@{Create\+Resource}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{Create\+Resource}{CreateResource}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
-void($\ast$ \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::Create\+Resource) (T $\ast$$\ast$resource, const string \&name, const string \&path)\hspace{0.3cm}{\ttfamily [private]}}
+void($\ast$ \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::Create\+Resource) (T $\ast$$\ast$resource, const string \&name, const string \&path)\hspace{0.3cm}{\ttfamily [protected]}}
 
 The application specific resource creation function for the resources of this resource manager. \hypertarget{classmage_1_1_resource_manager_ab058f7127d317bfe78b9f391a4351315}{}\label{classmage_1_1_resource_manager_ab058f7127d317bfe78b9f391a4351315} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!m\+\_\+resources@{m\+\_\+resources}}
 \index{m\+\_\+resources@{m\+\_\+resources}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{m\+\_\+resources}{m\_resources}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
-list$<$ T $\ast$ $>$ \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::m\+\_\+resources\hspace{0.3cm}{\ttfamily [private]}}
+list$<$ T $\ast$ $>$ \hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::m\+\_\+resources\hspace{0.3cm}{\ttfamily [protected]}}
 
 The linked list containing the resources of this resource manager. 
