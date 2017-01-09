@@ -27,6 +27,8 @@ const string \& \hyperlink{structmage_1_1_variable_a7f70fdadf34cdf6b26adc9910ead
 const \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} \& \hyperlink{structmage_1_1_variable_a5265e80b2a1c280fad5886174dfc997a}{Get\+Type} () const
 \item 
 const void $\ast$ \hyperlink{structmage_1_1_variable_a65ecc95bcdc26733394d3a32d3d698f1}{Get\+Value} () const
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{structmage_1_1_variable_afa9cfd0a42d8a15cccf7f49197648504}{Set\+Value} (const T $\ast$value)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -92,7 +94,7 @@ A reference to the name of this variable.
 \subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
 {\footnotesize\ttfamily const \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type}\& mage\+::\+Variable\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the type of this value.
+Returns the scripting type of this value.
 
 \begin{DoxyReturn}{Returns}
 The type of this value. 
@@ -140,6 +142,25 @@ Checks whether the given variable is equal to this variable.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if and only if this variable and {\itshape variable} have the same name. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
+\hypertarget{structmage_1_1_variable_afa9cfd0a42d8a15cccf7f49197648504}{}\label{structmage_1_1_variable_afa9cfd0a42d8a15cccf7f49197648504} 
+\index{mage\+::\+Variable@{mage\+::\+Variable}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!mage\+::\+Variable@{mage\+::\+Variable}}
+\subsubsection{\texorpdfstring{Set\+Value()}{SetValue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void mage\+::\+Variable\+::\+Set\+Value (\begin{DoxyParamCaption}\item[{const T $\ast$}]{value }\end{DoxyParamCaption})}
+
+Sets the value of this variable.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The (storage) type of the value. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & A pointer to the value. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}

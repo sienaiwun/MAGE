@@ -81,6 +81,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_memory_arena.html','');}
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_memory_arena-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -96,32 +97,47 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa243c458adb14e211f4dd944c4c82148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfee6fc205e2eaf6aeef4acf19948e6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#acfee6fc205e2eaf6aeef4acf19948e6e">~MemoryArena</a> ()</td></tr>
 <tr class="separator:acfee6fc205e2eaf6aeef4acf19948e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30452ffc5813f5c62232713020fbe405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a30452ffc5813f5c62232713020fbe405">FreeAll</a> ()</td></tr>
-<tr class="separator:a30452ffc5813f5c62232713020fbe405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01e00ac6e109249bd80a1e9e79eb0b28"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a01e00ac6e109249bd80a1e9e79eb0b28">Alloc</a> (uint32_t size)</td></tr>
-<tr class="separator:a01e00ac6e109249bd80a1e9e79eb0b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16431dbfc49ddaee803fb0ab52303302"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a16431dbfc49ddaee803fb0ab52303302"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a16431dbfc49ddaee803fb0ab52303302">Alloc</a> (uint32_t count=1)</td></tr>
-<tr class="separator:a16431dbfc49ddaee803fb0ab52303302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db28bd286a517a30acdc061ace0bf56"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a0db28bd286a517a30acdc061ace0bf56">GetBlockSize</a> () const</td></tr>
+<tr class="separator:a0db28bd286a517a30acdc061ace0bf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2789bf0c58dee881662bbb0c5ba73e55"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a2789bf0c58dee881662bbb0c5ba73e55">GetCurrentBlockSize</a> () const</td></tr>
+<tr class="separator:a2789bf0c58dee881662bbb0c5ba73e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4be7fb4d5623d6f78b1576c7884883a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#ac4be7fb4d5623d6f78b1576c7884883a">GetTotalBlockSize</a> () const</td></tr>
+<tr class="separator:ac4be7fb4d5623d6f78b1576c7884883a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac856206614ef9890d500df207d12e863"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#ac856206614ef9890d500df207d12e863">GetCurrentBlockPtr</a> () const</td></tr>
+<tr class="separator:ac856206614ef9890d500df207d12e863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117b74c7bd5dfb28dfdaae6cab253491"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a117b74c7bd5dfb28dfdaae6cab253491">Reset</a> ()</td></tr>
+<tr class="separator:a117b74c7bd5dfb28dfdaae6cab253491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f19bd85aea65001e6406075c105398"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a83f19bd85aea65001e6406075c105398">Alloc</a> (size_t size)</td></tr>
+<tr class="separator:a83f19bd85aea65001e6406075c105398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab249fe48cdf7c46f625050fe9583603a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab249fe48cdf7c46f625050fe9583603a"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#ab249fe48cdf7c46f625050fe9583603a">Alloc</a> (size_t count=1, bool initialization=true)</td></tr>
+<tr class="separator:ab249fe48cdf7c46f625050fe9583603a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1eca6fdacbd1226f4b21f443d118168b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a1eca6fdacbd1226f4b21f443d118168b">MemoryArena</a> (const <a class="el" href="classmage_1_1_memory_arena.html">MemoryArena</a> &amp;arena)=delete</td></tr>
+<tr class="separator:a1eca6fdacbd1226f4b21f443d118168b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7799f859c55435714933972ecb8b95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_memory_arena.html">MemoryArena</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a7e7799f859c55435714933972ecb8b95">operator=</a> (const <a class="el" href="classmage_1_1_memory_arena.html">MemoryArena</a> &amp;arena)=delete</td></tr>
+<tr class="separator:a7e7799f859c55435714933972ecb8b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3874097398455749a85fe50a9e4984c0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a3874097398455749a85fe50a9e4984c0">m_current_block_pos</a></td></tr>
-<tr class="separator:a3874097398455749a85fe50a9e4984c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e318a8b32a9027e83aec25f09b3134"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a41e318a8b32a9027e83aec25f09b3134">m_block_size</a></td></tr>
-<tr class="separator:a41e318a8b32a9027e83aec25f09b3134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13eba6e2a9f8d9db2df5674aa7ce0428"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a13eba6e2a9f8d9db2df5674aa7ce0428">m_current_block</a></td></tr>
-<tr class="separator:a13eba6e2a9f8d9db2df5674aa7ce0428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb37aae6087014287b43d50521dd0fb"><td class="memItemLeft" align="right" valign="top">vector&lt; char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#affb37aae6087014287b43d50521dd0fb">m_used_blocks</a></td></tr>
-<tr class="separator:affb37aae6087014287b43d50521dd0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2295aae794acabd26ef9c1ff4908b029"><td class="memItemLeft" align="right" valign="top">vector&lt; char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a2295aae794acabd26ef9c1ff4908b029">m_available_blocks</a></td></tr>
-<tr class="separator:a2295aae794acabd26ef9c1ff4908b029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18177c245b045c5536330ffed284ed4d"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a18177c245b045c5536330ffed284ed4d">m_block_size</a></td></tr>
+<tr class="separator:a18177c245b045c5536330ffed284ed4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880d07eb372ce1c8b907947fcbdfc59c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a880d07eb372ce1c8b907947fcbdfc59c">m_current_block_pos</a></td></tr>
+<tr class="separator:a880d07eb372ce1c8b907947fcbdfc59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d39233b1e64239baea519a2d073b04"><td class="memItemLeft" align="right" valign="top">pair&lt; size_t, char *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#ab2d39233b1e64239baea519a2d073b04">m_current_block</a></td></tr>
+<tr class="separator:ab2d39233b1e64239baea519a2d073b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc33bafde45afe06d05732572f415d1"><td class="memItemLeft" align="right" valign="top">list&lt; pair&lt; size_t, char *&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a9fc33bafde45afe06d05732572f415d1">m_used_blocks</a></td></tr>
+<tr class="separator:a9fc33bafde45afe06d05732572f415d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c4f1d2b4d5e05bb46fa303d70428c4"><td class="memItemLeft" align="right" valign="top">list&lt; pair&lt; size_t, char *&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_memory_arena.html#a89c4f1d2b4d5e05bb46fa303d70428c4">m_available_blocks</a></td></tr>
+<tr class="separator:a89c4f1d2b4d5e05bb46fa303d70428c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of memory arena's. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa243c458adb14e211f4dd944c4c82148"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa243c458adb14e211f4dd944c4c82148">&sect;&nbsp;</a></span>MemoryArena()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa243c458adb14e211f4dd944c4c82148">&sect;&nbsp;</a></span>MemoryArena() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +154,7 @@ Private Attributes</h2></td></tr>
 <p>Constructs a memory arena with given block size.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">block_size</td><td>The block size in bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block_size</td><td>The maximum block size in bytes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -163,9 +179,42 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1eca6fdacbd1226f4b21f443d118168b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eca6fdacbd1226f4b21f443d118168b">&sect;&nbsp;</a></span>MemoryArena() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::MemoryArena::MemoryArena </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_memory_arena.html">MemoryArena</a> &amp;&#160;</td>
+          <td class="paramname"><em>arena</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a memory arena from the given memory arena.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>The memory arena. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a01e00ac6e109249bd80a1e9e79eb0b28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01e00ac6e109249bd80a1e9e79eb0b28">&sect;&nbsp;</a></span>Alloc() <span class="overload">[1/2]</span></h2>
+<a id="a83f19bd85aea65001e6406075c105398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f19bd85aea65001e6406075c105398">&sect;&nbsp;</a></span>Alloc() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +222,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void* mage::MemoryArena::Alloc </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>size</em></td><td>)</td>
           <td></td>
         </tr>
@@ -186,14 +235,14 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>NULL</code> if the allocation failed. </dd>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if the allocation failed. </dd>
 <dd>
 A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="a16431dbfc49ddaee803fb0ab52303302"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16431dbfc49ddaee803fb0ab52303302">&sect;&nbsp;</a></span>Alloc() <span class="overload">[2/2]</span></h2>
+<a id="ab249fe48cdf7c46f625050fe9583603a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab249fe48cdf7c46f625050fe9583603a">&sect;&nbsp;</a></span>Alloc() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,9 +252,19 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">T* mage::MemoryArena::Alloc </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>count</em> = <code>1</code></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>initialization</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -219,37 +278,95 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>The number of objects of type <code>T</code> to allocate in memory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initialization</td><td>Flag indicating whether the objects need to be initialized (i.e. the constructor needs to be called). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>NULL</code> if the allocation failed. </dd>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if the allocation failed. </dd>
 <dd>
 A pointer to the memory block that was allocated. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The objects will be constructed with their default empty constructor. </dd></dl>
 
 </div>
 </div>
-<a id="a30452ffc5813f5c62232713020fbe405"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30452ffc5813f5c62232713020fbe405">&sect;&nbsp;</a></span>FreeAll()</h2>
+<a id="a0db28bd286a517a30acdc061ace0bf56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db28bd286a517a30acdc061ace0bf56">&sect;&nbsp;</a></span>GetBlockSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mage::MemoryArena::FreeAll </td>
+          <td class="memname">size_t mage::MemoryArena::GetBlockSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Frees all blocks of this memory arena. </p>
+<p>Returns the maximum block size of this memory arena.</p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum block size of this memory arena. </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2295aae794acabd26ef9c1ff4908b029"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2295aae794acabd26ef9c1ff4908b029">&sect;&nbsp;</a></span>m_available_blocks</h2>
+<a id="ac856206614ef9890d500df207d12e863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac856206614ef9890d500df207d12e863">&sect;&nbsp;</a></span>GetCurrentBlockPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* mage::MemoryArena::GetCurrentBlockPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a pointer to the current block of this memory arena.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the current block of this memory arena. </dd></dl>
+
+</div>
+</div>
+<a id="a2789bf0c58dee881662bbb0c5ba73e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2789bf0c58dee881662bbb0c5ba73e55">&sect;&nbsp;</a></span>GetCurrentBlockSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mage::MemoryArena::GetCurrentBlockSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the block size (in bytes) of the current block of this memory arena.</p>
+<dl class="section return"><dt>Returns</dt><dd>The block size (in bytes) of the current block of this memory arena. </dd></dl>
+
+</div>
+</div>
+<a id="ac4be7fb4d5623d6f78b1576c7884883a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4be7fb4d5623d6f78b1576c7884883a">&sect;&nbsp;</a></span>GetTotalBlockSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mage::MemoryArena::GetTotalBlockSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the block size (in bytes) of all blocks of this memory arena.</p>
+<dl class="section return"><dt>Returns</dt><dd>The block size (in bytes) of all blocks of this memory arena. </dd></dl>
+
+</div>
+</div>
+<a id="a7e7799f859c55435714933972ecb8b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e7799f859c55435714933972ecb8b95">&sect;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +375,59 @@ A pointer to the memory block that was allocated. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;char *&gt; mage::MemoryArena::m_available_blocks</td>
+          <td class="memname"><a class="el" href="classmage_1_1_memory_arena.html">MemoryArena</a>&amp; mage::MemoryArena::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_memory_arena.html">MemoryArena</a> &amp;&#160;</td>
+          <td class="paramname"><em>arena</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given memory arena to this memory arena.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arena</td><td>The memory arena. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a117b74c7bd5dfb28dfdaae6cab253491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117b74c7bd5dfb28dfdaae6cab253491">&sect;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::MemoryArena::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Resets this memory arena. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a89c4f1d2b4d5e05bb46fa303d70428c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c4f1d2b4d5e05bb46fa303d70428c4">&sect;&nbsp;</a></span>m_available_blocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt; pair&lt; size_t, char * &gt; &gt; mage::MemoryArena::m_available_blocks</td>
         </tr>
       </table>
   </td>
@@ -271,8 +440,8 @@ A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="a41e318a8b32a9027e83aec25f09b3134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41e318a8b32a9027e83aec25f09b3134">&sect;&nbsp;</a></span>m_block_size</h2>
+<a id="a18177c245b045c5536330ffed284ed4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18177c245b045c5536330ffed284ed4d">&sect;&nbsp;</a></span>m_block_size</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +450,7 @@ A pointer to the memory block that was allocated. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t mage::MemoryArena::m_block_size</td>
+          <td class="memname">const size_t mage::MemoryArena::m_block_size</td>
         </tr>
       </table>
   </td>
@@ -294,8 +463,8 @@ A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="a13eba6e2a9f8d9db2df5674aa7ce0428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13eba6e2a9f8d9db2df5674aa7ce0428">&sect;&nbsp;</a></span>m_current_block</h2>
+<a id="ab2d39233b1e64239baea519a2d073b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d39233b1e64239baea519a2d073b04">&sect;&nbsp;</a></span>m_current_block</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,7 +473,7 @@ A pointer to the memory block that was allocated. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* mage::MemoryArena::m_current_block</td>
+          <td class="memname">pair&lt; size_t, char * &gt; mage::MemoryArena::m_current_block</td>
         </tr>
       </table>
   </td>
@@ -317,8 +486,8 @@ A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="a3874097398455749a85fe50a9e4984c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3874097398455749a85fe50a9e4984c0">&sect;&nbsp;</a></span>m_current_block_pos</h2>
+<a id="a880d07eb372ce1c8b907947fcbdfc59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880d07eb372ce1c8b907947fcbdfc59c">&sect;&nbsp;</a></span>m_current_block_pos</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +496,7 @@ A pointer to the memory block that was allocated. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t mage::MemoryArena::m_current_block_pos</td>
+          <td class="memname">size_t mage::MemoryArena::m_current_block_pos</td>
         </tr>
       </table>
   </td>
@@ -340,8 +509,8 @@ A pointer to the memory block that was allocated. </dd></dl>
 
 </div>
 </div>
-<a id="affb37aae6087014287b43d50521dd0fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affb37aae6087014287b43d50521dd0fb">&sect;&nbsp;</a></span>m_used_blocks</h2>
+<a id="a9fc33bafde45afe06d05732572f415d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc33bafde45afe06d05732572f415d1">&sect;&nbsp;</a></span>m_used_blocks</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,7 +519,7 @@ A pointer to the memory block that was allocated. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;char *&gt; mage::MemoryArena::m_used_blocks</td>
+          <td class="memname">list&lt; pair&lt; size_t, char * &gt; &gt; mage::MemoryArena::m_used_blocks</td>
         </tr>
       </table>
   </td>

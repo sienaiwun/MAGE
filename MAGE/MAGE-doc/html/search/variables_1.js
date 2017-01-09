@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['diffuse',['diffuse',['../structmage_1_1_l_vertex.html#abfe65c089e650ad20ed41de8e2b585dd',1,'mage::LVertex::diffuse()'],['../structmage_1_1_t_l_vertex.html#a78d60c6622bc1091f2c1c30da0715236',1,'mage::TLVertex::diffuse()']]]
+  ['bbitmask',['BBitMask',['../structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#ae21041782f2d3e95c2b77278668e2906',1,'mage::DDS_PIXELFORMAT']]]
 ];

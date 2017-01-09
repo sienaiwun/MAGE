@@ -103,12 +103,14 @@ Inheritance diagram for mage::Renderer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:affae177123ead5eb15b2fb5957d5651e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#affae177123ead5eb15b2fb5957d5651e">SwitchMode</a> ()</td></tr>
-<tr class="separator:affae177123ead5eb15b2fb5957d5651e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de1804c1eedae7dc12435a520a10b9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a1de1804c1eedae7dc12435a520a10b9c">IsWindowed</a> () const</td></tr>
 <tr class="separator:a1de1804c1eedae7dc12435a520a10b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ae3220e19c68f47a8e4d55e3ced4694"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a5ae3220e19c68f47a8e4d55e3ced4694">IsFullScreen</a> () const</td></tr>
 <tr class="separator:a5ae3220e19c68f47a8e4d55e3ced4694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdde83a1e2bc9288f000fb2575c525d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#afdde83a1e2bc9288f000fb2575c525d0">LostMode</a> () const</td></tr>
+<tr class="separator:afdde83a1e2bc9288f000fb2575c525d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9004ab608659188900c808eacb5f873c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a9004ab608659188900c808eacb5f873c">SwitchMode</a> (bool toggle)</td></tr>
+<tr class="separator:a9004ab608659188900c808eacb5f873c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -116,10 +118,20 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a762dcda433c319af237d1dfd9bc6095f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a997e041f28cc71d069d1ab7d29fe6ced"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a997e041f28cc71d069d1ab7d29fe6ced">~Renderer</a> ()</td></tr>
 <tr class="separator:a997e041f28cc71d069d1ab7d29fe6ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a176e6ae84ec4490f72c32a352f768c9b"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a176e6ae84ec4490f72c32a352f768c9b">InitializeDevice</a> ()</td></tr>
-<tr class="separator:a176e6ae84ec4490f72c32a352f768c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace70af3597f8b8f82c1c36a94c065b50"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#ace70af3597f8b8f82c1c36a94c065b50">UnitializeDevice</a> ()</td></tr>
-<tr class="separator:ace70af3597f8b8f82c1c36a94c065b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafed50e7e14ca597541c091941351929"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#aafed50e7e14ca597541c091941351929">InitializeRenderer</a> ()</td></tr>
+<tr class="separator:aafed50e7e14ca597541c091941351929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308beaf67b11128f02e87778b6a9c3c7"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a308beaf67b11128f02e87778b6a9c3c7">UnitializeRenderer</a> ()</td></tr>
+<tr class="separator:a308beaf67b11128f02e87778b6a9c3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee0187fb63587a219798523fb8cb7a6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a4ee0187fb63587a219798523fb8cb7a6">SetupDevice</a> ()</td></tr>
+<tr class="separator:a4ee0187fb63587a219798523fb8cb7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2aa545594936261bf2639e4e0814a83"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#af2aa545594936261bf2639e4e0814a83">SetupSwapChain</a> ()</td></tr>
+<tr class="separator:af2aa545594936261bf2639e4e0814a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe99715a4ae6432ba561dcab048f79b4"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#afe99715a4ae6432ba561dcab048f79b4">SetupRenderTargetView</a> ()</td></tr>
+<tr class="separator:afe99715a4ae6432ba561dcab048f79b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a34b64e815b0e5e95ce539bbd0f5a3"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a95a34b64e815b0e5e95ce539bbd0f5a3">SetupDepthStencilView</a> ()</td></tr>
+<tr class="separator:a95a34b64e815b0e5e95ce539bbd0f5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bc8598ccca5f6e7cf99010175b1360b"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a9bc8598ccca5f6e7cf99010175b1360b">SetupViewPort</a> ()</td></tr>
+<tr class="separator:a9bc8598ccca5f6e7cf99010175b1360b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95ac55eb4cc79a5712a50bfb78f67fe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a95ac55eb4cc79a5712a50bfb78f67fe6">Render</a> (double elapsed_time)</td></tr>
 <tr class="separator:a95ac55eb4cc79a5712a50bfb78f67fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -127,10 +139,8 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:afc314c8b146c3709edfd5349257a8387"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#afc314c8b146c3709edfd5349257a8387">m_hwindow</a></td></tr>
 <tr class="separator:afc314c8b146c3709edfd5349257a8387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9215a05e35d22294adb87084422b98cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a9215a05e35d22294adb87084422b98cd">m_windowed</a></td></tr>
-<tr class="separator:a9215a05e35d22294adb87084422b98cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7ff3dd640a2319d1d263bd9ba657076"><td class="memItemLeft" align="right" valign="top">D3D_DRIVER_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#ae7ff3dd640a2319d1d263bd9ba657076">m_driver_type</a></td></tr>
-<tr class="separator:ae7ff3dd640a2319d1d263bd9ba657076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72bb88b17491bd388460afae9d207b0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a72bb88b17491bd388460afae9d207b0a">m_fullscreen</a></td></tr>
+<tr class="separator:a72bb88b17491bd388460afae9d207b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa97b108ef58f7d41ddb527f6ba2bfdf9"><td class="memItemLeft" align="right" valign="top">D3D_FEATURE_LEVEL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#aa97b108ef58f7d41ddb527f6ba2bfdf9">m_feature_level</a></td></tr>
 <tr class="separator:aa97b108ef58f7d41ddb527f6ba2bfdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5af9d44e53bd523136cc52855a2dbe25"><td class="memItemLeft" align="right" valign="top">ID3D11Device2 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a5af9d44e53bd523136cc52855a2dbe25">m_device2</a></td></tr>
@@ -226,8 +236,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a176e6ae84ec4490f72c32a352f768c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a176e6ae84ec4490f72c32a352f768c9b">&sect;&nbsp;</a></span>InitializeDevice()</h2>
+<a id="aafed50e7e14ca597541c091941351929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafed50e7e14ca597541c091941351929">&sect;&nbsp;</a></span>InitializeRenderer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,7 +246,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::Renderer::InitializeDevice </td>
+          <td class="memname">HRESULT mage::Renderer::InitializeRenderer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -248,7 +258,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initializes the D3D11 device of this renderer.</p>
+<p>Initializes this renderer.</p>
 <dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
 
 </div>
@@ -267,7 +277,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check whether this renderer renders in full screen mode.</p>
+<p>Checks whether this renderer renders in full screen mode.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this renderer renders in full screen mode. <code>false</code> otherwise. </dd></dl>
 
 </div>
@@ -286,8 +296,26 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check whether this renderer renders in windowed mode.</p>
+<p>Checks whether this renderer renders in windowed mode.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this renderer renders in windowed mode. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="afdde83a1e2bc9288f000fb2575c525d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdde83a1e2bc9288f000fb2575c525d0">&sect;&nbsp;</a></span>LostMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::Renderer::LostMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether this renderer lost its mode, i.e. the current mode of this renderer differs from the cyrrent mode of its swap chain (due to for example ALT + TAB). </p>
 
 </div>
 </div>
@@ -324,26 +352,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="affae177123ead5eb15b2fb5957d5651e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affae177123ead5eb15b2fb5957d5651e">&sect;&nbsp;</a></span>SwitchMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mage::Renderer::SwitchMode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Switches the mode of this renderer. Windowed mode is switched to full screen mode and vice versa. </p>
-
-</div>
-</div>
-<a id="ace70af3597f8b8f82c1c36a94c065b50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace70af3597f8b8f82c1c36a94c065b50">&sect;&nbsp;</a></span>UnitializeDevice()</h2>
+<a id="a95a34b64e815b0e5e95ce539bbd0f5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a34b64e815b0e5e95ce539bbd0f5a3">&sect;&nbsp;</a></span>SetupDepthStencilView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::Renderer::UnitializeDevice </td>
+          <td class="memname">HRESULT mage::Renderer::SetupDepthStencilView </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -364,7 +374,162 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Uninitializes the D3D11 device of this renderer.</p>
+<p>Sets up the depth stencil view of this renderer.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="a4ee0187fb63587a219798523fb8cb7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee0187fb63587a219798523fb8cb7a6">&sect;&nbsp;</a></span>SetupDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Renderer::SetupDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the D3D11 device and context of this renderer.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="afe99715a4ae6432ba561dcab048f79b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe99715a4ae6432ba561dcab048f79b4">&sect;&nbsp;</a></span>SetupRenderTargetView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Renderer::SetupRenderTargetView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets up the render target view of this renderer.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="af2aa545594936261bf2639e4e0814a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2aa545594936261bf2639e4e0814a83">&sect;&nbsp;</a></span>SetupSwapChain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Renderer::SetupSwapChain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets up the swap chain of this renderer.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="a9bc8598ccca5f6e7cf99010175b1360b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc8598ccca5f6e7cf99010175b1360b">&sect;&nbsp;</a></span>SetupViewPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Renderer::SetupViewPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets up and binds the viewport of this renderer to the graphics pipeline.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="a9004ab608659188900c808eacb5f873c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9004ab608659188900c808eacb5f873c">&sect;&nbsp;</a></span>SwitchMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Renderer::SwitchMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>toggle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recreates the swap chain buffers and switches the mode of this renderer. Windowed mode is switched to full screen mode and vice versa.</p>
+<dl class="section return"><dt>Returns</dt><dd>toggle If <code>true</code> only the swap chain buffers will be recreated to match the current mode of the swap chain and no mode switch will occurs. If <code>false</code> both the swap chain buffers will be replaced and a mode switch will occur. </dd></dl>
+
+</div>
+</div>
+<a id="a308beaf67b11128f02e87778b6a9c3c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308beaf67b11128f02e87778b6a9c3c7">&sect;&nbsp;</a></span>UnitializeRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Renderer::UnitializeRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Uninitializes this renderer.</p>
 <dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
 
 </div>
@@ -481,28 +646,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7ff3dd640a2319d1d263bd9ba657076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7ff3dd640a2319d1d263bd9ba657076">&sect;&nbsp;</a></span>m_driver_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">D3D_DRIVER_TYPE mage::Renderer::m_driver_type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa97b108ef58f7d41ddb527f6ba2bfdf9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa97b108ef58f7d41ddb527f6ba2bfdf9">&sect;&nbsp;</a></span>m_feature_level</h2>
 
@@ -522,6 +665,29 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72bb88b17491bd388460afae9d207b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72bb88b17491bd388460afae9d207b0a">&sect;&nbsp;</a></span>m_fullscreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::Renderer::m_fullscreen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A flag indicating whether this renderer uses a full screen mode (if <code>true</code>) or a windowed mode (if <code>false</code>). </p>
 
 </div>
 </div>
@@ -589,29 +755,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9215a05e35d22294adb87084422b98cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9215a05e35d22294adb87084422b98cd">&sect;&nbsp;</a></span>m_windowed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mage::Renderer::m_windowed</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Flag indicating wether this renderer uses full screen (<code>false</code>) or windowed mode (c true). </p>
 
 </div>
 </div>

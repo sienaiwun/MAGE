@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['face',['Face',['../structmage_1_1_face.html',1,'mage']]],
-  ['font',['Font',['../classmage_1_1_font.html',1,'mage']]]
+  ['edge',['Edge',['../structmage_1_1_edge.html',1,'mage']]],
+  ['engine',['Engine',['../classmage_1_1_engine.html',1,'mage']]],
+  ['enginesetup',['EngineSetup',['../structmage_1_1_engine_setup.html',1,'mage']]]
 ];

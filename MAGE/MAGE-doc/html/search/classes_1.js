@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['conditionvariable',['ConditionVariable',['../classmage_1_1_condition_variable.html',1,'mage']]]
+  ['bs',['BS',['../structmage_1_1_b_s.html',1,'mage']]]
 ];

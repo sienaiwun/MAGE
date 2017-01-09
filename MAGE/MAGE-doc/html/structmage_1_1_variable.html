@@ -115,6 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5265e80b2a1c280fad5886174dfc997a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65ecc95bcdc26733394d3a32d3d698f1"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#a65ecc95bcdc26733394d3a32d3d698f1">GetValue</a> () const</td></tr>
 <tr class="separator:a65ecc95bcdc26733394d3a32d3d698f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9cfd0a42d8a15cccf7f49197648504"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afa9cfd0a42d8a15cccf7f49197648504"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable.html#afa9cfd0a42d8a15cccf7f49197648504">SetValue</a> (const T *value)</td></tr>
+<tr class="separator:afa9cfd0a42d8a15cccf7f49197648504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -231,7 +234,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the type of this value.</p>
+<p>Returns the scripting type of this value.</p>
 <dl class="section return"><dt>Returns</dt><dd>The type of this value. </dd></dl>
 
 </div>
@@ -304,6 +307,39 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if and only if this variable and <em>variable</em> have the same name. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="afa9cfd0a42d8a15cccf7f49197648504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9cfd0a42d8a15cccf7f49197648504">&sect;&nbsp;</a></span>SetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Variable::SetValue </td>
+          <td>(</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the value of this variable.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The (storage) type of the value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>A pointer to the value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

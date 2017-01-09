@@ -13,11 +13,13 @@ Inheritance diagram for mage\+:\+:Renderer\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classmage_1_1_renderer_affae177123ead5eb15b2fb5957d5651e}{Switch\+Mode} ()
-\item 
 bool \hyperlink{classmage_1_1_renderer_a1de1804c1eedae7dc12435a520a10b9c}{Is\+Windowed} () const
 \item 
 bool \hyperlink{classmage_1_1_renderer_a5ae3220e19c68f47a8e4d55e3ced4694}{Is\+Full\+Screen} () const
+\item 
+bool \hyperlink{classmage_1_1_renderer_afdde83a1e2bc9288f000fb2575c525d0}{Lost\+Mode} () const
+\item 
+void \hyperlink{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c}{Switch\+Mode} (bool toggle)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -26,9 +28,19 @@ bool \hyperlink{classmage_1_1_renderer_a5ae3220e19c68f47a8e4d55e3ced4694}{Is\+Fu
 \item 
 virtual \hyperlink{classmage_1_1_renderer_a997e041f28cc71d069d1ab7d29fe6ced}{$\sim$\+Renderer} ()
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_a176e6ae84ec4490f72c32a352f768c9b}{Initialize\+Device} ()
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_aafed50e7e14ca597541c091941351929}{Initialize\+Renderer} ()
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_ace70af3597f8b8f82c1c36a94c065b50}{Unitialize\+Device} ()
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_a308beaf67b11128f02e87778b6a9c3c7}{Unitialize\+Renderer} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_a4ee0187fb63587a219798523fb8cb7a6}{Setup\+Device} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_af2aa545594936261bf2639e4e0814a83}{Setup\+Swap\+Chain} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_afe99715a4ae6432ba561dcab048f79b4}{Setup\+Render\+Target\+View} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_a95a34b64e815b0e5e95ce539bbd0f5a3}{Setup\+Depth\+Stencil\+View} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_a9bc8598ccca5f6e7cf99010175b1360b}{Setup\+View\+Port} ()
 \item 
 void \hyperlink{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6}{Render} (double elapsed\+\_\+time)
 \end{DoxyCompactItemize}
@@ -37,9 +49,7 @@ void \hyperlink{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6}{Render
 \item 
 H\+W\+ND \hyperlink{classmage_1_1_renderer_afc314c8b146c3709edfd5349257a8387}{m\+\_\+hwindow}
 \item 
-bool \hyperlink{classmage_1_1_renderer_a9215a05e35d22294adb87084422b98cd}{m\+\_\+windowed}
-\item 
-D3\+D\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE \hyperlink{classmage_1_1_renderer_ae7ff3dd640a2319d1d263bd9ba657076}{m\+\_\+driver\+\_\+type}
+bool \hyperlink{classmage_1_1_renderer_a72bb88b17491bd388460afae9d207b0a}{m\+\_\+fullscreen}
 \item 
 D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL \hyperlink{classmage_1_1_renderer_aa97b108ef58f7d41ddb527f6ba2bfdf9}{m\+\_\+feature\+\_\+level}
 \item 
@@ -89,13 +99,13 @@ Constructs a renderer.
 Destructs this renderer. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_renderer_a176e6ae84ec4490f72c32a352f768c9b}{}\label{classmage_1_1_renderer_a176e6ae84ec4490f72c32a352f768c9b} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Initialize\+Device@{Initialize\+Device}}
-\index{Initialize\+Device@{Initialize\+Device}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{Initialize\+Device()}{InitializeDevice()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Initialize\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+\hypertarget{classmage_1_1_renderer_aafed50e7e14ca597541c091941351929}{}\label{classmage_1_1_renderer_aafed50e7e14ca597541c091941351929} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Initialize\+Renderer@{Initialize\+Renderer}}
+\index{Initialize\+Renderer@{Initialize\+Renderer}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Initialize\+Renderer()}{InitializeRenderer()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Initialize\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Initializes the D3\+D11 device of this renderer.
+Initializes this renderer.
 
 \begin{DoxyReturn}{Returns}
 A success/error value. 
@@ -106,7 +116,7 @@ A success/error value.
 \subsubsection{\texorpdfstring{Is\+Full\+Screen()}{IsFullScreen()}}
 {\footnotesize\ttfamily bool mage\+::\+Renderer\+::\+Is\+Full\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Check whether this renderer renders in full screen mode.
+Checks whether this renderer renders in full screen mode.
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if this renderer renders in full screen mode. {\ttfamily false} otherwise. 
@@ -117,12 +127,18 @@ Check whether this renderer renders in full screen mode.
 \subsubsection{\texorpdfstring{Is\+Windowed()}{IsWindowed()}}
 {\footnotesize\ttfamily bool mage\+::\+Renderer\+::\+Is\+Windowed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Check whether this renderer renders in windowed mode.
+Checks whether this renderer renders in windowed mode.
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if this renderer renders in windowed mode. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6}{}\label{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6} 
+\hypertarget{classmage_1_1_renderer_afdde83a1e2bc9288f000fb2575c525d0}{}\label{classmage_1_1_renderer_afdde83a1e2bc9288f000fb2575c525d0} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Lost\+Mode@{Lost\+Mode}}
+\index{Lost\+Mode@{Lost\+Mode}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Lost\+Mode()}{LostMode()}}
+{\footnotesize\ttfamily bool mage\+::\+Renderer\+::\+Lost\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Checks whether this renderer lost its mode, i.\+e. the current mode of this renderer differs from the cyrrent mode of its swap chain (due to for example A\+LT + T\+AB). \hypertarget{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6}{}\label{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Render@{Render}}
 \index{Render@{Render}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
@@ -135,19 +151,79 @@ Renders the current frame.
 \mbox{\tt in}  & {\em elapsed\+\_\+time} & The elapsed time since the previous frame. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_renderer_affae177123ead5eb15b2fb5957d5651e}{}\label{classmage_1_1_renderer_affae177123ead5eb15b2fb5957d5651e} 
+\hypertarget{classmage_1_1_renderer_a95a34b64e815b0e5e95ce539bbd0f5a3}{}\label{classmage_1_1_renderer_a95a34b64e815b0e5e95ce539bbd0f5a3} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Setup\+Depth\+Stencil\+View@{Setup\+Depth\+Stencil\+View}}
+\index{Setup\+Depth\+Stencil\+View@{Setup\+Depth\+Stencil\+View}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Setup\+Depth\+Stencil\+View()}{SetupDepthStencilView()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Setup\+Depth\+Stencil\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets up the depth stencil view of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_a4ee0187fb63587a219798523fb8cb7a6}{}\label{classmage_1_1_renderer_a4ee0187fb63587a219798523fb8cb7a6} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Setup\+Device@{Setup\+Device}}
+\index{Setup\+Device@{Setup\+Device}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Setup\+Device()}{SetupDevice()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Setup\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Setup the D3\+D11 device and context of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_afe99715a4ae6432ba561dcab048f79b4}{}\label{classmage_1_1_renderer_afe99715a4ae6432ba561dcab048f79b4} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Setup\+Render\+Target\+View@{Setup\+Render\+Target\+View}}
+\index{Setup\+Render\+Target\+View@{Setup\+Render\+Target\+View}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Setup\+Render\+Target\+View()}{SetupRenderTargetView()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Setup\+Render\+Target\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets up the render target view of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_af2aa545594936261bf2639e4e0814a83}{}\label{classmage_1_1_renderer_af2aa545594936261bf2639e4e0814a83} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Setup\+Swap\+Chain@{Setup\+Swap\+Chain}}
+\index{Setup\+Swap\+Chain@{Setup\+Swap\+Chain}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Setup\+Swap\+Chain()}{SetupSwapChain()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Setup\+Swap\+Chain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets up the swap chain of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_a9bc8598ccca5f6e7cf99010175b1360b}{}\label{classmage_1_1_renderer_a9bc8598ccca5f6e7cf99010175b1360b} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Setup\+View\+Port@{Setup\+View\+Port}}
+\index{Setup\+View\+Port@{Setup\+View\+Port}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Setup\+View\+Port()}{SetupViewPort()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Setup\+View\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets up and binds the viewport of this renderer to the graphics pipeline.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c}{}\label{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Switch\+Mode@{Switch\+Mode}}
 \index{Switch\+Mode@{Switch\+Mode}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Switch\+Mode()}{SwitchMode()}}
-{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Switch\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Switch\+Mode (\begin{DoxyParamCaption}\item[{bool}]{toggle }\end{DoxyParamCaption})}
 
-Switches the mode of this renderer. Windowed mode is switched to full screen mode and vice versa. \hypertarget{classmage_1_1_renderer_ace70af3597f8b8f82c1c36a94c065b50}{}\label{classmage_1_1_renderer_ace70af3597f8b8f82c1c36a94c065b50} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Unitialize\+Device@{Unitialize\+Device}}
-\index{Unitialize\+Device@{Unitialize\+Device}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{Unitialize\+Device()}{UnitializeDevice()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Unitialize\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+Recreates the swap chain buffers and switches the mode of this renderer. Windowed mode is switched to full screen mode and vice versa.
 
-Uninitializes the D3\+D11 device of this renderer.
+\begin{DoxyReturn}{Returns}
+toggle If {\ttfamily true} only the swap chain buffers will be recreated to match the current mode of the swap chain and no mode switch will occurs. If {\ttfamily false} both the swap chain buffers will be replaced and a mode switch will occur. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_a308beaf67b11128f02e87778b6a9c3c7}{}\label{classmage_1_1_renderer_a308beaf67b11128f02e87778b6a9c3c7} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Unitialize\+Renderer@{Unitialize\+Renderer}}
+\index{Unitialize\+Renderer@{Unitialize\+Renderer}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Unitialize\+Renderer()}{UnitializeRenderer()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Unitialize\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Uninitializes this renderer.
 
 \begin{DoxyReturn}{Returns}
 A success/error value. 
@@ -188,19 +264,19 @@ A success/error value.
 \subsubsection{\texorpdfstring{m\+\_\+device\+\_\+context2}{m\_device\_context2}}
 {\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ mage\+::\+Renderer\+::m\+\_\+device\+\_\+context2\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_renderer_ae7ff3dd640a2319d1d263bd9ba657076}{}\label{classmage_1_1_renderer_ae7ff3dd640a2319d1d263bd9ba657076} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+driver\+\_\+type@{m\+\_\+driver\+\_\+type}}
-\index{m\+\_\+driver\+\_\+type@{m\+\_\+driver\+\_\+type}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{m\+\_\+driver\+\_\+type}{m\_driver\_type}}
-{\footnotesize\ttfamily D3\+D\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE mage\+::\+Renderer\+::m\+\_\+driver\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
-
 \hypertarget{classmage_1_1_renderer_aa97b108ef58f7d41ddb527f6ba2bfdf9}{}\label{classmage_1_1_renderer_aa97b108ef58f7d41ddb527f6ba2bfdf9} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+feature\+\_\+level@{m\+\_\+feature\+\_\+level}}
 \index{m\+\_\+feature\+\_\+level@{m\+\_\+feature\+\_\+level}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+feature\+\_\+level}{m\_feature\_level}}
 {\footnotesize\ttfamily D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL mage\+::\+Renderer\+::m\+\_\+feature\+\_\+level\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_renderer_afc314c8b146c3709edfd5349257a8387}{}\label{classmage_1_1_renderer_afc314c8b146c3709edfd5349257a8387} 
+\hypertarget{classmage_1_1_renderer_a72bb88b17491bd388460afae9d207b0a}{}\label{classmage_1_1_renderer_a72bb88b17491bd388460afae9d207b0a} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+fullscreen@{m\+\_\+fullscreen}}
+\index{m\+\_\+fullscreen@{m\+\_\+fullscreen}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+fullscreen}{m\_fullscreen}}
+{\footnotesize\ttfamily bool mage\+::\+Renderer\+::m\+\_\+fullscreen\hspace{0.3cm}{\ttfamily [protected]}}
+
+A flag indicating whether this renderer uses a full screen mode (if {\ttfamily true}) or a windowed mode (if {\ttfamily false}). \hypertarget{classmage_1_1_renderer_afc314c8b146c3709edfd5349257a8387}{}\label{classmage_1_1_renderer_afc314c8b146c3709edfd5349257a8387} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+hwindow@{m\+\_\+hwindow}}
 \index{m\+\_\+hwindow@{m\+\_\+hwindow}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+hwindow}{m\_hwindow}}
@@ -218,10 +294,3 @@ Main window handle of this renderer. \hypertarget{classmage_1_1_renderer_a60eeb3
 \subsubsection{\texorpdfstring{m\+\_\+swap\+\_\+chain2}{m\_swap\_chain2}}
 {\footnotesize\ttfamily I\+D\+X\+G\+I\+Swap\+Chain2$\ast$ mage\+::\+Renderer\+::m\+\_\+swap\+\_\+chain2\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{classmage_1_1_renderer_a9215a05e35d22294adb87084422b98cd}{}\label{classmage_1_1_renderer_a9215a05e35d22294adb87084422b98cd} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+windowed@{m\+\_\+windowed}}
-\index{m\+\_\+windowed@{m\+\_\+windowed}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{m\+\_\+windowed}{m\_windowed}}
-{\footnotesize\ttfamily bool mage\+::\+Renderer\+::m\+\_\+windowed\hspace{0.3cm}{\ttfamily [protected]}}
-
-Flag indicating wether this renderer uses full screen ({\ttfamily false}) or windowed mode (c true). 

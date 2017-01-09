@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_resource_manager_aad8d61f96551b9ddd59593ed52eac241}{Resource\+Manager} (void($\ast$Create\+Resource\+Function)(T $\ast$$\ast$resource, const string \&name, const string \&path)=N\+U\+LL)
+\hyperlink{classmage_1_1_resource_manager_a175c64e73c941c161b2ee0df80fc5492}{Resource\+Manager} (void($\ast$Create\+Resource\+Function)(T $\ast$$\ast$resource, const string \&name, const string \&path)=nullptr)
 \item 
 virtual \hyperlink{classmage_1_1_resource_manager_af3b6bf56e57bd3df0eb569510dd1483b}{$\sim$\+Resource\+Manager} ()
 \item 
@@ -42,12 +42,12 @@ A class of resource managers.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_resource_manager_aad8d61f96551b9ddd59593ed52eac241}{}\label{classmage_1_1_resource_manager_aad8d61f96551b9ddd59593ed52eac241} 
+\hypertarget{classmage_1_1_resource_manager_a175c64e73c941c161b2ee0df80fc5492}{}\label{classmage_1_1_resource_manager_a175c64e73c941c161b2ee0df80fc5492} 
 \index{mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}!Resource\+Manager@{Resource\+Manager}}
 \index{Resource\+Manager@{Resource\+Manager}!mage\+::\+Resource\+Manager@{mage\+::\+Resource\+Manager}}
 \subsubsection{\texorpdfstring{Resource\+Manager()}{ResourceManager()}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
-\hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} (\begin{DoxyParamCaption}\item[{void($\ast$)(T $\ast$$\ast$resource, const string \&name, const string \&path)}]{Create\+Resource\+Function = {\ttfamily NULL} }\end{DoxyParamCaption})}
+\hyperlink{classmage_1_1_resource_manager}{mage\+::\+Resource\+Manager}$<$ T $>$\+::\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager} (\begin{DoxyParamCaption}\item[{void($\ast$)(T $\ast$$\ast$resource, const string \&name, const string \&path)}]{Create\+Resource\+Function = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 Constructs a resource manager.
 
@@ -109,7 +109,7 @@ Returns a resource of this resource manager by its filename (given name and path
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily N\+U\+LL} if the resource is not present. 
+{\ttfamily nullptr} if the resource is not present. 
 
 A pointer to the resource. 
 \end{DoxyReturn}

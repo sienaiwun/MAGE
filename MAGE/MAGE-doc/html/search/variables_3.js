@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['iv0',['iv0',['../structmage_1_1_indexed_edge.html#a2d9717dccad8876af7492f0952cf7097',1,'mage::IndexedEdge::iv0()'],['../structmage_1_1_indexed_face.html#aab3b522ac88751c7875b90856888e3ba',1,'mage::IndexedFace::iv0()']]],
-  ['iv1',['iv1',['../structmage_1_1_indexed_edge.html#ad01e125a7beee86ea885625e9db9b8d7',1,'mage::IndexedEdge::iv1()'],['../structmage_1_1_indexed_face.html#a35469b3d2baa4c40e3b7db3074842756',1,'mage::IndexedFace::iv1()']]],
-  ['iv2',['iv2',['../structmage_1_1_indexed_face.html#a343e5f22f65e3721b440cc6cbea50014',1,'mage::IndexedFace']]]
+  ['dds_5fmagic',['DDS_MAGIC',['../namespacemage.html#a52f784e41b51fee843891c6b5e9be479',1,'mage']]],
+  ['ddspf',['ddspf',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#af7a75b761a23052acab158294208b5d8',1,'mage::DDS_HEADER']]],
+  ['depth',['depth',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#a7852a4695a8f8a2eb6b6fe5b3d9397ba',1,'mage::DDS_HEADER']]],
+  ['diffuse',['diffuse',['../structmage_1_1_l_vertex.html#abfe65c089e650ad20ed41de8e2b585dd',1,'mage::LVertex::diffuse()'],['../structmage_1_1_t_l_vertex.html#a78d60c6622bc1091f2c1c30da0715236',1,'mage::TLVertex::diffuse()']]],
+  ['dxgi_5fformat',['dxgi_format',['../structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html#a06df28f4738161963f81349e9bc8b09d',1,'mage::DDS_HEADER_DXT10']]]
 ];

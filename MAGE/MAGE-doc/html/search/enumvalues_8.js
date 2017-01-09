@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['write',['WRITE',['../namespacemage.html#afd76fcca37ce5c5b2227671290973c74aff9d196f4bda4079f3f1ce90bd644662',1,'mage']]]
+  ['unknowntype',['UnknownType',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33aa6e4917f41203f9eb5a3fbab1b4719712',1,'mage']]]
 ];

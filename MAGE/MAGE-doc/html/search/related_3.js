@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['settingsdialogprocdelegate',['SettingsDialogProcDelegate',['../classmage_1_1_device_enumeration.html#a3dff4eb8907e2e10f26cc616fe1c104d',1,'mage::DeviceEnumeration']]],
-  ['statemanager',['StateManager',['../classmage_1_1_state.html#a8055e77bf0267832ef337718a11fec0d',1,'mage::State']]]
+  ['readwritemutexlock',['ReadWriteMutexLock',['../classmage_1_1_read_write_mutex.html#a7ae207fc659160d3c55a5ba1468007f7',1,'mage::ReadWriteMutex']]],
+  ['resourcemanager',['ResourceManager',['../classmage_1_1_resource.html#a51a7bf7c13d389aeee09c16059ca41c9',1,'mage::Resource']]]
 ];

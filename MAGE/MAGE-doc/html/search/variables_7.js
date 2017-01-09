@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['p',['p',['../structmage_1_1_vertex.html#a9d726a508934b3baccfb01ea912420e7',1,'mage::Vertex::p()'],['../structmage_1_1_l_vertex.html#afdf01d172b1992d4e4f37b9ad9fb2d27',1,'mage::LVertex::p()'],['../structmage_1_1_t_l_vertex.html#a5ac68e9f9767dae9455134891712baf1',1,'mage::TLVertex::p()'],['../structmage_1_1_sphere.html#a3eaad90e13e18fe66a5f927a40e4a96b',1,'mage::Sphere::p()']]],
-  ['p_5fmax',['p_max',['../structmage_1_1_a_a_b_b.html#aa5c60af6413a01158acd81d67ebe828c',1,'mage::AABB']]],
-  ['p_5fmin',['p_min',['../structmage_1_1_a_a_b_b.html#aca78eb314738b73f2d21dcf75130b6eb',1,'mage::AABB']]]
+  ['iv0',['iv0',['../structmage_1_1_indexed_edge.html#a2d9717dccad8876af7492f0952cf7097',1,'mage::IndexedEdge::iv0()'],['../structmage_1_1_indexed_face.html#aab3b522ac88751c7875b90856888e3ba',1,'mage::IndexedFace::iv0()']]],
+  ['iv1',['iv1',['../structmage_1_1_indexed_edge.html#ad01e125a7beee86ea885625e9db9b8d7',1,'mage::IndexedEdge::iv1()'],['../structmage_1_1_indexed_face.html#a35469b3d2baa4c40e3b7db3074842756',1,'mage::IndexedFace::iv1()']]],
+  ['iv2',['iv2',['../structmage_1_1_indexed_face.html#a343e5f22f65e3721b440cc6cbea50014',1,'mage::IndexedFace']]]
 ];

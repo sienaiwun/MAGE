@@ -1,0 +1,124 @@
+\hypertarget{structmage_1_1_b_s}{}\section{mage\+:\+:BS Struct Reference}
+\label{structmage_1_1_b_s}\index{mage\+::\+BS@{mage\+::\+BS}}
+
+
+{\ttfamily \#include $<$bounding\+\_\+volume.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_b_s_aa34921d9ea23b9a724ddf739b3adabfa}{BS} ()
+\item 
+\hyperlink{structmage_1_1_b_s_a53685c01f65431dd31e5f7088df21141}{BS} (const X\+M\+F\+L\+O\+A\+T3 \&\hyperlink{structmage_1_1_b_s_a30aa87318e657d71ae36e197136d59d2}{p}, float \hyperlink{structmage_1_1_b_s_ab2e786e8493feb28a3bc0216e8dea5bc}{r})
+\item 
+bool \hyperlink{structmage_1_1_b_s_aa2c1e7909151f919c7793fffeb3f6bcb}{Encloses} (const list$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&planes)
+\item 
+bool \hyperlink{structmage_1_1_b_s_a10d92e1fea87c26265ae4005480823e3}{Encloses\+Strict} (const list$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&planes)
+\item 
+bool \hyperlink{structmage_1_1_b_s_af036f3755936125b141184647d33e88b}{Collides} (const \hyperlink{structmage_1_1_b_s}{BS} \&sphere, const X\+M\+F\+L\+O\+A\+T3 velocity\+\_\+sum, float $\ast$collision\+\_\+distance)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_b_s_a30aa87318e657d71ae36e197136d59d2}{p}
+\item 
+float \hyperlink{structmage_1_1_b_s_ab2e786e8493feb28a3bc0216e8dea5bc}{r}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A struct of Bounding Spheres (\hyperlink{structmage_1_1_b_s}{BS}). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_b_s_aa34921d9ea23b9a724ddf739b3adabfa}{}\label{structmage_1_1_b_s_aa34921d9ea23b9a724ddf739b3adabfa} 
+\index{mage\+::\+BS@{mage\+::\+BS}!BS@{BS}}
+\index{BS@{BS}!mage\+::\+BS@{mage\+::\+BS}}
+\subsubsection{\texorpdfstring{B\+S()}{BS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+B\+S\+::\+BS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a sphere. \hypertarget{structmage_1_1_b_s_a53685c01f65431dd31e5f7088df21141}{}\label{structmage_1_1_b_s_a53685c01f65431dd31e5f7088df21141} 
+\index{mage\+::\+BS@{mage\+::\+BS}!BS@{BS}}
+\index{BS@{BS}!mage\+::\+BS@{mage\+::\+BS}}
+\subsubsection{\texorpdfstring{B\+S()}{BS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+B\+S\+::\+BS (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{p,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+Constructs a sphere.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & The position \\
+\hline
+\mbox{\tt in}  & {\em r} & The radius. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_b_s_af036f3755936125b141184647d33e88b}{}\label{structmage_1_1_b_s_af036f3755936125b141184647d33e88b} 
+\index{mage\+::\+BS@{mage\+::\+BS}!Collides@{Collides}}
+\index{Collides@{Collides}!mage\+::\+BS@{mage\+::\+BS}}
+\subsubsection{\texorpdfstring{Collides()}{Collides()}}
+{\footnotesize\ttfamily bool mage\+::\+B\+S\+::\+Collides (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_b_s}{BS} \&}]{sphere,  }\item[{const X\+M\+F\+L\+O\+A\+T3}]{velocity\+\_\+sum,  }\item[{float $\ast$}]{collision\+\_\+distance }\end{DoxyParamCaption})}
+
+Checks whether this sphere collides with a given sphere.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sphere} & The sphere. \\
+\hline
+\mbox{\tt in}  & {\em velocity\+\_\+sum} & The sum of the velocities of both spheres. \\
+\hline
+\mbox{\tt out}  & {\em collision\+\_\+distance} & The collision distance (in case of collision). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this sphere collides with {\itshape sphere}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_b_s_aa2c1e7909151f919c7793fffeb3f6bcb}{}\label{structmage_1_1_b_s_aa2c1e7909151f919c7793fffeb3f6bcb} 
+\index{mage\+::\+BS@{mage\+::\+BS}!Encloses@{Encloses}}
+\index{Encloses@{Encloses}!mage\+::\+BS@{mage\+::\+BS}}
+\subsubsection{\texorpdfstring{Encloses()}{Encloses()}}
+{\footnotesize\ttfamily bool mage\+::\+B\+S\+::\+Encloses (\begin{DoxyParamCaption}\item[{const list$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&}]{planes }\end{DoxyParamCaption})}
+
+Checks whether this sphere completely encloses the given (closed) volume.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em planes} & A reference to a linked list containing the planes of the volume (each plane\textquotesingle{}s coefficients are represented as a {\ttfamily X\+M\+F\+L\+O\+A\+T4}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this sphere completely encloses {\itshape planes}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_b_s_a10d92e1fea87c26265ae4005480823e3}{}\label{structmage_1_1_b_s_a10d92e1fea87c26265ae4005480823e3} 
+\index{mage\+::\+BS@{mage\+::\+BS}!Encloses\+Strict@{Encloses\+Strict}}
+\index{Encloses\+Strict@{Encloses\+Strict}!mage\+::\+BS@{mage\+::\+BS}}
+\subsubsection{\texorpdfstring{Encloses\+Strict()}{EnclosesStrict()}}
+{\footnotesize\ttfamily bool mage\+::\+B\+S\+::\+Encloses\+Strict (\begin{DoxyParamCaption}\item[{const list$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&}]{planes }\end{DoxyParamCaption})}
+
+Checks whether this sphere completely, strictly encloses the given (closed) volume.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em planes} & A reference to a linked list containing the planes of the volume (each plane\textquotesingle{}s coefficients are represented as a {\ttfamily X\+M\+F\+L\+O\+A\+T4}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this sphere completely encloses {\itshape planes}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_b_s_a30aa87318e657d71ae36e197136d59d2}{}\label{structmage_1_1_b_s_a30aa87318e657d71ae36e197136d59d2} 
+\index{mage\+::\+BS@{mage\+::\+BS}!p@{p}}
+\index{p@{p}!mage\+::\+BS@{mage\+::\+BS}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+B\+S\+::p}
+
+The position of this sphere. \hypertarget{structmage_1_1_b_s_ab2e786e8493feb28a3bc0216e8dea5bc}{}\label{structmage_1_1_b_s_ab2e786e8493feb28a3bc0216e8dea5bc} 
+\index{mage\+::\+BS@{mage\+::\+BS}!r@{r}}
+\index{r@{r}!mage\+::\+BS@{mage\+::\+BS}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily float mage\+::\+B\+S\+::r}
+
+The radius of this sphere. 

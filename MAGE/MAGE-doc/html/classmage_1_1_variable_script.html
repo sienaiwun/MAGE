@@ -106,8 +106,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8b40c66f4f025bbf85b60ac57eb92248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c488e779a6444559bded669a3e038c8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#a8c488e779a6444559bded669a3e038c8">~VariableScript</a> ()</td></tr>
 <tr class="separator:a8c488e779a6444559bded669a3e038c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24268eb0ad76b0ead392f341b55d641a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#a24268eb0ad76b0ead392f341b55d641a">ImportScript</a> (const string &amp;filename=&quot;&quot;)</td></tr>
+<tr class="separator:a24268eb0ad76b0ead392f341b55d641a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a863930f2c84786c2bb5bfa090cda06f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#a863930f2c84786c2bb5bfa090cda06f7">ExportScript</a> (const string &amp;filename=&quot;&quot;)</td></tr>
 <tr class="separator:a863930f2c84786c2bb5bfa090cda06f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae619cdc5519a753780360abab87430"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#a8ae619cdc5519a753780360abab87430">IsEmpty</a> () const</td></tr>
+<tr class="separator:a8ae619cdc5519a753780360abab87430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ed94a510a3dab0e60b42b650ca6f09"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#a27ed94a510a3dab0e60b42b650ca6f09">GetNbOfVariables</a> () const</td></tr>
+<tr class="separator:a27ed94a510a3dab0e60b42b650ca6f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a8bb9b6133ce853052820961320ca9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa9a8bb9b6133ce853052820961320ca9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#aa9a8bb9b6133ce853052820961320ca9">AddVariable</a> (const string &amp;name, <a class="el" href="namespacemage.html#a530428e73bac0ba7fe84b29086a9e33a">VariableType</a> type, const T *value)</td></tr>
 <tr class="separator:aa9a8bb9b6133ce853052820961320ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +139,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5f1cc3bfb611edbc8dfb433ec55cc965"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#a5f1cc3bfb611edbc8dfb433ec55cc965">ImportScript</a> ()</td></tr>
-<tr class="separator:a5f1cc3bfb611edbc8dfb433ec55cc965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ab24f4d3bb11579ce9cfb690ba7a4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#ae7ab24f4d3bb11579ce9cfb690ba7a4f">ImportVariable</a> (const string &amp;name, FILE *file)</td></tr>
 <tr class="separator:ae7ab24f4d3bb11579ce9cfb690ba7a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69aaa511e7e00912cee95c04cf31b4f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#a69aaa511e7e00912cee95c04cf31b4f5">ExportVariable</a> (const <a class="el" href="structmage_1_1_variable.html">Variable</a> *variable, FILE *file)</td></tr>
@@ -142,8 +146,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab40d512a3323a56c0f0e6d5dfb33d2ad"><td class="memItemLeft" align="right" valign="top">list&lt; const <a class="el" href="structmage_1_1_variable.html">Variable</a> *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#ab40d512a3323a56c0f0e6d5dfb33d2ad">m_variables</a></td></tr>
-<tr class="separator:ab40d512a3323a56c0f0e6d5dfb33d2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14dfd0518fe06cbfaf409fd5223f63e5"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="structmage_1_1_variable.html">Variable</a> *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_variable_script.html#a14dfd0518fe06cbfaf409fd5223f63e5">m_variables</a></td></tr>
+<tr class="separator:a14dfd0518fe06cbfaf409fd5223f63e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of variable scripts. </p>
@@ -332,6 +336,25 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a27ed94a510a3dab0e60b42b650ca6f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ed94a510a3dab0e60b42b650ca6f09">&sect;&nbsp;</a></span>GetNbOfVariables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mage::VariableScript::GetNbOfVariables </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the number of variables in this variable script.</p>
+<dl class="section return"><dt>Returns</dt><dd>The number of variables in this variable script. </dd></dl>
+
+</div>
+</div>
 <a id="a231b83e1e32b882489ed90faa69f7137"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a231b83e1e32b882489ed90faa69f7137">&sect;&nbsp;</a></span>GetValueOfVariable()</h2>
 
@@ -362,35 +385,34 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>NULL</code> if no variable with the name <em>name</em> exists in this variable script. </dd>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code> if no variable with the name <em>name</em> exists in this variable script. </dd>
 <dd>
 A pointer to the value of the variable. </dd></dl>
 
 </div>
 </div>
-<a id="a5f1cc3bfb611edbc8dfb433ec55cc965"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f1cc3bfb611edbc8dfb433ec55cc965">&sect;&nbsp;</a></span>ImportScript()</h2>
+<a id="a24268eb0ad76b0ead392f341b55d641a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24268eb0ad76b0ead392f341b55d641a">&sect;&nbsp;</a></span>ImportScript()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void mage::VariableScript::ImportScript </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em> = <code>&quot;&quot;</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Imports this variable script from its associated file. </p>
+<p>Imports this variable script from its associated file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>A reference to the filename. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -436,6 +458,25 @@ A pointer to the value of the variable. </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8ae619cdc5519a753780360abab87430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae619cdc5519a753780360abab87430">&sect;&nbsp;</a></span>IsEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::VariableScript::IsEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks wether this variable script is empty.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this variable script is empty. <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -510,8 +551,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab40d512a3323a56c0f0e6d5dfb33d2ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab40d512a3323a56c0f0e6d5dfb33d2ad">&sect;&nbsp;</a></span>m_variables</h2>
+<a id="a14dfd0518fe06cbfaf409fd5223f63e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14dfd0518fe06cbfaf409fd5223f63e5">&sect;&nbsp;</a></span>m_variables</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,7 +561,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">list&lt; const <a class="el" href="structmage_1_1_variable.html">Variable</a> * &gt; mage::VariableScript::m_variables</td>
+          <td class="memname">list&lt; <a class="el" href="structmage_1_1_variable.html">Variable</a> * &gt; mage::VariableScript::m_variables</td>
         </tr>
       </table>
   </td>

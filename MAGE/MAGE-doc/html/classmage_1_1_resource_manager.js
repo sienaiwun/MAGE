@@ -1,6 +1,6 @@
 var classmage_1_1_resource_manager =
 [
-    [ "ResourceManager", "classmage_1_1_resource_manager.html#aad8d61f96551b9ddd59593ed52eac241", null ],
+    [ "ResourceManager", "classmage_1_1_resource_manager.html#a175c64e73c941c161b2ee0df80fc5492", null ],
     [ "~ResourceManager", "classmage_1_1_resource_manager.html#af3b6bf56e57bd3df0eb569510dd1483b", null ],
     [ "AddResource", "classmage_1_1_resource_manager.html#a358d8bcb9a0812cc69ff1e8cd8234988", null ],
     [ "ClearResources", "classmage_1_1_resource_manager.html#a875ea647ed1d475ca2d3f39dc492215b", null ],

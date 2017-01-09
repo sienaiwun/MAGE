@@ -5,7 +5,15 @@
 \item 
 struct \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}
 \item 
+struct \hyperlink{structmage_1_1_b_s}{BS}
+\item 
 class \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable}
+\item 
+struct \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER}
+\item 
+struct \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10}{D\+D\+S\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+D\+X\+T10}
+\item 
+struct \hyperlink{structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t}{D\+D\+S\+\_\+\+P\+I\+X\+E\+L\+F\+O\+R\+M\+AT}
 \item 
 class \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration}
 \item 
@@ -23,7 +31,9 @@ struct \hyperlink{structmage_1_1_indexed_edge}{Indexed\+Edge}
 \item 
 struct \hyperlink{structmage_1_1_indexed_face}{Indexed\+Face}
 \item 
-class \hyperlink{classmage_1_1_input}{Input}
+class \hyperlink{classmage_1_1_input_manager}{Input\+Manager}
+\item 
+class \hyperlink{classmage_1_1_keyboard}{Keyboard}
 \item 
 class \hyperlink{classmage_1_1_loadable}{Loadable}
 \item 
@@ -31,11 +41,17 @@ struct \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration}
 \item 
 struct \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}
 \item 
+class \hyperlink{classmage_1_1_main_window}{Main\+Window}
+\item 
 class \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena}
+\item 
+class \hyperlink{classmage_1_1_mouse}{Mouse}
 \item 
 class \hyperlink{classmage_1_1_mutex}{Mutex}
 \item 
 struct \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock}
+\item 
+class \hyperlink{classmage_1_1_parallel_for_loop}{Parallel\+For\+Loop}
 \item 
 class \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter}
 \item 
@@ -55,8 +71,6 @@ class \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}
 \item 
 class \hyperlink{classmage_1_1_semaphore}{Semaphore}
 \item 
-struct \hyperlink{structmage_1_1_sphere}{Sphere}
-\item 
 class \hyperlink{classmage_1_1_state}{State}
 \item 
 class \hyperlink{classmage_1_1_state_manager}{State\+Manager}
@@ -67,6 +81,8 @@ class \hyperlink{classmage_1_1_timer}{Timer}
 \item 
 struct \hyperlink{structmage_1_1_t_l_vertex}{T\+L\+Vertex}
 \item 
+struct \hyperlink{structmage_1_1_transform}{Transform}
+\item 
 struct \hyperlink{structmage_1_1_variable}{Variable}
 \item 
 class \hyperlink{classmage_1_1_variable_script}{Variable\+Script}
@@ -74,6 +90,15 @@ class \hyperlink{classmage_1_1_variable_script}{Variable\+Script}
 struct \hyperlink{structmage_1_1_vertex}{Vertex}
 \item 
 struct \hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_aab5dae4b0aaf8129b9e0d651d91d4b38}{float3}
+\item 
+typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_aa79484ea5211c29727b3794199ac0a55}{float4}
+\item 
+typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_a2d4dece8fe175b32167f9a7b925adc7c}{colour}
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
@@ -93,17 +118,29 @@ enum \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type}
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aaacb26519a81b631235b51091b05c2b10}{String\+Type}, 
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa6e4917f41203f9eb5a3fbab1b4719712}{Unknown\+Type}
  \}
+\item 
+enum \hyperlink{namespacemage_a0943eceedce2e66b3b66d0566b15c712}{D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2} \{ \hyperlink{namespacemage_a0943eceedce2e66b3b66d0566b15c712af6954b93e1e18fa5366ebb55d65ecbcf}{D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK} = 0x7L
+ \}
+\item 
+enum \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} \{ \newline
+\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2ae15c70e072553fb579ef26eedb737768}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+K\+N\+O\+WN} = 0, 
+\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2a2cfa12c9a40e943b5e51043c45db5f95}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+R\+A\+I\+G\+HT} = 1, 
+\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2a6dfa3f7a9c0031bc87cc35d8365e3b74}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED} = 2, 
+\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2a0f5075a259bfecc6fb934b92bcc6dd1d}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+O\+P\+A\+Q\+UE} = 3, 
+\newline
+\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2a145fc5c46af6e8635680d59f55ce956f}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+C\+U\+S\+T\+OM} = 4
+ \}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_ab5db0adc49745ebb637f947bc3a3aaa5}{Window\+Proc} (H\+W\+ND h\+Wnd, U\+I\+NT msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
-\item 
 void \hyperlink{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{Print\+Console\+Header} ()
 \item 
-const char $\ast$ \hyperlink{namespacemage_ab2e62d950dc620167f4128cb16033998}{Find\+Word\+End} (const char $\ast$buffer)
+static const char $\ast$ \hyperlink{namespacemage_a81ebde51f9da00dd6fad364a2c5017cb}{Find\+Word\+End} (const char $\ast$buffer)
 \item 
-void \hyperlink{namespacemage_a958c4a88b6cd58f950e1c9b9e46f6906}{Process\+Error} (const char $\ast$format, const va\+\_\+list args, const string \&error\+\_\+type, int error\+\_\+disposition)
+static void \hyperlink{namespacemage_a12282bdc04d00e024c5ddf93ed9ad785}{Process\+Error} (const char $\ast$format, const va\+\_\+list args, const string \&error\+\_\+type, int error\+\_\+disposition)
+\item 
+void \hyperlink{namespacemage_a1bcf1f0301e170105908eee5b5c46830}{Debug} (const char $\ast$format,...)
 \item 
 void \hyperlink{namespacemage_add6aa5f13960ce07b20f48d273956a91}{Info} (const char $\ast$format,...)
 \item 
@@ -111,13 +148,21 @@ void \hyperlink{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5}{Warning} (const
 \item 
 void \hyperlink{namespacemage_a52a7fe8c9ce39afd9e0b0299373db0fa}{Error} (const char $\ast$format,...)
 \item 
-void \hyperlink{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4}{Severe} (const char $\ast$format,...)
+void \hyperlink{namespacemage_aefd40c91591a8e0423e4222b4a5e6249}{Fatal} (const char $\ast$format,...)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a14798232aabfdf96d751f4fcca4e6ece}{Initialize\+Console} ()
 \item 
 int \hyperlink{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{Terminal\+Width} ()
 \item 
-void $\ast$ \hyperlink{namespacemage_a7d706913bb9fb322c938cd3e4d8eaede}{Alloc\+Aligned} (size\+\_\+t size)
+\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_aa574a80cb5b7b939962a11c2f423d748}{Union} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb, const X\+M\+F\+L\+O\+A\+T3 \&point)
 \item 
-{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_ae2f31ba64620694aa0dfc8ca6e5d5941}{Alloc\+Aligned} (uint32\+\_\+t count)
+\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_ab9b3a22c6c2fc5537f00bf4f7516746f}{Union} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb1, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb2)
+\item 
+\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a1068090c66ff1c6398b134455730eb02}{Overlap} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb1, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb2)
+\item 
+\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a47de3c8ef21f996ee234f83bb51b12e5}{Overlap\+Strict} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb1, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb2)
+\item 
+void $\ast$ \hyperlink{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{Alloc\+Aligned} (size\+\_\+t size)
 \item 
 void \hyperlink{namespacemage_a401c54df21447c491c527735647b5f80}{Free\+Aligned} (void $\ast$ptr)
 \item 
@@ -129,7 +174,15 @@ int32\+\_\+t \hyperlink{namespacemage_a03da57cfa5ba14d4aa0472ae49ec5c7e}{Atomic\
 \item 
 float \hyperlink{namespacemage_a0de5ff6241a0474f4572c7c3ba342098}{Atomic\+Add} (volatile float $\ast$addend, float value)
 \item 
-uint32\+\_\+t \hyperlink{namespacemage_abc47a1cf24b1224ad55d8022a1f3b2dc}{Number\+Of\+System\+Cores} ()
+size\+\_\+t \hyperlink{namespacemage_afe0cda2eaeef24c7e3ee5d7a739b81e4}{Number\+Of\+System\+Cores} ()
+\item 
+void \hyperlink{namespacemage_a029a62d168a0c96ddd9d34b3b5294be0}{Parallel\+For} (function$<$ void(size\+\_\+t) $>$ func, size\+\_\+t nb\+\_\+work, size\+\_\+t chunk\+\_\+size=1)
+\item 
+size\+\_\+t \hyperlink{namespacemage_adab55b91c5b0e27766475ca19be3c4cf}{Max\+Thread\+Index} ()
+\item 
+void \hyperlink{namespacemage_a14b68ac56f898260b891bd264b57dd73}{Parallel\+Init} ()
+\item 
+void \hyperlink{namespacemage_a34c908d6d463ac859752d16e574fe8dc}{Parallel\+Cleanup} ()
 \item 
 static D\+W\+O\+RD W\+I\+N\+A\+PI \hyperlink{namespacemage_a1f113843a26e671776ec469adf7ccc51}{task\+\_\+entry} (L\+P\+V\+O\+ID lp\+Parameter)
 \item 
@@ -137,13 +190,63 @@ void \hyperlink{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac}{Tasks\+Init} ()
 \item 
 void \hyperlink{namespacemage_a118ddaa5d9606328a0af412c85832e6b}{Tasks\+Cleanup} ()
 \item 
-void \hyperlink{namespacemage_a0f0fa32534696afa66b313ffebbf9caf}{Enqueue\+Tasks} (const vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$$>$ \&tasks)
+void \hyperlink{namespacemage_a4d22783c8fe4d130a41b5ae001741df5}{Enqueue\+Tasks} (const vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ \&tasks)
 \item 
 void \hyperlink{namespacemage_a7da78c39175a029c92ed42d8fb9f30af}{Wait\+For\+All\+Tasks} ()
 \item 
 I\+N\+T\+\_\+\+P\+TR C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130}{Settings\+Dialog\+Proc\+Delegate} (H\+W\+ND hwnd\+Dlg, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
 \item 
+bool \hyperlink{namespacemage_abdccde1f16aa2239019e1b455d8b941b}{Reject\+Display\+Mode} (const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 $\ast$display\+\_\+mode\+\_\+desc)
+\item 
 size\+\_\+t \hyperlink{namespacemage_a782fb3970da2fbbc93627f7324c193aa}{Bits\+Per\+Pixel} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ad1df9b8a27dd30528717777fd0c9c3db}{Load\+Texture\+Data\+From\+File} (\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$file\+\_\+name, std\+::unique\+\_\+ptr$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]}$>$ \&dds\+\_\+data, \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$$\ast$header, uint8\+\_\+t $\ast$$\ast$bit\+\_\+data, size\+\_\+t $\ast$bit\+\_\+size)
+\item 
+static void \hyperlink{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2}{Get\+Surface\+Info} (\+\_\+\+In\+\_\+ size\+\_\+t width, \+\_\+\+In\+\_\+ size\+\_\+t height, \+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT fmt, \+\_\+\+Out\+\_\+opt\+\_\+ size\+\_\+t $\ast$out\+\_\+nb\+\_\+bytes, \+\_\+\+Out\+\_\+opt\+\_\+ size\+\_\+t $\ast$out\+\_\+row\+\_\+bytes, \+\_\+\+Out\+\_\+opt\+\_\+ size\+\_\+t $\ast$out\+\_\+nb\+\_\+rows)
+\item 
+static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_a4fecf9823aec7c5ba078acf6bd73f983}{Get\+D\+X\+G\+I\+Format} (const \hyperlink{structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t}{D\+D\+S\+\_\+\+P\+I\+X\+E\+L\+F\+O\+R\+M\+AT} \&ddpf)
+\item 
+static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_a35ccdb42bbc027d3678b849fb962f3d3}{Make\+S\+R\+GB} (\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ac20162a68be6828c38072a3afb0711c1}{Fill\+Init\+Data} (\+\_\+\+In\+\_\+ size\+\_\+t width, \+\_\+\+In\+\_\+ size\+\_\+t height, \+\_\+\+In\+\_\+ size\+\_\+t depth, \+\_\+\+In\+\_\+ size\+\_\+t mip\+\_\+count, \+\_\+\+In\+\_\+ size\+\_\+t array\+\_\+size, \+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ size\+\_\+t bit\+\_\+size, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$bit\+\_\+data, \+\_\+\+Out\+\_\+ size\+\_\+t \&twidth, \+\_\+\+Out\+\_\+ size\+\_\+t \&theight, \+\_\+\+Out\+\_\+ size\+\_\+t \&tdepth, \+\_\+\+Out\+\_\+ size\+\_\+t \&skip\+\_\+mip, \+\_\+\+Out\+\_\+writes\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$init\+\_\+data)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a60c2e53d311a0972990ac7ed09552fe4}{Create\+D3\+D\+Resources} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+ uint32\+\_\+t res\+\_\+dim, \+\_\+\+In\+\_\+ size\+\_\+t width, \+\_\+\+In\+\_\+ size\+\_\+t height, \+\_\+\+In\+\_\+ size\+\_\+t depth, \+\_\+\+In\+\_\+ size\+\_\+t mip\+\_\+count, \+\_\+\+In\+\_\+ size\+\_\+t array\+\_\+size, \+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+In\+\_\+ bool is\+\_\+cube\+\_\+map, \+\_\+\+In\+\_\+reads\+\_\+opt\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$init\+\_\+data, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a1abae840c6e112b20872c3c0bb2a6442}{Create\+Texture\+From\+D\+DS} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$header, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$bit\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t bit\+\_\+size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view)
+\item 
+static \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} \hyperlink{namespacemage_afcc0891e1660f8457696cb30f4ee518a}{Get\+Alpha\+Mode} (\+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$header)
+\item 
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aa3dfb149c30fcaad9aafc80a5fc06440}{Create\+D\+D\+S\+Texture\+From\+Memory} (I\+D3\+D11\+Device $\ast$d3d\+Device, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\item 
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a9b5a7a7773e9f46894c7180ddd34b2ce}{Create\+D\+D\+S\+Texture\+From\+Memory} (I\+D3\+D11\+Device $\ast$d3d\+Device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\item 
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aefe8be9cf3ce2f8fb9615346ac53868f}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (I\+D3\+D11\+Device $\ast$d3d\+Device, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\item 
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a9adc89795f8da4f15483e1a4ebe7533d}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (I\+D3\+D11\+Device $\ast$d3d\+Device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const uint8\+\_\+t $\ast$dds\+\_\+data, size\+\_\+t dds\+\_\+data\+Size, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\item 
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_abb3d998e8e64bab729050e5d6b9e848c}{Create\+D\+D\+S\+Texture\+From\+File} (I\+D3\+D11\+Device $\ast$d3d\+Device, const wchar\+\_\+t $\ast$file\+\_\+name, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\item 
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ae4d1a462c004d260ef861c9ccdcba9e3}{Create\+D\+D\+S\+Texture\+From\+File} (I\+D3\+D11\+Device $\ast$d3d\+Device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const wchar\+\_\+t $\ast$file\+\_\+name, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, size\+\_\+t maxsize, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\item 
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a9a8f907c4cce316a587e7f35e78a255c}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (I\+D3\+D11\+Device $\ast$d3d\+Device, const wchar\+\_\+t $\ast$file\+\_\+name, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\item 
+\+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a8d07edf15d12fdc0f0af833ea4845161}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (I\+D3\+D11\+Device $\ast$d3d\+Device, I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, const wchar\+\_\+t $\ast$file\+\_\+name, size\+\_\+t maxsize, D3\+D11\+\_\+\+U\+S\+A\+GE usage, uint32\+\_\+t bind\+Flags, uint32\+\_\+t cpu\+\_\+access\+\_\+flags, uint32\+\_\+t misc\+\_\+flags, bool force\+S\+R\+GB, I\+D3\+D11\+Resource $\ast$$\ast$texture, I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a43328fca7f4b8d7a25b12bac29f503dd}{Create\+D\+D\+S\+Texture\+From\+Memory} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aa0bc631077bed07a8b8c27b500ded2d5}{Create\+D\+D\+S\+Texture\+From\+File} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a9005e298930545563b03a7fa18af9eb6}{Create\+D\+D\+S\+Texture\+From\+Memory} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aad2679951c2320a1e68d9923a47a2828}{Create\+D\+D\+S\+Texture\+From\+File} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+In\+\_\+ size\+\_\+t maxsize=0, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_acb0dc8616d42bd8c67d22d6274580cb7}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a9045c198b22d96e6225961f391cb4e04}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a55e3dfd62e363db1e284246ab1be5f48}{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$dds\+\_\+data, \+\_\+\+In\+\_\+ size\+\_\+t dds\+\_\+data\+Size, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a631c86abbb86a2c2cdfd04bd8a08f2b7}{Create\+D\+D\+S\+Texture\+From\+File\+Ex} (\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$d3d\+Device, \+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$d3d\+Context, \+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$sz\+File\+Name, \+\_\+\+In\+\_\+ size\+\_\+t maxsize, \+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE usage, \+\_\+\+In\+\_\+ uint32\+\_\+t bind\+Flags, \+\_\+\+In\+\_\+ uint32\+\_\+t cpu\+\_\+access\+\_\+flags, \+\_\+\+In\+\_\+ uint32\+\_\+t misc\+\_\+flags, \+\_\+\+In\+\_\+ bool force\+S\+R\+GB, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$texture, \+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$texture\+\_\+view, \+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$alpha\+\_\+mode=nullptr)
 \item 
 void \hyperlink{namespacemage_a78e4a1d3c21d6eb8657bfa0a9631d6ee}{Combo\+Box\+Add} (H\+W\+ND dialog, int id, const void $\ast$data, const wchar\+\_\+t $\ast$desc)
 \item 
@@ -158,13 +261,15 @@ bool \hyperlink{namespacemage_afa2451527062c4213d21bdf01b1922c6}{Combo\+Box\+Som
 int \hyperlink{namespacemage_a5c586938d7f59a82c8528fab41f17960}{Combo\+Box\+Count} (H\+W\+ND dialog, int id)
 \item 
 bool \hyperlink{namespacemage_a98228034fca63017765bcdf5966be239}{Combo\+Box\+Contains} (H\+W\+ND dialog, int id, const wchar\+\_\+t $\ast$desc)
+\item 
+L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a7ab7652c75189226bf8299647e897c99}{Main\+Window\+Proc} (H\+W\+ND h\+Wnd, U\+I\+NT msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration} \hyperlink{namespacemage_a162413669f92d91c7ee135d60f93fcf1}{g\+\_\+logging\+\_\+configuration}
 \item 
-\hyperlink{classmage_1_1_engine}{Engine} $\ast$ \hyperlink{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{g\+\_\+engine} = N\+U\+LL
+\hyperlink{classmage_1_1_engine}{Engine} $\ast$ \hyperlink{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{g\+\_\+engine} = nullptr
 \item 
 const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119}{vertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
 \item 
@@ -172,11 +277,23 @@ const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \h
 \item 
 const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a0f27594da3814c163fe995326acf6c5e}{tlvertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
 \item 
+static vector$<$ thread $>$ \hyperlink{namespacemage_ad2f58114b13692a9af3222fcd3b2ec2e}{workers}
+\item 
+static bool \hyperlink{namespacemage_a2342ab1ffdf94509ba4f9683189a1898}{shutdown\+\_\+workers} = false
+\item 
+static \hyperlink{classmage_1_1_parallel_for_loop}{Parallel\+For\+Loop} $\ast$ \hyperlink{namespacemage_a801b62787c07e98767a88f55154269a1}{work\+\_\+list} = nullptr
+\item 
+static mutex \hyperlink{namespacemage_a7e67d8a6b0029abe8f1480807f18b16a}{work\+\_\+list\+\_\+mutex}
+\item 
+static condition\+\_\+variable \hyperlink{namespacemage_a06c363811ca265ff89fbbe2b80e1e3d2}{work\+\_\+list\+\_\+condition}
+\item 
+thread\+\_\+local size\+\_\+t \hyperlink{namespacemage_aacfaaced796400d312a5d2cc43b5b09a}{Thread\+Index}
+\item 
 static H\+A\+N\+D\+LE $\ast$ \hyperlink{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c}{threads}
 \item 
 static \hyperlink{classmage_1_1_mutex}{Mutex} $\ast$ \hyperlink{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f}{task\+\_\+queue\+\_\+mutex} = \hyperlink{classmage_1_1_mutex_a48d784fa6bffd4088d9f89a2a9cca84e}{Mutex\+::\+Create}()
 \item 
-static vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ \hyperlink{namespacemage_af4824558d428695e4661c5e7cdfa4419}{task\+\_\+queue}
+static vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$$>$ \hyperlink{namespacemage_a487c0bb81ed56ce18cd944e958961cdf}{task\+\_\+queue}
 \item 
 static \hyperlink{classmage_1_1_semaphore}{Semaphore} $\ast$ \hyperlink{namespacemage_a17c3448f9fba7521d188d30bdfb77e33}{worker\+\_\+semaphore}
 \item 
@@ -184,17 +301,78 @@ static uint32\+\_\+t \hyperlink{namespacemage_a390e8652d67667609daf3aa64e3c00a8}
 \item 
 static \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable} $\ast$ \hyperlink{namespacemage_a8c04b4285ebbc0fb416b1905c01cf149}{tasks\+\_\+running\+\_\+condition}
 \item 
-\hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ \hyperlink{namespacemage_a73e54b9b368875ed0281ced59e2fca7e}{g\+\_\+device\+\_\+enumeration} = N\+U\+LL
-\item 
-const D3\+D\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE \hyperlink{namespacemage_a79acb6a11738f00caf2390a2d623a0b4}{g\+\_\+driver\+\_\+types} \mbox{[}$\,$\mbox{]}
+\hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ \hyperlink{namespacemage_a73e54b9b368875ed0281ced59e2fca7e}{g\+\_\+device\+\_\+enumeration} = nullptr
 \item 
 const D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL \hyperlink{namespacemage_add3b7e051df553262371e077d9d66fd9}{g\+\_\+feature\+\_\+levels} \mbox{[}$\,$\mbox{]}
 \item 
 const D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT \hyperlink{namespacemage_a5a4e11b65061c618b85826ab6df480e0}{g\+\_\+pixel\+\_\+formats} \mbox{[}$\,$\mbox{]}
+\item 
+const uint32\+\_\+t \hyperlink{namespacemage_a52f784e41b51fee843891c6b5e9be479}{D\+D\+S\+\_\+\+M\+A\+G\+IC} = 0x20534444
 \end{DoxyCompactItemize}
 
 
+\subsection{Typedef Documentation}
+\hypertarget{namespacemage_a2d4dece8fe175b32167f9a7b925adc7c}{}\label{namespacemage_a2d4dece8fe175b32167f9a7b925adc7c} 
+\index{mage@{mage}!colour@{colour}}
+\index{colour@{colour}!mage@{mage}}
+\subsubsection{\texorpdfstring{colour}{colour}}
+{\footnotesize\ttfamily typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_a2d4dece8fe175b32167f9a7b925adc7c}{mage\+::colour}}
+
+\hypertarget{namespacemage_aab5dae4b0aaf8129b9e0d651d91d4b38}{}\label{namespacemage_aab5dae4b0aaf8129b9e0d651d91d4b38} 
+\index{mage@{mage}!float3@{float3}}
+\index{float3@{float3}!mage@{mage}}
+\subsubsection{\texorpdfstring{float3}{float3}}
+{\footnotesize\ttfamily typedef X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_aab5dae4b0aaf8129b9e0d651d91d4b38}{mage\+::float3}}
+
+\hypertarget{namespacemage_aa79484ea5211c29727b3794199ac0a55}{}\label{namespacemage_aa79484ea5211c29727b3794199ac0a55} 
+\index{mage@{mage}!float4@{float4}}
+\index{float4@{float4}!mage@{mage}}
+\subsubsection{\texorpdfstring{float4}{float4}}
+{\footnotesize\ttfamily typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_aa79484ea5211c29727b3794199ac0a55}{mage\+::float4}}
+
+
+
 \subsection{Enumeration Type Documentation}
+\hypertarget{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{}\label{namespacemage_a0c586a2bad862f4858900ca121ca80c2} 
+\index{mage@{mage}!D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE}}
+\index{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE}!mage@{mage}}
+\subsubsection{\texorpdfstring{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE}{DDS\_ALPHA\_MODE}}
+{\footnotesize\ttfamily enum \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{mage\+::\+D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+K\+N\+O\+WN@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+K\+N\+O\+WN}!mage@{mage}}\index{mage@{mage}!D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+K\+N\+O\+WN@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+K\+N\+O\+WN}}}\hypertarget{namespacemage_a0c586a2bad862f4858900ca121ca80c2ae15c70e072553fb579ef26eedb737768}{}\label{namespacemage_a0c586a2bad862f4858900ca121ca80c2ae15c70e072553fb579ef26eedb737768} 
+D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+K\+N\+O\+WN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+R\+A\+I\+G\+HT@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+R\+A\+I\+G\+HT}!mage@{mage}}\index{mage@{mage}!D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+R\+A\+I\+G\+HT@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+R\+A\+I\+G\+HT}}}\hypertarget{namespacemage_a0c586a2bad862f4858900ca121ca80c2a2cfa12c9a40e943b5e51043c45db5f95}{}\label{namespacemage_a0c586a2bad862f4858900ca121ca80c2a2cfa12c9a40e943b5e51043c45db5f95} 
+D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+R\+A\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED}!mage@{mage}}\index{mage@{mage}!D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED}}}\hypertarget{namespacemage_a0c586a2bad862f4858900ca121ca80c2a6dfa3f7a9c0031bc87cc35d8365e3b74}{}\label{namespacemage_a0c586a2bad862f4858900ca121ca80c2a6dfa3f7a9c0031bc87cc35d8365e3b74} 
+D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+O\+P\+A\+Q\+UE@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+O\+P\+A\+Q\+UE}!mage@{mage}}\index{mage@{mage}!D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+O\+P\+A\+Q\+UE@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+O\+P\+A\+Q\+UE}}}\hypertarget{namespacemage_a0c586a2bad862f4858900ca121ca80c2a0f5075a259bfecc6fb934b92bcc6dd1d}{}\label{namespacemage_a0c586a2bad862f4858900ca121ca80c2a0f5075a259bfecc6fb934b92bcc6dd1d} 
+D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+O\+P\+A\+Q\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+C\+U\+S\+T\+OM@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+C\+U\+S\+T\+OM}!mage@{mage}}\index{mage@{mage}!D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+C\+U\+S\+T\+OM@{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+C\+U\+S\+T\+OM}}}\hypertarget{namespacemage_a0c586a2bad862f4858900ca121ca80c2a145fc5c46af6e8635680d59f55ce956f}{}\label{namespacemage_a0c586a2bad862f4858900ca121ca80c2a145fc5c46af6e8635680d59f55ce956f} 
+D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+C\+U\+S\+T\+OM&\\
+\hline
+
+\end{DoxyEnumFields}
+\hypertarget{namespacemage_a0943eceedce2e66b3b66d0566b15c712}{}\label{namespacemage_a0943eceedce2e66b3b66d0566b15c712} 
+\index{mage@{mage}!D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2@{D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2}}
+\index{D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2@{D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2}!mage@{mage}}
+\subsubsection{\texorpdfstring{D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2}{DDS\_MISC\_FLAGS2}}
+{\footnotesize\ttfamily enum \hyperlink{namespacemage_a0943eceedce2e66b3b66d0566b15c712}{mage\+::\+D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK@{D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK}!mage@{mage}}\index{mage@{mage}!D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK@{D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK}}}\hypertarget{namespacemage_a0943eceedce2e66b3b66d0566b15c712af6954b93e1e18fa5366ebb55d65ecbcf}{}\label{namespacemage_a0943eceedce2e66b3b66d0566b15c712af6954b93e1e18fa5366ebb55d65ecbcf} 
+D\+D\+S\+\_\+\+M\+I\+S\+C\+\_\+\+F\+L\+A\+G\+S2\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK&\\
+\hline
+
+\end{DoxyEnumFields}
 \hypertarget{namespacemage_afd76fcca37ce5c5b2227671290973c74}{}\label{namespacemage_afd76fcca37ce5c5b2227671290973c74} 
 \index{mage@{mage}!Read\+Write\+Mutex\+Lock\+Type@{Read\+Write\+Mutex\+Lock\+Type}}
 \index{Read\+Write\+Mutex\+Lock\+Type@{Read\+Write\+Mutex\+Lock\+Type}!mage@{mage}}
@@ -254,11 +432,11 @@ Unknown\+Type&\\
 
 
 \subsection{Function Documentation}
-\hypertarget{namespacemage_a7d706913bb9fb322c938cd3e4d8eaede}{}\label{namespacemage_a7d706913bb9fb322c938cd3e4d8eaede} 
+\hypertarget{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{}\label{namespacemage_a6c97f75df305a5e0a945e82a26e75c38} 
 \index{mage@{mage}!Alloc\+Aligned@{Alloc\+Aligned}}
 \index{Alloc\+Aligned@{Alloc\+Aligned}!mage@{mage}}
-\subsubsection{\texorpdfstring{Alloc\+Aligned()}{AllocAligned()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void$\ast$ mage\+::\+Alloc\+Aligned (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{Alloc\+Aligned()}{AllocAligned()}}
+{\footnotesize\ttfamily T $\ast$ mage\+::\+Alloc\+Aligned (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
 
 Allocates memory on an alignment boundary of 64 bytes of the given size.
 
@@ -268,17 +446,10 @@ Allocates memory on an alignment boundary of 64 bytes of the given size.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily N\+U\+LL} if the allocation failed. 
+{\ttfamily nullptr} if the allocation failed. 
 
-A pointer to the memory block that was allocated. The pointer is a multiple of the alignment of 64 bytes. 
+A pointer to the memory block that was allocated. The pointer is a multiple of the alignment of 64 bytes.
 \end{DoxyReturn}
-\hypertarget{namespacemage_ae2f31ba64620694aa0dfc8ca6e5d5941}{}\label{namespacemage_ae2f31ba64620694aa0dfc8ca6e5d5941} 
-\index{mage@{mage}!Alloc\+Aligned@{Alloc\+Aligned}}
-\index{Alloc\+Aligned@{Alloc\+Aligned}!mage@{mage}}
-\subsubsection{\texorpdfstring{Alloc\+Aligned()}{AllocAligned()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
-T$\ast$ mage\+::\+Alloc\+Aligned (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{count }\end{DoxyParamCaption})}
-
 Allocates memory on an alignment boundary of 64 bytes.
 
 
@@ -292,7 +463,7 @@ Allocates memory on an alignment boundary of 64 bytes.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily N\+U\+LL} if the allocation failed. 
+{\ttfamily nullptr} if the allocation failed. 
 
 A pointer to the memory block that was allocated. The pointer is a multiple of the alignment of 64 bytes. 
 \end{DoxyReturn}
@@ -491,7 +662,7 @@ Returns the data associated with the selected item in a combo box.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily N\+U\+LL} if the combo box has no items. 
+{\ttfamily nullptr} if the combo box has no items. 
 
 A pointer to the data associated with the selected item in the combo box. 
 \end{DoxyReturn}
@@ -513,19 +684,135 @@ Checks whether a valid item is selected in a combo box.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if a valid item is selected in the combo box. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a0f0fa32534696afa66b313ffebbf9caf}{}\label{namespacemage_a0f0fa32534696afa66b313ffebbf9caf} 
+\hypertarget{namespacemage_a60c2e53d311a0972990ac7ed09552fe4}{}\label{namespacemage_a60c2e53d311a0972990ac7ed09552fe4} 
+\index{mage@{mage}!Create\+D3\+D\+Resources@{Create\+D3\+D\+Resources}}
+\index{Create\+D3\+D\+Resources@{Create\+D3\+D\+Resources}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D3\+D\+Resources()}{CreateD3DResources()}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Create\+D3\+D\+Resources (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{res\+\_\+dim,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{width,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{height,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{depth,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{mip\+\_\+count,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{array\+\_\+size,  }\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+In\+\_\+ bool}]{is\+\_\+cube\+\_\+map,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+opt\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$}]{init\+\_\+data,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_aa0bc631077bed07a8b8c27b500ded2d5}{}\label{namespacemage_aa0bc631077bed07a8b8c27b500ded2d5} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}}
+\index{Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File()}{CreateDDSTextureFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_aad2679951c2320a1e68d9923a47a2828}{}\label{namespacemage_aad2679951c2320a1e68d9923a47a2828} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}}
+\index{Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File()}{CreateDDSTextureFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_abb3d998e8e64bab729050e5d6b9e848c}{}\label{namespacemage_abb3d998e8e64bab729050e5d6b9e848c} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}}
+\index{Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File()}{CreateDDSTextureFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_ae4d1a462c004d260ef861c9ccdcba9e3}{}\label{namespacemage_ae4d1a462c004d260ef861c9ccdcba9e3} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}}
+\index{Create\+D\+D\+S\+Texture\+From\+File@{Create\+D\+D\+S\+Texture\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File()}{CreateDDSTextureFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a9045c198b22d96e6225961f391cb4e04}{}\label{namespacemage_a9045c198b22d96e6225961f391cb4e04} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}}
+\index{Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File\+Ex()}{CreateDDSTextureFromFileEx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a631c86abbb86a2c2cdfd04bd8a08f2b7}{}\label{namespacemage_a631c86abbb86a2c2cdfd04bd8a08f2b7} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}}
+\index{Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File\+Ex()}{CreateDDSTextureFromFileEx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{sz\+File\+Name,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a9a8f907c4cce316a587e7f35e78a255c}{}\label{namespacemage_a9a8f907c4cce316a587e7f35e78a255c} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}}
+\index{Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File\+Ex()}{CreateDDSTextureFromFileEx()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a8d07edf15d12fdc0f0af833ea4845161}{}\label{namespacemage_a8d07edf15d12fdc0f0af833ea4845161} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}}
+\index{Create\+D\+D\+S\+Texture\+From\+File\+Ex@{Create\+D\+D\+S\+Texture\+From\+File\+Ex}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+File\+Ex()}{CreateDDSTextureFromFileEx()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+File\+Ex (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a43328fca7f4b8d7a25b12bac29f503dd}{}\label{namespacemage_a43328fca7f4b8d7a25b12bac29f503dd} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}}
+\index{Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory()}{CreateDDSTextureFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a9005e298930545563b03a7fa18af9eb6}{}\label{namespacemage_a9005e298930545563b03a7fa18af9eb6} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}}
+\index{Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory()}{CreateDDSTextureFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize = {\ttfamily 0},  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_aa3dfb149c30fcaad9aafc80a5fc06440}{}\label{namespacemage_aa3dfb149c30fcaad9aafc80a5fc06440} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}}
+\index{Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory()}{CreateDDSTextureFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a9b5a7a7773e9f46894c7180ddd34b2ce}{}\label{namespacemage_a9b5a7a7773e9f46894c7180ddd34b2ce} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}}
+\index{Create\+D\+D\+S\+Texture\+From\+Memory@{Create\+D\+D\+S\+Texture\+From\+Memory}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory()}{CreateDDSTextureFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{size\+\_\+t}]{maxsize,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_acb0dc8616d42bd8c67d22d6274580cb7}{}\label{namespacemage_acb0dc8616d42bd8c67d22d6274580cb7} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}}
+\index{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex()}{CreateDDSTextureFromMemoryEx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a55e3dfd62e363db1e284246ab1be5f48}{}\label{namespacemage_a55e3dfd62e363db1e284246ab1be5f48} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}}
+\index{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex()}{CreateDDSTextureFromMemoryEx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(dds\+\_\+data\+Size) const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_aefe8be9cf3ce2f8fb9615346ac53868f}{}\label{namespacemage_aefe8be9cf3ce2f8fb9615346ac53868f} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}}
+\index{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex()}{CreateDDSTextureFromMemoryEx()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a9adc89795f8da4f15483e1a4ebe7533d}{}\label{namespacemage_a9adc89795f8da4f15483e1a4ebe7533d} 
+\index{mage@{mage}!Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}}
+\index{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex@{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+D\+D\+S\+Texture\+From\+Memory\+Ex()}{CreateDDSTextureFromMemoryEx()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \+\_\+\+Use\+\_\+decl\+\_\+annotations\+\_\+ H\+R\+E\+S\+U\+LT mage\+::\+Create\+D\+D\+S\+Texture\+From\+Memory\+Ex (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{const uint8\+\_\+t $\ast$}]{dds\+\_\+data,  }\item[{size\+\_\+t}]{dds\+\_\+data\+Size,  }\item[{size\+\_\+t}]{maxsize,  }\item[{D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{uint32\+\_\+t}]{bind\+Flags,  }\item[{uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{bool}]{force\+S\+R\+GB,  }\item[{I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view,  }\item[{\hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} $\ast$}]{alpha\+\_\+mode }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a1abae840c6e112b20872c3c0bb2a6442}{}\label{namespacemage_a1abae840c6e112b20872c3c0bb2a6442} 
+\index{mage@{mage}!Create\+Texture\+From\+D\+DS@{Create\+Texture\+From\+D\+DS}}
+\index{Create\+Texture\+From\+D\+DS@{Create\+Texture\+From\+D\+DS}!mage@{mage}}
+\subsubsection{\texorpdfstring{Create\+Texture\+From\+D\+D\+S()}{CreateTextureFromDDS()}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Create\+Texture\+From\+D\+DS (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ I\+D3\+D11\+Device $\ast$}]{d3d\+Device,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ I\+D3\+D11\+Device\+Context $\ast$}]{d3d\+Context,  }\item[{\+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$}]{header,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$}]{bit\+\_\+data,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{bit\+\_\+size,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ D3\+D11\+\_\+\+U\+S\+A\+GE}]{usage,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{bind\+Flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{cpu\+\_\+access\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ uint32\+\_\+t}]{misc\+\_\+flags,  }\item[{\+\_\+\+In\+\_\+ bool}]{force\+S\+R\+GB,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Resource $\ast$$\ast$}]{texture,  }\item[{\+\_\+\+Outptr\+\_\+opt\+\_\+ I\+D3\+D11\+Shader\+Resource\+View $\ast$$\ast$}]{texture\+\_\+view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a1bcf1f0301e170105908eee5b5c46830}{}\label{namespacemage_a1bcf1f0301e170105908eee5b5c46830} 
+\index{mage@{mage}!Debug@{Debug}}
+\index{Debug@{Debug}!mage@{mage}}
+\subsubsection{\texorpdfstring{Debug()}{Debug()}}
+{\footnotesize\ttfamily void mage\+::\+Debug (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Notifies a debug message.
+
+A debug message is associated with generally useful information to log only in debug builds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a4d22783c8fe4d130a41b5ae001741df5}{}\label{namespacemage_a4d22783c8fe4d130a41b5ae001741df5} 
 \index{mage@{mage}!Enqueue\+Tasks@{Enqueue\+Tasks}}
 \index{Enqueue\+Tasks@{Enqueue\+Tasks}!mage@{mage}}
 \subsubsection{\texorpdfstring{Enqueue\+Tasks()}{EnqueueTasks()}}
 {\footnotesize\ttfamily void mage\+::\+Enqueue\+Tasks (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ \&}]{tasks }\end{DoxyParamCaption})}
 
-Enqueues the given tasks.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em tasks} & The tasks. \\
-\hline
-\end{DoxyParams}
 \hypertarget{namespacemage_a52a7fe8c9ce39afd9e0b0299373db0fa}{}\label{namespacemage_a52a7fe8c9ce39afd9e0b0299373db0fa} 
 \index{mage@{mage}!Error@{Error}}
 \index{Error@{Error}!mage@{mage}}
@@ -534,16 +821,39 @@ Enqueues the given tasks.
 
 Notifies an error message.
 
+An error message is associated with any error which is fatal to the operation, but not the service or application.
+
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_ab2e62d950dc620167f4128cb16033998}{}\label{namespacemage_ab2e62d950dc620167f4128cb16033998} 
+\hypertarget{namespacemage_aefd40c91591a8e0423e4222b4a5e6249}{}\label{namespacemage_aefd40c91591a8e0423e4222b4a5e6249} 
+\index{mage@{mage}!Fatal@{Fatal}}
+\index{Fatal@{Fatal}!mage@{mage}}
+\subsubsection{\texorpdfstring{Fatal()}{Fatal()}}
+{\footnotesize\ttfamily void mage\+::\+Fatal (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Notifies a fatal message.
+
+A fatal message is associated with any error that is forcing a shutdown of the service or application to prevent data loss (or further data loss).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_ac20162a68be6828c38072a3afb0711c1}{}\label{namespacemage_ac20162a68be6828c38072a3afb0711c1} 
+\index{mage@{mage}!Fill\+Init\+Data@{Fill\+Init\+Data}}
+\index{Fill\+Init\+Data@{Fill\+Init\+Data}!mage@{mage}}
+\subsubsection{\texorpdfstring{Fill\+Init\+Data()}{FillInitData()}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Fill\+Init\+Data (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{width,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{height,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{depth,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{mip\+\_\+count,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{array\+\_\+size,  }\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{bit\+\_\+size,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$}]{bit\+\_\+data,  }\item[{\+\_\+\+Out\+\_\+ size\+\_\+t \&}]{twidth,  }\item[{\+\_\+\+Out\+\_\+ size\+\_\+t \&}]{theight,  }\item[{\+\_\+\+Out\+\_\+ size\+\_\+t \&}]{tdepth,  }\item[{\+\_\+\+Out\+\_\+ size\+\_\+t \&}]{skip\+\_\+mip,  }\item[{\+\_\+\+Out\+\_\+writes\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$}]{init\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a81ebde51f9da00dd6fad364a2c5017cb}{}\label{namespacemage_a81ebde51f9da00dd6fad364a2c5017cb} 
 \index{mage@{mage}!Find\+Word\+End@{Find\+Word\+End}}
 \index{Find\+Word\+End@{Find\+Word\+End}!mage@{mage}}
 \subsubsection{\texorpdfstring{Find\+Word\+End()}{FindWordEnd()}}
-{\footnotesize\ttfamily const char$\ast$ mage\+::\+Find\+Word\+End (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily static const char$\ast$ mage\+::\+Find\+Word\+End (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Finds the end of a word.
 
@@ -561,13 +871,31 @@ Pointer to the end of the word. This means the pointer points to a space or null
 \subsubsection{\texorpdfstring{Free\+Aligned()}{FreeAligned()}}
 {\footnotesize\ttfamily void mage\+::\+Free\+Aligned (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
 
-Frees a block of memory that was allocated with \hyperlink{namespacemage_a7d706913bb9fb322c938cd3e4d8eaede}{mage\+::\+Alloc\+Aligned(size\+\_\+t)} or \hyperlink{namespacemage_ae2f31ba64620694aa0dfc8ca6e5d5941}{mage\+::\+Alloc\+Aligned$<$\+T$>$(uint32\+\_\+t)}.
+Frees a block of memory that was allocated with \hyperlink{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{mage\+::\+Alloc\+Aligned(size\+\_\+t)} or \hyperlink{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{mage\+::\+Alloc\+Aligned$<$\+T$>$(size\+\_\+t)}.
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em ptr} & A pointer to the memory block that was allocated. \\
 \hline
 \end{DoxyParams}
+\hypertarget{namespacemage_afcc0891e1660f8457696cb30f4ee518a}{}\label{namespacemage_afcc0891e1660f8457696cb30f4ee518a} 
+\index{mage@{mage}!Get\+Alpha\+Mode@{Get\+Alpha\+Mode}}
+\index{Get\+Alpha\+Mode@{Get\+Alpha\+Mode}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Alpha\+Mode()}{GetAlphaMode()}}
+{\footnotesize\ttfamily static \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+O\+DE} mage\+::\+Get\+Alpha\+Mode (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ const \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$}]{header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a4fecf9823aec7c5ba078acf6bd73f983}{}\label{namespacemage_a4fecf9823aec7c5ba078acf6bd73f983} 
+\index{mage@{mage}!Get\+D\+X\+G\+I\+Format@{Get\+D\+X\+G\+I\+Format}}
+\index{Get\+D\+X\+G\+I\+Format@{Get\+D\+X\+G\+I\+Format}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+D\+X\+G\+I\+Format()}{GetDXGIFormat()}}
+{\footnotesize\ttfamily static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::\+Get\+D\+X\+G\+I\+Format (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t}{D\+D\+S\+\_\+\+P\+I\+X\+E\+L\+F\+O\+R\+M\+AT} \&}]{ddpf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2}{}\label{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2} 
+\index{mage@{mage}!Get\+Surface\+Info@{Get\+Surface\+Info}}
+\index{Get\+Surface\+Info@{Get\+Surface\+Info}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Surface\+Info()}{GetSurfaceInfo()}}
+{\footnotesize\ttfamily static void mage\+::\+Get\+Surface\+Info (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{width,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{height,  }\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{fmt,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ size\+\_\+t $\ast$}]{out\+\_\+nb\+\_\+bytes,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ size\+\_\+t $\ast$}]{out\+\_\+row\+\_\+bytes,  }\item[{\+\_\+\+Out\+\_\+opt\+\_\+ size\+\_\+t $\ast$}]{out\+\_\+nb\+\_\+rows }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 \hypertarget{namespacemage_add6aa5f13960ce07b20f48d273956a91}{}\label{namespacemage_add6aa5f13960ce07b20f48d273956a91} 
 \index{mage@{mage}!Info@{Info}}
 \index{Info@{Info}!mage@{mage}}
@@ -576,33 +904,144 @@ Frees a block of memory that was allocated with \hyperlink{namespacemage_a7d7069
 
 Notifies an info message.
 
+An info message is associated with generally useful information to log.
+
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_abc47a1cf24b1224ad55d8022a1f3b2dc}{}\label{namespacemage_abc47a1cf24b1224ad55d8022a1f3b2dc} 
+\hypertarget{namespacemage_a14798232aabfdf96d751f4fcca4e6ece}{}\label{namespacemage_a14798232aabfdf96d751f4fcca4e6ece} 
+\index{mage@{mage}!Initialize\+Console@{Initialize\+Console}}
+\index{Initialize\+Console@{Initialize\+Console}!mage@{mage}}
+\subsubsection{\texorpdfstring{Initialize\+Console()}{InitializeConsole()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Initialize\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allocates a console to this engine for basic io and redirects stdin, stdout and stderr to the allocated console.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ad1df9b8a27dd30528717777fd0c9c3db}{}\label{namespacemage_ad1df9b8a27dd30528717777fd0c9c3db} 
+\index{mage@{mage}!Load\+Texture\+Data\+From\+File@{Load\+Texture\+Data\+From\+File}}
+\index{Load\+Texture\+Data\+From\+File@{Load\+Texture\+Data\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Load\+Texture\+Data\+From\+File()}{LoadTextureDataFromFile()}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Load\+Texture\+Data\+From\+File (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$}]{file\+\_\+name,  }\item[{std\+::unique\+\_\+ptr$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]}$>$ \&}]{dds\+\_\+data,  }\item[{\hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$$\ast$}]{header,  }\item[{uint8\+\_\+t $\ast$$\ast$}]{bit\+\_\+data,  }\item[{size\+\_\+t $\ast$}]{bit\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a7ab7652c75189226bf8299647e897c99}{}\label{namespacemage_a7ab7652c75189226bf8299647e897c99} 
+\index{mage@{mage}!Main\+Window\+Proc@{Main\+Window\+Proc}}
+\index{Main\+Window\+Proc@{Main\+Window\+Proc}!mage@{mage}}
+\subsubsection{\texorpdfstring{Main\+Window\+Proc()}{MainWindowProc()}}
+{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK mage\+::\+Main\+Window\+Proc (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{h\+Wnd,  }\item[{U\+I\+NT}]{msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})}
+
+The application-\/defined function that processes messages sent to the engine window. The Window\+Proc type defines a pointer to this callback function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h\+Wnd} & A handle to the window. \\
+\hline
+\mbox{\tt in}  & {\em msg} & The message. \\
+\hline
+\mbox{\tt in}  & {\em w\+Param} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
+\hline
+\mbox{\tt in}  & {\em l\+Param} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value is the result of the message processing and depends on the message sent. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a35ccdb42bbc027d3678b849fb962f3d3}{}\label{namespacemage_a35ccdb42bbc027d3678b849fb962f3d3} 
+\index{mage@{mage}!Make\+S\+R\+GB@{Make\+S\+R\+GB}}
+\index{Make\+S\+R\+GB@{Make\+S\+R\+GB}!mage@{mage}}
+\subsubsection{\texorpdfstring{Make\+S\+R\+G\+B()}{MakeSRGB()}}
+{\footnotesize\ttfamily static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::\+Make\+S\+R\+GB (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_adab55b91c5b0e27766475ca19be3c4cf}{}\label{namespacemage_adab55b91c5b0e27766475ca19be3c4cf} 
+\index{mage@{mage}!Max\+Thread\+Index@{Max\+Thread\+Index}}
+\index{Max\+Thread\+Index@{Max\+Thread\+Index}!mage@{mage}}
+\subsubsection{\texorpdfstring{Max\+Thread\+Index()}{MaxThreadIndex()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Max\+Thread\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_afe0cda2eaeef24c7e3ee5d7a739b81e4}{}\label{namespacemage_afe0cda2eaeef24c7e3ee5d7a739b81e4} 
 \index{mage@{mage}!Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}}
 \index{Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}!mage@{mage}}
 \subsubsection{\texorpdfstring{Number\+Of\+System\+Cores()}{NumberOfSystemCores()}}
-{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Number\+Of\+System\+Cores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Number\+Of\+System\+Cores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returns the number of system cores (i.\+e. logical processors).
 
 \begin{DoxyReturn}{Returns}
 The number of system cores (i.\+e. logical processors). 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a1068090c66ff1c6398b134455730eb02}{}\label{namespacemage_a1068090c66ff1c6398b134455730eb02} 
+\index{mage@{mage}!Overlap@{Overlap}}
+\index{Overlap@{Overlap}!mage@{mage}}
+\subsubsection{\texorpdfstring{Overlap()}{Overlap()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Overlap (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb1,  }\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb2 }\end{DoxyParamCaption})}
+
+Returns the overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the two given A\+A\+B\+Bs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aabb1} & A reference to the first \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\mbox{\tt in}  & {\em aabb2} & A reference to the second \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The identity \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} in case of no overlap. 
+
+The overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb1} and {\itshape aabb2}. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a47de3c8ef21f996ee234f83bb51b12e5}{}\label{namespacemage_a47de3c8ef21f996ee234f83bb51b12e5} 
+\index{mage@{mage}!Overlap\+Strict@{Overlap\+Strict}}
+\index{Overlap\+Strict@{Overlap\+Strict}!mage@{mage}}
+\subsubsection{\texorpdfstring{Overlap\+Strict()}{OverlapStrict()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Overlap\+Strict (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb1,  }\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb2 }\end{DoxyParamCaption})}
+
+Returns the strict overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the two given A\+A\+B\+Bs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aabb1} & A reference to the first \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\mbox{\tt in}  & {\em aabb2} & A reference to the second \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The identity \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} in case of no strict overlap. 
+
+The strict overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb1} and {\itshape aabb2}. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a34c908d6d463ac859752d16e574fe8dc}{}\label{namespacemage_a34c908d6d463ac859752d16e574fe8dc} 
+\index{mage@{mage}!Parallel\+Cleanup@{Parallel\+Cleanup}}
+\index{Parallel\+Cleanup@{Parallel\+Cleanup}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parallel\+Cleanup()}{ParallelCleanup()}}
+{\footnotesize\ttfamily void mage\+::\+Parallel\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a029a62d168a0c96ddd9d34b3b5294be0}{}\label{namespacemage_a029a62d168a0c96ddd9d34b3b5294be0} 
+\index{mage@{mage}!Parallel\+For@{Parallel\+For}}
+\index{Parallel\+For@{Parallel\+For}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parallel\+For()}{ParallelFor()}}
+{\footnotesize\ttfamily void mage\+::\+Parallel\+For (\begin{DoxyParamCaption}\item[{function$<$ void(size\+\_\+t) $>$}]{func,  }\item[{size\+\_\+t}]{nb\+\_\+work,  }\item[{size\+\_\+t}]{chunk\+\_\+size = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_a14b68ac56f898260b891bd264b57dd73}{}\label{namespacemage_a14b68ac56f898260b891bd264b57dd73} 
+\index{mage@{mage}!Parallel\+Init@{Parallel\+Init}}
+\index{Parallel\+Init@{Parallel\+Init}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parallel\+Init()}{ParallelInit()}}
+{\footnotesize\ttfamily void mage\+::\+Parallel\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \hypertarget{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{}\label{namespacemage_a064756443bd8a1af6974f22c81d29ed0} 
 \index{mage@{mage}!Print\+Console\+Header@{Print\+Console\+Header}}
 \index{Print\+Console\+Header@{Print\+Console\+Header}!mage@{mage}}
 \subsubsection{\texorpdfstring{Print\+Console\+Header()}{PrintConsoleHeader()}}
 {\footnotesize\ttfamily void mage\+::\+Print\+Console\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Prints the header of the engine to the console. \hypertarget{namespacemage_a958c4a88b6cd58f950e1c9b9e46f6906}{}\label{namespacemage_a958c4a88b6cd58f950e1c9b9e46f6906} 
+Prints the header of the engine to the console. \hypertarget{namespacemage_a12282bdc04d00e024c5ddf93ed9ad785}{}\label{namespacemage_a12282bdc04d00e024c5ddf93ed9ad785} 
 \index{mage@{mage}!Process\+Error@{Process\+Error}}
 \index{Process\+Error@{Process\+Error}!mage@{mage}}
 \subsubsection{\texorpdfstring{Process\+Error()}{ProcessError()}}
-{\footnotesize\ttfamily void mage\+::\+Process\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{const va\+\_\+list}]{args,  }\item[{const string \&}]{error\+\_\+type,  }\item[{int}]{error\+\_\+disposition }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily static void mage\+::\+Process\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{const va\+\_\+list}]{args,  }\item[{const string \&}]{error\+\_\+type,  }\item[{int}]{error\+\_\+disposition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Process the given error.
 
@@ -617,6 +1056,22 @@ Process the given error.
 \mbox{\tt in}  & {\em error\+\_\+disposition} & Disposition of the error. \\
 \hline
 \end{DoxyParams}
+\hypertarget{namespacemage_abdccde1f16aa2239019e1b455d8b941b}{}\label{namespacemage_abdccde1f16aa2239019e1b455d8b941b} 
+\index{mage@{mage}!Reject\+Display\+Mode@{Reject\+Display\+Mode}}
+\index{Reject\+Display\+Mode@{Reject\+Display\+Mode}!mage@{mage}}
+\subsubsection{\texorpdfstring{Reject\+Display\+Mode()}{RejectDisplayMode()}}
+{\footnotesize\ttfamily bool mage\+::\+Reject\+Display\+Mode (\begin{DoxyParamCaption}\item[{const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 $\ast$}]{display\+\_\+mode\+\_\+desc }\end{DoxyParamCaption})}
+
+Checks whether the given display mode needs to be rejected for the engine.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em display\+\_\+mode\+\_\+desc} & A pointer to a display mode descriptor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given display mode needs to be rejected for the engine. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130}{}\label{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130} 
 \index{mage@{mage}!Settings\+Dialog\+Proc\+Delegate@{Settings\+Dialog\+Proc\+Delegate}}
 \index{Settings\+Dialog\+Proc\+Delegate@{Settings\+Dialog\+Proc\+Delegate}!mage@{mage}}
@@ -639,19 +1094,6 @@ Engine-\/defined callback function used with the Create\+Dialog for device enume
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if {\itshape u\+Msg} is processed. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4}{}\label{namespacemage_a95c8b0820c579bbde59062fd9d05e4f4} 
-\index{mage@{mage}!Severe@{Severe}}
-\index{Severe@{Severe}!mage@{mage}}
-\subsubsection{\texorpdfstring{Severe()}{Severe()}}
-{\footnotesize\ttfamily void mage\+::\+Severe (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
-
-Notifies a severe message.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em format} & Pointer to the message format. \\
-\hline
-\end{DoxyParams}
 \hypertarget{namespacemage_a1f113843a26e671776ec469adf7ccc51}{}\label{namespacemage_a1f113843a26e671776ec469adf7ccc51} 
 \index{mage@{mage}!task\+\_\+entry@{task\+\_\+entry}}
 \index{task\+\_\+entry@{task\+\_\+entry}!mage@{mage}}
@@ -674,13 +1116,13 @@ A value indicating success or failure.
 \subsubsection{\texorpdfstring{Tasks\+Cleanup()}{TasksCleanup()}}
 {\footnotesize\ttfamily void mage\+::\+Tasks\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Clean the tasks. \hypertarget{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac}{}\label{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac} 
+\hypertarget{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac}{}\label{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac} 
 \index{mage@{mage}!Tasks\+Init@{Tasks\+Init}}
 \index{Tasks\+Init@{Tasks\+Init}!mage@{mage}}
 \subsubsection{\texorpdfstring{Tasks\+Init()}{TasksInit()}}
 {\footnotesize\ttfamily void mage\+::\+Tasks\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Initialize the tasks. \hypertarget{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{}\label{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc} 
+\hypertarget{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{}\label{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc} 
 \index{mage@{mage}!Terminal\+Width@{Terminal\+Width}}
 \index{Terminal\+Width@{Terminal\+Width}!mage@{mage}}
 \subsubsection{\texorpdfstring{Terminal\+Width()}{TerminalWidth()}}
@@ -691,13 +1133,49 @@ Returns the fixed terminal width.
 \begin{DoxyReturn}{Returns}
 The fixed terminal width. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_aa574a80cb5b7b939962a11c2f423d748}{}\label{namespacemage_aa574a80cb5b7b939962a11c2f423d748} 
+\index{mage@{mage}!Union@{Union}}
+\index{Union@{Union}!mage@{mage}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb,  }\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{point }\end{DoxyParamCaption})}
+
+Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} and the given point.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aabb} & A reference to the \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\mbox{\tt in}  & {\em point} & A reference to the point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb} and {\itshape point}. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ab9b3a22c6c2fc5537f00bf4f7516746f}{}\label{namespacemage_ab9b3a22c6c2fc5537f00bf4f7516746f} 
+\index{mage@{mage}!Union@{Union}}
+\index{Union@{Union}!mage@{mage}}
+\subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb1,  }\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb2 }\end{DoxyParamCaption})}
+
+Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the two given A\+A\+B\+Bs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aabb1} & A reference to the first \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\mbox{\tt in}  & {\em aabb2} & A reference to the second \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb1} and {\itshape aabb2}. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a7da78c39175a029c92ed42d8fb9f30af}{}\label{namespacemage_a7da78c39175a029c92ed42d8fb9f30af} 
 \index{mage@{mage}!Wait\+For\+All\+Tasks@{Wait\+For\+All\+Tasks}}
 \index{Wait\+For\+All\+Tasks@{Wait\+For\+All\+Tasks}!mage@{mage}}
 \subsubsection{\texorpdfstring{Wait\+For\+All\+Tasks()}{WaitForAllTasks()}}
 {\footnotesize\ttfamily void mage\+::\+Wait\+For\+All\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Waits for all the tasks to finish. \hypertarget{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5}{}\label{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5} 
+\hypertarget{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5}{}\label{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5} 
 \index{mage@{mage}!Warning@{Warning}}
 \index{Warning@{Warning}!mage@{mage}}
 \subsubsection{\texorpdfstring{Warning()}{Warning()}}
@@ -705,61 +1183,33 @@ Waits for all the tasks to finish. \hypertarget{namespacemage_a0eccd8065c75d5f2b
 
 Notifies a warning message.
 
+A warning message is associated with anything that can potentially cause application oddities.
+
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_ab5db0adc49745ebb637f947bc3a3aaa5}{}\label{namespacemage_ab5db0adc49745ebb637f947bc3a3aaa5} 
-\index{mage@{mage}!Window\+Proc@{Window\+Proc}}
-\index{Window\+Proc@{Window\+Proc}!mage@{mage}}
-\subsubsection{\texorpdfstring{Window\+Proc()}{WindowProc()}}
-{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK mage\+::\+Window\+Proc (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{h\+Wnd,  }\item[{U\+I\+NT}]{msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})}
-
-The application-\/defined function that processes messages sent to the engine window. The Window\+Proc type defines a pointer to this callback function.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em h\+Wnd} & A handle to the window. \\
-\hline
-\mbox{\tt in}  & {\em msg} & The message. \\
-\hline
-\mbox{\tt in}  & {\em w\+Param} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
-\hline
-\mbox{\tt in}  & {\em l\+Param} & Additional message information. The contents of this parameter depend on the value of {\itshape msg}. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The return value is the result of the message processing and depends on the message sent. 
-\end{DoxyReturn}
 
 
 \subsection{Variable Documentation}
+\hypertarget{namespacemage_a52f784e41b51fee843891c6b5e9be479}{}\label{namespacemage_a52f784e41b51fee843891c6b5e9be479} 
+\index{mage@{mage}!D\+D\+S\+\_\+\+M\+A\+G\+IC@{D\+D\+S\+\_\+\+M\+A\+G\+IC}}
+\index{D\+D\+S\+\_\+\+M\+A\+G\+IC@{D\+D\+S\+\_\+\+M\+A\+G\+IC}!mage@{mage}}
+\subsubsection{\texorpdfstring{D\+D\+S\+\_\+\+M\+A\+G\+IC}{DDS\_MAGIC}}
+{\footnotesize\ttfamily const uint32\+\_\+t mage\+::\+D\+D\+S\+\_\+\+M\+A\+G\+IC = 0x20534444}
+
 \hypertarget{namespacemage_a73e54b9b368875ed0281ced59e2fca7e}{}\label{namespacemage_a73e54b9b368875ed0281ced59e2fca7e} 
 \index{mage@{mage}!g\+\_\+device\+\_\+enumeration@{g\+\_\+device\+\_\+enumeration}}
 \index{g\+\_\+device\+\_\+enumeration@{g\+\_\+device\+\_\+enumeration}!mage@{mage}}
 \subsubsection{\texorpdfstring{g\+\_\+device\+\_\+enumeration}{g\_device\_enumeration}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ mage\+::g\+\_\+device\+\_\+enumeration = N\+U\+LL}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ mage\+::g\+\_\+device\+\_\+enumeration = nullptr}
 
-A (global) pointer to the device enumeration. \hypertarget{namespacemage_a79acb6a11738f00caf2390a2d623a0b4}{}\label{namespacemage_a79acb6a11738f00caf2390a2d623a0b4} 
-\index{mage@{mage}!g\+\_\+driver\+\_\+types@{g\+\_\+driver\+\_\+types}}
-\index{g\+\_\+driver\+\_\+types@{g\+\_\+driver\+\_\+types}!mage@{mage}}
-\subsubsection{\texorpdfstring{g\+\_\+driver\+\_\+types}{g\_driver\_types}}
-{\footnotesize\ttfamily const D3\+D\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE mage\+::g\+\_\+driver\+\_\+types\mbox{[}$\,$\mbox{]}}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}
-= \{
-        D3D\_DRIVER\_TYPE\_HARDWARE,
-        D3D\_DRIVER\_TYPE\_WARP,
-        D3D\_DRIVER\_TYPE\_REFERENCE
-    \}
-\end{DoxyCode}
-The supported driver types. \hypertarget{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{}\label{namespacemage_a84bf83f1e8779d884452cdf08f56c19a} 
+A (global) pointer to the device enumeration. \hypertarget{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{}\label{namespacemage_a84bf83f1e8779d884452cdf08f56c19a} 
 \index{mage@{mage}!g\+\_\+engine@{g\+\_\+engine}}
 \index{g\+\_\+engine@{g\+\_\+engine}!mage@{mage}}
 \subsubsection{\texorpdfstring{g\+\_\+engine}{g\_engine}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_engine}{Engine} $\ast$ mage\+::g\+\_\+engine = N\+U\+LL}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_engine}{Engine} $\ast$ mage\+::g\+\_\+engine = nullptr}
 
 The engine used by the user. \hypertarget{namespacemage_add3b7e051df553262371e077d9d66fd9}{}\label{namespacemage_add3b7e051df553262371e077d9d66fd9} 
 \index{mage@{mage}!g\+\_\+feature\+\_\+levels@{g\+\_\+feature\+\_\+levels}}
@@ -770,7 +1220,8 @@ The engine used by the user. \hypertarget{namespacemage_add3b7e051df553262371e07
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
 = \{
-        D3D\_FEATURE\_LEVEL\_11\_1
+        D3D\_FEATURE\_LEVEL\_11\_1,
+        D3D\_FEATURE\_LEVEL\_11\_0
     \}
 \end{DoxyCode}
 The supported feature levels. \hypertarget{namespacemage_a162413669f92d91c7ee135d60f93fcf1}{}\label{namespacemage_a162413669f92d91c7ee135d60f93fcf1} 
@@ -818,11 +1269,17 @@ The input element descriptor for a \hyperlink{structmage_1_1_l_vertex}{L\+Vertex
 \subsubsection{\texorpdfstring{nb\+\_\+unfinished\+\_\+tasks}{nb\_unfinished\_tasks}}
 {\footnotesize\ttfamily uint32\+\_\+t mage\+::nb\+\_\+unfinished\+\_\+tasks\hspace{0.3cm}{\ttfamily [static]}}
 
-The number of unfinished tasks. \hypertarget{namespacemage_af4824558d428695e4661c5e7cdfa4419}{}\label{namespacemage_af4824558d428695e4661c5e7cdfa4419} 
+The number of unfinished tasks. \hypertarget{namespacemage_a2342ab1ffdf94509ba4f9683189a1898}{}\label{namespacemage_a2342ab1ffdf94509ba4f9683189a1898} 
+\index{mage@{mage}!shutdown\+\_\+workers@{shutdown\+\_\+workers}}
+\index{shutdown\+\_\+workers@{shutdown\+\_\+workers}!mage@{mage}}
+\subsubsection{\texorpdfstring{shutdown\+\_\+workers}{shutdown\_workers}}
+{\footnotesize\ttfamily bool mage\+::shutdown\+\_\+workers = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a487c0bb81ed56ce18cd944e958961cdf}{}\label{namespacemage_a487c0bb81ed56ce18cd944e958961cdf} 
 \index{mage@{mage}!task\+\_\+queue@{task\+\_\+queue}}
 \index{task\+\_\+queue@{task\+\_\+queue}!mage@{mage}}
 \subsubsection{\texorpdfstring{task\+\_\+queue}{task\_queue}}
-{\footnotesize\ttfamily vector$<$\hyperlink{classmage_1_1_task}{Task} $\ast$$>$ mage\+::task\+\_\+queue\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ mage\+::task\+\_\+queue\hspace{0.3cm}{\ttfamily [static]}}
 
 The task queue. \hypertarget{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f}{}\label{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f} 
 \index{mage@{mage}!task\+\_\+queue\+\_\+mutex@{task\+\_\+queue\+\_\+mutex}}
@@ -836,7 +1293,13 @@ The mutex for exclusive access to the task queue. \hypertarget{namespacemage_a8c
 \subsubsection{\texorpdfstring{tasks\+\_\+running\+\_\+condition}{tasks\_running\_condition}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable}$\ast$ mage\+::tasks\+\_\+running\+\_\+condition\hspace{0.3cm}{\ttfamily [static]}}
 
-The running condition variable for exclusive access to the number of unfinished tasks and for signaling on updates. \hypertarget{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c}{}\label{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c} 
+The running condition variable for exclusive access to the number of unfinished tasks and for signaling on updates. \hypertarget{namespacemage_aacfaaced796400d312a5d2cc43b5b09a}{}\label{namespacemage_aacfaaced796400d312a5d2cc43b5b09a} 
+\index{mage@{mage}!Thread\+Index@{Thread\+Index}}
+\index{Thread\+Index@{Thread\+Index}!mage@{mage}}
+\subsubsection{\texorpdfstring{Thread\+Index}{ThreadIndex}}
+{\footnotesize\ttfamily thread\+\_\+local size\+\_\+t mage\+::\+Thread\+Index}
+
+\hypertarget{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c}{}\label{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c} 
 \index{mage@{mage}!threads@{threads}}
 \index{threads@{threads}!mage@{mage}}
 \subsubsection{\texorpdfstring{threads}{threads}}
@@ -876,10 +1339,33 @@ The input element descriptor for a \hyperlink{structmage_1_1_t_l_vertex}{T\+L\+V
       D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \}
     \}
 \end{DoxyCode}
-The input element descriptor for a \hyperlink{structmage_1_1_vertex}{Vertex}. \hypertarget{namespacemage_a17c3448f9fba7521d188d30bdfb77e33}{}\label{namespacemage_a17c3448f9fba7521d188d30bdfb77e33} 
+The input element descriptor for a \hyperlink{structmage_1_1_vertex}{Vertex}. \hypertarget{namespacemage_a801b62787c07e98767a88f55154269a1}{}\label{namespacemage_a801b62787c07e98767a88f55154269a1} 
+\index{mage@{mage}!work\+\_\+list@{work\+\_\+list}}
+\index{work\+\_\+list@{work\+\_\+list}!mage@{mage}}
+\subsubsection{\texorpdfstring{work\+\_\+list}{work\_list}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_parallel_for_loop}{Parallel\+For\+Loop}$\ast$ mage\+::work\+\_\+list = nullptr\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a06c363811ca265ff89fbbe2b80e1e3d2}{}\label{namespacemage_a06c363811ca265ff89fbbe2b80e1e3d2} 
+\index{mage@{mage}!work\+\_\+list\+\_\+condition@{work\+\_\+list\+\_\+condition}}
+\index{work\+\_\+list\+\_\+condition@{work\+\_\+list\+\_\+condition}!mage@{mage}}
+\subsubsection{\texorpdfstring{work\+\_\+list\+\_\+condition}{work\_list\_condition}}
+{\footnotesize\ttfamily condition\+\_\+variable mage\+::work\+\_\+list\+\_\+condition\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a7e67d8a6b0029abe8f1480807f18b16a}{}\label{namespacemage_a7e67d8a6b0029abe8f1480807f18b16a} 
+\index{mage@{mage}!work\+\_\+list\+\_\+mutex@{work\+\_\+list\+\_\+mutex}}
+\index{work\+\_\+list\+\_\+mutex@{work\+\_\+list\+\_\+mutex}!mage@{mage}}
+\subsubsection{\texorpdfstring{work\+\_\+list\+\_\+mutex}{work\_list\_mutex}}
+{\footnotesize\ttfamily mutex mage\+::work\+\_\+list\+\_\+mutex\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a17c3448f9fba7521d188d30bdfb77e33}{}\label{namespacemage_a17c3448f9fba7521d188d30bdfb77e33} 
 \index{mage@{mage}!worker\+\_\+semaphore@{worker\+\_\+semaphore}}
 \index{worker\+\_\+semaphore@{worker\+\_\+semaphore}!mage@{mage}}
 \subsubsection{\texorpdfstring{worker\+\_\+semaphore}{worker\_semaphore}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_semaphore}{Semaphore}$\ast$ mage\+::worker\+\_\+semaphore\hspace{0.3cm}{\ttfamily [static]}}
 
-The worker semaphore for being able to work. 
+The worker semaphore for being able to work. \hypertarget{namespacemage_ad2f58114b13692a9af3222fcd3b2ec2e}{}\label{namespacemage_ad2f58114b13692a9af3222fcd3b2ec2e} 
+\index{mage@{mage}!workers@{workers}}
+\index{workers@{workers}!mage@{mage}}
+\subsubsection{\texorpdfstring{workers}{workers}}
+{\footnotesize\ttfamily vector$<$ thread $>$ mage\+::workers\hspace{0.3cm}{\ttfamily [static]}}
+

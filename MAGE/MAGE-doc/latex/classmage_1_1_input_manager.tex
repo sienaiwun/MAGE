@@ -1,0 +1,181 @@
+\hypertarget{classmage_1_1_input_manager}{}\section{mage\+:\+:Input\+Manager Class Reference}
+\label{classmage_1_1_input_manager}\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+
+
+{\ttfamily \#include $<$input\+\_\+manager.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:Input\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_input_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classmage_1_1_keyboard}{Keyboard} $\ast$ \hyperlink{classmage_1_1_input_manager_a5b72139e30d1f3da6cda50f2989c1350}{Get\+Keyboard} () const
+\item 
+const \hyperlink{classmage_1_1_mouse}{Mouse} $\ast$ \hyperlink{classmage_1_1_input_manager_ad268916e07f44e40bf267efa0e673186}{Get\+Mouse} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_input_manager_afc28df27a0251c242113a9761c007534}{Input\+Manager} (H\+W\+ND hwindow)
+\item 
+virtual \hyperlink{classmage_1_1_input_manager_a287ca0e91ec079227c102f7eadd5bb46}{$\sim$\+Input\+Manager} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_input_manager_af3ca0717e37916463cc4f40c7d174b33}{Initialize\+DI} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_input_manager_af16e113638fed35d34256f99bf061ef4}{Uninitialize\+DI} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_input_manager_a34f114c4c667a4a14ce8236b35d308d8}{Initialize\+Input\+Systems} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_input_manager_abecb06833973cab1ccabc7b28580209d}{Uninitialize\+Input\+Systems} ()
+\item 
+void \hyperlink{classmage_1_1_input_manager_a5e516969ff4ae9876b98c28f48f93726}{Update} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+H\+W\+ND \hyperlink{classmage_1_1_input_manager_a07a1d3a593bc497c747c6d2e4605a229}{m\+\_\+hwindow}
+\item 
+I\+Direct\+Input8 $\ast$ \hyperlink{classmage_1_1_input_manager_a7341c72992efb7bee780111118f9589b}{m\+\_\+di}
+\item 
+\hyperlink{classmage_1_1_keyboard}{Keyboard} $\ast$ \hyperlink{classmage_1_1_input_manager_a04251723b39860d1436295ca74d5e997}{m\+\_\+keyboard}
+\item 
+\hyperlink{classmage_1_1_mouse}{Mouse} $\ast$ \hyperlink{classmage_1_1_input_manager_a41f41c1c021cc6dae422cb9abe7b8f87}{m\+\_\+mouse}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmage_1_1_input_manager_a3e1914489e4bed4f9f23cdeab34a43dc}{Engine}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of input managers. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_input_manager_afc28df27a0251c242113a9761c007534}{}\label{classmage_1_1_input_manager_afc28df27a0251c242113a9761c007534} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!Input\+Manager@{Input\+Manager}}
+\index{Input\+Manager@{Input\+Manager}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Input\+Manager()}{InputManager()}}
+{\footnotesize\ttfamily mage\+::\+Input\+Manager\+::\+Input\+Manager (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwindow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Constructs an input manager for the given window handle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hwindow} & The handle of the parent window. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_input_manager_a287ca0e91ec079227c102f7eadd5bb46}{}\label{classmage_1_1_input_manager_a287ca0e91ec079227c102f7eadd5bb46} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!````~Input\+Manager@{$\sim$\+Input\+Manager}}
+\index{````~Input\+Manager@{$\sim$\+Input\+Manager}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Input\+Manager()}{~InputManager()}}
+{\footnotesize\ttfamily mage\+::\+Input\+Manager\+::$\sim$\+Input\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Destructs this input manager. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_input_manager_a5b72139e30d1f3da6cda50f2989c1350}{}\label{classmage_1_1_input_manager_a5b72139e30d1f3da6cda50f2989c1350} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!Get\+Keyboard@{Get\+Keyboard}}
+\index{Get\+Keyboard@{Get\+Keyboard}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Keyboard()}{GetKeyboard()}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_keyboard}{Keyboard}$\ast$ mage\+::\+Input\+Manager\+::\+Get\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the keyboard of this input manager.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the keyboard of this input manager. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_input_manager_ad268916e07f44e40bf267efa0e673186}{}\label{classmage_1_1_input_manager_ad268916e07f44e40bf267efa0e673186} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!Get\+Mouse@{Get\+Mouse}}
+\index{Get\+Mouse@{Get\+Mouse}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Mouse()}{GetMouse()}}
+{\footnotesize\ttfamily const \hyperlink{classmage_1_1_mouse}{Mouse}$\ast$ mage\+::\+Input\+Manager\+::\+Get\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the mouse of this input manager.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the mouse of this input manager. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_input_manager_af3ca0717e37916463cc4f40c7d174b33}{}\label{classmage_1_1_input_manager_af3ca0717e37916463cc4f40c7d174b33} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!Initialize\+DI@{Initialize\+DI}}
+\index{Initialize\+DI@{Initialize\+DI}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Initialize\+D\+I()}{InitializeDI()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Input\+Manager\+::\+Initialize\+DI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initializes the Direct\+Input object of this input manager.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_input_manager_a34f114c4c667a4a14ce8236b35d308d8}{}\label{classmage_1_1_input_manager_a34f114c4c667a4a14ce8236b35d308d8} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!Initialize\+Input\+Systems@{Initialize\+Input\+Systems}}
+\index{Initialize\+Input\+Systems@{Initialize\+Input\+Systems}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Initialize\+Input\+Systems()}{InitializeInputSystems()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Input\+Manager\+::\+Initialize\+Input\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initializes the different input systems of this input manager. \hypertarget{classmage_1_1_input_manager_af16e113638fed35d34256f99bf061ef4}{}\label{classmage_1_1_input_manager_af16e113638fed35d34256f99bf061ef4} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!Uninitialize\+DI@{Uninitialize\+DI}}
+\index{Uninitialize\+DI@{Uninitialize\+DI}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Uninitialize\+D\+I()}{UninitializeDI()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Input\+Manager\+::\+Uninitialize\+DI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Uninitializes the Direct\+Input object of this input manager.
+
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_input_manager_abecb06833973cab1ccabc7b28580209d}{}\label{classmage_1_1_input_manager_abecb06833973cab1ccabc7b28580209d} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!Uninitialize\+Input\+Systems@{Uninitialize\+Input\+Systems}}
+\index{Uninitialize\+Input\+Systems@{Uninitialize\+Input\+Systems}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Uninitialize\+Input\+Systems()}{UninitializeInputSystems()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Input\+Manager\+::\+Uninitialize\+Input\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initializes the different input systems of this manager. \hypertarget{classmage_1_1_input_manager_a5e516969ff4ae9876b98c28f48f93726}{}\label{classmage_1_1_input_manager_a5e516969ff4ae9876b98c28f48f93726} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!Update@{Update}}
+\index{Update@{Update}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void mage\+::\+Input\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Updates the state of the input systems of this input manager. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmage_1_1_input_manager_a3e1914489e4bed4f9f23cdeab34a43dc}{}\label{classmage_1_1_input_manager_a3e1914489e4bed4f9f23cdeab34a43dc} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!Engine@{Engine}}
+\index{Engine@{Engine}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Engine}{Engine}}
+{\footnotesize\ttfamily friend class \hyperlink{classmage_1_1_engine}{Engine}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_input_manager_a7341c72992efb7bee780111118f9589b}{}\label{classmage_1_1_input_manager_a7341c72992efb7bee780111118f9589b} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!m\+\_\+di@{m\+\_\+di}}
+\index{m\+\_\+di@{m\+\_\+di}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+di}{m\_di}}
+{\footnotesize\ttfamily I\+Direct\+Input8$\ast$ mage\+::\+Input\+Manager\+::m\+\_\+di\hspace{0.3cm}{\ttfamily [private]}}
+
+The Direct\+Input object of this input manager.
+
+The methods of the I\+Direct\+Input8 interface are used to enumerate, create, and retrieve the status of Microsoft Direct\+Input device. \hypertarget{classmage_1_1_input_manager_a07a1d3a593bc497c747c6d2e4605a229}{}\label{classmage_1_1_input_manager_a07a1d3a593bc497c747c6d2e4605a229} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!m\+\_\+hwindow@{m\+\_\+hwindow}}
+\index{m\+\_\+hwindow@{m\+\_\+hwindow}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+hwindow}{m\_hwindow}}
+{\footnotesize\ttfamily H\+W\+ND mage\+::\+Input\+Manager\+::m\+\_\+hwindow\hspace{0.3cm}{\ttfamily [private]}}
+
+The handle of the parent window. \hypertarget{classmage_1_1_input_manager_a04251723b39860d1436295ca74d5e997}{}\label{classmage_1_1_input_manager_a04251723b39860d1436295ca74d5e997} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!m\+\_\+keyboard@{m\+\_\+keyboard}}
+\index{m\+\_\+keyboard@{m\+\_\+keyboard}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+keyboard}{m\_keyboard}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_keyboard}{Keyboard}$\ast$ mage\+::\+Input\+Manager\+::m\+\_\+keyboard\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the keyboard of this input manager. \hypertarget{classmage_1_1_input_manager_a41f41c1c021cc6dae422cb9abe7b8f87}{}\label{classmage_1_1_input_manager_a41f41c1c021cc6dae422cb9abe7b8f87} 
+\index{mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}!m\+\_\+mouse@{m\+\_\+mouse}}
+\index{m\+\_\+mouse@{m\+\_\+mouse}!mage\+::\+Input\+Manager@{mage\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+mouse}{m\_mouse}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_mouse}{Mouse}$\ast$ mage\+::\+Input\+Manager\+::m\+\_\+mouse\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the mouse of this input manager. 
