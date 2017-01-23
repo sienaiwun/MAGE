@@ -1,0 +1,210 @@
+\hypertarget{classmage_1_1_camera}{}\section{mage\+:\+:Camera Class Reference}
+\label{classmage_1_1_camera}\index{mage\+::\+Camera@{mage\+::\+Camera}}
+
+
+{\ttfamily \#include $<$camera.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_camera}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classmage_1_1_camera_ae56c0542ae1a480c7fb15d737bf16de0}{$\sim$\+Camera} ()
+\item 
+\hyperlink{structmage_1_1_transform}{Transform} \& \hyperlink{classmage_1_1_camera_aaa5f4f2b5b13ffb1f70b77aec8579be5}{Get\+Transform} ()
+\item 
+const \hyperlink{structmage_1_1_transform}{Transform} \& \hyperlink{classmage_1_1_camera_adac4b7ef332babf36e0c9f271f1fff76}{Get\+Transform} () const
+\item 
+float \hyperlink{classmage_1_1_camera_a2285655605035118861297b2449a3443}{Get\+Width} () const
+\item 
+void \hyperlink{classmage_1_1_camera_aa99e2452c6d0629e7018d32cb9d222dd}{Set\+Width} (float width)
+\item 
+float \hyperlink{classmage_1_1_camera_a4c6c5e96085651ce29cd6e87543d21ec}{Get\+Height} () const
+\item 
+void \hyperlink{classmage_1_1_camera_a53ca727373580b145339d4dd93e2c65f}{Set\+Height} (float height)
+\item 
+void \hyperlink{classmage_1_1_camera_a637d09eeedc8015c661751f3b192e252}{Set\+Width\+And\+Height} (float width, float height)
+\item 
+float \hyperlink{classmage_1_1_camera_a175e3c36526a8a3e28cd2f8bd1701c55}{Get\+NearZ} () const
+\item 
+void \hyperlink{classmage_1_1_camera_a4aa60bcc75822457ccb8be2ff0ce93a4}{Set\+NearZ} (float near\+\_\+z)
+\item 
+float \hyperlink{classmage_1_1_camera_a7f293a8711086b3419fe3b4224ff2778}{Get\+FarZ} () const
+\item 
+void \hyperlink{classmage_1_1_camera_aaad9cb302d7ceb2515c2a23f094a6ce9}{Set\+FarZ} (float far\+\_\+z)
+\item 
+void \hyperlink{classmage_1_1_camera_a1800467939c0806405e9a708dbd838f8}{Set\+Near\+And\+FarZ} (float near\+\_\+z, float far\+\_\+z)
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_camera_a4254e1c9d65c41b27842f35870fd7960}{Get\+View\+To\+Projection\+Matrix} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_camera_a21ce33c0d4f4e3fb2cbbd9ba8d024a23}{Camera} (const X\+M\+M\+A\+T\+R\+IX \&view\+\_\+to\+\_\+projection, float width, float height, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z, const \hyperlink{structmage_1_1_transform}{Transform} \&transform=\hyperlink{structmage_1_1_transform}{Transform}())
+\item 
+virtual void \hyperlink{classmage_1_1_camera_a7f43b79d363e0c72b0bb42a06b65fb7e}{Update\+View\+To\+Projection\+Matrix} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_transform}{Transform} \hyperlink{classmage_1_1_camera_a5f7bd764e2a4a9221bf1f157fa23b3af}{m\+\_\+transform}
+\item 
+float \hyperlink{classmage_1_1_camera_acc8f371214af02fdac9a1ff04508c4ca}{m\+\_\+width}
+\item 
+float \hyperlink{classmage_1_1_camera_a48485eca596702f0e5985ec8b7db35a5}{m\+\_\+height}
+\item 
+float \hyperlink{classmage_1_1_camera_a685f8700a29d1f1eff2bec353c3ec970}{m\+\_\+near\+\_\+z}
+\item 
+float \hyperlink{classmage_1_1_camera_abe2eeca725ce3da238256007454b241f}{m\+\_\+far\+\_\+z}
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_camera_a37b814e26a4c733a40a5f6fea691e958}{m\+\_\+view\+\_\+to\+\_\+projection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_camera_ae56c0542ae1a480c7fb15d737bf16de0}{}\label{classmage_1_1_camera_ae56c0542ae1a480c7fb15d737bf16de0} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!````~Camera@{$\sim$\+Camera}}
+\index{````~Camera@{$\sim$\+Camera}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{$\sim$\+Camera()}{~Camera()}}
+{\footnotesize\ttfamily virtual mage\+::\+Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\hypertarget{classmage_1_1_camera_a21ce33c0d4f4e3fb2cbbd9ba8d024a23}{}\label{classmage_1_1_camera_a21ce33c0d4f4e3fb2cbbd9ba8d024a23} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily mage\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const X\+M\+M\+A\+T\+R\+IX \&}]{view\+\_\+to\+\_\+projection,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{near\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+NEAR\+\_\+Z},  }\item[{float}]{far\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FAR\+\_\+Z},  }\item[{const \hyperlink{structmage_1_1_transform}{Transform} \&}]{transform = {\ttfamily \hyperlink{structmage_1_1_transform}{Transform}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_camera_a7f293a8711086b3419fe3b4224ff2778}{}\label{classmage_1_1_camera_a7f293a8711086b3419fe3b4224ff2778} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+FarZ@{Get\+FarZ}}
+\index{Get\+FarZ@{Get\+FarZ}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Far\+Z()}{GetFarZ()}}
+{\footnotesize\ttfamily float mage\+::\+Camera\+::\+Get\+FarZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_camera_a4c6c5e96085651ce29cd6e87543d21ec}{}\label{classmage_1_1_camera_a4c6c5e96085651ce29cd6e87543d21ec} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
+{\footnotesize\ttfamily float mage\+::\+Camera\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_camera_a175e3c36526a8a3e28cd2f8bd1701c55}{}\label{classmage_1_1_camera_a175e3c36526a8a3e28cd2f8bd1701c55} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+NearZ@{Get\+NearZ}}
+\index{Get\+NearZ@{Get\+NearZ}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Near\+Z()}{GetNearZ()}}
+{\footnotesize\ttfamily float mage\+::\+Camera\+::\+Get\+NearZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_camera_aaa5f4f2b5b13ffb1f70b77aec8579be5}{}\label{classmage_1_1_camera_aaa5f4f2b5b13ffb1f70b77aec8579be5} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+Transform@{Get\+Transform}}
+\index{Get\+Transform@{Get\+Transform}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_transform}{Transform}\& mage\+::\+Camera\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_camera_adac4b7ef332babf36e0c9f271f1fff76}{}\label{classmage_1_1_camera_adac4b7ef332babf36e0c9f271f1fff76} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+Transform@{Get\+Transform}}
+\index{Get\+Transform@{Get\+Transform}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_transform}{Transform}\& mage\+::\+Camera\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_camera_a4254e1c9d65c41b27842f35870fd7960}{}\label{classmage_1_1_camera_a4254e1c9d65c41b27842f35870fd7960} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+View\+To\+Projection\+Matrix@{Get\+View\+To\+Projection\+Matrix}}
+\index{Get\+View\+To\+Projection\+Matrix@{Get\+View\+To\+Projection\+Matrix}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+View\+To\+Projection\+Matrix()}{GetViewToProjectionMatrix()}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Camera\+::\+Get\+View\+To\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_camera_a2285655605035118861297b2449a3443}{}\label{classmage_1_1_camera_a2285655605035118861297b2449a3443} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
+{\footnotesize\ttfamily float mage\+::\+Camera\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_camera_aaad9cb302d7ceb2515c2a23f094a6ce9}{}\label{classmage_1_1_camera_aaad9cb302d7ceb2515c2a23f094a6ce9} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Set\+FarZ@{Set\+FarZ}}
+\index{Set\+FarZ@{Set\+FarZ}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Far\+Z()}{SetFarZ()}}
+{\footnotesize\ttfamily void mage\+::\+Camera\+::\+Set\+FarZ (\begin{DoxyParamCaption}\item[{float}]{far\+\_\+z }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_camera_a53ca727373580b145339d4dd93e2c65f}{}\label{classmage_1_1_camera_a53ca727373580b145339d4dd93e2c65f} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Set\+Height@{Set\+Height}}
+\index{Set\+Height@{Set\+Height}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Height()}{SetHeight()}}
+{\footnotesize\ttfamily void mage\+::\+Camera\+::\+Set\+Height (\begin{DoxyParamCaption}\item[{float}]{height }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_camera_a1800467939c0806405e9a708dbd838f8}{}\label{classmage_1_1_camera_a1800467939c0806405e9a708dbd838f8} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Set\+Near\+And\+FarZ@{Set\+Near\+And\+FarZ}}
+\index{Set\+Near\+And\+FarZ@{Set\+Near\+And\+FarZ}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Near\+And\+Far\+Z()}{SetNearAndFarZ()}}
+{\footnotesize\ttfamily void mage\+::\+Camera\+::\+Set\+Near\+And\+FarZ (\begin{DoxyParamCaption}\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_camera_a4aa60bcc75822457ccb8be2ff0ce93a4}{}\label{classmage_1_1_camera_a4aa60bcc75822457ccb8be2ff0ce93a4} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Set\+NearZ@{Set\+NearZ}}
+\index{Set\+NearZ@{Set\+NearZ}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Near\+Z()}{SetNearZ()}}
+{\footnotesize\ttfamily void mage\+::\+Camera\+::\+Set\+NearZ (\begin{DoxyParamCaption}\item[{float}]{near\+\_\+z }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_camera_aa99e2452c6d0629e7018d32cb9d222dd}{}\label{classmage_1_1_camera_aa99e2452c6d0629e7018d32cb9d222dd} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Set\+Width@{Set\+Width}}
+\index{Set\+Width@{Set\+Width}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Width()}{SetWidth()}}
+{\footnotesize\ttfamily void mage\+::\+Camera\+::\+Set\+Width (\begin{DoxyParamCaption}\item[{float}]{width }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_camera_a637d09eeedc8015c661751f3b192e252}{}\label{classmage_1_1_camera_a637d09eeedc8015c661751f3b192e252} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Set\+Width\+And\+Height@{Set\+Width\+And\+Height}}
+\index{Set\+Width\+And\+Height@{Set\+Width\+And\+Height}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Width\+And\+Height()}{SetWidthAndHeight()}}
+{\footnotesize\ttfamily void mage\+::\+Camera\+::\+Set\+Width\+And\+Height (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_camera_a7f43b79d363e0c72b0bb42a06b65fb7e}{}\label{classmage_1_1_camera_a7f43b79d363e0c72b0bb42a06b65fb7e} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!Update\+View\+To\+Projection\+Matrix@{Update\+View\+To\+Projection\+Matrix}}
+\index{Update\+View\+To\+Projection\+Matrix@{Update\+View\+To\+Projection\+Matrix}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{Update\+View\+To\+Projection\+Matrix()}{UpdateViewToProjectionMatrix()}}
+{\footnotesize\ttfamily virtual void mage\+::\+Camera\+::\+Update\+View\+To\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classmage_1_1_perspective_camera_a7ae5681ec62be68e4517c0407a1349f6}{mage\+::\+Perspective\+Camera}, and \hyperlink{classmage_1_1_orthographic_camera_a8f1f2c4209b3126c92ecbe8d0e03c23e}{mage\+::\+Orthographic\+Camera}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_camera_abe2eeca725ce3da238256007454b241f}{}\label{classmage_1_1_camera_abe2eeca725ce3da238256007454b241f} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+far\+\_\+z@{m\+\_\+far\+\_\+z}}
+\index{m\+\_\+far\+\_\+z@{m\+\_\+far\+\_\+z}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+far\+\_\+z}{m\_far\_z}}
+{\footnotesize\ttfamily float mage\+::\+Camera\+::m\+\_\+far\+\_\+z\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_camera_a48485eca596702f0e5985ec8b7db35a5}{}\label{classmage_1_1_camera_a48485eca596702f0e5985ec8b7db35a5} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+height@{m\+\_\+height}}
+\index{m\+\_\+height@{m\+\_\+height}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+height}{m\_height}}
+{\footnotesize\ttfamily float mage\+::\+Camera\+::m\+\_\+height\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_camera_a685f8700a29d1f1eff2bec353c3ec970}{}\label{classmage_1_1_camera_a685f8700a29d1f1eff2bec353c3ec970} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+near\+\_\+z@{m\+\_\+near\+\_\+z}}
+\index{m\+\_\+near\+\_\+z@{m\+\_\+near\+\_\+z}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+near\+\_\+z}{m\_near\_z}}
+{\footnotesize\ttfamily float mage\+::\+Camera\+::m\+\_\+near\+\_\+z\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_camera_a5f7bd764e2a4a9221bf1f157fa23b3af}{}\label{classmage_1_1_camera_a5f7bd764e2a4a9221bf1f157fa23b3af} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+transform@{m\+\_\+transform}}
+\index{m\+\_\+transform@{m\+\_\+transform}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_transform}{Transform} mage\+::\+Camera\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_camera_a37b814e26a4c733a40a5f6fea691e958}{}\label{classmage_1_1_camera_a37b814e26a4c733a40a5f6fea691e958} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+view\+\_\+to\+\_\+projection@{m\+\_\+view\+\_\+to\+\_\+projection}}
+\index{m\+\_\+view\+\_\+to\+\_\+projection@{m\+\_\+view\+\_\+to\+\_\+projection}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+view\+\_\+to\+\_\+projection}{m\_view\_to\_projection}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Camera\+::m\+\_\+view\+\_\+to\+\_\+projection\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_camera_acc8f371214af02fdac9a1ff04508c4ca}{}\label{classmage_1_1_camera_acc8f371214af02fdac9a1ff04508c4ca} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+width@{m\+\_\+width}}
+\index{m\+\_\+width@{m\+\_\+width}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+width}{m\_width}}
+{\footnotesize\ttfamily float mage\+::\+Camera\+::m\+\_\+width\hspace{0.3cm}{\ttfamily [protected]}}
+

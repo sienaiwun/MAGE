@@ -4,6 +4,7 @@ var searchData=
   ['parallelfor',['ParallelFor',['../namespacemage.html#a029a62d168a0c96ddd9d34b3b5294be0',1,'mage']]],
   ['parallelforloop',['ParallelForLoop',['../classmage_1_1_parallel_for_loop.html#aece78e3074ed1c04f49c62da400a1aa9',1,'mage::ParallelForLoop']]],
   ['parallelinit',['ParallelInit',['../namespacemage.html#a14b68ac56f898260b891bd264b57dd73',1,'mage']]],
+  ['perspectivecamera',['PerspectiveCamera',['../classmage_1_1_perspective_camera.html#abe06d43a2431357d8cdb2acaa16261cc',1,'mage::PerspectiveCamera::PerspectiveCamera(float width, float height, float fov_y=MAGE_DEFAULT_CAMERA_FOV_Y, float near_z=MAGE_DEFAULT_CAMERA_NEAR_Z, float far_z=MAGE_DEFAULT_CAMERA_FAR_Z, const Transform &amp;transform=Transform())'],['../classmage_1_1_perspective_camera.html#a198d1460d9312af27ed6ef2ac28b616d',1,'mage::PerspectiveCamera::PerspectiveCamera(const PerspectiveCamera &amp;camera)']]],
   ['post',['Post',['../classmage_1_1_semaphore.html#a354ea9743f9794b14a3f032e0443b214',1,'mage::Semaphore']]],
   ['preparefont',['PrepareFont',['../classmage_1_1_font.html#a4cbf910a292f2957b43fd4060db6aba4',1,'mage::Font']]],
   ['printconsoleheader',['PrintConsoleHeader',['../namespacemage.html#a064756443bd8a1af6974f22c81d29ed0',1,'mage']]],

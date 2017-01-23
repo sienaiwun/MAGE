@@ -1,6 +1,10 @@
 var searchData=
 [
   ['_7eabstractvalue',['~AbstractValue',['../structmage_1_1_variable_1_1_abstract_value.html#ae3334a01bd2e0a2ea6bd8d3530cf60eb',1,'mage::Variable::AbstractValue']]],
+  ['_7ecamera',['~Camera',['../classmage_1_1_camera.html#ae56c0542ae1a480c7fb15d737bf16de0',1,'mage::Camera']]],
+  ['_7ecameranode',['~CameraNode',['../classmage_1_1_camera_node.html#a2b66360b99bf03ee2f66a3a74be31792',1,'mage::CameraNode']]],
+  ['_7ecartesianaxessystem',['~CartesianAxesSystem',['../structmage_1_1_cartesian_axes_system.html#a1839e7f85ba5cc28f99c8b5d7bfd27eb',1,'mage::CartesianAxesSystem']]],
+  ['_7ecartesiancoordinatesystem',['~CartesianCoordinateSystem',['../structmage_1_1_cartesian_coordinate_system.html#a67ddbe028549f726db16066999c2c7c5',1,'mage::CartesianCoordinateSystem']]],
   ['_7econditionvariable',['~ConditionVariable',['../classmage_1_1_condition_variable.html#accd5253beb65b2904428afdb889cf00b',1,'mage::ConditionVariable']]],
   ['_7edeviceenumeration',['~DeviceEnumeration',['../classmage_1_1_device_enumeration.html#a6a8cfc259c1e8c98ba0a9780c42a5ffe',1,'mage::DeviceEnumeration']]],
   ['_7eengine',['~Engine',['../classmage_1_1_engine.html#a34628556f8397d70ed018d71e343c2f5',1,'mage::Engine']]],
@@ -13,6 +17,8 @@ var searchData=
   ['_7emouse',['~Mouse',['../classmage_1_1_mouse.html#a855f1075ae774c8417d3da7a1e02d580',1,'mage::Mouse']]],
   ['_7emutex',['~Mutex',['../classmage_1_1_mutex.html#a143d82ec7bb43f953a1703caa7972e9d',1,'mage::Mutex']]],
   ['_7emutexlock',['~MutexLock',['../structmage_1_1_mutex_lock.html#a2631e8878646b2d25b136b6adb55d553',1,'mage::MutexLock']]],
+  ['_7eorthographiccamera',['~OrthographicCamera',['../classmage_1_1_orthographic_camera.html#a2ab3dbd44e2a6fad6a88e3733cc22ac9',1,'mage::OrthographicCamera']]],
+  ['_7eperspectivecamera',['~PerspectiveCamera',['../classmage_1_1_perspective_camera.html#abf42546e2560d7d62e7e62680a6da02b',1,'mage::PerspectiveCamera']]],
   ['_7eprogressreporter',['~ProgressReporter',['../classmage_1_1_progress_reporter.html#aa543239c6dd4474a77cf4cf6904c1b26',1,'mage::ProgressReporter']]],
   ['_7ereadwritemutex',['~ReadWriteMutex',['../classmage_1_1_read_write_mutex.html#a73676d9414658d63edfe443ee1d55c8b',1,'mage::ReadWriteMutex']]],
   ['_7ereadwritemutexlock',['~ReadWriteMutexLock',['../structmage_1_1_read_write_mutex_lock.html#a64b600234d29ba7307fcd77a17486582',1,'mage::ReadWriteMutexLock']]],
@@ -20,10 +26,13 @@ var searchData=
   ['_7erenderer',['~Renderer',['../classmage_1_1_renderer.html#a997e041f28cc71d069d1ab7d29fe6ced',1,'mage::Renderer']]],
   ['_7eresource',['~Resource',['../classmage_1_1_resource.html#a80112db991a7dfd1dc0b24967981ac60',1,'mage::Resource']]],
   ['_7eresourcemanager',['~ResourceManager',['../classmage_1_1_resource_manager.html#af3b6bf56e57bd3df0eb569510dd1483b',1,'mage::ResourceManager']]],
+  ['_7escenenode',['~SceneNode',['../classmage_1_1_scene_node.html#ad7ae54e25fb970772c0b0a6c5bac57ff',1,'mage::SceneNode']]],
   ['_7esemaphore',['~Semaphore',['../classmage_1_1_semaphore.html#a991ed365c28e4a9c63ff34a5efeb012d',1,'mage::Semaphore']]],
+  ['_7estate',['~State',['../classmage_1_1_state.html#aa970b0dd628870e72a7f7fffcff1db13',1,'mage::State']]],
   ['_7estatemanager',['~StateManager',['../classmage_1_1_state_manager.html#af4bc45cc90437f54e2776e2a8ee747e1',1,'mage::StateManager']]],
   ['_7etask',['~Task',['../classmage_1_1_task.html#a66a892ec09928a904c7c156098a1abbf',1,'mage::Task']]],
   ['_7etimer',['~Timer',['../classmage_1_1_timer.html#aa91cebe8c59c189fde93932fde10265c',1,'mage::Timer']]],
+  ['_7etransform',['~Transform',['../structmage_1_1_transform.html#a3380713ee853d112c140e8688c0f73b5',1,'mage::Transform']]],
   ['_7evalue',['~Value',['../structmage_1_1_variable_1_1_value.html#ab0b88d59c1049b89557fbaf649a3b459',1,'mage::Variable::Value']]],
   ['_7evariable',['~Variable',['../structmage_1_1_variable.html#a8f4d3e950b25b14e996ad074e42a5e9e',1,'mage::Variable']]],
   ['_7evariablescript',['~VariableScript',['../classmage_1_1_variable_script.html#a8c488e779a6444559bded669a3e038c8',1,'mage::VariableScript']]]

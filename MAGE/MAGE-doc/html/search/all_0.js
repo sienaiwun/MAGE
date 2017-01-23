@@ -6,6 +6,7 @@ var searchData=
   ['abstractvalue',['AbstractValue',['../structmage_1_1_variable_1_1_abstract_value.html',1,'mage::Variable']]],
   ['acquireread',['AcquireRead',['../classmage_1_1_read_write_mutex.html#af78045647078aaf3966c8f1b06e35c92',1,'mage::ReadWriteMutex']]],
   ['acquirewrite',['AcquireWrite',['../classmage_1_1_read_write_mutex.html#a76137013107a9c2c1fc05c1e0747965e',1,'mage::ReadWriteMutex']]],
+  ['addchild',['AddChild',['../classmage_1_1_scene_node.html#ac07f89af783b1658a1f74205914f6fa3',1,'mage::SceneNode']]],
   ['addresource',['AddResource',['../classmage_1_1_resource_manager.html#a358d8bcb9a0812cc69ff1e8cd8234988',1,'mage::ResourceManager']]],
   ['addrotation',['AddRotation',['../structmage_1_1_transform.html#a71126843acf10e00d0381b5463978aba',1,'mage::Transform::AddRotation(float x, float y, float z)'],['../structmage_1_1_transform.html#a10825624e694790a60e0ea507207132e',1,'mage::Transform::AddRotation(const XMFLOAT3 &amp;rotation)']]],
   ['addrotationx',['AddRotationX',['../structmage_1_1_transform.html#ae2a3a4a33ec637b9c39e97519bab5a11',1,'mage::Transform']]],

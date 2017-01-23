@@ -1,0 +1,98 @@
+\hypertarget{classmage_1_1_perspective_camera}{}\section{mage\+:\+:Perspective\+Camera Class Reference}
+\label{classmage_1_1_perspective_camera}\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+
+
+{\ttfamily \#include $<$perspective\+\_\+camera.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:Perspective\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_perspective_camera}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_perspective_camera_abe06d43a2431357d8cdb2acaa16261cc}{Perspective\+Camera} (float width, float height, float fov\+\_\+y=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+O\+V\+\_\+Y, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z, const \hyperlink{structmage_1_1_transform}{Transform} \&transform=\hyperlink{structmage_1_1_transform}{Transform}())
+\item 
+\hyperlink{classmage_1_1_perspective_camera_a198d1460d9312af27ed6ef2ac28b616d}{Perspective\+Camera} (const \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&camera)
+\item 
+virtual \hyperlink{classmage_1_1_perspective_camera_abf42546e2560d7d62e7e62680a6da02b}{$\sim$\+Perspective\+Camera} ()
+\item 
+float \hyperlink{classmage_1_1_perspective_camera_a15223034b30ca691c51de8850c033293}{Get\+F\+O\+VY} () const
+\item 
+void \hyperlink{classmage_1_1_perspective_camera_ab1d7366348319bedfda943583518b8ee}{Set\+F\+O\+VY} (float fov\+\_\+y)
+\item 
+void \hyperlink{classmage_1_1_perspective_camera_adef65223ab45c65cebf712dd14cea942}{Set\+View\+To\+Projection\+Matrix} (float width, float height, float fov\+\_\+y=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+O\+V\+\_\+Y, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmage_1_1_perspective_camera_a7ae5681ec62be68e4517c0407a1349f6}{Update\+View\+To\+Projection\+Matrix} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classmage_1_1_perspective_camera_abdcf1a0cdd247e0f7e14e70898678af6}{m\+\_\+fov\+\_\+y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_perspective_camera_abe06d43a2431357d8cdb2acaa16261cc}{}\label{classmage_1_1_perspective_camera_abe06d43a2431357d8cdb2acaa16261cc} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Perspective\+Camera@{Perspective\+Camera}}
+\index{Perspective\+Camera@{Perspective\+Camera}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{Perspective\+Camera()}{PerspectiveCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Perspective\+Camera\+::\+Perspective\+Camera (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{fov\+\_\+y = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FOV\+\_\+Y},  }\item[{float}]{near\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+NEAR\+\_\+Z},  }\item[{float}]{far\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FAR\+\_\+Z},  }\item[{const \hyperlink{structmage_1_1_transform}{Transform} \&}]{transform = {\ttfamily \hyperlink{structmage_1_1_transform}{Transform}()} }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_perspective_camera_a198d1460d9312af27ed6ef2ac28b616d}{}\label{classmage_1_1_perspective_camera_a198d1460d9312af27ed6ef2ac28b616d} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Perspective\+Camera@{Perspective\+Camera}}
+\index{Perspective\+Camera@{Perspective\+Camera}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{Perspective\+Camera()}{PerspectiveCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Perspective\+Camera\+::\+Perspective\+Camera (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera} \&}]{camera }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_perspective_camera_abf42546e2560d7d62e7e62680a6da02b}{}\label{classmage_1_1_perspective_camera_abf42546e2560d7d62e7e62680a6da02b} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!````~Perspective\+Camera@{$\sim$\+Perspective\+Camera}}
+\index{````~Perspective\+Camera@{$\sim$\+Perspective\+Camera}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{$\sim$\+Perspective\+Camera()}{~PerspectiveCamera()}}
+{\footnotesize\ttfamily virtual mage\+::\+Perspective\+Camera\+::$\sim$\+Perspective\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_perspective_camera_a15223034b30ca691c51de8850c033293}{}\label{classmage_1_1_perspective_camera_a15223034b30ca691c51de8850c033293} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Get\+F\+O\+VY@{Get\+F\+O\+VY}}
+\index{Get\+F\+O\+VY@{Get\+F\+O\+VY}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{Get\+F\+O\+V\+Y()}{GetFOVY()}}
+{\footnotesize\ttfamily float mage\+::\+Perspective\+Camera\+::\+Get\+F\+O\+VY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_perspective_camera_ab1d7366348319bedfda943583518b8ee}{}\label{classmage_1_1_perspective_camera_ab1d7366348319bedfda943583518b8ee} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Set\+F\+O\+VY@{Set\+F\+O\+VY}}
+\index{Set\+F\+O\+VY@{Set\+F\+O\+VY}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{Set\+F\+O\+V\+Y()}{SetFOVY()}}
+{\footnotesize\ttfamily void mage\+::\+Perspective\+Camera\+::\+Set\+F\+O\+VY (\begin{DoxyParamCaption}\item[{float}]{fov\+\_\+y }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_perspective_camera_adef65223ab45c65cebf712dd14cea942}{}\label{classmage_1_1_perspective_camera_adef65223ab45c65cebf712dd14cea942} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Set\+View\+To\+Projection\+Matrix@{Set\+View\+To\+Projection\+Matrix}}
+\index{Set\+View\+To\+Projection\+Matrix@{Set\+View\+To\+Projection\+Matrix}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{Set\+View\+To\+Projection\+Matrix()}{SetViewToProjectionMatrix()}}
+{\footnotesize\ttfamily void mage\+::\+Perspective\+Camera\+::\+Set\+View\+To\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{fov\+\_\+y = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FOV\+\_\+Y},  }\item[{float}]{near\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+NEAR\+\_\+Z},  }\item[{float}]{far\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FAR\+\_\+Z} }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_perspective_camera_a7ae5681ec62be68e4517c0407a1349f6}{}\label{classmage_1_1_perspective_camera_a7ae5681ec62be68e4517c0407a1349f6} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Update\+View\+To\+Projection\+Matrix@{Update\+View\+To\+Projection\+Matrix}}
+\index{Update\+View\+To\+Projection\+Matrix@{Update\+View\+To\+Projection\+Matrix}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{Update\+View\+To\+Projection\+Matrix()}{UpdateViewToProjectionMatrix()}}
+{\footnotesize\ttfamily virtual void mage\+::\+Perspective\+Camera\+::\+Update\+View\+To\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classmage_1_1_camera_a7f43b79d363e0c72b0bb42a06b65fb7e}{mage\+::\+Camera}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_perspective_camera_abdcf1a0cdd247e0f7e14e70898678af6}{}\label{classmage_1_1_perspective_camera_abdcf1a0cdd247e0f7e14e70898678af6} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!m\+\_\+fov\+\_\+y@{m\+\_\+fov\+\_\+y}}
+\index{m\+\_\+fov\+\_\+y@{m\+\_\+fov\+\_\+y}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+fov\+\_\+y}{m\_fov\_y}}
+{\footnotesize\ttfamily float mage\+::\+Perspective\+Camera\+::m\+\_\+fov\+\_\+y\hspace{0.3cm}{\ttfamily [protected]}}
+

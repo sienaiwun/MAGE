@@ -7,49 +7,17 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{structmage_1_1_transform_ae526dabb395eea9481fc072624f6bec4}{Set\+RotationX} (float x)
+\hyperlink{structmage_1_1_transform_a1a4624639a7da3608738f52b8cfc6bf3}{Transform} (const \hyperlink{structmage_1_1_cartesian_axes_system}{Cartesian\+Axes\+System} \&axes)
 \item 
-void \hyperlink{structmage_1_1_transform_a95c83ba282bf84aeb1c49d9ba8242609}{Set\+RotationY} (float y)
+\hyperlink{structmage_1_1_transform_a15966913f9d2f02f29da116637fc3bff}{Transform} (const \hyperlink{structmage_1_1_cartesian_coordinate_system}{Cartesian\+Coordinate\+System} \&coordinate\+\_\+system)
 \item 
-void \hyperlink{structmage_1_1_transform_ac587047697f24d2279e7b4f5ab333f44}{Set\+RotationZ} (float z)
+\hyperlink{structmage_1_1_transform_a3d324dc935e11ee5e82957d58553fd7d}{Transform} (const X\+M\+F\+L\+O\+A\+T3 \&translation=\{ 0.\+0f, 0.\+0f, 0.\+0f \}, const X\+M\+F\+L\+O\+A\+T3 \&rotation=\{ 0.\+0f, 0.\+0f, 0.\+0f \}, const X\+M\+F\+L\+O\+A\+T3 \&scale=\{ 1.\+0f, 1.\+0f, 1.\+0f \})
 \item 
-void \hyperlink{structmage_1_1_transform_a8e8fffa4ae9bc969196151daf4502421}{Set\+Rotation} (float x, float y, float z)
+\hyperlink{structmage_1_1_transform_a6cf7a754eff6ffe6f99f8942468d49bc}{Transform} (const \hyperlink{structmage_1_1_transform}{Transform} \&transform)
 \item 
-void \hyperlink{structmage_1_1_transform_a6b15a1591a10fe2984b7e8b0b8c92bd5}{Set\+Rotation} (const X\+M\+F\+L\+O\+A\+T3 \&rotation)
+\hyperlink{structmage_1_1_transform_a3380713ee853d112c140e8688c0f73b5}{$\sim$\+Transform} ()
 \item 
-void \hyperlink{structmage_1_1_transform_ae2a3a4a33ec637b9c39e97519bab5a11}{Add\+RotationX} (float x)
-\item 
-void \hyperlink{structmage_1_1_transform_afc958d2361a5606962b51646825287e2}{Add\+RotationY} (float y)
-\item 
-void \hyperlink{structmage_1_1_transform_ae70e192a7d98366b629c3d75a7d2d3bd}{Add\+RotationZ} (float z)
-\item 
-void \hyperlink{structmage_1_1_transform_a71126843acf10e00d0381b5463978aba}{Add\+Rotation} (float x, float y, float z)
-\item 
-void \hyperlink{structmage_1_1_transform_a10825624e694790a60e0ea507207132e}{Add\+Rotation} (const X\+M\+F\+L\+O\+A\+T3 \&rotation)
-\item 
-const X\+M\+F\+L\+O\+A\+T3 \& \hyperlink{structmage_1_1_transform_af049c07a3687a66f0359bd287f2a497d}{Get\+Rotation} () const
-\item 
-void \hyperlink{structmage_1_1_transform_a4d1fbb0b609e40b6b13e0e282259d223}{Set\+ScaleX} (float x)
-\item 
-void \hyperlink{structmage_1_1_transform_a77251bb29fbd26817c0b8c8aabb96ce4}{Set\+ScaleY} (float y)
-\item 
-void \hyperlink{structmage_1_1_transform_af8cd0167f776708697041544886ff2de}{Set\+ScaleZ} (float z)
-\item 
-void \hyperlink{structmage_1_1_transform_a6c7e193f6bfddb8c7af5c35b538cdee5}{Set\+Scale} (float x, float y, float z)
-\item 
-void \hyperlink{structmage_1_1_transform_a72e4788366a1638a80fd124e344d0d33}{Set\+Scale} (const X\+M\+F\+L\+O\+A\+T3 \&scale)
-\item 
-void \hyperlink{structmage_1_1_transform_afb49f4e4ca1772f8ed38465afcf414a0}{Add\+ScaleX} (float x)
-\item 
-void \hyperlink{structmage_1_1_transform_ae3213b5cc2b347236783389c1b717356}{Add\+ScaleY} (float y)
-\item 
-void \hyperlink{structmage_1_1_transform_aa493f3a588376d094ce50dfcffe0ece2}{Add\+ScaleZ} (float z)
-\item 
-void \hyperlink{structmage_1_1_transform_a10681b78ac7980fa3aa6c6c11a274f99}{Add\+Scale} (float x, float y, float z)
-\item 
-void \hyperlink{structmage_1_1_transform_a7f5092b95426c47a55bd3dff16cea31e}{Add\+Scale} (const X\+M\+F\+L\+O\+A\+T3 \&scale)
-\item 
-const X\+M\+F\+L\+O\+A\+T3 \& \hyperlink{structmage_1_1_transform_a6b2e52c03574ba7e1cd46cd8b8a3770c}{Get\+Scale} () const
+\hyperlink{structmage_1_1_transform}{Transform} \& \hyperlink{structmage_1_1_transform_a40bc8c32b09dc419d0573fffcd938644}{operator=} (const \hyperlink{structmage_1_1_transform}{Transform} \&transform)
 \item 
 void \hyperlink{structmage_1_1_transform_a003d84bc07835f17e8598dceda06d973}{Set\+TranslationX} (float x)
 \item 
@@ -71,21 +39,197 @@ void \hyperlink{structmage_1_1_transform_a2e981e670eea4d731bda4ee68f0b7fae}{Add\
 \item 
 void \hyperlink{structmage_1_1_transform_a1125e444c9537e09a328f37a47e61b58}{Add\+Translation} (const X\+M\+F\+L\+O\+A\+T3 \&translation)
 \item 
-const X\+M\+F\+L\+O\+A\+T3 \& \hyperlink{structmage_1_1_transform_af6b58761ec19c3721bbf8e8e5d4513e9}{Get\+Translation} () const
+float \hyperlink{structmage_1_1_transform_a171525f6ba157e319646548f2c459395}{Get\+TranslationX} () const
+\item 
+float \hyperlink{structmage_1_1_transform_a7feba3c1d24a986e440dd6571edc14b2}{Get\+TranslationY} () const
+\item 
+float \hyperlink{structmage_1_1_transform_a023ce9ea6afaaa80776b4d43957964bf}{Get\+TranslationZ} () const
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_transform_aca74308060f244adf137676e79a9f6e5}{Get\+Translation} () const
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{structmage_1_1_transform_a4f246a50de8bdfd1bd9dd8e07b7a8c01}{Get\+Translation\+Matrix} () const
+\item 
+void \hyperlink{structmage_1_1_transform_ae526dabb395eea9481fc072624f6bec4}{Set\+RotationX} (float x)
+\item 
+void \hyperlink{structmage_1_1_transform_a95c83ba282bf84aeb1c49d9ba8242609}{Set\+RotationY} (float y)
+\item 
+void \hyperlink{structmage_1_1_transform_ac587047697f24d2279e7b4f5ab333f44}{Set\+RotationZ} (float z)
+\item 
+void \hyperlink{structmage_1_1_transform_a8e8fffa4ae9bc969196151daf4502421}{Set\+Rotation} (float x, float y, float z)
+\item 
+void \hyperlink{structmage_1_1_transform_a6b15a1591a10fe2984b7e8b0b8c92bd5}{Set\+Rotation} (const X\+M\+F\+L\+O\+A\+T3 \&rotation)
+\item 
+void \hyperlink{structmage_1_1_transform_afad1810a6efc642aeb3c54488501c704}{Set\+Rotation\+Around\+Direction} (const X\+M\+V\+E\+C\+T\+OR \&normal, float angle)
+\item 
+void \hyperlink{structmage_1_1_transform_ae2a3a4a33ec637b9c39e97519bab5a11}{Add\+RotationX} (float x)
+\item 
+void \hyperlink{structmage_1_1_transform_afc958d2361a5606962b51646825287e2}{Add\+RotationY} (float y)
+\item 
+void \hyperlink{structmage_1_1_transform_ae70e192a7d98366b629c3d75a7d2d3bd}{Add\+RotationZ} (float z)
+\item 
+void \hyperlink{structmage_1_1_transform_a71126843acf10e00d0381b5463978aba}{Add\+Rotation} (float x, float y, float z)
+\item 
+void \hyperlink{structmage_1_1_transform_a10825624e694790a60e0ea507207132e}{Add\+Rotation} (const X\+M\+F\+L\+O\+A\+T3 \&rotation)
+\item 
+float \hyperlink{structmage_1_1_transform_aaaf300a4a24b976c271ba17c8a41beaf}{Get\+RotationX} () const
+\item 
+float \hyperlink{structmage_1_1_transform_a93ccd53bd0a4e71ab7f42447d482ab86}{Get\+RotationY} () const
+\item 
+float \hyperlink{structmage_1_1_transform_ae1dd099e12e6dedadbc31d679343b39a}{Get\+RotationZ} () const
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_transform_a30a0464b1bd2fb37d6b5cc2155323a14}{Get\+Rotation} () const
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{structmage_1_1_transform_a27ca7a5c40ea16c9a885a410b2a1f416}{Get\+Rotation\+Matrix} () const
+\item 
+void \hyperlink{structmage_1_1_transform_a4d1fbb0b609e40b6b13e0e282259d223}{Set\+ScaleX} (float x)
+\item 
+void \hyperlink{structmage_1_1_transform_a77251bb29fbd26817c0b8c8aabb96ce4}{Set\+ScaleY} (float y)
+\item 
+void \hyperlink{structmage_1_1_transform_af8cd0167f776708697041544886ff2de}{Set\+ScaleZ} (float z)
+\item 
+void \hyperlink{structmage_1_1_transform_a6c7e193f6bfddb8c7af5c35b538cdee5}{Set\+Scale} (float x, float y, float z)
+\item 
+void \hyperlink{structmage_1_1_transform_a72e4788366a1638a80fd124e344d0d33}{Set\+Scale} (const X\+M\+F\+L\+O\+A\+T3 \&scale)
+\item 
+void \hyperlink{structmage_1_1_transform_afb49f4e4ca1772f8ed38465afcf414a0}{Add\+ScaleX} (float x)
+\item 
+void \hyperlink{structmage_1_1_transform_ae3213b5cc2b347236783389c1b717356}{Add\+ScaleY} (float y)
+\item 
+void \hyperlink{structmage_1_1_transform_aa493f3a588376d094ce50dfcffe0ece2}{Add\+ScaleZ} (float z)
+\item 
+void \hyperlink{structmage_1_1_transform_a10681b78ac7980fa3aa6c6c11a274f99}{Add\+Scale} (float x, float y, float z)
+\item 
+void \hyperlink{structmage_1_1_transform_a7f5092b95426c47a55bd3dff16cea31e}{Add\+Scale} (const X\+M\+F\+L\+O\+A\+T3 \&scale)
+\item 
+float \hyperlink{structmage_1_1_transform_a3a82465d40dde6b98ca274a8de061545}{Get\+ScaleX} () const
+\item 
+float \hyperlink{structmage_1_1_transform_acbd677fa7e27cb15d205ac8354d8624a}{Get\+ScaleY} () const
+\item 
+float \hyperlink{structmage_1_1_transform_a9e8f3a4ec330e6f4c9e1a9607daf30fa}{Get\+ScaleZ} () const
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_transform_a38234d822ee1ffbbcfb2601a1d5f8475}{Get\+Scale} () const
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{structmage_1_1_transform_ab78050be41abf1ab36d969d5235f97e2}{Get\+Scale\+Matrix} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_af1db1f130cf15d7ec6c9a7a9f454dfe4}{Get\+Local\+AxisX} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_a101b2b97c9c94ce534e45e5bebafbebe}{Get\+Local\+AxisY} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_a426ae69a8a597413bd2772826cc2f21e}{Get\+Local\+AxisZ} () const
+\item 
+\hyperlink{structmage_1_1_cartesian_axes_system}{Cartesian\+Axes\+System} \hyperlink{structmage_1_1_transform_a84d2c6774dc1be15c2926bcc56856c7a}{Get\+Local\+Axes} () const
+\item 
+\hyperlink{structmage_1_1_cartesian_coordinate_system}{Cartesian\+Coordinate\+System} \hyperlink{structmage_1_1_transform_aa88457f582eca76b7305349e197bce7f}{Get\+Local\+Coordinate\+System} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_ac7a718127c5212bb73d04302371473d0}{Get\+World\+AxisX} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_a9c4452fa4aefb48e4e6c9a4a38fac32c}{Get\+World\+AxisY} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_a580b65d46b4af8086fab60d0737fd353}{Get\+World\+AxisZ} () const
+\item 
+\hyperlink{structmage_1_1_cartesian_axes_system}{Cartesian\+Axes\+System} \hyperlink{structmage_1_1_transform_a580a4f9fd987259da0cf0355ade7fb4b}{Get\+World\+Axes} () const
+\item 
+\hyperlink{structmage_1_1_cartesian_coordinate_system}{Cartesian\+Coordinate\+System} \hyperlink{structmage_1_1_transform_a809600adbb284334d444ae8c50b17a1d}{Get\+World\+Coordinate\+System} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_a5f8a16cfb69024d9d361a9255c57e44c}{Get\+Local\+Left} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_a1f799786b8b8500504ca7cf2ecbea21a}{Get\+Local\+Up} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_ab029a8208164b53c75352c53736a5c38}{Get\+Local\+Forward} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_aef18a0e685f56ce4a805b2fef57287f6}{Get\+World\+Left} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_af28786b745a144eef74d69a55055b00a}{Get\+World\+Up} () const
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_a24bd3a710a3c0bde7a6d2f2de56a315c}{Get\+World\+Forward} () const
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{structmage_1_1_transform_a773c1db9e475deb6d9f446a88cfae30f}{Get\+World\+To\+Object\+Matrix} () const
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{structmage_1_1_transform_a33cc590d779f69044d183bab653bd260}{Get\+World\+To\+View\+Matrix} () const
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+X\+M\+V\+E\+C\+T\+OR \hyperlink{structmage_1_1_transform_a9f704d029b5c6c7d7d5caa9838a5b878}{Transform\+Direction} (const X\+M\+V\+E\+C\+T\+OR \&direction) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_transform_a57e27b28e0cf85be034055a68513ad79}{m\+\_\+translation}
 \item 
 X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_transform_a037b4fb338bfe79aa2ab1a2e809c40df}{m\+\_\+rotation}
 \item 
 X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_transform_a25d15c85b93037bab5b755c86bef0b54}{m\+\_\+scale}
-\item 
-X\+M\+F\+L\+O\+A\+T3 \hyperlink{structmage_1_1_transform_a57e27b28e0cf85be034055a68513ad79}{m\+\_\+translation}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 A struct of transforms. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_transform_a1a4624639a7da3608738f52b8cfc6bf3}{}\label{structmage_1_1_transform_a1a4624639a7da3608738f52b8cfc6bf3} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_cartesian_axes_system}{Cartesian\+Axes\+System} \&}]{axes }\end{DoxyParamCaption})}
+
+Constructs a transform from the given Cartesian axes system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em axes} & The Cartesian axes system. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_transform_a15966913f9d2f02f29da116637fc3bff}{}\label{structmage_1_1_transform_a15966913f9d2f02f29da116637fc3bff} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_cartesian_coordinate_system}{Cartesian\+Coordinate\+System} \&}]{coordinate\+\_\+system }\end{DoxyParamCaption})}
+
+Constructs a transform from the given Cartesian coordinate system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em coordinate\+\_\+system} & The Cartesian coordinate system. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_transform_a3d324dc935e11ee5e82957d58553fd7d}{}\label{structmage_1_1_transform_a3d324dc935e11ee5e82957d58553fd7d} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{translation = {\ttfamily \{~0.0f,~0.0f,~0.0f~\}},  }\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{rotation = {\ttfamily \{~0.0f,~0.0f,~0.0f~\}},  }\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{scale = {\ttfamily \{~1.0f,~1.0f,~1.0f~\}} }\end{DoxyParamCaption})}
+
+Constructs a transform from the given translation, rotation and scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & The translation component. \\
+\hline
+\mbox{\tt in}  & {\em rotation} & The rotation component. \\
+\hline
+\mbox{\tt in}  & {\em scale} & The scale component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_transform_a6cf7a754eff6ffe6f99f8942468d49bc}{}\label{structmage_1_1_transform_a6cf7a754eff6ffe6f99f8942468d49bc} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_transform}{Transform} \&}]{transform }\end{DoxyParamCaption})}
+
+Constructs a transform from the given transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The transform. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_transform_a3380713ee853d112c140e8688c0f73b5}{}\label{structmage_1_1_transform_a3380713ee853d112c140e8688c0f73b5} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!````~Transform@{$\sim$\+Transform}}
+\index{````~Transform@{$\sim$\+Transform}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{$\sim$\+Transform()}{~Transform()}}
+{\footnotesize\ttfamily mage\+::\+Transform\+::$\sim$\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructs this transform. 
 
 \subsection{Member Function Documentation}
 \hypertarget{structmage_1_1_transform_a71126843acf10e00d0381b5463978aba}{}\label{structmage_1_1_transform_a71126843acf10e00d0381b5463978aba} 
@@ -94,198 +238,824 @@ A struct of transforms.
 \subsubsection{\texorpdfstring{Add\+Rotation()}{AddRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+Rotation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
 
+Adds the given rotation component to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a10825624e694790a60e0ea507207132e}{}\label{structmage_1_1_transform_a10825624e694790a60e0ea507207132e} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+Rotation@{Add\+Rotation}}
 \index{Add\+Rotation@{Add\+Rotation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Rotation()}{AddRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+Rotation (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{rotation }\end{DoxyParamCaption})}
 
+Adds the given rotation component to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_ae2a3a4a33ec637b9c39e97519bab5a11}{}\label{structmage_1_1_transform_ae2a3a4a33ec637b9c39e97519bab5a11} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+RotationX@{Add\+RotationX}}
 \index{Add\+RotationX@{Add\+RotationX}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Rotation\+X()}{AddRotationX()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+RotationX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
 
+Adds the given x-\/value to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_afc958d2361a5606962b51646825287e2}{}\label{structmage_1_1_transform_afc958d2361a5606962b51646825287e2} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+RotationY@{Add\+RotationY}}
 \index{Add\+RotationY@{Add\+RotationY}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Rotation\+Y()}{AddRotationY()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+RotationY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
 
+Adds the given y-\/value to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_ae70e192a7d98366b629c3d75a7d2d3bd}{}\label{structmage_1_1_transform_ae70e192a7d98366b629c3d75a7d2d3bd} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+RotationZ@{Add\+RotationZ}}
 \index{Add\+RotationZ@{Add\+RotationZ}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Rotation\+Z()}{AddRotationZ()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+RotationZ (\begin{DoxyParamCaption}\item[{float}]{z }\end{DoxyParamCaption})}
 
+Adds the given z-\/value to the rotation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a10681b78ac7980fa3aa6c6c11a274f99}{}\label{structmage_1_1_transform_a10681b78ac7980fa3aa6c6c11a274f99} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+Scale@{Add\+Scale}}
 \index{Add\+Scale@{Add\+Scale}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Scale()}{AddScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+Scale (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
 
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a7f5092b95426c47a55bd3dff16cea31e}{}\label{structmage_1_1_transform_a7f5092b95426c47a55bd3dff16cea31e} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+Scale@{Add\+Scale}}
 \index{Add\+Scale@{Add\+Scale}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Scale()}{AddScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+Scale (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{scale }\end{DoxyParamCaption})}
 
+Adds the given scale component to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_afb49f4e4ca1772f8ed38465afcf414a0}{}\label{structmage_1_1_transform_afb49f4e4ca1772f8ed38465afcf414a0} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+ScaleX@{Add\+ScaleX}}
 \index{Add\+ScaleX@{Add\+ScaleX}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Scale\+X()}{AddScaleX()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+ScaleX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
 
+Adds the given x-\/value to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_ae3213b5cc2b347236783389c1b717356}{}\label{structmage_1_1_transform_ae3213b5cc2b347236783389c1b717356} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+ScaleY@{Add\+ScaleY}}
 \index{Add\+ScaleY@{Add\+ScaleY}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Scale\+Y()}{AddScaleY()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+ScaleY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
 
+Adds the given y-\/value to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_aa493f3a588376d094ce50dfcffe0ece2}{}\label{structmage_1_1_transform_aa493f3a588376d094ce50dfcffe0ece2} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+ScaleZ@{Add\+ScaleZ}}
 \index{Add\+ScaleZ@{Add\+ScaleZ}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Scale\+Z()}{AddScaleZ()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+ScaleZ (\begin{DoxyParamCaption}\item[{float}]{z }\end{DoxyParamCaption})}
 
+Adds the given z-\/value to the scale component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a2e981e670eea4d731bda4ee68f0b7fae}{}\label{structmage_1_1_transform_a2e981e670eea4d731bda4ee68f0b7fae} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+Translation@{Add\+Translation}}
 \index{Add\+Translation@{Add\+Translation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Translation()}{AddTranslation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+Translation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
 
+Adds the given translation component to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a1125e444c9537e09a328f37a47e61b58}{}\label{structmage_1_1_transform_a1125e444c9537e09a328f37a47e61b58} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+Translation@{Add\+Translation}}
 \index{Add\+Translation@{Add\+Translation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Translation()}{AddTranslation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+Translation (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{translation }\end{DoxyParamCaption})}
 
+Adds the given translation component to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_aa4b8469fa07ab4ad3b50aaa34389967f}{}\label{structmage_1_1_transform_aa4b8469fa07ab4ad3b50aaa34389967f} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+TranslationX@{Add\+TranslationX}}
 \index{Add\+TranslationX@{Add\+TranslationX}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Translation\+X()}{AddTranslationX()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+TranslationX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
 
+Adds the given x-\/value to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_aef8f3728f6d6d55e69689cff2af4c26f}{}\label{structmage_1_1_transform_aef8f3728f6d6d55e69689cff2af4c26f} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+TranslationY@{Add\+TranslationY}}
 \index{Add\+TranslationY@{Add\+TranslationY}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Translation\+Y()}{AddTranslationY()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+TranslationY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
 
+Adds the given y-\/value to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component to add. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a0553f72a6fcf38128d2201d54584f079}{}\label{structmage_1_1_transform_a0553f72a6fcf38128d2201d54584f079} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Add\+TranslationZ@{Add\+TranslationZ}}
 \index{Add\+TranslationZ@{Add\+TranslationZ}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Add\+Translation\+Z()}{AddTranslationZ()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Add\+TranslationZ (\begin{DoxyParamCaption}\item[{float}]{z }\end{DoxyParamCaption})}
 
-\hypertarget{structmage_1_1_transform_af049c07a3687a66f0359bd287f2a497d}{}\label{structmage_1_1_transform_af049c07a3687a66f0359bd287f2a497d} 
+Adds the given z-\/value to the translation component of this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component to add. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_transform_a84d2c6774dc1be15c2926bcc56856c7a}{}\label{structmage_1_1_transform_a84d2c6774dc1be15c2926bcc56856c7a} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Local\+Axes@{Get\+Local\+Axes}}
+\index{Get\+Local\+Axes@{Get\+Local\+Axes}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Local\+Axes()}{GetLocalAxes()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_cartesian_axes_system}{Cartesian\+Axes\+System} mage\+::\+Transform\+::\+Get\+Local\+Axes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the Cartesian axes system of this transform in local space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The Cartesian axes system of this transform expressed in local space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_af1db1f130cf15d7ec6c9a7a9f454dfe4}{}\label{structmage_1_1_transform_af1db1f130cf15d7ec6c9a7a9f454dfe4} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Local\+AxisX@{Get\+Local\+AxisX}}
+\index{Get\+Local\+AxisX@{Get\+Local\+AxisX}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Local\+Axis\+X()}{GetLocalAxisX()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+Local\+AxisX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the direction of the x-\/axis of this transform expressed in local space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the x-\/axis of this transform expressed in local space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a101b2b97c9c94ce534e45e5bebafbebe}{}\label{structmage_1_1_transform_a101b2b97c9c94ce534e45e5bebafbebe} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Local\+AxisY@{Get\+Local\+AxisY}}
+\index{Get\+Local\+AxisY@{Get\+Local\+AxisY}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Local\+Axis\+Y()}{GetLocalAxisY()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+Local\+AxisY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the direction of the y-\/axis of this transform expressed in local space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the y-\/axis of this transform expressed in local space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a426ae69a8a597413bd2772826cc2f21e}{}\label{structmage_1_1_transform_a426ae69a8a597413bd2772826cc2f21e} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Local\+AxisZ@{Get\+Local\+AxisZ}}
+\index{Get\+Local\+AxisZ@{Get\+Local\+AxisZ}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Local\+Axis\+Z()}{GetLocalAxisZ()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+Local\+AxisZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the direction of the z-\/axis of this transform expressed in local space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the z-\/axis of this transform expressed in local space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_aa88457f582eca76b7305349e197bce7f}{}\label{structmage_1_1_transform_aa88457f582eca76b7305349e197bce7f} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Local\+Coordinate\+System@{Get\+Local\+Coordinate\+System}}
+\index{Get\+Local\+Coordinate\+System@{Get\+Local\+Coordinate\+System}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Local\+Coordinate\+System()}{GetLocalCoordinateSystem()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_cartesian_coordinate_system}{Cartesian\+Coordinate\+System} mage\+::\+Transform\+::\+Get\+Local\+Coordinate\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the Cartesian coordinate system of this transform in local space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The Cartesian coordinate system of this transform expressed in local space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_ab029a8208164b53c75352c53736a5c38}{}\label{structmage_1_1_transform_ab029a8208164b53c75352c53736a5c38} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Local\+Forward@{Get\+Local\+Forward}}
+\index{Get\+Local\+Forward@{Get\+Local\+Forward}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Local\+Forward()}{GetLocalForward()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+Local\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the forward direction of this transform expressed in local space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The forward direction of this transform expressed in local space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a5f8a16cfb69024d9d361a9255c57e44c}{}\label{structmage_1_1_transform_a5f8a16cfb69024d9d361a9255c57e44c} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Local\+Left@{Get\+Local\+Left}}
+\index{Get\+Local\+Left@{Get\+Local\+Left}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Local\+Left()}{GetLocalLeft()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+Local\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the left direction of this transform expressed in local space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The left direction of this transform expressed in local space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a1f799786b8b8500504ca7cf2ecbea21a}{}\label{structmage_1_1_transform_a1f799786b8b8500504ca7cf2ecbea21a} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Local\+Up@{Get\+Local\+Up}}
+\index{Get\+Local\+Up@{Get\+Local\+Up}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Local\+Up()}{GetLocalUp()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+Local\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the up direction of this transform expressed in local space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The up direction of this transform expressed in local space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a30a0464b1bd2fb37d6b5cc2155323a14}{}\label{structmage_1_1_transform_a30a0464b1bd2fb37d6b5cc2155323a14} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Rotation@{Get\+Rotation}}
 \index{Get\+Rotation@{Get\+Rotation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Get\+Rotation()}{GetRotation()}}
-{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T3\& mage\+::\+Transform\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Transform\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{structmage_1_1_transform_a6b2e52c03574ba7e1cd46cd8b8a3770c}{}\label{structmage_1_1_transform_a6b2e52c03574ba7e1cd46cd8b8a3770c} 
+Returns the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The rotation component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a27ca7a5c40ea16c9a885a410b2a1f416}{}\label{structmage_1_1_transform_a27ca7a5c40ea16c9a885a410b2a1f416} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Rotation\+Matrix@{Get\+Rotation\+Matrix}}
+\index{Get\+Rotation\+Matrix@{Get\+Rotation\+Matrix}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Rotation\+Matrix()}{GetRotationMatrix()}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Transform\+::\+Get\+Rotation\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the rotation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The rotation matrix of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_aaaf300a4a24b976c271ba17c8a41beaf}{}\label{structmage_1_1_transform_aaaf300a4a24b976c271ba17c8a41beaf} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+RotationX@{Get\+RotationX}}
+\index{Get\+RotationX@{Get\+RotationX}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Rotation\+X()}{GetRotationX()}}
+{\footnotesize\ttfamily float mage\+::\+Transform\+::\+Get\+RotationX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the x-\/value of the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the rotation component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a93ccd53bd0a4e71ab7f42447d482ab86}{}\label{structmage_1_1_transform_a93ccd53bd0a4e71ab7f42447d482ab86} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+RotationY@{Get\+RotationY}}
+\index{Get\+RotationY@{Get\+RotationY}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Rotation\+Y()}{GetRotationY()}}
+{\footnotesize\ttfamily float mage\+::\+Transform\+::\+Get\+RotationY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the y-\/value of the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the rotation component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_ae1dd099e12e6dedadbc31d679343b39a}{}\label{structmage_1_1_transform_ae1dd099e12e6dedadbc31d679343b39a} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+RotationZ@{Get\+RotationZ}}
+\index{Get\+RotationZ@{Get\+RotationZ}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Rotation\+Z()}{GetRotationZ()}}
+{\footnotesize\ttfamily float mage\+::\+Transform\+::\+Get\+RotationZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the z-\/value of the rotation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The z-\/value of the rotation component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a38234d822ee1ffbbcfb2601a1d5f8475}{}\label{structmage_1_1_transform_a38234d822ee1ffbbcfb2601a1d5f8475} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Scale@{Get\+Scale}}
 \index{Get\+Scale@{Get\+Scale}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Get\+Scale()}{GetScale()}}
-{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T3\& mage\+::\+Transform\+::\+Get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Transform\+::\+Get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\hypertarget{structmage_1_1_transform_af6b58761ec19c3721bbf8e8e5d4513e9}{}\label{structmage_1_1_transform_af6b58761ec19c3721bbf8e8e5d4513e9} 
+Returns the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The scale component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_ab78050be41abf1ab36d969d5235f97e2}{}\label{structmage_1_1_transform_ab78050be41abf1ab36d969d5235f97e2} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Scale\+Matrix@{Get\+Scale\+Matrix}}
+\index{Get\+Scale\+Matrix@{Get\+Scale\+Matrix}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Scale\+Matrix()}{GetScaleMatrix()}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Transform\+::\+Get\+Scale\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the scale matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The scale matrix of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a3a82465d40dde6b98ca274a8de061545}{}\label{structmage_1_1_transform_a3a82465d40dde6b98ca274a8de061545} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+ScaleX@{Get\+ScaleX}}
+\index{Get\+ScaleX@{Get\+ScaleX}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Scale\+X()}{GetScaleX()}}
+{\footnotesize\ttfamily float mage\+::\+Transform\+::\+Get\+ScaleX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the x-\/value of the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the scale component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_acbd677fa7e27cb15d205ac8354d8624a}{}\label{structmage_1_1_transform_acbd677fa7e27cb15d205ac8354d8624a} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+ScaleY@{Get\+ScaleY}}
+\index{Get\+ScaleY@{Get\+ScaleY}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Scale\+Y()}{GetScaleY()}}
+{\footnotesize\ttfamily float mage\+::\+Transform\+::\+Get\+ScaleY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the y-\/value of the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the scale component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a9e8f3a4ec330e6f4c9e1a9607daf30fa}{}\label{structmage_1_1_transform_a9e8f3a4ec330e6f4c9e1a9607daf30fa} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+ScaleZ@{Get\+ScaleZ}}
+\index{Get\+ScaleZ@{Get\+ScaleZ}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Scale\+Z()}{GetScaleZ()}}
+{\footnotesize\ttfamily float mage\+::\+Transform\+::\+Get\+ScaleZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the z-\/value of the scale component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The z-\/value of the scale component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_aca74308060f244adf137676e79a9f6e5}{}\label{structmage_1_1_transform_aca74308060f244adf137676e79a9f6e5} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Translation@{Get\+Translation}}
 \index{Get\+Translation@{Get\+Translation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Get\+Translation()}{GetTranslation()}}
-{\footnotesize\ttfamily const X\+M\+F\+L\+O\+A\+T3\& mage\+::\+Transform\+::\+Get\+Translation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Transform\+::\+Get\+Translation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+Returns the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The translation component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a4f246a50de8bdfd1bd9dd8e07b7a8c01}{}\label{structmage_1_1_transform_a4f246a50de8bdfd1bd9dd8e07b7a8c01} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+Translation\+Matrix@{Get\+Translation\+Matrix}}
+\index{Get\+Translation\+Matrix@{Get\+Translation\+Matrix}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Translation\+Matrix()}{GetTranslationMatrix()}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Transform\+::\+Get\+Translation\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the translation matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The translation matrix of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a171525f6ba157e319646548f2c459395}{}\label{structmage_1_1_transform_a171525f6ba157e319646548f2c459395} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+TranslationX@{Get\+TranslationX}}
+\index{Get\+TranslationX@{Get\+TranslationX}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Translation\+X()}{GetTranslationX()}}
+{\footnotesize\ttfamily float mage\+::\+Transform\+::\+Get\+TranslationX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the x-\/value of the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The x-\/value of the translation component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a7feba3c1d24a986e440dd6571edc14b2}{}\label{structmage_1_1_transform_a7feba3c1d24a986e440dd6571edc14b2} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+TranslationY@{Get\+TranslationY}}
+\index{Get\+TranslationY@{Get\+TranslationY}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Translation\+Y()}{GetTranslationY()}}
+{\footnotesize\ttfamily float mage\+::\+Transform\+::\+Get\+TranslationY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the y-\/value of the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The y-\/value of the translation component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a023ce9ea6afaaa80776b4d43957964bf}{}\label{structmage_1_1_transform_a023ce9ea6afaaa80776b4d43957964bf} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+TranslationZ@{Get\+TranslationZ}}
+\index{Get\+TranslationZ@{Get\+TranslationZ}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+Translation\+Z()}{GetTranslationZ()}}
+{\footnotesize\ttfamily float mage\+::\+Transform\+::\+Get\+TranslationZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the z-\/value of the translation component of this transform.
+
+\begin{DoxyReturn}{Returns}
+The z-\/value of the translation component of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a580a4f9fd987259da0cf0355ade7fb4b}{}\label{structmage_1_1_transform_a580a4f9fd987259da0cf0355ade7fb4b} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+Axes@{Get\+World\+Axes}}
+\index{Get\+World\+Axes@{Get\+World\+Axes}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+Axes()}{GetWorldAxes()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_cartesian_axes_system}{Cartesian\+Axes\+System} mage\+::\+Transform\+::\+Get\+World\+Axes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the Cartesian axes system of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The Cartesian axes system of this transform expressed in world space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_ac7a718127c5212bb73d04302371473d0}{}\label{structmage_1_1_transform_ac7a718127c5212bb73d04302371473d0} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+AxisX@{Get\+World\+AxisX}}
+\index{Get\+World\+AxisX@{Get\+World\+AxisX}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+Axis\+X()}{GetWorldAxisX()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+World\+AxisX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the direction of the x-\/axis of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the x-\/axis of this transform expressed in world space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a9c4452fa4aefb48e4e6c9a4a38fac32c}{}\label{structmage_1_1_transform_a9c4452fa4aefb48e4e6c9a4a38fac32c} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+AxisY@{Get\+World\+AxisY}}
+\index{Get\+World\+AxisY@{Get\+World\+AxisY}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+Axis\+Y()}{GetWorldAxisY()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+World\+AxisY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the direction of the y-\/axis of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the y-\/axis of this transform expressed in world space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a580b65d46b4af8086fab60d0737fd353}{}\label{structmage_1_1_transform_a580b65d46b4af8086fab60d0737fd353} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+AxisZ@{Get\+World\+AxisZ}}
+\index{Get\+World\+AxisZ@{Get\+World\+AxisZ}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+Axis\+Z()}{GetWorldAxisZ()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+World\+AxisZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the direction of the z-\/axis of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The direction of the z-\/axis of this transform expressed in world space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a809600adbb284334d444ae8c50b17a1d}{}\label{structmage_1_1_transform_a809600adbb284334d444ae8c50b17a1d} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+Coordinate\+System@{Get\+World\+Coordinate\+System}}
+\index{Get\+World\+Coordinate\+System@{Get\+World\+Coordinate\+System}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+Coordinate\+System()}{GetWorldCoordinateSystem()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_cartesian_coordinate_system}{Cartesian\+Coordinate\+System} mage\+::\+Transform\+::\+Get\+World\+Coordinate\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the Cartesian coordinate system of this transform in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The Cartesian coordinate system of this transform expressed in world space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a24bd3a710a3c0bde7a6d2f2de56a315c}{}\label{structmage_1_1_transform_a24bd3a710a3c0bde7a6d2f2de56a315c} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+Forward@{Get\+World\+Forward}}
+\index{Get\+World\+Forward@{Get\+World\+Forward}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+Forward()}{GetWorldForward()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+World\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the forward direction of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The forward direction of this transform expressed in world space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_aef18a0e685f56ce4a805b2fef57287f6}{}\label{structmage_1_1_transform_aef18a0e685f56ce4a805b2fef57287f6} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+Left@{Get\+World\+Left}}
+\index{Get\+World\+Left@{Get\+World\+Left}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+Left()}{GetWorldLeft()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+World\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the left direction of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The left direction of this transform expressed in world space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a773c1db9e475deb6d9f446a88cfae30f}{}\label{structmage_1_1_transform_a773c1db9e475deb6d9f446a88cfae30f} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+To\+Object\+Matrix@{Get\+World\+To\+Object\+Matrix}}
+\index{Get\+World\+To\+Object\+Matrix@{Get\+World\+To\+Object\+Matrix}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+To\+Object\+Matrix()}{GetWorldToObjectMatrix()}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Transform\+::\+Get\+World\+To\+Object\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the world-\/to-\/object matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The world-\/to-\/object matrix of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a33cc590d779f69044d183bab653bd260}{}\label{structmage_1_1_transform_a33cc590d779f69044d183bab653bd260} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+To\+View\+Matrix@{Get\+World\+To\+View\+Matrix}}
+\index{Get\+World\+To\+View\+Matrix@{Get\+World\+To\+View\+Matrix}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+To\+View\+Matrix()}{GetWorldToViewMatrix()}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Transform\+::\+Get\+World\+To\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the world-\/to-\/view matrix of this transform.
+
+\begin{DoxyReturn}{Returns}
+The world-\/to-\/view matrix of this transform. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_af28786b745a144eef74d69a55055b00a}{}\label{structmage_1_1_transform_af28786b745a144eef74d69a55055b00a} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Get\+World\+Up@{Get\+World\+Up}}
+\index{Get\+World\+Up@{Get\+World\+Up}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+Up()}{GetWorldUp()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Get\+World\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the up direction of this transform expressed in world space coordinates.
+
+\begin{DoxyReturn}{Returns}
+The up direction of this transform expressed in world space coordinates. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_transform_a40bc8c32b09dc419d0573fffcd938644}{}\label{structmage_1_1_transform_a40bc8c32b09dc419d0573fffcd938644} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_transform}{Transform}\& mage\+::\+Transform\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_transform}{Transform} \&}]{transform }\end{DoxyParamCaption})}
+
+Copies the given transform to this transform.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & The transform to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given transform (i.\+e. this transform). 
+\end{DoxyReturn}
 \hypertarget{structmage_1_1_transform_a8e8fffa4ae9bc969196151daf4502421}{}\label{structmage_1_1_transform_a8e8fffa4ae9bc969196151daf4502421} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+Rotation@{Set\+Rotation}}
 \index{Set\+Rotation@{Set\+Rotation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Rotation()}{SetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
 
+Sets the rotation component of this transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a6b15a1591a10fe2984b7e8b0b8c92bd5}{}\label{structmage_1_1_transform_a6b15a1591a10fe2984b7e8b0b8c92bd5} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+Rotation@{Set\+Rotation}}
 \index{Set\+Rotation@{Set\+Rotation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Rotation()}{SetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{rotation }\end{DoxyParamCaption})}
 
+Sets the rotation component of this transform to the given rotation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rotation} & A reference to the rotation component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_transform_afad1810a6efc642aeb3c54488501c704}{}\label{structmage_1_1_transform_afad1810a6efc642aeb3c54488501c704} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+Rotation\+Around\+Direction@{Set\+Rotation\+Around\+Direction}}
+\index{Set\+Rotation\+Around\+Direction@{Set\+Rotation\+Around\+Direction}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Set\+Rotation\+Around\+Direction()}{SetRotationAroundDirection()}}
+{\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+Rotation\+Around\+Direction (\begin{DoxyParamCaption}\item[{const X\+M\+V\+E\+C\+T\+OR \&}]{normal,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+Sets the rotation component to a rotation of the given angle around the given normal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em normal} & A reference to the normal. \\
+\hline
+\mbox{\tt in}  & {\em angle} & The angle. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_ae526dabb395eea9481fc072624f6bec4}{}\label{structmage_1_1_transform_ae526dabb395eea9481fc072624f6bec4} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+RotationX@{Set\+RotationX}}
 \index{Set\+RotationX@{Set\+RotationX}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Rotation\+X()}{SetRotationX()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+RotationX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
 
+Sets the x-\/value of the rotation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the rotation component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a95c83ba282bf84aeb1c49d9ba8242609}{}\label{structmage_1_1_transform_a95c83ba282bf84aeb1c49d9ba8242609} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+RotationY@{Set\+RotationY}}
 \index{Set\+RotationY@{Set\+RotationY}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Rotation\+Y()}{SetRotationY()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+RotationY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
 
+Sets the y-\/value of the rotation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the rotation component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_ac587047697f24d2279e7b4f5ab333f44}{}\label{structmage_1_1_transform_ac587047697f24d2279e7b4f5ab333f44} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+RotationZ@{Set\+RotationZ}}
 \index{Set\+RotationZ@{Set\+RotationZ}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Rotation\+Z()}{SetRotationZ()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+RotationZ (\begin{DoxyParamCaption}\item[{float}]{z }\end{DoxyParamCaption})}
 
+Sets the z-\/value of the rotation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the rotation component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a6c7e193f6bfddb8c7af5c35b538cdee5}{}\label{structmage_1_1_transform_a6c7e193f6bfddb8c7af5c35b538cdee5} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+Scale@{Set\+Scale}}
 \index{Set\+Scale@{Set\+Scale}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Scale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
 
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a72e4788366a1638a80fd124e344d0d33}{}\label{structmage_1_1_transform_a72e4788366a1638a80fd124e344d0d33} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+Scale@{Set\+Scale}}
 \index{Set\+Scale@{Set\+Scale}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Scale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{scale }\end{DoxyParamCaption})}
 
+Sets the scale component of this transform to the given scale component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em scale} & A reference to the scale component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a4d1fbb0b609e40b6b13e0e282259d223}{}\label{structmage_1_1_transform_a4d1fbb0b609e40b6b13e0e282259d223} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+ScaleX@{Set\+ScaleX}}
 \index{Set\+ScaleX@{Set\+ScaleX}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Scale\+X()}{SetScaleX()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+ScaleX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
 
+Sets the x-\/value of the scale component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the scale component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a77251bb29fbd26817c0b8c8aabb96ce4}{}\label{structmage_1_1_transform_a77251bb29fbd26817c0b8c8aabb96ce4} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+ScaleY@{Set\+ScaleY}}
 \index{Set\+ScaleY@{Set\+ScaleY}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Scale\+Y()}{SetScaleY()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+ScaleY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
 
+Sets the y-\/value of the scale component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the scale component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_af8cd0167f776708697041544886ff2de}{}\label{structmage_1_1_transform_af8cd0167f776708697041544886ff2de} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+ScaleZ@{Set\+ScaleZ}}
 \index{Set\+ScaleZ@{Set\+ScaleZ}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Scale\+Z()}{SetScaleZ()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+ScaleZ (\begin{DoxyParamCaption}\item[{float}]{z }\end{DoxyParamCaption})}
 
+Sets the z-\/value of the scale component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the scale component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_acf702bb57431be2986ca487e07189bda}{}\label{structmage_1_1_transform_acf702bb57431be2986ca487e07189bda} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+Translation@{Set\+Translation}}
 \index{Set\+Translation@{Set\+Translation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Translation()}{SetTranslation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+Translation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
 
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component. \\
+\hline
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component. \\
+\hline
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_ad82e98f98d57cd3e9878336b6c3e804c}{}\label{structmage_1_1_transform_ad82e98f98d57cd3e9878336b6c3e804c} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+Translation@{Set\+Translation}}
 \index{Set\+Translation@{Set\+Translation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Translation()}{SetTranslation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+Translation (\begin{DoxyParamCaption}\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{translation }\end{DoxyParamCaption})}
 
+Sets the translation component of this transform to the given translation component.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em translation} & A reference to the translation component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_a003d84bc07835f17e8598dceda06d973}{}\label{structmage_1_1_transform_a003d84bc07835f17e8598dceda06d973} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+TranslationX@{Set\+TranslationX}}
 \index{Set\+TranslationX@{Set\+TranslationX}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Translation\+X()}{SetTranslationX()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+TranslationX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
 
+Sets the x-\/value of the translation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The x-\/value of the translation component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_ab2c63fbbe2dd2c40d841f8c37df24394}{}\label{structmage_1_1_transform_ab2c63fbbe2dd2c40d841f8c37df24394} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+TranslationY@{Set\+TranslationY}}
 \index{Set\+TranslationY@{Set\+TranslationY}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Translation\+Y()}{SetTranslationY()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+TranslationY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
 
+Sets the y-\/value of the translation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em y} & The y-\/value of the translation component. \\
+\hline
+\end{DoxyParams}
 \hypertarget{structmage_1_1_transform_aba982207d2d2d20cae2ba9d8496e8531}{}\label{structmage_1_1_transform_aba982207d2d2d20cae2ba9d8496e8531} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!Set\+TranslationZ@{Set\+TranslationZ}}
 \index{Set\+TranslationZ@{Set\+TranslationZ}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{Set\+Translation\+Z()}{SetTranslationZ()}}
 {\footnotesize\ttfamily void mage\+::\+Transform\+::\+Set\+TranslationZ (\begin{DoxyParamCaption}\item[{float}]{z }\end{DoxyParamCaption})}
 
+Sets the z-\/value of the translation component of this transform to the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em z} & The z-\/value of the translation component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_transform_a9f704d029b5c6c7d7d5caa9838a5b878}{}\label{structmage_1_1_transform_a9f704d029b5c6c7d7d5caa9838a5b878} 
+\index{mage\+::\+Transform@{mage\+::\+Transform}!Transform\+Direction@{Transform\+Direction}}
+\index{Transform\+Direction@{Transform\+Direction}!mage\+::\+Transform@{mage\+::\+Transform}}
+\subsubsection{\texorpdfstring{Transform\+Direction()}{TransformDirection()}}
+{\footnotesize\ttfamily X\+M\+V\+E\+C\+T\+OR mage\+::\+Transform\+::\+Transform\+Direction (\begin{DoxyParamCaption}\item[{const X\+M\+V\+E\+C\+T\+OR \&}]{direction }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Transforms the given direction expressed in the local coordinate space of this transform to world coordinate space.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em direction} & A reference to the direction expressed in the local coordinate space of this transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed direction expressed in world coordinate space. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -293,18 +1063,18 @@ A struct of transforms.
 \index{mage\+::\+Transform@{mage\+::\+Transform}!m\+\_\+rotation@{m\+\_\+rotation}}
 \index{m\+\_\+rotation@{m\+\_\+rotation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{m\+\_\+rotation}{m\_rotation}}
-{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Transform\+::m\+\_\+rotation\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Transform\+::m\+\_\+rotation\hspace{0.3cm}{\ttfamily [private]}}
 
 The rotation component (in radians) of this transform. \hypertarget{structmage_1_1_transform_a25d15c85b93037bab5b755c86bef0b54}{}\label{structmage_1_1_transform_a25d15c85b93037bab5b755c86bef0b54} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!m\+\_\+scale@{m\+\_\+scale}}
 \index{m\+\_\+scale@{m\+\_\+scale}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{m\+\_\+scale}{m\_scale}}
-{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Transform\+::m\+\_\+scale\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Transform\+::m\+\_\+scale\hspace{0.3cm}{\ttfamily [private]}}
 
 The scale component of this transform. \hypertarget{structmage_1_1_transform_a57e27b28e0cf85be034055a68513ad79}{}\label{structmage_1_1_transform_a57e27b28e0cf85be034055a68513ad79} 
 \index{mage\+::\+Transform@{mage\+::\+Transform}!m\+\_\+translation@{m\+\_\+translation}}
 \index{m\+\_\+translation@{m\+\_\+translation}!mage\+::\+Transform@{mage\+::\+Transform}}
 \subsubsection{\texorpdfstring{m\+\_\+translation}{m\_translation}}
-{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Transform\+::m\+\_\+translation\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T3 mage\+::\+Transform\+::m\+\_\+translation\hspace{0.3cm}{\ttfamily [private]}}
 
 The translation component of this transform. 

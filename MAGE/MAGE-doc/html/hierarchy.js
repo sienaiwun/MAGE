@@ -5,6 +5,12 @@ var hierarchy =
       [ "mage::Variable::Value< T >", "structmage_1_1_variable_1_1_value.html", null ]
     ] ],
     [ "mage::BS", "structmage_1_1_b_s.html", null ],
+    [ "mage::Camera", "classmage_1_1_camera.html", [
+      [ "mage::OrthographicCamera", "classmage_1_1_orthographic_camera.html", null ],
+      [ "mage::PerspectiveCamera", "classmage_1_1_perspective_camera.html", null ]
+    ] ],
+    [ "mage::CartesianAxesSystem", "structmage_1_1_cartesian_axes_system.html", null ],
+    [ "mage::CartesianCoordinateSystem", "structmage_1_1_cartesian_coordinate_system.html", null ],
     [ "mage::ConditionVariable", "classmage_1_1_condition_variable.html", null ],
     [ "mage::DDS_HEADER", "structmage_1_1_d_d_s___h_e_a_d_e_r.html", null ],
     [ "mage::DDS_HEADER_DXT10", "structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10.html", null ],
@@ -40,6 +46,9 @@ var hierarchy =
     ] ],
     [ "mage::ResourceManager< T >", "classmage_1_1_resource_manager.html", null ],
     [ "mage::ResourceManager< mage::VariableScript >", "classmage_1_1_resource_manager.html", null ],
+    [ "mage::SceneNode", "classmage_1_1_scene_node.html", [
+      [ "mage::CameraNode", "classmage_1_1_camera_node.html", null ]
+    ] ],
     [ "mage::Semaphore", "classmage_1_1_semaphore.html", null ],
     [ "mage::State", "classmage_1_1_state.html", null ],
     [ "mage::StateManager", "classmage_1_1_state_manager.html", null ],

@@ -94,11 +94,20 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_available_blocks
 : <a class="el" href="classmage_1_1_memory_arena.html#a89c4f1d2b4d5e05bb46fa303d70428c4">mage::MemoryArena</a>
 </li>
+<li>m_axes
+: <a class="el" href="structmage_1_1_cartesian_coordinate_system.html#acf7b8cf35026f5fa8fc11a126b96b055">mage::CartesianCoordinateSystem</a>
+</li>
 <li>m_block_size
 : <a class="el" href="classmage_1_1_memory_arena.html#a18177c245b045c5536330ffed284ed4d">mage::MemoryArena</a>
 </li>
 <li>m_buffer
 : <a class="el" href="classmage_1_1_progress_reporter.html#a3aa49d5b886263402d9a9ecb4851670c">mage::ProgressReporter</a>
+</li>
+<li>m_camera
+: <a class="el" href="classmage_1_1_camera_node.html#aee902112c2e70e8de69b69aed303ca1f">mage::CameraNode</a>
+</li>
+<li>m_childs
+: <a class="el" href="classmage_1_1_scene_node.html#af3a11d9847c95d90e9dee2a2575fd92b">mage::SceneNode</a>
 </li>
 <li>m_chunk_size
 : <a class="el" href="classmage_1_1_parallel_for_loop.html#a5c17c6e07dda15386c475dc2f80bd8ba">mage::ParallelForLoop</a>
@@ -149,17 +158,26 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_events
 : <a class="el" href="classmage_1_1_condition_variable.html#aa3eeb3cf7cdcc70e651ee67800b713f5">mage::ConditionVariable</a>
 </li>
+<li>m_far_z
+: <a class="el" href="classmage_1_1_camera.html#abe2eeca725ce3da238256007454b241f">mage::Camera</a>
+</li>
 <li>m_feature_level
 : <a class="el" href="classmage_1_1_renderer.html#aa97b108ef58f7d41ddb527f6ba2bfdf9">mage::Renderer</a>
 </li>
 <li>m_fout
 : <a class="el" href="classmage_1_1_progress_reporter.html#ad325ee5978fd1d16a97acbe37a977982">mage::ProgressReporter</a>
 </li>
+<li>m_fov_y
+: <a class="el" href="classmage_1_1_perspective_camera.html#abdcf1a0cdd247e0f7e14e70898678af6">mage::PerspectiveCamera</a>
+</li>
 <li>m_fullscreen
 : <a class="el" href="classmage_1_1_renderer.html#a72bb88b17491bd388460afae9d207b0a">mage::Renderer</a>
 </li>
 <li>m_handle
 : <a class="el" href="classmage_1_1_semaphore.html#ac1ded856984b4ac3739d9ff627838fda">mage::Semaphore</a>
+</li>
+<li>m_height
+: <a class="el" href="classmage_1_1_camera.html#a48485eca596702f0e5985ec8b7db35a5">mage::Camera</a>
 </li>
 <li>m_hinstance
 : <a class="el" href="structmage_1_1_engine_setup.html#af91461305cd9aa60e22fa770395d2238">mage::EngineSetup</a>
@@ -248,14 +266,23 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_nb_writers_waiting
 : <a class="el" href="classmage_1_1_read_write_mutex.html#a003313794a9b43f80bd9b258b039438d">mage::ReadWriteMutex</a>
 </li>
+<li>m_near_z
+: <a class="el" href="classmage_1_1_camera.html#a685f8700a29d1f1eff2bec353c3ec970">mage::Camera</a>
+</li>
 <li>m_next
 : <a class="el" href="classmage_1_1_parallel_for_loop.html#a8a0b3a82891160006795656c06c772da">mage::ParallelForLoop</a>
 </li>
 <li>m_next_index
 : <a class="el" href="classmage_1_1_parallel_for_loop.html#a3d0ef5cd968afc70d03cd1b740fcf4cb">mage::ParallelForLoop</a>
 </li>
+<li>m_o
+: <a class="el" href="structmage_1_1_cartesian_coordinate_system.html#a1ea373bb91be991ee221a2ce1e02be2b">mage::CartesianCoordinateSystem</a>
+</li>
 <li>m_output
 : <a class="el" href="classmage_1_1_device_enumeration.html#aa94f384c26d80b153174a9ed38efc71b">mage::DeviceEnumeration</a>
+</li>
+<li>m_parent
+: <a class="el" href="classmage_1_1_scene_node.html#a507db45672f28f899f6c7b0f6a292202">mage::SceneNode</a>
 </li>
 <li>m_path
 : <a class="el" href="classmage_1_1_resource.html#a983470902250a8d16b6d5d01c332804b">mage::Resource</a>
@@ -351,6 +378,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_timer
 : <a class="el" href="classmage_1_1_progress_reporter.html#aaca483b46968f0d39262305b5400a3e1">mage::ProgressReporter</a>
 </li>
+<li>m_transform
+: <a class="el" href="classmage_1_1_camera.html#a5f7bd764e2a4a9221bf1f157fa23b3af">mage::Camera</a>
+</li>
 <li>m_translation
 : <a class="el" href="structmage_1_1_transform.html#a57e27b28e0cf85be034055a68513ad79">mage::Transform</a>
 </li>
@@ -377,17 +407,32 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_view_clear_flags
 : <a class="el" href="structmage_1_1_viewer_setup.html#aed7b78b5437c46627949142f628c331d">mage::ViewerSetup</a>
 </li>
+<li>m_view_to_projection
+: <a class="el" href="classmage_1_1_camera.html#a37b814e26a4c733a40a5f6fea691e958">mage::Camera</a>
+</li>
 <li>m_vsync
 : <a class="el" href="classmage_1_1_device_enumeration.html#a027220f50649c40785e2b918411adfad">mage::DeviceEnumeration</a>
 </li>
+<li>m_width
+: <a class="el" href="classmage_1_1_camera.html#acc8f371214af02fdac9a1ff04508c4ca">mage::Camera</a>
+</li>
 <li>m_windowed
 : <a class="el" href="classmage_1_1_device_enumeration.html#a277c5dae7861c9cb1175192a61274cc9">mage::DeviceEnumeration</a>
+</li>
+<li>m_x
+: <a class="el" href="structmage_1_1_cartesian_axes_system.html#aa840c10ca92782e8c87c1ab53f0b86e9">mage::CartesianAxesSystem</a>
+</li>
+<li>m_y
+: <a class="el" href="structmage_1_1_cartesian_axes_system.html#a2cc6bc4fe185791a877e1418e85d6b47">mage::CartesianAxesSystem</a>
+</li>
+<li>m_z
+: <a class="el" href="structmage_1_1_cartesian_axes_system.html#abc733e5f82104391b0b352d263313d64">mage::CartesianAxesSystem</a>
 </li>
 <li>MainWindow()
 : <a class="el" href="classmage_1_1_main_window.html#a245e387a79d5957c01c8e10cc083b346">mage::MainWindow</a>
 </li>
 <li>MemoryArena()
-: <a class="el" href="classmage_1_1_memory_arena.html#aa243c458adb14e211f4dd944c4c82148">mage::MemoryArena</a>
+: <a class="el" href="classmage_1_1_memory_arena.html#a1eca6fdacbd1226f4b21f443d118168b">mage::MemoryArena</a>
 </li>
 <li>mip_map_count
 : <a class="el" href="structmage_1_1_d_d_s___h_e_a_d_e_r.html#aab57cee5b4f63301d2ef702c49c3d191">mage::DDS_HEADER</a>
@@ -402,7 +447,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classmage_1_1_mouse.html#ad02365977dab44603400ac6f24e0df97">mage::Mouse</a>
 </li>
 <li>Mutex()
-: <a class="el" href="classmage_1_1_mutex.html#ab22db01311271ef54642b10ea53dfd8a">mage::Mutex</a>
+: <a class="el" href="classmage_1_1_mutex.html#a0f38f170668eb1fe3c2f110738edc39e">mage::Mutex</a>
 </li>
 <li>MutexLock
 : <a class="el" href="classmage_1_1_mutex.html#a058473d070063e5098732f355f432bd9">mage::Mutex</a>

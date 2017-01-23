@@ -7,6 +7,7 @@ var searchData=
   ['rejectdisplaymode',['RejectDisplayMode',['../namespacemage.html#abdccde1f16aa2239019e1b455d8b941b',1,'mage']]],
   ['releaseread',['ReleaseRead',['../classmage_1_1_read_write_mutex.html#a0af5059a9bd16abd8a21b15e7ebe053d',1,'mage::ReadWriteMutex']]],
   ['releasewrite',['ReleaseWrite',['../classmage_1_1_read_write_mutex.html#ad0fd296bdaa212f54a58372c8dfe1d1d',1,'mage::ReadWriteMutex']]],
+  ['removechild',['RemoveChild',['../classmage_1_1_scene_node.html#a42aa6487f21c948ab7ce6f64a57e5f11',1,'mage::SceneNode']]],
   ['removeresource',['RemoveResource',['../classmage_1_1_resource_manager.html#ab10959337c87b6454209b5116478cc21',1,'mage::ResourceManager']]],
   ['removestate',['RemoveState',['../classmage_1_1_state_manager.html#ad1589f7792508f0568f673b925a2bdba',1,'mage::StateManager']]],
   ['removevariable',['RemoveVariable',['../classmage_1_1_variable_script.html#a4970ef4faafb1a6a43c4648ec9f36cce',1,'mage::VariableScript']]],
