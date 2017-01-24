@@ -27,6 +27,7 @@ var searchData=
   ['_7eresource',['~Resource',['../classmage_1_1_resource.html#a80112db991a7dfd1dc0b24967981ac60',1,'mage::Resource']]],
   ['_7eresourcemanager',['~ResourceManager',['../classmage_1_1_resource_manager.html#af3b6bf56e57bd3df0eb569510dd1483b',1,'mage::ResourceManager']]],
   ['_7escenenode',['~SceneNode',['../classmage_1_1_scene_node.html#ad7ae54e25fb970772c0b0a6c5bac57ff',1,'mage::SceneNode']]],
+  ['_7escenenodevisitor',['~SceneNodeVisitor',['../classmage_1_1_scene_node_visitor.html#ac45f02e28abeeb9220b0be954ca6a513',1,'mage::SceneNodeVisitor']]],
   ['_7esemaphore',['~Semaphore',['../classmage_1_1_semaphore.html#a991ed365c28e4a9c63ff34a5efeb012d',1,'mage::Semaphore']]],
   ['_7estate',['~State',['../classmage_1_1_state.html#aa970b0dd628870e72a7f7fffcff1db13',1,'mage::State']]],
   ['_7estatemanager',['~StateManager',['../classmage_1_1_state_manager.html#af4bc45cc90437f54e2776e2a8ee747e1',1,'mage::StateManager']]],

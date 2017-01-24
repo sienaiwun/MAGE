@@ -49,6 +49,7 @@ var hierarchy =
     [ "mage::SceneNode", "classmage_1_1_scene_node.html", [
       [ "mage::CameraNode", "classmage_1_1_camera_node.html", null ]
     ] ],
+    [ "mage::SceneNodeVisitor", "classmage_1_1_scene_node_visitor.html", null ],
     [ "mage::Semaphore", "classmage_1_1_semaphore.html", null ],
     [ "mage::State", "classmage_1_1_state.html", null ],
     [ "mage::StateManager", "classmage_1_1_state_manager.html", null ],

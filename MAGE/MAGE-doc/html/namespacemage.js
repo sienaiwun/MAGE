@@ -40,6 +40,7 @@ var namespacemage =
     [ "Resource", "classmage_1_1_resource.html", "classmage_1_1_resource" ],
     [ "ResourceManager", "classmage_1_1_resource_manager.html", "classmage_1_1_resource_manager" ],
     [ "SceneNode", "classmage_1_1_scene_node.html", "classmage_1_1_scene_node" ],
+    [ "SceneNodeVisitor", "classmage_1_1_scene_node_visitor.html", "classmage_1_1_scene_node_visitor" ],
     [ "Semaphore", "classmage_1_1_semaphore.html", "classmage_1_1_semaphore" ],
     [ "State", "classmage_1_1_state.html", "classmage_1_1_state" ],
     [ "StateManager", "classmage_1_1_state_manager.html", "classmage_1_1_state_manager" ],

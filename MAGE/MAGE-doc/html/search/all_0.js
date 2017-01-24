@@ -4,6 +4,7 @@ var searchData=
   ['aabb',['AABB',['../structmage_1_1_a_a_b_b.html#ae6db94dcb9165eb008f0be8741f0eb62',1,'mage::AABB::AABB()'],['../structmage_1_1_a_a_b_b.html#ace7530031c44d2343b2b3377e63228d6',1,'mage::AABB::AABB(const XMFLOAT3 &amp;p_min, const XMFLOAT3 &amp;p_max)']]],
   ['abitmask',['ABitMask',['../structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#a2f633f7ae47270caa66913cac7a50af3',1,'mage::DDS_PIXELFORMAT']]],
   ['abstractvalue',['AbstractValue',['../structmage_1_1_variable_1_1_abstract_value.html',1,'mage::Variable']]],
+  ['accept',['Accept',['../classmage_1_1_camera_node.html#aed9c3c12cc4163fed880c49e43380efe',1,'mage::CameraNode::Accept(SceneNodeVisitor &amp;visitor) override'],['../classmage_1_1_camera_node.html#a8b94f57b3a04f70b2c04a3d7c1ba3082',1,'mage::CameraNode::Accept(SceneNodeVisitor &amp;visitor) const override'],['../classmage_1_1_scene_node.html#a32ed8763c8f8b4caa155f64551d96f13',1,'mage::SceneNode::Accept(SceneNodeVisitor &amp;visitor)=0'],['../classmage_1_1_scene_node.html#a35fbfd49185fb61cb4e9edf56af35262',1,'mage::SceneNode::Accept(SceneNodeVisitor &amp;visitor) const =0']]],
   ['acquireread',['AcquireRead',['../classmage_1_1_read_write_mutex.html#af78045647078aaf3966c8f1b06e35c92',1,'mage::ReadWriteMutex']]],
   ['acquirewrite',['AcquireWrite',['../classmage_1_1_read_write_mutex.html#a76137013107a9c2c1fc05c1e0747965e',1,'mage::ReadWriteMutex']]],
   ['addchild',['AddChild',['../classmage_1_1_scene_node.html#ac07f89af783b1658a1f74205914f6fa3',1,'mage::SceneNode']]],

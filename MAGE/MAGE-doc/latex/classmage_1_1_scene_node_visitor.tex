@@ -1,0 +1,67 @@
+\hypertarget{classmage_1_1_scene_node_visitor}{}\section{mage\+:\+:Scene\+Node\+Visitor Class Reference}
+\label{classmage_1_1_scene_node_visitor}\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+
+
+{\ttfamily \#include $<$scene\+\_\+node\+\_\+visitor.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classmage_1_1_scene_node_visitor_ac45f02e28abeeb9220b0be954ca6a513}{$\sim$\+Scene\+Node\+Visitor} ()
+\item 
+virtual void \hyperlink{classmage_1_1_scene_node_visitor_a01d831e494396ab678ce0c29b008a398}{Visit\+Camera\+Node} (\hyperlink{classmage_1_1_camera_node}{Camera\+Node} \&camera\+\_\+node)
+\item 
+virtual void \hyperlink{classmage_1_1_scene_node_visitor_a4a3bb0c3ad6253c919259efabbccfab9}{Visit\+Camera\+Node} (const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} \&camera\+\_\+node)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_scene_node_visitor_a6a259a0ce19107bb644482b86c4bd27a}{Scene\+Node\+Visitor} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of scene node visitors. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_scene_node_visitor_ac45f02e28abeeb9220b0be954ca6a513}{}\label{classmage_1_1_scene_node_visitor_ac45f02e28abeeb9220b0be954ca6a513} 
+\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!````~Scene\+Node\+Visitor@{$\sim$\+Scene\+Node\+Visitor}}
+\index{````~Scene\+Node\+Visitor@{$\sim$\+Scene\+Node\+Visitor}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+\subsubsection{\texorpdfstring{$\sim$\+Scene\+Node\+Visitor()}{~SceneNodeVisitor()}}
+{\footnotesize\ttfamily virtual mage\+::\+Scene\+Node\+Visitor\+::$\sim$\+Scene\+Node\+Visitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs this scene node visitor. \hypertarget{classmage_1_1_scene_node_visitor_a6a259a0ce19107bb644482b86c4bd27a}{}\label{classmage_1_1_scene_node_visitor_a6a259a0ce19107bb644482b86c4bd27a} 
+\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!Scene\+Node\+Visitor@{Scene\+Node\+Visitor}}
+\index{Scene\+Node\+Visitor@{Scene\+Node\+Visitor}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+\subsubsection{\texorpdfstring{Scene\+Node\+Visitor()}{SceneNodeVisitor()}}
+{\footnotesize\ttfamily mage\+::\+Scene\+Node\+Visitor\+::\+Scene\+Node\+Visitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructs a scene node visitor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_scene_node_visitor_a01d831e494396ab678ce0c29b008a398}{}\label{classmage_1_1_scene_node_visitor_a01d831e494396ab678ce0c29b008a398} 
+\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!Visit\+Camera\+Node@{Visit\+Camera\+Node}}
+\index{Visit\+Camera\+Node@{Visit\+Camera\+Node}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+\subsubsection{\texorpdfstring{Visit\+Camera\+Node()}{VisitCameraNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void mage\+::\+Scene\+Node\+Visitor\+::\+Visit\+Camera\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classmage_1_1_camera_node}{Camera\+Node} \&}]{camera\+\_\+node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Visits the given camera node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em camera\+\_\+node} & The camera node. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_scene_node_visitor_a4a3bb0c3ad6253c919259efabbccfab9}{}\label{classmage_1_1_scene_node_visitor_a4a3bb0c3ad6253c919259efabbccfab9} 
+\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!Visit\+Camera\+Node@{Visit\+Camera\+Node}}
+\index{Visit\+Camera\+Node@{Visit\+Camera\+Node}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+\subsubsection{\texorpdfstring{Visit\+Camera\+Node()}{VisitCameraNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void mage\+::\+Scene\+Node\+Visitor\+::\+Visit\+Camera\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} \&}]{camera\+\_\+node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Visits the given camera node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em camera\+\_\+node} & The camera node. \\
+\hline
+\end{DoxyParams}

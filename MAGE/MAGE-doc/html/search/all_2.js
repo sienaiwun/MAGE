@@ -1,9 +1,9 @@
 var searchData=
 [
   ['camera',['Camera',['../classmage_1_1_camera.html',1,'mage']]],
-  ['camera',['Camera',['../classmage_1_1_camera.html#a21ce33c0d4f4e3fb2cbbd9ba8d024a23',1,'mage::Camera']]],
+  ['camera',['Camera',['../classmage_1_1_camera.html#a64980217b5ae3817affab70eb3e61342',1,'mage::Camera']]],
   ['cameranode',['CameraNode',['../classmage_1_1_camera_node.html',1,'mage']]],
-  ['cameranode',['CameraNode',['../classmage_1_1_camera_node.html#a6e1a32bd7a1c8cae09439f0922a5192a',1,'mage::CameraNode']]],
+  ['cameranode',['CameraNode',['../classmage_1_1_camera_node.html#aa6b469b939b268275665f5b962b82d4a',1,'mage::CameraNode']]],
   ['caps',['caps',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#ad44c3f88942707c377f25a64fb1b6872',1,'mage::DDS_HEADER']]],
   ['caps2',['caps2',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#ada2de9e6468e8d5da2a3e246bc079dc9',1,'mage::DDS_HEADER']]],
   ['caps3',['caps3',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#a85726c8826cc856565e2c978cb37ff4b',1,'mage::DDS_HEADER']]],
@@ -26,7 +26,7 @@ var searchData=
   ['comboboxsomethingselected',['ComboBoxSomethingSelected',['../namespacemage.html#afa2451527062c4213d21bdf01b1922c6',1,'mage']]],
   ['conditionvariable',['ConditionVariable',['../classmage_1_1_condition_variable.html#a09073f0affc601f052fce541a17ba559',1,'mage::ConditionVariable']]],
   ['conditionvariable',['ConditionVariable',['../classmage_1_1_condition_variable.html',1,'mage']]],
-  ['containschild',['ContainsChild',['../classmage_1_1_scene_node.html#ae810fa86b94a35e230faff5305946ba1',1,'mage::SceneNode']]],
+  ['containschild',['ContainsChild',['../classmage_1_1_scene_node.html#a99c86a1d18b41d4c5ce0384ba53a0952',1,'mage::SceneNode']]],
   ['create',['Create',['../classmage_1_1_mutex.html#a48d784fa6bffd4088d9f89a2a9cca84e',1,'mage::Mutex::Create()'],['../classmage_1_1_read_write_mutex.html#ad184ba46c44446b5ebe1026801fcac9b',1,'mage::ReadWriteMutex::Create()']]],
   ['created3dresources',['CreateD3DResources',['../namespacemage.html#a60c2e53d311a0972990ac7ed09552fe4',1,'mage']]],
   ['createddstexturefromfile',['CreateDDSTextureFromFile',['../namespacemage.html#abb3d998e8e64bab729050e5d6b9e848c',1,'mage::CreateDDSTextureFromFile(ID3D11Device *d3dDevice, const wchar_t *file_name, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, DDS_ALPHA_MODE *alpha_mode)'],['../namespacemage.html#ae4d1a462c004d260ef861c9ccdcba9e3',1,'mage::CreateDDSTextureFromFile(ID3D11Device *d3dDevice, ID3D11DeviceContext *d3dContext, const wchar_t *file_name, ID3D11Resource **texture, ID3D11ShaderResourceView **texture_view, size_t maxsize, DDS_ALPHA_MODE *alpha_mode)'],['../namespacemage.html#aa0bc631077bed07a8b8c27b500ded2d5',1,'mage::CreateDDSTextureFromFile(_In_ ID3D11Device *d3dDevice, _In_z_ const wchar_t *szFileName, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ DDS_ALPHA_MODE *alpha_mode=nullptr)'],['../namespacemage.html#aad2679951c2320a1e68d9923a47a2828',1,'mage::CreateDDSTextureFromFile(_In_ ID3D11Device *d3dDevice, _In_opt_ ID3D11DeviceContext *d3dContext, _In_z_ const wchar_t *szFileName, _Outptr_opt_ ID3D11Resource **texture, _Outptr_opt_ ID3D11ShaderResourceView **texture_view, _In_ size_t maxsize=0, _Out_opt_ DDS_ALPHA_MODE *alpha_mode=nullptr)']]],
