@@ -107,10 +107,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a198d1460d9312af27ed6ef2ac28b616d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf42546e2560d7d62e7e62680a6da02b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_perspective_camera.html#abf42546e2560d7d62e7e62680a6da02b">~PerspectiveCamera</a> ()</td></tr>
 <tr class="separator:abf42546e2560d7d62e7e62680a6da02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fae7b2ca5daadeda0fd935fcdb101a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmage_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_perspective_camera.html#aa2fae7b2ca5daadeda0fd935fcdb101a">Clone</a> () const</td></tr>
+<tr class="separator:aa2fae7b2ca5daadeda0fd935fcdb101a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15223034b30ca691c51de8850c033293"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_perspective_camera.html#a15223034b30ca691c51de8850c033293">GetFOVY</a> () const</td></tr>
 <tr class="separator:a15223034b30ca691c51de8850c033293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00033fc6b25206c40a056ce142fecfee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_perspective_camera.html#a00033fc6b25206c40a056ce142fecfee">SetFOVY</a> (float fov_y)</td></tr>
 <tr class="separator:a00033fc6b25206c40a056ce142fecfee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74cbd2777d5b430da5702a12b1b451e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_perspective_camera.html#ab74cbd2777d5b430da5702a12b1b451e">GetAspectRatio</a> () const</td></tr>
+<tr class="separator:ab74cbd2777d5b430da5702a12b1b451e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83a38a4e8180707df2323130f9cee4a5"><td class="memItemLeft" align="right" valign="top">virtual XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_perspective_camera.html#a83a38a4e8180707df2323130f9cee4a5">GetViewToProjectionMatrix</a> () const override</td></tr>
 <tr class="separator:a83a38a4e8180707df2323130f9cee4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adef65223ab45c65cebf712dd14cea942"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_perspective_camera.html#adef65223ab45c65cebf712dd14cea942">SetViewToProjectionMatrix</a> (float width, float height, float fov_y=MAGE_DEFAULT_CAMERA_FOV_Y, float near_z=MAGE_DEFAULT_CAMERA_NEAR_Z, float far_z=MAGE_DEFAULT_CAMERA_FAR_Z)</td></tr>
@@ -143,21 +147,14 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:abdcf1a0cdd247e0f7e14e70898678af6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_perspective_camera.html#abdcf1a0cdd247e0f7e14e70898678af6">m_fov_y</a></td></tr>
 <tr class="separator:abdcf1a0cdd247e0f7e14e70898678af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classmage_1_1_camera"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmage_1_1_camera')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmage_1_1_camera.html">mage::Camera</a></td></tr>
-<tr class="memitem:acc8f371214af02fdac9a1ff04508c4ca inherit pro_attribs_classmage_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#acc8f371214af02fdac9a1ff04508c4ca">m_width</a></td></tr>
-<tr class="separator:acc8f371214af02fdac9a1ff04508c4ca inherit pro_attribs_classmage_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48485eca596702f0e5985ec8b7db35a5 inherit pro_attribs_classmage_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a48485eca596702f0e5985ec8b7db35a5">m_height</a></td></tr>
-<tr class="separator:a48485eca596702f0e5985ec8b7db35a5 inherit pro_attribs_classmage_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a685f8700a29d1f1eff2bec353c3ec970 inherit pro_attribs_classmage_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a685f8700a29d1f1eff2bec353c3ec970">m_near_z</a></td></tr>
-<tr class="separator:a685f8700a29d1f1eff2bec353c3ec970 inherit pro_attribs_classmage_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2eeca725ce3da238256007454b241f inherit pro_attribs_classmage_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#abe2eeca725ce3da238256007454b241f">m_far_z</a></td></tr>
-<tr class="separator:abe2eeca725ce3da238256007454b241f inherit pro_attribs_classmage_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classmage_1_1_camera"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmage_1_1_camera')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmage_1_1_camera.html">mage::Camera</a></td></tr>
 <tr class="memitem:a64980217b5ae3817affab70eb3e61342 inherit pro_methods_classmage_1_1_camera"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a64980217b5ae3817affab70eb3e61342">Camera</a> (float width, float height, float near_z=MAGE_DEFAULT_CAMERA_NEAR_Z, float far_z=MAGE_DEFAULT_CAMERA_FAR_Z)</td></tr>
 <tr class="separator:a64980217b5ae3817affab70eb3e61342 inherit pro_methods_classmage_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d9280bd7067ec4d28392558cc2b767 inherit pro_methods_classmage_1_1_camera"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a28d9280bd7067ec4d28392558cc2b767">Camera</a> (const <a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;camera)</td></tr>
+<tr class="separator:a28d9280bd7067ec4d28392558cc2b767 inherit pro_methods_classmage_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of perspective camera. </p>
@@ -271,6 +268,54 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa2fae7b2ca5daadeda0fd935fcdb101a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2fae7b2ca5daadeda0fd935fcdb101a">&sect;&nbsp;</a></span>Clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classmage_1_1_camera.html">Camera</a>* mage::PerspectiveCamera::Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clones this perspective camera.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the clone of this perspective camera. </dd></dl>
+
+<p>Implements <a class="el" href="classmage_1_1_camera.html#a19301c2256c183db50b5e9406f7b5f3c">mage::Camera</a>.</p>
+
+</div>
+</div>
+<a id="ab74cbd2777d5b430da5702a12b1b451e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74cbd2777d5b430da5702a12b1b451e">&sect;&nbsp;</a></span>GetAspectRatio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mage::PerspectiveCamera::GetAspectRatio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the aspect ratio of this perspective camera.</p>
+<dl class="section return"><dt>Returns</dt><dd>The aspect ratio of this perspective camera. </dd></dl>
+
+</div>
+</div>
 <a id="a15223034b30ca691c51de8850c033293"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15223034b30ca691c51de8850c033293">&sect;&nbsp;</a></span>GetFOVY()</h2>
 

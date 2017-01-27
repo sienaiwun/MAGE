@@ -2,6 +2,7 @@ var classmage_1_1_mouse =
 [
     [ "Mouse", "classmage_1_1_mouse.html#ad02365977dab44603400ac6f24e0df97", null ],
     [ "~Mouse", "classmage_1_1_mouse.html#a855f1075ae774c8417d3da7a1e02d580", null ],
+    [ "Mouse", "classmage_1_1_mouse.html#ab510a83c48c14fe4855d39cf4e9599d6", null ],
     [ "GetDeltaWheel", "classmage_1_1_mouse.html#a898f4d0e645040c3a4121c2fe8119a89", null ],
     [ "GetDeltaX", "classmage_1_1_mouse.html#a137313b065314d98c7b61eaefce6c3d1", null ],
     [ "GetDeltaY", "classmage_1_1_mouse.html#af0769d0f7658b0699cf5b4f797163510", null ],
@@ -9,6 +10,7 @@ var classmage_1_1_mouse =
     [ "GetPosX", "classmage_1_1_mouse.html#a6af2e1ea96554ee34e16a37a257fe11c", null ],
     [ "GetPosY", "classmage_1_1_mouse.html#af4da58c811896f0814956382a756db61", null ],
     [ "InitializeMouse", "classmage_1_1_mouse.html#a5789b777aca438fb343a515165cd907a", null ],
+    [ "operator=", "classmage_1_1_mouse.html#ae3c9c2063e7323f37bec2bcee773e0e8", null ],
     [ "UninitializeMouse", "classmage_1_1_mouse.html#a3f4647121d283a95464a0652da2816b0", null ],
     [ "Update", "classmage_1_1_mouse.html#a0cddae3f871dd69c1ba6928dc6b1f985", null ],
     [ "InputManager", "classmage_1_1_mouse.html#af0e8c3dcc20b7ddcaf63506363a22821", null ],

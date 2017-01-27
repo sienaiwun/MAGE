@@ -2,6 +2,8 @@ var classmage_1_1_renderer =
 [
     [ "Renderer", "classmage_1_1_renderer.html#a762dcda433c319af237d1dfd9bc6095f", null ],
     [ "~Renderer", "classmage_1_1_renderer.html#a997e041f28cc71d069d1ab7d29fe6ced", null ],
+    [ "GetDevice", "classmage_1_1_renderer.html#a38522d4b6933ef8f9ef5e46b713bdc95", null ],
+    [ "GetDeviceContext", "classmage_1_1_renderer.html#aa212ed67007115da62b6338f75e4eb75", null ],
     [ "InitializeRenderer", "classmage_1_1_renderer.html#aafed50e7e14ca597541c091941351929", null ],
     [ "IsFullScreen", "classmage_1_1_renderer.html#a5ae3220e19c68f47a8e4d55e3ced4694", null ],
     [ "IsWindowed", "classmage_1_1_renderer.html#a1de1804c1eedae7dc12435a520a10b9c", null ],

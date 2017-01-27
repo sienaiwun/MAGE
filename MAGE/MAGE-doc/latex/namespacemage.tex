@@ -33,11 +33,13 @@ struct \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}
 \item 
 struct \hyperlink{structmage_1_1_face}{Face}
 \item 
-class \hyperlink{classmage_1_1_font}{Font}
+class \hyperlink{classmage_1_1_flat_mesh}{Flat\+Mesh}
 \item 
 struct \hyperlink{structmage_1_1_indexed_edge}{Indexed\+Edge}
 \item 
 struct \hyperlink{structmage_1_1_indexed_face}{Indexed\+Face}
+\item 
+class \hyperlink{classmage_1_1_indexed_mesh}{Indexed\+Mesh}
 \item 
 class \hyperlink{classmage_1_1_input_manager}{Input\+Manager}
 \item 
@@ -53,11 +55,15 @@ class \hyperlink{classmage_1_1_main_window}{Main\+Window}
 \item 
 class \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena}
 \item 
+class \hyperlink{classmage_1_1_mesh}{Mesh}
+\item 
 class \hyperlink{classmage_1_1_mouse}{Mouse}
 \item 
 class \hyperlink{classmage_1_1_mutex}{Mutex}
 \item 
 struct \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock}
+\item 
+struct \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3}
 \item 
 class \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera}
 \item 
@@ -65,15 +71,13 @@ class \hyperlink{classmage_1_1_parallel_for_loop}{Parallel\+For\+Loop}
 \item 
 class \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera}
 \item 
+class \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}
+\item 
 class \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter}
 \item 
 class \hyperlink{classmage_1_1_read_write_mutex}{Read\+Write\+Mutex}
 \item 
 struct \hyperlink{structmage_1_1_read_write_mutex_lock}{Read\+Write\+Mutex\+Lock}
-\item 
-class \hyperlink{classmage_1_1_reference}{Reference}
-\item 
-class \hyperlink{classmage_1_1_reference_counted}{Reference\+Counted}
 \item 
 class \hyperlink{classmage_1_1_renderer}{Renderer}
 \item 
@@ -104,6 +108,8 @@ struct \hyperlink{structmage_1_1_variable}{Variable}
 class \hyperlink{classmage_1_1_variable_script}{Variable\+Script}
 \item 
 struct \hyperlink{structmage_1_1_vertex}{Vertex}
+\item 
+class \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader}
 \item 
 struct \hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup}
 \end{DoxyCompactItemize}
@@ -152,6 +158,8 @@ enum \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+
 \item 
 void \hyperlink{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{Print\+Console\+Header} ()
 \item 
+string \hyperlink{namespacemage_aec46035d0a6e15632a44ac88619fb675}{Get\+File\+Extension} (const string \&fname)
+\item 
 static const char $\ast$ \hyperlink{namespacemage_a81ebde51f9da00dd6fad364a2c5017cb}{Find\+Word\+End} (const char $\ast$buffer)
 \item 
 static void \hyperlink{namespacemage_a12282bdc04d00e024c5ddf93ed9ad785}{Process\+Error} (const char $\ast$format, const va\+\_\+list args, const string \&error\+\_\+type, int error\+\_\+disposition)
@@ -181,6 +189,44 @@ int \hyperlink{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{Terminal\+Width}
 void $\ast$ \hyperlink{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{Alloc\+Aligned} (size\+\_\+t size)
 \item 
 void \hyperlink{namespacemage_a401c54df21447c491c527735647b5f80}{Free\+Aligned} (void $\ast$ptr)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a17793ae4db8f6a180f6ccf6d02ea11f8}{Load\+Mesh\+From\+File} (const string \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_afa50ab2f1511655bc88a08cc18de3e56}{Load\+Mesh\+From\+File} (const string \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+\item 
+static X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a67f3c57c7dcc1ad50c7a8f5167d50b64}{Parse\+O\+B\+J\+Float2} (const char $\ast$token)
+\item 
+static X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_a926f2772c637d2b5c839a936cd8dbdd1}{Parse\+O\+B\+J\+Float3} (const char $\ast$token)
+\item 
+static X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_a694cf999c8539cfcd6afbb31fb2d27cd}{Parse\+O\+B\+J\+Vertex\+Coordinates} (const char $\ast$token)
+\item 
+static X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_a1c9ffc0af89d5d85505557864525e617}{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates} (const char $\ast$token)
+\item 
+static X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a97780c7deeb5a5923b0d6665732e132d}{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates} (const char $\ast$token)
+\item 
+static X\+M\+U\+I\+N\+T3 \hyperlink{namespacemage_afe94a043cb3be4de3549098b7ad7a326}{Parse\+O\+B\+J\+Vertex\+Indices} (const char $\ast$token)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a564204c30bfe0ead7f0b4f3c76cefa2d}{Parse\+O\+B\+J\+Vertex} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a8ffd4094ac940ff129fccb6d77c1f353}{Parse\+O\+B\+J\+Vertex\+Texture} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a3d0761a3accda925b303dd7d0889caac}{Parse\+O\+B\+J\+Vertex\+Normal} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a2933dd3937569d4dfaa1483a1917d2b8}{Parse\+O\+B\+J\+Triangle\+Face} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates, map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&mapping, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a4545e24f19ab29730871b8c9861e48fc}{Parse\+O\+B\+J\+Line} (char $\ast$current\+\_\+line, uint32\+\_\+t line\+\_\+number, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates, map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&mapping, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aa4aeba09316a45a60d3528a03a79a24a}{Load\+O\+B\+J\+Mesh\+From\+File} (const string \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a780c3836bb45fb29a59551cadb00667e}{Load\+O\+B\+J\+Mesh\+From\+Memory} (const char $\ast$input, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a4a7430df49be0a35ff43909784387506}{Parse\+O\+B\+J\+Triangle\+Face} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+\item 
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af6d86000a9cb414a29248b42a44669c6}{Parse\+O\+B\+J\+Line} (char $\ast$current\+\_\+line, uint32\+\_\+t line\+\_\+number, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a585df6c802117cdbc7ed0a99574d4aa1}{Load\+O\+B\+J\+Mesh\+From\+File} (const string \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a53665d32910467a7af514654a14039ce}{Load\+O\+B\+J\+Mesh\+From\+Memory} (const char $\ast$input, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
 \item 
 {\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_aed89242e67231f3ddef77bdc63b32b6c}{Atomic\+Compare\+And\+Swap\+Pointer} (T $\ast$$\ast$destination, T $\ast$exchange, T $\ast$comparand)
 \item 
@@ -215,6 +261,14 @@ I\+N\+T\+\_\+\+P\+TR C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a6b352e8d2bf3
 bool \hyperlink{namespacemage_abdccde1f16aa2239019e1b455d8b941b}{Reject\+Display\+Mode} (const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 $\ast$display\+\_\+mode\+\_\+desc)
 \item 
 size\+\_\+t \hyperlink{namespacemage_a782fb3970da2fbbc93627f7324c193aa}{Bits\+Per\+Pixel} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a815c989b0e968e5854959e96c5796b01}{Compile\+Shader\+From\+File} (L\+P\+C\+W\+S\+TR fname, L\+P\+C\+S\+TR entry\+\_\+point, L\+P\+C\+S\+TR shader\+\_\+target, I\+D3\+D\+Blob $\ast$$\ast$output\+\_\+blob)
+\item 
+char $\ast$ \hyperlink{namespacemage_aa376b0a0e5cfe0c0961c9f35555d55a6}{sgets} (char $\ast$str, int num, const char $\ast$$\ast$input)
+\item 
+bool \hyperlink{namespacemage_a4f78f15f269c1f65d4148983bc8224c5}{str\+\_\+equals} (const char $\ast$str1, const char $\ast$str2)
+\item 
+bool \hyperlink{namespacemage_a5194c40ccd591a8a8926ad7812abcd09}{str\+\_\+contains} (const char $\ast$str1, const char $\ast$str2)
 \item 
 static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ad1df9b8a27dd30528717777fd0c9c3db}{Load\+Texture\+Data\+From\+File} (\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$file\+\_\+name, std\+::unique\+\_\+ptr$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]}$>$ \&dds\+\_\+data, \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$$\ast$header, uint8\+\_\+t $\ast$$\ast$bit\+\_\+data, size\+\_\+t $\ast$bit\+\_\+size)
 \item 
@@ -700,6 +754,25 @@ Checks whether a valid item is selected in a combo box.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if a valid item is selected in the combo box. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a815c989b0e968e5854959e96c5796b01}{}\label{namespacemage_a815c989b0e968e5854959e96c5796b01} 
+\index{mage@{mage}!Compile\+Shader\+From\+File@{Compile\+Shader\+From\+File}}
+\index{Compile\+Shader\+From\+File@{Compile\+Shader\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Compile\+Shader\+From\+File()}{CompileShaderFromFile()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Compile\+Shader\+From\+File (\begin{DoxyParamCaption}\item[{L\+P\+C\+W\+S\+TR}]{fname,  }\item[{L\+P\+C\+S\+TR}]{entry\+\_\+point,  }\item[{L\+P\+C\+S\+TR}]{shader\+\_\+target,  }\item[{I\+D3\+D\+Blob $\ast$$\ast$}]{output\+\_\+blob }\end{DoxyParamCaption})}
+
+Compiles Microsoft High Level Shader Language (H\+L\+SL) code into bytecode for a given shader target.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A pointer to a constant null-\/terminated string that contains the name of the file that contains the shader code. \\
+\hline
+\mbox{\tt in}  & {\em entry\+\_\+point} & A pointer to a constant null-\/terminated string that contains the name of the shader entry point function where shader execution begins. \\
+\hline
+\mbox{\tt in}  & {\em shader\+\_\+target} & A pointer to a constant null-\/terminated string that specifies the shader target or set of shader features to compile against. \\
+\hline
+\mbox{\tt out}  & {\em output\+\_\+blob} & A pointer to a variable that receives a pointer to the I\+D3\+D\+Blob interface that you can use to access the compiled code. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a60c2e53d311a0972990ac7ed09552fe4}{}\label{namespacemage_a60c2e53d311a0972990ac7ed09552fe4} 
 \index{mage@{mage}!Create\+D3\+D\+Resources@{Create\+D3\+D\+Resources}}
 \index{Create\+D3\+D\+Resources@{Create\+D3\+D\+Resources}!mage@{mage}}
@@ -906,6 +979,12 @@ Frees a block of memory that was allocated with \hyperlink{namespacemage_a6c97f7
 \subsubsection{\texorpdfstring{Get\+D\+X\+G\+I\+Format()}{GetDXGIFormat()}}
 {\footnotesize\ttfamily static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::\+Get\+D\+X\+G\+I\+Format (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t}{D\+D\+S\+\_\+\+P\+I\+X\+E\+L\+F\+O\+R\+M\+AT} \&}]{ddpf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\hypertarget{namespacemage_aec46035d0a6e15632a44ac88619fb675}{}\label{namespacemage_aec46035d0a6e15632a44ac88619fb675} 
+\index{mage@{mage}!Get\+File\+Extension@{Get\+File\+Extension}}
+\index{Get\+File\+Extension@{Get\+File\+Extension}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+File\+Extension()}{GetFileExtension()}}
+{\footnotesize\ttfamily string mage\+::\+Get\+File\+Extension (\begin{DoxyParamCaption}\item[{const string \&}]{fname }\end{DoxyParamCaption})}
+
 \hypertarget{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2}{}\label{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2} 
 \index{mage@{mage}!Get\+Surface\+Info@{Get\+Surface\+Info}}
 \index{Get\+Surface\+Info@{Get\+Surface\+Info}!mage@{mage}}
@@ -935,6 +1014,120 @@ An info message is associated with generally useful information to log.
 
 Allocates a console to this engine for basic io and redirects stdin, stdout and stderr to the allocated console.
 
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a17793ae4db8f6a180f6ccf6d02ea11f8}{}\label{namespacemage_a17793ae4db8f6a180f6ccf6d02ea11f8} 
+\index{mage@{mage}!Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}}
+\index{Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Load\+Mesh\+From\+File()}{LoadMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
+
+Loads a mesh from file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the file name. \\
+\hline
+\mbox{\tt in,out}  & {\em vertex\+\_\+buffer} & A reference to the empty vertex buffer. \\
+\hline
+\mbox{\tt in,out}  & {\em index\+\_\+buffer} & A reference to the empty index buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_afa50ab2f1511655bc88a08cc18de3e56}{}\label{namespacemage_afa50ab2f1511655bc88a08cc18de3e56} 
+\index{mage@{mage}!Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}}
+\index{Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Load\+Mesh\+From\+File()}{LoadMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
+
+Loads a mesh from file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the file name. \\
+\hline
+\mbox{\tt in,out}  & {\em vertex\+\_\+buffer} & A reference to the empty vertex buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aa4aeba09316a45a60d3528a03a79a24a}{}\label{namespacemage_aa4aeba09316a45a60d3528a03a79a24a} 
+\index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}}
+\index{Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+File()}{LoadOBJMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
+
+Loads an O\+BJ mesh from file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the file name. \\
+\hline
+\mbox{\tt out}  & {\em vertex\+\_\+buffer} & A reference to the empty vertex buffer. \\
+\hline
+\mbox{\tt out}  & {\em index\+\_\+buffer} & A reference to the empty index buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a585df6c802117cdbc7ed0a99574d4aa1}{}\label{namespacemage_a585df6c802117cdbc7ed0a99574d4aa1} 
+\index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}}
+\index{Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}!mage@{mage}}
+\subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+File()}{LoadOBJMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
+
+Loads an O\+BJ mesh from file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the file name. \\
+\hline
+\mbox{\tt out}  & {\em vertex\+\_\+buffer} & A reference to the empty vertex buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a780c3836bb45fb29a59551cadb00667e}{}\label{namespacemage_a780c3836bb45fb29a59551cadb00667e} 
+\index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+Memory@{Load\+O\+B\+J\+Mesh\+From\+Memory}}
+\index{Load\+O\+B\+J\+Mesh\+From\+Memory@{Load\+O\+B\+J\+Mesh\+From\+Memory}!mage@{mage}}
+\subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+Memory()}{LoadOBJMeshFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+Memory (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
+
+Loads an O\+BJ mesh from memory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input} & A pointer to an array of chars that represents the input string. \\
+\hline
+\mbox{\tt out}  & {\em vertex\+\_\+buffer} & A reference to the empty vertex buffer. \\
+\hline
+\mbox{\tt out}  & {\em index\+\_\+buffer} & A reference to the empty index buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A success/error value. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a53665d32910467a7af514654a14039ce}{}\label{namespacemage_a53665d32910467a7af514654a14039ce} 
+\index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+Memory@{Load\+O\+B\+J\+Mesh\+From\+Memory}}
+\index{Load\+O\+B\+J\+Mesh\+From\+Memory@{Load\+O\+B\+J\+Mesh\+From\+Memory}!mage@{mage}}
+\subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+Memory()}{LoadOBJMeshFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+Memory (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
+
+Loads an O\+BJ mesh from memory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input} & A pointer to an array of chars that represents the input string. \\
+\hline
+\mbox{\tt out}  & {\em vertex\+\_\+buffer} & A reference to the empty vertex buffer. \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
@@ -1047,6 +1240,84 @@ The strict overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aab
 \subsubsection{\texorpdfstring{Parallel\+Init()}{ParallelInit()}}
 {\footnotesize\ttfamily void mage\+::\+Parallel\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\hypertarget{namespacemage_a67f3c57c7dcc1ad50c7a8f5167d50b64}{}\label{namespacemage_a67f3c57c7dcc1ad50c7a8f5167d50b64} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Float2@{Parse\+O\+B\+J\+Float2}}
+\index{Parse\+O\+B\+J\+Float2@{Parse\+O\+B\+J\+Float2}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Float2()}{ParseOBJFloat2()}}
+{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T2 mage\+::\+Parse\+O\+B\+J\+Float2 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a926f2772c637d2b5c839a936cd8dbdd1}{}\label{namespacemage_a926f2772c637d2b5c839a936cd8dbdd1} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Float3@{Parse\+O\+B\+J\+Float3}}
+\index{Parse\+O\+B\+J\+Float3@{Parse\+O\+B\+J\+Float3}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Float3()}{ParseOBJFloat3()}}
+{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T3 mage\+::\+Parse\+O\+B\+J\+Float3 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a4545e24f19ab29730871b8c9861e48fc}{}\label{namespacemage_a4545e24f19ab29730871b8c9861e48fc} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}}
+\index{Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Line()}{ParseOBJLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{current\+\_\+line,  }\item[{uint32\+\_\+t}]{line\+\_\+number,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&}]{mapping,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_af6d86000a9cb414a29248b42a44669c6}{}\label{namespacemage_af6d86000a9cb414a29248b42a44669c6} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}}
+\index{Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Line()}{ParseOBJLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{current\+\_\+line,  }\item[{uint32\+\_\+t}]{line\+\_\+number,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a2933dd3937569d4dfaa1483a1917d2b8}{}\label{namespacemage_a2933dd3937569d4dfaa1483a1917d2b8} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}}
+\index{Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Triangle\+Face()}{ParseOBJTriangleFace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Triangle\+Face (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&}]{mapping,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a4a7430df49be0a35ff43909784387506}{}\label{namespacemage_a4a7430df49be0a35ff43909784387506} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}}
+\index{Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Triangle\+Face()}{ParseOBJTriangleFace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Triangle\+Face (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a564204c30bfe0ead7f0b4f3c76cefa2d}{}\label{namespacemage_a564204c30bfe0ead7f0b4f3c76cefa2d} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Vertex@{Parse\+O\+B\+J\+Vertex}}
+\index{Parse\+O\+B\+J\+Vertex@{Parse\+O\+B\+J\+Vertex}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex()}{ParseOBJVertex()}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a694cf999c8539cfcd6afbb31fb2d27cd}{}\label{namespacemage_a694cf999c8539cfcd6afbb31fb2d27cd} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Coordinates}}
+\index{Parse\+O\+B\+J\+Vertex\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Coordinates}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Coordinates()}{ParseOBJVertexCoordinates()}}
+{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T3 mage\+::\+Parse\+O\+B\+J\+Vertex\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_afe94a043cb3be4de3549098b7ad7a326}{}\label{namespacemage_afe94a043cb3be4de3549098b7ad7a326} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Indices@{Parse\+O\+B\+J\+Vertex\+Indices}}
+\index{Parse\+O\+B\+J\+Vertex\+Indices@{Parse\+O\+B\+J\+Vertex\+Indices}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Indices()}{ParseOBJVertexIndices()}}
+{\footnotesize\ttfamily static X\+M\+U\+I\+N\+T3 mage\+::\+Parse\+O\+B\+J\+Vertex\+Indices (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a3d0761a3accda925b303dd7d0889caac}{}\label{namespacemage_a3d0761a3accda925b303dd7d0889caac} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Normal@{Parse\+O\+B\+J\+Vertex\+Normal}}
+\index{Parse\+O\+B\+J\+Vertex\+Normal@{Parse\+O\+B\+J\+Vertex\+Normal}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Normal()}{ParseOBJVertexNormal()}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a1c9ffc0af89d5d85505557864525e617}{}\label{namespacemage_a1c9ffc0af89d5d85505557864525e617} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates}}
+\index{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates()}{ParseOBJVertexNormalCoordinates()}}
+{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T3 mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a8ffd4094ac940ff129fccb6d77c1f353}{}\label{namespacemage_a8ffd4094ac940ff129fccb6d77c1f353} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Texture@{Parse\+O\+B\+J\+Vertex\+Texture}}
+\index{Parse\+O\+B\+J\+Vertex\+Texture@{Parse\+O\+B\+J\+Vertex\+Texture}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Texture()}{ParseOBJVertexTexture()}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex\+Texture (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{namespacemage_a97780c7deeb5a5923b0d6665732e132d}{}\label{namespacemage_a97780c7deeb5a5923b0d6665732e132d} 
+\index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates}}
+\index{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates}!mage@{mage}}
+\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates()}{ParseOBJVertexTextureCoordinates()}}
+{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T2 mage\+::\+Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 \hypertarget{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{}\label{namespacemage_a064756443bd8a1af6974f22c81d29ed0} 
 \index{mage@{mage}!Print\+Console\+Header@{Print\+Console\+Header}}
 \index{Print\+Console\+Header@{Print\+Console\+Header}!mage@{mage}}
@@ -1109,6 +1380,66 @@ Engine-\/defined callback function used with the Create\+Dialog for device enume
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if {\itshape u\+Msg} is processed. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aa376b0a0e5cfe0c0961c9f35555d55a6}{}\label{namespacemage_aa376b0a0e5cfe0c0961c9f35555d55a6} 
+\index{mage@{mage}!sgets@{sgets}}
+\index{sgets@{sgets}!mage@{mage}}
+\subsubsection{\texorpdfstring{sgets()}{sgets()}}
+{\footnotesize\ttfamily char $\ast$ mage\+::sgets (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int}]{num,  }\item[{const char $\ast$$\ast$}]{input }\end{DoxyParamCaption})}
+
+Reads characters from the given input string and stores them as a C string into str until (num-\/1) characters have been read or either a newline or the end-\/of-\/file is reached, whichever happens first.
+
+A newline character makes {\ttfamily sgets} stop reading, but it is considered a valid character by the function and included in the string copied to {\itshape str}.
+
+A terminating null character is automatically appended after the characters copied to {\itshape str}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & A pointer to an array of chars where the string read is copied. \\
+\hline
+\mbox{\tt in}  & {\em num} & Maximum number of characters to be copied into str (including the terminating null-\/character). \\
+\hline
+\mbox{\tt in}  & {\em input} & A pointer to to a pointer to an array of chars that represents the input string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The {\ttfamily sgets} function is the string variant of {\ttfamily fgets}. 
+\end{DoxyNote}
+\hypertarget{namespacemage_a5194c40ccd591a8a8926ad7812abcd09}{}\label{namespacemage_a5194c40ccd591a8a8926ad7812abcd09} 
+\index{mage@{mage}!str\+\_\+contains@{str\+\_\+contains}}
+\index{str\+\_\+contains@{str\+\_\+contains}!mage@{mage}}
+\subsubsection{\texorpdfstring{str\+\_\+contains()}{str\_contains()}}
+{\footnotesize\ttfamily bool mage\+::str\+\_\+contains (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str1,  }\item[{const char $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+Checks whether the first given string contains the second given string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str1} & A pointer to the string to be scanned. \\
+\hline
+\mbox{\tt in}  & {\em str2} & A pointer to the string containing the sequence of characters to match. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape str1} contains a substring {\itshape str2}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a4f78f15f269c1f65d4148983bc8224c5}{}\label{namespacemage_a4f78f15f269c1f65d4148983bc8224c5} 
+\index{mage@{mage}!str\+\_\+equals@{str\+\_\+equals}}
+\index{str\+\_\+equals@{str\+\_\+equals}!mage@{mage}}
+\subsubsection{\texorpdfstring{str\+\_\+equals()}{str\_equals()}}
+{\footnotesize\ttfamily bool mage\+::str\+\_\+equals (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str1,  }\item[{const char $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+Checks whether the given string are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str1} & A pointer to the string to be scanned. \\
+\hline
+\mbox{\tt in}  & {\em str2} & A pointer to the string containing the sequence of characters to match. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape str1} is equal to {\itshape str2}. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a1f113843a26e671776ec469adf7ccc51}{}\label{namespacemage_a1f113843a26e671776ec469adf7ccc51} 
 \index{mage@{mage}!task\+\_\+entry@{task\+\_\+entry}}

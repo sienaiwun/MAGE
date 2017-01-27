@@ -1,0 +1,149 @@
+\hypertarget{classmage_1_1_indexed_mesh}{}\section{mage\+:\+:Indexed\+Mesh Class Reference}
+\label{classmage_1_1_indexed_mesh}\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+
+
+{\ttfamily \#include $<$indexed\+\_\+mesh.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:Indexed\+Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_indexed_mesh}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_indexed_mesh_a2004ef3fd446e796cb908bfdd7e97896}{Indexed\+Mesh} (I\+D3\+D11\+Device2 $\ast$device, const string \&name, const string \&path=\char`\"{}./\char`\"{})
+\item 
+virtual \hyperlink{classmage_1_1_indexed_mesh_a4fccfbdca710d6588f4bc3fca837fd68}{$\sim$\+Indexed\+Mesh} ()
+\item 
+size\+\_\+t \hyperlink{classmage_1_1_indexed_mesh_ace923913f29e49a571c32b3fb76f6474}{Get\+Nb\+Vertices} () const
+\item 
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_indexed_mesh_aeef933509fe7f74a79efb8a1692fda1f}{Bind\+Buffers} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context) const override
+\item 
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_indexed_mesh_a6d8543f09c82b4d7e85c68daf39945ce}{Draw} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context) const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_indexed_mesh_a6fb81a1e8f17452de954d836bd2fbbae}{Initialize\+Buffers} (I\+D3\+D11\+Device2 $\ast$device)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_indexed_mesh_a7188698b2a8104adce23264fa9d9659c}{Uninitialize\+Buffers} ()
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_indexed_mesh_a5a6107080bbdba1288ffee59cb7523f0}{Setup\+Vertex\+Buffer} (I\+D3\+D11\+Device2 $\ast$device, const \hyperlink{structmage_1_1_vertex}{Vertex} $\ast$vertices, size\+\_\+t nb\+\_\+vertices)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_indexed_mesh_af7768d4fed6cbd54b92704a5e3598b78}{Setup\+Index\+Buffer} (I\+D3\+D11\+Device2 $\ast$device, const uint32\+\_\+t $\ast$indices, size\+\_\+t nb\+\_\+indices)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmage_1_1_indexed_mesh_aa97d660f00cdec3c99b50ea636d49709}{m\+\_\+nb\+\_\+vertices}
+\item 
+I\+D3\+D11\+Buffer $\ast$ \hyperlink{classmage_1_1_indexed_mesh_aad5756b6a52727c2db924c67c753e7c8}{m\+\_\+vertex\+\_\+buffer}
+\item 
+I\+D3\+D11\+Buffer $\ast$ \hyperlink{classmage_1_1_indexed_mesh_a21178389091c3619291145c2d306b473}{m\+\_\+index\+\_\+buffer}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class of indexed meshes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_indexed_mesh_a2004ef3fd446e796cb908bfdd7e97896}{}\label{classmage_1_1_indexed_mesh_a2004ef3fd446e796cb908bfdd7e97896} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!Indexed\+Mesh@{Indexed\+Mesh}}
+\index{Indexed\+Mesh@{Indexed\+Mesh}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{Indexed\+Mesh()}{IndexedMesh()}}
+{\footnotesize\ttfamily mage\+::\+Indexed\+Mesh\+::\+Indexed\+Mesh (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{const string \&}]{name,  }\item[{const string \&}]{path = {\ttfamily \char`\"{}./\char`\"{}} }\end{DoxyParamCaption})}
+
+Constructs an indexed mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to an D3\+D11 device. \\
+\hline
+\mbox{\tt in}  & {\em name} & A reference to the name of the mesh. \\
+\hline
+\mbox{\tt in}  & {\em path} & A reference to the path of the mesh. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_indexed_mesh_a4fccfbdca710d6588f4bc3fca837fd68}{}\label{classmage_1_1_indexed_mesh_a4fccfbdca710d6588f4bc3fca837fd68} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!````~Indexed\+Mesh@{$\sim$\+Indexed\+Mesh}}
+\index{````~Indexed\+Mesh@{$\sim$\+Indexed\+Mesh}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{$\sim$\+Indexed\+Mesh()}{~IndexedMesh()}}
+{\footnotesize\ttfamily mage\+::\+Indexed\+Mesh\+::$\sim$\+Indexed\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs this indexed mesh. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_indexed_mesh_aeef933509fe7f74a79efb8a1692fda1f}{}\label{classmage_1_1_indexed_mesh_aeef933509fe7f74a79efb8a1692fda1f} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!Bind\+Buffers@{Bind\+Buffers}}
+\index{Bind\+Buffers@{Bind\+Buffers}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{Bind\+Buffers()}{BindBuffers()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Indexed\+Mesh\+::\+Bind\+Buffers (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classmage_1_1_mesh_adb7cecd184c021c6184b6444adeb5190}{mage\+::\+Mesh}.
+
+\hypertarget{classmage_1_1_indexed_mesh_a6d8543f09c82b4d7e85c68daf39945ce}{}\label{classmage_1_1_indexed_mesh_a6d8543f09c82b4d7e85c68daf39945ce} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!Draw@{Draw}}
+\index{Draw@{Draw}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Indexed\+Mesh\+::\+Draw (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classmage_1_1_mesh_a8ebd5d1a5159ebeda44e3fb6b98a115c}{mage\+::\+Mesh}.
+
+\hypertarget{classmage_1_1_indexed_mesh_ace923913f29e49a571c32b3fb76f6474}{}\label{classmage_1_1_indexed_mesh_ace923913f29e49a571c32b3fb76f6474} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!Get\+Nb\+Vertices@{Get\+Nb\+Vertices}}
+\index{Get\+Nb\+Vertices@{Get\+Nb\+Vertices}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{Get\+Nb\+Vertices()}{GetNbVertices()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Indexed\+Mesh\+::\+Get\+Nb\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_indexed_mesh_a6fb81a1e8f17452de954d836bd2fbbae}{}\label{classmage_1_1_indexed_mesh_a6fb81a1e8f17452de954d836bd2fbbae} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!Initialize\+Buffers@{Initialize\+Buffers}}
+\index{Initialize\+Buffers@{Initialize\+Buffers}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{Initialize\+Buffers()}{InitializeBuffers()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Indexed\+Mesh\+::\+Initialize\+Buffers (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_indexed_mesh_af7768d4fed6cbd54b92704a5e3598b78}{}\label{classmage_1_1_indexed_mesh_af7768d4fed6cbd54b92704a5e3598b78} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!Setup\+Index\+Buffer@{Setup\+Index\+Buffer}}
+\index{Setup\+Index\+Buffer@{Setup\+Index\+Buffer}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{Setup\+Index\+Buffer()}{SetupIndexBuffer()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Indexed\+Mesh\+::\+Setup\+Index\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{const uint32\+\_\+t $\ast$}]{indices,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_indexed_mesh_a5a6107080bbdba1288ffee59cb7523f0}{}\label{classmage_1_1_indexed_mesh_a5a6107080bbdba1288ffee59cb7523f0} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}}
+\index{Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{Setup\+Vertex\+Buffer()}{SetupVertexBuffer()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Indexed\+Mesh\+::\+Setup\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device2 $\ast$}]{device,  }\item[{const \hyperlink{structmage_1_1_vertex}{Vertex} $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_indexed_mesh_a7188698b2a8104adce23264fa9d9659c}{}\label{classmage_1_1_indexed_mesh_a7188698b2a8104adce23264fa9d9659c} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!Uninitialize\+Buffers@{Uninitialize\+Buffers}}
+\index{Uninitialize\+Buffers@{Uninitialize\+Buffers}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{Uninitialize\+Buffers()}{UninitializeBuffers()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Indexed\+Mesh\+::\+Uninitialize\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_indexed_mesh_a21178389091c3619291145c2d306b473}{}\label{classmage_1_1_indexed_mesh_a21178389091c3619291145c2d306b473} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}}
+\index{m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+index\+\_\+buffer}{m\_index\_buffer}}
+{\footnotesize\ttfamily I\+D3\+D11\+Buffer$\ast$ mage\+::\+Indexed\+Mesh\+::m\+\_\+index\+\_\+buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_indexed_mesh_aa97d660f00cdec3c99b50ea636d49709}{}\label{classmage_1_1_indexed_mesh_aa97d660f00cdec3c99b50ea636d49709} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!m\+\_\+nb\+\_\+vertices@{m\+\_\+nb\+\_\+vertices}}
+\index{m\+\_\+nb\+\_\+vertices@{m\+\_\+nb\+\_\+vertices}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+vertices}{m\_nb\_vertices}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Indexed\+Mesh\+::m\+\_\+nb\+\_\+vertices\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_indexed_mesh_aad5756b6a52727c2db924c67c753e7c8}{}\label{classmage_1_1_indexed_mesh_aad5756b6a52727c2db924c67c753e7c8} 
+\index{mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}!m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}}
+\index{m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}!mage\+::\+Indexed\+Mesh@{mage\+::\+Indexed\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+buffer}{m\_vertex\_buffer}}
+{\footnotesize\ttfamily I\+D3\+D11\+Buffer$\ast$ mage\+::\+Indexed\+Mesh\+::m\+\_\+vertex\+\_\+buffer\hspace{0.3cm}{\ttfamily [protected]}}
+

@@ -9,7 +9,9 @@
 \item 
 \hyperlink{structmage_1_1_engine_setup_a75ee36366d3035c9600e1dbe98973aa4}{Engine\+Setup} (const wstring \&name=L\char`\"{}Application\char`\"{})
 \item 
-\hyperlink{structmage_1_1_engine_setup_a767bc519dffa2d4cdba61529d12831d8}{Engine\+Setup} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} $\ast$setup)
+\hyperlink{structmage_1_1_engine_setup_a2399c7966ed02ce9e9ab951b7483aac1}{Engine\+Setup} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&setup)
+\item 
+virtual \hyperlink{structmage_1_1_engine_setup_a6a3a5afe40b976946699f69504b0a5e9}{$\sim$\+Engine\+Setup} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -19,6 +21,11 @@ H\+I\+N\+S\+T\+A\+N\+CE \hyperlink{structmage_1_1_engine_setup_af91461305cd9aa60
 wstring \hyperlink{structmage_1_1_engine_setup_a3866920e44c0752a89265f9f0c5c5d05}{m\+\_\+name}
 \item 
 void($\ast$ \hyperlink{structmage_1_1_engine_setup_a36a3c8a316c63e6c90ee9dd6efb82c0c}{State\+Setup} )()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \& \hyperlink{structmage_1_1_engine_setup_aa4db9097cc627e5e543333b7f21f7cd6}{operator=} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&setup)
 \end{DoxyCompactItemize}
 
 
@@ -39,22 +46,44 @@ Constructs an engine setup with the given application name.
 \mbox{\tt in}  & {\em name} & A reference to the name of the application. \\
 \hline
 \end{DoxyParams}
-\hypertarget{structmage_1_1_engine_setup_a767bc519dffa2d4cdba61529d12831d8}{}\label{structmage_1_1_engine_setup_a767bc519dffa2d4cdba61529d12831d8} 
+\hypertarget{structmage_1_1_engine_setup_a2399c7966ed02ce9e9ab951b7483aac1}{}\label{structmage_1_1_engine_setup_a2399c7966ed02ce9e9ab951b7483aac1} 
 \index{mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}!Engine\+Setup@{Engine\+Setup}}
 \index{Engine\+Setup@{Engine\+Setup}!mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}}
 \subsubsection{\texorpdfstring{Engine\+Setup()}{EngineSetup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily mage\+::\+Engine\+Setup\+::\+Engine\+Setup (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} $\ast$}]{setup }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Engine\+Setup\+::\+Engine\+Setup (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&}]{setup }\end{DoxyParamCaption})}
 
 Constructs an engine setup from the given engine setup.
 
-\begin{DoxyPrecond}{Precondition}
-setup does not point to {\ttfamily nullptr}. 
-\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em setup} & A pointer to the engine setup. \\
+\mbox{\tt in}  & {\em setup} & A reference to the engine setup. \\
 \hline
 \end{DoxyParams}
+\hypertarget{structmage_1_1_engine_setup_a6a3a5afe40b976946699f69504b0a5e9}{}\label{structmage_1_1_engine_setup_a6a3a5afe40b976946699f69504b0a5e9} 
+\index{mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}!````~Engine\+Setup@{$\sim$\+Engine\+Setup}}
+\index{````~Engine\+Setup@{$\sim$\+Engine\+Setup}!mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}}
+\subsubsection{\texorpdfstring{$\sim$\+Engine\+Setup()}{~EngineSetup()}}
+{\footnotesize\ttfamily virtual mage\+::\+Engine\+Setup\+::$\sim$\+Engine\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs this engine setup. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_engine_setup_aa4db9097cc627e5e543333b7f21f7cd6}{}\label{structmage_1_1_engine_setup_aa4db9097cc627e5e543333b7f21f7cd6} 
+\index{mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Engine\+Setup@{mage\+::\+Engine\+Setup}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}\& mage\+::\+Engine\+Setup\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&}]{setup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Copies the given engine setup to this engine setup.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em setup} & A reference to the engine setup to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given engine setup (i.\+e. this engine setup). 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}

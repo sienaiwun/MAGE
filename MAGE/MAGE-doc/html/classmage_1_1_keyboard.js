@@ -2,8 +2,10 @@ var classmage_1_1_keyboard =
 [
     [ "Keyboard", "classmage_1_1_keyboard.html#ac89c8f4132508901ff2ca57c68709928", null ],
     [ "~Keyboard", "classmage_1_1_keyboard.html#a80a84ec68749fac71690fb45287d446a", null ],
+    [ "Keyboard", "classmage_1_1_keyboard.html#a3137ba9455bcfddf6368e35bdf2d8a93", null ],
     [ "GetKeyPress", "classmage_1_1_keyboard.html#a7ba5a3c47b7116afb5b3362739c2a278", null ],
     [ "InitializeKeyboard", "classmage_1_1_keyboard.html#a2ba7225586454bf6fefd8b6648354335", null ],
+    [ "operator=", "classmage_1_1_keyboard.html#a3230d2216ce7e6bb5bd13059524ee72c", null ],
     [ "UninitializeKeyboard", "classmage_1_1_keyboard.html#ad1c2b76273cd32b0bb0c335c529d4ad4", null ],
     [ "Update", "classmage_1_1_keyboard.html#abb5fd91a304f8bbf8b15ab1a277dafaf", null ],
     [ "InputManager", "classmage_1_1_keyboard.html#af0e8c3dcc20b7ddcaf63506363a22821", null ],

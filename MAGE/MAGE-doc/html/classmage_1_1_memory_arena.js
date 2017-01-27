@@ -1,7 +1,7 @@
 var classmage_1_1_memory_arena =
 [
-    [ "MemoryArena", "classmage_1_1_memory_arena.html#aa243c458adb14e211f4dd944c4c82148", null ],
-    [ "~MemoryArena", "classmage_1_1_memory_arena.html#acfee6fc205e2eaf6aeef4acf19948e6e", null ],
+    [ "MemoryArena", "classmage_1_1_memory_arena.html#ac90beb8cf8dc42944a0fd6a4a9e8355c", null ],
+    [ "~MemoryArena", "classmage_1_1_memory_arena.html#a2bea1690184d21f54a4fb815a86e0c27", null ],
     [ "MemoryArena", "classmage_1_1_memory_arena.html#a1eca6fdacbd1226f4b21f443d118168b", null ],
     [ "Alloc", "classmage_1_1_memory_arena.html#a83f19bd85aea65001e6406075c105398", null ],
     [ "Alloc", "classmage_1_1_memory_arena.html#ab249fe48cdf7c46f625050fe9583603a", null ],

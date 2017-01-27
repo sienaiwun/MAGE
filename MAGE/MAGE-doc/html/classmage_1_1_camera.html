@@ -82,7 +82,8 @@ $(document).ready(function(){initNavTree('classmage_1_1_camera.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_camera-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::Camera Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -105,6 +106,8 @@ Inheritance diagram for mage::Camera:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae56c0542ae1a480c7fb15d737bf16de0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#ae56c0542ae1a480c7fb15d737bf16de0">~Camera</a> ()</td></tr>
 <tr class="separator:ae56c0542ae1a480c7fb15d737bf16de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19301c2256c183db50b5e9406f7b5f3c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmage_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a19301c2256c183db50b5e9406f7b5f3c">Clone</a> () const =0</td></tr>
+<tr class="separator:a19301c2256c183db50b5e9406f7b5f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2285655605035118861297b2449a3443"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a2285655605035118861297b2449a3443">GetWidth</a> () const</td></tr>
 <tr class="separator:a2285655605035118861297b2449a3443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acddfb1108ee8f7e937833286c082dadf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#acddfb1108ee8f7e937833286c082dadf">SetWidth</a> (float width)</td></tr>
@@ -132,9 +135,16 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a64980217b5ae3817affab70eb3e61342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a64980217b5ae3817affab70eb3e61342">Camera</a> (float width, float height, float near_z=MAGE_DEFAULT_CAMERA_NEAR_Z, float far_z=MAGE_DEFAULT_CAMERA_FAR_Z)</td></tr>
 <tr class="separator:a64980217b5ae3817affab70eb3e61342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d9280bd7067ec4d28392558cc2b767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a28d9280bd7067ec4d28392558cc2b767">Camera</a> (const <a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;camera)</td></tr>
+<tr class="separator:a28d9280bd7067ec4d28392558cc2b767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6a5d3006100ba608f1b06b976f20a430"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a6a5d3006100ba608f1b06b976f20a430">operator=</a> (const <a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;camera)=delete</td></tr>
+<tr class="separator:a6a5d3006100ba608f1b06b976f20a430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:acc8f371214af02fdac9a1ff04508c4ca"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#acc8f371214af02fdac9a1ff04508c4ca">m_width</a></td></tr>
 <tr class="separator:acc8f371214af02fdac9a1ff04508c4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48485eca596702f0e5985ec8b7db35a5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a48485eca596702f0e5985ec8b7db35a5">m_height</a></td></tr>
@@ -174,7 +184,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a64980217b5ae3817affab70eb3e61342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64980217b5ae3817affab70eb3e61342">&sect;&nbsp;</a></span>Camera()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a64980217b5ae3817affab70eb3e61342">&sect;&nbsp;</a></span>Camera() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +241,69 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a28d9280bd7067ec4d28392558cc2b767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d9280bd7067ec4d28392558cc2b767">&sect;&nbsp;</a></span>Camera() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::Camera::Camera </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a camera from the given camera.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">camera</td><td>The camera. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a19301c2256c183db50b5e9406f7b5f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19301c2256c183db50b5e9406f7b5f3c">&sect;&nbsp;</a></span>Clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classmage_1_1_camera.html">Camera</a>* mage::Camera::Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clones this camera.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the clone of this camera. </dd></dl>
+
+<p>Implemented in <a class="el" href="classmage_1_1_perspective_camera.html#aa2fae7b2ca5daadeda0fd935fcdb101a">mage::PerspectiveCamera</a>, and <a class="el" href="classmage_1_1_orthographic_camera.html#a3fc2e5cfe7283670937de2a4841a5428">mage::OrthographicCamera</a>.</p>
+
+</div>
+</div>
 <a id="a7f293a8711086b3419fe3b4224ff2778"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f293a8711086b3419fe3b4224ff2778">&sect;&nbsp;</a></span>GetFarZ()</h2>
 
@@ -334,6 +406,39 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the width of this camera.</p>
 <dl class="section return"><dt>Returns</dt><dd>The width of this camera. </dd></dl>
+
+</div>
+</div>
+<a id="a6a5d3006100ba608f1b06b976f20a430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5d3006100ba608f1b06b976f20a430">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_camera.html">Camera</a>&amp; mage::Camera::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given camera to this camera.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">camera</td><td>The camera. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -531,7 +636,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -554,7 +659,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -577,7 +682,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -600,7 +705,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

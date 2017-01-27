@@ -53,6 +53,13 @@ uint64\+\_\+t \hyperlink{classmage_1_1_mouse_a0f5a38e23bdf7eae1b7b1030a53edff0}{
 \item 
 P\+O\+I\+NT \hyperlink{classmage_1_1_mouse_a2a8332ef7a4daa0f9ed48a9a1ad80684}{m\+\_\+mouse\+\_\+position}
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_mouse_ab510a83c48c14fe4855d39cf4e9599d6}{Mouse} (const \hyperlink{classmage_1_1_mouse}{Mouse} \&mouse)
+\item 
+\hyperlink{classmage_1_1_mouse}{Mouse} \& \hyperlink{classmage_1_1_mouse_ae3c9c2063e7323f37bec2bcee773e0e8}{operator=} (const \hyperlink{classmage_1_1_mouse}{Mouse} \&mouse)
+\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -67,7 +74,7 @@ A class of mouses.
 \hypertarget{classmage_1_1_mouse_ad02365977dab44603400ac6f24e0df97}{}\label{classmage_1_1_mouse_ad02365977dab44603400ac6f24e0df97} 
 \index{mage\+::\+Mouse@{mage\+::\+Mouse}!Mouse@{Mouse}}
 \index{Mouse@{Mouse}!mage\+::\+Mouse@{mage\+::\+Mouse}}
-\subsubsection{\texorpdfstring{Mouse()}{Mouse()}}
+\subsubsection{\texorpdfstring{Mouse()}{Mouse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Mouse\+::\+Mouse (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwindow,  }\item[{I\+Direct\+Input8 $\ast$}]{di }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Constructs a mouse.
@@ -85,7 +92,20 @@ Constructs a mouse.
 \subsubsection{\texorpdfstring{$\sim$\+Mouse()}{~Mouse()}}
 {\footnotesize\ttfamily mage\+::\+Mouse\+::$\sim$\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Destructs this mouse. 
+Destructs this mouse. \hypertarget{classmage_1_1_mouse_ab510a83c48c14fe4855d39cf4e9599d6}{}\label{classmage_1_1_mouse_ab510a83c48c14fe4855d39cf4e9599d6} 
+\index{mage\+::\+Mouse@{mage\+::\+Mouse}!Mouse@{Mouse}}
+\index{Mouse@{Mouse}!mage\+::\+Mouse@{mage\+::\+Mouse}}
+\subsubsection{\texorpdfstring{Mouse()}{Mouse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Mouse\+::\+Mouse (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mouse}{Mouse} \&}]{mouse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Constructs a mouse from the given mouse.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mouse} & A reference to the mouse. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_mouse_a898f4d0e645040c3a4121c2fe8119a89}{}\label{classmage_1_1_mouse_a898f4d0e645040c3a4121c2fe8119a89} 
@@ -176,6 +196,22 @@ Initializes the mouse device of this mouse.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_mouse_ae3c9c2063e7323f37bec2bcee773e0e8}{}\label{classmage_1_1_mouse_ae3c9c2063e7323f37bec2bcee773e0e8} 
+\index{mage\+::\+Mouse@{mage\+::\+Mouse}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Mouse@{mage\+::\+Mouse}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_mouse}{Mouse}\& mage\+::\+Mouse\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mouse}{Mouse} \&}]{mouse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Copies the given mouse to this mouse.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mouse} & A reference to the mouse to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given mouse (i.\+e. this mouse). 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_mouse_a3f4647121d283a95464a0652da2816b0}{}\label{classmage_1_1_mouse_a3f4647121d283a95464a0652da2816b0} 
 \index{mage\+::\+Mouse@{mage\+::\+Mouse}!Uninitialize\+Mouse@{Uninitialize\+Mouse}}

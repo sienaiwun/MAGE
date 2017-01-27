@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['scenenode',['SceneNode',['../classmage_1_1_scene_node.html#a1d6869990a42bcbd0508ae2ca1d318eb',1,'mage::SceneNode']]],
+  ['scenenode',['SceneNode',['../classmage_1_1_scene_node.html#a3cf69b4acd80f1e4452e603e9c713cbf',1,'mage::SceneNode::SceneNode(const Transform &amp;transform=Transform(), bool enabled=true)'],['../classmage_1_1_scene_node.html#a0259a6b573eb633b589cd986b9ec6734',1,'mage::SceneNode::SceneNode(const SceneNode &amp;scene_node)']]],
   ['scenenodevisitor',['SceneNodeVisitor',['../classmage_1_1_scene_node_visitor.html#a6a259a0ce19107bb644482b86c4bd27a',1,'mage::SceneNodeVisitor']]],
   ['semaphore',['Semaphore',['../classmage_1_1_semaphore.html#a7b4f53c18b9a244ed98ef58fa5cfa2bb',1,'mage::Semaphore']]],
   ['setdeactiveflag',['SetDeactiveFlag',['../classmage_1_1_engine.html#a942bfa9892fa79bb1068d7c7ec4e6732',1,'mage::Engine']]],
@@ -29,19 +29,24 @@ var searchData=
   ['settranslationz',['SetTranslationZ',['../structmage_1_1_transform.html#a4fa664d666f3b907d4dfbc0d9cd3a13a',1,'mage::Transform']]],
   ['setupdepthstencilview',['SetupDepthStencilView',['../classmage_1_1_renderer.html#a95a34b64e815b0e5e95ce539bbd0f5a3',1,'mage::Renderer']]],
   ['setupdevice',['SetupDevice',['../classmage_1_1_renderer.html#a4ee0187fb63587a219798523fb8cb7a6',1,'mage::Renderer']]],
+  ['setupindexbuffer',['SetupIndexBuffer',['../classmage_1_1_indexed_mesh.html#af7768d4fed6cbd54b92704a5e3598b78',1,'mage::IndexedMesh']]],
   ['setuprendertargetview',['SetupRenderTargetView',['../classmage_1_1_renderer.html#afe99715a4ae6432ba561dcab048f79b4',1,'mage::Renderer']]],
   ['setupswapchain',['SetupSwapChain',['../classmage_1_1_renderer.html#af2aa545594936261bf2639e4e0814a83',1,'mage::Renderer']]],
+  ['setupvertexbuffer',['SetupVertexBuffer',['../classmage_1_1_flat_mesh.html#a99e9b24fee648ca2de48c794aa3fda19',1,'mage::FlatMesh::SetupVertexBuffer()'],['../classmage_1_1_indexed_mesh.html#a5a6107080bbdba1288ffee59cb7523f0',1,'mage::IndexedMesh::SetupVertexBuffer()']]],
   ['setupviewport',['SetupViewPort',['../classmage_1_1_renderer.html#a9bc8598ccca5f6e7cf99010175b1360b',1,'mage::Renderer']]],
   ['setvalue',['SetValue',['../structmage_1_1_variable.html#afa9cfd0a42d8a15cccf7f49197648504',1,'mage::Variable']]],
   ['setvalueofvariable',['SetValueOfVariable',['../classmage_1_1_variable_script.html#a1b6daa6b226e43564408ab54e4c65eb7',1,'mage::VariableScript']]],
   ['setviewtoprojectionmatrix',['SetViewToProjectionMatrix',['../classmage_1_1_orthographic_camera.html#a1ff2b3e4467049b978155d652a687c2d',1,'mage::OrthographicCamera::SetViewToProjectionMatrix()'],['../classmage_1_1_perspective_camera.html#adef65223ab45c65cebf712dd14cea942',1,'mage::PerspectiveCamera::SetViewToProjectionMatrix()']]],
   ['setwidth',['SetWidth',['../classmage_1_1_camera.html#acddfb1108ee8f7e937833286c082dadf',1,'mage::Camera']]],
   ['setwidthandheight',['SetWidthAndHeight',['../classmage_1_1_camera.html#a275b6908662c0cde4fec5485ff04a846',1,'mage::Camera']]],
+  ['sgets',['sgets',['../namespacemage.html#aa376b0a0e5cfe0c0961c9f35555d55a6',1,'mage']]],
   ['show',['Show',['../classmage_1_1_main_window.html#a78cd939882d89a40a1cdd9308253811d',1,'mage::MainWindow']]],
   ['signal',['Signal',['../classmage_1_1_condition_variable.html#a09e52f0d51c10ee565a895d2444175d9',1,'mage::ConditionVariable']]],
   ['start',['Start',['../classmage_1_1_timer.html#a5855c9df8ad1a2b6774942e566833647',1,'mage::Timer']]],
   ['state',['State',['../classmage_1_1_state.html#ac21bb6de22bb3b9c1b18d98b53e92100',1,'mage::State']]],
   ['statemanager',['StateManager',['../classmage_1_1_state_manager.html#a6c4504d0b50fe671299b080f3be30c8e',1,'mage::StateManager']]],
   ['stop',['Stop',['../classmage_1_1_timer.html#abf234f1e2ee9e760f316bd49500d5a3a',1,'mage::Timer']]],
+  ['str_5fcontains',['str_contains',['../namespacemage.html#a5194c40ccd591a8a8926ad7812abcd09',1,'mage']]],
+  ['str_5fequals',['str_equals',['../namespacemage.html#a4f78f15f269c1f65d4148983bc8224c5',1,'mage']]],
   ['switchmode',['SwitchMode',['../classmage_1_1_renderer.html#a9004ab608659188900c808eacb5f873c',1,'mage::Renderer']]]
 ];

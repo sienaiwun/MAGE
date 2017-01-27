@@ -7,7 +7,7 @@ var classmage_1_1_read_write_mutex =
     [ "AcquireWrite", "classmage_1_1_read_write_mutex.html#a76137013107a9c2c1fc05c1e0747965e", null ],
     [ "Create", "classmage_1_1_read_write_mutex.html#ad184ba46c44446b5ebe1026801fcac9b", null ],
     [ "Destroy", "classmage_1_1_read_write_mutex.html#a879992fe8bf7fc81df9fa5ffa1c380a3", null ],
-    [ "operator=", "classmage_1_1_read_write_mutex.html#a3fab1becc4527dc69fdd6cd38b627501", null ],
+    [ "operator=", "classmage_1_1_read_write_mutex.html#a408e06f3c8bcc644e43afbf7e9ac772f", null ],
     [ "ReleaseRead", "classmage_1_1_read_write_mutex.html#a0af5059a9bd16abd8a21b15e7ebe053d", null ],
     [ "ReleaseWrite", "classmage_1_1_read_write_mutex.html#ad0fd296bdaa212f54a58372c8dfe1d1d", null ],
     [ "ReadWriteMutexLock", "classmage_1_1_read_write_mutex.html#a7ae207fc659160d3c55a5ba1468007f7", null ],

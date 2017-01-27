@@ -30,8 +30,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_reference.html#ab0f3ae3e1c9f71c211db4b1ec6dcca83",
-"structmage_1_1_cartesian_coordinate_system.html#a793c9783db21865ccf55f153cca963f3"
+"classmage_1_1_perspective_camera.html#aef3998fca25cb7d99b9a03ef9483040d",
+"namespacemembers.html",
+"structmage_1_1_vertex.html#a19ef5e9829752aa2134bc25617ce910d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

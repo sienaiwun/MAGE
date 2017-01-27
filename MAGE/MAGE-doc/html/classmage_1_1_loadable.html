@@ -114,8 +114,12 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:afbdcb287b5e20583899a27a1c244bc7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#afbdcb287b5e20583899a27a1c244bc7d">Loadable</a> (bool loaded=false)</td></tr>
 <tr class="separator:afbdcb287b5e20583899a27a1c244bc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea04657cc6f150659f0ab387f6a5514"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#aaea04657cc6f150659f0ab387f6a5514">Loadable</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)</td></tr>
+<tr class="separator:aaea04657cc6f150659f0ab387f6a5514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009ef5ebc9baf803b19110d937922b41"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a009ef5ebc9baf803b19110d937922b41">~Loadable</a> ()</td></tr>
 <tr class="separator:a009ef5ebc9baf803b19110d937922b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf85c35a57281661a67b5b151621534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a0bf85c35a57281661a67b5b151621534">operator=</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)</td></tr>
+<tr class="separator:a0bf85c35a57281661a67b5b151621534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a932ff8b287c8e68e30a13804cba08ff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a932ff8b287c8e68e30a13804cba08ff2">SetLoaded</a> (bool loaded=true)</td></tr>
 <tr class="separator:a932ff8b287c8e68e30a13804cba08ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,7 +132,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>A class of loadables. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afbdcb287b5e20583899a27a1c244bc7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbdcb287b5e20583899a27a1c244bc7d">&sect;&nbsp;</a></span>Loadable()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdcb287b5e20583899a27a1c244bc7d">&sect;&nbsp;</a></span>Loadable() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,6 +158,39 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">loaded</td><td>Flag indicating wether the loadable is loaded. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaea04657cc6f150659f0ab387f6a5514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea04657cc6f150659f0ab387f6a5514">&sect;&nbsp;</a></span>Loadable() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::Loadable::Loadable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;&#160;</td>
+          <td class="paramname"><em>loadable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a loadable from the given loadable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">loadable</td><td>A reference to the loadable. </td></tr>
   </table>
   </dd>
 </dl>
@@ -203,6 +240,40 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Checks wether this loadable is loaded.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this loadable is loaded. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a0bf85c35a57281661a67b5b151621534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf85c35a57281661a67b5b151621534">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_loadable.html">Loadable</a>&amp; mage::Loadable::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;&#160;</td>
+          <td class="paramname"><em>loadable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given loadable to this loadable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">loadable</td><td>A reference to the loadable to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given loadable (i.e. this loadable). </dd></dl>
 
 </div>
 </div>

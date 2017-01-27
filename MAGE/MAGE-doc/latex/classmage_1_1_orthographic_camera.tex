@@ -19,6 +19,8 @@ Inheritance diagram for mage\+:\+:Orthographic\+Camera\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_orthographic_camera_a2ab3dbd44e2a6fad6a88e3733cc22ac9}{$\sim$\+Orthographic\+Camera} ()
 \item 
+virtual \hyperlink{classmage_1_1_camera}{Camera} $\ast$ \hyperlink{classmage_1_1_orthographic_camera_a3fc2e5cfe7283670937de2a4841a5428}{Clone} () const
+\item 
 virtual X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_orthographic_camera_aedd86e56a0f7bc967ad8d9be2631a0cf}{Get\+View\+To\+Projection\+Matrix} () const override
 \item 
 void \hyperlink{classmage_1_1_orthographic_camera_a1ff2b3e4467049b978155d652a687c2d}{Set\+View\+To\+Projection\+Matrix} (float width, float height, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z)
@@ -71,6 +73,21 @@ Constructs an orthographic camera from the given orthographic camera.
 Destructs this orthographic camera. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_orthographic_camera_a3fc2e5cfe7283670937de2a4841a5428}{}\label{classmage_1_1_orthographic_camera_a3fc2e5cfe7283670937de2a4841a5428} 
+\index{mage\+::\+Orthographic\+Camera@{mage\+::\+Orthographic\+Camera}!Clone@{Clone}}
+\index{Clone@{Clone}!mage\+::\+Orthographic\+Camera@{mage\+::\+Orthographic\+Camera}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_camera}{Camera}$\ast$ mage\+::\+Orthographic\+Camera\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Clones this orthographic camera.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this orthographic camera. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmage_1_1_camera_a19301c2256c183db50b5e9406f7b5f3c}{mage\+::\+Camera}.
+
 \hypertarget{classmage_1_1_orthographic_camera_aedd86e56a0f7bc967ad8d9be2631a0cf}{}\label{classmage_1_1_orthographic_camera_aedd86e56a0f7bc967ad8d9be2631a0cf} 
 \index{mage\+::\+Orthographic\+Camera@{mage\+::\+Orthographic\+Camera}!Get\+View\+To\+Projection\+Matrix@{Get\+View\+To\+Projection\+Matrix}}
 \index{Get\+View\+To\+Projection\+Matrix@{Get\+View\+To\+Projection\+Matrix}!mage\+::\+Orthographic\+Camera@{mage\+::\+Orthographic\+Camera}}

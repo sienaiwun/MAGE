@@ -19,9 +19,13 @@ Inheritance diagram for mage\+:\+:Perspective\+Camera\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_perspective_camera_abf42546e2560d7d62e7e62680a6da02b}{$\sim$\+Perspective\+Camera} ()
 \item 
+virtual \hyperlink{classmage_1_1_camera}{Camera} $\ast$ \hyperlink{classmage_1_1_perspective_camera_aa2fae7b2ca5daadeda0fd935fcdb101a}{Clone} () const
+\item 
 float \hyperlink{classmage_1_1_perspective_camera_a15223034b30ca691c51de8850c033293}{Get\+F\+O\+VY} () const
 \item 
 \hyperlink{classmage_1_1_camera}{Camera} \& \hyperlink{classmage_1_1_perspective_camera_a00033fc6b25206c40a056ce142fecfee}{Set\+F\+O\+VY} (float fov\+\_\+y)
+\item 
+float \hyperlink{classmage_1_1_perspective_camera_ab74cbd2777d5b430da5702a12b1b451e}{Get\+Aspect\+Ratio} () const
 \item 
 virtual X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_perspective_camera_a83a38a4e8180707df2323130f9cee4a5}{Get\+View\+To\+Projection\+Matrix} () const override
 \item 
@@ -82,6 +86,32 @@ Constructs a perspective camera from the given perpsective camera.
 Destructs this perspective camera. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_perspective_camera_aa2fae7b2ca5daadeda0fd935fcdb101a}{}\label{classmage_1_1_perspective_camera_aa2fae7b2ca5daadeda0fd935fcdb101a} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Clone@{Clone}}
+\index{Clone@{Clone}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_camera}{Camera}$\ast$ mage\+::\+Perspective\+Camera\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Clones this perspective camera.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the clone of this perspective camera. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmage_1_1_camera_a19301c2256c183db50b5e9406f7b5f3c}{mage\+::\+Camera}.
+
+\hypertarget{classmage_1_1_perspective_camera_ab74cbd2777d5b430da5702a12b1b451e}{}\label{classmage_1_1_perspective_camera_ab74cbd2777d5b430da5702a12b1b451e} 
+\index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Get\+Aspect\+Ratio@{Get\+Aspect\+Ratio}}
+\index{Get\+Aspect\+Ratio@{Get\+Aspect\+Ratio}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Aspect\+Ratio()}{GetAspectRatio()}}
+{\footnotesize\ttfamily float mage\+::\+Perspective\+Camera\+::\+Get\+Aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the aspect ratio of this perspective camera.
+
+\begin{DoxyReturn}{Returns}
+The aspect ratio of this perspective camera. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_perspective_camera_a15223034b30ca691c51de8850c033293}{}\label{classmage_1_1_perspective_camera_a15223034b30ca691c51de8850c033293} 
 \index{mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}!Get\+F\+O\+VY@{Get\+F\+O\+VY}}
 \index{Get\+F\+O\+VY@{Get\+F\+O\+VY}!mage\+::\+Perspective\+Camera@{mage\+::\+Perspective\+Camera}}

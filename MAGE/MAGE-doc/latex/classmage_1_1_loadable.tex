@@ -20,7 +20,11 @@ bool \hyperlink{classmage_1_1_loadable_a53cfa5beb9b44bbcda0d6166a54b8cb6}{Is\+Lo
 \item 
 \hyperlink{classmage_1_1_loadable_afbdcb287b5e20583899a27a1c244bc7d}{Loadable} (bool loaded=false)
 \item 
+\hyperlink{classmage_1_1_loadable_aaea04657cc6f150659f0ab387f6a5514}{Loadable} (const \hyperlink{classmage_1_1_loadable}{Loadable} \&loadable)
+\item 
 virtual \hyperlink{classmage_1_1_loadable_a009ef5ebc9baf803b19110d937922b41}{$\sim$\+Loadable} ()
+\item 
+\hyperlink{classmage_1_1_loadable}{Loadable} \& \hyperlink{classmage_1_1_loadable_a0bf85c35a57281661a67b5b151621534}{operator=} (const \hyperlink{classmage_1_1_loadable}{Loadable} \&loadable)
 \item 
 void \hyperlink{classmage_1_1_loadable_a932ff8b287c8e68e30a13804cba08ff2}{Set\+Loaded} (bool loaded=true)
 \end{DoxyCompactItemize}
@@ -38,7 +42,7 @@ A class of loadables.
 \hypertarget{classmage_1_1_loadable_afbdcb287b5e20583899a27a1c244bc7d}{}\label{classmage_1_1_loadable_afbdcb287b5e20583899a27a1c244bc7d} 
 \index{mage\+::\+Loadable@{mage\+::\+Loadable}!Loadable@{Loadable}}
 \index{Loadable@{Loadable}!mage\+::\+Loadable@{mage\+::\+Loadable}}
-\subsubsection{\texorpdfstring{Loadable()}{Loadable()}}
+\subsubsection{\texorpdfstring{Loadable()}{Loadable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Loadable\+::\+Loadable (\begin{DoxyParamCaption}\item[{bool}]{loaded = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Constructs a loadable.
@@ -46,6 +50,19 @@ Constructs a loadable.
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em loaded} & Flag indicating wether the loadable is loaded. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_loadable_aaea04657cc6f150659f0ab387f6a5514}{}\label{classmage_1_1_loadable_aaea04657cc6f150659f0ab387f6a5514} 
+\index{mage\+::\+Loadable@{mage\+::\+Loadable}!Loadable@{Loadable}}
+\index{Loadable@{Loadable}!mage\+::\+Loadable@{mage\+::\+Loadable}}
+\subsubsection{\texorpdfstring{Loadable()}{Loadable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Loadable\+::\+Loadable (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_loadable}{Loadable} \&}]{loadable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructs a loadable from the given loadable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em loadable} & A reference to the loadable. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_loadable_a009ef5ebc9baf803b19110d937922b41}{}\label{classmage_1_1_loadable_a009ef5ebc9baf803b19110d937922b41} 
@@ -67,6 +84,22 @@ Checks wether this loadable is loaded.
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if this loadable is loaded. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_loadable_a0bf85c35a57281661a67b5b151621534}{}\label{classmage_1_1_loadable_a0bf85c35a57281661a67b5b151621534} 
+\index{mage\+::\+Loadable@{mage\+::\+Loadable}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Loadable@{mage\+::\+Loadable}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_loadable}{Loadable}\& mage\+::\+Loadable\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_loadable}{Loadable} \&}]{loadable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Copies the given loadable to this loadable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em loadable} & A reference to the loadable to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given loadable (i.\+e. this loadable). 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_loadable_a932ff8b287c8e68e30a13804cba08ff2}{}\label{classmage_1_1_loadable_a932ff8b287c8e68e30a13804cba08ff2} 
 \index{mage\+::\+Loadable@{mage\+::\+Loadable}!Set\+Loaded@{Set\+Loaded}}

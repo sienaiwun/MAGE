@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('structmage_1_1_engine_setup.html','');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="structmage_1_1_engine_setup-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::EngineSetup Struct Reference</div>  </div>
@@ -94,8 +95,10 @@ $(document).ready(function(){initNavTree('structmage_1_1_engine_setup.html','');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a75ee36366d3035c9600e1dbe98973aa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a75ee36366d3035c9600e1dbe98973aa4">EngineSetup</a> (const wstring &amp;name=L&quot;Application&quot;)</td></tr>
 <tr class="separator:a75ee36366d3035c9600e1dbe98973aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a767bc519dffa2d4cdba61529d12831d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a767bc519dffa2d4cdba61529d12831d8">EngineSetup</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> *setup)</td></tr>
-<tr class="separator:a767bc519dffa2d4cdba61529d12831d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2399c7966ed02ce9e9ab951b7483aac1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a2399c7966ed02ce9e9ab951b7483aac1">EngineSetup</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)</td></tr>
+<tr class="separator:a2399c7966ed02ce9e9ab951b7483aac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3a5afe40b976946699f69504b0a5e9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a6a3a5afe40b976946699f69504b0a5e9">~EngineSetup</a> ()</td></tr>
+<tr class="separator:a6a3a5afe40b976946699f69504b0a5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -105,6 +108,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3866920e44c0752a89265f9f0c5c5d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36a3c8a316c63e6c90ee9dd6efb82c0c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a36a3c8a316c63e6c90ee9dd6efb82c0c">StateSetup</a> )()</td></tr>
 <tr class="separator:a36a3c8a316c63e6c90ee9dd6efb82c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa4db9097cc627e5e543333b7f21f7cd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#aa4db9097cc627e5e543333b7f21f7cd6">operator=</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)</td></tr>
+<tr class="separator:aa4db9097cc627e5e543333b7f21f7cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A struct of engine setups. </p>
@@ -134,8 +142,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a767bc519dffa2d4cdba61529d12831d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a767bc519dffa2d4cdba61529d12831d8">&sect;&nbsp;</a></span>EngineSetup() <span class="overload">[2/2]</span></h2>
+<a id="a2399c7966ed02ce9e9ab951b7483aac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2399c7966ed02ce9e9ab951b7483aac1">&sect;&nbsp;</a></span>EngineSetup() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,20 +151,80 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">mage::EngineSetup::EngineSetup </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;&#160;</td>
           <td class="paramname"><em>setup</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Constructs an engine setup from the given engine setup.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>setup does not point to <code>nullptr</code>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">setup</td><td>A pointer to the engine setup. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">setup</td><td>A reference to the engine setup. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a6a3a5afe40b976946699f69504b0a5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3a5afe40b976946699f69504b0a5e9">&sect;&nbsp;</a></span>~EngineSetup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual mage::EngineSetup::~EngineSetup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructs this engine setup. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa4db9097cc627e5e543333b7f21f7cd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4db9097cc627e5e543333b7f21f7cd6">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a>&amp; mage::EngineSetup::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;&#160;</td>
+          <td class="paramname"><em>setup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given engine setup to this engine setup.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">setup</td><td>A reference to the engine setup to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given engine setup (i.e. this engine setup). </dd></dl>
 
 </div>
 </div>

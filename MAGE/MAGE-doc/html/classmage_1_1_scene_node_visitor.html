@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_scene_node_visitor.html'
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_scene_node_visitor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::SceneNodeVisitor Class Reference</div>  </div>
@@ -94,6 +95,8 @@ $(document).ready(function(){initNavTree('classmage_1_1_scene_node_visitor.html'
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac45f02e28abeeb9220b0be954ca6a513"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#ac45f02e28abeeb9220b0be954ca6a513">~SceneNodeVisitor</a> ()</td></tr>
 <tr class="separator:ac45f02e28abeeb9220b0be954ca6a513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f654e306f6d43d49081f319cd41812b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a0f654e306f6d43d49081f319cd41812b">IsVisitTerminated</a> () const</td></tr>
+<tr class="separator:a0f654e306f6d43d49081f319cd41812b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d831e494396ab678ce0c29b008a398"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a01d831e494396ab678ce0c29b008a398">VisitCameraNode</a> (<a class="el" href="classmage_1_1_camera_node.html">CameraNode</a> &amp;camera_node)</td></tr>
 <tr class="separator:a01d831e494396ab678ce0c29b008a398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a3bb0c3ad6253c919259efabbccfab9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a4a3bb0c3ad6253c919259efabbccfab9">VisitCameraNode</a> (const <a class="el" href="classmage_1_1_camera_node.html">CameraNode</a> &amp;camera_node)</td></tr>
@@ -103,6 +106,13 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6a259a0ce19107bb644482b86c4bd27a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a6a259a0ce19107bb644482b86c4bd27a">SceneNodeVisitor</a> ()</td></tr>
 <tr class="separator:a6a259a0ce19107bb644482b86c4bd27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe1b3469cbb97d4086cb030128fa28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a8fe1b3469cbb97d4086cb030128fa28c">TerminateVisit</a> ()</td></tr>
+<tr class="separator:a8fe1b3469cbb97d4086cb030128fa28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3f3b8db683cdb5b9c09c1426738ee73a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a3f3b8db683cdb5b9c09c1426738ee73a">m_terminated</a></td></tr>
+<tr class="separator:a3f3b8db683cdb5b9c09c1426738ee73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of scene node visitors. </p>
@@ -160,6 +170,51 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0f654e306f6d43d49081f319cd41812b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f654e306f6d43d49081f319cd41812b">&sect;&nbsp;</a></span>IsVisitTerminated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::SceneNodeVisitor::IsVisitTerminated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether the visit of this visitor should be terminated.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the visit of this visitor should be terminated. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a8fe1b3469cbb97d4086cb030128fa28c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe1b3469cbb97d4086cb030128fa28c">&sect;&nbsp;</a></span>TerminateVisit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::SceneNodeVisitor::TerminateVisit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Terminates the visit of this visitor. </p>
+
+</div>
+</div>
 <a id="a01d831e494396ab678ce0c29b008a398"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01d831e494396ab678ce0c29b008a398">&sect;&nbsp;</a></span>VisitCameraNode() <span class="overload">[1/2]</span></h2>
 
@@ -223,6 +278,30 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3f3b8db683cdb5b9c09c1426738ee73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3b8db683cdb5b9c09c1426738ee73a">&sect;&nbsp;</a></span>m_terminated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::SceneNodeVisitor::m_terminated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag indicating whether the visit of this visitor should be terminated. This allows for early termination (i.e. search operation). </p>
 
 </div>
 </div>

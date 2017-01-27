@@ -19,7 +19,6 @@ var hierarchy =
     [ "mage::Edge", "structmage_1_1_edge.html", null ],
     [ "mage::EngineSetup", "structmage_1_1_engine_setup.html", null ],
     [ "mage::Face", "structmage_1_1_face.html", null ],
-    [ "mage::Font", "classmage_1_1_font.html", null ],
     [ "mage::IndexedEdge", "structmage_1_1_indexed_edge.html", null ],
     [ "mage::IndexedFace", "structmage_1_1_indexed_face.html", null ],
     [ "mage::Loadable", "classmage_1_1_loadable.html", [
@@ -35,13 +34,17 @@ var hierarchy =
     [ "mage::MemoryArena", "classmage_1_1_memory_arena.html", null ],
     [ "mage::Mutex", "classmage_1_1_mutex.html", null ],
     [ "mage::MutexLock", "structmage_1_1_mutex_lock.html", null ],
+    [ "mage::OBJComparatorXMUINT3", "structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3.html", null ],
     [ "mage::ParallelForLoop", "classmage_1_1_parallel_for_loop.html", null ],
+    [ "mage::PixelShader", "classmage_1_1_pixel_shader.html", null ],
     [ "mage::ProgressReporter", "classmage_1_1_progress_reporter.html", null ],
     [ "mage::ReadWriteMutex", "classmage_1_1_read_write_mutex.html", null ],
     [ "mage::ReadWriteMutexLock", "structmage_1_1_read_write_mutex_lock.html", null ],
-    [ "mage::Reference< T >", "classmage_1_1_reference.html", null ],
-    [ "mage::ReferenceCounted", "classmage_1_1_reference_counted.html", null ],
     [ "mage::Resource", "classmage_1_1_resource.html", [
+      [ "mage::Mesh", "classmage_1_1_mesh.html", [
+        [ "mage::FlatMesh", "classmage_1_1_flat_mesh.html", null ],
+        [ "mage::IndexedMesh", "classmage_1_1_indexed_mesh.html", null ]
+      ] ],
       [ "mage::VariableScript", "classmage_1_1_variable_script.html", null ]
     ] ],
     [ "mage::ResourceManager< T >", "classmage_1_1_resource_manager.html", null ],
@@ -59,5 +62,6 @@ var hierarchy =
     [ "mage::Transform", "structmage_1_1_transform.html", null ],
     [ "mage::Variable", "structmage_1_1_variable.html", null ],
     [ "mage::Vertex", "structmage_1_1_vertex.html", null ],
+    [ "mage::VertexShader", "classmage_1_1_vertex_shader.html", null ],
     [ "mage::ViewerSetup", "structmage_1_1_viewer_setup.html", null ]
 ];

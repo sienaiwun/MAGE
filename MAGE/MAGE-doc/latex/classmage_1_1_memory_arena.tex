@@ -2,14 +2,14 @@
 \label{classmage_1_1_memory_arena}\index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 
 
-{\ttfamily \#include $<$arena.\+hpp$>$}
+{\ttfamily \#include $<$memory\+\_\+arena.\+hpp$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_memory_arena_aa243c458adb14e211f4dd944c4c82148}{Memory\+Arena} (uint32\+\_\+t block\+\_\+size=32768)
+\hyperlink{classmage_1_1_memory_arena_ac90beb8cf8dc42944a0fd6a4a9e8355c}{Memory\+Arena} (size\+\_\+t block\+\_\+size=32768)
 \item 
-\hyperlink{classmage_1_1_memory_arena_acfee6fc205e2eaf6aeef4acf19948e6e}{$\sim$\+Memory\+Arena} ()
+virtual \hyperlink{classmage_1_1_memory_arena_a2bea1690184d21f54a4fb815a86e0c27}{$\sim$\+Memory\+Arena} ()
 \item 
 size\+\_\+t \hyperlink{classmage_1_1_memory_arena_a0db28bd286a517a30acdc061ace0bf56}{Get\+Block\+Size} () const
 \item 
@@ -25,14 +25,14 @@ void $\ast$ \hyperlink{classmage_1_1_memory_arena_a83f19bd85aea65001e6406075c105
 \item 
 {\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{classmage_1_1_memory_arena_ab249fe48cdf7c46f625050fe9583603a}{Alloc} (size\+\_\+t count=1, bool initialization=true)
 \end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
+\subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classmage_1_1_memory_arena_a1eca6fdacbd1226f4b21f443d118168b}{Memory\+Arena} (const \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \&arena)=delete
 \item 
 \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \& \hyperlink{classmage_1_1_memory_arena_a7e7799f859c55435714933972ecb8b95}{operator=} (const \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \&arena)=delete
 \end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 const size\+\_\+t \hyperlink{classmage_1_1_memory_arena_a18177c245b045c5536330ffed284ed4d}{m\+\_\+block\+\_\+size}
@@ -51,11 +51,11 @@ list$<$ pair$<$ size\+\_\+t, char $\ast$$>$ $>$ \hyperlink{classmage_1_1_memory_
 A class of memory arena\textquotesingle{}s. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_memory_arena_aa243c458adb14e211f4dd944c4c82148}{}\label{classmage_1_1_memory_arena_aa243c458adb14e211f4dd944c4c82148} 
+\hypertarget{classmage_1_1_memory_arena_ac90beb8cf8dc42944a0fd6a4a9e8355c}{}\label{classmage_1_1_memory_arena_ac90beb8cf8dc42944a0fd6a4a9e8355c} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Memory\+Arena@{Memory\+Arena}}
 \index{Memory\+Arena@{Memory\+Arena}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{Memory\+Arena()}{MemoryArena()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Memory\+Arena\+::\+Memory\+Arena (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{block\+\_\+size = {\ttfamily 32768} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Memory\+Arena\+::\+Memory\+Arena (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{block\+\_\+size = {\ttfamily 32768} }\end{DoxyParamCaption})}
 
 Constructs a memory arena with given block size.
 
@@ -64,17 +64,17 @@ Constructs a memory arena with given block size.
 \mbox{\tt in}  & {\em block\+\_\+size} & The maximum block size in bytes. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_memory_arena_acfee6fc205e2eaf6aeef4acf19948e6e}{}\label{classmage_1_1_memory_arena_acfee6fc205e2eaf6aeef4acf19948e6e} 
+\hypertarget{classmage_1_1_memory_arena_a2bea1690184d21f54a4fb815a86e0c27}{}\label{classmage_1_1_memory_arena_a2bea1690184d21f54a4fb815a86e0c27} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!````~Memory\+Arena@{$\sim$\+Memory\+Arena}}
 \index{````~Memory\+Arena@{$\sim$\+Memory\+Arena}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{$\sim$\+Memory\+Arena()}{~MemoryArena()}}
-{\footnotesize\ttfamily mage\+::\+Memory\+Arena\+::$\sim$\+Memory\+Arena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily virtual mage\+::\+Memory\+Arena\+::$\sim$\+Memory\+Arena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Destructs the given memory arena. \hypertarget{classmage_1_1_memory_arena_a1eca6fdacbd1226f4b21f443d118168b}{}\label{classmage_1_1_memory_arena_a1eca6fdacbd1226f4b21f443d118168b} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!Memory\+Arena@{Memory\+Arena}}
 \index{Memory\+Arena@{Memory\+Arena}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{Memory\+Arena()}{MemoryArena()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily mage\+::\+Memory\+Arena\+::\+Memory\+Arena (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \&}]{arena }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily mage\+::\+Memory\+Arena\+::\+Memory\+Arena (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \&}]{arena }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
 
 Constructs a memory arena from the given memory arena.
 
@@ -181,7 +181,7 @@ The block size (in bytes) of all blocks of this memory arena.
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena}\& mage\+::\+Memory\+Arena\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \&}]{arena }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena}\& mage\+::\+Memory\+Arena\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena} \&}]{arena }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
 
 Copies the given memory arena to this memory arena.
 
@@ -203,30 +203,30 @@ Resets this memory arena.
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+available\+\_\+blocks@{m\+\_\+available\+\_\+blocks}}
 \index{m\+\_\+available\+\_\+blocks@{m\+\_\+available\+\_\+blocks}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{m\+\_\+available\+\_\+blocks}{m\_available\_blocks}}
-{\footnotesize\ttfamily list$<$ pair$<$ size\+\_\+t, char $\ast$ $>$ $>$ mage\+::\+Memory\+Arena\+::m\+\_\+available\+\_\+blocks\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily list$<$ pair$<$ size\+\_\+t, char $\ast$ $>$ $>$ mage\+::\+Memory\+Arena\+::m\+\_\+available\+\_\+blocks\hspace{0.3cm}{\ttfamily [protected]}}
 
 Pointers to the available blocks of this memory arena. \hypertarget{classmage_1_1_memory_arena_a18177c245b045c5536330ffed284ed4d}{}\label{classmage_1_1_memory_arena_a18177c245b045c5536330ffed284ed4d} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+block\+\_\+size@{m\+\_\+block\+\_\+size}}
 \index{m\+\_\+block\+\_\+size@{m\+\_\+block\+\_\+size}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{m\+\_\+block\+\_\+size}{m\_block\_size}}
-{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Memory\+Arena\+::m\+\_\+block\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily const size\+\_\+t mage\+::\+Memory\+Arena\+::m\+\_\+block\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}
 
 The fixed block size of this memory arena. \hypertarget{classmage_1_1_memory_arena_ab2d39233b1e64239baea519a2d073b04}{}\label{classmage_1_1_memory_arena_ab2d39233b1e64239baea519a2d073b04} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+current\+\_\+block@{m\+\_\+current\+\_\+block}}
 \index{m\+\_\+current\+\_\+block@{m\+\_\+current\+\_\+block}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{m\+\_\+current\+\_\+block}{m\_current\_block}}
-{\footnotesize\ttfamily pair$<$ size\+\_\+t, char $\ast$ $>$ mage\+::\+Memory\+Arena\+::m\+\_\+current\+\_\+block\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily pair$<$ size\+\_\+t, char $\ast$ $>$ mage\+::\+Memory\+Arena\+::m\+\_\+current\+\_\+block\hspace{0.3cm}{\ttfamily [protected]}}
 
 A pointer to the current block of this memory arena. \hypertarget{classmage_1_1_memory_arena_a880d07eb372ce1c8b907947fcbdfc59c}{}\label{classmage_1_1_memory_arena_a880d07eb372ce1c8b907947fcbdfc59c} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+current\+\_\+block\+\_\+pos@{m\+\_\+current\+\_\+block\+\_\+pos}}
 \index{m\+\_\+current\+\_\+block\+\_\+pos@{m\+\_\+current\+\_\+block\+\_\+pos}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{m\+\_\+current\+\_\+block\+\_\+pos}{m\_current\_block\_pos}}
-{\footnotesize\ttfamily size\+\_\+t mage\+::\+Memory\+Arena\+::m\+\_\+current\+\_\+block\+\_\+pos\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Memory\+Arena\+::m\+\_\+current\+\_\+block\+\_\+pos\hspace{0.3cm}{\ttfamily [protected]}}
 
 The current block position of this memory arena. \hypertarget{classmage_1_1_memory_arena_a9fc33bafde45afe06d05732572f415d1}{}\label{classmage_1_1_memory_arena_a9fc33bafde45afe06d05732572f415d1} 
 \index{mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}!m\+\_\+used\+\_\+blocks@{m\+\_\+used\+\_\+blocks}}
 \index{m\+\_\+used\+\_\+blocks@{m\+\_\+used\+\_\+blocks}!mage\+::\+Memory\+Arena@{mage\+::\+Memory\+Arena}}
 \subsubsection{\texorpdfstring{m\+\_\+used\+\_\+blocks}{m\_used\_blocks}}
-{\footnotesize\ttfamily list$<$ pair$<$ size\+\_\+t, char $\ast$ $>$ $>$ mage\+::\+Memory\+Arena\+::m\+\_\+used\+\_\+blocks\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily list$<$ pair$<$ size\+\_\+t, char $\ast$ $>$ $>$ mage\+::\+Memory\+Arena\+::m\+\_\+used\+\_\+blocks\hspace{0.3cm}{\ttfamily [protected]}}
 
 Pointers to the used blocks of this memory arena. 

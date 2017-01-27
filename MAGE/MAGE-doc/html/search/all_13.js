@@ -13,7 +13,9 @@ var searchData=
   ['vertex',['Vertex',['../structmage_1_1_vertex.html',1,'mage']]],
   ['vertex',['Vertex',['../structmage_1_1_vertex.html#a8bf3578fcb5595eab057dc2d1f916dce',1,'mage::Vertex::Vertex()'],['../structmage_1_1_vertex.html#a19ef5e9829752aa2134bc25617ce910d',1,'mage::Vertex::Vertex(XMFLOAT3 p, XMFLOAT3 n, XMFLOAT2 tex)']]],
   ['vertex_5finput_5felement_5fdesc',['vertex_input_element_desc',['../namespacemage.html#a8647e0bbbbe87e5c6d7a4d4622230119',1,'mage']]],
-  ['viewersetup',['ViewerSetup',['../structmage_1_1_viewer_setup.html',1,'mage']]],
+  ['vertexshader',['VertexShader',['../classmage_1_1_vertex_shader.html',1,'mage']]],
+  ['vertexshader',['VertexShader',['../classmage_1_1_vertex_shader.html#a5d18f4ce3028666915d0055de5ecfc88',1,'mage::VertexShader::VertexShader(ID3D11Device2 *device, const wstring &amp;fname)'],['../classmage_1_1_vertex_shader.html#a713f8581278ea2e5eb3010207b7e42a8',1,'mage::VertexShader::VertexShader(const VertexShader &amp;vertex_shader)=delete']]],
   ['viewersetup',['ViewerSetup',['../structmage_1_1_viewer_setup.html#a41acbd3bd1b8df2e175a57ee9bd07bda',1,'mage::ViewerSetup']]],
+  ['viewersetup',['ViewerSetup',['../structmage_1_1_viewer_setup.html',1,'mage']]],
   ['visitcameranode',['VisitCameraNode',['../classmage_1_1_scene_node_visitor.html#a01d831e494396ab678ce0c29b008a398',1,'mage::SceneNodeVisitor::VisitCameraNode(CameraNode &amp;camera_node)'],['../classmage_1_1_scene_node_visitor.html#a4a3bb0c3ad6253c919259efabbccfab9',1,'mage::SceneNodeVisitor::VisitCameraNode(const CameraNode &amp;camera_node)']]]
 ];

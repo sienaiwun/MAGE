@@ -103,8 +103,18 @@ Inheritance diagram for mage::SceneNode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad7ae54e25fb970772c0b0a6c5bac57ff"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#ad7ae54e25fb970772c0b0a6c5bac57ff">~SceneNode</a> ()</td></tr>
-<tr class="separator:ad7ae54e25fb970772c0b0a6c5bac57ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6705beea9c535de3d495762ed06e74dd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a6705beea9c535de3d495762ed06e74dd">~SceneNode</a> ()</td></tr>
+<tr class="separator:a6705beea9c535de3d495762ed06e74dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d62213a900cd8e45864b8cde5929e9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a85d62213a900cd8e45864b8cde5929e9">Clone</a> () const =0</td></tr>
+<tr class="separator:a85d62213a900cd8e45864b8cde5929e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcfacd607e3f8554f7eac73a51be334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a5dcfacd607e3f8554f7eac73a51be334">DeepClone</a> () const</td></tr>
+<tr class="separator:a5dcfacd607e3f8554f7eac73a51be334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3b2a5d21cb2e17df4ae50344bd6bbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a5e3b2a5d21cb2e17df4ae50344bd6bbc">IsEnabled</a> () const</td></tr>
+<tr class="separator:a5e3b2a5d21cb2e17df4ae50344bd6bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb08a122d822394a96a9c2bcf6aab7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a7fb08a122d822394a96a9c2bcf6aab7f">Enable</a> ()</td></tr>
+<tr class="separator:a7fb08a122d822394a96a9c2bcf6aab7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2113dd62439d81a31bdfdf44d02061e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#ab2113dd62439d81a31bdfdf44d02061e">Disable</a> ()</td></tr>
+<tr class="separator:ab2113dd62439d81a31bdfdf44d02061e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a512a9d0f935abf304980312680be3f30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a512a9d0f935abf304980312680be3f30">GetParent</a> () const</td></tr>
 <tr class="separator:a512a9d0f935abf304980312680be3f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c86a1d18b41d4c5ce0384ba53a0952"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a99c86a1d18b41d4c5ce0384ba53a0952">ContainsChild</a> (const <a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> *child) const</td></tr>
@@ -131,23 +141,29 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a32ed8763c8f8b4caa155f64551d96f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35fbfd49185fb61cb4e9edf56af35262"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a35fbfd49185fb61cb4e9edf56af35262">Accept</a> (<a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;visitor) const =0</td></tr>
 <tr class="separator:a35fbfd49185fb61cb4e9edf56af35262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f53bc4edcbfcd9cf7c2390c4a99ae4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a87f53bc4edcbfcd9cf7c2390c4a99ae4">AcceptRecursive</a> (<a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;visitor)</td></tr>
+<tr class="separator:a87f53bc4edcbfcd9cf7c2390c4a99ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3463a687f049dac387500a6ace5f62e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a3463a687f049dac387500a6ace5f62e7">AcceptRecursive</a> (<a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;visitor) const</td></tr>
+<tr class="separator:a3463a687f049dac387500a6ace5f62e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a1d6869990a42bcbd0508ae2ca1d318eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a1d6869990a42bcbd0508ae2ca1d318eb">SceneNode</a> (const <a class="el" href="structmage_1_1_transform.html">Transform</a> &amp;transform=<a class="el" href="structmage_1_1_transform.html">Transform</a>())</td></tr>
-<tr class="separator:a1d6869990a42bcbd0508ae2ca1d318eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b46b3ab755050765ebc9fd15580068a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a4b46b3ab755050765ebc9fd15580068a">PassToChilds</a> (<a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;visitor)</td></tr>
-<tr class="separator:a4b46b3ab755050765ebc9fd15580068a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a785a090d9f316c8f5516deddf5b7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a72a785a090d9f316c8f5516deddf5b7e">PassToChilds</a> (<a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;visitor) const</td></tr>
-<tr class="separator:a72a785a090d9f316c8f5516deddf5b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf69b4acd80f1e4452e603e9c713cbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a3cf69b4acd80f1e4452e603e9c713cbf">SceneNode</a> (const <a class="el" href="structmage_1_1_transform.html">Transform</a> &amp;transform=<a class="el" href="structmage_1_1_transform.html">Transform</a>(), bool enabled=true)</td></tr>
+<tr class="separator:a3cf69b4acd80f1e4452e603e9c713cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0259a6b573eb633b589cd986b9ec6734"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a0259a6b573eb633b589cd986b9ec6734">SceneNode</a> (const <a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> &amp;scene_node)</td></tr>
+<tr class="separator:a0259a6b573eb633b589cd986b9ec6734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a37becece66e7d801e34bd6cacd0e83f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a37becece66e7d801e34bd6cacd0e83f2">operator=</a> (const <a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> &amp;scene_node)</td></tr>
+<tr class="separator:a37becece66e7d801e34bd6cacd0e83f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d5219ff4c1f2b1c37899456af518ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a27d5219ff4c1f2b1c37899456af518ae">SetParent</a> (<a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> *parent)</td></tr>
 <tr class="separator:a27d5219ff4c1f2b1c37899456af518ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a886a097067e1aa22b7803aaf2f5ccbf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a886a097067e1aa22b7803aaf2f5ccbf0">m_enabled</a></td></tr>
+<tr class="separator:a886a097067e1aa22b7803aaf2f5ccbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1384e71b5cc527df881c7272e9fa518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#af1384e71b5cc527df881c7272e9fa518">m_transform</a></td></tr>
 <tr class="separator:af1384e71b5cc527df881c7272e9fa518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a507db45672f28f899f6c7b0f6a292202"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a507db45672f28f899f6c7b0f6a292202">m_parent</a></td></tr>
@@ -158,8 +174,8 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of scene nodes. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad7ae54e25fb970772c0b0a6c5bac57ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ae54e25fb970772c0b0a6c5bac57ff">&sect;&nbsp;</a></span>~SceneNode()</h2>
+<a id="a6705beea9c535de3d495762ed06e74dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6705beea9c535de3d495762ed06e74dd">&sect;&nbsp;</a></span>~SceneNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +184,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual mage::SceneNode::~SceneNode </td>
+          <td class="memname">mage::SceneNode::~SceneNode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -184,8 +200,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d6869990a42bcbd0508ae2ca1d318eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d6869990a42bcbd0508ae2ca1d318eb">&sect;&nbsp;</a></span>SceneNode()</h2>
+<a id="a3cf69b4acd80f1e4452e603e9c713cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf69b4acd80f1e4452e603e9c713cbf">&sect;&nbsp;</a></span>SceneNode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,8 +213,18 @@ Private Attributes</h2></td></tr>
           <td class="memname">mage::SceneNode::SceneNode </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmage_1_1_transform.html">Transform</a> &amp;&#160;</td>
-          <td class="paramname"><em>transform</em> = <code><a class="el" href="structmage_1_1_transform.html">Transform</a>()</code></td><td>)</td>
+          <td class="paramname"><em>transform</em> = <code><a class="el" href="structmage_1_1_transform.html">Transform</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -211,6 +237,40 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">transform</td><td>A reference to the transform. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>Flag indicating whether the scene node is enabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0259a6b573eb633b589cd986b9ec6734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0259a6b573eb633b589cd986b9ec6734">&sect;&nbsp;</a></span>SceneNode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::SceneNode::SceneNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene_node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a scene node from the given scene node (non-deep clone).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene_node</td><td>The scene node. </td></tr>
   </table>
   </dd>
 </dl>
@@ -288,6 +348,56 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a87f53bc4edcbfcd9cf7c2390c4a99ae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f53bc4edcbfcd9cf7c2390c4a99ae4">&sect;&nbsp;</a></span>AcceptRecursive() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::SceneNode::AcceptRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Accepts the given visitor recursively.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">visitor</td><td>A reference to the visitor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3463a687f049dac387500a6ace5f62e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3463a687f049dac387500a6ace5f62e7">&sect;&nbsp;</a></span>AcceptRecursive() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::SceneNode::AcceptRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Accepts the given visitor recursively.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">visitor</td><td>A reference to the visitor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac07f89af783b1658a1f74205914f6fa3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac07f89af783b1658a1f74205914f6fa3">&sect;&nbsp;</a></span>AddChild()</h2>
 
@@ -313,6 +423,35 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a85d62213a900cd8e45864b8cde5929e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d62213a900cd8e45864b8cde5929e9">&sect;&nbsp;</a></span>Clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classmage_1_1_scene_node.html">SceneNode</a>* mage::SceneNode::Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clones this scene node (non-deep clone).</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a non-deep clone of this scene node. </dd></dl>
+
+<p>Implemented in <a class="el" href="classmage_1_1_camera_node.html#adf9a95250d1fd7e6bb9a5850a0aa7817">mage::CameraNode</a>.</p>
+
+</div>
+</div>
 <a id="a99c86a1d18b41d4c5ce0384ba53a0952"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99c86a1d18b41d4c5ce0384ba53a0952">&sect;&nbsp;</a></span>ContainsChild()</h2>
 
@@ -330,6 +469,61 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Checks whether this scene node contains the given scene node as a child scene node.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this scene node contains the given scene node as a child scene node. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a5dcfacd607e3f8554f7eac73a51be334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcfacd607e3f8554f7eac73a51be334">&sect;&nbsp;</a></span>DeepClone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> * mage::SceneNode::DeepClone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clones this scene node (deep clone).</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a deep clone of this scene node. </dd></dl>
+
+</div>
+</div>
+<a id="ab2113dd62439d81a31bdfdf44d02061e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2113dd62439d81a31bdfdf44d02061e">&sect;&nbsp;</a></span>Disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::SceneNode::Disable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Disables this scene node. </p>
+
+</div>
+</div>
+<a id="a7fb08a122d822394a96a9c2bcf6aab7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb08a122d822394a96a9c2bcf6aab7f">&sect;&nbsp;</a></span>Enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::SceneNode::Enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enables this scene node. </p>
 
 </div>
 </div>
@@ -487,8 +681,27 @@ A pointer to the parent scene node of this scene node. </dd></dl>
 
 </div>
 </div>
-<a id="a4b46b3ab755050765ebc9fd15580068a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b46b3ab755050765ebc9fd15580068a">&sect;&nbsp;</a></span>PassToChilds() <span class="overload">[1/2]</span></h2>
+<a id="a5e3b2a5d21cb2e17df4ae50344bd6bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e3b2a5d21cb2e17df4ae50344bd6bbc">&sect;&nbsp;</a></span>IsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::SceneNode::IsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether this scene node is enabled.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this scene node is enabled. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a37becece66e7d801e34bd6cacd0e83f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37becece66e7d801e34bd6cacd0e83f2">&sect;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,56 +710,23 @@ A pointer to the parent scene node of this scene node. </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mage::SceneNode::PassToChilds </td>
+          <td class="memname"><a class="el" href="classmage_1_1_scene_node.html">SceneNode</a>&amp; mage::SceneNode::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;&#160;</td>
-          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene_node</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Pass the given visitor to the childs of this scene node.</p>
+<p>Copies the given scene node to this scene node.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">visitor</td><td>A reference to the visitor. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a72a785a090d9f316c8f5516deddf5b7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72a785a090d9f316c8f5516deddf5b7e">&sect;&nbsp;</a></span>PassToChilds() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mage::SceneNode::PassToChilds </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;&#160;</td>
-          <td class="paramname"><em>visitor</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Pass the given visitor to the childs of this scene node.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">visitor</td><td>A reference to the visitor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scene_node</td><td>The scene node. </td></tr>
   </table>
   </dd>
 </dl>
@@ -602,6 +782,7 @@ A pointer to the parent scene node of this scene node. </dd></dl>
 </table>
 </div><div class="memdoc">
 <p>Sets the parent scene node of this scene node to the given scene node.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>The given parent must already contain this scene node as one of its child nodes. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>A pointer to the parent scene node. </td></tr>
@@ -632,6 +813,29 @@ A pointer to the parent scene node of this scene node. </dd></dl>
 </table>
 </div><div class="memdoc">
 <p>A set containing the child scene nodes of this scene node. </p>
+
+</div>
+</div>
+<a id="a886a097067e1aa22b7803aaf2f5ccbf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886a097067e1aa22b7803aaf2f5ccbf0">&sect;&nbsp;</a></span>m_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mage::SceneNode::m_enabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag indicating whether this scene node is enabled. </p>
 
 </div>
 </div>

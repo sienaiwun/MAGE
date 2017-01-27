@@ -13,6 +13,10 @@ Inheritance diagram for mage\+:\+:Renderer\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+I\+D3\+D11\+Device2 $\ast$ \hyperlink{classmage_1_1_renderer_a38522d4b6933ef8f9ef5e46b713bdc95}{Get\+Device} ()
+\item 
+I\+D3\+D11\+Device\+Context2 $\ast$ \hyperlink{classmage_1_1_renderer_aa212ed67007115da62b6338f75e4eb75}{Get\+Device\+Context} ()
+\item 
 bool \hyperlink{classmage_1_1_renderer_a1de1804c1eedae7dc12435a520a10b9c}{Is\+Windowed} () const
 \item 
 bool \hyperlink{classmage_1_1_renderer_a5ae3220e19c68f47a8e4d55e3ced4694}{Is\+Full\+Screen} () const
@@ -49,8 +53,6 @@ void \hyperlink{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6}{Render
 \item 
 H\+W\+ND \hyperlink{classmage_1_1_renderer_afc314c8b146c3709edfd5349257a8387}{m\+\_\+hwindow}
 \item 
-bool \hyperlink{classmage_1_1_renderer_a72bb88b17491bd388460afae9d207b0a}{m\+\_\+fullscreen}
-\item 
 D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL \hyperlink{classmage_1_1_renderer_aa97b108ef58f7d41ddb527f6ba2bfdf9}{m\+\_\+feature\+\_\+level}
 \item 
 I\+D3\+D11\+Device2 $\ast$ \hyperlink{classmage_1_1_renderer_a5af9d44e53bd523136cc52855a2dbe25}{m\+\_\+device2}
@@ -64,6 +66,11 @@ I\+D3\+D11\+Render\+Target\+View $\ast$ \hyperlink{classmage_1_1_renderer_a60eeb
 I\+D3\+D11\+Texture2D $\ast$ \hyperlink{classmage_1_1_renderer_a1c19b2fb0347ab2e93f19d7a9d53a947}{m\+\_\+depth\+\_\+stencil}
 \item 
 I\+D3\+D11\+Depth\+Stencil\+View $\ast$ \hyperlink{classmage_1_1_renderer_a85b04ce9e3d0086c499910b2df82876d}{m\+\_\+depth\+\_\+stencil\+\_\+view}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmage_1_1_renderer_a72bb88b17491bd388460afae9d207b0a}{m\+\_\+fullscreen}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -99,6 +106,28 @@ Constructs a renderer.
 Destructs this renderer. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_renderer_a38522d4b6933ef8f9ef5e46b713bdc95}{}\label{classmage_1_1_renderer_a38522d4b6933ef8f9ef5e46b713bdc95} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Device@{Get\+Device}}
+\index{Get\+Device@{Get\+Device}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Device()}{GetDevice()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device2$\ast$ mage\+::\+Renderer\+::\+Get\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the device of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the device of this renderer. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_renderer_aa212ed67007115da62b6338f75e4eb75}{}\label{classmage_1_1_renderer_aa212ed67007115da62b6338f75e4eb75} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Device\+Context@{Get\+Device\+Context}}
+\index{Get\+Device\+Context@{Get\+Device\+Context}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Device\+Context()}{GetDeviceContext()}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device\+Context2$\ast$ mage\+::\+Renderer\+::\+Get\+Device\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the device context of this renderer.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the device context of this renderer. 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_renderer_aafed50e7e14ca597541c091941351929}{}\label{classmage_1_1_renderer_aafed50e7e14ca597541c091941351929} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Initialize\+Renderer@{Initialize\+Renderer}}
 \index{Initialize\+Renderer@{Initialize\+Renderer}!mage\+::\+Renderer@{mage\+::\+Renderer}}
@@ -274,7 +303,7 @@ A success/error value.
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+fullscreen@{m\+\_\+fullscreen}}
 \index{m\+\_\+fullscreen@{m\+\_\+fullscreen}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{m\+\_\+fullscreen}{m\_fullscreen}}
-{\footnotesize\ttfamily bool mage\+::\+Renderer\+::m\+\_\+fullscreen\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily bool mage\+::\+Renderer\+::m\+\_\+fullscreen\hspace{0.3cm}{\ttfamily [private]}}
 
 A flag indicating whether this renderer uses a full screen mode (if {\ttfamily true}) or a windowed mode (if {\ttfamily false}). \hypertarget{classmage_1_1_renderer_afc314c8b146c3709edfd5349257a8387}{}\label{classmage_1_1_renderer_afc314c8b146c3709edfd5349257a8387} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!m\+\_\+hwindow@{m\+\_\+hwindow}}

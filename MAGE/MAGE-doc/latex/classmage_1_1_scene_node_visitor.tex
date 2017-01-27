@@ -9,6 +9,8 @@
 \item 
 virtual \hyperlink{classmage_1_1_scene_node_visitor_ac45f02e28abeeb9220b0be954ca6a513}{$\sim$\+Scene\+Node\+Visitor} ()
 \item 
+bool \hyperlink{classmage_1_1_scene_node_visitor_a0f654e306f6d43d49081f319cd41812b}{Is\+Visit\+Terminated} () const
+\item 
 virtual void \hyperlink{classmage_1_1_scene_node_visitor_a01d831e494396ab678ce0c29b008a398}{Visit\+Camera\+Node} (\hyperlink{classmage_1_1_camera_node}{Camera\+Node} \&camera\+\_\+node)
 \item 
 virtual void \hyperlink{classmage_1_1_scene_node_visitor_a4a3bb0c3ad6253c919259efabbccfab9}{Visit\+Camera\+Node} (const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} \&camera\+\_\+node)
@@ -17,6 +19,13 @@ virtual void \hyperlink{classmage_1_1_scene_node_visitor_a4a3bb0c3ad6253c919259e
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classmage_1_1_scene_node_visitor_a6a259a0ce19107bb644482b86c4bd27a}{Scene\+Node\+Visitor} ()
+\item 
+void \hyperlink{classmage_1_1_scene_node_visitor_a8fe1b3469cbb97d4086cb030128fa28c}{Terminate\+Visit} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmage_1_1_scene_node_visitor_a3f3b8db683cdb5b9c09c1426738ee73a}{m\+\_\+terminated}
 \end{DoxyCompactItemize}
 
 
@@ -39,7 +48,24 @@ Destructs this scene node visitor. \hypertarget{classmage_1_1_scene_node_visitor
 Constructs a scene node visitor. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_scene_node_visitor_a01d831e494396ab678ce0c29b008a398}{}\label{classmage_1_1_scene_node_visitor_a01d831e494396ab678ce0c29b008a398} 
+\hypertarget{classmage_1_1_scene_node_visitor_a0f654e306f6d43d49081f319cd41812b}{}\label{classmage_1_1_scene_node_visitor_a0f654e306f6d43d49081f319cd41812b} 
+\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!Is\+Visit\+Terminated@{Is\+Visit\+Terminated}}
+\index{Is\+Visit\+Terminated@{Is\+Visit\+Terminated}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+\subsubsection{\texorpdfstring{Is\+Visit\+Terminated()}{IsVisitTerminated()}}
+{\footnotesize\ttfamily bool mage\+::\+Scene\+Node\+Visitor\+::\+Is\+Visit\+Terminated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check whether the visit of this visitor should be terminated.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the visit of this visitor should be terminated. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_node_visitor_a8fe1b3469cbb97d4086cb030128fa28c}{}\label{classmage_1_1_scene_node_visitor_a8fe1b3469cbb97d4086cb030128fa28c} 
+\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!Terminate\+Visit@{Terminate\+Visit}}
+\index{Terminate\+Visit@{Terminate\+Visit}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+\subsubsection{\texorpdfstring{Terminate\+Visit()}{TerminateVisit()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Node\+Visitor\+::\+Terminate\+Visit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Terminates the visit of this visitor. \hypertarget{classmage_1_1_scene_node_visitor_a01d831e494396ab678ce0c29b008a398}{}\label{classmage_1_1_scene_node_visitor_a01d831e494396ab678ce0c29b008a398} 
 \index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!Visit\+Camera\+Node@{Visit\+Camera\+Node}}
 \index{Visit\+Camera\+Node@{Visit\+Camera\+Node}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
 \subsubsection{\texorpdfstring{Visit\+Camera\+Node()}{VisitCameraNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -65,3 +91,13 @@ Visits the given camera node.
 \mbox{\tt in}  & {\em camera\+\_\+node} & The camera node. \\
 \hline
 \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_scene_node_visitor_a3f3b8db683cdb5b9c09c1426738ee73a}{}\label{classmage_1_1_scene_node_visitor_a3f3b8db683cdb5b9c09c1426738ee73a} 
+\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!m\+\_\+terminated@{m\+\_\+terminated}}
+\index{m\+\_\+terminated@{m\+\_\+terminated}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+\subsubsection{\texorpdfstring{m\+\_\+terminated}{m\_terminated}}
+{\footnotesize\ttfamily bool mage\+::\+Scene\+Node\+Visitor\+::m\+\_\+terminated\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag indicating whether the visit of this visitor should be terminated. This allows for early termination (i.\+e. search operation). 

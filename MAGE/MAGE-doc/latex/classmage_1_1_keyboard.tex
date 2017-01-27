@@ -41,6 +41,13 @@ char \hyperlink{classmage_1_1_keyboard_ad3361790f2c9cc5ca19161f0c8e24acd}{m\+\_\
 \item 
 uint64\+\_\+t \hyperlink{classmage_1_1_keyboard_a8eb4ce7e4e2395bb27d2ac9236655335}{m\+\_\+key\+\_\+press\+\_\+stamp} \mbox{[}256\mbox{]}
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_keyboard_a3137ba9455bcfddf6368e35bdf2d8a93}{Keyboard} (const \hyperlink{classmage_1_1_keyboard}{Keyboard} \&keyboard)
+\item 
+\hyperlink{classmage_1_1_keyboard}{Keyboard} \& \hyperlink{classmage_1_1_keyboard_a3230d2216ce7e6bb5bd13059524ee72c}{operator=} (const \hyperlink{classmage_1_1_keyboard}{Keyboard} \&keyboard)
+\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -55,7 +62,7 @@ A class of keyboards.
 \hypertarget{classmage_1_1_keyboard_ac89c8f4132508901ff2ca57c68709928}{}\label{classmage_1_1_keyboard_ac89c8f4132508901ff2ca57c68709928} 
 \index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!Keyboard@{Keyboard}}
 \index{Keyboard@{Keyboard}!mage\+::\+Keyboard@{mage\+::\+Keyboard}}
-\subsubsection{\texorpdfstring{Keyboard()}{Keyboard()}}
+\subsubsection{\texorpdfstring{Keyboard()}{Keyboard()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Keyboard\+::\+Keyboard (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{hwindow,  }\item[{I\+Direct\+Input8 $\ast$}]{di }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Constructs a keyboard.
@@ -73,7 +80,20 @@ Constructs a keyboard.
 \subsubsection{\texorpdfstring{$\sim$\+Keyboard()}{~Keyboard()}}
 {\footnotesize\ttfamily mage\+::\+Keyboard\+::$\sim$\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Destructs this keyboard. 
+Destructs this keyboard. \hypertarget{classmage_1_1_keyboard_a3137ba9455bcfddf6368e35bdf2d8a93}{}\label{classmage_1_1_keyboard_a3137ba9455bcfddf6368e35bdf2d8a93} 
+\index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!mage\+::\+Keyboard@{mage\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Keyboard()}{Keyboard()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Keyboard\+::\+Keyboard (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_keyboard}{Keyboard} \&}]{keyboard }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Constructs a keyboard from the given keyboard.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em keyboard} & A reference to the keyboard. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_keyboard_a7ba5a3c47b7116afb5b3362739c2a278}{}\label{classmage_1_1_keyboard_a7ba5a3c47b7116afb5b3362739c2a278} 
@@ -109,6 +129,22 @@ Initializes the keyboard device of this keyboard.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A success/error value. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_keyboard_a3230d2216ce7e6bb5bd13059524ee72c}{}\label{classmage_1_1_keyboard_a3230d2216ce7e6bb5bd13059524ee72c} 
+\index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Keyboard@{mage\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_keyboard}{Keyboard}\& mage\+::\+Keyboard\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_keyboard}{Keyboard} \&}]{keyboard }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Copies the given keyboard to this keyboard.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em keyboard} & A reference to the keyboard to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given keyboard (i.\+e. this keyboard). 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_keyboard_ad1c2b76273cd32b0bb0c335c529d4ad4}{}\label{classmage_1_1_keyboard_ad1c2b76273cd32b0bb0c335c529d4ad4} 
 \index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!Uninitialize\+Keyboard@{Uninitialize\+Keyboard}}
