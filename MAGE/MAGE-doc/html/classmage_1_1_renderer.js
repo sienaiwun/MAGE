@@ -2,8 +2,9 @@ var classmage_1_1_renderer =
 [
     [ "Renderer", "classmage_1_1_renderer.html#a762dcda433c319af237d1dfd9bc6095f", null ],
     [ "~Renderer", "classmage_1_1_renderer.html#a997e041f28cc71d069d1ab7d29fe6ced", null ],
-    [ "GetDevice", "classmage_1_1_renderer.html#a38522d4b6933ef8f9ef5e46b713bdc95", null ],
-    [ "GetDeviceContext", "classmage_1_1_renderer.html#aa212ed67007115da62b6338f75e4eb75", null ],
+    [ "GetDevice", "classmage_1_1_renderer.html#a872e88f421405b06a995a6fb231d59ec", null ],
+    [ "GetDeviceContext", "classmage_1_1_renderer.html#a9c0c9254fb8295e415c80fff8de99f82", null ],
+    [ "GetHandle", "classmage_1_1_renderer.html#a11d47495a47c58a0f67aae3110f9f519", null ],
     [ "InitializeRenderer", "classmage_1_1_renderer.html#aafed50e7e14ca597541c091941351929", null ],
     [ "IsFullScreen", "classmage_1_1_renderer.html#a5ae3220e19c68f47a8e4d55e3ced4694", null ],
     [ "IsWindowed", "classmage_1_1_renderer.html#a1de1804c1eedae7dc12435a520a10b9c", null ],
@@ -16,14 +17,13 @@ var classmage_1_1_renderer =
     [ "SetupViewPort", "classmage_1_1_renderer.html#a9bc8598ccca5f6e7cf99010175b1360b", null ],
     [ "SwitchMode", "classmage_1_1_renderer.html#a9004ab608659188900c808eacb5f873c", null ],
     [ "UnitializeRenderer", "classmage_1_1_renderer.html#a308beaf67b11128f02e87778b6a9c3c7", null ],
-    [ "Engine", "classmage_1_1_renderer.html#a3e1914489e4bed4f9f23cdeab34a43dc", null ],
-    [ "m_depth_stencil", "classmage_1_1_renderer.html#a1c19b2fb0347ab2e93f19d7a9d53a947", null ],
-    [ "m_depth_stencil_view", "classmage_1_1_renderer.html#a85b04ce9e3d0086c499910b2df82876d", null ],
-    [ "m_device2", "classmage_1_1_renderer.html#a5af9d44e53bd523136cc52855a2dbe25", null ],
-    [ "m_device_context2", "classmage_1_1_renderer.html#a57bee762f1a8c0ca13c62874a4297f48", null ],
+    [ "m_depth_stencil", "classmage_1_1_renderer.html#a9f7f61e09d9c788ab4d3190bc0fa58d8", null ],
+    [ "m_depth_stencil_view", "classmage_1_1_renderer.html#aaeefc175b9a619f95229a3f8464a7924", null ],
+    [ "m_device2", "classmage_1_1_renderer.html#a6c9757faeb4de815f024dc8eac89960c", null ],
+    [ "m_device_context2", "classmage_1_1_renderer.html#ab8d5eba948922f5ce1116b067e60bee7", null ],
     [ "m_feature_level", "classmage_1_1_renderer.html#aa97b108ef58f7d41ddb527f6ba2bfdf9", null ],
     [ "m_fullscreen", "classmage_1_1_renderer.html#a72bb88b17491bd388460afae9d207b0a", null ],
     [ "m_hwindow", "classmage_1_1_renderer.html#afc314c8b146c3709edfd5349257a8387", null ],
-    [ "m_render_target_view", "classmage_1_1_renderer.html#a60eeb3b440c2c8a027b583ab93830d73", null ],
-    [ "m_swap_chain2", "classmage_1_1_renderer.html#a64eb8b31f6835322d13e1d9b8ea9e113", null ]
+    [ "m_render_target_view", "classmage_1_1_renderer.html#a36ed728d4d5f55bc6f248066b2dd0a43", null ],
+    [ "m_swap_chain2", "classmage_1_1_renderer.html#a96a55ac9d739141f6ea6692347134eec", null ]
 ];

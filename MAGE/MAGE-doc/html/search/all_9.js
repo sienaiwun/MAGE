@@ -1,5 +1,5 @@
 var searchData=
 [
   ['keyboard',['Keyboard',['../classmage_1_1_keyboard.html',1,'mage']]],
-  ['keyboard',['Keyboard',['../classmage_1_1_keyboard.html#ac89c8f4132508901ff2ca57c68709928',1,'mage::Keyboard::Keyboard(HWND hwindow, IDirectInput8 *di)'],['../classmage_1_1_keyboard.html#a3137ba9455bcfddf6368e35bdf2d8a93',1,'mage::Keyboard::Keyboard(const Keyboard &amp;keyboard)']]]
+  ['keyboard',['Keyboard',['../classmage_1_1_keyboard.html#af4afb6c7992b88f94f4b310c35f7e867',1,'mage::Keyboard::Keyboard(HWND hwindow, ComPtr&lt; IDirectInput8 &gt; di)'],['../classmage_1_1_keyboard.html#a39d07f8a5e37648ca9eba30aa55146bf',1,'mage::Keyboard::Keyboard(const Keyboard &amp;keyboard)=delete']]]
 ];

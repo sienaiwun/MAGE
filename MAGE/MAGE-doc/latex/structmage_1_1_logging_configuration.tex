@@ -9,7 +9,11 @@
 \item 
 \hyperlink{structmage_1_1_logging_configuration_a3d397c3ce26c1c42c9ae4a391391c6f9}{Logging\+Configuration} ()
 \item 
+\hyperlink{structmage_1_1_logging_configuration_afd44a8c35f8c2e2f7d75b876ae504b06}{Logging\+Configuration} (const \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration} \&logging\+\_\+configuration)
+\item 
 \hyperlink{structmage_1_1_logging_configuration_ad00ecf9ceadffac0c35d102f50fbd8c7}{$\sim$\+Logging\+Configuration} ()
+\item 
+\hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration} \& \hyperlink{structmage_1_1_logging_configuration_af19880c8b37ae454901a19dccdf4a297}{operator=} (const \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration} \&logging\+\_\+configuration)
 \item 
 bool \hyperlink{structmage_1_1_logging_configuration_ac081313b7a9440bcd73b6a9b69ff3452}{Is\+Quiet} () const
 \item 
@@ -31,10 +35,23 @@ A struct of logging configurations of the engine processing.
 \hypertarget{structmage_1_1_logging_configuration_a3d397c3ce26c1c42c9ae4a391391c6f9}{}\label{structmage_1_1_logging_configuration_a3d397c3ce26c1c42c9ae4a391391c6f9} 
 \index{mage\+::\+Logging\+Configuration@{mage\+::\+Logging\+Configuration}!Logging\+Configuration@{Logging\+Configuration}}
 \index{Logging\+Configuration@{Logging\+Configuration}!mage\+::\+Logging\+Configuration@{mage\+::\+Logging\+Configuration}}
-\subsubsection{\texorpdfstring{Logging\+Configuration()}{LoggingConfiguration()}}
+\subsubsection{\texorpdfstring{Logging\+Configuration()}{LoggingConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Logging\+Configuration\+::\+Logging\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Constructs a new logging configuration. \hypertarget{structmage_1_1_logging_configuration_ad00ecf9ceadffac0c35d102f50fbd8c7}{}\label{structmage_1_1_logging_configuration_ad00ecf9ceadffac0c35d102f50fbd8c7} 
+Constructs a new logging configuration. \hypertarget{structmage_1_1_logging_configuration_afd44a8c35f8c2e2f7d75b876ae504b06}{}\label{structmage_1_1_logging_configuration_afd44a8c35f8c2e2f7d75b876ae504b06} 
+\index{mage\+::\+Logging\+Configuration@{mage\+::\+Logging\+Configuration}!Logging\+Configuration@{Logging\+Configuration}}
+\index{Logging\+Configuration@{Logging\+Configuration}!mage\+::\+Logging\+Configuration@{mage\+::\+Logging\+Configuration}}
+\subsubsection{\texorpdfstring{Logging\+Configuration()}{LoggingConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Logging\+Configuration\+::\+Logging\+Configuration (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration} \&}]{logging\+\_\+configuration }\end{DoxyParamCaption})}
+
+Constructs a logging configuration from the given logging configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em logging\+\_\+configuration} & A reference to the logging configuration. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_logging_configuration_ad00ecf9ceadffac0c35d102f50fbd8c7}{}\label{structmage_1_1_logging_configuration_ad00ecf9ceadffac0c35d102f50fbd8c7} 
 \index{mage\+::\+Logging\+Configuration@{mage\+::\+Logging\+Configuration}!````~Logging\+Configuration@{$\sim$\+Logging\+Configuration}}
 \index{````~Logging\+Configuration@{$\sim$\+Logging\+Configuration}!mage\+::\+Logging\+Configuration@{mage\+::\+Logging\+Configuration}}
 \subsubsection{\texorpdfstring{$\sim$\+Logging\+Configuration()}{~LoggingConfiguration()}}
@@ -64,6 +81,22 @@ Checks wheter the logging of the engine processing is verbose.
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the logging of the engine processing is verbose. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_logging_configuration_af19880c8b37ae454901a19dccdf4a297}{}\label{structmage_1_1_logging_configuration_af19880c8b37ae454901a19dccdf4a297} 
+\index{mage\+::\+Logging\+Configuration@{mage\+::\+Logging\+Configuration}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Logging\+Configuration@{mage\+::\+Logging\+Configuration}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration}\& mage\+::\+Logging\+Configuration\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration} \&}]{logging\+\_\+configuration }\end{DoxyParamCaption})}
+
+Copies the given logging configuration to this logging configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em logging\+\_\+configuration} & A reference to the logging configuration to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given logging configuration (i.\+e. this logging configuration). 
 \end{DoxyReturn}
 
 

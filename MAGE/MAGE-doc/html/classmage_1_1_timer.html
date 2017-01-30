@@ -95,8 +95,12 @@ $(document).ready(function(){initNavTree('classmage_1_1_timer.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e1c0a3bb4491b3a43ce05874ad24055"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a5e1c0a3bb4491b3a43ce05874ad24055">Timer</a> ()</td></tr>
 <tr class="separator:a5e1c0a3bb4491b3a43ce05874ad24055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b7b49108aa67fc751594ae0a310bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a70b7b49108aa67fc751594ae0a310bfe">Timer</a> (const <a class="el" href="classmage_1_1_timer.html">Timer</a> &amp;timer)</td></tr>
+<tr class="separator:a70b7b49108aa67fc751594ae0a310bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91cebe8c59c189fde93932fde10265c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#aa91cebe8c59c189fde93932fde10265c">~Timer</a> ()</td></tr>
 <tr class="separator:aa91cebe8c59c189fde93932fde10265c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeff75810b47c1d9a01d3821e656eac9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_timer.html">Timer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#aaeff75810b47c1d9a01d3821e656eac9">operator=</a> (const <a class="el" href="classmage_1_1_timer.html">Timer</a> &amp;timer)</td></tr>
+<tr class="separator:aaeff75810b47c1d9a01d3821e656eac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5855c9df8ad1a2b6774942e566833647"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#a5855c9df8ad1a2b6774942e566833647">Start</a> ()</td></tr>
 <tr class="separator:a5855c9df8ad1a2b6774942e566833647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf234f1e2ee9e760f316bd49500d5a3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_timer.html#abf234f1e2ee9e760f316bd49500d5a3a">Stop</a> ()</td></tr>
@@ -132,7 +136,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>A class of (high precision) timers. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5e1c0a3bb4491b3a43ce05874ad24055"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e1c0a3bb4491b3a43ce05874ad24055">&sect;&nbsp;</a></span>Timer()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1c0a3bb4491b3a43ce05874ad24055">&sect;&nbsp;</a></span>Timer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,6 +150,31 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Constructs a timer. </p>
+
+</div>
+</div>
+<a id="a70b7b49108aa67fc751594ae0a310bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b7b49108aa67fc751594ae0a310bfe">&sect;&nbsp;</a></span>Timer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::Timer::Timer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_timer.html">Timer</a> &amp;&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a timer from the given timer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer</td><td>A reference to the timer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -176,6 +205,32 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaeff75810b47c1d9a01d3821e656eac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeff75810b47c1d9a01d3821e656eac9">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_timer.html">Timer</a> &amp; mage::Timer::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_timer.html">Timer</a> &amp;&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copies the given timer to this timer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer</td><td>A reference to the timer to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given timer (i.e. this timer). </dd></dl>
+
+</div>
+</div>
 <a id="a0675ff7bc0a8e7343b5a35f865cc9c1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0675ff7bc0a8e7343b5a35f865cc9c1a">&sect;&nbsp;</a></span>Reset()</h2>
 
@@ -291,7 +346,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the time of this timer.</p>
 <dl class="section return"><dt>Returns</dt><dd>The time of this timer. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This member method encapsulates the performance of the underlying counter/frequency processing. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This member method encapsulates the counter/frequency processing. </dd></dl>
 
 </div>
 </div>

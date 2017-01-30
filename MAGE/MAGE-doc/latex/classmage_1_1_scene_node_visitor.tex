@@ -20,6 +20,10 @@ virtual void \hyperlink{classmage_1_1_scene_node_visitor_a4a3bb0c3ad6253c919259e
 \item 
 \hyperlink{classmage_1_1_scene_node_visitor_a6a259a0ce19107bb644482b86c4bd27a}{Scene\+Node\+Visitor} ()
 \item 
+\hyperlink{classmage_1_1_scene_node_visitor_a44e30ba9858c231f4bad0a2b7fffbe29}{Scene\+Node\+Visitor} (const \hyperlink{classmage_1_1_scene_node_visitor}{Scene\+Node\+Visitor} \&visitor)
+\item 
+\hyperlink{classmage_1_1_scene_node_visitor}{Scene\+Node\+Visitor} \& \hyperlink{classmage_1_1_scene_node_visitor_a4e3c71d7df6c589a81dffd5d8d285c1d}{operator=} (const \hyperlink{classmage_1_1_scene_node_visitor}{Scene\+Node\+Visitor} \&visitor)
+\item 
 void \hyperlink{classmage_1_1_scene_node_visitor_a8fe1b3469cbb97d4086cb030128fa28c}{Terminate\+Visit} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
@@ -42,10 +46,23 @@ A class of scene node visitors.
 Destructs this scene node visitor. \hypertarget{classmage_1_1_scene_node_visitor_a6a259a0ce19107bb644482b86c4bd27a}{}\label{classmage_1_1_scene_node_visitor_a6a259a0ce19107bb644482b86c4bd27a} 
 \index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!Scene\+Node\+Visitor@{Scene\+Node\+Visitor}}
 \index{Scene\+Node\+Visitor@{Scene\+Node\+Visitor}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
-\subsubsection{\texorpdfstring{Scene\+Node\+Visitor()}{SceneNodeVisitor()}}
+\subsubsection{\texorpdfstring{Scene\+Node\+Visitor()}{SceneNodeVisitor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Scene\+Node\+Visitor\+::\+Scene\+Node\+Visitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Constructs a scene node visitor. 
+Constructs a scene node visitor. \hypertarget{classmage_1_1_scene_node_visitor_a44e30ba9858c231f4bad0a2b7fffbe29}{}\label{classmage_1_1_scene_node_visitor_a44e30ba9858c231f4bad0a2b7fffbe29} 
+\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!Scene\+Node\+Visitor@{Scene\+Node\+Visitor}}
+\index{Scene\+Node\+Visitor@{Scene\+Node\+Visitor}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+\subsubsection{\texorpdfstring{Scene\+Node\+Visitor()}{SceneNodeVisitor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Scene\+Node\+Visitor\+::\+Scene\+Node\+Visitor (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene_node_visitor}{Scene\+Node\+Visitor} \&}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructs a scene node visitor from the given scene node visitor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em visitor} & A reference to the scene node visitor. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_scene_node_visitor_a0f654e306f6d43d49081f319cd41812b}{}\label{classmage_1_1_scene_node_visitor_a0f654e306f6d43d49081f319cd41812b} 
@@ -58,6 +75,22 @@ Check whether the visit of this visitor should be terminated.
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the visit of this visitor should be terminated. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_scene_node_visitor_a4e3c71d7df6c589a81dffd5d8d285c1d}{}\label{classmage_1_1_scene_node_visitor_a4e3c71d7df6c589a81dffd5d8d285c1d} 
+\index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_scene_node_visitor}{Scene\+Node\+Visitor}\& mage\+::\+Scene\+Node\+Visitor\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene_node_visitor}{Scene\+Node\+Visitor} \&}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Copies the given scene node visitor to this scene node visitor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em visitor} & A reference to the scene node visitor to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given scene node visitor (i.\+e. this scene node visitor). 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_scene_node_visitor_a8fe1b3469cbb97d4086cb030128fa28c}{}\label{classmage_1_1_scene_node_visitor_a8fe1b3469cbb97d4086cb030128fa28c} 
 \index{mage\+::\+Scene\+Node\+Visitor@{mage\+::\+Scene\+Node\+Visitor}!Terminate\+Visit@{Terminate\+Visit}}

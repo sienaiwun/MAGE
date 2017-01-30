@@ -9,7 +9,11 @@
 \item 
 \hyperlink{classmage_1_1_timer_a5e1c0a3bb4491b3a43ce05874ad24055}{Timer} ()
 \item 
+\hyperlink{classmage_1_1_timer_a70b7b49108aa67fc751594ae0a310bfe}{Timer} (const \hyperlink{classmage_1_1_timer}{Timer} \&timer)
+\item 
 virtual \hyperlink{classmage_1_1_timer_aa91cebe8c59c189fde93932fde10265c}{$\sim$\+Timer} ()
+\item 
+\hyperlink{classmage_1_1_timer}{Timer} \& \hyperlink{classmage_1_1_timer_aaeff75810b47c1d9a01d3821e656eac9}{operator=} (const \hyperlink{classmage_1_1_timer}{Timer} \&timer)
 \item 
 void \hyperlink{classmage_1_1_timer_a5855c9df8ad1a2b6774942e566833647}{Start} ()
 \item 
@@ -50,10 +54,23 @@ A class of (high precision) timers.
 \hypertarget{classmage_1_1_timer_a5e1c0a3bb4491b3a43ce05874ad24055}{}\label{classmage_1_1_timer_a5e1c0a3bb4491b3a43ce05874ad24055} 
 \index{mage\+::\+Timer@{mage\+::\+Timer}!Timer@{Timer}}
 \index{Timer@{Timer}!mage\+::\+Timer@{mage\+::\+Timer}}
-\subsubsection{\texorpdfstring{Timer()}{Timer()}}
+\subsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Constructs a timer. \hypertarget{classmage_1_1_timer_aa91cebe8c59c189fde93932fde10265c}{}\label{classmage_1_1_timer_aa91cebe8c59c189fde93932fde10265c} 
+Constructs a timer. \hypertarget{classmage_1_1_timer_a70b7b49108aa67fc751594ae0a310bfe}{}\label{classmage_1_1_timer_a70b7b49108aa67fc751594ae0a310bfe} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Timer\+::\+Timer (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_timer}{Timer} \&}]{timer }\end{DoxyParamCaption})}
+
+Constructs a timer from the given timer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em timer} & A reference to the timer. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmage_1_1_timer_aa91cebe8c59c189fde93932fde10265c}{}\label{classmage_1_1_timer_aa91cebe8c59c189fde93932fde10265c} 
 \index{mage\+::\+Timer@{mage\+::\+Timer}!````~Timer@{$\sim$\+Timer}}
 \index{````~Timer@{$\sim$\+Timer}!mage\+::\+Timer@{mage\+::\+Timer}}
 \subsubsection{\texorpdfstring{$\sim$\+Timer()}{~Timer()}}
@@ -62,6 +79,22 @@ Constructs a timer. \hypertarget{classmage_1_1_timer_aa91cebe8c59c189fde93932fde
 Destructs this timer. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_timer_aaeff75810b47c1d9a01d3821e656eac9}{}\label{classmage_1_1_timer_aaeff75810b47c1d9a01d3821e656eac9} 
+\index{mage\+::\+Timer@{mage\+::\+Timer}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Timer@{mage\+::\+Timer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_timer}{Timer} \& mage\+::\+Timer\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_timer}{Timer} \&}]{timer }\end{DoxyParamCaption})}
+
+Copies the given timer to this timer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em timer} & A reference to the timer to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given timer (i.\+e. this timer). 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_timer_a0675ff7bc0a8e7343b5a35f865cc9c1a}{}\label{classmage_1_1_timer_a0675ff7bc0a8e7343b5a35f865cc9c1a} 
 \index{mage\+::\+Timer@{mage\+::\+Timer}!Reset@{Reset}}
 \index{Reset@{Reset}!mage\+::\+Timer@{mage\+::\+Timer}}
@@ -109,7 +142,7 @@ Returns the time of this timer.
 The time of this timer. 
 \end{DoxyReturn}
 \begin{DoxyNote}{Note}
-This member method encapsulates the performance of the underlying counter/frequency processing. 
+This member method encapsulates the counter/frequency processing. 
 \end{DoxyNote}
 
 

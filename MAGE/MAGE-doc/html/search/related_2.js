@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mutexlock',['MutexLock',['../classmage_1_1_mutex.html#a058473d070063e5098732f355f432bd9',1,'mage::Mutex']]]
+  ['readwritemutexlock',['ReadWriteMutexLock',['../classmage_1_1_read_write_mutex.html#a7ae207fc659160d3c55a5ba1468007f7',1,'mage::ReadWriteMutex']]]
 ];

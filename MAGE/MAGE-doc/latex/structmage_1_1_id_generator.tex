@@ -1,0 +1,105 @@
+\hypertarget{structmage_1_1_id_generator}{}\section{mage\+:\+:Id\+Generator Struct Reference}
+\label{structmage_1_1_id_generator}\index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
+
+
+{\ttfamily \#include $<$id\+\_\+generator.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_id_generator_aede1dd978436b3e108646896666e177e}{Id\+Generator} (uint32\+\_\+t first\+\_\+id=0)
+\item 
+virtual \hyperlink{structmage_1_1_id_generator_aea2ded07fd7b34ff43150fe6e6f4882a}{$\sim$\+Id\+Generator} ()
+\item 
+uint32\+\_\+t \hyperlink{structmage_1_1_id_generator_a4c6252edb5d33c68603893f2a03ad25d}{Get\+Next\+Id} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_id_generator_a6f502d2cd8b63e7c76f31834b028a11d}{Id\+Generator} (const \hyperlink{structmage_1_1_id_generator}{Id\+Generator} \&id\+\_\+generator)=delete
+\item 
+\hyperlink{structmage_1_1_id_generator}{Id\+Generator} \& \hyperlink{structmage_1_1_id_generator_a370c8289f38a534006e8b9ca7ec78026}{operator=} (const \hyperlink{structmage_1_1_id_generator}{Id\+Generator} \&id\+\_\+generator)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Atomic\+Int32 \hyperlink{structmage_1_1_id_generator_ab094c8e57444d4fa02d5f3c2a5ea25f3}{m\+\_\+current\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A struct of id generators. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_id_generator_aede1dd978436b3e108646896666e177e}{}\label{structmage_1_1_id_generator_aede1dd978436b3e108646896666e177e} 
+\index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!Id\+Generator@{Id\+Generator}}
+\index{Id\+Generator@{Id\+Generator}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
+\subsubsection{\texorpdfstring{Id\+Generator()}{IdGenerator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Id\+Generator\+::\+Id\+Generator (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first\+\_\+id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Constructs an id generator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em first\+\_\+id} & The first id of this id\+\_\+generator \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_id_generator_aea2ded07fd7b34ff43150fe6e6f4882a}{}\label{structmage_1_1_id_generator_aea2ded07fd7b34ff43150fe6e6f4882a} 
+\index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!````~Id\+Generator@{$\sim$\+Id\+Generator}}
+\index{````~Id\+Generator@{$\sim$\+Id\+Generator}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
+\subsubsection{\texorpdfstring{$\sim$\+Id\+Generator()}{~IdGenerator()}}
+{\footnotesize\ttfamily virtual mage\+::\+Id\+Generator\+::$\sim$\+Id\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructs this id generator. \hypertarget{structmage_1_1_id_generator_a6f502d2cd8b63e7c76f31834b028a11d}{}\label{structmage_1_1_id_generator_a6f502d2cd8b63e7c76f31834b028a11d} 
+\index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!Id\+Generator@{Id\+Generator}}
+\index{Id\+Generator@{Id\+Generator}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
+\subsubsection{\texorpdfstring{Id\+Generator()}{IdGenerator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Id\+Generator\+::\+Id\+Generator (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_id_generator}{Id\+Generator} \&}]{id\+\_\+generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Constructs an id generator from the given id generator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id\+\_\+generator} & The id generator. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_id_generator_a4c6252edb5d33c68603893f2a03ad25d}{}\label{structmage_1_1_id_generator_a4c6252edb5d33c68603893f2a03ad25d} 
+\index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!Get\+Next\+Id@{Get\+Next\+Id}}
+\index{Get\+Next\+Id@{Get\+Next\+Id}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
+\subsubsection{\texorpdfstring{Get\+Next\+Id()}{GetNextId()}}
+{\footnotesize\ttfamily uint32\+\_\+t mage\+::\+Id\+Generator\+::\+Get\+Next\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the next id of this id generator.
+
+\begin{DoxyReturn}{Returns}
+The next id of this id generator. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_id_generator_a370c8289f38a534006e8b9ca7ec78026}{}\label{structmage_1_1_id_generator_a370c8289f38a534006e8b9ca7ec78026} 
+\index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_id_generator}{Id\+Generator}\& mage\+::\+Id\+Generator\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_id_generator}{Id\+Generator} \&}]{id\+\_\+generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given id generator to this id generator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id\+\_\+generator} & The id generator to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given id generator (i.\+e. this id generator). 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_id_generator_ab094c8e57444d4fa02d5f3c2a5ea25f3}{}\label{structmage_1_1_id_generator_ab094c8e57444d4fa02d5f3c2a5ea25f3} 
+\index{mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}!m\+\_\+current\+\_\+id@{m\+\_\+current\+\_\+id}}
+\index{m\+\_\+current\+\_\+id@{m\+\_\+current\+\_\+id}!mage\+::\+Id\+Generator@{mage\+::\+Id\+Generator}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+\_\+id}{m\_current\_id}}
+{\footnotesize\ttfamily Atomic\+Int32 mage\+::\+Id\+Generator\+::m\+\_\+current\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+The current id of this id generator. 

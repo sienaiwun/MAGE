@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_flat_mesh.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classmage_1_1_flat_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::FlatMesh Class Reference</div>  </div>
@@ -102,57 +103,59 @@ Inheritance diagram for mage::FlatMesh:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a586098a2dee9ff270b0c147c28adda88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a586098a2dee9ff270b0c147c28adda88">FlatMesh</a> (ID3D11Device2 *device, const string &amp;name, const string &amp;path=&quot;./&quot;)</td></tr>
-<tr class="separator:a586098a2dee9ff270b0c147c28adda88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45956524d105918eea093c8faee3f584"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a45956524d105918eea093c8faee3f584">~FlatMesh</a> ()</td></tr>
-<tr class="separator:a45956524d105918eea093c8faee3f584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3601359187c439b73ab21e86b88d9231"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a3601359187c439b73ab21e86b88d9231">FlatMesh</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, const wstring &amp;name, const wstring &amp;path=MAGE_DEFAULT_RESOURCE_PATH)</td></tr>
+<tr class="separator:a3601359187c439b73ab21e86b88d9231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33986ef3664f055566af473f34843582"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a33986ef3664f055566af473f34843582">~FlatMesh</a> ()</td></tr>
+<tr class="separator:a33986ef3664f055566af473f34843582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88f69dd4fa4a1d09db67b6cc32e909ba"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a88f69dd4fa4a1d09db67b6cc32e909ba">GetNbVertices</a> () const</td></tr>
 <tr class="separator:a88f69dd4fa4a1d09db67b6cc32e909ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1906ae929a514a7b9b348d6a97fc2d4"><td class="memItemLeft" align="right" valign="top">virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#ab1906ae929a514a7b9b348d6a97fc2d4">BindBuffers</a> (ID3D11DeviceContext2 *device_context) const override</td></tr>
-<tr class="separator:ab1906ae929a514a7b9b348d6a97fc2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf73ceb1c98d4bd6925be6e6e087723b"><td class="memItemLeft" align="right" valign="top">virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#abf73ceb1c98d4bd6925be6e6e087723b">Draw</a> (ID3D11DeviceContext2 *device_context) const override</td></tr>
-<tr class="separator:abf73ceb1c98d4bd6925be6e6e087723b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7a8793a2b802aa51ae91517201af6d"><td class="memItemLeft" align="right" valign="top">virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a3d7a8793a2b802aa51ae91517201af6d">BindBuffers</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt; device_context) const override</td></tr>
+<tr class="separator:a3d7a8793a2b802aa51ae91517201af6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84cf747d30acb8cb12ed730cb1b73a14"><td class="memItemLeft" align="right" valign="top">virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a84cf747d30acb8cb12ed730cb1b73a14">Draw</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt; device_context) const override</td></tr>
+<tr class="separator:a84cf747d30acb8cb12ed730cb1b73a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a494f660eae4773c91c57663cd6410c4a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a494f660eae4773c91c57663cd6410c4a">InitializeBuffers</a> (ID3D11Device2 *device)</td></tr>
-<tr class="separator:a494f660eae4773c91c57663cd6410c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad355db238528f60d6600bc55a923f0bb"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#ad355db238528f60d6600bc55a923f0bb">UninitializeBuffers</a> ()</td></tr>
-<tr class="separator:ad355db238528f60d6600bc55a923f0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99e9b24fee648ca2de48c794aa3fda19"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a99e9b24fee648ca2de48c794aa3fda19">SetupVertexBuffer</a> (ID3D11Device2 *device, const <a class="el" href="structmage_1_1_vertex.html">Vertex</a> *vertices, size_t nb_vertices)</td></tr>
-<tr class="separator:a99e9b24fee648ca2de48c794aa3fda19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6e94c0abc2042f08f48ae3241fbd7d"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a8a6e94c0abc2042f08f48ae3241fbd7d">InitializeBuffers</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device)</td></tr>
+<tr class="separator:a8a6e94c0abc2042f08f48ae3241fbd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f802d719086457fa15e66026d86f06"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a20f802d719086457fa15e66026d86f06">SetupVertexBuffer</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, const <a class="el" href="structmage_1_1_vertex.html">Vertex</a> *vertices, size_t nb_vertices)</td></tr>
+<tr class="separator:a20f802d719086457fa15e66026d86f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aabb71e0a08a465ca439e444c2325d29f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#aabb71e0a08a465ca439e444c2325d29f">m_nb_vertices</a></td></tr>
 <tr class="separator:aabb71e0a08a465ca439e444c2325d29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13c42fe158747be15789463d8d06072b"><td class="memItemLeft" align="right" valign="top">ID3D11Buffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a13c42fe158747be15789463d8d06072b">m_vertex_buffer</a></td></tr>
-<tr class="separator:a13c42fe158747be15789463d8d06072b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02d4e6870b91ddc4d5520cd723803c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#ab02d4e6870b91ddc4d5520cd723803c5">m_vertex_buffer</a></td></tr>
+<tr class="separator:ab02d4e6870b91ddc4d5520cd723803c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac352a78256d4f04223f05f1535a35173"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#ac352a78256d4f04223f05f1535a35173">FlatMesh</a> (const <a class="el" href="classmage_1_1_flat_mesh.html">FlatMesh</a> &amp;flat_mesh)=delete</td></tr>
+<tr class="separator:ac352a78256d4f04223f05f1535a35173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cf3984f09b850a02e130e6c57260b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_flat_mesh.html">FlatMesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_flat_mesh.html#a47cf3984f09b850a02e130e6c57260b4">operator=</a> (const <a class="el" href="classmage_1_1_flat_mesh.html">FlatMesh</a> &amp;flat_mesh)=delete</td></tr>
+<tr class="separator:a47cf3984f09b850a02e130e6c57260b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmage_1_1_mesh"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmage_1_1_mesh')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="classmage_1_1_mesh.html">mage::Mesh</a></td></tr>
-<tr class="memitem:a3be4deaa3d68890de7e05522d0179173 inherit pub_methods_classmage_1_1_mesh"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a3be4deaa3d68890de7e05522d0179173">Mesh</a> (const string &amp;name, const string &amp;path=&quot;./&quot;)</td></tr>
-<tr class="separator:a3be4deaa3d68890de7e05522d0179173 inherit pub_methods_classmage_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a06eb10e3a4363bc16fc5f8d359264 inherit pub_methods_classmage_1_1_mesh"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a13a06eb10e3a4363bc16fc5f8d359264">Mesh</a> (const wstring &amp;name, const wstring &amp;path=MAGE_DEFAULT_RESOURCE_PATH)</td></tr>
+<tr class="separator:a13a06eb10e3a4363bc16fc5f8d359264 inherit pub_methods_classmage_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7e701f7fcdc611479875a98c465da42 inherit pub_methods_classmage_1_1_mesh"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#ab7e701f7fcdc611479875a98c465da42">~Mesh</a> ()</td></tr>
 <tr class="separator:ab7e701f7fcdc611479875a98c465da42 inherit pub_methods_classmage_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmage_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmage_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="classmage_1_1_resource.html">mage::Resource</a></td></tr>
-<tr class="memitem:a7b4febc86646d51ac116732af01abcaf inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a7b4febc86646d51ac116732af01abcaf">Resource</a> (const string &amp;name, const string &amp;path=&quot;./&quot;)</td></tr>
-<tr class="separator:a7b4febc86646d51ac116732af01abcaf inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c7283a66b4658718465830072d6df6 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a37c7283a66b4658718465830072d6df6">Resource</a> (const wstring &amp;name, const wstring &amp;path=MAGE_DEFAULT_RESOURCE_PATH)</td></tr>
+<tr class="separator:a37c7283a66b4658718465830072d6df6 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80112db991a7dfd1dc0b24967981ac60 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a80112db991a7dfd1dc0b24967981ac60">~Resource</a> ()</td></tr>
 <tr class="separator:a80112db991a7dfd1dc0b24967981ac60 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77713b0c74f8983afc2d42843afe8cbe inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a77713b0c74f8983afc2d42843afe8cbe">GetName</a> () const</td></tr>
-<tr class="separator:a77713b0c74f8983afc2d42843afe8cbe inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ef6c6937947b56cbabc569e3a63ca71 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a2ef6c6937947b56cbabc569e3a63ca71">GetPath</a> () const</td></tr>
-<tr class="separator:a2ef6c6937947b56cbabc569e3a63ca71 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3235bf2744390d5957b9b4038e4bb512 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a3235bf2744390d5957b9b4038e4bb512">GetFilename</a> () const</td></tr>
-<tr class="separator:a3235bf2744390d5957b9b4038e4bb512 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1066ff99a6b3238de9702ddc971ffe0 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#af1066ff99a6b3238de9702ddc971ffe0">GetPath</a> () const</td></tr>
+<tr class="separator:af1066ff99a6b3238de9702ddc971ffe0 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a7e0c571a266b0c3ddf20979c491c8 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a49a7e0c571a266b0c3ddf20979c491c8">GetName</a> () const</td></tr>
+<tr class="separator:a49a7e0c571a266b0c3ddf20979c491c8 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f05385b8c05646989689fc04847a816 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a1f05385b8c05646989689fc04847a816">GetFilename</a> () const</td></tr>
+<tr class="separator:a1f05385b8c05646989689fc04847a816 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of flat meshes. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a586098a2dee9ff270b0c147c28adda88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a586098a2dee9ff270b0c147c28adda88">&sect;&nbsp;</a></span>FlatMesh()</h2>
+<a id="a3601359187c439b73ab21e86b88d9231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3601359187c439b73ab21e86b88d9231">&sect;&nbsp;</a></span>FlatMesh() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,20 +163,20 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">mage::FlatMesh::FlatMesh </td>
           <td>(</td>
-          <td class="paramtype">ID3D11Device2 *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>path</em> = <code>&quot;./&quot;</code>&#160;</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>path</em> = <code>MAGE_DEFAULT_RESOURCE_PATH</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -194,8 +197,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a45956524d105918eea093c8faee3f584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45956524d105918eea093c8faee3f584">&sect;&nbsp;</a></span>~FlatMesh()</h2>
+<a id="a33986ef3664f055566af473f34843582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33986ef3664f055566af473f34843582">&sect;&nbsp;</a></span>~FlatMesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +207,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mage::FlatMesh::~FlatMesh </td>
+          <td class="memname">virtual mage::FlatMesh::~FlatMesh </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -220,9 +223,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac352a78256d4f04223f05f1535a35173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac352a78256d4f04223f05f1535a35173">&sect;&nbsp;</a></span>FlatMesh() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::FlatMesh::FlatMesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_flat_mesh.html">FlatMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>flat_mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a flat mesh from the given flat mesh.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flat_mesh</td><td>A reference to the flat mesh. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab1906ae929a514a7b9b348d6a97fc2d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1906ae929a514a7b9b348d6a97fc2d4">&sect;&nbsp;</a></span>BindBuffers()</h2>
+<a id="a3d7a8793a2b802aa51ae91517201af6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7a8793a2b802aa51ae91517201af6d">&sect;&nbsp;</a></span>BindBuffers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +269,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">HRESULT mage::FlatMesh::BindBuffers </td>
           <td>(</td>
-          <td class="paramtype">ID3D11DeviceContext2 *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt;&#160;</td>
           <td class="paramname"><em>device_context</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -245,12 +281,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classmage_1_1_mesh.html#adb7cecd184c021c6184b6444adeb5190">mage::Mesh</a>.</p>
+<p>Implements <a class="el" href="classmage_1_1_mesh.html#a0e558e82b0db25b0bbb4abeba9f0fb0f">mage::Mesh</a>.</p>
 
 </div>
 </div>
-<a id="abf73ceb1c98d4bd6925be6e6e087723b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf73ceb1c98d4bd6925be6e6e087723b">&sect;&nbsp;</a></span>Draw()</h2>
+<a id="a84cf747d30acb8cb12ed730cb1b73a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84cf747d30acb8cb12ed730cb1b73a14">&sect;&nbsp;</a></span>Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +297,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">HRESULT mage::FlatMesh::Draw </td>
           <td>(</td>
-          <td class="paramtype">ID3D11DeviceContext2 *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt;&#160;</td>
           <td class="paramname"><em>device_context</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -273,7 +309,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classmage_1_1_mesh.html#a8ebd5d1a5159ebeda44e3fb6b98a115c">mage::Mesh</a>.</p>
+<p>Implements <a class="el" href="classmage_1_1_mesh.html#a9dff8fa94d28e852fc1e72e6c0a85c6f">mage::Mesh</a>.</p>
 
 </div>
 </div>
@@ -294,8 +330,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a494f660eae4773c91c57663cd6410c4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a494f660eae4773c91c57663cd6410c4a">&sect;&nbsp;</a></span>InitializeBuffers()</h2>
+<a id="a8a6e94c0abc2042f08f48ae3241fbd7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6e94c0abc2042f08f48ae3241fbd7d">&sect;&nbsp;</a></span>InitializeBuffers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +342,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">HRESULT mage::FlatMesh::InitializeBuffers </td>
           <td>(</td>
-          <td class="paramtype">ID3D11Device2 *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
         </tr>
@@ -320,8 +356,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a99e9b24fee648ca2de48c794aa3fda19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99e9b24fee648ca2de48c794aa3fda19">&sect;&nbsp;</a></span>SetupVertexBuffer()</h2>
+<a id="a47cf3984f09b850a02e130e6c57260b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47cf3984f09b850a02e130e6c57260b4">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_flat_mesh.html">FlatMesh</a>&amp; mage::FlatMesh::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_flat_mesh.html">FlatMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>flat_mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given flat mesh to this flat mesh.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flat_mesh</td><td>A reference to the flat mesh to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given flat mesh (i.e. this flat mesh). </dd></dl>
+
+</div>
+</div>
+<a id="a20f802d719086457fa15e66026d86f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f802d719086457fa15e66026d86f06">&sect;&nbsp;</a></span>SetupVertexBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,7 +402,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">HRESULT mage::FlatMesh::SetupVertexBuffer </td>
           <td>(</td>
-          <td class="paramtype">ID3D11Device2 *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
@@ -351,31 +421,6 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad355db238528f60d6600bc55a923f0bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad355db238528f60d6600bc55a923f0bb">&sect;&nbsp;</a></span>UninitializeBuffers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">HRESULT mage::FlatMesh::UninitializeBuffers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
   </td>
@@ -410,8 +455,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a13c42fe158747be15789463d8d06072b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13c42fe158747be15789463d8d06072b">&sect;&nbsp;</a></span>m_vertex_buffer</h2>
+<a id="ab02d4e6870b91ddc4d5520cd723803c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02d4e6870b91ddc4d5520cd723803c5">&sect;&nbsp;</a></span>m_vertex_buffer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,7 +465,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ID3D11Buffer* mage::FlatMesh::m_vertex_buffer</td>
+          <td class="memname"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Buffer &gt; mage::FlatMesh::m_vertex_buffer</td>
         </tr>
       </table>
   </td>

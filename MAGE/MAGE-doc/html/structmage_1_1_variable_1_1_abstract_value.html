@@ -81,6 +81,8 @@ $(document).ready(function(){initNavTree('structmage_1_1_variable_1_1_abstract_v
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="structmage_1_1_variable_1_1_abstract_value-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::Variable::AbstractValue Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -102,6 +104,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae3334a01bd2e0a2ea6bd8d3530cf60eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede2a77b571b80794a4254e34144f4c1"><td class="memItemLeft" align="right" valign="top">virtual const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable_1_1_abstract_value.html#aede2a77b571b80794a4254e34144f4c1">GetValue</a> () const =0</td></tr>
 <tr class="separator:aede2a77b571b80794a4254e34144f4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a1f7fb1da9789c724e41ce7c7c46889b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable_1_1_abstract_value.html#a1f7fb1da9789c724e41ce7c7c46889b1">AbstractValue</a> ()</td></tr>
+<tr class="separator:a1f7fb1da9789c724e41ce7c7c46889b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ffb70859701161c192b723bc33d588"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable_1_1_abstract_value.html#ad6ffb70859701161c192b723bc33d588">AbstractValue</a> (const <a class="el" href="structmage_1_1_variable_1_1_abstract_value.html">AbstractValue</a> &amp;abstract_value)</td></tr>
+<tr class="separator:ad6ffb70859701161c192b723bc33d588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a77f7107e78716a0ea76cfaedd0a50a4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_variable_1_1_abstract_value.html">AbstractValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_variable_1_1_abstract_value.html#a77f7107e78716a0ea76cfaedd0a50a4b">operator=</a> (const <a class="el" href="structmage_1_1_variable_1_1_abstract_value.html">AbstractValue</a> &amp;abstract_value)=delete</td></tr>
+<tr class="separator:a77f7107e78716a0ea76cfaedd0a50a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A struct of immutable abstract values.</p>
@@ -133,6 +147,65 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1f7fb1da9789c724e41ce7c7c46889b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f7fb1da9789c724e41ce7c7c46889b1">&sect;&nbsp;</a></span>AbstractValue() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::Variable::AbstractValue::AbstractValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs an abstract value. </p>
+
+</div>
+</div>
+<a id="ad6ffb70859701161c192b723bc33d588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ffb70859701161c192b723bc33d588">&sect;&nbsp;</a></span>AbstractValue() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::Variable::AbstractValue::AbstractValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmage_1_1_variable_1_1_abstract_value.html">AbstractValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>abstract_value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs an abstract value from the given abstract value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">abstract_value</td><td>A reference to the abstract value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aede2a77b571b80794a4254e34144f4c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aede2a77b571b80794a4254e34144f4c1">&sect;&nbsp;</a></span>GetValue()</h2>
@@ -160,6 +233,40 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the value of this value. </dd></dl>
 
 <p>Implemented in <a class="el" href="structmage_1_1_variable_1_1_value.html#a04d70496ebb7ad71dafa3df877daeb26">mage::Variable::Value&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a77f7107e78716a0ea76cfaedd0a50a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f7107e78716a0ea76cfaedd0a50a4b">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmage_1_1_variable_1_1_abstract_value.html">AbstractValue</a>&amp; mage::Variable::AbstractValue::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmage_1_1_variable_1_1_abstract_value.html">AbstractValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>abstract_value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given abstract value to this abstract value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">abstract_value</td><td>A reference to the abstract value to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given abstract value (i.e. this abstract value). </dd></dl>
 
 </div>
 </div>

@@ -21,7 +21,7 @@ virtual \hyperlink{classmage_1_1_camera_node_a2b66360b99bf03ee2f66a3a74be31792}{
 \item 
 virtual \hyperlink{classmage_1_1_scene_node}{Scene\+Node} $\ast$ \hyperlink{classmage_1_1_camera_node_adf9a95250d1fd7e6bb9a5850a0aa7817}{Clone} () const
 \item 
-\hyperlink{classmage_1_1_camera}{Camera} $\ast$ \hyperlink{classmage_1_1_camera_node_a7cd05fd41271259870483de5b3ed6ebe}{Get\+Camera} () const
+\hyperlink{classmage_1_1_camera}{Camera} \& \hyperlink{classmage_1_1_camera_node_a823525438bea9a62cdcd2e42b79b19d9}{Get\+Camera} () const
 \item 
 virtual void \hyperlink{classmage_1_1_camera_node_aed9c3c12cc4163fed880c49e43380efe}{Accept} (\hyperlink{classmage_1_1_scene_node_visitor}{Scene\+Node\+Visitor} \&visitor) override
 \item 
@@ -30,7 +30,12 @@ virtual void \hyperlink{classmage_1_1_camera_node_a8b94f57b3a04f70b2c04a3d7c1ba3
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_camera}{Camera} $\ast$ \hyperlink{classmage_1_1_camera_node_aee902112c2e70e8de69b69aed303ca1f}{m\+\_\+camera}
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ \hyperlink{classmage_1_1_camera_node_a18f00f7ccd0c677043e11a1b3085dbfb}{m\+\_\+camera}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_camera_node}{Camera\+Node} \& \hyperlink{classmage_1_1_camera_node_a03442d51e4279717f6692e0a731967a1}{operator=} (const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} \&camera\+\_\+node)=delete
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -128,24 +133,40 @@ A pointer to a non-\/deep clone of this camera node.
 
 Implements \hyperlink{classmage_1_1_scene_node_a85d62213a900cd8e45864b8cde5929e9}{mage\+::\+Scene\+Node}.
 
-\hypertarget{classmage_1_1_camera_node_a7cd05fd41271259870483de5b3ed6ebe}{}\label{classmage_1_1_camera_node_a7cd05fd41271259870483de5b3ed6ebe} 
+\hypertarget{classmage_1_1_camera_node_a823525438bea9a62cdcd2e42b79b19d9}{}\label{classmage_1_1_camera_node_a823525438bea9a62cdcd2e42b79b19d9} 
 \index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!Get\+Camera@{Get\+Camera}}
 \index{Get\+Camera@{Get\+Camera}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
 \subsubsection{\texorpdfstring{Get\+Camera()}{GetCamera()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_camera}{Camera}$\ast$ mage\+::\+Camera\+Node\+::\+Get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_camera}{Camera}\& mage\+::\+Camera\+Node\+::\+Get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the camera of this camera node.
 
 \begin{DoxyReturn}{Returns}
-A pointer to the camera of this camera node. 
+A reference to the camera of this camera node. 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_camera_node_a03442d51e4279717f6692e0a731967a1}{}\label{classmage_1_1_camera_node_a03442d51e4279717f6692e0a731967a1} 
+\index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_camera_node}{Camera\+Node}\& mage\+::\+Camera\+Node\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera_node}{Camera\+Node} \&}]{camera\+\_\+node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given camera node to this camera node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em camera\+\_\+node} & A reference to the camera node to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given camera node (i.\+e. this camera node). 
 \end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_camera_node_aee902112c2e70e8de69b69aed303ca1f}{}\label{classmage_1_1_camera_node_aee902112c2e70e8de69b69aed303ca1f} 
+\hypertarget{classmage_1_1_camera_node_a18f00f7ccd0c677043e11a1b3085dbfb}{}\label{classmage_1_1_camera_node_a18f00f7ccd0c677043e11a1b3085dbfb} 
 \index{mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}!m\+\_\+camera@{m\+\_\+camera}}
 \index{m\+\_\+camera@{m\+\_\+camera}!mage\+::\+Camera\+Node@{mage\+::\+Camera\+Node}}
 \subsubsection{\texorpdfstring{m\+\_\+camera}{m\_camera}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_camera}{Camera}$\ast$ mage\+::\+Camera\+Node\+::m\+\_\+camera\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_camera}{Camera} $>$ mage\+::\+Camera\+Node\+::m\+\_\+camera\hspace{0.3cm}{\ttfamily [protected]}}
 
 A pointer to the camera of this camera node. 

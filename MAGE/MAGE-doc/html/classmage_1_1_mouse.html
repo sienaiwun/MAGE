@@ -84,7 +84,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_mouse.html','');});
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_mouse-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::Mouse Class Reference</div>  </div>
@@ -104,6 +104,14 @@ Inheritance diagram for mage::Mouse:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af7a493eeef5b370eb390ccbfc7eed673"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#af7a493eeef5b370eb390ccbfc7eed673">Mouse</a> (HWND hwindow, <a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; IDirectInput8 &gt; di)</td></tr>
+<tr class="separator:af7a493eeef5b370eb390ccbfc7eed673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff5841bae697af04496dbf6e645b4b9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a6ff5841bae697af04496dbf6e645b4b9">~Mouse</a> ()</td></tr>
+<tr class="separator:a6ff5841bae697af04496dbf6e645b4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cddae3f871dd69c1ba6928dc6b1f985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a0cddae3f871dd69c1ba6928dc6b1f985">Update</a> ()</td></tr>
+<tr class="separator:a0cddae3f871dd69c1ba6928dc6b1f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd77480c5b2c9873b8c1ac2d3a9a7c73"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#afd77480c5b2c9873b8c1ac2d3a9a7c73">GetHandle</a> () const</td></tr>
+<tr class="separator:afd77480c5b2c9873b8c1ac2d3a9a7c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c8d4493c86685b259819b5995a17c7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a9c8d4493c86685b259819b5995a17c7a">GetMouseButtonPress</a> (char mouse_button, bool ignore_press_stamp=false) const</td></tr>
 <tr class="separator:a9c8d4493c86685b259819b5995a17c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af2e1ea96554ee34e16a37a257fe11c"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a6af2e1ea96554ee34e16a37a257fe11c">GetPosX</a> () const</td></tr>
@@ -122,16 +130,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad02365977dab44603400ac6f24e0df97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#ad02365977dab44603400ac6f24e0df97">Mouse</a> (HWND hwindow, IDirectInput8 *di)</td></tr>
-<tr class="separator:ad02365977dab44603400ac6f24e0df97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a855f1075ae774c8417d3da7a1e02d580"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a855f1075ae774c8417d3da7a1e02d580">~Mouse</a> ()</td></tr>
-<tr class="separator:a855f1075ae774c8417d3da7a1e02d580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5789b777aca438fb343a515165cd907a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a5789b777aca438fb343a515165cd907a">InitializeMouse</a> (IDirectInput8 *di)</td></tr>
-<tr class="separator:a5789b777aca438fb343a515165cd907a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f4647121d283a95464a0652da2816b0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a3f4647121d283a95464a0652da2816b0">UninitializeMouse</a> ()</td></tr>
-<tr class="separator:a3f4647121d283a95464a0652da2816b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cddae3f871dd69c1ba6928dc6b1f985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a0cddae3f871dd69c1ba6928dc6b1f985">Update</a> ()</td></tr>
-<tr class="separator:a0cddae3f871dd69c1ba6928dc6b1f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d790c9c31ca62d595637983b6da940"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a22d790c9c31ca62d595637983b6da940">InitializeMouse</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; IDirectInput8 &gt; di)</td></tr>
+<tr class="separator:a22d790c9c31ca62d595637983b6da940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classmage_1_1_loadable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmage_1_1_loadable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmage_1_1_loadable.html">mage::Loadable</a></td></tr>
 <tr class="memitem:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#afbdcb287b5e20583899a27a1c244bc7d">Loadable</a> (bool loaded=false)</td></tr>
 <tr class="separator:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,12 +146,10 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a0c67906df7b8b0cce013c724be4625ac"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a0c67906df7b8b0cce013c724be4625ac">m_hwindow</a></td></tr>
-<tr class="separator:a0c67906df7b8b0cce013c724be4625ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32b30d3c37a2082869f4ff4f522dfbf8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a32b30d3c37a2082869f4ff4f522dfbf8">m_press_stamp</a></td></tr>
 <tr class="separator:a32b30d3c37a2082869f4ff4f522dfbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a873713cdf019671a94952d88faeb2b7a"><td class="memItemLeft" align="right" valign="top">IDirectInputDevice8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a873713cdf019671a94952d88faeb2b7a">m_mouse</a></td></tr>
-<tr class="separator:a873713cdf019671a94952d88faeb2b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2803f3c0e008f5d764a11de3dbe098"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; IDirectInputDevice8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a3f2803f3c0e008f5d764a11de3dbe098">m_mouse</a></td></tr>
+<tr class="separator:a3f2803f3c0e008f5d764a11de3dbe098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99645fb4226077abee4532a5e663066"><td class="memItemLeft" align="right" valign="top">DIMOUSESTATE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#af99645fb4226077abee4532a5e663066">m_mouse_state</a></td></tr>
 <tr class="separator:af99645fb4226077abee4532a5e663066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5a38e23bdf7eae1b7b1030a53edff0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a0f5a38e23bdf7eae1b7b1030a53edff0">m_mouse_button_press_stamp</a> [3]</td></tr>
@@ -161,27 +159,24 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ab510a83c48c14fe4855d39cf4e9599d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#ab510a83c48c14fe4855d39cf4e9599d6">Mouse</a> (const <a class="el" href="classmage_1_1_mouse.html">Mouse</a> &amp;mouse)</td></tr>
-<tr class="separator:ab510a83c48c14fe4855d39cf4e9599d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3c9c2063e7323f37bec2bcee773e0e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_mouse.html">Mouse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#ae3c9c2063e7323f37bec2bcee773e0e8">operator=</a> (const <a class="el" href="classmage_1_1_mouse.html">Mouse</a> &amp;mouse)</td></tr>
-<tr class="separator:ae3c9c2063e7323f37bec2bcee773e0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11aa23e6cfbefb4cd3d90b17c63db7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#af11aa23e6cfbefb4cd3d90b17c63db7c">Mouse</a> (const <a class="el" href="classmage_1_1_mouse.html">Mouse</a> &amp;mouse)=delete</td></tr>
+<tr class="separator:af11aa23e6cfbefb4cd3d90b17c63db7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585119f1b0db3fbc7436c86676518c8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_mouse.html">Mouse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a585119f1b0db3fbc7436c86676518c8c">operator=</a> (const <a class="el" href="classmage_1_1_mouse.html">Mouse</a> &amp;mouse)=delete</td></tr>
+<tr class="separator:a585119f1b0db3fbc7436c86676518c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:af0e8c3dcc20b7ddcaf63506363a22821"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#af0e8c3dcc20b7ddcaf63506363a22821">InputManager</a></td></tr>
-<tr class="separator:af0e8c3dcc20b7ddcaf63506363a22821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0c67906df7b8b0cce013c724be4625ac"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mouse.html#a0c67906df7b8b0cce013c724be4625ac">m_hwindow</a></td></tr>
+<tr class="separator:a0c67906df7b8b0cce013c724be4625ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of mouses. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad02365977dab44603400ac6f24e0df97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad02365977dab44603400ac6f24e0df97">&sect;&nbsp;</a></span>Mouse() <span class="overload">[1/2]</span></h2>
+<a id="af7a493eeef5b370eb390ccbfc7eed673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a493eeef5b370eb390ccbfc7eed673">&sect;&nbsp;</a></span>Mouse() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">mage::Mouse::Mouse </td>
@@ -192,7 +187,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IDirectInput8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; IDirectInput8 &gt;&#160;</td>
           <td class="paramname"><em>di</em>&#160;</td>
         </tr>
         <tr>
@@ -201,11 +196,6 @@ Friends</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Constructs a mouse.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -218,8 +208,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a855f1075ae774c8417d3da7a1e02d580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a855f1075ae774c8417d3da7a1e02d580">&sect;&nbsp;</a></span>~Mouse()</h2>
+<a id="a6ff5841bae697af04496dbf6e645b4b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff5841bae697af04496dbf6e645b4b9">&sect;&nbsp;</a></span>~Mouse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,7 +218,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mage::Mouse::~Mouse </td>
+          <td class="memname">virtual mage::Mouse::~Mouse </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -236,7 +226,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -244,8 +234,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ab510a83c48c14fe4855d39cf4e9599d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab510a83c48c14fe4855d39cf4e9599d6">&sect;&nbsp;</a></span>Mouse() <span class="overload">[2/2]</span></h2>
+<a id="af11aa23e6cfbefb4cd3d90b17c63db7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af11aa23e6cfbefb4cd3d90b17c63db7c">&sect;&nbsp;</a></span>Mouse() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +253,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -332,6 +322,25 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the change in this mouse's vertical coordinate.</p>
 <dl class="section return"><dt>Returns</dt><dd>The change in this mouse's vertical coordinate. </dd></dl>
+
+</div>
+</div>
+<a id="afd77480c5b2c9873b8c1ac2d3a9a7c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd77480c5b2c9873b8c1ac2d3a9a7c73">&sect;&nbsp;</a></span>GetHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HWND mage::Mouse::GetHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the window handle of this mouse.</p>
+<dl class="section return"><dt>Returns</dt><dd>The window handle of this mouse. </dd></dl>
 
 </div>
 </div>
@@ -410,8 +419,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a5789b777aca438fb343a515165cd907a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5789b777aca438fb343a515165cd907a">&sect;&nbsp;</a></span>InitializeMouse()</h2>
+<a id="a22d790c9c31ca62d595637983b6da940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22d790c9c31ca62d595637983b6da940">&sect;&nbsp;</a></span>InitializeMouse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,7 +431,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">HRESULT mage::Mouse::InitializeMouse </td>
           <td>(</td>
-          <td class="paramtype">IDirectInput8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; IDirectInput8 &gt;&#160;</td>
           <td class="paramname"><em>di</em></td><td>)</td>
           <td></td>
         </tr>
@@ -444,8 +453,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3c9c2063e7323f37bec2bcee773e0e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3c9c2063e7323f37bec2bcee773e0e8">&sect;&nbsp;</a></span>operator=()</h2>
+<a id="a585119f1b0db3fbc7436c86676518c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585119f1b0db3fbc7436c86676518c8c">&sect;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,7 +472,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -478,41 +487,11 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f4647121d283a95464a0652da2816b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f4647121d283a95464a0652da2816b0">&sect;&nbsp;</a></span>UninitializeMouse()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">HRESULT mage::Mouse::UninitializeMouse </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Uninitializes the mouse device of this mouse.</p>
-<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
-
-</div>
-</div>
 <a id="a0cddae3f871dd69c1ba6928dc6b1f985"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cddae3f871dd69c1ba6928dc6b1f985">&sect;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void mage::Mouse::Update </td>
@@ -521,36 +500,8 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Updates the state of this mouse. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="af0e8c3dcc20b7ddcaf63506363a22821"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0e8c3dcc20b7ddcaf63506363a22821">&sect;&nbsp;</a></span>InputManager</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classmage_1_1_input_manager.html">InputManager</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -570,7 +521,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -578,8 +529,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a873713cdf019671a94952d88faeb2b7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a873713cdf019671a94952d88faeb2b7a">&sect;&nbsp;</a></span>m_mouse</h2>
+<a id="a3f2803f3c0e008f5d764a11de3dbe098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2803f3c0e008f5d764a11de3dbe098">&sect;&nbsp;</a></span>m_mouse</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,7 +539,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">IDirectInputDevice8* mage::Mouse::m_mouse</td>
+          <td class="memname"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; IDirectInputDevice8 &gt; mage::Mouse::m_mouse</td>
         </tr>
       </table>
   </td>

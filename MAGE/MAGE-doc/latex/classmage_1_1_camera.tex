@@ -15,6 +15,8 @@ Inheritance diagram for mage\+:\+:Camera\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_camera_ae56c0542ae1a480c7fb15d737bf16de0}{$\sim$\+Camera} ()
 \item 
+\hyperlink{classmage_1_1_camera}{Camera} \& \hyperlink{classmage_1_1_camera_ae16a5f66b80f7fa771475aa1eb099634}{operator=} (const \hyperlink{classmage_1_1_camera}{Camera} \&camera)
+\item 
 virtual \hyperlink{classmage_1_1_camera}{Camera} $\ast$ \hyperlink{classmage_1_1_camera_a19301c2256c183db50b5e9406f7b5f3c}{Clone} () const =0
 \item 
 float \hyperlink{classmage_1_1_camera_a2285655605035118861297b2449a3443}{Get\+Width} () const
@@ -45,11 +47,6 @@ virtual X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_camera_a1f5206864cf18b5548
 \hyperlink{classmage_1_1_camera_a64980217b5ae3817affab70eb3e61342}{Camera} (float width, float height, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z)
 \item 
 \hyperlink{classmage_1_1_camera_a28d9280bd7067ec4d28392558cc2b767}{Camera} (const \hyperlink{classmage_1_1_camera}{Camera} \&camera)
-\end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{classmage_1_1_camera}{Camera} \& \hyperlink{classmage_1_1_camera_a6a5d3006100ba608f1b06b976f20a430}{operator=} (const \hyperlink{classmage_1_1_camera}{Camera} \&camera)=delete
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -183,11 +180,11 @@ Returns the width of this camera.
 \begin{DoxyReturn}{Returns}
 The width of this camera. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_camera_a6a5d3006100ba608f1b06b976f20a430}{}\label{classmage_1_1_camera_a6a5d3006100ba608f1b06b976f20a430} 
+\hypertarget{classmage_1_1_camera_ae16a5f66b80f7fa771475aa1eb099634}{}\label{classmage_1_1_camera_ae16a5f66b80f7fa771475aa1eb099634} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Camera@{mage\+::\+Camera}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_camera}{Camera}\& mage\+::\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_camera}{Camera}\& mage\+::\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})}
 
 Copies the given camera to this camera.
 

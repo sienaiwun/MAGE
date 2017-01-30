@@ -1,0 +1,62 @@
+\hypertarget{structmage_1_1_destruct_variable_predicate}{}\section{mage\+:\+:Destruct\+Variable\+Predicate Struct Reference}
+\label{structmage_1_1_destruct_variable_predicate}\index{mage\+::\+Destruct\+Variable\+Predicate@{mage\+::\+Destruct\+Variable\+Predicate}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_destruct_variable_predicate_a4591cb3a6cebf790ceebeb0f4e2c7c2c}{Destruct\+Variable\+Predicate} (const string \&variable\+\_\+name)
+\item 
+bool \hyperlink{structmage_1_1_destruct_variable_predicate_ad75df157dde6e4ba34810cb035a7bc74}{operator()} (const \hyperlink{structmage_1_1_variable}{Variable} $\ast$variable) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \& \hyperlink{structmage_1_1_destruct_variable_predicate_ab601ffdcc5c709dd8e4b35aa451148c2}{m\+\_\+variable\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A struct of predicates matching variables based on their name. In case of a match, the variable is destructed. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_destruct_variable_predicate_a4591cb3a6cebf790ceebeb0f4e2c7c2c}{}\label{structmage_1_1_destruct_variable_predicate_a4591cb3a6cebf790ceebeb0f4e2c7c2c} 
+\index{mage\+::\+Destruct\+Variable\+Predicate@{mage\+::\+Destruct\+Variable\+Predicate}!Destruct\+Variable\+Predicate@{Destruct\+Variable\+Predicate}}
+\index{Destruct\+Variable\+Predicate@{Destruct\+Variable\+Predicate}!mage\+::\+Destruct\+Variable\+Predicate@{mage\+::\+Destruct\+Variable\+Predicate}}
+\subsubsection{\texorpdfstring{Destruct\+Variable\+Predicate()}{DestructVariablePredicate()}}
+{\footnotesize\ttfamily mage\+::\+Destruct\+Variable\+Predicate\+::\+Destruct\+Variable\+Predicate (\begin{DoxyParamCaption}\item[{const string \&}]{variable\+\_\+name }\end{DoxyParamCaption})}
+
+Constructs a predicate with the given variable name to look for.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em variable\+\_\+name} & A reference to the variable name to look for. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_destruct_variable_predicate_ad75df157dde6e4ba34810cb035a7bc74}{}\label{structmage_1_1_destruct_variable_predicate_ad75df157dde6e4ba34810cb035a7bc74} 
+\index{mage\+::\+Destruct\+Variable\+Predicate@{mage\+::\+Destruct\+Variable\+Predicate}!operator()@{operator()}}
+\index{operator()@{operator()}!mage\+::\+Destruct\+Variable\+Predicate@{mage\+::\+Destruct\+Variable\+Predicate}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool mage\+::\+Destruct\+Variable\+Predicate\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} $\ast$}]{variable }\end{DoxyParamCaption}) const}
+
+Checks if the given variable has the same name as the name stored in this predicate. If this is the case, the variable is destructed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em variable} & A pointer to the variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the given variable has the same name as the name stored in this predicate. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_destruct_variable_predicate_ab601ffdcc5c709dd8e4b35aa451148c2}{}\label{structmage_1_1_destruct_variable_predicate_ab601ffdcc5c709dd8e4b35aa451148c2} 
+\index{mage\+::\+Destruct\+Variable\+Predicate@{mage\+::\+Destruct\+Variable\+Predicate}!m\+\_\+variable\+\_\+name@{m\+\_\+variable\+\_\+name}}
+\index{m\+\_\+variable\+\_\+name@{m\+\_\+variable\+\_\+name}!mage\+::\+Destruct\+Variable\+Predicate@{mage\+::\+Destruct\+Variable\+Predicate}}
+\subsubsection{\texorpdfstring{m\+\_\+variable\+\_\+name}{m\_variable\_name}}
+{\footnotesize\ttfamily const string\& mage\+::\+Destruct\+Variable\+Predicate\+::m\+\_\+variable\+\_\+name}
+
+The variable name of this predicate. 

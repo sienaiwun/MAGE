@@ -13,7 +13,7 @@
 \item 
 uint64\+\_\+t \hyperlink{classmage_1_1_state_a07c383a809204ba12a2bbfb22d2977d5}{Get\+Id} () const
 \item 
-virtual void \hyperlink{classmage_1_1_state_a352431f7b9c067bc45f922b782d6b407}{Request\+View\+Setup} (\hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup} $\ast$viewer\+\_\+setup)
+virtual void \hyperlink{classmage_1_1_state_a22274e1bc87f6b8883cddfb05e35f120}{Request\+View\+Setup} (\hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup} \&viewer\+\_\+setup)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -25,6 +25,13 @@ virtual void \hyperlink{classmage_1_1_state_a1edd5d756566f5b689c7a381f4e6b301}{C
 virtual void \hyperlink{classmage_1_1_state_afbee8caa84e0c69ac5757f7e5e87317f}{Update} (double elapsed\+\_\+time)
 \item 
 virtual void \hyperlink{classmage_1_1_state_a6e3b3f55bfd5be86a02783a2f76c9709}{Render} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_state_a4515dcef9830ce6522ea6036465dcff7}{State} (const \hyperlink{classmage_1_1_state}{State} \&state)=delete
+\item 
+\hyperlink{classmage_1_1_state}{State} \& \hyperlink{classmage_1_1_state_a84466f5058f3e27b85a3b164e551008c}{operator=} (const \hyperlink{classmage_1_1_state}{State} \&state)=delete
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -45,7 +52,7 @@ A class of states
 \hypertarget{classmage_1_1_state_ac21bb6de22bb3b9c1b18d98b53e92100}{}\label{classmage_1_1_state_ac21bb6de22bb3b9c1b18d98b53e92100} 
 \index{mage\+::\+State@{mage\+::\+State}!State@{State}}
 \index{State@{State}!mage\+::\+State@{mage\+::\+State}}
-\subsubsection{\texorpdfstring{State()}{State()}}
+\subsubsection{\texorpdfstring{State()}{State()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+State\+::\+State (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{id = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 Constructs a state with given id.
@@ -61,9 +68,20 @@ Constructs a state with given id.
 \subsubsection{\texorpdfstring{$\sim$\+State()}{~State()}}
 {\footnotesize\ttfamily mage\+::\+State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Destructs this state.
+Destructs this state. \hypertarget{classmage_1_1_state_a4515dcef9830ce6522ea6036465dcff7}{}\label{classmage_1_1_state_a4515dcef9830ce6522ea6036465dcff7} 
+\index{mage\+::\+State@{mage\+::\+State}!State@{State}}
+\index{State@{State}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{State()}{State()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+State\+::\+State (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_state}{State} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
-(This destructor is not allowed to be called manually\+: Real destruction must take place in \hyperlink{classmage_1_1_state_a1edd5d756566f5b689c7a381f4e6b301}{State\+::\+Close()}) 
+Constructs a state from the given state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em state} & A reference to the state. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_state_a1edd5d756566f5b689c7a381f4e6b301}{}\label{classmage_1_1_state_a1edd5d756566f5b689c7a381f4e6b301} 
@@ -89,26 +107,39 @@ The id of this state.
 \subsubsection{\texorpdfstring{Load()}{Load()}}
 {\footnotesize\ttfamily virtual void mage\+::\+State\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Loads this state. Allows this state to preform any pre-\/processing construction. \hypertarget{classmage_1_1_state_a6e3b3f55bfd5be86a02783a2f76c9709}{}\label{classmage_1_1_state_a6e3b3f55bfd5be86a02783a2f76c9709} 
+Loads this state. Allows this state to preform any pre-\/processing construction. \hypertarget{classmage_1_1_state_a84466f5058f3e27b85a3b164e551008c}{}\label{classmage_1_1_state_a84466f5058f3e27b85a3b164e551008c} 
+\index{mage\+::\+State@{mage\+::\+State}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+State@{mage\+::\+State}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_state}{State}\& mage\+::\+State\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_state}{State} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given state to this state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em state} & A reference to the state to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given state (i.\+e. this state). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_state_a6e3b3f55bfd5be86a02783a2f76c9709}{}\label{classmage_1_1_state_a6e3b3f55bfd5be86a02783a2f76c9709} 
 \index{mage\+::\+State@{mage\+::\+State}!Render@{Render}}
 \index{Render@{Render}!mage\+::\+State@{mage\+::\+State}}
 \subsubsection{\texorpdfstring{Render()}{Render()}}
 {\footnotesize\ttfamily virtual void mage\+::\+State\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Render this state. \hypertarget{classmage_1_1_state_a352431f7b9c067bc45f922b782d6b407}{}\label{classmage_1_1_state_a352431f7b9c067bc45f922b782d6b407} 
+Render this state. \hypertarget{classmage_1_1_state_a22274e1bc87f6b8883cddfb05e35f120}{}\label{classmage_1_1_state_a22274e1bc87f6b8883cddfb05e35f120} 
 \index{mage\+::\+State@{mage\+::\+State}!Request\+View\+Setup@{Request\+View\+Setup}}
 \index{Request\+View\+Setup@{Request\+View\+Setup}!mage\+::\+State@{mage\+::\+State}}
 \subsubsection{\texorpdfstring{Request\+View\+Setup()}{RequestViewSetup()}}
-{\footnotesize\ttfamily virtual void mage\+::\+State\+::\+Request\+View\+Setup (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup} $\ast$}]{viewer\+\_\+setup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void mage\+::\+State\+::\+Request\+View\+Setup (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup} \&}]{viewer\+\_\+setup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Requests the view setup details for the given frame.
 
-\begin{DoxyPrecond}{Precondition}
-{\itshape viewer\+\_\+setup} is not {\ttfamily nullptr}. 
-\end{DoxyPrecond}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in,out}  & {\em viewer\+\_\+setup} & A pointer to a viewer setup. \\
+\mbox{\tt in,out}  & {\em viewer\+\_\+setup} & A reference to a viewer setup. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_state_afbee8caa84e0c69ac5757f7e5e87317f}{}\label{classmage_1_1_state_afbee8caa84e0c69ac5757f7e5e87317f} 

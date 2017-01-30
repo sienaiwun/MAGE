@@ -106,6 +106,10 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6a259a0ce19107bb644482b86c4bd27a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a6a259a0ce19107bb644482b86c4bd27a">SceneNodeVisitor</a> ()</td></tr>
 <tr class="separator:a6a259a0ce19107bb644482b86c4bd27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e30ba9858c231f4bad0a2b7fffbe29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a44e30ba9858c231f4bad0a2b7fffbe29">SceneNodeVisitor</a> (const <a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;visitor)</td></tr>
+<tr class="separator:a44e30ba9858c231f4bad0a2b7fffbe29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3c71d7df6c589a81dffd5d8d285c1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a4e3c71d7df6c589a81dffd5d8d285c1d">operator=</a> (const <a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;visitor)</td></tr>
+<tr class="separator:a4e3c71d7df6c589a81dffd5d8d285c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fe1b3469cbb97d4086cb030128fa28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node_visitor.html#a8fe1b3469cbb97d4086cb030128fa28c">TerminateVisit</a> ()</td></tr>
 <tr class="separator:a8fe1b3469cbb97d4086cb030128fa28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -144,7 +148,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a6a259a0ce19107bb644482b86c4bd27a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a259a0ce19107bb644482b86c4bd27a">&sect;&nbsp;</a></span>SceneNodeVisitor()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a259a0ce19107bb644482b86c4bd27a">&sect;&nbsp;</a></span>SceneNodeVisitor() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,6 +173,39 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a44e30ba9858c231f4bad0a2b7fffbe29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e30ba9858c231f4bad0a2b7fffbe29">&sect;&nbsp;</a></span>SceneNodeVisitor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::SceneNodeVisitor::SceneNodeVisitor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a scene node visitor from the given scene node visitor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">visitor</td><td>A reference to the scene node visitor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0f654e306f6d43d49081f319cd41812b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f654e306f6d43d49081f319cd41812b">&sect;&nbsp;</a></span>IsVisitTerminated()</h2>
@@ -186,6 +223,40 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Check whether the visit of this visitor should be terminated.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the visit of this visitor should be terminated. <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a4e3c71d7df6c589a81dffd5d8d285c1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3c71d7df6c589a81dffd5d8d285c1d">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a>&amp; mage::SceneNodeVisitor::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_scene_node_visitor.html">SceneNodeVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>visitor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given scene node visitor to this scene node visitor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">visitor</td><td>A reference to the scene node visitor to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given scene node visitor (i.e. this scene node visitor). </dd></dl>
 
 </div>
 </div>

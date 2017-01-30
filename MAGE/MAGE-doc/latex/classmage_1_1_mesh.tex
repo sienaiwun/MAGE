@@ -13,13 +13,13 @@ Inheritance diagram for mage\+:\+:Mesh\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_mesh_a3be4deaa3d68890de7e05522d0179173}{Mesh} (const string \&name, const string \&path=\char`\"{}./\char`\"{})
+\hyperlink{classmage_1_1_mesh_a13a06eb10e3a4363bc16fc5f8d359264}{Mesh} (const wstring \&name, const wstring \&path=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+A\+TH)
 \item 
 virtual \hyperlink{classmage_1_1_mesh_ab7e701f7fcdc611479875a98c465da42}{$\sim$\+Mesh} ()
 \item 
-virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_adb7cecd184c021c6184b6444adeb5190}{Bind\+Buffers} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context) const =0
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a0e558e82b0db25b0bbb4abeba9f0fb0f}{Bind\+Buffers} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context) const =0
 \item 
-virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a8ebd5d1a5159ebeda44e3fb6b98a115c}{Draw} (I\+D3\+D11\+Device\+Context2 $\ast$device\+\_\+context) const =0
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a9dff8fa94d28e852fc1e72e6c0a85c6f}{Draw} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context) const =0
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -34,11 +34,11 @@ virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a8ebd5d1a5159ebeda44e3fb
 A class of meshes. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_mesh_a3be4deaa3d68890de7e05522d0179173}{}\label{classmage_1_1_mesh_a3be4deaa3d68890de7e05522d0179173} 
+\hypertarget{classmage_1_1_mesh_a13a06eb10e3a4363bc16fc5f8d359264}{}\label{classmage_1_1_mesh_a13a06eb10e3a4363bc16fc5f8d359264} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{path = {\ttfamily \char`\"{}./\char`\"{}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const wstring \&}]{name,  }\item[{const wstring \&}]{path = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+RESOURCE\+\_\+PATH} }\end{DoxyParamCaption})}
 
 Constructs a mesh.
 
@@ -61,28 +61,35 @@ Destructs this mesh. \hypertarget{classmage_1_1_mesh_a1627e85c72d10bdedbfbf746b1
 \subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mesh}{Mesh} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
+Constructs a mesh from the given mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh} & A reference to the mesh. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_mesh_adb7cecd184c021c6184b6444adeb5190}{}\label{classmage_1_1_mesh_adb7cecd184c021c6184b6444adeb5190} 
+\hypertarget{classmage_1_1_mesh_a0e558e82b0db25b0bbb4abeba9f0fb0f}{}\label{classmage_1_1_mesh_a0e558e82b0db25b0bbb4abeba9f0fb0f} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Bind\+Buffers@{Bind\+Buffers}}
 \index{Bind\+Buffers@{Bind\+Buffers}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{Bind\+Buffers()}{BindBuffers()}}
-{\footnotesize\ttfamily virtual H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Bind\+Buffers (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Bind\+Buffers (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Implemented in \hyperlink{classmage_1_1_flat_mesh_ab1906ae929a514a7b9b348d6a97fc2d4}{mage\+::\+Flat\+Mesh}, and \hyperlink{classmage_1_1_indexed_mesh_aeef933509fe7f74a79efb8a1692fda1f}{mage\+::\+Indexed\+Mesh}.
+Implemented in \hyperlink{classmage_1_1_flat_mesh_a3d7a8793a2b802aa51ae91517201af6d}{mage\+::\+Flat\+Mesh}, and \hyperlink{classmage_1_1_indexed_mesh_a4043a771a1ffe461cfd876dd62f68212}{mage\+::\+Indexed\+Mesh}.
 
-\hypertarget{classmage_1_1_mesh_a8ebd5d1a5159ebeda44e3fb6b98a115c}{}\label{classmage_1_1_mesh_a8ebd5d1a5159ebeda44e3fb6b98a115c} 
+\hypertarget{classmage_1_1_mesh_a9dff8fa94d28e852fc1e72e6c0a85c6f}{}\label{classmage_1_1_mesh_a9dff8fa94d28e852fc1e72e6c0a85c6f} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Draw@{Draw}}
 \index{Draw@{Draw}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily virtual H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Draw (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Device\+Context2 $\ast$}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Draw (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Implemented in \hyperlink{classmage_1_1_flat_mesh_abf73ceb1c98d4bd6925be6e6e087723b}{mage\+::\+Flat\+Mesh}, and \hyperlink{classmage_1_1_indexed_mesh_a6d8543f09c82b4d7e85c68daf39945ce}{mage\+::\+Indexed\+Mesh}.
+Implemented in \hyperlink{classmage_1_1_flat_mesh_a84cf747d30acb8cb12ed730cb1b73a14}{mage\+::\+Flat\+Mesh}, and \hyperlink{classmage_1_1_indexed_mesh_a7067c08cb9165cef96f507b8dd9fe568}{mage\+::\+Indexed\+Mesh}.
 
 \hypertarget{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e}{}\label{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!operator=@{operator=}}
@@ -90,3 +97,13 @@ Implemented in \hyperlink{classmage_1_1_flat_mesh_abf73ceb1c98d4bd6925be6e6e0877
 \subsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_mesh}{Mesh}\& mage\+::\+Mesh\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_mesh}{Mesh} \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
+Copies the given mesh to this mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh} & A reference to the mesh to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given mesh (i.\+e. this mesh). 
+\end{DoxyReturn}

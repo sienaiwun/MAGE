@@ -81,7 +81,8 @@ $(document).ready(function(){initNavTree('classmage_1_1_resource_manager.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_resource_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::ResourceManager&lt; T &gt; Class Template Reference</div>  </div>
@@ -92,25 +93,30 @@ $(document).ready(function(){initNavTree('classmage_1_1_resource_manager.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a175c64e73c941c161b2ee0df80fc5492"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a175c64e73c941c161b2ee0df80fc5492">ResourceManager</a> (void(*CreateResourceFunction)(T **resource, const string &amp;name, const string &amp;path)=nullptr)</td></tr>
-<tr class="separator:a175c64e73c941c161b2ee0df80fc5492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8596e3f3c9fa2eb693cf4cc9aeb95d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#ab8596e3f3c9fa2eb693cf4cc9aeb95d9">ResourceManager</a> (void(*CreateResourceFunction)(T **resource, const wstring &amp;name, const wstring &amp;path)=nullptr)</td></tr>
+<tr class="separator:ab8596e3f3c9fa2eb693cf4cc9aeb95d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3b6bf56e57bd3df0eb569510dd1483b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#af3b6bf56e57bd3df0eb569510dd1483b">~ResourceManager</a> ()</td></tr>
 <tr class="separator:af3b6bf56e57bd3df0eb569510dd1483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358d8bcb9a0812cc69ff1e8cd8234988"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a358d8bcb9a0812cc69ff1e8cd8234988">AddResource</a> (const string &amp;name, const string &amp;path=&quot;./&quot;)</td></tr>
-<tr class="separator:a358d8bcb9a0812cc69ff1e8cd8234988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab10959337c87b6454209b5116478cc21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#ab10959337c87b6454209b5116478cc21">RemoveResource</a> (T *resource)</td></tr>
-<tr class="separator:ab10959337c87b6454209b5116478cc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a875ea647ed1d475ca2d3f39dc492215b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a875ea647ed1d475ca2d3f39dc492215b">ClearResources</a> ()</td></tr>
-<tr class="separator:a875ea647ed1d475ca2d3f39dc492215b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448a25bbe7ff37a88d1b19d50744d7ee"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a448a25bbe7ff37a88d1b19d50744d7ee">GetResource</a> (const string &amp;name, const string &amp;path=&quot;./&quot;) const</td></tr>
-<tr class="separator:a448a25bbe7ff37a88d1b19d50744d7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e20a40abfebc7709ddd51d78f991b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a97e20a40abfebc7709ddd51d78f991b9">AddResource</a> (const wstring &amp;name, const wstring &amp;path=&quot;./&quot;)</td></tr>
+<tr class="separator:a97e20a40abfebc7709ddd51d78f991b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac557e5047590d0403291557c88966574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#ac557e5047590d0403291557c88966574">RemoveResource</a> (<a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; T &gt; resource)</td></tr>
+<tr class="separator:ac557e5047590d0403291557c88966574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7632144a5d65ba34b9d1923b9201f129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a7632144a5d65ba34b9d1923b9201f129">GetResource</a> (const wstring &amp;name, const wstring &amp;path=&quot;./&quot;) const</td></tr>
+<tr class="separator:a7632144a5d65ba34b9d1923b9201f129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ab058f7127d317bfe78b9f391a4351315"><td class="memItemLeft" align="right" valign="top">list&lt; T *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#ab058f7127d317bfe78b9f391a4351315">m_resources</a></td></tr>
-<tr class="separator:ab058f7127d317bfe78b9f391a4351315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1175cdd82a5407dd099b53a432ca9a95"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a1175cdd82a5407dd099b53a432ca9a95">CreateResource</a> )(T **resource, const string &amp;name, const string &amp;path)</td></tr>
-<tr class="separator:a1175cdd82a5407dd099b53a432ca9a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3b424e1ef7f543a2705d1124018d9921"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a3b424e1ef7f543a2705d1124018d9921">ResourceManager</a> (const <a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a> &amp;resource_manager)=delete</td></tr>
+<tr class="separator:a3b424e1ef7f543a2705d1124018d9921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc1867dbb196671fb53763c98aee1dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a5cc1867dbb196671fb53763c98aee1dd">operator=</a> (const <a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a> &amp;resource_manager)=delete</td></tr>
+<tr class="separator:a5cc1867dbb196671fb53763c98aee1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aff542b1b858650c5bbb3c6d0ceaa5a5d"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#aff542b1b858650c5bbb3c6d0ceaa5a5d">m_resources</a></td></tr>
+<tr class="separator:aff542b1b858650c5bbb3c6d0ceaa5a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d5a40aeaef12e2ecef0cb8f5f4a4d5"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource_manager.html#a41d5a40aeaef12e2ecef0cb8f5f4a4d5">CreateResource</a> )(T **resource, const wstring &amp;name, const wstring &amp;path)</td></tr>
+<tr class="separator:a41d5a40aeaef12e2ecef0cb8f5f4a4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -124,18 +130,18 @@ class mage::ResourceManager&lt; T &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a175c64e73c941c161b2ee0df80fc5492"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a175c64e73c941c161b2ee0df80fc5492">&sect;&nbsp;</a></span>ResourceManager()</h2>
+<a id="ab8596e3f3c9fa2eb693cf4cc9aeb95d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8596e3f3c9fa2eb693cf4cc9aeb95d9">&sect;&nbsp;</a></span>ResourceManager() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::<a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a> </td>
           <td>(</td>
-          <td class="paramtype">void(*)(T **resource, const string &amp;name, const string &amp;path)&#160;</td>
+          <td class="paramtype">void(*)(T **resource, const wstring &amp;name, const wstring &amp;path)&#160;</td>
           <td class="paramname"><em>CreateResourceFunction</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
@@ -157,7 +163,7 @@ template&lt;typename T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -179,25 +185,60 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a358d8bcb9a0812cc69ff1e8cd8234988"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a358d8bcb9a0812cc69ff1e8cd8234988">&sect;&nbsp;</a></span>AddResource()</h2>
+<a id="a3b424e1ef7f543a2705d1124018d9921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b424e1ef7f543a2705d1124018d9921">&sect;&nbsp;</a></span>ResourceManager() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T* <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::AddResource </td>
+          <td class="memname"><a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::<a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a> </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>resource_manager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a resource manager from the given resource manager.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_manager</td><td>A reference to the resource manager. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a97e20a40abfebc7709ddd51d78f991b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e20a40abfebc7709ddd51d78f991b9">&sect;&nbsp;</a></span>AddResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; T &gt; <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::AddResource </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
           <td class="paramname"><em>path</em> = <code>&quot;./&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -219,44 +260,24 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a875ea647ed1d475ca2d3f39dc492215b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a875ea647ed1d475ca2d3f39dc492215b">&sect;&nbsp;</a></span>ClearResources()</h2>
+<a id="a7632144a5d65ba34b9d1923b9201f129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7632144a5d65ba34b9d1923b9201f129">&sect;&nbsp;</a></span>GetResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::ClearResources </td>
+          <td class="memname"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; T &gt; <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::GetResource </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Removes and destructs all the resources from this resource manager, and leaving the resource manager with no resources. </p>
-
-</div>
-</div>
-<a id="a448a25bbe7ff37a88d1b19d50744d7ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a448a25bbe7ff37a88d1b19d50744d7ee">&sect;&nbsp;</a></span>GetResource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T* <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::GetResource </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
           <td class="paramname"><em>path</em> = <code>&quot;./&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -280,18 +301,54 @@ A pointer to the resource. </dd></dl>
 
 </div>
 </div>
-<a id="ab10959337c87b6454209b5116478cc21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab10959337c87b6454209b5116478cc21">&sect;&nbsp;</a></span>RemoveResource()</h2>
+<a id="a5cc1867dbb196671fb53763c98aee1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc1867dbb196671fb53763c98aee1dd">&sect;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&amp; <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>resource_manager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given resource manager to this resource manager.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource_manager</td><td>A reference to the resource manager to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given resource manager (i.e. this resource manager). </dd></dl>
+
+</div>
+</div>
+<a id="ac557e5047590d0403291557c88966574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac557e5047590d0403291557c88966574">&sect;&nbsp;</a></span>RemoveResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::RemoveResource </td>
           <td>(</td>
-          <td class="paramtype">T *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; T &gt;&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
           <td></td>
         </tr>
@@ -300,7 +357,7 @@ template&lt;typename T&gt; </div>
 <p>Removes the given resource from this resource manager.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">resource</td><td>A pointer to the resource. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>A pointer to the resource. </td></tr>
   </table>
   </dd>
 </dl>
@@ -308,24 +365,24 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1175cdd82a5407dd099b53a432ca9a95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1175cdd82a5407dd099b53a432ca9a95">&sect;&nbsp;</a></span>CreateResource</h2>
+<a id="a41d5a40aeaef12e2ecef0cb8f5f4a4d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d5a40aeaef12e2ecef0cb8f5f4a4d5">&sect;&nbsp;</a></span>CreateResource</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void(* <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::CreateResource) (T **resource, const string &amp;name, const string &amp;path)</td>
+          <td class="memname">void(* <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::CreateResource) (T **resource, const wstring &amp;name, const wstring &amp;path)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -333,24 +390,24 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="ab058f7127d317bfe78b9f391a4351315"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab058f7127d317bfe78b9f391a4351315">&sect;&nbsp;</a></span>m_resources</h2>
+<a id="aff542b1b858650c5bbb3c6d0ceaa5a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff542b1b858650c5bbb3c6d0ceaa5a5d">&sect;&nbsp;</a></span>m_resources</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">list&lt; T * &gt; <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::m_resources</td>
+          <td class="memname">list&lt; <a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; T &gt; &gt; <a class="el" href="classmage_1_1_resource_manager.html">mage::ResourceManager</a>&lt; T &gt;::m_resources</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

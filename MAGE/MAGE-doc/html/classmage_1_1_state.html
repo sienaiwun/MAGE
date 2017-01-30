@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_state.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classmage_1_1_state-members.html">List of all members</a>  </div>
@@ -100,8 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa970b0dd628870e72a7f7fffcff1db13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c383a809204ba12a2bbfb22d2977d5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_state.html#a07c383a809204ba12a2bbfb22d2977d5">GetId</a> () const</td></tr>
 <tr class="separator:a07c383a809204ba12a2bbfb22d2977d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352431f7b9c067bc45f922b782d6b407"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_state.html#a352431f7b9c067bc45f922b782d6b407">RequestViewSetup</a> (<a class="el" href="structmage_1_1_viewer_setup.html">ViewerSetup</a> *viewer_setup)</td></tr>
-<tr class="separator:a352431f7b9c067bc45f922b782d6b407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22274e1bc87f6b8883cddfb05e35f120"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_state.html#a22274e1bc87f6b8883cddfb05e35f120">RequestViewSetup</a> (<a class="el" href="structmage_1_1_viewer_setup.html">ViewerSetup</a> &amp;viewer_setup)</td></tr>
+<tr class="separator:a22274e1bc87f6b8883cddfb05e35f120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -113,6 +114,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:afbee8caa84e0c69ac5757f7e5e87317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e3b3f55bfd5be86a02783a2f76c9709"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_state.html#a6e3b3f55bfd5be86a02783a2f76c9709">Render</a> ()</td></tr>
 <tr class="separator:a6e3b3f55bfd5be86a02783a2f76c9709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4515dcef9830ce6522ea6036465dcff7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_state.html#a4515dcef9830ce6522ea6036465dcff7">State</a> (const <a class="el" href="classmage_1_1_state.html">State</a> &amp;state)=delete</td></tr>
+<tr class="separator:a4515dcef9830ce6522ea6036465dcff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84466f5058f3e27b85a3b164e551008c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_state.html">State</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_state.html#a84466f5058f3e27b85a3b164e551008c">operator=</a> (const <a class="el" href="classmage_1_1_state.html">State</a> &amp;state)=delete</td></tr>
+<tr class="separator:a84466f5058f3e27b85a3b164e551008c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -128,7 +136,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>A class of states </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac21bb6de22bb3b9c1b18d98b53e92100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac21bb6de22bb3b9c1b18d98b53e92100">&sect;&nbsp;</a></span>State()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21bb6de22bb3b9c1b18d98b53e92100">&sect;&nbsp;</a></span>State() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,8 +174,40 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destructs this state.</p>
-<p>(This destructor is not allowed to be called manually: Real destruction must take place in <a class="el" href="classmage_1_1_state.html#a1edd5d756566f5b689c7a381f4e6b301">State::Close()</a>) </p>
+<p>Destructs this state. </p>
+
+</div>
+</div>
+<a id="a4515dcef9830ce6522ea6036465dcff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4515dcef9830ce6522ea6036465dcff7">&sect;&nbsp;</a></span>State() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::State::State </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a state from the given state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>A reference to the state. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -243,6 +283,40 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a84466f5058f3e27b85a3b164e551008c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84466f5058f3e27b85a3b164e551008c">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_state.html">State</a>&amp; mage::State::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given state to this state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>A reference to the state to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given state (i.e. this state). </dd></dl>
+
+</div>
+</div>
 <a id="a6e3b3f55bfd5be86a02783a2f76c9709"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e3b3f55bfd5be86a02783a2f76c9709">&sect;&nbsp;</a></span>Render()</h2>
 
@@ -269,8 +343,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a352431f7b9c067bc45f922b782d6b407"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a352431f7b9c067bc45f922b782d6b407">&sect;&nbsp;</a></span>RequestViewSetup()</h2>
+<a id="a22274e1bc87f6b8883cddfb05e35f120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22274e1bc87f6b8883cddfb05e35f120">&sect;&nbsp;</a></span>RequestViewSetup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +355,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">virtual void mage::State::RequestViewSetup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmage_1_1_viewer_setup.html">ViewerSetup</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmage_1_1_viewer_setup.html">ViewerSetup</a> &amp;&#160;</td>
           <td class="paramname"><em>viewer_setup</em></td><td>)</td>
           <td></td>
         </tr>
@@ -293,10 +367,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Requests the view setup details for the given frame.</p>
-<dl class="section pre"><dt>Precondition</dt><dd><em>viewer_setup</em> is not <code>nullptr</code>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">viewer_setup</td><td>A pointer to a viewer setup. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">viewer_setup</td><td>A reference to a viewer setup. </td></tr>
   </table>
   </dd>
 </dl>

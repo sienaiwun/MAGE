@@ -83,7 +83,6 @@ $(document).ready(function(){initNavTree('classmage_1_1_resource.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classmage_1_1_resource-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::Resource Class Reference</div>  </div>
@@ -98,7 +97,9 @@ Inheritance diagram for mage::Resource:</div>
   <img src="classmage_1_1_resource.png" usemap="#mage::Resource_map" alt=""/>
   <map id="mage::Resource_map" name="mage::Resource_map">
 <area href="classmage_1_1_mesh.html" alt="mage::Mesh" shape="rect" coords="69,56,198,80"/>
-<area href="classmage_1_1_variable_script.html" alt="mage::VariableScript" shape="rect" coords="208,56,337,80"/>
+<area href="classmage_1_1_pixel_shader.html" alt="mage::PixelShader" shape="rect" coords="208,56,337,80"/>
+<area href="classmage_1_1_variable_script.html" alt="mage::VariableScript" shape="rect" coords="347,56,476,80"/>
+<area href="classmage_1_1_vertex_shader.html" alt="mage::VertexShader" shape="rect" coords="486,56,615,80"/>
 <area href="classmage_1_1_flat_mesh.html" alt="mage::FlatMesh" shape="rect" coords="0,112,129,136"/>
 <area href="classmage_1_1_indexed_mesh.html" alt="mage::IndexedMesh" shape="rect" coords="139,112,268,136"/>
 </map>
@@ -106,44 +107,36 @@ Inheritance diagram for mage::Resource:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7b4febc86646d51ac116732af01abcaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a7b4febc86646d51ac116732af01abcaf">Resource</a> (const string &amp;name, const string &amp;path=&quot;./&quot;)</td></tr>
-<tr class="separator:a7b4febc86646d51ac116732af01abcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c7283a66b4658718465830072d6df6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a37c7283a66b4658718465830072d6df6">Resource</a> (const wstring &amp;name, const wstring &amp;path=MAGE_DEFAULT_RESOURCE_PATH)</td></tr>
+<tr class="separator:a37c7283a66b4658718465830072d6df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80112db991a7dfd1dc0b24967981ac60"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a80112db991a7dfd1dc0b24967981ac60">~Resource</a> ()</td></tr>
 <tr class="separator:a80112db991a7dfd1dc0b24967981ac60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77713b0c74f8983afc2d42843afe8cbe"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a77713b0c74f8983afc2d42843afe8cbe">GetName</a> () const</td></tr>
-<tr class="separator:a77713b0c74f8983afc2d42843afe8cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ef6c6937947b56cbabc569e3a63ca71"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a2ef6c6937947b56cbabc569e3a63ca71">GetPath</a> () const</td></tr>
-<tr class="separator:a2ef6c6937947b56cbabc569e3a63ca71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3235bf2744390d5957b9b4038e4bb512"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a3235bf2744390d5957b9b4038e4bb512">GetFilename</a> () const</td></tr>
-<tr class="separator:a3235bf2744390d5957b9b4038e4bb512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1066ff99a6b3238de9702ddc971ffe0"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#af1066ff99a6b3238de9702ddc971ffe0">GetPath</a> () const</td></tr>
+<tr class="separator:af1066ff99a6b3238de9702ddc971ffe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a7e0c571a266b0c3ddf20979c491c8"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a49a7e0c571a266b0c3ddf20979c491c8">GetName</a> () const</td></tr>
+<tr class="separator:a49a7e0c571a266b0c3ddf20979c491c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f05385b8c05646989689fc04847a816"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a1f05385b8c05646989689fc04847a816">GetFilename</a> () const</td></tr>
+<tr class="separator:a1f05385b8c05646989689fc04847a816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a0aee4b36717494677dbd6ba799f11ab4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a0aee4b36717494677dbd6ba799f11ab4">IncrementResourceReferenceCount</a> ()</td></tr>
-<tr class="separator:a0aee4b36717494677dbd6ba799f11ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a225b37285aa32d893a07d5b492ea99f9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a225b37285aa32d893a07d5b492ea99f9">DecrementResourceReferenceCount</a> ()</td></tr>
-<tr class="separator:a225b37285aa32d893a07d5b492ea99f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee2dba2675546b603e03a69a2f2db52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a4ee2dba2675546b603e03a69a2f2db52">Resource</a> (const <a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;resource)=delete</td></tr>
+<tr class="separator:a4ee2dba2675546b603e03a69a2f2db52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fa57f37eb253b90d18d33383b12875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#ad8fa57f37eb253b90d18d33383b12875">operator=</a> (const <a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;resource)=delete</td></tr>
+<tr class="separator:ad8fa57f37eb253b90d18d33383b12875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aa71f1ecac3436591032d2abd6a2f5c37"><td class="memItemLeft" align="right" valign="top">AtomicInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#aa71f1ecac3436591032d2abd6a2f5c37">m_resource_reference_count</a></td></tr>
-<tr class="separator:aa71f1ecac3436591032d2abd6a2f5c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93019b74e9665195f1af17c60b6d171a"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a93019b74e9665195f1af17c60b6d171a">m_name</a></td></tr>
-<tr class="separator:a93019b74e9665195f1af17c60b6d171a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a983470902250a8d16b6d5d01c332804b"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a983470902250a8d16b6d5d01c332804b">m_path</a></td></tr>
-<tr class="separator:a983470902250a8d16b6d5d01c332804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a51a7bf7c13d389aeee09c16059ca41c9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a51a7bf7c13d389aeee09c16059ca41c9"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a51a7bf7c13d389aeee09c16059ca41c9">ResourceManager</a></td></tr>
-<tr class="separator:a51a7bf7c13d389aeee09c16059ca41c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a281fb52790af4c621bb6aeee3bbe5"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a62a281fb52790af4c621bb6aeee3bbe5">m_name</a></td></tr>
+<tr class="separator:a62a281fb52790af4c621bb6aeee3bbe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85318935a58bc4f7b3cfa5c19543d94"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#aa85318935a58bc4f7b3cfa5c19543d94">m_path</a></td></tr>
+<tr class="separator:aa85318935a58bc4f7b3cfa5c19543d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of resources. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7b4febc86646d51ac116732af01abcaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b4febc86646d51ac116732af01abcaf">&sect;&nbsp;</a></span>Resource()</h2>
+<a id="a37c7283a66b4658718465830072d6df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c7283a66b4658718465830072d6df6">&sect;&nbsp;</a></span>Resource() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,14 +144,14 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">mage::Resource::Resource </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>path</em> = <code>&quot;./&quot;</code>&#160;</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>path</em> = <code>MAGE_DEFAULT_RESOURCE_PATH</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -204,9 +197,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a225b37285aa32d893a07d5b492ea99f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a225b37285aa32d893a07d5b492ea99f9">&sect;&nbsp;</a></span>DecrementResourceReferenceCount()</h2>
+<a id="a4ee2dba2675546b603e03a69a2f2db52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee2dba2675546b603e03a69a2f2db52">&sect;&nbsp;</a></span>Resource() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,31 +207,38 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t mage::Resource::DecrementResourceReferenceCount </td>
+          <td class="memname">mage::Resource::Resource </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Decrements the resource reference count of this reference counted object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The final resource reference count of this reference counted object. </dd></dl>
+<p>Constructs a resource from the given resource.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>A reference to the resource. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a3235bf2744390d5957b9b4038e4bb512"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3235bf2744390d5957b9b4038e4bb512">&sect;&nbsp;</a></span>GetFilename()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1f05385b8c05646989689fc04847a816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f05385b8c05646989689fc04847a816">&sect;&nbsp;</a></span>GetFilename()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const string mage::Resource::GetFilename </td>
+          <td class="memname">const wstring mage::Resource::GetFilename </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -251,14 +250,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a77713b0c74f8983afc2d42843afe8cbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77713b0c74f8983afc2d42843afe8cbe">&sect;&nbsp;</a></span>GetName()</h2>
+<a id="a49a7e0c571a266b0c3ddf20979c491c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a7e0c571a266b0c3ddf20979c491c8">&sect;&nbsp;</a></span>GetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const string&amp; mage::Resource::GetName </td>
+          <td class="memname">const wstring&amp; mage::Resource::GetName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -270,14 +269,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ef6c6937947b56cbabc569e3a63ca71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ef6c6937947b56cbabc569e3a63ca71">&sect;&nbsp;</a></span>GetPath()</h2>
+<a id="af1066ff99a6b3238de9702ddc971ffe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1066ff99a6b3238de9702ddc971ffe0">&sect;&nbsp;</a></span>GetPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const string&amp; mage::Resource::GetPath </td>
+          <td class="memname">const wstring&amp; mage::Resource::GetPath </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -289,8 +288,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a0aee4b36717494677dbd6ba799f11ab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0aee4b36717494677dbd6ba799f11ab4">&sect;&nbsp;</a></span>IncrementResourceReferenceCount()</h2>
+<a id="ad8fa57f37eb253b90d18d33383b12875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8fa57f37eb253b90d18d33383b12875">&sect;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,51 +298,33 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t mage::Resource::IncrementResourceReferenceCount </td>
+          <td class="memname"><a class="el" href="classmage_1_1_resource.html">Resource</a>&amp; mage::Resource::operator= </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Increments the resource reference count of this reference counted object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The final resource reference count of this reference counted object. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a51a7bf7c13d389aeee09c16059ca41c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51a7bf7c13d389aeee09c16059ca41c9">&sect;&nbsp;</a></span>ResourceManager</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Copies the given resource to this resource.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>A reference to the resource to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given resource (i.e. this resource). </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a93019b74e9665195f1af17c60b6d171a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93019b74e9665195f1af17c60b6d171a">&sect;&nbsp;</a></span>m_name</h2>
+<a id="a62a281fb52790af4c621bb6aeee3bbe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a281fb52790af4c621bb6aeee3bbe5">&sect;&nbsp;</a></span>m_name</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +333,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const string mage::Resource::m_name</td>
+          <td class="memname">const wstring mage::Resource::m_name</td>
         </tr>
       </table>
   </td>
@@ -365,8 +346,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a983470902250a8d16b6d5d01c332804b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a983470902250a8d16b6d5d01c332804b">&sect;&nbsp;</a></span>m_path</h2>
+<a id="aa85318935a58bc4f7b3cfa5c19543d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85318935a58bc4f7b3cfa5c19543d94">&sect;&nbsp;</a></span>m_path</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +356,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const string mage::Resource::m_path</td>
+          <td class="memname">const wstring mage::Resource::m_path</td>
         </tr>
       </table>
   </td>
@@ -385,29 +366,6 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>The path of this resource. </p>
-
-</div>
-</div>
-<a id="aa71f1ecac3436591032d2abd6a2f5c37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa71f1ecac3436591032d2abd6a2f5c37">&sect;&nbsp;</a></span>m_resource_reference_count</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AtomicInt32 mage::Resource::m_resource_reference_count</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The resource reference count of this resource. </p>
 
 </div>
 </div>

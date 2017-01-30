@@ -13,6 +13,18 @@ virtual \hyperlink{structmage_1_1_variable_1_1_abstract_value_ae3334a01bd2e0a2ea
 \item 
 virtual const void $\ast$ \hyperlink{structmage_1_1_variable_1_1_abstract_value_aede2a77b571b80794a4254e34144f4c1}{Get\+Value} () const =0
 \end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_variable_1_1_abstract_value_a1f7fb1da9789c724e41ce7c7c46889b1}{Abstract\+Value} ()
+\item 
+\hyperlink{structmage_1_1_variable_1_1_abstract_value_ad6ffb70859701161c192b723bc33d588}{Abstract\+Value} (const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} \&abstract\+\_\+value)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} \& \hyperlink{structmage_1_1_variable_1_1_abstract_value_a77f7107e78716a0ea76cfaedd0a50a4b}{operator=} (const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} \&abstract\+\_\+value)=delete
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -30,7 +42,26 @@ This is an example of the Type Erasure pattern for templates. We need to keep th
 \subsubsection{\texorpdfstring{$\sim$\+Abstract\+Value()}{~AbstractValue()}}
 {\footnotesize\ttfamily virtual mage\+::\+Variable\+::\+Abstract\+Value\+::$\sim$\+Abstract\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Destructs this value. 
+Destructs this value. \hypertarget{structmage_1_1_variable_1_1_abstract_value_a1f7fb1da9789c724e41ce7c7c46889b1}{}\label{structmage_1_1_variable_1_1_abstract_value_a1f7fb1da9789c724e41ce7c7c46889b1} 
+\index{mage\+::\+Variable\+::\+Abstract\+Value@{mage\+::\+Variable\+::\+Abstract\+Value}!Abstract\+Value@{Abstract\+Value}}
+\index{Abstract\+Value@{Abstract\+Value}!mage\+::\+Variable\+::\+Abstract\+Value@{mage\+::\+Variable\+::\+Abstract\+Value}}
+\subsubsection{\texorpdfstring{Abstract\+Value()}{AbstractValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Variable\+::\+Abstract\+Value\+::\+Abstract\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructs an abstract value. \hypertarget{structmage_1_1_variable_1_1_abstract_value_ad6ffb70859701161c192b723bc33d588}{}\label{structmage_1_1_variable_1_1_abstract_value_ad6ffb70859701161c192b723bc33d588} 
+\index{mage\+::\+Variable\+::\+Abstract\+Value@{mage\+::\+Variable\+::\+Abstract\+Value}!Abstract\+Value@{Abstract\+Value}}
+\index{Abstract\+Value@{Abstract\+Value}!mage\+::\+Variable\+::\+Abstract\+Value@{mage\+::\+Variable\+::\+Abstract\+Value}}
+\subsubsection{\texorpdfstring{Abstract\+Value()}{AbstractValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Variable\+::\+Abstract\+Value\+::\+Abstract\+Value (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} \&}]{abstract\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructs an abstract value from the given abstract value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em abstract\+\_\+value} & A reference to the abstract value. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Function Documentation}
 \hypertarget{structmage_1_1_variable_1_1_abstract_value_aede2a77b571b80794a4254e34144f4c1}{}\label{structmage_1_1_variable_1_1_abstract_value_aede2a77b571b80794a4254e34144f4c1} 
@@ -48,3 +79,19 @@ A pointer to the value of this value.
 
 Implemented in \hyperlink{structmage_1_1_variable_1_1_value_a04d70496ebb7ad71dafa3df877daeb26}{mage\+::\+Variable\+::\+Value$<$ T $>$}.
 
+\hypertarget{structmage_1_1_variable_1_1_abstract_value_a77f7107e78716a0ea76cfaedd0a50a4b}{}\label{structmage_1_1_variable_1_1_abstract_value_a77f7107e78716a0ea76cfaedd0a50a4b} 
+\index{mage\+::\+Variable\+::\+Abstract\+Value@{mage\+::\+Variable\+::\+Abstract\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Variable\+::\+Abstract\+Value@{mage\+::\+Variable\+::\+Abstract\+Value}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value}\& mage\+::\+Variable\+::\+Abstract\+Value\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} \&}]{abstract\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given abstract value to this abstract value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em abstract\+\_\+value} & A reference to the abstract value to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given abstract value (i.\+e. this abstract value). 
+\end{DoxyReturn}

@@ -123,6 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac07f89af783b1658a1f74205914f6fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42aa6487f21c948ab7ce6f64a57e5f11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a42aa6487f21c948ab7ce6f64a57e5f11">RemoveChild</a> (<a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> *child)</td></tr>
 <tr class="separator:a42aa6487f21c948ab7ce6f64a57e5f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabce9f839d51966c9dcdcde46ba9fc0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#aabce9f839d51966c9dcdcde46ba9fc0f">RemoveAllChilds</a> ()</td></tr>
+<tr class="separator:aabce9f839d51966c9dcdcde46ba9fc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c5eb3c253a2e620bd85ac845d3bb77"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a99c5eb3c253a2e620bd85ac845d3bb77">GetNbOfChilds</a> () const</td></tr>
 <tr class="separator:a99c5eb3c253a2e620bd85ac845d3bb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72bfe51e9f233dd35fd8affd24b0a67a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a72bfe51e9f233dd35fd8affd24b0a67a">GetTransform</a> ()</td></tr>
@@ -155,8 +157,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a37becece66e7d801e34bd6cacd0e83f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a37becece66e7d801e34bd6cacd0e83f2">operator=</a> (const <a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> &amp;scene_node)</td></tr>
-<tr class="separator:a37becece66e7d801e34bd6cacd0e83f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4298cbc808139f9da43055afdfe8f7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#af4298cbc808139f9da43055afdfe8f7e">operator=</a> (const <a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> &amp;scene_node)=delete</td></tr>
+<tr class="separator:af4298cbc808139f9da43055afdfe8f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d5219ff4c1f2b1c37899456af518ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_scene_node.html#a27d5219ff4c1f2b1c37899456af518ae">SetParent</a> (<a class="el" href="classmage_1_1_scene_node.html">SceneNode</a> *parent)</td></tr>
 <tr class="separator:a27d5219ff4c1f2b1c37899456af518ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -700,8 +702,8 @@ A pointer to the parent scene node of this scene node. </dd></dl>
 
 </div>
 </div>
-<a id="a37becece66e7d801e34bd6cacd0e83f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37becece66e7d801e34bd6cacd0e83f2">&sect;&nbsp;</a></span>operator=()</h2>
+<a id="af4298cbc808139f9da43055afdfe8f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4298cbc808139f9da43055afdfe8f7e">&sect;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -719,7 +721,7 @@ A pointer to the parent scene node of this scene node. </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -730,6 +732,24 @@ A pointer to the parent scene node of this scene node. </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aabce9f839d51966c9dcdcde46ba9fc0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabce9f839d51966c9dcdcde46ba9fc0f">&sect;&nbsp;</a></span>RemoveAllChilds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::SceneNode::RemoveAllChilds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes and destructs all childs of this scene node. </p>
 
 </div>
 </div>

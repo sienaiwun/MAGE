@@ -33,6 +33,8 @@ void \hyperlink{classmage_1_1_scene_node_ac07f89af783b1658a1f74205914f6fa3}{Add\
 \item 
 void \hyperlink{classmage_1_1_scene_node_a42aa6487f21c948ab7ce6f64a57e5f11}{Remove\+Child} (\hyperlink{classmage_1_1_scene_node}{Scene\+Node} $\ast$child)
 \item 
+void \hyperlink{classmage_1_1_scene_node_aabce9f839d51966c9dcdcde46ba9fc0f}{Remove\+All\+Childs} ()
+\item 
 size\+\_\+t \hyperlink{classmage_1_1_scene_node_a99c5eb3c253a2e620bd85ac845d3bb77}{Get\+Nb\+Of\+Childs} () const
 \item 
 \hyperlink{structmage_1_1_transform}{Transform} \& \hyperlink{classmage_1_1_scene_node_a72bfe51e9f233dd35fd8affd24b0a67a}{Get\+Transform} ()
@@ -65,7 +67,7 @@ void \hyperlink{classmage_1_1_scene_node_a3463a687f049dac387500a6ace5f62e7}{Acce
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_scene_node}{Scene\+Node} \& \hyperlink{classmage_1_1_scene_node_a37becece66e7d801e34bd6cacd0e83f2}{operator=} (const \hyperlink{classmage_1_1_scene_node}{Scene\+Node} \&scene\+\_\+node)
+\hyperlink{classmage_1_1_scene_node}{Scene\+Node} \& \hyperlink{classmage_1_1_scene_node_af4298cbc808139f9da43055afdfe8f7e}{operator=} (const \hyperlink{classmage_1_1_scene_node}{Scene\+Node} \&scene\+\_\+node)=delete
 \item 
 void \hyperlink{classmage_1_1_scene_node_a27d5219ff4c1f2b1c37899456af518ae}{Set\+Parent} (\hyperlink{classmage_1_1_scene_node}{Scene\+Node} $\ast$parent)
 \end{DoxyCompactItemize}
@@ -346,11 +348,11 @@ Check whether this scene node is enabled.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if this scene node is enabled. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_scene_node_a37becece66e7d801e34bd6cacd0e83f2}{}\label{classmage_1_1_scene_node_a37becece66e7d801e34bd6cacd0e83f2} 
+\hypertarget{classmage_1_1_scene_node_af4298cbc808139f9da43055afdfe8f7e}{}\label{classmage_1_1_scene_node_af4298cbc808139f9da43055afdfe8f7e} 
 \index{mage\+::\+Scene\+Node@{mage\+::\+Scene\+Node}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Scene\+Node@{mage\+::\+Scene\+Node}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_scene_node}{Scene\+Node}\& mage\+::\+Scene\+Node\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene_node}{Scene\+Node} \&}]{scene\+\_\+node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_scene_node}{Scene\+Node}\& mage\+::\+Scene\+Node\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_scene_node}{Scene\+Node} \&}]{scene\+\_\+node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
 Copies the given scene node to this scene node.
 
@@ -359,7 +361,13 @@ Copies the given scene node to this scene node.
 \mbox{\tt in}  & {\em scene\+\_\+node} & The scene node. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_scene_node_a42aa6487f21c948ab7ce6f64a57e5f11}{}\label{classmage_1_1_scene_node_a42aa6487f21c948ab7ce6f64a57e5f11} 
+\hypertarget{classmage_1_1_scene_node_aabce9f839d51966c9dcdcde46ba9fc0f}{}\label{classmage_1_1_scene_node_aabce9f839d51966c9dcdcde46ba9fc0f} 
+\index{mage\+::\+Scene\+Node@{mage\+::\+Scene\+Node}!Remove\+All\+Childs@{Remove\+All\+Childs}}
+\index{Remove\+All\+Childs@{Remove\+All\+Childs}!mage\+::\+Scene\+Node@{mage\+::\+Scene\+Node}}
+\subsubsection{\texorpdfstring{Remove\+All\+Childs()}{RemoveAllChilds()}}
+{\footnotesize\ttfamily void mage\+::\+Scene\+Node\+::\+Remove\+All\+Childs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes and destructs all childs of this scene node. \hypertarget{classmage_1_1_scene_node_a42aa6487f21c948ab7ce6f64a57e5f11}{}\label{classmage_1_1_scene_node_a42aa6487f21c948ab7ce6f64a57e5f11} 
 \index{mage\+::\+Scene\+Node@{mage\+::\+Scene\+Node}!Remove\+Child@{Remove\+Child}}
 \index{Remove\+Child@{Remove\+Child}!mage\+::\+Scene\+Node@{mage\+::\+Scene\+Node}}
 \subsubsection{\texorpdfstring{Remove\+Child()}{RemoveChild()}}

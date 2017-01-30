@@ -23,7 +23,11 @@ struct \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r___d_x_t10}{D\+D\+S\+\_\+\+H
 \item 
 struct \hyperlink{structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t}{D\+D\+S\+\_\+\+P\+I\+X\+E\+L\+F\+O\+R\+M\+AT}
 \item 
+struct \hyperlink{structmage_1_1_destruct_variable_predicate}{Destruct\+Variable\+Predicate}
+\item 
 class \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration}
+\item 
+struct \hyperlink{structmage_1_1_direction3}{Direction3}
 \item 
 struct \hyperlink{structmage_1_1_edge}{Edge}
 \item 
@@ -34,6 +38,8 @@ struct \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}
 struct \hyperlink{structmage_1_1_face}{Face}
 \item 
 class \hyperlink{classmage_1_1_flat_mesh}{Flat\+Mesh}
+\item 
+struct \hyperlink{structmage_1_1_id_generator}{Id\+Generator}
 \item 
 struct \hyperlink{structmage_1_1_indexed_edge}{Indexed\+Edge}
 \item 
@@ -53,6 +59,8 @@ struct \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}
 \item 
 class \hyperlink{classmage_1_1_main_window}{Main\+Window}
 \item 
+class \hyperlink{classmage_1_1_material}{Material}
+\item 
 class \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena}
 \item 
 class \hyperlink{classmage_1_1_mesh}{Mesh}
@@ -63,15 +71,17 @@ class \hyperlink{classmage_1_1_mutex}{Mutex}
 \item 
 struct \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock}
 \item 
+struct \hyperlink{structmage_1_1_normal3}{Normal3}
+\item 
 struct \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3}
 \item 
 class \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera}
 \item 
-class \hyperlink{classmage_1_1_parallel_for_loop}{Parallel\+For\+Loop}
-\item 
 class \hyperlink{classmage_1_1_perspective_camera}{Perspective\+Camera}
 \item 
 class \hyperlink{classmage_1_1_pixel_shader}{Pixel\+Shader}
+\item 
+struct \hyperlink{structmage_1_1_point3}{Point3}
 \item 
 class \hyperlink{classmage_1_1_progress_reporter}{Progress\+Reporter}
 \item 
@@ -95,8 +105,6 @@ class \hyperlink{classmage_1_1_state}{State}
 \item 
 class \hyperlink{classmage_1_1_state_manager}{State\+Manager}
 \item 
-class \hyperlink{classmage_1_1_task}{Task}
-\item 
 class \hyperlink{classmage_1_1_timer}{Timer}
 \item 
 struct \hyperlink{structmage_1_1_t_l_vertex}{T\+L\+Vertex}
@@ -115,6 +123,12 @@ struct \hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup}
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr} = std\+::unique\+\_\+ptr$<$ T $>$
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr} = std\+::shared\+\_\+ptr$<$ T $>$
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr} = Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ T $>$
 \item 
 typedef X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_aab5dae4b0aaf8129b9e0d651d91d4b38}{float3}
 \item 
@@ -156,11 +170,27 @@ enum \hyperlink{namespacemage_a0c586a2bad862f4858900ca121ca80c2}{D\+D\+S\+\_\+\+
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+{\footnotesize template$<$typename ContainerT , typename PredicateT $>$ }\\void \hyperlink{namespacemage_a403ff95eb779de1fbbf139661feb2d1b}{Remove\+If} (ContainerT \&container, const PredicateT \&predicate)
+\item 
+{\footnotesize template$<$typename ContainerT $>$ }\\void \hyperlink{namespacemage_a56c8c38aee820faf885024ed22e70a8e}{Remove\+And\+Destruct\+All\+Elements} (ContainerT \&container)
+\item 
 void \hyperlink{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{Print\+Console\+Header} ()
+\item 
+string \hyperlink{namespacemage_a74d063f352449eb92ca6d5faabb2f3cf}{Get\+Filename} (const string \&path, const string \&name)
+\item 
+wstring \hyperlink{namespacemage_aba14856287af620017274f19a4dda596}{Get\+Filename} (const wstring \&path, const wstring \&name)
 \item 
 string \hyperlink{namespacemage_aec46035d0a6e15632a44ac88619fb675}{Get\+File\+Extension} (const string \&fname)
 \item 
-static const char $\ast$ \hyperlink{namespacemage_a81ebde51f9da00dd6fad364a2c5017cb}{Find\+Word\+End} (const char $\ast$buffer)
+wstring \hyperlink{namespacemage_ac95841e5c563311d50ef3524d5b7a8d8}{Get\+File\+Extension} (const wstring \&fname)
+\item 
+string \hyperlink{namespacemage_a83a9b478d1384147e758cd2edcd152a3}{Get\+File\+Name} (const string \&fname)
+\item 
+wstring \hyperlink{namespacemage_a04f348f48418c554940a817835b7a0c4}{Get\+File\+Name} (const wstring \&fname)
+\item 
+string \hyperlink{namespacemage_ac5c99281501e7af99e9fd0c332f0e113}{Get\+Path\+Name} (const string \&fname)
+\item 
+wstring \hyperlink{namespacemage_a171139f90ae3facdae52a61d5d73ddfa}{Get\+Path\+Name} (const wstring \&fname)
 \item 
 static void \hyperlink{namespacemage_a12282bdc04d00e024c5ddf93ed9ad785}{Process\+Error} (const char $\ast$format, const va\+\_\+list args, const string \&error\+\_\+type, int error\+\_\+disposition)
 \item 
@@ -174,11 +204,11 @@ void \hyperlink{namespacemage_a52a7fe8c9ce39afd9e0b0299373db0fa}{Error} (const c
 \item 
 void \hyperlink{namespacemage_aefd40c91591a8e0423e4222b4a5e6249}{Fatal} (const char $\ast$format,...)
 \item 
+uint16\+\_\+t \hyperlink{namespacemage_a2988e0e46e373691a189ea97135f1ed1}{Console\+Width} ()
+\item 
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a14798232aabfdf96d751f4fcca4e6ece}{Initialize\+Console} ()
 \item 
-int \hyperlink{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{Terminal\+Width} ()
-\item 
-\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_aa574a80cb5b7b939962a11c2f423d748}{Union} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb, const X\+M\+F\+L\+O\+A\+T3 \&point)
+\hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_ae9ff69102d392718bf8636b90c825a8d}{Union} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb, const \hyperlink{structmage_1_1_point3}{Point3} \&point)
 \item 
 \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_ab9b3a22c6c2fc5537f00bf4f7516746f}{Union} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb1, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb2)
 \item 
@@ -186,45 +216,49 @@ int \hyperlink{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{Terminal\+Width}
 \item 
 \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a47de3c8ef21f996ee234f83bb51b12e5}{Overlap\+Strict} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb1, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb2)
 \item 
+ostream \& \hyperlink{namespacemage_a44b2d3046802608544402245919f219b}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T3 \&v)
+\item 
+ostream \& \hyperlink{namespacemage_af6c1d1c5718d611450932bde30d2bfef}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T4 \&v)
+\item 
 void $\ast$ \hyperlink{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{Alloc\+Aligned} (size\+\_\+t size)
 \item 
 void \hyperlink{namespacemage_a401c54df21447c491c527735647b5f80}{Free\+Aligned} (void $\ast$ptr)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a17793ae4db8f6a180f6ccf6d02ea11f8}{Load\+Mesh\+From\+File} (const string \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af7a4b8ecd8f1577f9de2fe0aa4c19d07}{Load\+Mesh\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_afa50ab2f1511655bc88a08cc18de3e56}{Load\+Mesh\+From\+File} (const string \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aeb896e079e2219b3e0d15c510822667c}{Load\+Mesh\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
 \item 
 static X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a67f3c57c7dcc1ad50c7a8f5167d50b64}{Parse\+O\+B\+J\+Float2} (const char $\ast$token)
 \item 
 static X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_a926f2772c637d2b5c839a936cd8dbdd1}{Parse\+O\+B\+J\+Float3} (const char $\ast$token)
 \item 
-static X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_a694cf999c8539cfcd6afbb31fb2d27cd}{Parse\+O\+B\+J\+Vertex\+Coordinates} (const char $\ast$token)
+static \hyperlink{structmage_1_1_point3}{Point3} \hyperlink{namespacemage_a6d1303703ffe653e7cbe67c66d120fa1}{Parse\+O\+B\+J\+Vertex\+Coordinates} (const char $\ast$token)
 \item 
-static X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_a1c9ffc0af89d5d85505557864525e617}{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates} (const char $\ast$token)
+static \hyperlink{structmage_1_1_normal3}{Normal3} \hyperlink{namespacemage_ae0f7057c0ee72cda02b499c9d4647be0}{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates} (const char $\ast$token)
 \item 
 static X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a97780c7deeb5a5923b0d6665732e132d}{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates} (const char $\ast$token)
 \item 
 static X\+M\+U\+I\+N\+T3 \hyperlink{namespacemage_afe94a043cb3be4de3549098b7ad7a326}{Parse\+O\+B\+J\+Vertex\+Indices} (const char $\ast$token)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a564204c30bfe0ead7f0b4f3c76cefa2d}{Parse\+O\+B\+J\+Vertex} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates)
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a62daade0727c8a1bc406f5ceb378cc4f}{Parse\+O\+B\+J\+Vertex} (char $\ast$$\ast$next\+\_\+token, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates)
 \item 
 static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a8ffd4094ac940ff129fccb6d77c1f353}{Parse\+O\+B\+J\+Vertex\+Texture} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a3d0761a3accda925b303dd7d0889caac}{Parse\+O\+B\+J\+Vertex\+Normal} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates)
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a7fafd0a6eb151bf7a6473603f096adb8}{Parse\+O\+B\+J\+Vertex\+Normal} (char $\ast$$\ast$next\+\_\+token, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a2933dd3937569d4dfaa1483a1917d2b8}{Parse\+O\+B\+J\+Triangle\+Face} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates, map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&mapping, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_abe5e11d703a5072ec7d0f71816d3dcaa}{Parse\+O\+B\+J\+Triangle\+Face} (char $\ast$$\ast$next\+\_\+token, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates, map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&mapping, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a4545e24f19ab29730871b8c9861e48fc}{Parse\+O\+B\+J\+Line} (char $\ast$current\+\_\+line, uint32\+\_\+t line\+\_\+number, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates, map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&mapping, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_adf2073255065e75868351b15525bde22}{Parse\+O\+B\+J\+Line} (char $\ast$current\+\_\+line, uint32\+\_\+t line\+\_\+number, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates, map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&mapping, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aa4aeba09316a45a60d3528a03a79a24a}{Load\+O\+B\+J\+Mesh\+From\+File} (const string \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a14c9fa050bab548c4b1a2c71ecb089ff}{Load\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a780c3836bb45fb29a59551cadb00667e}{Load\+O\+B\+J\+Mesh\+From\+Memory} (const char $\ast$input, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a4a7430df49be0a35ff43909784387506}{Parse\+O\+B\+J\+Triangle\+Face} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a01b99a3a155f202bf3b2b84522d223c8}{Parse\+O\+B\+J\+Triangle\+Face} (char $\ast$$\ast$next\+\_\+token, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af6d86000a9cb414a29248b42a44669c6}{Parse\+O\+B\+J\+Line} (char $\ast$current\+\_\+line, uint32\+\_\+t line\+\_\+number, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&vertex\+\_\+normal\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a68ffe3226f626e65c4b58e02d50a9c71}{Parse\+O\+B\+J\+Line} (char $\ast$current\+\_\+line, uint32\+\_\+t line\+\_\+number, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a585df6c802117cdbc7ed0a99574d4aa1}{Load\+O\+B\+J\+Mesh\+From\+File} (const string \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a96c329ee6c1f48f127875fbd76a4b4c6}{Load\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a53665d32910467a7af514654a14039ce}{Load\+O\+B\+J\+Mesh\+From\+Memory} (const char $\ast$input, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
 \item 
@@ -238,37 +272,29 @@ float \hyperlink{namespacemage_a0de5ff6241a0474f4572c7c3ba342098}{Atomic\+Add} (
 \item 
 size\+\_\+t \hyperlink{namespacemage_afe0cda2eaeef24c7e3ee5d7a739b81e4}{Number\+Of\+System\+Cores} ()
 \item 
-void \hyperlink{namespacemage_a029a62d168a0c96ddd9d34b3b5294be0}{Parallel\+For} (function$<$ void(size\+\_\+t) $>$ func, size\+\_\+t nb\+\_\+work, size\+\_\+t chunk\+\_\+size=1)
-\item 
-size\+\_\+t \hyperlink{namespacemage_adab55b91c5b0e27766475ca19be3c4cf}{Max\+Thread\+Index} ()
-\item 
-void \hyperlink{namespacemage_a14b68ac56f898260b891bd264b57dd73}{Parallel\+Init} ()
-\item 
-void \hyperlink{namespacemage_a34c908d6d463ac859752d16e574fe8dc}{Parallel\+Cleanup} ()
-\item 
-static D\+W\+O\+RD W\+I\+N\+A\+PI \hyperlink{namespacemage_a1f113843a26e671776ec469adf7ccc51}{task\+\_\+entry} (L\+P\+V\+O\+ID lp\+Parameter)
-\item 
-void \hyperlink{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac}{Tasks\+Init} ()
-\item 
-void \hyperlink{namespacemage_a118ddaa5d9606328a0af412c85832e6b}{Tasks\+Cleanup} ()
-\item 
-void \hyperlink{namespacemage_a4d22783c8fe4d130a41b5ae001741df5}{Enqueue\+Tasks} (const vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ \&tasks)
-\item 
-void \hyperlink{namespacemage_a7da78c39175a029c92ed42d8fb9f30af}{Wait\+For\+All\+Tasks} ()
-\item 
 I\+N\+T\+\_\+\+P\+TR C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130}{Settings\+Dialog\+Proc\+Delegate} (H\+W\+ND hwnd\+Dlg, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
 \item 
 bool \hyperlink{namespacemage_abdccde1f16aa2239019e1b455d8b941b}{Reject\+Display\+Mode} (const D\+X\+G\+I\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+S\+C1 $\ast$display\+\_\+mode\+\_\+desc)
 \item 
 size\+\_\+t \hyperlink{namespacemage_a782fb3970da2fbbc93627f7324c193aa}{Bits\+Per\+Pixel} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a815c989b0e968e5854959e96c5796b01}{Compile\+Shader\+From\+File} (L\+P\+C\+W\+S\+TR fname, L\+P\+C\+S\+TR entry\+\_\+point, L\+P\+C\+S\+TR shader\+\_\+target, I\+D3\+D\+Blob $\ast$$\ast$output\+\_\+blob)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af63dbc237d243bcad8b6f2c0a9bb9163}{Compile\+Shader\+From\+File} (const wstring \&fname, const string \&entry\+\_\+point, const string \&shader\+\_\+target, I\+D3\+D\+Blob $\ast$$\ast$output\+\_\+blob)
 \item 
-char $\ast$ \hyperlink{namespacemage_aa376b0a0e5cfe0c0961c9f35555d55a6}{sgets} (char $\ast$str, int num, const char $\ast$$\ast$input)
+char $\ast$ \hyperlink{namespacemage_ab7f63cc8e67ba97382747bc75fd75f62}{str\+\_\+gets} (char $\ast$str, int num, const char $\ast$$\ast$input)
+\item 
+wchar\+\_\+t $\ast$ \hyperlink{namespacemage_a881ab89db7712612531d47a64c6dfaa1}{str\+\_\+gets} (wchar\+\_\+t $\ast$str, int num, const wchar\+\_\+t $\ast$$\ast$input)
 \item 
 bool \hyperlink{namespacemage_a4f78f15f269c1f65d4148983bc8224c5}{str\+\_\+equals} (const char $\ast$str1, const char $\ast$str2)
 \item 
+bool \hyperlink{namespacemage_a0013423e891bc8f522248a6a3f826681}{str\+\_\+equals} (const wchar\+\_\+t $\ast$str1, const wchar\+\_\+t $\ast$str2)
+\item 
 bool \hyperlink{namespacemage_a5194c40ccd591a8a8926ad7812abcd09}{str\+\_\+contains} (const char $\ast$str1, const char $\ast$str2)
+\item 
+bool \hyperlink{namespacemage_aac9609117e428765417683338ae8fa73}{str\+\_\+contains} (const wchar\+\_\+t $\ast$str1, const wchar\+\_\+t $\ast$str2)
+\item 
+const char $\ast$ \hyperlink{namespacemage_ab2e62d950dc620167f4128cb16033998}{Find\+Word\+End} (const char $\ast$buffer)
+\item 
+const wchar\+\_\+t $\ast$ \hyperlink{namespacemage_a39ee0a00cc5259ed6bb9d1ff85d9fd80}{Find\+Word\+End} (const wchar\+\_\+t $\ast$buffer)
 \item 
 static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_ad1df9b8a27dd30528717777fd0c9c3db}{Load\+Texture\+Data\+From\+File} (\+\_\+\+In\+\_\+z\+\_\+ const wchar\+\_\+t $\ast$file\+\_\+name, std\+::unique\+\_\+ptr$<$ uint8\+\_\+t\mbox{[}$\,$\mbox{]}$>$ \&dds\+\_\+data, \hyperlink{structmage_1_1_d_d_s___h_e_a_d_e_r}{D\+D\+S\+\_\+\+H\+E\+A\+D\+ER} $\ast$$\ast$header, uint8\+\_\+t $\ast$$\ast$bit\+\_\+data, size\+\_\+t $\ast$bit\+\_\+size)
 \item 
@@ -347,30 +373,6 @@ const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \h
 \item 
 const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a0f27594da3814c163fe995326acf6c5e}{tlvertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
 \item 
-static vector$<$ thread $>$ \hyperlink{namespacemage_ad2f58114b13692a9af3222fcd3b2ec2e}{workers}
-\item 
-static bool \hyperlink{namespacemage_a2342ab1ffdf94509ba4f9683189a1898}{shutdown\+\_\+workers} = false
-\item 
-static \hyperlink{classmage_1_1_parallel_for_loop}{Parallel\+For\+Loop} $\ast$ \hyperlink{namespacemage_a801b62787c07e98767a88f55154269a1}{work\+\_\+list} = nullptr
-\item 
-static mutex \hyperlink{namespacemage_a7e67d8a6b0029abe8f1480807f18b16a}{work\+\_\+list\+\_\+mutex}
-\item 
-static condition\+\_\+variable \hyperlink{namespacemage_a06c363811ca265ff89fbbe2b80e1e3d2}{work\+\_\+list\+\_\+condition}
-\item 
-thread\+\_\+local size\+\_\+t \hyperlink{namespacemage_aacfaaced796400d312a5d2cc43b5b09a}{Thread\+Index}
-\item 
-static H\+A\+N\+D\+LE $\ast$ \hyperlink{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c}{threads}
-\item 
-static \hyperlink{classmage_1_1_mutex}{Mutex} $\ast$ \hyperlink{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f}{task\+\_\+queue\+\_\+mutex} = \hyperlink{classmage_1_1_mutex_a48d784fa6bffd4088d9f89a2a9cca84e}{Mutex\+::\+Create}()
-\item 
-static vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$$>$ \hyperlink{namespacemage_a487c0bb81ed56ce18cd944e958961cdf}{task\+\_\+queue}
-\item 
-static \hyperlink{classmage_1_1_semaphore}{Semaphore} $\ast$ \hyperlink{namespacemage_a17c3448f9fba7521d188d30bdfb77e33}{worker\+\_\+semaphore}
-\item 
-static uint32\+\_\+t \hyperlink{namespacemage_a390e8652d67667609daf3aa64e3c00a8}{nb\+\_\+unfinished\+\_\+tasks}
-\item 
-static \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable} $\ast$ \hyperlink{namespacemage_a8c04b4285ebbc0fb416b1905c01cf149}{tasks\+\_\+running\+\_\+condition}
-\item 
 \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ \hyperlink{namespacemage_a73e54b9b368875ed0281ced59e2fca7e}{g\+\_\+device\+\_\+enumeration} = nullptr
 \item 
 const D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL \hyperlink{namespacemage_add3b7e051df553262371e077d9d66fd9}{g\+\_\+feature\+\_\+levels} \mbox{[}$\,$\mbox{]}
@@ -388,6 +390,13 @@ const uint32\+\_\+t \hyperlink{namespacemage_a52f784e41b51fee843891c6b5e9be479}{
 \subsubsection{\texorpdfstring{colour}{colour}}
 {\footnotesize\ttfamily typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_a2d4dece8fe175b32167f9a7b925adc7c}{mage\+::colour}}
 
+\hypertarget{namespacemage_ae74f374780900893caa5555d1031fd79}{}\label{namespacemage_ae74f374780900893caa5555d1031fd79} 
+\index{mage@{mage}!Com\+Ptr@{Com\+Ptr}}
+\index{Com\+Ptr@{Com\+Ptr}!mage@{mage}}
+\subsubsection{\texorpdfstring{Com\+Ptr}{ComPtr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{mage\+::\+Com\+Ptr} = typedef Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ T $>$}
+
 \hypertarget{namespacemage_aab5dae4b0aaf8129b9e0d651d91d4b38}{}\label{namespacemage_aab5dae4b0aaf8129b9e0d651d91d4b38} 
 \index{mage@{mage}!float3@{float3}}
 \index{float3@{float3}!mage@{mage}}
@@ -399,6 +408,20 @@ const uint32\+\_\+t \hyperlink{namespacemage_a52f784e41b51fee843891c6b5e9be479}{
 \index{float4@{float4}!mage@{mage}}
 \subsubsection{\texorpdfstring{float4}{float4}}
 {\footnotesize\ttfamily typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_aa79484ea5211c29727b3794199ac0a55}{mage\+::float4}}
+
+\hypertarget{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{}\label{namespacemage_a1e01ae66713838a7a67d30e44c67703e} 
+\index{mage@{mage}!Shared\+Ptr@{Shared\+Ptr}}
+\index{Shared\+Ptr@{Shared\+Ptr}!mage@{mage}}
+\subsubsection{\texorpdfstring{Shared\+Ptr}{SharedPtr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{mage\+::\+Shared\+Ptr} = typedef std\+::shared\+\_\+ptr$<$ T $>$}
+
+\hypertarget{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{}\label{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf} 
+\index{mage@{mage}!Unique\+Ptr@{Unique\+Ptr}}
+\index{Unique\+Ptr@{Unique\+Ptr}!mage@{mage}}
+\subsubsection{\texorpdfstring{Unique\+Ptr}{UniquePtr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{mage\+::\+Unique\+Ptr} = typedef std\+::unique\+\_\+ptr$<$ T $>$}
 
 
 
@@ -754,11 +777,11 @@ Checks whether a valid item is selected in a combo box.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if a valid item is selected in the combo box. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a815c989b0e968e5854959e96c5796b01}{}\label{namespacemage_a815c989b0e968e5854959e96c5796b01} 
+\hypertarget{namespacemage_af63dbc237d243bcad8b6f2c0a9bb9163}{}\label{namespacemage_af63dbc237d243bcad8b6f2c0a9bb9163} 
 \index{mage@{mage}!Compile\+Shader\+From\+File@{Compile\+Shader\+From\+File}}
 \index{Compile\+Shader\+From\+File@{Compile\+Shader\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Compile\+Shader\+From\+File()}{CompileShaderFromFile()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Compile\+Shader\+From\+File (\begin{DoxyParamCaption}\item[{L\+P\+C\+W\+S\+TR}]{fname,  }\item[{L\+P\+C\+S\+TR}]{entry\+\_\+point,  }\item[{L\+P\+C\+S\+TR}]{shader\+\_\+target,  }\item[{I\+D3\+D\+Blob $\ast$$\ast$}]{output\+\_\+blob }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Compile\+Shader\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{const string \&}]{entry\+\_\+point,  }\item[{const string \&}]{shader\+\_\+target,  }\item[{I\+D3\+D\+Blob $\ast$$\ast$}]{output\+\_\+blob }\end{DoxyParamCaption})}
 
 Compiles Microsoft High Level Shader Language (H\+L\+SL) code into bytecode for a given shader target.
 
@@ -773,6 +796,17 @@ Compiles Microsoft High Level Shader Language (H\+L\+SL) code into bytecode for 
 \mbox{\tt out}  & {\em output\+\_\+blob} & A pointer to a variable that receives a pointer to the I\+D3\+D\+Blob interface that you can use to access the compiled code. \\
 \hline
 \end{DoxyParams}
+\hypertarget{namespacemage_a2988e0e46e373691a189ea97135f1ed1}{}\label{namespacemage_a2988e0e46e373691a189ea97135f1ed1} 
+\index{mage@{mage}!Console\+Width@{Console\+Width}}
+\index{Console\+Width@{Console\+Width}!mage@{mage}}
+\subsubsection{\texorpdfstring{Console\+Width()}{ConsoleWidth()}}
+{\footnotesize\ttfamily uint16\+\_\+t mage\+::\+Console\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the fixed console width.
+
+\begin{DoxyReturn}{Returns}
+The fixed console width. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a60c2e53d311a0972990ac7ed09552fe4}{}\label{namespacemage_a60c2e53d311a0972990ac7ed09552fe4} 
 \index{mage@{mage}!Create\+D3\+D\+Resources@{Create\+D3\+D\+Resources}}
 \index{Create\+D3\+D\+Resources@{Create\+D3\+D\+Resources}!mage@{mage}}
@@ -896,12 +930,6 @@ A debug message is associated with generally useful information to log only in d
 \mbox{\tt in}  & {\em format} & Pointer to the message format. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacemage_a4d22783c8fe4d130a41b5ae001741df5}{}\label{namespacemage_a4d22783c8fe4d130a41b5ae001741df5} 
-\index{mage@{mage}!Enqueue\+Tasks@{Enqueue\+Tasks}}
-\index{Enqueue\+Tasks@{Enqueue\+Tasks}!mage@{mage}}
-\subsubsection{\texorpdfstring{Enqueue\+Tasks()}{EnqueueTasks()}}
-{\footnotesize\ttfamily void mage\+::\+Enqueue\+Tasks (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ \&}]{tasks }\end{DoxyParamCaption})}
-
 \hypertarget{namespacemage_a52a7fe8c9ce39afd9e0b0299373db0fa}{}\label{namespacemage_a52a7fe8c9ce39afd9e0b0299373db0fa} 
 \index{mage@{mage}!Error@{Error}}
 \index{Error@{Error}!mage@{mage}}
@@ -938,11 +966,11 @@ A fatal message is associated with any error that is forcing a shutdown of the s
 \subsubsection{\texorpdfstring{Fill\+Init\+Data()}{FillInitData()}}
 {\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Fill\+Init\+Data (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{width,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{height,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{depth,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{mip\+\_\+count,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{array\+\_\+size,  }\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{maxsize,  }\item[{\+\_\+\+In\+\_\+ size\+\_\+t}]{bit\+\_\+size,  }\item[{\+\_\+\+In\+\_\+reads\+\_\+bytes\+\_\+(bit\+\_\+size) const uint8\+\_\+t $\ast$}]{bit\+\_\+data,  }\item[{\+\_\+\+Out\+\_\+ size\+\_\+t \&}]{twidth,  }\item[{\+\_\+\+Out\+\_\+ size\+\_\+t \&}]{theight,  }\item[{\+\_\+\+Out\+\_\+ size\+\_\+t \&}]{tdepth,  }\item[{\+\_\+\+Out\+\_\+ size\+\_\+t \&}]{skip\+\_\+mip,  }\item[{\+\_\+\+Out\+\_\+writes\+\_\+(mip\+\_\+count $\ast$array\+\_\+size) D3\+D11\+\_\+\+S\+U\+B\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+D\+A\+TA $\ast$}]{init\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a81ebde51f9da00dd6fad364a2c5017cb}{}\label{namespacemage_a81ebde51f9da00dd6fad364a2c5017cb} 
+\hypertarget{namespacemage_ab2e62d950dc620167f4128cb16033998}{}\label{namespacemage_ab2e62d950dc620167f4128cb16033998} 
 \index{mage@{mage}!Find\+Word\+End@{Find\+Word\+End}}
 \index{Find\+Word\+End@{Find\+Word\+End}!mage@{mage}}
-\subsubsection{\texorpdfstring{Find\+Word\+End()}{FindWordEnd()}}
-{\footnotesize\ttfamily static const char$\ast$ mage\+::\+Find\+Word\+End (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\subsubsection{\texorpdfstring{Find\+Word\+End()}{FindWordEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const char$\ast$ mage\+::\+Find\+Word\+End (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buffer }\end{DoxyParamCaption})}
 
 Finds the end of a word.
 
@@ -952,7 +980,23 @@ Finds the end of a word.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Pointer to the end of the word. This means the pointer points to a space or null-\/terminating character. 
+Pointer to the end of the word. (i.\+e. pointer to a space or null-\/terminating character) 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a39ee0a00cc5259ed6bb9d1ff85d9fd80}{}\label{namespacemage_a39ee0a00cc5259ed6bb9d1ff85d9fd80} 
+\index{mage@{mage}!Find\+Word\+End@{Find\+Word\+End}}
+\index{Find\+Word\+End@{Find\+Word\+End}!mage@{mage}}
+\subsubsection{\texorpdfstring{Find\+Word\+End()}{FindWordEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const wchar\+\_\+t$\ast$ mage\+::\+Find\+Word\+End (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+Finds the end of a word.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & Pointer to the first character. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the end of the word. (i.\+e. pointer to a space or null-\/terminating character) 
 \end{DoxyReturn}
 \hypertarget{namespacemage_a401c54df21447c491c527735647b5f80}{}\label{namespacemage_a401c54df21447c491c527735647b5f80} 
 \index{mage@{mage}!Free\+Aligned@{Free\+Aligned}}
@@ -982,9 +1026,135 @@ Frees a block of memory that was allocated with \hyperlink{namespacemage_a6c97f7
 \hypertarget{namespacemage_aec46035d0a6e15632a44ac88619fb675}{}\label{namespacemage_aec46035d0a6e15632a44ac88619fb675} 
 \index{mage@{mage}!Get\+File\+Extension@{Get\+File\+Extension}}
 \index{Get\+File\+Extension@{Get\+File\+Extension}!mage@{mage}}
-\subsubsection{\texorpdfstring{Get\+File\+Extension()}{GetFileExtension()}}
+\subsubsection{\texorpdfstring{Get\+File\+Extension()}{GetFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily string mage\+::\+Get\+File\+Extension (\begin{DoxyParamCaption}\item[{const string \&}]{fname }\end{DoxyParamCaption})}
 
+Returns the extension of the given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The extension of the given file. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ac95841e5c563311d50ef3524d5b7a8d8}{}\label{namespacemage_ac95841e5c563311d50ef3524d5b7a8d8} 
+\index{mage@{mage}!Get\+File\+Extension@{Get\+File\+Extension}}
+\index{Get\+File\+Extension@{Get\+File\+Extension}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+File\+Extension()}{GetFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily wstring mage\+::\+Get\+File\+Extension (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
+
+Returns the extension of the given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The extension of the given file. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a74d063f352449eb92ca6d5faabb2f3cf}{}\label{namespacemage_a74d063f352449eb92ca6d5faabb2f3cf} 
+\index{mage@{mage}!Get\+Filename@{Get\+Filename}}
+\index{Get\+Filename@{Get\+Filename}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string mage\+::\+Get\+Filename (\begin{DoxyParamCaption}\item[{const string \&}]{path,  }\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+Returns the filename of the given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & A reference to the path of the file. \\
+\hline
+\mbox{\tt in}  & {\em name} & A reference to the name of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The filename of the given file. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aba14856287af620017274f19a4dda596}{}\label{namespacemage_aba14856287af620017274f19a4dda596} 
+\index{mage@{mage}!Get\+Filename@{Get\+Filename}}
+\index{Get\+Filename@{Get\+Filename}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily wstring mage\+::\+Get\+Filename (\begin{DoxyParamCaption}\item[{const wstring \&}]{path,  }\item[{const wstring \&}]{name }\end{DoxyParamCaption})}
+
+Returns the filename of the given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & A reference to the path of the file. \\
+\hline
+\mbox{\tt in}  & {\em name} & A reference to the name of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The filename of the given file. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a83a9b478d1384147e758cd2edcd152a3}{}\label{namespacemage_a83a9b478d1384147e758cd2edcd152a3} 
+\index{mage@{mage}!Get\+File\+Name@{Get\+File\+Name}}
+\index{Get\+File\+Name@{Get\+File\+Name}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+File\+Name()}{GetFileName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string mage\+::\+Get\+File\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{fname }\end{DoxyParamCaption})}
+
+Returns the name of the given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the given file. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a04f348f48418c554940a817835b7a0c4}{}\label{namespacemage_a04f348f48418c554940a817835b7a0c4} 
+\index{mage@{mage}!Get\+File\+Name@{Get\+File\+Name}}
+\index{Get\+File\+Name@{Get\+File\+Name}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+File\+Name()}{GetFileName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily wstring mage\+::\+Get\+File\+Name (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
+
+Returns the name of the given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the given file. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ac5c99281501e7af99e9fd0c332f0e113}{}\label{namespacemage_ac5c99281501e7af99e9fd0c332f0e113} 
+\index{mage@{mage}!Get\+Path\+Name@{Get\+Path\+Name}}
+\index{Get\+Path\+Name@{Get\+Path\+Name}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Path\+Name()}{GetPathName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string mage\+::\+Get\+Path\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{fname }\end{DoxyParamCaption})}
+
+Returns the path of the given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The path of the given file. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a171139f90ae3facdae52a61d5d73ddfa}{}\label{namespacemage_a171139f90ae3facdae52a61d5d73ddfa} 
+\index{mage@{mage}!Get\+Path\+Name@{Get\+Path\+Name}}
+\index{Get\+Path\+Name@{Get\+Path\+Name}!mage@{mage}}
+\subsubsection{\texorpdfstring{Get\+Path\+Name()}{GetPathName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily wstring mage\+::\+Get\+Path\+Name (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
+
+Returns the path of the given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fname} & A reference to the filename of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The path of the given file. 
+\end{DoxyReturn}
 \hypertarget{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2}{}\label{namespacemage_a7b67bb6f38f3e787fb3561d236b88bd2} 
 \index{mage@{mage}!Get\+Surface\+Info@{Get\+Surface\+Info}}
 \index{Get\+Surface\+Info@{Get\+Surface\+Info}!mage@{mage}}
@@ -1017,11 +1187,11 @@ Allocates a console to this engine for basic io and redirects stdin, stdout and 
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a17793ae4db8f6a180f6ccf6d02ea11f8}{}\label{namespacemage_a17793ae4db8f6a180f6ccf6d02ea11f8} 
+\hypertarget{namespacemage_af7a4b8ecd8f1577f9de2fe0aa4c19d07}{}\label{namespacemage_af7a4b8ecd8f1577f9de2fe0aa4c19d07} 
 \index{mage@{mage}!Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}}
 \index{Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+Mesh\+From\+File()}{LoadMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
 
 Loads a mesh from file.
 
@@ -1037,11 +1207,11 @@ Loads a mesh from file.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_afa50ab2f1511655bc88a08cc18de3e56}{}\label{namespacemage_afa50ab2f1511655bc88a08cc18de3e56} 
+\hypertarget{namespacemage_aeb896e079e2219b3e0d15c510822667c}{}\label{namespacemage_aeb896e079e2219b3e0d15c510822667c} 
 \index{mage@{mage}!Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}}
 \index{Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+Mesh\+From\+File()}{LoadMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
 
 Loads a mesh from file.
 
@@ -1055,11 +1225,11 @@ Loads a mesh from file.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_aa4aeba09316a45a60d3528a03a79a24a}{}\label{namespacemage_aa4aeba09316a45a60d3528a03a79a24a} 
+\hypertarget{namespacemage_a14c9fa050bab548c4b1a2c71ecb089ff}{}\label{namespacemage_a14c9fa050bab548c4b1a2c71ecb089ff} 
 \index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}}
 \index{Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+File()}{LoadOBJMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
 
 Loads an O\+BJ mesh from file.
 
@@ -1075,11 +1245,11 @@ Loads an O\+BJ mesh from file.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a585df6c802117cdbc7ed0a99574d4aa1}{}\label{namespacemage_a585df6c802117cdbc7ed0a99574d4aa1} 
+\hypertarget{namespacemage_a96c329ee6c1f48f127875fbd76a4b4c6}{}\label{namespacemage_a96c329ee6c1f48f127875fbd76a4b4c6} 
 \index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}}
 \index{Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+File()}{LoadOBJMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
 
 Loads an O\+BJ mesh from file.
 
@@ -1165,12 +1335,6 @@ The return value is the result of the message processing and depends on the mess
 \subsubsection{\texorpdfstring{Make\+S\+R\+G\+B()}{MakeSRGB()}}
 {\footnotesize\ttfamily static D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT mage\+::\+Make\+S\+R\+GB (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_adab55b91c5b0e27766475ca19be3c4cf}{}\label{namespacemage_adab55b91c5b0e27766475ca19be3c4cf} 
-\index{mage@{mage}!Max\+Thread\+Index@{Max\+Thread\+Index}}
-\index{Max\+Thread\+Index@{Max\+Thread\+Index}!mage@{mage}}
-\subsubsection{\texorpdfstring{Max\+Thread\+Index()}{MaxThreadIndex()}}
-{\footnotesize\ttfamily size\+\_\+t mage\+::\+Max\+Thread\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
 \hypertarget{namespacemage_afe0cda2eaeef24c7e3ee5d7a739b81e4}{}\label{namespacemage_afe0cda2eaeef24c7e3ee5d7a739b81e4} 
 \index{mage@{mage}!Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}}
 \index{Number\+Of\+System\+Cores@{Number\+Of\+System\+Cores}!mage@{mage}}
@@ -1182,6 +1346,18 @@ Returns the number of system cores (i.\+e. logical processors).
 \begin{DoxyReturn}{Returns}
 The number of system cores (i.\+e. logical processors). 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a44b2d3046802608544402245919f219b}{}\label{namespacemage_a44b2d3046802608544402245919f219b} 
+\index{mage@{mage}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!mage@{mage}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ostream\& mage\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{v }\end{DoxyParamCaption})}
+
+\hypertarget{namespacemage_af6c1d1c5718d611450932bde30d2bfef}{}\label{namespacemage_af6c1d1c5718d611450932bde30d2bfef} 
+\index{mage@{mage}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!mage@{mage}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ostream\& mage\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const X\+M\+F\+L\+O\+A\+T4 \&}]{v }\end{DoxyParamCaption})}
+
 \hypertarget{namespacemage_a1068090c66ff1c6398b134455730eb02}{}\label{namespacemage_a1068090c66ff1c6398b134455730eb02} 
 \index{mage@{mage}!Overlap@{Overlap}}
 \index{Overlap@{Overlap}!mage@{mage}}
@@ -1222,24 +1398,6 @@ The identity \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} in case of no strict o
 
 The strict overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb1} and {\itshape aabb2}. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a34c908d6d463ac859752d16e574fe8dc}{}\label{namespacemage_a34c908d6d463ac859752d16e574fe8dc} 
-\index{mage@{mage}!Parallel\+Cleanup@{Parallel\+Cleanup}}
-\index{Parallel\+Cleanup@{Parallel\+Cleanup}!mage@{mage}}
-\subsubsection{\texorpdfstring{Parallel\+Cleanup()}{ParallelCleanup()}}
-{\footnotesize\ttfamily void mage\+::\+Parallel\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\hypertarget{namespacemage_a029a62d168a0c96ddd9d34b3b5294be0}{}\label{namespacemage_a029a62d168a0c96ddd9d34b3b5294be0} 
-\index{mage@{mage}!Parallel\+For@{Parallel\+For}}
-\index{Parallel\+For@{Parallel\+For}!mage@{mage}}
-\subsubsection{\texorpdfstring{Parallel\+For()}{ParallelFor()}}
-{\footnotesize\ttfamily void mage\+::\+Parallel\+For (\begin{DoxyParamCaption}\item[{function$<$ void(size\+\_\+t) $>$}]{func,  }\item[{size\+\_\+t}]{nb\+\_\+work,  }\item[{size\+\_\+t}]{chunk\+\_\+size = {\ttfamily 1} }\end{DoxyParamCaption})}
-
-\hypertarget{namespacemage_a14b68ac56f898260b891bd264b57dd73}{}\label{namespacemage_a14b68ac56f898260b891bd264b57dd73} 
-\index{mage@{mage}!Parallel\+Init@{Parallel\+Init}}
-\index{Parallel\+Init@{Parallel\+Init}!mage@{mage}}
-\subsubsection{\texorpdfstring{Parallel\+Init()}{ParallelInit()}}
-{\footnotesize\ttfamily void mage\+::\+Parallel\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
 \hypertarget{namespacemage_a67f3c57c7dcc1ad50c7a8f5167d50b64}{}\label{namespacemage_a67f3c57c7dcc1ad50c7a8f5167d50b64} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Float2@{Parse\+O\+B\+J\+Float2}}
 \index{Parse\+O\+B\+J\+Float2@{Parse\+O\+B\+J\+Float2}!mage@{mage}}
@@ -1252,41 +1410,41 @@ The strict overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aab
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Float3()}{ParseOBJFloat3()}}
 {\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T3 mage\+::\+Parse\+O\+B\+J\+Float3 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a4545e24f19ab29730871b8c9861e48fc}{}\label{namespacemage_a4545e24f19ab29730871b8c9861e48fc} 
+\hypertarget{namespacemage_adf2073255065e75868351b15525bde22}{}\label{namespacemage_adf2073255065e75868351b15525bde22} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}}
 \index{Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Line()}{ParseOBJLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{current\+\_\+line,  }\item[{uint32\+\_\+t}]{line\+\_\+number,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&}]{mapping,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{current\+\_\+line,  }\item[{uint32\+\_\+t}]{line\+\_\+number,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&}]{mapping,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_af6d86000a9cb414a29248b42a44669c6}{}\label{namespacemage_af6d86000a9cb414a29248b42a44669c6} 
+\hypertarget{namespacemage_a68ffe3226f626e65c4b58e02d50a9c71}{}\label{namespacemage_a68ffe3226f626e65c4b58e02d50a9c71} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}}
 \index{Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Line()}{ParseOBJLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{current\+\_\+line,  }\item[{uint32\+\_\+t}]{line\+\_\+number,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{current\+\_\+line,  }\item[{uint32\+\_\+t}]{line\+\_\+number,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a2933dd3937569d4dfaa1483a1917d2b8}{}\label{namespacemage_a2933dd3937569d4dfaa1483a1917d2b8} 
+\hypertarget{namespacemage_abe5e11d703a5072ec7d0f71816d3dcaa}{}\label{namespacemage_abe5e11d703a5072ec7d0f71816d3dcaa} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}}
 \index{Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Triangle\+Face()}{ParseOBJTriangleFace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Triangle\+Face (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&}]{mapping,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Triangle\+Face (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&}]{mapping,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a4a7430df49be0a35ff43909784387506}{}\label{namespacemage_a4a7430df49be0a35ff43909784387506} 
+\hypertarget{namespacemage_a01b99a3a155f202bf3b2b84522d223c8}{}\label{namespacemage_a01b99a3a155f202bf3b2b84522d223c8} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}}
 \index{Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Triangle\+Face()}{ParseOBJTriangleFace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Triangle\+Face (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Triangle\+Face (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a564204c30bfe0ead7f0b4f3c76cefa2d}{}\label{namespacemage_a564204c30bfe0ead7f0b4f3c76cefa2d} 
+\hypertarget{namespacemage_a62daade0727c8a1bc406f5ceb378cc4f}{}\label{namespacemage_a62daade0727c8a1bc406f5ceb378cc4f} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex@{Parse\+O\+B\+J\+Vertex}}
 \index{Parse\+O\+B\+J\+Vertex@{Parse\+O\+B\+J\+Vertex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex()}{ParseOBJVertex()}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a694cf999c8539cfcd6afbb31fb2d27cd}{}\label{namespacemage_a694cf999c8539cfcd6afbb31fb2d27cd} 
+\hypertarget{namespacemage_a6d1303703ffe653e7cbe67c66d120fa1}{}\label{namespacemage_a6d1303703ffe653e7cbe67c66d120fa1} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Coordinates}}
 \index{Parse\+O\+B\+J\+Vertex\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Coordinates}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Coordinates()}{ParseOBJVertexCoordinates()}}
-{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T3 mage\+::\+Parse\+O\+B\+J\+Vertex\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \hyperlink{structmage_1_1_point3}{Point3} mage\+::\+Parse\+O\+B\+J\+Vertex\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \hypertarget{namespacemage_afe94a043cb3be4de3549098b7ad7a326}{}\label{namespacemage_afe94a043cb3be4de3549098b7ad7a326} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Indices@{Parse\+O\+B\+J\+Vertex\+Indices}}
@@ -1294,17 +1452,17 @@ The strict overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aab
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Indices()}{ParseOBJVertexIndices()}}
 {\footnotesize\ttfamily static X\+M\+U\+I\+N\+T3 mage\+::\+Parse\+O\+B\+J\+Vertex\+Indices (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a3d0761a3accda925b303dd7d0889caac}{}\label{namespacemage_a3d0761a3accda925b303dd7d0889caac} 
+\hypertarget{namespacemage_a7fafd0a6eb151bf7a6473603f096adb8}{}\label{namespacemage_a7fafd0a6eb151bf7a6473603f096adb8} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Normal@{Parse\+O\+B\+J\+Vertex\+Normal}}
 \index{Parse\+O\+B\+J\+Vertex\+Normal@{Parse\+O\+B\+J\+Vertex\+Normal}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Normal()}{ParseOBJVertexNormal()}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T3 $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a1c9ffc0af89d5d85505557864525e617}{}\label{namespacemage_a1c9ffc0af89d5d85505557864525e617} 
+\hypertarget{namespacemage_ae0f7057c0ee72cda02b499c9d4647be0}{}\label{namespacemage_ae0f7057c0ee72cda02b499c9d4647be0} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates}}
 \index{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates()}{ParseOBJVertexNormalCoordinates()}}
-{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T3 mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \hyperlink{structmage_1_1_normal3}{Normal3} mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \hypertarget{namespacemage_a8ffd4094ac940ff129fccb6d77c1f353}{}\label{namespacemage_a8ffd4094ac940ff129fccb6d77c1f353} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Texture@{Parse\+O\+B\+J\+Vertex\+Texture}}
@@ -1359,6 +1517,48 @@ Checks whether the given display mode needs to be rejected for the engine.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the given display mode needs to be rejected for the engine. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
+\hypertarget{namespacemage_a56c8c38aee820faf885024ed22e70a8e}{}\label{namespacemage_a56c8c38aee820faf885024ed22e70a8e} 
+\index{mage@{mage}!Remove\+And\+Destruct\+All\+Elements@{Remove\+And\+Destruct\+All\+Elements}}
+\index{Remove\+And\+Destruct\+All\+Elements@{Remove\+And\+Destruct\+All\+Elements}!mage@{mage}}
+\subsubsection{\texorpdfstring{Remove\+And\+Destruct\+All\+Elements()}{RemoveAndDestructAllElements()}}
+{\footnotesize\ttfamily template$<$typename ContainerT $>$ \\
+void mage\+::\+Remove\+And\+Destruct\+All\+Elements (\begin{DoxyParamCaption}\item[{ContainerT \&}]{container }\end{DoxyParamCaption})}
+
+Removes and destructs all the elements from the given container.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ContainerT} & The type of container. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em container} & A reference to the container. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacemage_a403ff95eb779de1fbbf139661feb2d1b}{}\label{namespacemage_a403ff95eb779de1fbbf139661feb2d1b} 
+\index{mage@{mage}!Remove\+If@{Remove\+If}}
+\index{Remove\+If@{Remove\+If}!mage@{mage}}
+\subsubsection{\texorpdfstring{Remove\+If()}{RemoveIf()}}
+{\footnotesize\ttfamily template$<$typename ContainerT , typename PredicateT $>$ \\
+void mage\+::\+Remove\+If (\begin{DoxyParamCaption}\item[{ContainerT \&}]{container,  }\item[{const PredicateT \&}]{predicate }\end{DoxyParamCaption})}
+
+Removes from the given container all the elements that compare equal to the given predicate. This reduces the container size by the number of elements removed.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ContainerT} & The type of container. \\
+\hline
+{\em PredicateT} & The type of predicate. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em container} & A reference to the container. \\
+\hline
+\mbox{\tt in}  & {\em predicate} & A reference to the predicate. \\
+\hline
+\end{DoxyParams}
 \hypertarget{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130}{}\label{namespacemage_a6b352e8d2bf3eeccf1a5dec3f1cf4130} 
 \index{mage@{mage}!Settings\+Dialog\+Proc\+Delegate@{Settings\+Dialog\+Proc\+Delegate}}
 \index{Settings\+Dialog\+Proc\+Delegate@{Settings\+Dialog\+Proc\+Delegate}!mage@{mage}}
@@ -1381,11 +1581,83 @@ Engine-\/defined callback function used with the Create\+Dialog for device enume
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if {\itshape u\+Msg} is processed. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_aa376b0a0e5cfe0c0961c9f35555d55a6}{}\label{namespacemage_aa376b0a0e5cfe0c0961c9f35555d55a6} 
-\index{mage@{mage}!sgets@{sgets}}
-\index{sgets@{sgets}!mage@{mage}}
-\subsubsection{\texorpdfstring{sgets()}{sgets()}}
-{\footnotesize\ttfamily char $\ast$ mage\+::sgets (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int}]{num,  }\item[{const char $\ast$$\ast$}]{input }\end{DoxyParamCaption})}
+\hypertarget{namespacemage_a5194c40ccd591a8a8926ad7812abcd09}{}\label{namespacemage_a5194c40ccd591a8a8926ad7812abcd09} 
+\index{mage@{mage}!str\+\_\+contains@{str\+\_\+contains}}
+\index{str\+\_\+contains@{str\+\_\+contains}!mage@{mage}}
+\subsubsection{\texorpdfstring{str\+\_\+contains()}{str\_contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool mage\+::str\+\_\+contains (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str1,  }\item[{const char $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+Checks whether the first given string contains the second given string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str1} & A pointer to the string to be scanned. \\
+\hline
+\mbox{\tt in}  & {\em str2} & A pointer to the string containing the sequence of characters to match. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape str1} contains a substring {\itshape str2}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_aac9609117e428765417683338ae8fa73}{}\label{namespacemage_aac9609117e428765417683338ae8fa73} 
+\index{mage@{mage}!str\+\_\+contains@{str\+\_\+contains}}
+\index{str\+\_\+contains@{str\+\_\+contains}!mage@{mage}}
+\subsubsection{\texorpdfstring{str\+\_\+contains()}{str\_contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool mage\+::str\+\_\+contains (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{str1,  }\item[{const wchar\+\_\+t $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+Checks whether the first given string contains the second given string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str1} & A pointer to the string to be scanned. \\
+\hline
+\mbox{\tt in}  & {\em str2} & A pointer to the string containing the sequence of characters to match. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape str1} contains a substring {\itshape str2}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a4f78f15f269c1f65d4148983bc8224c5}{}\label{namespacemage_a4f78f15f269c1f65d4148983bc8224c5} 
+\index{mage@{mage}!str\+\_\+equals@{str\+\_\+equals}}
+\index{str\+\_\+equals@{str\+\_\+equals}!mage@{mage}}
+\subsubsection{\texorpdfstring{str\+\_\+equals()}{str\_equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool mage\+::str\+\_\+equals (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str1,  }\item[{const char $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+Checks whether the given string are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str1} & A pointer to the string to be scanned. \\
+\hline
+\mbox{\tt in}  & {\em str2} & A pointer to the string containing the sequence of characters to match. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape str1} is equal to {\itshape str2}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_a0013423e891bc8f522248a6a3f826681}{}\label{namespacemage_a0013423e891bc8f522248a6a3f826681} 
+\index{mage@{mage}!str\+\_\+equals@{str\+\_\+equals}}
+\index{str\+\_\+equals@{str\+\_\+equals}!mage@{mage}}
+\subsubsection{\texorpdfstring{str\+\_\+equals()}{str\_equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool mage\+::str\+\_\+equals (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{str1,  }\item[{const wchar\+\_\+t $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+Checks whether the given string are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str1} & A pointer to the string to be scanned. \\
+\hline
+\mbox{\tt in}  & {\em str2} & A pointer to the string containing the sequence of characters to match. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape str1} is equal to {\itshape str2}. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{namespacemage_ab7f63cc8e67ba97382747bc75fd75f62}{}\label{namespacemage_ab7f63cc8e67ba97382747bc75fd75f62} 
+\index{mage@{mage}!str\+\_\+gets@{str\+\_\+gets}}
+\index{str\+\_\+gets@{str\+\_\+gets}!mage@{mage}}
+\subsubsection{\texorpdfstring{str\+\_\+gets()}{str\_gets()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char $\ast$ mage\+::str\+\_\+gets (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int}]{num,  }\item[{const char $\ast$$\ast$}]{input }\end{DoxyParamCaption})}
 
 Reads characters from the given input string and stores them as a C string into str until (num-\/1) characters have been read or either a newline or the end-\/of-\/file is reached, whichever happens first.
 
@@ -1405,86 +1677,35 @@ A terminating null character is automatically appended after the characters copi
 \begin{DoxyNote}{Note}
 The {\ttfamily sgets} function is the string variant of {\ttfamily fgets}. 
 \end{DoxyNote}
-\hypertarget{namespacemage_a5194c40ccd591a8a8926ad7812abcd09}{}\label{namespacemage_a5194c40ccd591a8a8926ad7812abcd09} 
-\index{mage@{mage}!str\+\_\+contains@{str\+\_\+contains}}
-\index{str\+\_\+contains@{str\+\_\+contains}!mage@{mage}}
-\subsubsection{\texorpdfstring{str\+\_\+contains()}{str\_contains()}}
-{\footnotesize\ttfamily bool mage\+::str\+\_\+contains (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str1,  }\item[{const char $\ast$}]{str2 }\end{DoxyParamCaption})}
+\hypertarget{namespacemage_a881ab89db7712612531d47a64c6dfaa1}{}\label{namespacemage_a881ab89db7712612531d47a64c6dfaa1} 
+\index{mage@{mage}!str\+\_\+gets@{str\+\_\+gets}}
+\index{str\+\_\+gets@{str\+\_\+gets}!mage@{mage}}
+\subsubsection{\texorpdfstring{str\+\_\+gets()}{str\_gets()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily wchar\+\_\+t $\ast$ mage\+::str\+\_\+gets (\begin{DoxyParamCaption}\item[{wchar\+\_\+t $\ast$}]{str,  }\item[{int}]{num,  }\item[{const wchar\+\_\+t $\ast$$\ast$}]{input }\end{DoxyParamCaption})}
 
-Checks whether the first given string contains the second given string.
+Reads characters from the given input string and stores them as a C string into str until (num-\/1) characters have been read or either a newline or the end-\/of-\/file is reached, whichever happens first.
 
+A newline character makes {\ttfamily sgets} stop reading, but it is considered a valid character by the function and included in the string copied to {\itshape str}.
 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em str1} & A pointer to the string to be scanned. \\
-\hline
-\mbox{\tt in}  & {\em str2} & A pointer to the string containing the sequence of characters to match. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if {\itshape str1} contains a substring {\itshape str2}. {\ttfamily false} otherwise. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_a4f78f15f269c1f65d4148983bc8224c5}{}\label{namespacemage_a4f78f15f269c1f65d4148983bc8224c5} 
-\index{mage@{mage}!str\+\_\+equals@{str\+\_\+equals}}
-\index{str\+\_\+equals@{str\+\_\+equals}!mage@{mage}}
-\subsubsection{\texorpdfstring{str\+\_\+equals()}{str\_equals()}}
-{\footnotesize\ttfamily bool mage\+::str\+\_\+equals (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str1,  }\item[{const char $\ast$}]{str2 }\end{DoxyParamCaption})}
-
-Checks whether the given string are equal.
+A terminating null character is automatically appended after the characters copied to {\itshape str}.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em str1} & A pointer to the string to be scanned. \\
+\mbox{\tt in}  & {\em str} & A pointer to an array of chars where the string read is copied. \\
 \hline
-\mbox{\tt in}  & {\em str2} & A pointer to the string containing the sequence of characters to match. \\
+\mbox{\tt in}  & {\em num} & Maximum number of characters to be copied into str (including the terminating null-\/character). \\
 \hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if {\itshape str1} is equal to {\itshape str2}. {\ttfamily false} otherwise. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_a1f113843a26e671776ec469adf7ccc51}{}\label{namespacemage_a1f113843a26e671776ec469adf7ccc51} 
-\index{mage@{mage}!task\+\_\+entry@{task\+\_\+entry}}
-\index{task\+\_\+entry@{task\+\_\+entry}!mage@{mage}}
-\subsubsection{\texorpdfstring{task\+\_\+entry()}{task\_entry()}}
-{\footnotesize\ttfamily static D\+W\+O\+RD W\+I\+N\+A\+PI mage\+::task\+\_\+entry (\begin{DoxyParamCaption}\item[{L\+P\+V\+O\+ID}]{lp\+Parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-An application-\/defined function that serves as the starting address for a thread.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em lp\+Parameter} & The thread data passed to the function using the {\ttfamily lp\+Parameter} parameter of Create\+Thread. \\
+\mbox{\tt in}  & {\em input} & A pointer to to a pointer to an array of chars that represents the input string. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A value indicating success or failure. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_a118ddaa5d9606328a0af412c85832e6b}{}\label{namespacemage_a118ddaa5d9606328a0af412c85832e6b} 
-\index{mage@{mage}!Tasks\+Cleanup@{Tasks\+Cleanup}}
-\index{Tasks\+Cleanup@{Tasks\+Cleanup}!mage@{mage}}
-\subsubsection{\texorpdfstring{Tasks\+Cleanup()}{TasksCleanup()}}
-{\footnotesize\ttfamily void mage\+::\+Tasks\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\hypertarget{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac}{}\label{namespacemage_a8252f7acebefd3efe34a15cc51e4a7ac} 
-\index{mage@{mage}!Tasks\+Init@{Tasks\+Init}}
-\index{Tasks\+Init@{Tasks\+Init}!mage@{mage}}
-\subsubsection{\texorpdfstring{Tasks\+Init()}{TasksInit()}}
-{\footnotesize\ttfamily void mage\+::\+Tasks\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\hypertarget{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc}{}\label{namespacemage_a0c12a51bf3468b372932ffc1138a4ddc} 
-\index{mage@{mage}!Terminal\+Width@{Terminal\+Width}}
-\index{Terminal\+Width@{Terminal\+Width}!mage@{mage}}
-\subsubsection{\texorpdfstring{Terminal\+Width()}{TerminalWidth()}}
-{\footnotesize\ttfamily int mage\+::\+Terminal\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Returns the fixed terminal width.
-
-\begin{DoxyReturn}{Returns}
-The fixed terminal width. 
-\end{DoxyReturn}
-\hypertarget{namespacemage_aa574a80cb5b7b939962a11c2f423d748}{}\label{namespacemage_aa574a80cb5b7b939962a11c2f423d748} 
+\begin{DoxyNote}{Note}
+The {\ttfamily sgets} function is the string variant of {\ttfamily fgets}. 
+\end{DoxyNote}
+\hypertarget{namespacemage_ae9ff69102d392718bf8636b90c825a8d}{}\label{namespacemage_ae9ff69102d392718bf8636b90c825a8d} 
 \index{mage@{mage}!Union@{Union}}
 \index{Union@{Union}!mage@{mage}}
 \subsubsection{\texorpdfstring{Union()}{Union()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb,  }\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{point }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} mage\+::\+Union (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb,  }\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption})}
 
 Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} and the given point.
 
@@ -1516,12 +1737,6 @@ Returns the union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of the two given 
 \begin{DoxyReturn}{Returns}
 The union \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb1} and {\itshape aabb2}. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a7da78c39175a029c92ed42d8fb9f30af}{}\label{namespacemage_a7da78c39175a029c92ed42d8fb9f30af} 
-\index{mage@{mage}!Wait\+For\+All\+Tasks@{Wait\+For\+All\+Tasks}}
-\index{Wait\+For\+All\+Tasks@{Wait\+For\+All\+Tasks}!mage@{mage}}
-\subsubsection{\texorpdfstring{Wait\+For\+All\+Tasks()}{WaitForAllTasks()}}
-{\footnotesize\ttfamily void mage\+::\+Wait\+For\+All\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
 \hypertarget{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5}{}\label{namespacemage_a0eccd8065c75d5f2bf86b48a5be3bfe5} 
 \index{mage@{mage}!Warning@{Warning}}
 \index{Warning@{Warning}!mage@{mage}}
@@ -1610,49 +1825,7 @@ The allowed pixel formats. \hypertarget{namespacemage_ae6b56f20c8e8917ef1be8d9e4
       D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \}
     \}
 \end{DoxyCode}
-The input element descriptor for a \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}. \hypertarget{namespacemage_a390e8652d67667609daf3aa64e3c00a8}{}\label{namespacemage_a390e8652d67667609daf3aa64e3c00a8} 
-\index{mage@{mage}!nb\+\_\+unfinished\+\_\+tasks@{nb\+\_\+unfinished\+\_\+tasks}}
-\index{nb\+\_\+unfinished\+\_\+tasks@{nb\+\_\+unfinished\+\_\+tasks}!mage@{mage}}
-\subsubsection{\texorpdfstring{nb\+\_\+unfinished\+\_\+tasks}{nb\_unfinished\_tasks}}
-{\footnotesize\ttfamily uint32\+\_\+t mage\+::nb\+\_\+unfinished\+\_\+tasks\hspace{0.3cm}{\ttfamily [static]}}
-
-The number of unfinished tasks. \hypertarget{namespacemage_a2342ab1ffdf94509ba4f9683189a1898}{}\label{namespacemage_a2342ab1ffdf94509ba4f9683189a1898} 
-\index{mage@{mage}!shutdown\+\_\+workers@{shutdown\+\_\+workers}}
-\index{shutdown\+\_\+workers@{shutdown\+\_\+workers}!mage@{mage}}
-\subsubsection{\texorpdfstring{shutdown\+\_\+workers}{shutdown\_workers}}
-{\footnotesize\ttfamily bool mage\+::shutdown\+\_\+workers = false\hspace{0.3cm}{\ttfamily [static]}}
-
-\hypertarget{namespacemage_a487c0bb81ed56ce18cd944e958961cdf}{}\label{namespacemage_a487c0bb81ed56ce18cd944e958961cdf} 
-\index{mage@{mage}!task\+\_\+queue@{task\+\_\+queue}}
-\index{task\+\_\+queue@{task\+\_\+queue}!mage@{mage}}
-\subsubsection{\texorpdfstring{task\+\_\+queue}{task\_queue}}
-{\footnotesize\ttfamily vector$<$ \hyperlink{classmage_1_1_task}{Task} $\ast$ $>$ mage\+::task\+\_\+queue\hspace{0.3cm}{\ttfamily [static]}}
-
-The task queue. \hypertarget{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f}{}\label{namespacemage_a7de4544ddddcf8e0d54dbfdc0778f13f} 
-\index{mage@{mage}!task\+\_\+queue\+\_\+mutex@{task\+\_\+queue\+\_\+mutex}}
-\index{task\+\_\+queue\+\_\+mutex@{task\+\_\+queue\+\_\+mutex}!mage@{mage}}
-\subsubsection{\texorpdfstring{task\+\_\+queue\+\_\+mutex}{task\_queue\_mutex}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_mutex}{Mutex}$\ast$ mage\+::task\+\_\+queue\+\_\+mutex = \hyperlink{classmage_1_1_mutex_a48d784fa6bffd4088d9f89a2a9cca84e}{Mutex\+::\+Create}()\hspace{0.3cm}{\ttfamily [static]}}
-
-The mutex for exclusive access to the task queue. \hypertarget{namespacemage_a8c04b4285ebbc0fb416b1905c01cf149}{}\label{namespacemage_a8c04b4285ebbc0fb416b1905c01cf149} 
-\index{mage@{mage}!tasks\+\_\+running\+\_\+condition@{tasks\+\_\+running\+\_\+condition}}
-\index{tasks\+\_\+running\+\_\+condition@{tasks\+\_\+running\+\_\+condition}!mage@{mage}}
-\subsubsection{\texorpdfstring{tasks\+\_\+running\+\_\+condition}{tasks\_running\_condition}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable}$\ast$ mage\+::tasks\+\_\+running\+\_\+condition\hspace{0.3cm}{\ttfamily [static]}}
-
-The running condition variable for exclusive access to the number of unfinished tasks and for signaling on updates. \hypertarget{namespacemage_aacfaaced796400d312a5d2cc43b5b09a}{}\label{namespacemage_aacfaaced796400d312a5d2cc43b5b09a} 
-\index{mage@{mage}!Thread\+Index@{Thread\+Index}}
-\index{Thread\+Index@{Thread\+Index}!mage@{mage}}
-\subsubsection{\texorpdfstring{Thread\+Index}{ThreadIndex}}
-{\footnotesize\ttfamily thread\+\_\+local size\+\_\+t mage\+::\+Thread\+Index}
-
-\hypertarget{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c}{}\label{namespacemage_a15e9f7d36194ec1b768a82a2294cce6c} 
-\index{mage@{mage}!threads@{threads}}
-\index{threads@{threads}!mage@{mage}}
-\subsubsection{\texorpdfstring{threads}{threads}}
-{\footnotesize\ttfamily H\+A\+N\+D\+LE$\ast$ mage\+::threads\hspace{0.3cm}{\ttfamily [static]}}
-
-The thread handles. \hypertarget{namespacemage_a0f27594da3814c163fe995326acf6c5e}{}\label{namespacemage_a0f27594da3814c163fe995326acf6c5e} 
+The input element descriptor for a \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}. \hypertarget{namespacemage_a0f27594da3814c163fe995326acf6c5e}{}\label{namespacemage_a0f27594da3814c163fe995326acf6c5e} 
 \index{mage@{mage}!tlvertex\+\_\+input\+\_\+element\+\_\+desc@{tlvertex\+\_\+input\+\_\+element\+\_\+desc}}
 \index{tlvertex\+\_\+input\+\_\+element\+\_\+desc@{tlvertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
 \subsubsection{\texorpdfstring{tlvertex\+\_\+input\+\_\+element\+\_\+desc}{tlvertex\_input\_element\_desc}}
@@ -1686,33 +1859,4 @@ The input element descriptor for a \hyperlink{structmage_1_1_t_l_vertex}{T\+L\+V
       D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \}
     \}
 \end{DoxyCode}
-The input element descriptor for a \hyperlink{structmage_1_1_vertex}{Vertex}. \hypertarget{namespacemage_a801b62787c07e98767a88f55154269a1}{}\label{namespacemage_a801b62787c07e98767a88f55154269a1} 
-\index{mage@{mage}!work\+\_\+list@{work\+\_\+list}}
-\index{work\+\_\+list@{work\+\_\+list}!mage@{mage}}
-\subsubsection{\texorpdfstring{work\+\_\+list}{work\_list}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_parallel_for_loop}{Parallel\+For\+Loop}$\ast$ mage\+::work\+\_\+list = nullptr\hspace{0.3cm}{\ttfamily [static]}}
-
-\hypertarget{namespacemage_a06c363811ca265ff89fbbe2b80e1e3d2}{}\label{namespacemage_a06c363811ca265ff89fbbe2b80e1e3d2} 
-\index{mage@{mage}!work\+\_\+list\+\_\+condition@{work\+\_\+list\+\_\+condition}}
-\index{work\+\_\+list\+\_\+condition@{work\+\_\+list\+\_\+condition}!mage@{mage}}
-\subsubsection{\texorpdfstring{work\+\_\+list\+\_\+condition}{work\_list\_condition}}
-{\footnotesize\ttfamily condition\+\_\+variable mage\+::work\+\_\+list\+\_\+condition\hspace{0.3cm}{\ttfamily [static]}}
-
-\hypertarget{namespacemage_a7e67d8a6b0029abe8f1480807f18b16a}{}\label{namespacemage_a7e67d8a6b0029abe8f1480807f18b16a} 
-\index{mage@{mage}!work\+\_\+list\+\_\+mutex@{work\+\_\+list\+\_\+mutex}}
-\index{work\+\_\+list\+\_\+mutex@{work\+\_\+list\+\_\+mutex}!mage@{mage}}
-\subsubsection{\texorpdfstring{work\+\_\+list\+\_\+mutex}{work\_list\_mutex}}
-{\footnotesize\ttfamily mutex mage\+::work\+\_\+list\+\_\+mutex\hspace{0.3cm}{\ttfamily [static]}}
-
-\hypertarget{namespacemage_a17c3448f9fba7521d188d30bdfb77e33}{}\label{namespacemage_a17c3448f9fba7521d188d30bdfb77e33} 
-\index{mage@{mage}!worker\+\_\+semaphore@{worker\+\_\+semaphore}}
-\index{worker\+\_\+semaphore@{worker\+\_\+semaphore}!mage@{mage}}
-\subsubsection{\texorpdfstring{worker\+\_\+semaphore}{worker\_semaphore}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_semaphore}{Semaphore}$\ast$ mage\+::worker\+\_\+semaphore\hspace{0.3cm}{\ttfamily [static]}}
-
-The worker semaphore for being able to work. \hypertarget{namespacemage_ad2f58114b13692a9af3222fcd3b2ec2e}{}\label{namespacemage_ad2f58114b13692a9af3222fcd3b2ec2e} 
-\index{mage@{mage}!workers@{workers}}
-\index{workers@{workers}!mage@{mage}}
-\subsubsection{\texorpdfstring{workers}{workers}}
-{\footnotesize\ttfamily vector$<$ thread $>$ mage\+::workers\hspace{0.3cm}{\ttfamily [static]}}
-
+The input element descriptor for a \hyperlink{structmage_1_1_vertex}{Vertex}. 

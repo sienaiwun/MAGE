@@ -30,6 +30,13 @@ const void $\ast$ \hyperlink{structmage_1_1_variable_a65ecc95bcdc26733394d3a32d3
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \hyperlink{structmage_1_1_variable_afa9cfd0a42d8a15cccf7f49197648504}{Set\+Value} (const T $\ast$value)
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_variable_a95b243cd65ea2f9be716545e6c4f4b8e}{Variable} (const \hyperlink{structmage_1_1_variable}{Variable} \&variable)=delete
+\item 
+\hyperlink{structmage_1_1_variable}{Variable} \& \hyperlink{structmage_1_1_variable_a99029d04b45f356b9681787fdab8a139}{operator=} (const \hyperlink{structmage_1_1_variable}{Variable} \&variable)=delete
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -48,7 +55,7 @@ A struct of (immutable) variables.
 \hypertarget{structmage_1_1_variable_a86a59487f5ae51954f75a27b6c9487ce}{}\label{structmage_1_1_variable_a86a59487f5ae51954f75a27b6c9487ce} 
 \index{mage\+::\+Variable@{mage\+::\+Variable}!Variable@{Variable}}
 \index{Variable@{Variable}!mage\+::\+Variable@{mage\+::\+Variable}}
-\subsubsection{\texorpdfstring{Variable()}{Variable()}}
+\subsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type}}]{type,  }\item[{const T $\ast$}]{value }\end{DoxyParamCaption})}
 
@@ -74,7 +81,20 @@ Constructs a variable.
 \subsubsection{\texorpdfstring{$\sim$\+Variable()}{~Variable()}}
 {\footnotesize\ttfamily mage\+::\+Variable\+::$\sim$\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Destructs this variable. 
+Destructs this variable. \hypertarget{structmage_1_1_variable_a95b243cd65ea2f9be716545e6c4f4b8e}{}\label{structmage_1_1_variable_a95b243cd65ea2f9be716545e6c4f4b8e} 
+\index{mage\+::\+Variable@{mage\+::\+Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!mage\+::\+Variable@{mage\+::\+Variable}}
+\subsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} \&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Constructs a variable from the given variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em variable} & A reference to the variable. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Function Documentation}
 \hypertarget{structmage_1_1_variable_a7f70fdadf34cdf6b26adc9910eade11d}{}\label{structmage_1_1_variable_a7f70fdadf34cdf6b26adc9910eade11d} 
@@ -125,6 +145,22 @@ Checks whether the given variable is not equal to this variable.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if and only if this variable and {\itshape variable} have not the same name. {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{structmage_1_1_variable_a99029d04b45f356b9681787fdab8a139}{}\label{structmage_1_1_variable_a99029d04b45f356b9681787fdab8a139} 
+\index{mage\+::\+Variable@{mage\+::\+Variable}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Variable@{mage\+::\+Variable}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_variable}{Variable}\& mage\+::\+Variable\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} \&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given variable to this variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em variable} & A reference to the variable to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given variable (i.\+e. this variable). 
 \end{DoxyReturn}
 \hypertarget{structmage_1_1_variable_a5d1f7965ca7d0e29f6879cda014e8fa9}{}\label{structmage_1_1_variable_a5d1f7965ca7d0e29f6879cda014e8fa9} 
 \index{mage\+::\+Variable@{mage\+::\+Variable}!operator==@{operator==}}

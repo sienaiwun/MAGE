@@ -81,44 +81,50 @@ $(document).ready(function(){initNavTree('structmage_1_1_engine_setup.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="structmage_1_1_engine_setup-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::EngineSetup Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="engine_8hpp_source.html">engine.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="engine__setup_8hpp_source.html">engine_setup.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a75ee36366d3035c9600e1dbe98973aa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a75ee36366d3035c9600e1dbe98973aa4">EngineSetup</a> (const wstring &amp;name=L&quot;Application&quot;)</td></tr>
-<tr class="separator:a75ee36366d3035c9600e1dbe98973aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926d9b0e6aa2d1e57d0c2bc2ca46a885"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a926d9b0e6aa2d1e57d0c2bc2ca46a885">EngineSetup</a> (HINSTANCE hinstance=nullptr, const wstring &amp;name=MAGE_DEFAULT_APPLICATION_NAME, void(*StateSetupFunction)()=nullptr)</td></tr>
+<tr class="separator:a926d9b0e6aa2d1e57d0c2bc2ca46a885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2399c7966ed02ce9e9ab951b7483aac1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a2399c7966ed02ce9e9ab951b7483aac1">EngineSetup</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)</td></tr>
 <tr class="separator:a2399c7966ed02ce9e9ab951b7483aac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a3a5afe40b976946699f69504b0a5e9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a6a3a5afe40b976946699f69504b0a5e9">~EngineSetup</a> ()</td></tr>
 <tr class="separator:a6a3a5afe40b976946699f69504b0a5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:af91461305cd9aa60e22fa770395d2238"><td class="memItemLeft" align="right" valign="top">HINSTANCE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#af91461305cd9aa60e22fa770395d2238">m_hinstance</a></td></tr>
-<tr class="separator:af91461305cd9aa60e22fa770395d2238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3866920e44c0752a89265f9f0c5c5d05"><td class="memItemLeft" align="right" valign="top">wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a3866920e44c0752a89265f9f0c5c5d05">m_name</a></td></tr>
-<tr class="separator:a3866920e44c0752a89265f9f0c5c5d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36a3c8a316c63e6c90ee9dd6efb82c0c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a36a3c8a316c63e6c90ee9dd6efb82c0c">StateSetup</a> )()</td></tr>
-<tr class="separator:a36a3c8a316c63e6c90ee9dd6efb82c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fed5e978c020ebc9d5080fe6fcefdc"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a63fed5e978c020ebc9d5080fe6fcefdc">GetApplicationName</a> () const</td></tr>
+<tr class="separator:a63fed5e978c020ebc9d5080fe6fcefdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9220896adfe924ac72165b4e2b13cf"><td class="memItemLeft" align="right" valign="top">HINSTANCE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a2d9220896adfe924ac72165b4e2b13cf">GetApplicationHinstance</a> () const</td></tr>
+<tr class="separator:a2d9220896adfe924ac72165b4e2b13cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95385739022f00e811b924c9bc0c031"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#ab95385739022f00e811b924c9bc0c031">SetupApplicationStates</a> () const</td></tr>
+<tr class="separator:ab95385739022f00e811b924c9bc0c031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aa4db9097cc627e5e543333b7f21f7cd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#aa4db9097cc627e5e543333b7f21f7cd6">operator=</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)</td></tr>
-<tr class="separator:aa4db9097cc627e5e543333b7f21f7cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7066882519b59ca533293f743334508"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#ad7066882519b59ca533293f743334508">operator=</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)=delete</td></tr>
+<tr class="separator:ad7066882519b59ca533293f743334508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af91461305cd9aa60e22fa770395d2238"><td class="memItemLeft" align="right" valign="top">HINSTANCE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#af91461305cd9aa60e22fa770395d2238">m_hinstance</a></td></tr>
+<tr class="separator:af91461305cd9aa60e22fa770395d2238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fba981d4b1c30eff304b029a013009"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a40fba981d4b1c30eff304b029a013009">m_name</a></td></tr>
+<tr class="separator:a40fba981d4b1c30eff304b029a013009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a3c8a316c63e6c90ee9dd6efb82c0c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_engine_setup.html#a36a3c8a316c63e6c90ee9dd6efb82c0c">StateSetup</a> )()</td></tr>
+<tr class="separator:a36a3c8a316c63e6c90ee9dd6efb82c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A struct of engine setups. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a75ee36366d3035c9600e1dbe98973aa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75ee36366d3035c9600e1dbe98973aa4">&sect;&nbsp;</a></span>EngineSetup() <span class="overload">[1/2]</span></h2>
+<a id="a926d9b0e6aa2d1e57d0c2bc2ca46a885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926d9b0e6aa2d1e57d0c2bc2ca46a885">&sect;&nbsp;</a></span>EngineSetup() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,16 +132,34 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">mage::EngineSetup::EngineSetup </td>
           <td>(</td>
-          <td class="paramtype">const wstring &amp;&#160;</td>
-          <td class="paramname"><em>name</em> = <code>L&quot;Application&quot;</code></td><td>)</td>
+          <td class="paramtype">HINSTANCE&#160;</td>
+          <td class="paramname"><em>hinstance</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>MAGE_DEFAULT_APPLICATION_NAME</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)()&#160;</td>
+          <td class="paramname"><em>StateSetupFunction</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs an engine setup with the given application name.</p>
+<p>Constructs an engine setup.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hinstance</td><td>The application instance handle of the application. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>A reference to the name of the application. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">StateSetupFunction</td><td>A pointer to a function to set up the states of the application. </td></tr>
   </table>
   </dd>
 </dl>
@@ -194,8 +218,46 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa4db9097cc627e5e543333b7f21f7cd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4db9097cc627e5e543333b7f21f7cd6">&sect;&nbsp;</a></span>operator=()</h2>
+<a id="a2d9220896adfe924ac72165b4e2b13cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9220896adfe924ac72165b4e2b13cf">&sect;&nbsp;</a></span>GetApplicationHinstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HINSTANCE mage::EngineSetup::GetApplicationHinstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the application instance handle of the application.</p>
+<dl class="section return"><dt>Returns</dt><dd>The application instance handle of the application. </dd></dl>
+
+</div>
+</div>
+<a id="a63fed5e978c020ebc9d5080fe6fcefdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63fed5e978c020ebc9d5080fe6fcefdc">&sect;&nbsp;</a></span>GetApplicationName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wstring&amp; mage::EngineSetup::GetApplicationName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the name of the application.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the name of the application. </dd></dl>
+
+</div>
+</div>
+<a id="ad7066882519b59ca533293f743334508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7066882519b59ca533293f743334508">&sect;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +275,7 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -228,32 +290,66 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab95385739022f00e811b924c9bc0c031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab95385739022f00e811b924c9bc0c031">&sect;&nbsp;</a></span>SetupApplicationStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::EngineSetup::SetupApplicationStates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets up the states of the application. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="af91461305cd9aa60e22fa770395d2238"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af91461305cd9aa60e22fa770395d2238">&sect;&nbsp;</a></span>m_hinstance</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">HINSTANCE mage::EngineSetup::m_hinstance</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Application instance handle. </p>
 
 </div>
 </div>
-<a id="a3866920e44c0752a89265f9f0c5c5d05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3866920e44c0752a89265f9f0c5c5d05">&sect;&nbsp;</a></span>m_name</h2>
+<a id="a40fba981d4b1c30eff304b029a013009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40fba981d4b1c30eff304b029a013009">&sect;&nbsp;</a></span>m_name</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">wstring mage::EngineSetup::m_name</td>
+          <td class="memname">const wstring mage::EngineSetup::m_name</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Name of the application. </p>
 
@@ -264,11 +360,19 @@ Private Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void(* mage::EngineSetup::StateSetup) ()</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>The state setup function. </p>
 
