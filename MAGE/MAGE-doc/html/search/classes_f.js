@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['timer',['Timer',['../classmage_1_1_timer.html',1,'mage']]],
-  ['tlvertex',['TLVertex',['../structmage_1_1_t_l_vertex.html',1,'mage']]],
-  ['transform',['Transform',['../structmage_1_1_transform.html',1,'mage']]]
+  ['uv',['UV',['../structmage_1_1_u_v.html',1,'mage']]]
 ];

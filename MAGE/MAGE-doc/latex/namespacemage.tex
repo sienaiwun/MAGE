@@ -9,11 +9,13 @@ struct \hyperlink{structmage_1_1_b_s}{BS}
 \item 
 class \hyperlink{classmage_1_1_camera}{Camera}
 \item 
-class \hyperlink{classmage_1_1_camera_node}{Camera\+Node}
+struct \hyperlink{structmage_1_1_camera_transform_buffer}{Camera\+Transform\+Buffer}
 \item 
 struct \hyperlink{structmage_1_1_cartesian_axes_system}{Cartesian\+Axes\+System}
 \item 
 struct \hyperlink{structmage_1_1_cartesian_coordinate_system}{Cartesian\+Coordinate\+System}
+\item 
+struct \hyperlink{structmage_1_1_color}{Color}
 \item 
 class \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable}
 \item 
@@ -29,23 +31,11 @@ class \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration}
 \item 
 struct \hyperlink{structmage_1_1_direction3}{Direction3}
 \item 
-struct \hyperlink{structmage_1_1_edge}{Edge}
-\item 
 class \hyperlink{classmage_1_1_engine}{Engine}
 \item 
 struct \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}
 \item 
-struct \hyperlink{structmage_1_1_face}{Face}
-\item 
-class \hyperlink{classmage_1_1_flat_mesh}{Flat\+Mesh}
-\item 
 struct \hyperlink{structmage_1_1_id_generator}{Id\+Generator}
-\item 
-struct \hyperlink{structmage_1_1_indexed_edge}{Indexed\+Edge}
-\item 
-struct \hyperlink{structmage_1_1_indexed_face}{Indexed\+Face}
-\item 
-class \hyperlink{classmage_1_1_indexed_mesh}{Indexed\+Mesh}
 \item 
 class \hyperlink{classmage_1_1_input_manager}{Input\+Manager}
 \item 
@@ -55,8 +45,6 @@ class \hyperlink{classmage_1_1_loadable}{Loadable}
 \item 
 struct \hyperlink{structmage_1_1_logging_configuration}{Logging\+Configuration}
 \item 
-struct \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}
-\item 
 class \hyperlink{classmage_1_1_main_window}{Main\+Window}
 \item 
 class \hyperlink{classmage_1_1_material}{Material}
@@ -65,6 +53,10 @@ class \hyperlink{classmage_1_1_memory_arena}{Memory\+Arena}
 \item 
 class \hyperlink{classmage_1_1_mesh}{Mesh}
 \item 
+class \hyperlink{classmage_1_1_model}{Model}
+\item 
+struct \hyperlink{structmage_1_1_model_transform_buffer}{Model\+Transform\+Buffer}
+\item 
 class \hyperlink{classmage_1_1_mouse}{Mouse}
 \item 
 class \hyperlink{classmage_1_1_mutex}{Mutex}
@@ -72,8 +64,6 @@ class \hyperlink{classmage_1_1_mutex}{Mutex}
 struct \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock}
 \item 
 struct \hyperlink{structmage_1_1_normal3}{Normal3}
-\item 
-struct \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3}
 \item 
 class \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera}
 \item 
@@ -95,10 +85,6 @@ class \hyperlink{classmage_1_1_resource}{Resource}
 \item 
 class \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}
 \item 
-class \hyperlink{classmage_1_1_scene_node}{Scene\+Node}
-\item 
-class \hyperlink{classmage_1_1_scene_node_visitor}{Scene\+Node\+Visitor}
-\item 
 class \hyperlink{classmage_1_1_semaphore}{Semaphore}
 \item 
 class \hyperlink{classmage_1_1_state}{State}
@@ -107,19 +93,33 @@ class \hyperlink{classmage_1_1_state_manager}{State\+Manager}
 \item 
 class \hyperlink{classmage_1_1_timer}{Timer}
 \item 
-struct \hyperlink{structmage_1_1_t_l_vertex}{T\+L\+Vertex}
-\item 
 struct \hyperlink{structmage_1_1_transform}{Transform}
+\item 
+struct \hyperlink{structmage_1_1_u_v}{UV}
 \item 
 struct \hyperlink{structmage_1_1_variable}{Variable}
 \item 
 class \hyperlink{classmage_1_1_variable_script}{Variable\+Script}
 \item 
-struct \hyperlink{structmage_1_1_vertex}{Vertex}
+struct \hyperlink{structmage_1_1_vertex_position}{Vertex\+Position}
+\item 
+struct \hyperlink{structmage_1_1_vertex_position_color}{Vertex\+Position\+Color}
+\item 
+struct \hyperlink{structmage_1_1_vertex_position_color_texture}{Vertex\+Position\+Color\+Texture}
+\item 
+struct \hyperlink{structmage_1_1_vertex_position_normal}{Vertex\+Position\+Normal}
+\item 
+struct \hyperlink{structmage_1_1_vertex_position_normal_color}{Vertex\+Position\+Normal\+Color}
+\item 
+struct \hyperlink{structmage_1_1_vertex_position_normal_color_texture}{Vertex\+Position\+Normal\+Color\+Texture}
+\item 
+struct \hyperlink{structmage_1_1_vertex_position_normal_texture}{Vertex\+Position\+Normal\+Texture}
+\item 
+struct \hyperlink{structmage_1_1_vertex_position_texture}{Vertex\+Position\+Texture}
+\item 
+struct \hyperlink{structmage_1_1_vertex_position_texture_texture}{Vertex\+Position\+Texture\+Texture}
 \item 
 class \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader}
-\item 
-struct \hyperlink{structmage_1_1_viewer_setup}{Viewer\+Setup}
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
@@ -134,7 +134,7 @@ typedef X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_aab5dae4b0aaf8129b9e0d651d
 \item 
 typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_aa79484ea5211c29727b3794199ac0a55}{float4}
 \item 
-typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_a2d4dece8fe175b32167f9a7b925adc7c}{colour}
+typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_a56eceea5a9bceb2b56073f3ea4945781}{color}
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
@@ -150,7 +150,7 @@ enum \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type}
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa330f20a16d536c4976cf58e354fc6584}{Float3\+Type}, 
 \newline
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa25e69e4405ceb3b38c05a9671e7f3b5d}{Float4\+Type}, 
-\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aab5fbb412d1d7febfc4131514995233fc}{Colour\+Type}, 
+\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa180bed0d41b64fede1f7b434be42e6bd}{Color\+Type}, 
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aaacb26519a81b631235b51091b05c2b10}{String\+Type}, 
 \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa6e4917f41203f9eb5a3fbab1b4719712}{Unknown\+Type}
  \}
@@ -216,6 +216,8 @@ H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a14798232aabfdf96d751f4fcca4e6ece}{In
 \item 
 \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \hyperlink{namespacemage_a47de3c8ef21f996ee234f83bb51b12e5}{Overlap\+Strict} (const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb1, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb2)
 \item 
+ostream \& \hyperlink{namespacemage_ac348ad49bf7e9912aa70cda1b0ca553d}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T2 \&v)
+\item 
 ostream \& \hyperlink{namespacemage_a44b2d3046802608544402245919f219b}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T3 \&v)
 \item 
 ostream \& \hyperlink{namespacemage_af6c1d1c5718d611450932bde30d2bfef}{operator$<$$<$} (ostream \&os, const X\+M\+F\+L\+O\+A\+T4 \&v)
@@ -224,43 +226,35 @@ void $\ast$ \hyperlink{namespacemage_a6c97f75df305a5e0a945e82a26e75c38}{Alloc\+A
 \item 
 void \hyperlink{namespacemage_a401c54df21447c491c527735647b5f80}{Free\+Aligned} (void $\ast$ptr)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_af7a4b8ecd8f1577f9de2fe0aa4c19d07}{Load\+Mesh\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+{\footnotesize template$<$typename Vertex $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a54cc08d7cd18b2c212812ef02d5cf194}{Load\+Mesh\+From\+File} (const wstring \&fname, vector$<$ Vertex $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer, bool invert\+\_\+handedness=false, bool clockwise\+\_\+order=true)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aeb896e079e2219b3e0d15c510822667c}{Load\+Mesh\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+{\footnotesize template$<$typename Vertex $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a45a3850330bf4e4c77025bc63017314f}{Load\+Mesh\+From\+File} (const wstring \&fname, vector$<$ Vertex $>$ \&vertex\+\_\+buffer, bool invert\+\_\+handedness=false, bool clockwise\+\_\+order=true)
 \item 
-static X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a67f3c57c7dcc1ad50c7a8f5167d50b64}{Parse\+O\+B\+J\+Float2} (const char $\ast$token)
+static X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a52c69b62679a24a6779ed86948a05ab5}{Parse\+O\+B\+J\+Float2} (char $\ast$$\ast$context, char $\ast$str=nullptr)
 \item 
-static X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_a926f2772c637d2b5c839a936cd8dbdd1}{Parse\+O\+B\+J\+Float3} (const char $\ast$token)
+static X\+M\+F\+L\+O\+A\+T3 \hyperlink{namespacemage_a4390ce64e8079d9ea78deb9f31a5e3b8}{Parse\+O\+B\+J\+Float3} (char $\ast$$\ast$context, char $\ast$str=nullptr)
 \item 
-static \hyperlink{structmage_1_1_point3}{Point3} \hyperlink{namespacemage_a6d1303703ffe653e7cbe67c66d120fa1}{Parse\+O\+B\+J\+Vertex\+Coordinates} (const char $\ast$token)
+static \hyperlink{structmage_1_1_point3}{Point3} \hyperlink{namespacemage_abea8800f56d9cc087d57fc3590064b39}{Parse\+O\+B\+J\+Vertex\+Coordinates} (char $\ast$$\ast$context, char $\ast$str=nullptr, bool invert\+\_\+handedness=false)
 \item 
-static \hyperlink{structmage_1_1_normal3}{Normal3} \hyperlink{namespacemage_ae0f7057c0ee72cda02b499c9d4647be0}{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates} (const char $\ast$token)
+static \hyperlink{structmage_1_1_normal3}{Normal3} \hyperlink{namespacemage_a0eca13c7526f5695d9bbf1e72e8070f2}{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates} (char $\ast$$\ast$context, char $\ast$str=nullptr, bool invert\+\_\+handedness=false)
 \item 
-static X\+M\+F\+L\+O\+A\+T2 \hyperlink{namespacemage_a97780c7deeb5a5923b0d6665732e132d}{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates} (const char $\ast$token)
+static \hyperlink{structmage_1_1_u_v}{UV} \hyperlink{namespacemage_ace537fe667468926db6cd06858347baf}{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates} (char $\ast$$\ast$context, char $\ast$str=nullptr, bool invert\+\_\+handedness=false)
 \item 
-static X\+M\+U\+I\+N\+T3 \hyperlink{namespacemage_afe94a043cb3be4de3549098b7ad7a326}{Parse\+O\+B\+J\+Vertex\+Indices} (const char $\ast$token)
+X\+M\+U\+I\+N\+T3 \hyperlink{namespacemage_a46a0de4aa38562797d310050c1d14c00}{Parse\+O\+B\+J\+Vertex\+Indices} (char $\ast$$\ast$context, char $\ast$str)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a62daade0727c8a1bc406f5ceb378cc4f}{Parse\+O\+B\+J\+Vertex} (char $\ast$$\ast$next\+\_\+token, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a1aa295310eb6a92d4c474d409e7b966b}{Parse\+O\+B\+J\+Vertex} (char $\ast$$\ast$context, O\+B\+J\+Buffer \&buffer, bool invert\+\_\+handedness)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a8ffd4094ac940ff129fccb6d77c1f353}{Parse\+O\+B\+J\+Vertex\+Texture} (char $\ast$$\ast$next\+\_\+token, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_abd6c64ed52b50feda59d25fa68e5e78e}{Parse\+O\+B\+J\+Vertex\+Texture} (char $\ast$$\ast$context, O\+B\+J\+Buffer \&buffer, bool invert\+\_\+handedness)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a7fafd0a6eb151bf7a6473603f096adb8}{Parse\+O\+B\+J\+Vertex\+Normal} (char $\ast$$\ast$next\+\_\+token, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates)
+H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aa0d86cb75d78008b84f224734047aa68}{Parse\+O\+B\+J\+Vertex\+Normal} (char $\ast$$\ast$context, O\+B\+J\+Buffer \&buffer, bool invert\+\_\+handedness)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_abe5e11d703a5072ec7d0f71816d3dcaa}{Parse\+O\+B\+J\+Triangle\+Face} (char $\ast$$\ast$next\+\_\+token, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates, map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&mapping, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+{\footnotesize template$<$typename Vertex $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a0ada27cceedfd280a1d089fa17bc6775}{Load\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, vector$<$ Vertex $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer, bool invert\+\_\+handedness, bool clockwise\+\_\+order)
 \item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_adf2073255065e75868351b15525bde22}{Parse\+O\+B\+J\+Line} (char $\ast$current\+\_\+line, uint32\+\_\+t line\+\_\+number, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates, map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&mapping, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+{\footnotesize template$<$typename Vertex $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a8eb34b1fdc3040a9b41e5bd204a60b78}{Load\+O\+B\+J\+Mesh\+From\+Memory} (const char $\ast$input, vector$<$ Vertex $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer, bool invert\+\_\+handedness, bool clockwise\+\_\+order)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a14c9fa050bab548c4b1a2c71ecb089ff}{Load\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
+{\footnotesize template$<$typename Vertex $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aed57cd62269a6f85d7b18dee5446e04a}{Load\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, vector$<$ Vertex $>$ \&vertex\+\_\+buffer, bool invert\+\_\+handedness, bool clockwise\+\_\+order)
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a780c3836bb45fb29a59551cadb00667e}{Load\+O\+B\+J\+Mesh\+From\+Memory} (const char $\ast$input, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer, vector$<$ uint32\+\_\+t $>$ \&index\+\_\+buffer)
-\item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a01b99a3a155f202bf3b2b84522d223c8}{Parse\+O\+B\+J\+Triangle\+Face} (char $\ast$$\ast$next\+\_\+token, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
-\item 
-static H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a68ffe3226f626e65c4b58e02d50a9c71}{Parse\+O\+B\+J\+Line} (char $\ast$current\+\_\+line, uint32\+\_\+t line\+\_\+number, vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&vertex\+\_\+coordinates, vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&vertex\+\_\+texture\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&vertex\+\_\+normal\+\_\+coordinates, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
-\item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a96c329ee6c1f48f127875fbd76a4b4c6}{Load\+O\+B\+J\+Mesh\+From\+File} (const wstring \&fname, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
-\item 
-H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_a53665d32910467a7af514654a14039ce}{Load\+O\+B\+J\+Mesh\+From\+Memory} (const char $\ast$input, vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&vertex\+\_\+buffer)
+{\footnotesize template$<$typename Vertex $>$ }\\H\+R\+E\+S\+U\+LT \hyperlink{namespacemage_aac24ad1b1bae2e0765c46f3c4f7069dd}{Load\+O\+B\+J\+Mesh\+From\+Memory} (const char $\ast$input, vector$<$ Vertex $>$ \&vertex\+\_\+buffer, bool invert\+\_\+handedness, bool clockwise\+\_\+order)
 \item 
 {\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespacemage_aed89242e67231f3ddef77bdc63b32b6c}{Atomic\+Compare\+And\+Swap\+Pointer} (T $\ast$$\ast$destination, T $\ast$exchange, T $\ast$comparand)
 \item 
@@ -367,12 +361,6 @@ L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{namespacemage_a7ab7652c7518922
 \item 
 \hyperlink{classmage_1_1_engine}{Engine} $\ast$ \hyperlink{namespacemage_a84bf83f1e8779d884452cdf08f56c19a}{g\+\_\+engine} = nullptr
 \item 
-const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119}{vertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
-\item 
-const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3}{lvertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
-\item 
-const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC \hyperlink{namespacemage_a0f27594da3814c163fe995326acf6c5e}{tlvertex\+\_\+input\+\_\+element\+\_\+desc} \mbox{[}$\,$\mbox{]}
-\item 
 \hyperlink{classmage_1_1_device_enumeration}{Device\+Enumeration} $\ast$ \hyperlink{namespacemage_a73e54b9b368875ed0281ced59e2fca7e}{g\+\_\+device\+\_\+enumeration} = nullptr
 \item 
 const D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL \hyperlink{namespacemage_add3b7e051df553262371e077d9d66fd9}{g\+\_\+feature\+\_\+levels} \mbox{[}$\,$\mbox{]}
@@ -384,11 +372,11 @@ const uint32\+\_\+t \hyperlink{namespacemage_a52f784e41b51fee843891c6b5e9be479}{
 
 
 \subsection{Typedef Documentation}
-\hypertarget{namespacemage_a2d4dece8fe175b32167f9a7b925adc7c}{}\label{namespacemage_a2d4dece8fe175b32167f9a7b925adc7c} 
-\index{mage@{mage}!colour@{colour}}
-\index{colour@{colour}!mage@{mage}}
-\subsubsection{\texorpdfstring{colour}{colour}}
-{\footnotesize\ttfamily typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_a2d4dece8fe175b32167f9a7b925adc7c}{mage\+::colour}}
+\hypertarget{namespacemage_a56eceea5a9bceb2b56073f3ea4945781}{}\label{namespacemage_a56eceea5a9bceb2b56073f3ea4945781} 
+\index{mage@{mage}!color@{color}}
+\index{color@{color}!mage@{mage}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily typedef X\+M\+F\+L\+O\+A\+T4 \hyperlink{namespacemage_a56eceea5a9bceb2b56073f3ea4945781}{mage\+::color}}
 
 \hypertarget{namespacemage_ae74f374780900893caa5555d1031fd79}{}\label{namespacemage_ae74f374780900893caa5555d1031fd79} 
 \index{mage@{mage}!Com\+Ptr@{Com\+Ptr}}
@@ -509,8 +497,8 @@ Float3\+Type&\\
 Float4\+Type&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Colour\+Type@{Colour\+Type}!mage@{mage}}\index{mage@{mage}!Colour\+Type@{Colour\+Type}}}\hypertarget{namespacemage_a530428e73bac0ba7fe84b29086a9e33aab5fbb412d1d7febfc4131514995233fc}{}\label{namespacemage_a530428e73bac0ba7fe84b29086a9e33aab5fbb412d1d7febfc4131514995233fc} 
-Colour\+Type&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Color\+Type@{Color\+Type}!mage@{mage}}\index{mage@{mage}!Color\+Type@{Color\+Type}}}\hypertarget{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa180bed0d41b64fede1f7b434be42e6bd}{}\label{namespacemage_a530428e73bac0ba7fe84b29086a9e33aa180bed0d41b64fede1f7b434be42e6bd} 
+Color\+Type&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{String\+Type@{String\+Type}!mage@{mage}}\index{mage@{mage}!String\+Type@{String\+Type}}}\hypertarget{namespacemage_a530428e73bac0ba7fe84b29086a9e33aaacb26519a81b631235b51091b05c2b10}{}\label{namespacemage_a530428e73bac0ba7fe84b29086a9e33aaacb26519a81b631235b51091b05c2b10} 
@@ -1187,14 +1175,20 @@ Allocates a console to this engine for basic io and redirects stdin, stdout and 
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_af7a4b8ecd8f1577f9de2fe0aa4c19d07}{}\label{namespacemage_af7a4b8ecd8f1577f9de2fe0aa4c19d07} 
+\hypertarget{namespacemage_a54cc08d7cd18b2c212812ef02d5cf194}{}\label{namespacemage_a54cc08d7cd18b2c212812ef02d5cf194} 
 \index{mage@{mage}!Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}}
 \index{Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+Mesh\+From\+File()}{LoadMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename Vertex $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ Vertex $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer,  }\item[{bool}]{invert\+\_\+handedness = {\ttfamily false},  }\item[{bool}]{clockwise\+\_\+order = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Loads a mesh from file.
 
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Vertex} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the file name. \\
@@ -1203,36 +1197,56 @@ Loads a mesh from file.
 \hline
 \mbox{\tt in,out}  & {\em index\+\_\+buffer} & A reference to the empty index buffer. \\
 \hline
+\mbox{\tt in}  & {\em invert\+\_\+handedness} & Flag indicating whether the handness of the coordinate system of the mesh should be inverted. \\
+\hline
+\mbox{\tt in}  & {\em clockwise\+\_\+order} & Flag indicating whether the vertices of triangles should be in clockwise order. \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_aeb896e079e2219b3e0d15c510822667c}{}\label{namespacemage_aeb896e079e2219b3e0d15c510822667c} 
+\hypertarget{namespacemage_a45a3850330bf4e4c77025bc63017314f}{}\label{namespacemage_a45a3850330bf4e4c77025bc63017314f} 
 \index{mage@{mage}!Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}}
 \index{Load\+Mesh\+From\+File@{Load\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+Mesh\+From\+File()}{LoadMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename Vertex $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Load\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ Vertex $>$ \&}]{vertex\+\_\+buffer,  }\item[{bool}]{invert\+\_\+handedness = {\ttfamily false},  }\item[{bool}]{clockwise\+\_\+order = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Loads a mesh from file.
 
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Vertex} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the file name. \\
 \hline
 \mbox{\tt in,out}  & {\em vertex\+\_\+buffer} & A reference to the empty vertex buffer. \\
 \hline
+\mbox{\tt in}  & {\em invert\+\_\+handedness} & Flag indicating whether the handness of the coordinate system of the mesh should be inverted. \\
+\hline
+\mbox{\tt in}  & {\em clockwise\+\_\+order} & Flag indicating whether the vertices of triangles should be in clockwise order. \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a14c9fa050bab548c4b1a2c71ecb089ff}{}\label{namespacemage_a14c9fa050bab548c4b1a2c71ecb089ff} 
+\hypertarget{namespacemage_a0ada27cceedfd280a1d089fa17bc6775}{}\label{namespacemage_a0ada27cceedfd280a1d089fa17bc6775} 
 \index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}}
 \index{Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+File()}{LoadOBJMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename Vertex $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ Vertex $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer,  }\item[{bool}]{invert\+\_\+handedness,  }\item[{bool}]{clockwise\+\_\+order }\end{DoxyParamCaption})}
 
 Loads an O\+BJ mesh from file.
 
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Vertex} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the file name. \\
@@ -1241,36 +1255,56 @@ Loads an O\+BJ mesh from file.
 \hline
 \mbox{\tt out}  & {\em index\+\_\+buffer} & A reference to the empty index buffer. \\
 \hline
+\mbox{\tt in}  & {\em invert\+\_\+handedness} & Flag indicating whether the handness of the coordinate system of the mesh should be inverted. \\
+\hline
+\mbox{\tt in}  & {\em clockwise\+\_\+order} & Flag indicating whether the vertices of triangles should be in clockwise order. \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a96c329ee6c1f48f127875fbd76a4b4c6}{}\label{namespacemage_a96c329ee6c1f48f127875fbd76a4b4c6} 
+\hypertarget{namespacemage_aed57cd62269a6f85d7b18dee5446e04a}{}\label{namespacemage_aed57cd62269a6f85d7b18dee5446e04a} 
 \index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}}
 \index{Load\+O\+B\+J\+Mesh\+From\+File@{Load\+O\+B\+J\+Mesh\+From\+File}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+File()}{LoadOBJMeshFromFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename Vertex $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname,  }\item[{vector$<$ Vertex $>$ \&}]{vertex\+\_\+buffer,  }\item[{bool}]{invert\+\_\+handedness,  }\item[{bool}]{clockwise\+\_\+order }\end{DoxyParamCaption})}
 
 Loads an O\+BJ mesh from file.
 
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Vertex} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the file name. \\
 \hline
 \mbox{\tt out}  & {\em vertex\+\_\+buffer} & A reference to the empty vertex buffer. \\
 \hline
+\mbox{\tt in}  & {\em invert\+\_\+handedness} & Flag indicating whether the handness of the coordinate system of the mesh should be inverted. \\
+\hline
+\mbox{\tt in}  & {\em clockwise\+\_\+order} & Flag indicating whether the vertices of triangles should be in clockwise order. \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a780c3836bb45fb29a59551cadb00667e}{}\label{namespacemage_a780c3836bb45fb29a59551cadb00667e} 
+\hypertarget{namespacemage_a8eb34b1fdc3040a9b41e5bd204a60b78}{}\label{namespacemage_a8eb34b1fdc3040a9b41e5bd204a60b78} 
 \index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+Memory@{Load\+O\+B\+J\+Mesh\+From\+Memory}}
 \index{Load\+O\+B\+J\+Mesh\+From\+Memory@{Load\+O\+B\+J\+Mesh\+From\+Memory}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+Memory()}{LoadOBJMeshFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+Memory (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename Vertex $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+Memory (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input,  }\item[{vector$<$ Vertex $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer,  }\item[{bool}]{invert\+\_\+handedness,  }\item[{bool}]{clockwise\+\_\+order }\end{DoxyParamCaption})}
 
 Loads an O\+BJ mesh from memory.
 
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Vertex} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em input} & A pointer to an array of chars that represents the input string. \\
@@ -1279,23 +1313,37 @@ Loads an O\+BJ mesh from memory.
 \hline
 \mbox{\tt out}  & {\em index\+\_\+buffer} & A reference to the empty index buffer. \\
 \hline
+\mbox{\tt in}  & {\em invert\+\_\+handedness} & Flag indicating whether the handness of the coordinate system of the mesh should be inverted. \\
+\hline
+\mbox{\tt in}  & {\em clockwise\+\_\+order} & Flag indicating whether the vertices of triangles should be in clockwise order. \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a53665d32910467a7af514654a14039ce}{}\label{namespacemage_a53665d32910467a7af514654a14039ce} 
+\hypertarget{namespacemage_aac24ad1b1bae2e0765c46f3c4f7069dd}{}\label{namespacemage_aac24ad1b1bae2e0765c46f3c4f7069dd} 
 \index{mage@{mage}!Load\+O\+B\+J\+Mesh\+From\+Memory@{Load\+O\+B\+J\+Mesh\+From\+Memory}}
 \index{Load\+O\+B\+J\+Mesh\+From\+Memory@{Load\+O\+B\+J\+Mesh\+From\+Memory}!mage@{mage}}
 \subsubsection{\texorpdfstring{Load\+O\+B\+J\+Mesh\+From\+Memory()}{LoadOBJMeshFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+Memory (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename Vertex $>$ \\
+H\+R\+E\+S\+U\+LT mage\+::\+Load\+O\+B\+J\+Mesh\+From\+Memory (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input,  }\item[{vector$<$ Vertex $>$ \&}]{vertex\+\_\+buffer,  }\item[{bool}]{invert\+\_\+handedness,  }\item[{bool}]{clockwise\+\_\+order }\end{DoxyParamCaption})}
 
 Loads an O\+BJ mesh from memory.
 
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Vertex} & The vertex type. \\
+\hline
+\end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em input} & A pointer to an array of chars that represents the input string. \\
 \hline
 \mbox{\tt out}  & {\em vertex\+\_\+buffer} & A reference to the empty vertex buffer. \\
+\hline
+\mbox{\tt in}  & {\em invert\+\_\+handedness} & Flag indicating whether the handness of the coordinate system of the mesh should be inverted. \\
+\hline
+\mbox{\tt in}  & {\em clockwise\+\_\+order} & Flag indicating whether the vertices of triangles should be in clockwise order. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -1346,16 +1394,22 @@ Returns the number of system cores (i.\+e. logical processors).
 \begin{DoxyReturn}{Returns}
 The number of system cores (i.\+e. logical processors). 
 \end{DoxyReturn}
+\hypertarget{namespacemage_ac348ad49bf7e9912aa70cda1b0ca553d}{}\label{namespacemage_ac348ad49bf7e9912aa70cda1b0ca553d} 
+\index{mage@{mage}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!mage@{mage}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily ostream\& mage\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const X\+M\+F\+L\+O\+A\+T2 \&}]{v }\end{DoxyParamCaption})}
+
 \hypertarget{namespacemage_a44b2d3046802608544402245919f219b}{}\label{namespacemage_a44b2d3046802608544402245919f219b} 
 \index{mage@{mage}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!mage@{mage}}
-\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily ostream\& mage\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const X\+M\+F\+L\+O\+A\+T3 \&}]{v }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_af6c1d1c5718d611450932bde30d2bfef}{}\label{namespacemage_af6c1d1c5718d611450932bde30d2bfef} 
 \index{mage@{mage}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!mage@{mage}}
-\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily ostream\& mage\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const X\+M\+F\+L\+O\+A\+T4 \&}]{v }\end{DoxyParamCaption})}
 
 \hypertarget{namespacemage_a1068090c66ff1c6398b134455730eb02}{}\label{namespacemage_a1068090c66ff1c6398b134455730eb02} 
@@ -1398,83 +1452,59 @@ The identity \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} in case of no strict o
 
 The strict overlap \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} of {\itshape aabb1} and {\itshape aabb2}. 
 \end{DoxyReturn}
-\hypertarget{namespacemage_a67f3c57c7dcc1ad50c7a8f5167d50b64}{}\label{namespacemage_a67f3c57c7dcc1ad50c7a8f5167d50b64} 
+\hypertarget{namespacemage_a52c69b62679a24a6779ed86948a05ab5}{}\label{namespacemage_a52c69b62679a24a6779ed86948a05ab5} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Float2@{Parse\+O\+B\+J\+Float2}}
 \index{Parse\+O\+B\+J\+Float2@{Parse\+O\+B\+J\+Float2}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Float2()}{ParseOBJFloat2()}}
-{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T2 mage\+::\+Parse\+O\+B\+J\+Float2 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T2 mage\+::\+Parse\+O\+B\+J\+Float2 (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{context,  }\item[{char $\ast$}]{str = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a926f2772c637d2b5c839a936cd8dbdd1}{}\label{namespacemage_a926f2772c637d2b5c839a936cd8dbdd1} 
+\hypertarget{namespacemage_a4390ce64e8079d9ea78deb9f31a5e3b8}{}\label{namespacemage_a4390ce64e8079d9ea78deb9f31a5e3b8} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Float3@{Parse\+O\+B\+J\+Float3}}
 \index{Parse\+O\+B\+J\+Float3@{Parse\+O\+B\+J\+Float3}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Float3()}{ParseOBJFloat3()}}
-{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T3 mage\+::\+Parse\+O\+B\+J\+Float3 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T3 mage\+::\+Parse\+O\+B\+J\+Float3 (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{context,  }\item[{char $\ast$}]{str = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_adf2073255065e75868351b15525bde22}{}\label{namespacemage_adf2073255065e75868351b15525bde22} 
-\index{mage@{mage}!Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}}
-\index{Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}!mage@{mage}}
-\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Line()}{ParseOBJLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{current\+\_\+line,  }\item[{uint32\+\_\+t}]{line\+\_\+number,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&}]{mapping,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\hypertarget{namespacemage_a68ffe3226f626e65c4b58e02d50a9c71}{}\label{namespacemage_a68ffe3226f626e65c4b58e02d50a9c71} 
-\index{mage@{mage}!Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}}
-\index{Parse\+O\+B\+J\+Line@{Parse\+O\+B\+J\+Line}!mage@{mage}}
-\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Line()}{ParseOBJLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{current\+\_\+line,  }\item[{uint32\+\_\+t}]{line\+\_\+number,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\hypertarget{namespacemage_abe5e11d703a5072ec7d0f71816d3dcaa}{}\label{namespacemage_abe5e11d703a5072ec7d0f71816d3dcaa} 
-\index{mage@{mage}!Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}}
-\index{Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}!mage@{mage}}
-\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Triangle\+Face()}{ParseOBJTriangleFace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Triangle\+Face (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \&}]{mapping,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer,  }\item[{vector$<$ uint32\+\_\+t $>$ \&}]{index\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\hypertarget{namespacemage_a01b99a3a155f202bf3b2b84522d223c8}{}\label{namespacemage_a01b99a3a155f202bf3b2b84522d223c8} 
-\index{mage@{mage}!Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}}
-\index{Parse\+O\+B\+J\+Triangle\+Face@{Parse\+O\+B\+J\+Triangle\+Face}!mage@{mage}}
-\subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Triangle\+Face()}{ParseOBJTriangleFace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Triangle\+Face (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates,  }\item[{vector$<$ \hyperlink{structmage_1_1_vertex}{Vertex} $>$ \&}]{vertex\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\hypertarget{namespacemage_a62daade0727c8a1bc406f5ceb378cc4f}{}\label{namespacemage_a62daade0727c8a1bc406f5ceb378cc4f} 
+\hypertarget{namespacemage_a1aa295310eb6a92d4c474d409e7b966b}{}\label{namespacemage_a1aa295310eb6a92d4c474d409e7b966b} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex@{Parse\+O\+B\+J\+Vertex}}
 \index{Parse\+O\+B\+J\+Vertex@{Parse\+O\+B\+J\+Vertex}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex()}{ParseOBJVertex()}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \&}]{vertex\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{context,  }\item[{O\+B\+J\+Buffer \&}]{buffer,  }\item[{bool}]{invert\+\_\+handedness }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a6d1303703ffe653e7cbe67c66d120fa1}{}\label{namespacemage_a6d1303703ffe653e7cbe67c66d120fa1} 
+\hypertarget{namespacemage_abea8800f56d9cc087d57fc3590064b39}{}\label{namespacemage_abea8800f56d9cc087d57fc3590064b39} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Coordinates}}
 \index{Parse\+O\+B\+J\+Vertex\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Coordinates}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Coordinates()}{ParseOBJVertexCoordinates()}}
-{\footnotesize\ttfamily static \hyperlink{structmage_1_1_point3}{Point3} mage\+::\+Parse\+O\+B\+J\+Vertex\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \hyperlink{structmage_1_1_point3}{Point3} mage\+::\+Parse\+O\+B\+J\+Vertex\+Coordinates (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{context,  }\item[{char $\ast$}]{str = {\ttfamily nullptr},  }\item[{bool}]{invert\+\_\+handedness = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_afe94a043cb3be4de3549098b7ad7a326}{}\label{namespacemage_afe94a043cb3be4de3549098b7ad7a326} 
+\hypertarget{namespacemage_a46a0de4aa38562797d310050c1d14c00}{}\label{namespacemage_a46a0de4aa38562797d310050c1d14c00} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Indices@{Parse\+O\+B\+J\+Vertex\+Indices}}
 \index{Parse\+O\+B\+J\+Vertex\+Indices@{Parse\+O\+B\+J\+Vertex\+Indices}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Indices()}{ParseOBJVertexIndices()}}
-{\footnotesize\ttfamily static X\+M\+U\+I\+N\+T3 mage\+::\+Parse\+O\+B\+J\+Vertex\+Indices (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily X\+M\+U\+I\+N\+T3 mage\+::\+Parse\+O\+B\+J\+Vertex\+Indices (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{context,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a7fafd0a6eb151bf7a6473603f096adb8}{}\label{namespacemage_a7fafd0a6eb151bf7a6473603f096adb8} 
+\hypertarget{namespacemage_aa0d86cb75d78008b84f224734047aa68}{}\label{namespacemage_aa0d86cb75d78008b84f224734047aa68} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Normal@{Parse\+O\+B\+J\+Vertex\+Normal}}
 \index{Parse\+O\+B\+J\+Vertex\+Normal@{Parse\+O\+B\+J\+Vertex\+Normal}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Normal()}{ParseOBJVertexNormal()}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \&}]{vertex\+\_\+normal\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{context,  }\item[{O\+B\+J\+Buffer \&}]{buffer,  }\item[{bool}]{invert\+\_\+handedness }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_ae0f7057c0ee72cda02b499c9d4647be0}{}\label{namespacemage_ae0f7057c0ee72cda02b499c9d4647be0} 
+\hypertarget{namespacemage_a0eca13c7526f5695d9bbf1e72e8070f2}{}\label{namespacemage_a0eca13c7526f5695d9bbf1e72e8070f2} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates}}
 \index{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates()}{ParseOBJVertexNormalCoordinates()}}
-{\footnotesize\ttfamily static \hyperlink{structmage_1_1_normal3}{Normal3} mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \hyperlink{structmage_1_1_normal3}{Normal3} mage\+::\+Parse\+O\+B\+J\+Vertex\+Normal\+Coordinates (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{context,  }\item[{char $\ast$}]{str = {\ttfamily nullptr},  }\item[{bool}]{invert\+\_\+handedness = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\hypertarget{namespacemage_a8ffd4094ac940ff129fccb6d77c1f353}{}\label{namespacemage_a8ffd4094ac940ff129fccb6d77c1f353} 
+\hypertarget{namespacemage_abd6c64ed52b50feda59d25fa68e5e78e}{}\label{namespacemage_abd6c64ed52b50feda59d25fa68e5e78e} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Texture@{Parse\+O\+B\+J\+Vertex\+Texture}}
 \index{Parse\+O\+B\+J\+Vertex\+Texture@{Parse\+O\+B\+J\+Vertex\+Texture}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Texture()}{ParseOBJVertexTexture()}}
-{\footnotesize\ttfamily static H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex\+Texture (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{next\+\_\+token,  }\item[{vector$<$ X\+M\+F\+L\+O\+A\+T2 $>$ \&}]{vertex\+\_\+texture\+\_\+coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Parse\+O\+B\+J\+Vertex\+Texture (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{context,  }\item[{O\+B\+J\+Buffer \&}]{buffer,  }\item[{bool}]{invert\+\_\+handedness }\end{DoxyParamCaption})}
 
-\hypertarget{namespacemage_a97780c7deeb5a5923b0d6665732e132d}{}\label{namespacemage_a97780c7deeb5a5923b0d6665732e132d} 
+\hypertarget{namespacemage_ace537fe667468926db6cd06858347baf}{}\label{namespacemage_ace537fe667468926db6cd06858347baf} 
 \index{mage@{mage}!Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates}}
 \index{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates@{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates}!mage@{mage}}
 \subsubsection{\texorpdfstring{Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates()}{ParseOBJVertexTextureCoordinates()}}
-{\footnotesize\ttfamily static X\+M\+F\+L\+O\+A\+T2 mage\+::\+Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \hyperlink{structmage_1_1_u_v}{UV} mage\+::\+Parse\+O\+B\+J\+Vertex\+Texture\+Coordinates (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{context,  }\item[{char $\ast$}]{str = {\ttfamily nullptr},  }\item[{bool}]{invert\+\_\+handedness = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \hypertarget{namespacemage_a064756443bd8a1af6974f22c81d29ed0}{}\label{namespacemage_a064756443bd8a1af6974f22c81d29ed0} 
 \index{mage@{mage}!Print\+Console\+Header@{Print\+Console\+Header}}
@@ -1808,55 +1838,4 @@ The logging configuration defined by the user and used by the engine. \hypertarg
         DXGI\_FORMAT\_R10G10B10A2\_UNORM, 
     \}
 \end{DoxyCode}
-The allowed pixel formats. \hypertarget{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3}{}\label{namespacemage_ae6b56f20c8e8917ef1be8d9e4cef3ea3} 
-\index{mage@{mage}!lvertex\+\_\+input\+\_\+element\+\_\+desc@{lvertex\+\_\+input\+\_\+element\+\_\+desc}}
-\index{lvertex\+\_\+input\+\_\+element\+\_\+desc@{lvertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
-\subsubsection{\texorpdfstring{lvertex\+\_\+input\+\_\+element\+\_\+desc}{lvertex\_input\_element\_desc}}
-{\footnotesize\ttfamily const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC mage\+::lvertex\+\_\+input\+\_\+element\+\_\+desc\mbox{[}$\,$\mbox{]}}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}
-= \{
-        \{ \textcolor{stringliteral}{"POSITION"}, 0, DXGI\_FORMAT\_R32G32B32\_FLOAT,    0, UINT(offsetof(LVertex, p)),       
-      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"DIFFUSE"},  0, DXGI\_FORMAT\_R32G32B32A32\_FLOAT, 0, UINT(offsetof(LVertex, diffuse)), 
-      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"TEXCOORD"}, 0, DXGI\_FORMAT\_R32G32\_FLOAT,       0, UINT(offsetof(LVertex, tex)),     
-      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \}
-    \}
-\end{DoxyCode}
-The input element descriptor for a \hyperlink{structmage_1_1_l_vertex}{L\+Vertex}. \hypertarget{namespacemage_a0f27594da3814c163fe995326acf6c5e}{}\label{namespacemage_a0f27594da3814c163fe995326acf6c5e} 
-\index{mage@{mage}!tlvertex\+\_\+input\+\_\+element\+\_\+desc@{tlvertex\+\_\+input\+\_\+element\+\_\+desc}}
-\index{tlvertex\+\_\+input\+\_\+element\+\_\+desc@{tlvertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
-\subsubsection{\texorpdfstring{tlvertex\+\_\+input\+\_\+element\+\_\+desc}{tlvertex\_input\_element\_desc}}
-{\footnotesize\ttfamily const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC mage\+::tlvertex\+\_\+input\+\_\+element\+\_\+desc\mbox{[}$\,$\mbox{]}}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}
-= \{
-        \{ \textcolor{stringliteral}{"POSITION"}, 0, DXGI\_FORMAT\_R32G32B32A32\_FLOAT, 0, UINT(offsetof(TLVertex, p)),       
-      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"DIFFUSE"},  0, DXGI\_FORMAT\_R32G32B32A32\_FLOAT, 0, UINT(offsetof(TLVertex, diffuse)), 
-      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"TEXCOORD"}, 0, DXGI\_FORMAT\_R32G32\_FLOAT,       0, UINT(offsetof(TLVertex, tex)),     
-      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \}
-    \}
-\end{DoxyCode}
-The input element descriptor for a \hyperlink{structmage_1_1_t_l_vertex}{T\+L\+Vertex} \hypertarget{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119}{}\label{namespacemage_a8647e0bbbbe87e5c6d7a4d4622230119} 
-\index{mage@{mage}!vertex\+\_\+input\+\_\+element\+\_\+desc@{vertex\+\_\+input\+\_\+element\+\_\+desc}}
-\index{vertex\+\_\+input\+\_\+element\+\_\+desc@{vertex\+\_\+input\+\_\+element\+\_\+desc}!mage@{mage}}
-\subsubsection{\texorpdfstring{vertex\+\_\+input\+\_\+element\+\_\+desc}{vertex\_input\_element\_desc}}
-{\footnotesize\ttfamily const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC mage\+::vertex\+\_\+input\+\_\+element\+\_\+desc\mbox{[}$\,$\mbox{]}}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}
-= \{
-        \{ \textcolor{stringliteral}{"POSITION"}, 0, DXGI\_FORMAT\_R32G32B32\_FLOAT, 0, UINT(offsetof(Vertex, p)),   
-      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"NORMAL"},   0, DXGI\_FORMAT\_R32G32B32\_FLOAT, 0, UINT(offsetof(Vertex, n)),   
-      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \},
-        \{ \textcolor{stringliteral}{"TEXCOORD"}, 0, DXGI\_FORMAT\_R32G32\_FLOAT,    0, UINT(offsetof(Vertex, tex)), 
-      D3D11\_INPUT\_PER\_VERTEX\_DATA, 0 \}
-    \}
-\end{DoxyCode}
-The input element descriptor for a \hyperlink{structmage_1_1_vertex}{Vertex}. 
+The allowed pixel formats. 

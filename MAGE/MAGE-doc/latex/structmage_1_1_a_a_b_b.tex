@@ -19,10 +19,6 @@ bool \hyperlink{structmage_1_1_a_a_b_b_a67d1820b5ee787f02e6cfd593aca35fd}{Enclos
 \item 
 bool \hyperlink{structmage_1_1_a_a_b_b_a436950a97b647179506bb42a3f2f2b34}{Encloses\+Strict} (const \hyperlink{structmage_1_1_point3}{Point3} \&point) const
 \item 
-bool \hyperlink{structmage_1_1_a_a_b_b_ab57318f2ea79779ed357a7ecdd101132}{Encloses} (const \hyperlink{structmage_1_1_face}{Face} \&face) const
-\item 
-bool \hyperlink{structmage_1_1_a_a_b_b_acc5a6584d01c80abf5a59405b21e1a2c}{Encloses\+Strict} (const \hyperlink{structmage_1_1_face}{Face} \&face) const
-\item 
 bool \hyperlink{structmage_1_1_a_a_b_b_a7d4cd9138aa14aa79fba35a266634dac}{Enclosed\+By} (const list$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&planes) const
 \item 
 bool \hyperlink{structmage_1_1_a_a_b_b_a098cdfecc66ce8a1e557280aafda33e3}{Enclosed\+Strict\+By} (const list$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&planes) const
@@ -87,8 +83,24 @@ The diagonal of this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
 \subsubsection{\texorpdfstring{Enclosed\+By()}{EnclosedBy()}}
 {\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Enclosed\+By (\begin{DoxyParamCaption}\item[{const list$<$ X\+M\+F\+L\+O\+A\+T4 $>$ \&}]{planes }\end{DoxyParamCaption}) const}
 
-Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is completely enclosed by the given (closed) volume.
+Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses the given face.
 
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em face} & A reference to the face. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses {\itshape face}. {\ttfamily false} otherwise. Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely, strictly encloses the given face.
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em face} & A reference to the face. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely, strictly encloses {\itshape face}. {\ttfamily false} otherwise. Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is completely enclosed by the given (closed) volume.
+\end{DoxyReturn}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em planes} & A reference to a linked list containing the planes of the volume (each plane\textquotesingle{}s coefficients are represented as a {\ttfamily X\+M\+F\+L\+O\+A\+T4}). \\
@@ -116,7 +128,7 @@ Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} is completely, 
 \hypertarget{structmage_1_1_a_a_b_b_a0d6619404376bacf956b4a0c6662696f}{}\label{structmage_1_1_a_a_b_b_a0d6619404376bacf956b4a0c6662696f} 
 \index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Encloses@{Encloses}}
 \index{Encloses@{Encloses}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{Encloses()}{Encloses()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\subsubsection{\texorpdfstring{Encloses()}{Encloses()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Encloses (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb }\end{DoxyParamCaption}) const}
 
 Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
@@ -132,7 +144,7 @@ Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encl
 \hypertarget{structmage_1_1_a_a_b_b_a67d1820b5ee787f02e6cfd593aca35fd}{}\label{structmage_1_1_a_a_b_b_a67d1820b5ee787f02e6cfd593aca35fd} 
 \index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Encloses@{Encloses}}
 \index{Encloses@{Encloses}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{Encloses()}{Encloses()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{Encloses()}{Encloses()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Encloses (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption}) const}
 
 Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses the given point.
@@ -145,26 +157,10 @@ Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encl
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses {\itshape point}. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
-\hypertarget{structmage_1_1_a_a_b_b_ab57318f2ea79779ed357a7ecdd101132}{}\label{structmage_1_1_a_a_b_b_ab57318f2ea79779ed357a7ecdd101132} 
-\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Encloses@{Encloses}}
-\index{Encloses@{Encloses}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{Encloses()}{Encloses()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Encloses (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_face}{Face} \&}]{face }\end{DoxyParamCaption}) const}
-
-Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses the given face.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em face} & A reference to the face. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely encloses {\itshape face}. {\ttfamily false} otherwise. 
-\end{DoxyReturn}
 \hypertarget{structmage_1_1_a_a_b_b_a3bb59de6eca634cb3ddec4ad314fde21}{}\label{structmage_1_1_a_a_b_b_a3bb59de6eca634cb3ddec4ad314fde21} 
 \index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Encloses\+Strict@{Encloses\+Strict}}
 \index{Encloses\+Strict@{Encloses\+Strict}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{Encloses\+Strict()}{EnclosesStrict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\subsubsection{\texorpdfstring{Encloses\+Strict()}{EnclosesStrict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Encloses\+Strict (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb }\end{DoxyParamCaption}) const}
 
 Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely, strictly encloses the given \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB}.
@@ -180,7 +176,7 @@ Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely, str
 \hypertarget{structmage_1_1_a_a_b_b_a436950a97b647179506bb42a3f2f2b34}{}\label{structmage_1_1_a_a_b_b_a436950a97b647179506bb42a3f2f2b34} 
 \index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Encloses\+Strict@{Encloses\+Strict}}
 \index{Encloses\+Strict@{Encloses\+Strict}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{Encloses\+Strict()}{EnclosesStrict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{Encloses\+Strict()}{EnclosesStrict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Encloses\+Strict (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption}) const}
 
 Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely, strictly encloses the given point.
@@ -192,22 +188,6 @@ Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely, str
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely, strictly encloses {\itshape point}. {\ttfamily false} otherwise. 
-\end{DoxyReturn}
-\hypertarget{structmage_1_1_a_a_b_b_acc5a6584d01c80abf5a59405b21e1a2c}{}\label{structmage_1_1_a_a_b_b_acc5a6584d01c80abf5a59405b21e1a2c} 
-\index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Encloses\+Strict@{Encloses\+Strict}}
-\index{Encloses\+Strict@{Encloses\+Strict}!mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}}
-\subsubsection{\texorpdfstring{Encloses\+Strict()}{EnclosesStrict()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily bool mage\+::\+A\+A\+B\+B\+::\+Encloses\+Strict (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_face}{Face} \&}]{face }\end{DoxyParamCaption}) const}
-
-Checks whether this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely, strictly encloses the given face.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em face} & A reference to the face. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if this \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} completely, strictly encloses {\itshape face}. {\ttfamily false} otherwise. 
 \end{DoxyReturn}
 \hypertarget{structmage_1_1_a_a_b_b_a5a959edc3bc5ccdd29025d612c2e66e3}{}\label{structmage_1_1_a_a_b_b_a5a959edc3bc5ccdd29025d612c2e66e3} 
 \index{mage\+::\+A\+A\+BB@{mage\+::\+A\+A\+BB}!Overlaps@{Overlaps}}

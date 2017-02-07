@@ -2,7 +2,7 @@ var classmage_1_1_perspective_camera =
 [
     [ "PerspectiveCamera", "classmage_1_1_perspective_camera.html#aef3998fca25cb7d99b9a03ef9483040d", null ],
     [ "PerspectiveCamera", "classmage_1_1_perspective_camera.html#a198d1460d9312af27ed6ef2ac28b616d", null ],
-    [ "~PerspectiveCamera", "classmage_1_1_perspective_camera.html#abf42546e2560d7d62e7e62680a6da02b", null ],
+    [ "~PerspectiveCamera", "classmage_1_1_perspective_camera.html#a119a77c3f14072040231845e9a894af2", null ],
     [ "Clone", "classmage_1_1_perspective_camera.html#aa2fae7b2ca5daadeda0fd935fcdb101a", null ],
     [ "GetAspectRatio", "classmage_1_1_perspective_camera.html#ab74cbd2777d5b430da5702a12b1b451e", null ],
     [ "GetFOVY", "classmage_1_1_perspective_camera.html#a15223034b30ca691c51de8850c033293", null ],

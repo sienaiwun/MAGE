@@ -6,6 +6,6 @@ var structmage_1_1_point3 =
     [ "Point3", "structmage_1_1_point3.html#a5ccb5f2f660b3ecdb471ed859923d4fc", null ],
     [ "Point3", "structmage_1_1_point3.html#ae56d0fb055b286df68d8d645378408c8", null ],
     [ "Point3", "structmage_1_1_point3.html#a2298bfe2417508187bdad7fbaa6178c1", null ],
-    [ "~Point3", "structmage_1_1_point3.html#a6bdc329ad2ec6f812a2b7ed1d153b54b", null ],
+    [ "~Point3", "structmage_1_1_point3.html#a952151b6ff72b68569f95445c2ac2495", null ],
     [ "operator=", "structmage_1_1_point3.html#a53403b16c67a6c7d72910edaec04e371", null ]
 ];

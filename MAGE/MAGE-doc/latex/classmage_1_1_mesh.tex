@@ -7,19 +7,37 @@
 Inheritance diagram for mage\+:\+:Mesh\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{classmage_1_1_mesh}
+\includegraphics[height=2.000000cm]{classmage_1_1_mesh}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_mesh_a13a06eb10e3a4363bc16fc5f8d359264}{Mesh} (const wstring \&name, const wstring \&path=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+A\+TH)
+\hyperlink{classmage_1_1_mesh_aec88dd772e8c8d25aa9c263ab155f78b}{Mesh} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$ device, const wstring \&name, const wstring \&path=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+A\+TH, bool invert\+\_\+handedness=false, bool clockwise\+\_\+order=true)
 \item 
 virtual \hyperlink{classmage_1_1_mesh_ab7e701f7fcdc611479875a98c465da42}{$\sim$\+Mesh} ()
 \item 
-virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a0e558e82b0db25b0bbb4abeba9f0fb0f}{Bind\+Buffers} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context) const =0
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_af1116b9b7d66aba46412af418361c5b7}{Bind\+Buffers} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context) const
 \item 
-virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a9dff8fa94d28e852fc1e72e6c0a85c6f}{Draw} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context) const =0
+void \hyperlink{classmage_1_1_mesh_acef4f55140f0f842791ea4dfa25b7598}{Update} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_af7f1ad857f340015630655ab9d34747c}{Initialize\+Buffers} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$ device, bool invert\+\_\+handedness, bool clockwise\+\_\+order)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a227af05ff8cbb1ad676c93dc8dc5d14b}{Setup\+Vertex\+Buffer} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$ device, const \hyperlink{structmage_1_1_vertex_position_normal_texture}{Vertex\+Position\+Normal\+Texture} $\ast$vertices, size\+\_\+t nb\+\_\+vertices)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a61d3baa68f8cc60f3d260e6ecefc126a}{Setup\+Index\+Buffer} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$ device, const uint32\+\_\+t $\ast$indices, size\+\_\+t nb\+\_\+indices)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2}{m\+\_\+nb\+\_\+indices}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_mesh_af5ae74887eb330201829477cf772ba6e}{m\+\_\+vertex\+\_\+buffer}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_mesh_abe29363ebac77b284ca69532fd5b3373}{m\+\_\+index\+\_\+buffer}
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -31,22 +49,28 @@ virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_mesh_a9dff8fa94d28e852fc1e72e
 
 
 \subsection{Detailed Description}
-A class of meshes. 
+A class of indexed meshes. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_mesh_a13a06eb10e3a4363bc16fc5f8d359264}{}\label{classmage_1_1_mesh_a13a06eb10e3a4363bc16fc5f8d359264} 
+\hypertarget{classmage_1_1_mesh_aec88dd772e8c8d25aa9c263ab155f78b}{}\label{classmage_1_1_mesh_aec88dd772e8c8d25aa9c263ab155f78b} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Mesh@{Mesh}}
 \index{Mesh@{Mesh}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{Mesh()}{Mesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const wstring \&}]{name,  }\item[{const wstring \&}]{path = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+RESOURCE\+\_\+PATH} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{const wstring \&}]{name,  }\item[{const wstring \&}]{path = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+RESOURCE\+\_\+PATH},  }\item[{bool}]{invert\+\_\+handedness = {\ttfamily false},  }\item[{bool}]{clockwise\+\_\+order = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Constructs a mesh.
 
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device} & A pointer to an D3\+D11 device. \\
+\hline
 \mbox{\tt in}  & {\em name} & A reference to the name of the mesh. \\
 \hline
 \mbox{\tt in}  & {\em path} & A reference to the path of the mesh. \\
+\hline
+\mbox{\tt in}  & {\em invert\+\_\+handedness} & Flag indicating whether the handness of the coordinate system of the mesh should be inverted. \\
+\hline
+\mbox{\tt in}  & {\em clockwise\+\_\+order} & Flag indicating whether the vertices of triangles should be in clockwise order. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_mesh_ab7e701f7fcdc611479875a98c465da42}{}\label{classmage_1_1_mesh_ab7e701f7fcdc611479875a98c465da42} 
@@ -71,25 +95,17 @@ Constructs a mesh from the given mesh.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_mesh_a0e558e82b0db25b0bbb4abeba9f0fb0f}{}\label{classmage_1_1_mesh_a0e558e82b0db25b0bbb4abeba9f0fb0f} 
+\hypertarget{classmage_1_1_mesh_af1116b9b7d66aba46412af418361c5b7}{}\label{classmage_1_1_mesh_af1116b9b7d66aba46412af418361c5b7} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!Bind\+Buffers@{Bind\+Buffers}}
 \index{Bind\+Buffers@{Bind\+Buffers}!mage\+::\+Mesh@{mage\+::\+Mesh}}
 \subsubsection{\texorpdfstring{Bind\+Buffers()}{BindBuffers()}}
-{\footnotesize\ttfamily virtual H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Bind\+Buffers (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Bind\+Buffers (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context }\end{DoxyParamCaption}) const}
 
-
-
-Implemented in \hyperlink{classmage_1_1_flat_mesh_a3d7a8793a2b802aa51ae91517201af6d}{mage\+::\+Flat\+Mesh}, and \hyperlink{classmage_1_1_indexed_mesh_a4043a771a1ffe461cfd876dd62f68212}{mage\+::\+Indexed\+Mesh}.
-
-\hypertarget{classmage_1_1_mesh_a9dff8fa94d28e852fc1e72e6c0a85c6f}{}\label{classmage_1_1_mesh_a9dff8fa94d28e852fc1e72e6c0a85c6f} 
-\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Draw@{Draw}}
-\index{Draw@{Draw}!mage\+::\+Mesh@{mage\+::\+Mesh}}
-\subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily virtual H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Draw (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implemented in \hyperlink{classmage_1_1_flat_mesh_a84cf747d30acb8cb12ed730cb1b73a14}{mage\+::\+Flat\+Mesh}, and \hyperlink{classmage_1_1_indexed_mesh_a7067c08cb9165cef96f507b8dd9fe568}{mage\+::\+Indexed\+Mesh}.
+\hypertarget{classmage_1_1_mesh_af7f1ad857f340015630655ab9d34747c}{}\label{classmage_1_1_mesh_af7f1ad857f340015630655ab9d34747c} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Initialize\+Buffers@{Initialize\+Buffers}}
+\index{Initialize\+Buffers@{Initialize\+Buffers}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Initialize\+Buffers()}{InitializeBuffers()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Initialize\+Buffers (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{bool}]{invert\+\_\+handedness,  }\item[{bool}]{clockwise\+\_\+order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 \hypertarget{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e}{}\label{classmage_1_1_mesh_a5baf961af32b379671a59a082492bc5e} 
 \index{mage\+::\+Mesh@{mage\+::\+Mesh}!operator=@{operator=}}
@@ -107,3 +123,42 @@ Copies the given mesh to this mesh.
 \begin{DoxyReturn}{Returns}
 A reference to the copy of the given mesh (i.\+e. this mesh). 
 \end{DoxyReturn}
+\hypertarget{classmage_1_1_mesh_a61d3baa68f8cc60f3d260e6ecefc126a}{}\label{classmage_1_1_mesh_a61d3baa68f8cc60f3d260e6ecefc126a} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Setup\+Index\+Buffer@{Setup\+Index\+Buffer}}
+\index{Setup\+Index\+Buffer@{Setup\+Index\+Buffer}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Setup\+Index\+Buffer()}{SetupIndexBuffer()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Setup\+Index\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{const uint32\+\_\+t $\ast$}]{indices,  }\item[{size\+\_\+t}]{nb\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_mesh_a227af05ff8cbb1ad676c93dc8dc5d14b}{}\label{classmage_1_1_mesh_a227af05ff8cbb1ad676c93dc8dc5d14b} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}}
+\index{Setup\+Vertex\+Buffer@{Setup\+Vertex\+Buffer}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Setup\+Vertex\+Buffer()}{SetupVertexBuffer()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Mesh\+::\+Setup\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{const \hyperlink{structmage_1_1_vertex_position_normal_texture}{Vertex\+Position\+Normal\+Texture} $\ast$}]{vertices,  }\item[{size\+\_\+t}]{nb\+\_\+vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_mesh_acef4f55140f0f842791ea4dfa25b7598}{}\label{classmage_1_1_mesh_acef4f55140f0f842791ea4dfa25b7598} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!Update@{Update}}
+\index{Update@{Update}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void mage\+::\+Mesh\+::\+Update (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_mesh_abe29363ebac77b284ca69532fd5b3373}{}\label{classmage_1_1_mesh_abe29363ebac77b284ca69532fd5b3373} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}}
+\index{m\+\_\+index\+\_\+buffer@{m\+\_\+index\+\_\+buffer}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+index\+\_\+buffer}{m\_index\_buffer}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Mesh\+::m\+\_\+index\+\_\+buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2}{}\label{classmage_1_1_mesh_a5e3baa9e2b2e9b4ce795a456f76d87b2} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+nb\+\_\+indices@{m\+\_\+nb\+\_\+indices}}
+\index{m\+\_\+nb\+\_\+indices@{m\+\_\+nb\+\_\+indices}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+nb\+\_\+indices}{m\_nb\_indices}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Mesh\+::m\+\_\+nb\+\_\+indices\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_mesh_af5ae74887eb330201829477cf772ba6e}{}\label{classmage_1_1_mesh_af5ae74887eb330201829477cf772ba6e} 
+\index{mage\+::\+Mesh@{mage\+::\+Mesh}!m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}}
+\index{m\+\_\+vertex\+\_\+buffer@{m\+\_\+vertex\+\_\+buffer}!mage\+::\+Mesh@{mage\+::\+Mesh}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+buffer}{m\_vertex\_buffer}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Mesh\+::m\+\_\+vertex\+\_\+buffer\hspace{0.3cm}{\ttfamily [protected]}}
+

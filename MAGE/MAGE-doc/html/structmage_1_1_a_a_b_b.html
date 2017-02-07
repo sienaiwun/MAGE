@@ -104,10 +104,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67d1820b5ee787f02e6cfd593aca35fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a436950a97b647179506bb42a3f2f2b34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_a_a_b_b.html#a436950a97b647179506bb42a3f2f2b34">EnclosesStrict</a> (const <a class="el" href="structmage_1_1_point3.html">Point3</a> &amp;point) const</td></tr>
 <tr class="separator:a436950a97b647179506bb42a3f2f2b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57318f2ea79779ed357a7ecdd101132"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_a_a_b_b.html#ab57318f2ea79779ed357a7ecdd101132">Encloses</a> (const <a class="el" href="structmage_1_1_face.html">Face</a> &amp;face) const</td></tr>
-<tr class="separator:ab57318f2ea79779ed357a7ecdd101132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc5a6584d01c80abf5a59405b21e1a2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_a_a_b_b.html#acc5a6584d01c80abf5a59405b21e1a2c">EnclosesStrict</a> (const <a class="el" href="structmage_1_1_face.html">Face</a> &amp;face) const</td></tr>
-<tr class="separator:acc5a6584d01c80abf5a59405b21e1a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4cd9138aa14aa79fba35a266634dac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_a_a_b_b.html#a7d4cd9138aa14aa79fba35a266634dac">EnclosedBy</a> (const list&lt; XMFLOAT4 &gt; &amp;planes) const</td></tr>
 <tr class="separator:a7d4cd9138aa14aa79fba35a266634dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a098cdfecc66ce8a1e557280aafda33e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmage_1_1_a_a_b_b.html#a098cdfecc66ce8a1e557280aafda33e3">EnclosedStrictBy</a> (const list&lt; XMFLOAT4 &gt; &amp;planes) const</td></tr>
@@ -218,7 +214,21 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Checks whether this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> is completely enclosed by the given (closed) volume.</p>
+<p>Checks whether this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> completely encloses the given face.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>A reference to the face. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> completely encloses <em>face</em>. <code>false</code> otherwise. Checks whether this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> completely, strictly encloses the given face.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>A reference to the face. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> completely, strictly encloses <em>face</em>. <code>false</code> otherwise. Checks whether this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> is completely enclosed by the given (closed) volume.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">planes</td><td>A reference to a linked list containing the planes of the volume (each plane's coefficients are represented as a <code>XMFLOAT4</code>). </td></tr>
@@ -256,7 +266,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a0d6619404376bacf956b4a0c6662696f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d6619404376bacf956b4a0c6662696f">&sect;&nbsp;</a></span>Encloses() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6619404376bacf956b4a0c6662696f">&sect;&nbsp;</a></span>Encloses() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +292,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a67d1820b5ee787f02e6cfd593aca35fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67d1820b5ee787f02e6cfd593aca35fd">&sect;&nbsp;</a></span>Encloses() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d1820b5ee787f02e6cfd593aca35fd">&sect;&nbsp;</a></span>Encloses() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,34 +317,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab57318f2ea79779ed357a7ecdd101132"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab57318f2ea79779ed357a7ecdd101132">&sect;&nbsp;</a></span>Encloses() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mage::AABB::Encloses </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmage_1_1_face.html">Face</a> &amp;&#160;</td>
-          <td class="paramname"><em>face</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Checks whether this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> completely encloses the given face.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>A reference to the face. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> completely encloses <em>face</em>. <code>false</code> otherwise. </dd></dl>
-
-</div>
-</div>
 <a id="a3bb59de6eca634cb3ddec4ad314fde21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bb59de6eca634cb3ddec4ad314fde21">&sect;&nbsp;</a></span>EnclosesStrict() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb59de6eca634cb3ddec4ad314fde21">&sect;&nbsp;</a></span>EnclosesStrict() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,7 +344,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a436950a97b647179506bb42a3f2f2b34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a436950a97b647179506bb42a3f2f2b34">&sect;&nbsp;</a></span>EnclosesStrict() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a436950a97b647179506bb42a3f2f2b34">&sect;&nbsp;</a></span>EnclosesStrict() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -382,32 +366,6 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> completely, strictly encloses <em>point</em>. <code>false</code> otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="acc5a6584d01c80abf5a59405b21e1a2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc5a6584d01c80abf5a59405b21e1a2c">&sect;&nbsp;</a></span>EnclosesStrict() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mage::AABB::EnclosesStrict </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmage_1_1_face.html">Face</a> &amp;&#160;</td>
-          <td class="paramname"><em>face</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Checks whether this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> completely, strictly encloses the given face.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>A reference to the face. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this <a class="el" href="structmage_1_1_a_a_b_b.html">AABB</a> completely, strictly encloses <em>face</em>. <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>

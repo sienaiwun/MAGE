@@ -13,19 +13,29 @@ Inheritance diagram for mage\+:\+:Vertex\+Shader\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_vertex_shader_a19900280b29688f3df419a496f032b5c}{Vertex\+Shader} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$, const wstring \&name, const wstring \&path=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+A\+TH)
+\hyperlink{classmage_1_1_vertex_shader_a84be7a0ddd761b21284698441b760a81}{Vertex\+Shader} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$, const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$input\+\_\+element\+\_\+desc, size\+\_\+t nb\+\_\+input\+\_\+elements, const wstring \&name, const wstring \&path=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+A\+TH)
 \item 
 virtual \hyperlink{classmage_1_1_vertex_shader_a923dccd98ca878ce91ebb09c7b1cc6cb}{$\sim$\+Vertex\+Shader} ()
+\item 
+void \hyperlink{classmage_1_1_vertex_shader_a44074d7c56593ebdc2a8a931ecd7b9f6}{Update} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context, const \hyperlink{structmage_1_1_camera_transform_buffer}{Camera\+Transform\+Buffer} \&camera, const \hyperlink{structmage_1_1_model_transform_buffer}{Model\+Transform\+Buffer} \&model)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_a22b299bcedc005613cd7a14dd73f2050}{Initialize\+Shader} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$)
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_a0935c21454b9776ebe644c9290e06e54}{Initialize\+Shader} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$ device, const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$input\+\_\+element\+\_\+desc, size\+\_\+t nb\+\_\+input\+\_\+elements)
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_a02dec5ca8d933365397400da6046cdad}{Setup\+Buffers} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$ device)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Vertex\+Shader $>$ \hyperlink{classmage_1_1_vertex_shader_a0b2b02abae4cb226c115d7f1c5464a54}{m\+\_\+vertex\+\_\+shader}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Input\+Layout $>$ \hyperlink{classmage_1_1_vertex_shader_a9b9895650b8c7f80af846d75f7d9ddda}{m\+\_\+vertex\+\_\+layout}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_vertex_shader_a347cc37b799fe3b081b312a1bbd8ce24}{m\+\_\+cb\+\_\+camera}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_vertex_shader_a248495ee84e17e46327de461638f051e}{m\+\_\+cb\+\_\+model}
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -37,11 +47,11 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_a22b299bcedc005613cd7a1
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_vertex_shader_a19900280b29688f3df419a496f032b5c}{}\label{classmage_1_1_vertex_shader_a19900280b29688f3df419a496f032b5c} 
+\hypertarget{classmage_1_1_vertex_shader_a84be7a0ddd761b21284698441b760a81}{}\label{classmage_1_1_vertex_shader_a84be7a0ddd761b21284698441b760a81} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Vertex\+Shader@{Vertex\+Shader}}
 \index{Vertex\+Shader@{Vertex\+Shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{Vertex\+Shader()}{VertexShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Vertex\+Shader\+::\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{const wstring \&}]{name,  }\item[{const wstring \&}]{path = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+RESOURCE\+\_\+PATH} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Vertex\+Shader\+::\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$}]{input\+\_\+element\+\_\+desc,  }\item[{size\+\_\+t}]{nb\+\_\+input\+\_\+elements,  }\item[{const wstring \&}]{name,  }\item[{const wstring \&}]{path = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+RESOURCE\+\_\+PATH} }\end{DoxyParamCaption})}
 
 \hypertarget{classmage_1_1_vertex_shader_a923dccd98ca878ce91ebb09c7b1cc6cb}{}\label{classmage_1_1_vertex_shader_a923dccd98ca878ce91ebb09c7b1cc6cb} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!````~Vertex\+Shader@{$\sim$\+Vertex\+Shader}}
@@ -58,11 +68,11 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_a22b299bcedc005613cd7a1
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_vertex_shader_a22b299bcedc005613cd7a14dd73f2050}{}\label{classmage_1_1_vertex_shader_a22b299bcedc005613cd7a14dd73f2050} 
+\hypertarget{classmage_1_1_vertex_shader_a0935c21454b9776ebe644c9290e06e54}{}\label{classmage_1_1_vertex_shader_a0935c21454b9776ebe644c9290e06e54} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Initialize\+Shader@{Initialize\+Shader}}
 \index{Initialize\+Shader@{Initialize\+Shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
 \subsubsection{\texorpdfstring{Initialize\+Shader()}{InitializeShader()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Vertex\+Shader\+::\+Initialize\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Vertex\+Shader\+::\+Initialize\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device,  }\item[{const D3\+D11\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+D\+E\+SC $\ast$}]{input\+\_\+element\+\_\+desc,  }\item[{size\+\_\+t}]{nb\+\_\+input\+\_\+elements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 \hypertarget{classmage_1_1_vertex_shader_a0094f5c2adb8377fa5c8d52e7a65136f}{}\label{classmage_1_1_vertex_shader_a0094f5c2adb8377fa5c8d52e7a65136f} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!operator=@{operator=}}
@@ -70,9 +80,39 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_vertex_shader_a22b299bcedc005613cd7a1
 \subsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader}\& mage\+::\+Vertex\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_vertex_shader}{Vertex\+Shader} \&}]{vertex\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
+\hypertarget{classmage_1_1_vertex_shader_a02dec5ca8d933365397400da6046cdad}{}\label{classmage_1_1_vertex_shader_a02dec5ca8d933365397400da6046cdad} 
+\index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Setup\+Buffers@{Setup\+Buffers}}
+\index{Setup\+Buffers@{Setup\+Buffers}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{Setup\+Buffers()}{SetupBuffers()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Vertex\+Shader\+::\+Setup\+Buffers (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device2 $>$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_vertex_shader_a44074d7c56593ebdc2a8a931ecd7b9f6}{}\label{classmage_1_1_vertex_shader_a44074d7c56593ebdc2a8a931ecd7b9f6} 
+\index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!Update@{Update}}
+\index{Update@{Update}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void mage\+::\+Vertex\+Shader\+::\+Update (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context,  }\item[{const \hyperlink{structmage_1_1_camera_transform_buffer}{Camera\+Transform\+Buffer} \&}]{camera,  }\item[{const \hyperlink{structmage_1_1_model_transform_buffer}{Model\+Transform\+Buffer} \&}]{model }\end{DoxyParamCaption})}
+
 
 
 \subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_vertex_shader_a347cc37b799fe3b081b312a1bbd8ce24}{}\label{classmage_1_1_vertex_shader_a347cc37b799fe3b081b312a1bbd8ce24} 
+\index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!m\+\_\+cb\+\_\+camera@{m\+\_\+cb\+\_\+camera}}
+\index{m\+\_\+cb\+\_\+camera@{m\+\_\+cb\+\_\+camera}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{m\+\_\+cb\+\_\+camera}{m\_cb\_camera}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Vertex\+Shader\+::m\+\_\+cb\+\_\+camera\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_vertex_shader_a248495ee84e17e46327de461638f051e}{}\label{classmage_1_1_vertex_shader_a248495ee84e17e46327de461638f051e} 
+\index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!m\+\_\+cb\+\_\+model@{m\+\_\+cb\+\_\+model}}
+\index{m\+\_\+cb\+\_\+model@{m\+\_\+cb\+\_\+model}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{m\+\_\+cb\+\_\+model}{m\_cb\_model}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Vertex\+Shader\+::m\+\_\+cb\+\_\+model\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_vertex_shader_a9b9895650b8c7f80af846d75f7d9ddda}{}\label{classmage_1_1_vertex_shader_a9b9895650b8c7f80af846d75f7d9ddda} 
+\index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!m\+\_\+vertex\+\_\+layout@{m\+\_\+vertex\+\_\+layout}}
+\index{m\+\_\+vertex\+\_\+layout@{m\+\_\+vertex\+\_\+layout}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+layout}{m\_vertex\_layout}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Input\+Layout $>$ mage\+::\+Vertex\+Shader\+::m\+\_\+vertex\+\_\+layout\hspace{0.3cm}{\ttfamily [protected]}}
+
 \hypertarget{classmage_1_1_vertex_shader_a0b2b02abae4cb226c115d7f1c5464a54}{}\label{classmage_1_1_vertex_shader_a0b2b02abae4cb226c115d7f1c5464a54} 
 \index{mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}!m\+\_\+vertex\+\_\+shader@{m\+\_\+vertex\+\_\+shader}}
 \index{m\+\_\+vertex\+\_\+shader@{m\+\_\+vertex\+\_\+shader}!mage\+::\+Vertex\+Shader@{mage\+::\+Vertex\+Shader}}

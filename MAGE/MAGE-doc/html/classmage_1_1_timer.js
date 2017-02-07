@@ -1,9 +1,9 @@
 var classmage_1_1_timer =
 [
     [ "Timer", "classmage_1_1_timer.html#a5e1c0a3bb4491b3a43ce05874ad24055", null ],
-    [ "Timer", "classmage_1_1_timer.html#a70b7b49108aa67fc751594ae0a310bfe", null ],
-    [ "~Timer", "classmage_1_1_timer.html#aa91cebe8c59c189fde93932fde10265c", null ],
-    [ "operator=", "classmage_1_1_timer.html#aaeff75810b47c1d9a01d3821e656eac9", null ],
+    [ "Timer", "classmage_1_1_timer.html#a5a1e05fde40a44cd9434572712142c23", null ],
+    [ "~Timer", "classmage_1_1_timer.html#aa301aff0cc5adb2e0cf128e6ad4c2774", null ],
+    [ "operator=", "classmage_1_1_timer.html#ae83df63d5ff9eec370eddf208ac2077e", null ],
     [ "Reset", "classmage_1_1_timer.html#a0675ff7bc0a8e7343b5a35f865cc9c1a", null ],
     [ "Restart", "classmage_1_1_timer.html#a4e1ba19d02c290a18981db1766f006c3", null ],
     [ "Start", "classmage_1_1_timer.html#a5855c9df8ad1a2b6774942e566833647", null ],

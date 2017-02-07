@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['size',['size',['../structmage_1_1_d_d_s___p_i_x_e_l_f_o_r_m_a_t.html#a75ee2fb62fda661645e254a823f619a9',1,'mage::DDS_PIXELFORMAT::size()'],['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#a6482c2116e359d2192e7e9f9b9bade94',1,'mage::DDS_HEADER::size()']]],
-  ['statesetup',['StateSetup',['../structmage_1_1_engine_setup.html#a36a3c8a316c63e6c90ee9dd6efb82c0c',1,'mage::EngineSetup']]]
+  ['tex',['tex',['../structmage_1_1_vertex_position_texture.html#a9b4efa25d268c812892ecffc2582496e',1,'mage::VertexPositionTexture::tex()'],['../structmage_1_1_vertex_position_normal_texture.html#a0782e41c5e28d421bfb47afad9af9c55',1,'mage::VertexPositionNormalTexture::tex()'],['../structmage_1_1_vertex_position_color_texture.html#adfbaa105e46bb65f502ec33eaa2e8b15',1,'mage::VertexPositionColorTexture::tex()'],['../structmage_1_1_vertex_position_normal_color_texture.html#a3477ce06d0778a1119cbf2e961d7c3ed',1,'mage::VertexPositionNormalColorTexture::tex()']]],
+  ['tex1',['tex1',['../structmage_1_1_vertex_position_texture_texture.html#a96be20a1f6ec9b9b74875099eef80f08',1,'mage::VertexPositionTextureTexture']]],
+  ['tex2',['tex2',['../structmage_1_1_vertex_position_texture_texture.html#a5a41669f18385d932c1490ff20c80bed',1,'mage::VertexPositionTextureTexture']]]
 ];

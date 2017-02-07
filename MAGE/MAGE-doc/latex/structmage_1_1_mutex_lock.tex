@@ -14,7 +14,7 @@
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structmage_1_1_mutex_lock_a9bfeb564ac4563e10d8fe569870d0e18}{Mutex\+Lock} (const \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock} \&mutex\+\_\+lock)
+\hyperlink{structmage_1_1_mutex_lock_a20b0f44c31bcb2040cbf23f071870af9}{Mutex\+Lock} (const \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock} \&mutex\+\_\+lock)=delete
 \item 
 \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock} \& \hyperlink{structmage_1_1_mutex_lock_a739909161a9a9ca0fc8143ac84967765}{operator=} (const \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock} \&mutex\+\_\+lock)=delete
 \end{DoxyCompactItemize}
@@ -48,11 +48,11 @@ Constructs a mutex lock for the given mutex.
 \subsubsection{\texorpdfstring{$\sim$\+Mutex\+Lock()}{~MutexLock()}}
 {\footnotesize\ttfamily mage\+::\+Mutex\+Lock\+::$\sim$\+Mutex\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Destructs this mutex lock. \hypertarget{structmage_1_1_mutex_lock_a9bfeb564ac4563e10d8fe569870d0e18}{}\label{structmage_1_1_mutex_lock_a9bfeb564ac4563e10d8fe569870d0e18} 
+Destructs this mutex lock. \hypertarget{structmage_1_1_mutex_lock_a20b0f44c31bcb2040cbf23f071870af9}{}\label{structmage_1_1_mutex_lock_a20b0f44c31bcb2040cbf23f071870af9} 
 \index{mage\+::\+Mutex\+Lock@{mage\+::\+Mutex\+Lock}!Mutex\+Lock@{Mutex\+Lock}}
 \index{Mutex\+Lock@{Mutex\+Lock}!mage\+::\+Mutex\+Lock@{mage\+::\+Mutex\+Lock}}
 \subsubsection{\texorpdfstring{Mutex\+Lock()}{MutexLock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily mage\+::\+Mutex\+Lock\+::\+Mutex\+Lock (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock} \&}]{mutex\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily mage\+::\+Mutex\+Lock\+::\+Mutex\+Lock (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_mutex_lock}{Mutex\+Lock} \&}]{mutex\+\_\+lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
 Constructs a mutex lock from the given mutex lock.
 
@@ -78,7 +78,7 @@ Copies the given mutex lock to this mutex lock.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A reference to the copy of {\itshape mutex\+\_\+lock}. 
+A reference to the copy of the given mutex lock (i.\+e. this mutex lock) 
 \end{DoxyReturn}
 
 

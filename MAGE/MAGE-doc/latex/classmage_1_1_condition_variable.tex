@@ -27,6 +27,13 @@ enum \{ \hyperlink{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6f
 \hyperlink{classmage_1_1_condition_variable_a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac}{N\+U\+M\+\_\+\+E\+V\+E\+N\+TS} = 2
  \}
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_condition_variable_add5ccf5807a94588c28621141df334d3}{Condition\+Variable} (const \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable} \&condition\+\_\+variable)=delete
+\item 
+\hyperlink{classmage_1_1_condition_variable}{Condition\+Variable} \& \hyperlink{classmage_1_1_condition_variable_ac83eae5353cd004ee06fe2376e5bdbf4}{operator=} (const \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable} \&condition\+\_\+variable)=delete
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -68,7 +75,7 @@ N\+U\+M\+\_\+\+E\+V\+E\+N\+TS&\\
 \hypertarget{classmage_1_1_condition_variable_a09073f0affc601f052fce541a17ba559}{}\label{classmage_1_1_condition_variable_a09073f0affc601f052fce541a17ba559} 
 \index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Condition\+Variable@{Condition\+Variable}}
 \index{Condition\+Variable@{Condition\+Variable}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
-\subsubsection{\texorpdfstring{Condition\+Variable()}{ConditionVariable()}}
+\subsubsection{\texorpdfstring{Condition\+Variable()}{ConditionVariable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Condition\+Variable\+::\+Condition\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Constructs a condition variable. \hypertarget{classmage_1_1_condition_variable_accd5253beb65b2904428afdb889cf00b}{}\label{classmage_1_1_condition_variable_accd5253beb65b2904428afdb889cf00b} 
@@ -77,7 +84,20 @@ Constructs a condition variable. \hypertarget{classmage_1_1_condition_variable_a
 \subsubsection{\texorpdfstring{$\sim$\+Condition\+Variable()}{~ConditionVariable()}}
 {\footnotesize\ttfamily mage\+::\+Condition\+Variable\+::$\sim$\+Condition\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Destructs this condition variable. 
+Destructs this condition variable. \hypertarget{classmage_1_1_condition_variable_add5ccf5807a94588c28621141df334d3}{}\label{classmage_1_1_condition_variable_add5ccf5807a94588c28621141df334d3} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Condition\+Variable@{Condition\+Variable}}
+\index{Condition\+Variable@{Condition\+Variable}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{Condition\+Variable()}{ConditionVariable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Condition\+Variable\+::\+Condition\+Variable (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable} \&}]{condition\+\_\+variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Constructs a condition variable from the given condition variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em condition\+\_\+variable} & A reference to a condition variable. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_condition_variable_acb0fa4a842b6979ac35c70dab0f43813}{}\label{classmage_1_1_condition_variable_acb0fa4a842b6979ac35c70dab0f43813} 
@@ -86,7 +106,23 @@ Destructs this condition variable.
 \subsubsection{\texorpdfstring{Lock()}{Lock()}}
 {\footnotesize\ttfamily void mage\+::\+Condition\+Variable\+::\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Locks this condition variable. \hypertarget{classmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9}{}\label{classmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9} 
+Locks this condition variable. \hypertarget{classmage_1_1_condition_variable_ac83eae5353cd004ee06fe2376e5bdbf4}{}\label{classmage_1_1_condition_variable_ac83eae5353cd004ee06fe2376e5bdbf4} 
+\index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable}\& mage\+::\+Condition\+Variable\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_condition_variable}{Condition\+Variable} \&}]{condition\+\_\+variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given condition variable to this condition variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em condition\+\_\+variable} & A reference to a condition variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given condition variable (i.\+e. this condition variable) 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9}{}\label{classmage_1_1_condition_variable_a09e52f0d51c10ee565a895d2444175d9} 
 \index{mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}!Signal@{Signal}}
 \index{Signal@{Signal}!mage\+::\+Condition\+Variable@{mage\+::\+Condition\+Variable}}
 \subsubsection{\texorpdfstring{Signal()}{Signal()}}

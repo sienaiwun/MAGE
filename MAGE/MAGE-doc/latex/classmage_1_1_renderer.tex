@@ -31,7 +31,9 @@ bool \hyperlink{classmage_1_1_renderer_afdde83a1e2bc9288f000fb2575c525d0}{Lost\+
 \item 
 void \hyperlink{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c}{Switch\+Mode} (bool toggle)
 \item 
-void \hyperlink{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6}{Render} (double elapsed\+\_\+time)
+void \hyperlink{classmage_1_1_renderer_a5fea21434ad2ac5bcd9ca09cf5f41852}{Start\+Frame} () const
+\item 
+void \hyperlink{classmage_1_1_renderer_a4932c51d0f6e56269712024d2d0322ef}{End\+Frame} () const
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -48,7 +50,7 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_afe99715a4ae6432ba561dcab048
 \item 
 H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_a95a34b64e815b0e5e95ce539bbd0f5a3}{Setup\+Depth\+Stencil\+View} ()
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_a9bc8598ccca5f6e7cf99010175b1360b}{Setup\+View\+Port} ()
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_renderer_a18937e12912fe18b935893dc6502b92f}{Setup\+View\+Port} () const
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -102,7 +104,13 @@ Constructs a renderer.
 Destructs this renderer. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_renderer_a872e88f421405b06a995a6fb231d59ec}{}\label{classmage_1_1_renderer_a872e88f421405b06a995a6fb231d59ec} 
+\hypertarget{classmage_1_1_renderer_a4932c51d0f6e56269712024d2d0322ef}{}\label{classmage_1_1_renderer_a4932c51d0f6e56269712024d2d0322ef} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!End\+Frame@{End\+Frame}}
+\index{End\+Frame@{End\+Frame}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{End\+Frame()}{EndFrame()}}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+End\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Ends the rendering of the current frame. \hypertarget{classmage_1_1_renderer_a872e88f421405b06a995a6fb231d59ec}{}\label{classmage_1_1_renderer_a872e88f421405b06a995a6fb231d59ec} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Get\+Device@{Get\+Device}}
 \index{Get\+Device@{Get\+Device}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Get\+Device()}{GetDevice()}}
@@ -174,20 +182,7 @@ Checks whether this renderer renders in windowed mode.
 \subsubsection{\texorpdfstring{Lost\+Mode()}{LostMode()}}
 {\footnotesize\ttfamily bool mage\+::\+Renderer\+::\+Lost\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Checks whether this renderer lost its mode, i.\+e. the current mode of this renderer differs from the cyrrent mode of its swap chain (due to for example A\+LT + T\+AB). \hypertarget{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6}{}\label{classmage_1_1_renderer_a95ac55eb4cc79a5712a50bfb78f67fe6} 
-\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Render@{Render}}
-\index{Render@{Render}!mage\+::\+Renderer@{mage\+::\+Renderer}}
-\subsubsection{\texorpdfstring{Render()}{Render()}}
-{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Render (\begin{DoxyParamCaption}\item[{double}]{elapsed\+\_\+time }\end{DoxyParamCaption})}
-
-Renders the current frame.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em elapsed\+\_\+time} & The elapsed time since the previous frame. \\
-\hline
-\end{DoxyParams}
-\hypertarget{classmage_1_1_renderer_a95a34b64e815b0e5e95ce539bbd0f5a3}{}\label{classmage_1_1_renderer_a95a34b64e815b0e5e95ce539bbd0f5a3} 
+Checks whether this renderer lost its mode, i.\+e. the current mode of this renderer differs from the cyrrent mode of its swap chain (due to for example A\+LT + T\+AB). \hypertarget{classmage_1_1_renderer_a95a34b64e815b0e5e95ce539bbd0f5a3}{}\label{classmage_1_1_renderer_a95a34b64e815b0e5e95ce539bbd0f5a3} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Setup\+Depth\+Stencil\+View@{Setup\+Depth\+Stencil\+View}}
 \index{Setup\+Depth\+Stencil\+View@{Setup\+Depth\+Stencil\+View}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Setup\+Depth\+Stencil\+View()}{SetupDepthStencilView()}}
@@ -231,18 +226,24 @@ Sets up the swap chain of this renderer.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_renderer_a9bc8598ccca5f6e7cf99010175b1360b}{}\label{classmage_1_1_renderer_a9bc8598ccca5f6e7cf99010175b1360b} 
+\hypertarget{classmage_1_1_renderer_a18937e12912fe18b935893dc6502b92f}{}\label{classmage_1_1_renderer_a18937e12912fe18b935893dc6502b92f} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Setup\+View\+Port@{Setup\+View\+Port}}
 \index{Setup\+View\+Port@{Setup\+View\+Port}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Setup\+View\+Port()}{SetupViewPort()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Setup\+View\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Renderer\+::\+Setup\+View\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
 Sets up and binds the viewport of this renderer to the graphics pipeline.
 
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c}{}\label{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c} 
+\hypertarget{classmage_1_1_renderer_a5fea21434ad2ac5bcd9ca09cf5f41852}{}\label{classmage_1_1_renderer_a5fea21434ad2ac5bcd9ca09cf5f41852} 
+\index{mage\+::\+Renderer@{mage\+::\+Renderer}!Start\+Frame@{Start\+Frame}}
+\index{Start\+Frame@{Start\+Frame}!mage\+::\+Renderer@{mage\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Start\+Frame()}{StartFrame()}}
+{\footnotesize\ttfamily void mage\+::\+Renderer\+::\+Start\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Starts the rendering of the current frame. \hypertarget{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c}{}\label{classmage_1_1_renderer_a9004ab608659188900c808eacb5f873c} 
 \index{mage\+::\+Renderer@{mage\+::\+Renderer}!Switch\+Mode@{Switch\+Mode}}
 \index{Switch\+Mode@{Switch\+Mode}!mage\+::\+Renderer@{mage\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Switch\+Mode()}{SwitchMode()}}

@@ -6,6 +6,6 @@ var structmage_1_1_normal3 =
     [ "Normal3", "structmage_1_1_normal3.html#a1a58b2fcb3920ff68007257ae6434273", null ],
     [ "Normal3", "structmage_1_1_normal3.html#a0942e7aace8354f0a414f77ccf90b69c", null ],
     [ "Normal3", "structmage_1_1_normal3.html#a61565f1183535666a2fb5183b83bebd2", null ],
-    [ "~Normal3", "structmage_1_1_normal3.html#ae5ea8901723ca2dfe8d692e7269935f9", null ],
+    [ "~Normal3", "structmage_1_1_normal3.html#a3384b2970fd85fe729514ce0686b4446", null ],
     [ "operator=", "structmage_1_1_normal3.html#ade86357989ceaecf1b22bb9e53ca7fed", null ]
 ];

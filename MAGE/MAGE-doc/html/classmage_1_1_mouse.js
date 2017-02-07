@@ -1,7 +1,7 @@
 var classmage_1_1_mouse =
 [
     [ "Mouse", "classmage_1_1_mouse.html#af7a493eeef5b370eb390ccbfc7eed673", null ],
-    [ "~Mouse", "classmage_1_1_mouse.html#a6ff5841bae697af04496dbf6e645b4b9", null ],
+    [ "~Mouse", "classmage_1_1_mouse.html#a954ba8370cbf07b8d08a62ce81bc6675", null ],
     [ "Mouse", "classmage_1_1_mouse.html#af11aa23e6cfbefb4cd3d90b17c63db7c", null ],
     [ "GetDeltaWheel", "classmage_1_1_mouse.html#a898f4d0e645040c3a4121c2fe8119a89", null ],
     [ "GetDeltaX", "classmage_1_1_mouse.html#a137313b065314d98c7b61eaefce6c3d1", null ],

@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_condition_variable.html'
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_condition_variable-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,6 +114,13 @@ Private Types</h2></td></tr>
 <a class="el" href="classmage_1_1_condition_variable.html#a600fb5094237230f6b260b31d6fb0945a2c43161b9ddfb393865606bfb3a51fac">NUM_EVENTS</a> = 2
  }</td></tr>
 <tr class="separator:a600fb5094237230f6b260b31d6fb0945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:add5ccf5807a94588c28621141df334d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_condition_variable.html#add5ccf5807a94588c28621141df334d3">ConditionVariable</a> (const <a class="el" href="classmage_1_1_condition_variable.html">ConditionVariable</a> &amp;condition_variable)=delete</td></tr>
+<tr class="separator:add5ccf5807a94588c28621141df334d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83eae5353cd004ee06fe2376e5bdbf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_condition_variable.html">ConditionVariable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_condition_variable.html#ac83eae5353cd004ee06fe2376e5bdbf4">operator=</a> (const <a class="el" href="classmage_1_1_condition_variable.html">ConditionVariable</a> &amp;condition_variable)=delete</td></tr>
+<tr class="separator:ac83eae5353cd004ee06fe2376e5bdbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -158,7 +166,7 @@ Private Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a09073f0affc601f052fce541a17ba559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09073f0affc601f052fce541a17ba559">&sect;&nbsp;</a></span>ConditionVariable()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a09073f0affc601f052fce541a17ba559">&sect;&nbsp;</a></span>ConditionVariable() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,6 +201,39 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="add5ccf5807a94588c28621141df334d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add5ccf5807a94588c28621141df334d3">&sect;&nbsp;</a></span>ConditionVariable() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::ConditionVariable::ConditionVariable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_condition_variable.html">ConditionVariable</a> &amp;&#160;</td>
+          <td class="paramname"><em>condition_variable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a condition variable from the given condition variable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">condition_variable</td><td>A reference to a condition variable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="acb0fa4a842b6979ac35c70dab0f43813"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb0fa4a842b6979ac35c70dab0f43813">&sect;&nbsp;</a></span>Lock()</h2>
@@ -209,6 +250,40 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Locks this condition variable. </p>
+
+</div>
+</div>
+<a id="ac83eae5353cd004ee06fe2376e5bdbf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83eae5353cd004ee06fe2376e5bdbf4">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_condition_variable.html">ConditionVariable</a>&amp; mage::ConditionVariable::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_condition_variable.html">ConditionVariable</a> &amp;&#160;</td>
+          <td class="paramname"><em>condition_variable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given condition variable to this condition variable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">condition_variable</td><td>A reference to a condition variable. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given condition variable (i.e. this condition variable) </dd></dl>
 
 </div>
 </div>

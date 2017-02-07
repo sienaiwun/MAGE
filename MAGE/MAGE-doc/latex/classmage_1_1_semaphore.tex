@@ -17,6 +17,13 @@ void \hyperlink{classmage_1_1_semaphore_ae63599939b6bcc3939cbeddd7ffa5f66}{Wait}
 \item 
 bool \hyperlink{classmage_1_1_semaphore_ab34cdf4e9b7388dbdb30aab167c074f6}{Try\+Wait} ()
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_semaphore_a8873b2ed82ff66d323a8c3cebf0fb5c0}{Semaphore} (const \hyperlink{classmage_1_1_semaphore}{Semaphore} \&semaphore)=delete
+\item 
+\hyperlink{classmage_1_1_semaphore}{Semaphore} \& \hyperlink{classmage_1_1_semaphore_af3308cf7fa1ed33cda0ee53b9565f658}{operator=} (const \hyperlink{classmage_1_1_semaphore}{Semaphore} \&semaphore)=delete
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -31,7 +38,7 @@ A class of semaphores.
 \hypertarget{classmage_1_1_semaphore_a7b4f53c18b9a244ed98ef58fa5cfa2bb}{}\label{classmage_1_1_semaphore_a7b4f53c18b9a244ed98ef58fa5cfa2bb} 
 \index{mage\+::\+Semaphore@{mage\+::\+Semaphore}!Semaphore@{Semaphore}}
 \index{Semaphore@{Semaphore}!mage\+::\+Semaphore@{mage\+::\+Semaphore}}
-\subsubsection{\texorpdfstring{Semaphore()}{Semaphore()}}
+\subsubsection{\texorpdfstring{Semaphore()}{Semaphore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily mage\+::\+Semaphore\+::\+Semaphore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Constructs a semaphore. \hypertarget{classmage_1_1_semaphore_a991ed365c28e4a9c63ff34a5efeb012d}{}\label{classmage_1_1_semaphore_a991ed365c28e4a9c63ff34a5efeb012d} 
@@ -40,9 +47,38 @@ Constructs a semaphore. \hypertarget{classmage_1_1_semaphore_a991ed365c28e4a9c63
 \subsubsection{\texorpdfstring{$\sim$\+Semaphore()}{~Semaphore()}}
 {\footnotesize\ttfamily mage\+::\+Semaphore\+::$\sim$\+Semaphore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Destructs this semaphore. 
+Destructs this semaphore. \hypertarget{classmage_1_1_semaphore_a8873b2ed82ff66d323a8c3cebf0fb5c0}{}\label{classmage_1_1_semaphore_a8873b2ed82ff66d323a8c3cebf0fb5c0} 
+\index{mage\+::\+Semaphore@{mage\+::\+Semaphore}!Semaphore@{Semaphore}}
+\index{Semaphore@{Semaphore}!mage\+::\+Semaphore@{mage\+::\+Semaphore}}
+\subsubsection{\texorpdfstring{Semaphore()}{Semaphore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Semaphore\+::\+Semaphore (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_semaphore}{Semaphore} \&}]{semaphore }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Constructs a semaphore from the given semaphore.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em semaphore} & A reference to a semaphore. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_semaphore_af3308cf7fa1ed33cda0ee53b9565f658}{}\label{classmage_1_1_semaphore_af3308cf7fa1ed33cda0ee53b9565f658} 
+\index{mage\+::\+Semaphore@{mage\+::\+Semaphore}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Semaphore@{mage\+::\+Semaphore}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_semaphore}{Semaphore}\& mage\+::\+Semaphore\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_semaphore}{Semaphore} \&}]{semaphore }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given semaphore to this semaphore.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em semaphore} & A reference to a semaphore. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given semaphore (i.\+e. this semaphore) 
+\end{DoxyReturn}
 \hypertarget{classmage_1_1_semaphore_a354ea9743f9794b14a3f032e0443b214}{}\label{classmage_1_1_semaphore_a354ea9743f9794b14a3f032e0443b214} 
 \index{mage\+::\+Semaphore@{mage\+::\+Semaphore}!Post@{Post}}
 \index{Post@{Post}!mage\+::\+Semaphore@{mage\+::\+Semaphore}}

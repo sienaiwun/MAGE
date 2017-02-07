@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normal3',['Normal3',['../structmage_1_1_normal3.html',1,'mage']]]
+  ['orthographiccamera',['OrthographicCamera',['../classmage_1_1_orthographic_camera.html',1,'mage']]]
 ];

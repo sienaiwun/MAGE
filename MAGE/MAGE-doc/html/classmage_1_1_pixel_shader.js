@@ -5,5 +5,6 @@ var classmage_1_1_pixel_shader =
     [ "PixelShader", "classmage_1_1_pixel_shader.html#a361df943e40e9015ac4b769af130ce79", null ],
     [ "InitializeShader", "classmage_1_1_pixel_shader.html#aa4720c76ee456bc136fa4e58de1a03a4", null ],
     [ "operator=", "classmage_1_1_pixel_shader.html#ac3a3535b2751237f4aad110dca05d0c3", null ],
+    [ "Update", "classmage_1_1_pixel_shader.html#a8ffade695c73001207dd506802dea7b3", null ],
     [ "m_pixel_shader", "classmage_1_1_pixel_shader.html#a1dd0f87be1c1f7fe5a1bb2737263222f", null ]
 ];
