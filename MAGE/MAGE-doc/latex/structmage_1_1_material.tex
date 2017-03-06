@@ -1,0 +1,190 @@
+\hypertarget{structmage_1_1_material}{}\section{mage\+:\+:Material Struct Reference}
+\label{structmage_1_1_material}\index{mage\+::\+Material@{mage\+::\+Material}}
+
+
+{\ttfamily \#include $<$material.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_material_ace4a06c8c8c4e75d82e701443f88d1d3}{Material} (const string \&name, float specular\+\_\+exponent=0.\+0f, float dissolve=1.\+0f, float index\+\_\+of\+\_\+refraction=1.\+0f)
+\item 
+\hyperlink{structmage_1_1_material_abed630412cdc4a6281389d128ec4b5f3}{Material} (const \hyperlink{structmage_1_1_material}{Material} \&material)=default
+\item 
+\hyperlink{structmage_1_1_material_a4ca65b7e24144ee08dd1ce8d0eda9284}{$\sim$\+Material} ()=default
+\item 
+\hyperlink{structmage_1_1_material}{Material} \& \hyperlink{structmage_1_1_material_a7ebc9986924ca13ae8468005518dcfc7}{operator=} (const \hyperlink{structmage_1_1_material}{Material} \&material)=default
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{structmage_1_1_material_a2b3e839a8ae093d53b12529d61ec6605}{m\+\_\+name}
+\item 
+\hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \hyperlink{structmage_1_1_material_a9573a0d2a5fb0322f9eb103ace34dd47}{m\+\_\+transmission\+\_\+filter}
+\item 
+\hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \hyperlink{structmage_1_1_material_ad8fb842410fe751ad220185271a00448}{m\+\_\+ambient\+\_\+reflectivity}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{structmage_1_1_material_a72a90b9d339d705b5fd46098df5892e2}{m\+\_\+ambient\+\_\+reflectivity\+\_\+texture}
+\item 
+\hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \hyperlink{structmage_1_1_material_afd2cc813023698e52edc01b267a17e6c}{m\+\_\+diffuse\+\_\+reflectivity}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{structmage_1_1_material_a5193e30d3875695c96526a85edc84b88}{m\+\_\+diffuse\+\_\+reflectivity\+\_\+texture}
+\item 
+\hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \hyperlink{structmage_1_1_material_a45587388f4ff57c209de2280b71af9d3}{m\+\_\+specular\+\_\+reflectivity}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{structmage_1_1_material_ac925df9d71f8668c03e8efada632b300}{m\+\_\+specular\+\_\+reflectivity\+\_\+texture}
+\item 
+float \hyperlink{structmage_1_1_material_a62a9e8d9f90bf569b9f692c28da6a7dc}{m\+\_\+specular\+\_\+exponent}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{structmage_1_1_material_a452a92691f612bd21857525c00c5e8e5}{m\+\_\+specular\+\_\+exponent\+\_\+texture}
+\item 
+float \hyperlink{structmage_1_1_material_a42b435ea58ce7da4b48febe9bb33aba7}{m\+\_\+dissolve}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{structmage_1_1_material_aa68e02ed3da6000effc3aadcc99fa4b5}{m\+\_\+dissolve\+\_\+texture}
+\item 
+float \hyperlink{structmage_1_1_material_a8b584541ab8bfc527f856c68bb0152e7}{m\+\_\+index\+\_\+of\+\_\+refraction}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{structmage_1_1_material_acdab45e5d78ddbb7f717d9db67ff3fcf}{m\+\_\+decal\+\_\+texture}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{structmage_1_1_material_a04ca0a2efe12529ae0ea91e9cb622ade}{m\+\_\+displacement\+\_\+texture}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{structmage_1_1_material_aa69355550fbcf2230442e53d71d4ebc6}{m\+\_\+bump\+\_\+texture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_material_ace4a06c8c8c4e75d82e701443f88d1d3}{}\label{structmage_1_1_material_ace4a06c8c8c4e75d82e701443f88d1d3} 
+\index{mage\+::\+Material@{mage\+::\+Material}!Material@{Material}}
+\index{Material@{Material}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{Material()}{Material()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Material\+::\+Material (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{float}]{specular\+\_\+exponent = {\ttfamily 0.0f},  }\item[{float}]{dissolve = {\ttfamily 1.0f},  }\item[{float}]{index\+\_\+of\+\_\+refraction = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_material_abed630412cdc4a6281389d128ec4b5f3}{}\label{structmage_1_1_material_abed630412cdc4a6281389d128ec4b5f3} 
+\index{mage\+::\+Material@{mage\+::\+Material}!Material@{Material}}
+\index{Material@{Material}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{Material()}{Material()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Material\+::\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{structmage_1_1_material_a4ca65b7e24144ee08dd1ce8d0eda9284}{}\label{structmage_1_1_material_a4ca65b7e24144ee08dd1ce8d0eda9284} 
+\index{mage\+::\+Material@{mage\+::\+Material}!````~Material@{$\sim$\+Material}}
+\index{````~Material@{$\sim$\+Material}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{$\sim$\+Material()}{~Material()}}
+{\footnotesize\ttfamily mage\+::\+Material\+::$\sim$\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_material_a7ebc9986924ca13ae8468005518dcfc7}{}\label{structmage_1_1_material_a7ebc9986924ca13ae8468005518dcfc7} 
+\index{mage\+::\+Material@{mage\+::\+Material}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_material}{Material}\& mage\+::\+Material\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_material}{Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_material_ad8fb842410fe751ad220185271a00448}{}\label{structmage_1_1_material_ad8fb842410fe751ad220185271a00448} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+ambient\+\_\+reflectivity@{m\+\_\+ambient\+\_\+reflectivity}}
+\index{m\+\_\+ambient\+\_\+reflectivity@{m\+\_\+ambient\+\_\+reflectivity}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+ambient\+\_\+reflectivity}{m\_ambient\_reflectivity}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} mage\+::\+Material\+::m\+\_\+ambient\+\_\+reflectivity}
+
+The ambient reflectivity of this material. \hypertarget{structmage_1_1_material_a72a90b9d339d705b5fd46098df5892e2}{}\label{structmage_1_1_material_a72a90b9d339d705b5fd46098df5892e2} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+ambient\+\_\+reflectivity\+\_\+texture@{m\+\_\+ambient\+\_\+reflectivity\+\_\+texture}}
+\index{m\+\_\+ambient\+\_\+reflectivity\+\_\+texture@{m\+\_\+ambient\+\_\+reflectivity\+\_\+texture}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+ambient\+\_\+reflectivity\+\_\+texture}{m\_ambient\_reflectivity\_texture}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Material\+::m\+\_\+ambient\+\_\+reflectivity\+\_\+texture}
+
+The ambient reflectivity texture of this material. \hypertarget{structmage_1_1_material_aa69355550fbcf2230442e53d71d4ebc6}{}\label{structmage_1_1_material_aa69355550fbcf2230442e53d71d4ebc6} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+bump\+\_\+texture@{m\+\_\+bump\+\_\+texture}}
+\index{m\+\_\+bump\+\_\+texture@{m\+\_\+bump\+\_\+texture}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+bump\+\_\+texture}{m\_bump\_texture}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Material\+::m\+\_\+bump\+\_\+texture}
+
+The bump texture of this material. \hypertarget{structmage_1_1_material_acdab45e5d78ddbb7f717d9db67ff3fcf}{}\label{structmage_1_1_material_acdab45e5d78ddbb7f717d9db67ff3fcf} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+decal\+\_\+texture@{m\+\_\+decal\+\_\+texture}}
+\index{m\+\_\+decal\+\_\+texture@{m\+\_\+decal\+\_\+texture}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+decal\+\_\+texture}{m\_decal\_texture}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Material\+::m\+\_\+decal\+\_\+texture}
+
+The decal texture of this material. \hypertarget{structmage_1_1_material_afd2cc813023698e52edc01b267a17e6c}{}\label{structmage_1_1_material_afd2cc813023698e52edc01b267a17e6c} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+diffuse\+\_\+reflectivity@{m\+\_\+diffuse\+\_\+reflectivity}}
+\index{m\+\_\+diffuse\+\_\+reflectivity@{m\+\_\+diffuse\+\_\+reflectivity}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+diffuse\+\_\+reflectivity}{m\_diffuse\_reflectivity}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} mage\+::\+Material\+::m\+\_\+diffuse\+\_\+reflectivity}
+
+The diffuse reflectivity of this material. \hypertarget{structmage_1_1_material_a5193e30d3875695c96526a85edc84b88}{}\label{structmage_1_1_material_a5193e30d3875695c96526a85edc84b88} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+diffuse\+\_\+reflectivity\+\_\+texture@{m\+\_\+diffuse\+\_\+reflectivity\+\_\+texture}}
+\index{m\+\_\+diffuse\+\_\+reflectivity\+\_\+texture@{m\+\_\+diffuse\+\_\+reflectivity\+\_\+texture}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+diffuse\+\_\+reflectivity\+\_\+texture}{m\_diffuse\_reflectivity\_texture}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Material\+::m\+\_\+diffuse\+\_\+reflectivity\+\_\+texture}
+
+The diffuse reflectivity texture of this material. \hypertarget{structmage_1_1_material_a04ca0a2efe12529ae0ea91e9cb622ade}{}\label{structmage_1_1_material_a04ca0a2efe12529ae0ea91e9cb622ade} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+displacement\+\_\+texture@{m\+\_\+displacement\+\_\+texture}}
+\index{m\+\_\+displacement\+\_\+texture@{m\+\_\+displacement\+\_\+texture}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+displacement\+\_\+texture}{m\_displacement\_texture}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Material\+::m\+\_\+displacement\+\_\+texture}
+
+The displacement texture of this material. \hypertarget{structmage_1_1_material_a42b435ea58ce7da4b48febe9bb33aba7}{}\label{structmage_1_1_material_a42b435ea58ce7da4b48febe9bb33aba7} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+dissolve@{m\+\_\+dissolve}}
+\index{m\+\_\+dissolve@{m\+\_\+dissolve}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+dissolve}{m\_dissolve}}
+{\footnotesize\ttfamily float mage\+::\+Material\+::m\+\_\+dissolve}
+
+The amount this material dissolves into the background.
+
+A factor of 1.\+0 is fully opaque. A factor of 0.\+0 is fully dissolved (completely transparent).
+
+Unlike a real transparent material, the dissolve does not depend upon material thickness nor does it have any spectral character. \hypertarget{structmage_1_1_material_aa68e02ed3da6000effc3aadcc99fa4b5}{}\label{structmage_1_1_material_aa68e02ed3da6000effc3aadcc99fa4b5} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+dissolve\+\_\+texture@{m\+\_\+dissolve\+\_\+texture}}
+\index{m\+\_\+dissolve\+\_\+texture@{m\+\_\+dissolve\+\_\+texture}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+dissolve\+\_\+texture}{m\_dissolve\_texture}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Material\+::m\+\_\+dissolve\+\_\+texture}
+
+The dissolve texture of this material. \hypertarget{structmage_1_1_material_a8b584541ab8bfc527f856c68bb0152e7}{}\label{structmage_1_1_material_a8b584541ab8bfc527f856c68bb0152e7} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+index\+\_\+of\+\_\+refraction@{m\+\_\+index\+\_\+of\+\_\+refraction}}
+\index{m\+\_\+index\+\_\+of\+\_\+refraction@{m\+\_\+index\+\_\+of\+\_\+refraction}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+index\+\_\+of\+\_\+refraction}{m\_index\_of\_refraction}}
+{\footnotesize\ttfamily float mage\+::\+Material\+::m\+\_\+index\+\_\+of\+\_\+refraction}
+
+The index of refraction (optical density) of this material. \hypertarget{structmage_1_1_material_a2b3e839a8ae093d53b12529d61ec6605}{}\label{structmage_1_1_material_a2b3e839a8ae093d53b12529d61ec6605} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
+{\footnotesize\ttfamily string mage\+::\+Material\+::m\+\_\+name}
+
+The name of this material. \hypertarget{structmage_1_1_material_a62a9e8d9f90bf569b9f692c28da6a7dc}{}\label{structmage_1_1_material_a62a9e8d9f90bf569b9f692c28da6a7dc} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+specular\+\_\+exponent@{m\+\_\+specular\+\_\+exponent}}
+\index{m\+\_\+specular\+\_\+exponent@{m\+\_\+specular\+\_\+exponent}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+specular\+\_\+exponent}{m\_specular\_exponent}}
+{\footnotesize\ttfamily float mage\+::\+Material\+::m\+\_\+specular\+\_\+exponent}
+
+The specular exponent (surface roughness) of this material.
+
+A high exponent results in a tight, concentrated highlight. Values normally range from 0 to 1000. \hypertarget{structmage_1_1_material_a452a92691f612bd21857525c00c5e8e5}{}\label{structmage_1_1_material_a452a92691f612bd21857525c00c5e8e5} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+specular\+\_\+exponent\+\_\+texture@{m\+\_\+specular\+\_\+exponent\+\_\+texture}}
+\index{m\+\_\+specular\+\_\+exponent\+\_\+texture@{m\+\_\+specular\+\_\+exponent\+\_\+texture}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+specular\+\_\+exponent\+\_\+texture}{m\_specular\_exponent\_texture}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Material\+::m\+\_\+specular\+\_\+exponent\+\_\+texture}
+
+The specular exponent texture of this material. \hypertarget{structmage_1_1_material_a45587388f4ff57c209de2280b71af9d3}{}\label{structmage_1_1_material_a45587388f4ff57c209de2280b71af9d3} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+specular\+\_\+reflectivity@{m\+\_\+specular\+\_\+reflectivity}}
+\index{m\+\_\+specular\+\_\+reflectivity@{m\+\_\+specular\+\_\+reflectivity}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+specular\+\_\+reflectivity}{m\_specular\_reflectivity}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} mage\+::\+Material\+::m\+\_\+specular\+\_\+reflectivity}
+
+The specular reflectivity of this material. \hypertarget{structmage_1_1_material_ac925df9d71f8668c03e8efada632b300}{}\label{structmage_1_1_material_ac925df9d71f8668c03e8efada632b300} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+specular\+\_\+reflectivity\+\_\+texture@{m\+\_\+specular\+\_\+reflectivity\+\_\+texture}}
+\index{m\+\_\+specular\+\_\+reflectivity\+\_\+texture@{m\+\_\+specular\+\_\+reflectivity\+\_\+texture}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+specular\+\_\+reflectivity\+\_\+texture}{m\_specular\_reflectivity\_texture}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+Material\+::m\+\_\+specular\+\_\+reflectivity\+\_\+texture}
+
+The specular reflectivity texture of this material. \hypertarget{structmage_1_1_material_a9573a0d2a5fb0322f9eb103ace34dd47}{}\label{structmage_1_1_material_a9573a0d2a5fb0322f9eb103ace34dd47} 
+\index{mage\+::\+Material@{mage\+::\+Material}!m\+\_\+transmission\+\_\+filter@{m\+\_\+transmission\+\_\+filter}}
+\index{m\+\_\+transmission\+\_\+filter@{m\+\_\+transmission\+\_\+filter}!mage\+::\+Material@{mage\+::\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+transmission\+\_\+filter}{m\_transmission\_filter}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} mage\+::\+Material\+::m\+\_\+transmission\+\_\+filter}
+
+The transmission filter of this material.
+
+Any light passing through the material is filtered by the transmission filter, which only allows the specific colors to pass through. 

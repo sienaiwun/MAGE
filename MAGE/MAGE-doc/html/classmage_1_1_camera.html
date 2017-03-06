@@ -96,8 +96,9 @@ Inheritance diagram for mage::Camera:</div>
  <div class="center">
   <img src="classmage_1_1_camera.png" usemap="#mage::Camera_map" alt=""/>
   <map id="mage::Camera_map" name="mage::Camera_map">
-<area href="classmage_1_1_orthographic_camera.html" alt="mage::OrthographicCamera" shape="rect" coords="0,56,167,80"/>
-<area href="classmage_1_1_perspective_camera.html" alt="mage::PerspectiveCamera" shape="rect" coords="177,56,344,80"/>
+<area href="classmage_1_1_world_object.html" alt="mage::WorldObject" shape="rect" coords="88,0,255,24"/>
+<area href="classmage_1_1_orthographic_camera.html" alt="mage::OrthographicCamera" shape="rect" coords="0,112,167,136"/>
+<area href="classmage_1_1_perspective_camera.html" alt="mage::PerspectiveCamera" shape="rect" coords="177,112,344,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -105,8 +106,8 @@ Inheritance diagram for mage::Camera:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a181f7fdf168c0d66022edfecb697dd7d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a181f7fdf168c0d66022edfecb697dd7d">~Camera</a> ()=default</td></tr>
 <tr class="separator:a181f7fdf168c0d66022edfecb697dd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe33e674f74180d6b9566a85eec51ac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#afe33e674f74180d6b9566a85eec51ac4">operator=</a> (const <a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;camera)=default</td></tr>
-<tr class="separator:afe33e674f74180d6b9566a85eec51ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae16a5f66b80f7fa771475aa1eb099634"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#ae16a5f66b80f7fa771475aa1eb099634">operator=</a> (const <a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;camera)</td></tr>
+<tr class="separator:ae16a5f66b80f7fa771475aa1eb099634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19301c2256c183db50b5e9406f7b5f3c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmage_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a19301c2256c183db50b5e9406f7b5f3c">Clone</a> () const =0</td></tr>
 <tr class="separator:a19301c2256c183db50b5e9406f7b5f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2285655605035118861297b2449a3443"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a2285655605035118861297b2449a3443">GetWidth</a> () const</td></tr>
@@ -131,13 +132,33 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8cb00dc1b8455197412c80f321011dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f5206864cf18b5548219492556df5d2"><td class="memItemLeft" align="right" valign="top">virtual XMMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a1f5206864cf18b5548219492556df5d2">GetViewToProjectionMatrix</a> () const =0</td></tr>
 <tr class="separator:a1f5206864cf18b5548219492556df5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmage_1_1_world_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmage_1_1_world_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmage_1_1_world_object.html">mage::WorldObject</a></td></tr>
+<tr class="memitem:a40d714ae9da1e197171c55f8fd321cc4 inherit pub_methods_classmage_1_1_world_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_world_object.html#a40d714ae9da1e197171c55f8fd321cc4">WorldObject</a> (const string &amp;name)</td></tr>
+<tr class="separator:a40d714ae9da1e197171c55f8fd321cc4 inherit pub_methods_classmage_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7ace41518b45c75d975c766de28143 inherit pub_methods_classmage_1_1_world_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_world_object.html#a4e7ace41518b45c75d975c766de28143">WorldObject</a> (const <a class="el" href="classmage_1_1_world_object.html">WorldObject</a> &amp;world_object)</td></tr>
+<tr class="separator:a4e7ace41518b45c75d975c766de28143 inherit pub_methods_classmage_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae28ad98832c1e97b681816755a79f2 inherit pub_methods_classmage_1_1_world_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_world_object.html#a6ae28ad98832c1e97b681816755a79f2">~WorldObject</a> ()=default</td></tr>
+<tr class="separator:a6ae28ad98832c1e97b681816755a79f2 inherit pub_methods_classmage_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53dfc0e654aead5898d0cc76cbc9be6 inherit pub_methods_classmage_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_world_object.html">WorldObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_world_object.html#aa53dfc0e654aead5898d0cc76cbc9be6">operator=</a> (const <a class="el" href="classmage_1_1_world_object.html">WorldObject</a> &amp;world_object)</td></tr>
+<tr class="separator:aa53dfc0e654aead5898d0cc76cbc9be6 inherit pub_methods_classmage_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f464ec7f71740bb89a3ffb0cf6369b2 inherit pub_methods_classmage_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_world_object.html">WorldObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_world_object.html#a6f464ec7f71740bb89a3ffb0cf6369b2">Clone</a> () const</td></tr>
+<tr class="separator:a6f464ec7f71740bb89a3ffb0cf6369b2 inherit pub_methods_classmage_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aab270d50a8d9ab1f9a970d3e04245f inherit pub_methods_classmage_1_1_world_object"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_world_object.html#a3aab270d50a8d9ab1f9a970d3e04245f">GetName</a> () const</td></tr>
+<tr class="separator:a3aab270d50a8d9ab1f9a970d3e04245f inherit pub_methods_classmage_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee42f65080a69ed5cfc681382328fe31 inherit pub_methods_classmage_1_1_world_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_world_object.html#aee42f65080a69ed5cfc681382328fe31">SetName</a> (const string &amp;name)</td></tr>
+<tr class="separator:aee42f65080a69ed5cfc681382328fe31 inherit pub_methods_classmage_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0ff4d1d3b3c2dd63e91e8127023f47 inherit pub_methods_classmage_1_1_world_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmage_1_1_transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_world_object.html#a9f0ff4d1d3b3c2dd63e91e8127023f47">GetTransform</a> () const</td></tr>
+<tr class="separator:a9f0ff4d1d3b3c2dd63e91e8127023f47 inherit pub_methods_classmage_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a64980217b5ae3817affab70eb3e61342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a64980217b5ae3817affab70eb3e61342">Camera</a> (float width, float height, float near_z=MAGE_DEFAULT_CAMERA_NEAR_Z, float far_z=MAGE_DEFAULT_CAMERA_FAR_Z)</td></tr>
-<tr class="separator:a64980217b5ae3817affab70eb3e61342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7804afa68565efe4c48f95453d6c65f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a7804afa68565efe4c48f95453d6c65f0">Camera</a> (const <a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;camera)=default</td></tr>
-<tr class="separator:a7804afa68565efe4c48f95453d6c65f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7f3eaa4d29f780d9389b99c66c21ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a6e7f3eaa4d29f780d9389b99c66c21ab">Camera</a> (const string &amp;name, float width, float height, float near_z=MAGE_DEFAULT_CAMERA_NEAR_Z, float far_z=MAGE_DEFAULT_CAMERA_FAR_Z)</td></tr>
+<tr class="separator:a6e7f3eaa4d29f780d9389b99c66c21ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d9280bd7067ec4d28392558cc2b767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a28d9280bd7067ec4d28392558cc2b767">Camera</a> (const <a class="el" href="classmage_1_1_camera.html">Camera</a> &amp;camera)</td></tr>
+<tr class="separator:a28d9280bd7067ec4d28392558cc2b767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classmage_1_1_world_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmage_1_1_world_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmage_1_1_world_object.html">mage::WorldObject</a></td></tr>
+<tr class="memitem:a5c66de01e9b83c4c1fa6cd64e17443ee inherit pro_methods_classmage_1_1_world_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_world_object.html#a5c66de01e9b83c4c1fa6cd64e17443ee">AddChildTransform</a> (const <a class="el" href="classmage_1_1_world_object.html">WorldObject</a> &amp;world_object) const</td></tr>
+<tr class="separator:a5c66de01e9b83c4c1fa6cd64e17443ee inherit pro_methods_classmage_1_1_world_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -149,6 +170,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a685f8700a29d1f1eff2bec353c3ec970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2eeca725ce3da238256007454b241f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#abe2eeca725ce3da238256007454b241f">m_far_z</a></td></tr>
 <tr class="separator:abe2eeca725ce3da238256007454b241f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd53bbda894441e788928c50e9776c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; <a class="el" href="structmage_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_camera.html#a7fd53bbda894441e788928c50e9776c1">m_transform</a></td></tr>
+<tr class="separator:a7fd53bbda894441e788928c50e9776c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of camera. </p>
@@ -179,8 +202,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a64980217b5ae3817affab70eb3e61342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64980217b5ae3817affab70eb3e61342">&sect;&nbsp;</a></span>Camera() <span class="overload">[1/2]</span></h2>
+<a id="a6e7f3eaa4d29f780d9389b99c66c21ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7f3eaa4d29f780d9389b99c66c21ab">&sect;&nbsp;</a></span>Camera() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,6 +214,12 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">mage::Camera::Camera </td>
           <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
@@ -227,6 +256,7 @@ Private Attributes</h2></td></tr>
 <p>Constructs a camera.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>A reference to the name of the camera. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>The width. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>The height. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">near_z</td><td>The position of the near z-plane. </td></tr>
@@ -237,8 +267,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7804afa68565efe4c48f95453d6c65f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7804afa68565efe4c48f95453d6c65f0">&sect;&nbsp;</a></span>Camera() <span class="overload">[2/2]</span></h2>
+<a id="a28d9280bd7067ec4d28392558cc2b767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d9280bd7067ec4d28392558cc2b767">&sect;&nbsp;</a></span>Camera() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +286,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -296,7 +326,7 @@ Private Attributes</h2></td></tr>
 <p>Clones this camera.</p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the clone of this camera. </dd></dl>
 
-<p>Implemented in <a class="el" href="classmage_1_1_perspective_camera.html#aa2fae7b2ca5daadeda0fd935fcdb101a">mage::PerspectiveCamera</a>, and <a class="el" href="classmage_1_1_orthographic_camera.html#a3fc2e5cfe7283670937de2a4841a5428">mage::OrthographicCamera</a>.</p>
+<p>Implemented in <a class="el" href="classmage_1_1_perspective_camera.html#a08eebf7f3ba10a46b4b23c0ded1192f2">mage::PerspectiveCamera</a>, and <a class="el" href="classmage_1_1_orthographic_camera.html#ae075c08e4af88f74212bf5c84d2e5b2a">mage::OrthographicCamera</a>.</p>
 
 </div>
 </div>
@@ -405,14 +435,11 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afe33e674f74180d6b9566a85eec51ac4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe33e674f74180d6b9566a85eec51ac4">&sect;&nbsp;</a></span>operator=()</h2>
+<a id="ae16a5f66b80f7fa771475aa1eb099634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16a5f66b80f7fa771475aa1eb099634">&sect;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classmage_1_1_camera.html">Camera</a>&amp; mage::Camera::operator= </td>
@@ -422,11 +449,6 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Copies the given camera to this camera.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -683,6 +705,29 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The position of the near z-plane. </p>
+
+</div>
+</div>
+<a id="a7fd53bbda894441e788928c50e9776c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd53bbda894441e788928c50e9776c1">&sect;&nbsp;</a></span>m_transform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; <a class="el" href="structmage_1_1_transform.html">Transform</a> &gt; mage::Camera::m_transform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The transform of this camera. </p>
 
 </div>
 </div>

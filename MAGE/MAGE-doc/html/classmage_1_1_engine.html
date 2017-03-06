@@ -81,7 +81,6 @@ $(document).ready(function(){initNavTree('classmage_1_1_engine.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_engine-members.html">List of all members</a>  </div>
@@ -103,8 +102,8 @@ Inheritance diagram for mage::Engine:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa561c09a58a2ab15aab99cf06f770014"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#aa561c09a58a2ab15aab99cf06f770014">Engine</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup=<a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a>())</td></tr>
-<tr class="separator:aa561c09a58a2ab15aab99cf06f770014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99770cbb017b29c284d7f8e4c7e2b84c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a99770cbb017b29c284d7f8e4c7e2b84c">Engine</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)</td></tr>
+<tr class="separator:a99770cbb017b29c284d7f8e4c7e2b84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34628556f8397d70ed018d71e343c2f5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a34628556f8397d70ed018d71e343c2f5">~Engine</a> ()</td></tr>
 <tr class="separator:a34628556f8397d70ed018d71e343c2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a246c82d0e55bc29e73aecbc365464ec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a246c82d0e55bc29e73aecbc365464ec8">Run</a> (int nCmdShow=SW_NORMAL)</td></tr>
@@ -117,35 +116,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a42a90a61ede031ee768b8aa6d7f808ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b574f0d702240d76fa98b2c79856d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a8b574f0d702240d76fa98b2c79856d0d">SetModeSwitchFlag</a> (bool mode_switch)</td></tr>
 <tr class="separator:a8b574f0d702240d76fa98b2c79856d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8708d3e11461ecd3b0325a7c8fec8fa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_state_manager.html">StateManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a8708d3e11461ecd3b0325a7c8fec8fa2">GetStateManager</a> () const</td></tr>
-<tr class="separator:a8708d3e11461ecd3b0325a7c8fec8fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefcc06d74537a9d67a3dd923a33fb905"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; <a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#aefcc06d74537a9d67a3dd923a33fb905">GetScriptManager</a> () const</td></tr>
-<tr class="separator:aefcc06d74537a9d67a3dd923a33fb905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a728ad054d36cee8eaf9ee3eb6c1e1201"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmage_1_1_input_manager.html">InputManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a728ad054d36cee8eaf9ee3eb6c1e1201">GetInputManager</a> () const</td></tr>
 <tr class="separator:a728ad054d36cee8eaf9ee3eb6c1e1201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a18dc9775f6ab4c9cd103b07ad47903"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_resource_factory.html">ResourceFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a1a18dc9775f6ab4c9cd103b07ad47903">GetResourceFactory</a> () const</td></tr>
+<tr class="separator:a1a18dc9775f6ab4c9cd103b07ad47903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec75ed67f8fb68a383fa892e50b21ea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#aec75ed67f8fb68a383fa892e50b21ea7">SetScene</a> (<a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; <a class="el" href="classmage_1_1_scene.html">Scene</a> &gt; scene)</td></tr>
+<tr class="separator:aec75ed67f8fb68a383fa892e50b21ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmage_1_1_loadable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmage_1_1_loadable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmage_1_1_loadable.html">mage::Loadable</a></td></tr>
 <tr class="memitem:a53cfa5beb9b44bbcda0d6166a54b8cb6 inherit pub_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a53cfa5beb9b44bbcda0d6166a54b8cb6">IsLoaded</a> () const</td></tr>
 <tr class="separator:a53cfa5beb9b44bbcda0d6166a54b8cb6 inherit pub_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2d0a2669520cce1316a176cc3e891502"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a2d0a2669520cce1316a176cc3e891502">InitializeSystems</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)</td></tr>
-<tr class="separator:a2d0a2669520cce1316a176cc3e891502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c3ed26138932f8b17daa20526b100e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a83c3ed26138932f8b17daa20526b100e">IsDeactive</a> () const</td></tr>
-<tr class="separator:a83c3ed26138932f8b17daa20526b100e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54cb08ec26da300b0c7ca4e7f9a35e0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a54cb08ec26da300b0c7ca4e7f9a35e0b">ModeSwitch</a> () const</td></tr>
-<tr class="separator:a54cb08ec26da300b0c7ca4e7f9a35e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classmage_1_1_loadable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmage_1_1_loadable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmage_1_1_loadable.html">mage::Loadable</a></td></tr>
-<tr class="memitem:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#afbdcb287b5e20583899a27a1c244bc7d">Loadable</a> (bool loaded=false)</td></tr>
-<tr class="separator:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21364449c045d579cb6090347d83cd54 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a21364449c045d579cb6090347d83cd54">Loadable</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)=default</td></tr>
-<tr class="separator:a21364449c045d579cb6090347d83cd54 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f51b5e1065ebe4dd1da7ef9c9966546 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a7f51b5e1065ebe4dd1da7ef9c9966546">~Loadable</a> ()=default</td></tr>
-<tr class="separator:a7f51b5e1065ebe4dd1da7ef9c9966546 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82277616525b6ed9b1e19fd2dcdb4c0d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a82277616525b6ed9b1e19fd2dcdb4c0d">operator=</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)=default</td></tr>
-<tr class="separator:a82277616525b6ed9b1e19fd2dcdb4c0d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a932ff8b287c8e68e30a13804cba08ff2">SetLoaded</a> (bool loaded=true)</td></tr>
-<tr class="separator:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -153,6 +132,12 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:afd2f4f32b2e803f59521aafe1924f0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eedff82d4c8207c61676230520648fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_engine.html">Engine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a1eedff82d4c8207c61676230520648fd">operator=</a> (const <a class="el" href="classmage_1_1_engine.html">Engine</a> &amp;engine)=delete</td></tr>
 <tr class="separator:a1eedff82d4c8207c61676230520648fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0a2669520cce1316a176cc3e891502"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a2d0a2669520cce1316a176cc3e891502">InitializeSystems</a> (const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;setup)</td></tr>
+<tr class="separator:a2d0a2669520cce1316a176cc3e891502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c3ed26138932f8b17daa20526b100e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a83c3ed26138932f8b17daa20526b100e">IsDeactive</a> () const</td></tr>
+<tr class="separator:a83c3ed26138932f8b17daa20526b100e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54cb08ec26da300b0c7ca4e7f9a35e0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a54cb08ec26da300b0c7ca4e7f9a35e0b">ModeSwitch</a> () const</td></tr>
+<tr class="separator:a54cb08ec26da300b0c7ca4e7f9a35e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -164,18 +149,32 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1248b7c21bc8256c72d372c12ed1ee68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5cb2e0b7bb2c4a9020e79ab832ee221"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#aa5cb2e0b7bb2c4a9020e79ab832ee221">m_mode_switch</a></td></tr>
 <tr class="separator:aa5cb2e0b7bb2c4a9020e79ab832ee221"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa85a18b6064491bc07d52e61ae512e9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_state_manager.html">StateManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#aa85a18b6064491bc07d52e61ae512e9d">m_state_manager</a></td></tr>
-<tr class="separator:aa85a18b6064491bc07d52e61ae512e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a856b75c6cced7aac36788233b4c46ffc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; <a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a856b75c6cced7aac36788233b4c46ffc">m_script_manager</a></td></tr>
-<tr class="separator:a856b75c6cced7aac36788233b4c46ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e9048208a6a5c5b034aaa1cbdab28bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_input_manager.html">InputManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a8e9048208a6a5c5b034aaa1cbdab28bc">m_input_manager</a></td></tr>
 <tr class="separator:a8e9048208a6a5c5b034aaa1cbdab28bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7c2d4fc75fc3512e02054056cf8a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_resource_factory.html">ResourceFactory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a0c7c2d4fc75fc3512e02054056cf8a90">m_resource_factory</a></td></tr>
+<tr class="separator:a0c7c2d4fc75fc3512e02054056cf8a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82158ab9c1b60538ef8c46d5eb263bb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; <a class="el" href="classmage_1_1_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_engine.html#a82158ab9c1b60538ef8c46d5eb263bb8">m_scene</a></td></tr>
+<tr class="separator:a82158ab9c1b60538ef8c46d5eb263bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classmage_1_1_loadable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmage_1_1_loadable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmage_1_1_loadable.html">mage::Loadable</a></td></tr>
+<tr class="memitem:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#afbdcb287b5e20583899a27a1c244bc7d">Loadable</a> (bool loaded=false)</td></tr>
+<tr class="separator:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21364449c045d579cb6090347d83cd54 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a21364449c045d579cb6090347d83cd54">Loadable</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)=default</td></tr>
+<tr class="separator:a21364449c045d579cb6090347d83cd54 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f51b5e1065ebe4dd1da7ef9c9966546 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a7f51b5e1065ebe4dd1da7ef9c9966546">~Loadable</a> ()=default</td></tr>
+<tr class="separator:a7f51b5e1065ebe4dd1da7ef9c9966546 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82277616525b6ed9b1e19fd2dcdb4c0d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a82277616525b6ed9b1e19fd2dcdb4c0d">operator=</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)=default</td></tr>
+<tr class="separator:a82277616525b6ed9b1e19fd2dcdb4c0d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a932ff8b287c8e68e30a13804cba08ff2">SetLoaded</a> (bool loaded=true)</td></tr>
+<tr class="separator:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of engines. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa561c09a58a2ab15aab99cf06f770014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa561c09a58a2ab15aab99cf06f770014">&sect;&nbsp;</a></span>Engine() <span class="overload">[1/2]</span></h2>
+<a id="a99770cbb017b29c284d7f8e4c7e2b84c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99770cbb017b29c284d7f8e4c7e2b84c">&sect;&nbsp;</a></span>Engine() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +183,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">mage::Engine::Engine </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a> &amp;&#160;</td>
-          <td class="paramname"><em>setup</em> = <code><a class="el" href="structmage_1_1_engine_setup.html">EngineSetup</a>()</code></td><td>)</td>
+          <td class="paramname"><em>setup</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -316,41 +315,22 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aefcc06d74537a9d67a3dd923a33fb905"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefcc06d74537a9d67a3dd923a33fb905">&sect;&nbsp;</a></span>GetScriptManager()</h2>
+<a id="a1a18dc9775f6ab4c9cd103b07ad47903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a18dc9775f6ab4c9cd103b07ad47903">&sect;&nbsp;</a></span>GetResourceFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; <a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &gt;&amp; mage::Engine::GetScriptManager </td>
+          <td class="memname"><a class="el" href="classmage_1_1_resource_factory.html">ResourceFactory</a>&amp; mage::Engine::GetResourceFactory </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the script manager of this engine.</p>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the script manager of this engine. </dd></dl>
-
-</div>
-</div>
-<a id="a8708d3e11461ecd3b0325a7c8fec8fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8708d3e11461ecd3b0325a7c8fec8fa2">&sect;&nbsp;</a></span>GetStateManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmage_1_1_state_manager.html">StateManager</a>&amp; mage::Engine::GetStateManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the state manager of this engine.</p>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the state manager of this engine. </dd></dl>
+<p>Returns the resource factory of this engine.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the resource factory of this engine. </dd></dl>
 
 </div>
 </div>
@@ -373,7 +353,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -406,7 +386,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -433,7 +413,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -548,6 +528,26 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aec75ed67f8fb68a383fa892e50b21ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec75ed67f8fb68a383fa892e50b21ea7">&sect;&nbsp;</a></span>SetScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Engine::SetScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; <a class="el" href="classmage_1_1_scene.html">Scene</a> &gt;&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the scene of this engine to the given scene.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the scene to set. </dd></dl>
 
 </div>
 </div>
@@ -667,8 +667,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a856b75c6cced7aac36788233b4c46ffc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a856b75c6cced7aac36788233b4c46ffc">&sect;&nbsp;</a></span>m_script_manager</h2>
+<a id="a0c7c2d4fc75fc3512e02054056cf8a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c7c2d4fc75fc3512e02054056cf8a90">&sect;&nbsp;</a></span>m_resource_factory</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -677,7 +677,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_resource_manager.html">ResourceManager</a>&lt; <a class="el" href="classmage_1_1_variable_script.html">VariableScript</a> &gt; &gt; mage::Engine::m_script_manager</td>
+          <td class="memname"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_resource_factory.html">ResourceFactory</a> &gt; mage::Engine::m_resource_factory</td>
         </tr>
       </table>
   </td>
@@ -686,12 +686,12 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A pointer the script manager of this engine </p>
+<p>A pointer to the resource factory of this engine. </p>
 
 </div>
 </div>
-<a id="aa85a18b6064491bc07d52e61ae512e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa85a18b6064491bc07d52e61ae512e9d">&sect;&nbsp;</a></span>m_state_manager</h2>
+<a id="a82158ab9c1b60538ef8c46d5eb263bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82158ab9c1b60538ef8c46d5eb263bb8">&sect;&nbsp;</a></span>m_scene</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -700,7 +700,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_state_manager.html">StateManager</a> &gt; mage::Engine::m_state_manager</td>
+          <td class="memname"><a class="el" href="namespacemage.html#a1e01ae66713838a7a67d30e44c67703e">SharedPtr</a>&lt; <a class="el" href="classmage_1_1_scene.html">Scene</a> &gt; mage::Engine::m_scene</td>
         </tr>
       </table>
   </td>
@@ -709,7 +709,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A pointer to the state manager of this engine. </p>
+<p>The current scene of this engine. </p>
 
 </div>
 </div>

@@ -1,0 +1,83 @@
+\hypertarget{classmage_1_1_lambertian_vertex_shader}{}\section{mage\+:\+:Lambertian\+Vertex\+Shader Class Reference}
+\label{classmage_1_1_lambertian_vertex_shader}\index{mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}}
+
+
+{\ttfamily \#include $<$lambertian\+\_\+shader.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:Lambertian\+Vertex\+Shader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmage_1_1_lambertian_vertex_shader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_lambertian_vertex_shader_a96895a373639cf89d2fe4552203aeeda}{Lambertian\+Vertex\+Shader} (const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&device)
+\item 
+virtual \hyperlink{classmage_1_1_lambertian_vertex_shader_a55636fd3817b97b6529690d6e3e5cd46}{$\sim$\+Lambertian\+Vertex\+Shader} ()=default
+\item 
+virtual void \hyperlink{classmage_1_1_lambertian_vertex_shader_a4011d368dfaf7d0202a4cfde052d390a}{Render} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context, const \hyperlink{structmage_1_1_material}{Material} \&material, const \hyperlink{classmage_1_1_world}{World} \&world, const \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer} \&transform\+\_\+buffer) const override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_lambertian_vertex_shader_add164d66906e307d95232b2c41567a21}{Lambertian\+Vertex\+Shader} (const \hyperlink{classmage_1_1_lambertian_vertex_shader}{Lambertian\+Vertex\+Shader} \&vertex\+\_\+shader)=delete
+\item 
+\hyperlink{classmage_1_1_lambertian_vertex_shader}{Lambertian\+Vertex\+Shader} \& \hyperlink{classmage_1_1_lambertian_vertex_shader_a974b43346ab5d8081d9101f715e7670d}{operator=} (const \hyperlink{classmage_1_1_lambertian_vertex_shader}{Lambertian\+Vertex\+Shader} \&vertex\+\_\+shader)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ \hyperlink{classmage_1_1_lambertian_vertex_shader_aae0f2411821315d89eeb982e6c30c22e}{m\+\_\+cb\+\_\+transform}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_lambertian_vertex_shader_a96895a373639cf89d2fe4552203aeeda}{}\label{classmage_1_1_lambertian_vertex_shader_a96895a373639cf89d2fe4552203aeeda} 
+\index{mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}!Lambertian\+Vertex\+Shader@{Lambertian\+Vertex\+Shader}}
+\index{Lambertian\+Vertex\+Shader@{Lambertian\+Vertex\+Shader}!mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{Lambertian\+Vertex\+Shader()}{LambertianVertexShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Lambertian\+Vertex\+Shader\+::\+Lambertian\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_rendering_device}{Rendering\+Device} \&}]{device }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_lambertian_vertex_shader_a55636fd3817b97b6529690d6e3e5cd46}{}\label{classmage_1_1_lambertian_vertex_shader_a55636fd3817b97b6529690d6e3e5cd46} 
+\index{mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}!````~Lambertian\+Vertex\+Shader@{$\sim$\+Lambertian\+Vertex\+Shader}}
+\index{````~Lambertian\+Vertex\+Shader@{$\sim$\+Lambertian\+Vertex\+Shader}!mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{$\sim$\+Lambertian\+Vertex\+Shader()}{~LambertianVertexShader()}}
+{\footnotesize\ttfamily virtual mage\+::\+Lambertian\+Vertex\+Shader\+::$\sim$\+Lambertian\+Vertex\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_lambertian_vertex_shader_add164d66906e307d95232b2c41567a21}{}\label{classmage_1_1_lambertian_vertex_shader_add164d66906e307d95232b2c41567a21} 
+\index{mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}!Lambertian\+Vertex\+Shader@{Lambertian\+Vertex\+Shader}}
+\index{Lambertian\+Vertex\+Shader@{Lambertian\+Vertex\+Shader}!mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{Lambertian\+Vertex\+Shader()}{LambertianVertexShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Lambertian\+Vertex\+Shader\+::\+Lambertian\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_lambertian_vertex_shader}{Lambertian\+Vertex\+Shader} \&}]{vertex\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_lambertian_vertex_shader_a974b43346ab5d8081d9101f715e7670d}{}\label{classmage_1_1_lambertian_vertex_shader_a974b43346ab5d8081d9101f715e7670d} 
+\index{mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_lambertian_vertex_shader}{Lambertian\+Vertex\+Shader}\& mage\+::\+Lambertian\+Vertex\+Shader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_lambertian_vertex_shader}{Lambertian\+Vertex\+Shader} \&}]{vertex\+\_\+shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_lambertian_vertex_shader_a4011d368dfaf7d0202a4cfde052d390a}{}\label{classmage_1_1_lambertian_vertex_shader_a4011d368dfaf7d0202a4cfde052d390a} 
+\index{mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::\+Lambertian\+Vertex\+Shader\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context,  }\item[{const \hyperlink{structmage_1_1_material}{Material} \&}]{material,  }\item[{const \hyperlink{classmage_1_1_world}{World} \&}]{world,  }\item[{const \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer} \&}]{transform\+\_\+buffer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classmage_1_1_vertex_shader_acc01e7bdd392d1985bbaaed7cbf40461}{mage\+::\+Vertex\+Shader}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_lambertian_vertex_shader_aae0f2411821315d89eeb982e6c30c22e}{}\label{classmage_1_1_lambertian_vertex_shader_aae0f2411821315d89eeb982e6c30c22e} 
+\index{mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}!m\+\_\+cb\+\_\+transform@{m\+\_\+cb\+\_\+transform}}
+\index{m\+\_\+cb\+\_\+transform@{m\+\_\+cb\+\_\+transform}!mage\+::\+Lambertian\+Vertex\+Shader@{mage\+::\+Lambertian\+Vertex\+Shader}}
+\subsubsection{\texorpdfstring{m\+\_\+cb\+\_\+transform}{m\_cb\_transform}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Buffer $>$ mage\+::\+Lambertian\+Vertex\+Shader\+::m\+\_\+cb\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
+

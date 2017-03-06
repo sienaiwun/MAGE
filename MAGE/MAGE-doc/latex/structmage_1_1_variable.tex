@@ -14,7 +14,7 @@ struct \hyperlink{structmage_1_1_variable_1_1_value}{Value}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename T $>$ }\\\hyperlink{structmage_1_1_variable_a86a59487f5ae51954f75a27b6c9487ce}{Variable} (const string \&name, \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} type, const T $\ast$value)
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structmage_1_1_variable_aefdee0e7bab3f1a18f0dc1cdc28429b6}{Variable} (\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} type, const string \&name, const T $\ast$value)
 \item 
 \hyperlink{structmage_1_1_variable_a8f4d3e950b25b14e996ad074e42a5e9e}{$\sim$\+Variable} ()
 \item 
@@ -52,12 +52,12 @@ const \hyperlink{structmage_1_1_variable_1_1_abstract_value}{Abstract\+Value} $\
 A struct of (immutable) variables. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{structmage_1_1_variable_a86a59487f5ae51954f75a27b6c9487ce}{}\label{structmage_1_1_variable_a86a59487f5ae51954f75a27b6c9487ce} 
+\hypertarget{structmage_1_1_variable_aefdee0e7bab3f1a18f0dc1cdc28429b6}{}\label{structmage_1_1_variable_aefdee0e7bab3f1a18f0dc1cdc28429b6} 
 \index{mage\+::\+Variable@{mage\+::\+Variable}!Variable@{Variable}}
 \index{Variable@{Variable}!mage\+::\+Variable@{mage\+::\+Variable}}
 \subsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type}}]{type,  }\item[{const T $\ast$}]{value }\end{DoxyParamCaption})}
+mage\+::\+Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type}}]{type,  }\item[{const string \&}]{name,  }\item[{const T $\ast$}]{value }\end{DoxyParamCaption})}
 
 Constructs a variable.
 
@@ -68,9 +68,9 @@ Constructs a variable.
 \end{DoxyTemplParams}
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & The name. \\
-\hline
 \mbox{\tt in}  & {\em type} & The (scripting) type of the value. \\
+\hline
+\mbox{\tt in}  & {\em name} & The name. \\
 \hline
 \mbox{\tt in}  & {\em value} & A pointer to the value. \\
 \hline

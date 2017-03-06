@@ -115,14 +115,20 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetBlockSize()
 : <a class="el" href="classmage_1_1_memory_arena.html#a0db28bd286a517a30acdc061ace0bf56">mage::MemoryArena</a>
 </li>
+<li>GetCamera()
+: <a class="el" href="classmage_1_1_scene.html#a8b2ad419541a51353d6f56ba12f43d79">mage::Scene</a>
+</li>
 <li>GetCurrentBlockPtr()
 : <a class="el" href="classmage_1_1_memory_arena.html#ac856206614ef9890d500df207d12e863">mage::MemoryArena</a>
 </li>
 <li>GetCurrentBlockSize()
 : <a class="el" href="classmage_1_1_memory_arena.html#a2789bf0c58dee881662bbb0c5ba73e55">mage::MemoryArena</a>
 </li>
-<li>GetCurrentState()
-: <a class="el" href="classmage_1_1_state_manager.html#ab3a37b1ef0d2e9960ff4c98747c64d3f">mage::StateManager</a>
+<li>GetCurrentLineNumber()
+: <a class="el" href="classmage_1_1_line_reader.html#ae7115d55bbb8a6e9b0764831624df33b">mage::LineReader</a>
+</li>
+<li>GetDelimiters()
+: <a class="el" href="classmage_1_1_line_reader.html#a7de405beff27d5cc55bb93e1b1e9727a">mage::LineReader</a>
 </li>
 <li>GetDeltaWheel()
 : <a class="el" href="classmage_1_1_mouse.html#a898f4d0e645040c3a4121c2fe8119a89">mage::Mouse</a>
@@ -134,10 +140,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classmage_1_1_mouse.html#af0769d0f7658b0699cf5b4f797163510">mage::Mouse</a>
 </li>
 <li>GetDevice()
-: <a class="el" href="classmage_1_1_renderer.html#a872e88f421405b06a995a6fb231d59ec">mage::Renderer</a>
+: <a class="el" href="classmage_1_1_renderer.html#a9465ff1640cb5333ca4e701977ae51ec">mage::Renderer</a>
 </li>
 <li>GetDeviceContext()
-: <a class="el" href="classmage_1_1_renderer.html#a9c0c9254fb8295e415c80fff8de99f82">mage::Renderer</a>
+: <a class="el" href="classmage_1_1_renderer.html#a764ee3d8f3dea6aceb05f42bce80b147">mage::Renderer</a>
 </li>
 <li>GetDisplayMode()
 : <a class="el" href="classmage_1_1_device_enumeration.html#a533ac2f6ea91604a3ea3cc8d93c3de87">mage::DeviceEnumeration</a>
@@ -145,8 +151,13 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetFarZ()
 : <a class="el" href="classmage_1_1_camera.html#a7f293a8711086b3419fe3b4224ff2778">mage::Camera</a>
 </li>
+<li>GetFeatureLevel()
+: <a class="el" href="classmage_1_1_rendering_device.html#a1bdcb0b7047cf01160953e99083b3185">mage::RenderingDevice</a>
+</li>
 <li>GetFilename()
-: <a class="el" href="classmage_1_1_resource.html#a1f05385b8c05646989689fc04847a816">mage::Resource</a>
+: <a class="el" href="classmage_1_1_line_reader.html#a64a800d9fe9c242b9b14d034a7d604eb">mage::LineReader</a>
+, <a class="el" href="classmage_1_1_resource.html#a1f05385b8c05646989689fc04847a816">mage::Resource</a>
+, <a class="el" href="classmage_1_1_writer.html#aa874f2ee6cdd6663078d213f10d984f1">mage::Writer</a>
 </li>
 <li>GetFOVY()
 : <a class="el" href="classmage_1_1_perspective_camera.html#a15223034b30ca691c51de8850c033293">mage::PerspectiveCamera</a>
@@ -160,15 +171,16 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetHeight()
 : <a class="el" href="classmage_1_1_camera.html#a4c6c5e96085651ce29cd6e87543d21ec">mage::Camera</a>
+, <a class="el" href="classmage_1_1_renderer.html#a40c90d8878416dd03b7fdef0b3de29a8">mage::Renderer</a>
 </li>
 <li>GetHinstance()
 : <a class="el" href="classmage_1_1_main_window.html#ae26a7e1e96bc5522461aed6156138a0c">mage::MainWindow</a>
 </li>
-<li>GetId()
-: <a class="el" href="classmage_1_1_state.html#a07c383a809204ba12a2bbfb22d2977d5">mage::State</a>
-</li>
 <li>GetInputManager()
 : <a class="el" href="classmage_1_1_engine.html#a728ad054d36cee8eaf9ee3eb6c1e1201">mage::Engine</a>
+</li>
+<li>GetIntensity()
+: <a class="el" href="structmage_1_1_point_light.html#aee79741f59d9abebfdd77784c4b29381">mage::PointLight</a>
 </li>
 <li>GetInverseRotationMatrix()
 : <a class="el" href="structmage_1_1_transform.html#a12e7ee212a9270fb3f01de9b7f5ee3b8">mage::Transform</a>
@@ -183,10 +195,24 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classmage_1_1_input_manager.html#a1702868136ae35014f27357b5b0f5ce8">mage::InputManager</a>
 </li>
 <li>GetKeyPress()
-: <a class="el" href="classmage_1_1_keyboard.html#a7ba5a3c47b7116afb5b3362739c2a278">mage::Keyboard</a>
+: <a class="el" href="classmage_1_1_keyboard.html#a94d35ad5ad27e3fc9496f3ab1fa28e4d">mage::Keyboard</a>
+</li>
+<li>GetLight()
+: <a class="el" href="classmage_1_1_world.html#ac7c1a382b10e67bd42493af3966c9212">mage::World</a>
 </li>
 <li>GetMainWindow()
 : <a class="el" href="classmage_1_1_engine.html#a3bfc843926e0870cd5b8d512fb392607">mage::Engine</a>
+</li>
+<li>GetMaterial()
+: <a class="el" href="structmage_1_1_shaded_material.html#a785d01e0156c6aba84d479917b62ab03">mage::ShadedMaterial</a>
+, <a class="el" href="classmage_1_1_sub_model.html#af993f41f73a72df9fca154083c5f7410">mage::SubModel</a>
+</li>
+<li>GetMesh()
+: <a class="el" href="classmage_1_1_mesh_model.html#ab9a1c64ebb6b72cd6862e701983351c4">mage::MeshModel</a>
+, <a class="el" href="classmage_1_1_model_descriptor.html#a325f0e58fda7734ace7a0e296e0d970d">mage::ModelDescriptor</a>
+</li>
+<li>GetModel()
+: <a class="el" href="classmage_1_1_world.html#ac91abee028df87d8879332e0df3d9e8a">mage::World</a>
 </li>
 <li>GetMouse()
 : <a class="el" href="classmage_1_1_input_manager.html#a79f8294128ccd710ad80571483377067">mage::InputManager</a>
@@ -195,15 +221,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classmage_1_1_mouse.html#a9c8d4493c86685b259819b5995a17c7a">mage::Mouse</a>
 </li>
 <li>GetName()
-: <a class="el" href="classmage_1_1_main_window.html#aa2b99118a5125d4effbd5c5d9352e7e0">mage::MainWindow</a>
-, <a class="el" href="classmage_1_1_resource.html#a49a7e0c571a266b0c3ddf20979c491c8">mage::Resource</a>
+: <a class="el" href="classmage_1_1_behavior_script.html#a06179af26e24991b5083a5b1d603bc93">mage::BehaviorScript</a>
+, <a class="el" href="classmage_1_1_main_window.html#aa2b99118a5125d4effbd5c5d9352e7e0">mage::MainWindow</a>
+, <a class="el" href="classmage_1_1_resource.html#a6c253886da9b0c3a52ca7a38ba448d74">mage::Resource</a>
+, <a class="el" href="classmage_1_1_scene.html#a251ff8f6ce0da5c55ee31e3450b5fb9a">mage::Scene</a>
 , <a class="el" href="structmage_1_1_variable.html#a7f70fdadf34cdf6b26adc9910eade11d">mage::Variable</a>
-</li>
-<li>GetNbOfChilds()
-: <a class="el" href="structmage_1_1_transform.html#a9374ee1896e1006b81e7643a1c1dc967">mage::Transform</a>
-</li>
-<li>GetNbOfVariables()
-: <a class="el" href="classmage_1_1_variable_script.html#a27ed94a510a3dab0e60b42b650ca6f09">mage::VariableScript</a>
+, <a class="el" href="classmage_1_1_world_object.html#a3aab270d50a8d9ab1f9a970d3e04245f">mage::WorldObject</a>
 </li>
 <li>GetNearZ()
 : <a class="el" href="classmage_1_1_camera.html#a175e3c36526a8a3e28cd2f8bd1701c55">mage::Camera</a>
@@ -213,6 +236,31 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetNumberbOfResources()
 : <a class="el" href="classmage_1_1_resource_manager.html#a1872b087dac1794746b320c6ece63fd8">mage::ResourceManager&lt; T &gt;</a>
+</li>
+<li>GetNumberOfChilds()
+: <a class="el" href="structmage_1_1_transform.html#a4661691249d08ea41f9ee44f9838f0ed">mage::Transform</a>
+</li>
+<li>GetNumberOfIndices()
+: <a class="el" href="classmage_1_1_mesh.html#a69991b73609ebf936df5c7d2afd2b767">mage::Mesh</a>
+, <a class="el" href="classmage_1_1_sub_model.html#a18736678fc1a5d882776298053e037b3">mage::SubModel</a>
+</li>
+<li>GetNumberOfLights()
+: <a class="el" href="classmage_1_1_world.html#a786420d8d8b97065ee591753b7f1541b">mage::World</a>
+</li>
+<li>GetNumberOfModels()
+: <a class="el" href="classmage_1_1_world.html#a6e04fdde74a2616746cdafd12537c4a7">mage::World</a>
+</li>
+<li>GetNumberOfScripts()
+: <a class="el" href="classmage_1_1_scene.html#a799ac8ddd90d24f6c3c208942e4f159c">mage::Scene</a>
+</li>
+<li>GetNumberOfSubModels()
+: <a class="el" href="classmage_1_1_model.html#a29ad2496b11ef5af5f179cfe52943cd3">mage::Model</a>
+</li>
+<li>GetNumberOfVariables()
+: <a class="el" href="classmage_1_1_variable_script.html#ad0bcb7dbb42f705f475c64feb1063fb4">mage::VariableScript</a>
+</li>
+<li>GetNumberOfVertices()
+: <a class="el" href="classmage_1_1_mesh.html#a47732f4ac48000c2a1f5562bdba38a81">mage::Mesh</a>
 </li>
 <li>GetObjectAxes()
 : <a class="el" href="structmage_1_1_transform.html#a814f749d70104ec5732a741b0b2b7220">mage::Transform</a>
@@ -256,9 +304,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetOutput()
 : <a class="el" href="classmage_1_1_device_enumeration.html#ac3958dd53d2fdb8ff645d8dca6dc5fdd">mage::DeviceEnumeration</a>
 </li>
-<li>GetParent()
-: <a class="el" href="structmage_1_1_transform.html#a9ad6f03ef7e41ddfe1af7ac2dd0c263c">mage::Transform</a>
-</li>
 <li>GetParentAxes()
 : <a class="el" href="structmage_1_1_transform.html#acdd8950649ae1a779c254da82136033a">mage::Transform</a>
 </li>
@@ -281,7 +326,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="structmage_1_1_transform.html#a66eee9c51ff050924d35c3747083593f">mage::Transform</a>
 </li>
 <li>GetPath()
-: <a class="el" href="classmage_1_1_resource.html#af1066ff99a6b3238de9702ddc971ffe0">mage::Resource</a>
+: <a class="el" href="classmage_1_1_resource.html#a82a540b610f04adc251771ec6fe8e535">mage::Resource</a>
+</li>
+<li>GetPixelShader()
+: <a class="el" href="structmage_1_1_combined_shader.html#a70b9d991d76c07aff7e6e83cc5f715b1">mage::CombinedShader</a>
 </li>
 <li>GetPosX()
 : <a class="el" href="classmage_1_1_mouse.html#a6af2e1ea96554ee34e16a37a257fe11c">mage::Mouse</a>
@@ -289,11 +337,17 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetPosY()
 : <a class="el" href="classmage_1_1_mouse.html#af4da58c811896f0814956382a756db61">mage::Mouse</a>
 </li>
+<li>GetRadius()
+: <a class="el" href="structmage_1_1_point_light.html#a6321441e96d79caaacf40056beb288f2">mage::PointLight</a>
+</li>
 <li>GetRenderer()
 : <a class="el" href="classmage_1_1_engine.html#a42a90a61ede031ee768b8aa6d7f808ae">mage::Engine</a>
 </li>
 <li>GetResource()
-: <a class="el" href="classmage_1_1_resource_manager.html#a7632144a5d65ba34b9d1923b9201f129">mage::ResourceManager&lt; T &gt;</a>
+: <a class="el" href="classmage_1_1_resource_manager.html#a8196c2ab8b01b5afbae191ea342141e3">mage::ResourceManager&lt; T &gt;</a>
+</li>
+<li>GetResourceFactory()
+: <a class="el" href="classmage_1_1_engine.html#a1a18dc9775f6ab4c9cd103b07ad47903">mage::Engine</a>
 </li>
 <li>GetRotation()
 : <a class="el" href="structmage_1_1_transform.html#a30a0464b1bd2fb37d6b5cc2155323a14">mage::Transform</a>
@@ -325,14 +379,26 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetScaleZ()
 : <a class="el" href="structmage_1_1_transform.html#a9e8f3a4ec330e6f4c9e1a9607daf30fa">mage::Transform</a>
 </li>
-<li>GetScriptManager()
-: <a class="el" href="classmage_1_1_engine.html#aefcc06d74537a9d67a3dd923a33fb905">mage::Engine</a>
+<li>GetScript()
+: <a class="el" href="classmage_1_1_scene.html#aa5d10620d1cf62ba268095f7a2cd2191">mage::Scene</a>
 </li>
-<li>GetStateManager()
-: <a class="el" href="classmage_1_1_engine.html#a8708d3e11461ecd3b0325a7c8fec8fa2">mage::Engine</a>
+<li>GetShader()
+: <a class="el" href="structmage_1_1_shaded_material.html#ac03da6f1dfd81fc19da5a8f8214662ee">mage::ShadedMaterial</a>
+</li>
+<li>GetStartIndex()
+: <a class="el" href="classmage_1_1_sub_model.html#a2b901cb62dca26a7ff399719e0a4ba66">mage::SubModel</a>
+</li>
+<li>GetSubModel()
+: <a class="el" href="classmage_1_1_model.html#a1cae9eb62a353445d14b5331e88bdeac">mage::Model</a>
+</li>
+<li>GetTextureResourceView()
+: <a class="el" href="classmage_1_1_texture.html#a95a4969f097f2cd46ddaf973d5637fbc">mage::Texture</a>
 </li>
 <li>GetTotalBlockSize()
 : <a class="el" href="classmage_1_1_memory_arena.html#ac4be7fb4d5623d6f78b1576c7884883a">mage::MemoryArena</a>
+</li>
+<li>GetTransform()
+: <a class="el" href="classmage_1_1_world_object.html#a9f0ff4d1d3b3c2dd63e91e8127023f47">mage::WorldObject</a>
 </li>
 <li>GetTranslation()
 : <a class="el" href="structmage_1_1_transform.html#aca74308060f244adf137676e79a9f6e5">mage::Transform</a>
@@ -360,6 +426,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetValueOfVariable()
 : <a class="el" href="classmage_1_1_variable_script.html#a231b83e1e32b882489ed90faa69f7137">mage::VariableScript</a>
 </li>
+<li>GetVertexShader()
+: <a class="el" href="structmage_1_1_combined_shader.html#a57d05ca7f8982d4f078f5d7fef506fd8">mage::CombinedShader</a>
+</li>
 <li>GetViewToProjectionMatrix()
 : <a class="el" href="classmage_1_1_camera.html#a1f5206864cf18b5548219492556df5d2">mage::Camera</a>
 , <a class="el" href="classmage_1_1_orthographic_camera.html#aedd86e56a0f7bc967ad8d9be2631a0cf">mage::OrthographicCamera</a>
@@ -367,6 +436,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetWidth()
 : <a class="el" href="classmage_1_1_camera.html#a2285655605035118861297b2449a3443">mage::Camera</a>
+, <a class="el" href="classmage_1_1_renderer.html#a65e448e5fa4e8b6be0371ff00b97912a">mage::Renderer</a>
+</li>
+<li>GetWorld()
+: <a class="el" href="classmage_1_1_scene.html#a0365a6a2e83519ad33280cc607408b4a">mage::Scene</a>
 </li>
 <li>GetWorldAxes()
 : <a class="el" href="structmage_1_1_transform.html#a580a4f9fd987259da0cf0355ade7fb4b">mage::Transform</a>

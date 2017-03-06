@@ -1,0 +1,93 @@
+\hypertarget{structmage_1_1_transform_buffer}{}\section{mage\+:\+:Transform\+Buffer Struct Reference}
+\label{structmage_1_1_transform_buffer}\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+
+
+{\ttfamily \#include $<$transform\+\_\+buffer.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_transform_buffer_a9a627fb63533073b2c699136e04dae14}{Transform\+Buffer} (const \hyperlink{classmage_1_1_camera}{Camera} \&camera)
+\item 
+\hyperlink{structmage_1_1_transform_buffer_a1ede694450450cc6b13a5caed373abad}{Transform\+Buffer} (const \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer} \&buffer)=default
+\item 
+\hyperlink{structmage_1_1_transform_buffer_aac881d64eb39634d0e0e6cd8a13b6e2a}{$\sim$\+Transform\+Buffer} ()=default
+\item 
+\hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer} \& \hyperlink{structmage_1_1_transform_buffer_a5268ed4c7f416a54976f7ad18a1cb108}{operator=} (const \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer} \&buffer)=default
+\item 
+void \hyperlink{structmage_1_1_transform_buffer_ab9d62cf4fc2332242333b4649779e706}{Set\+Model\+To\+World} (const X\+M\+M\+A\+T\+R\+IX \&model\+\_\+to\+\_\+world) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{structmage_1_1_transform_buffer_ac5f95a7f0e9ac61140c3520675da8e52}{m\+\_\+model\+\_\+to\+\_\+world}
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{structmage_1_1_transform_buffer_af014f4da6aa86484c99c6b429af7da75}{m\+\_\+world\+\_\+to\+\_\+view}
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{structmage_1_1_transform_buffer_a334cb416c43803c805bc7b57fe3a908e}{m\+\_\+world\+\_\+to\+\_\+view\+\_\+inverse\+\_\+transpose}
+\item 
+X\+M\+M\+A\+T\+R\+IX \hyperlink{structmage_1_1_transform_buffer_a4f077fa865fe8edf41619f5941ee605c}{m\+\_\+view\+\_\+to\+\_\+projection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_transform_buffer_a9a627fb63533073b2c699136e04dae14}{}\label{structmage_1_1_transform_buffer_a9a627fb63533073b2c699136e04dae14} 
+\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}!Transform\+Buffer@{Transform\+Buffer}}
+\index{Transform\+Buffer@{Transform\+Buffer}!mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+\subsubsection{\texorpdfstring{Transform\+Buffer()}{TransformBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+Buffer\+::\+Transform\+Buffer (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_transform_buffer_a1ede694450450cc6b13a5caed373abad}{}\label{structmage_1_1_transform_buffer_a1ede694450450cc6b13a5caed373abad} 
+\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}!Transform\+Buffer@{Transform\+Buffer}}
+\index{Transform\+Buffer@{Transform\+Buffer}!mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+\subsubsection{\texorpdfstring{Transform\+Buffer()}{TransformBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Transform\+Buffer\+::\+Transform\+Buffer (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer} \&}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{structmage_1_1_transform_buffer_aac881d64eb39634d0e0e6cd8a13b6e2a}{}\label{structmage_1_1_transform_buffer_aac881d64eb39634d0e0e6cd8a13b6e2a} 
+\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}!````~Transform\+Buffer@{$\sim$\+Transform\+Buffer}}
+\index{````~Transform\+Buffer@{$\sim$\+Transform\+Buffer}!mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+\subsubsection{\texorpdfstring{$\sim$\+Transform\+Buffer()}{~TransformBuffer()}}
+{\footnotesize\ttfamily mage\+::\+Transform\+Buffer\+::$\sim$\+Transform\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_transform_buffer_a5268ed4c7f416a54976f7ad18a1cb108}{}\label{structmage_1_1_transform_buffer_a5268ed4c7f416a54976f7ad18a1cb108} 
+\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer}\& mage\+::\+Transform\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer} \&}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{structmage_1_1_transform_buffer_ab9d62cf4fc2332242333b4649779e706}{}\label{structmage_1_1_transform_buffer_ab9d62cf4fc2332242333b4649779e706} 
+\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}!Set\+Model\+To\+World@{Set\+Model\+To\+World}}
+\index{Set\+Model\+To\+World@{Set\+Model\+To\+World}!mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+\subsubsection{\texorpdfstring{Set\+Model\+To\+World()}{SetModelToWorld()}}
+{\footnotesize\ttfamily void mage\+::\+Transform\+Buffer\+::\+Set\+Model\+To\+World (\begin{DoxyParamCaption}\item[{const X\+M\+M\+A\+T\+R\+IX \&}]{model\+\_\+to\+\_\+world }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_transform_buffer_ac5f95a7f0e9ac61140c3520675da8e52}{}\label{structmage_1_1_transform_buffer_ac5f95a7f0e9ac61140c3520675da8e52} 
+\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}!m\+\_\+model\+\_\+to\+\_\+world@{m\+\_\+model\+\_\+to\+\_\+world}}
+\index{m\+\_\+model\+\_\+to\+\_\+world@{m\+\_\+model\+\_\+to\+\_\+world}!mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+to\+\_\+world}{m\_model\_to\_world}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Transform\+Buffer\+::m\+\_\+model\+\_\+to\+\_\+world\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\hypertarget{structmage_1_1_transform_buffer_a4f077fa865fe8edf41619f5941ee605c}{}\label{structmage_1_1_transform_buffer_a4f077fa865fe8edf41619f5941ee605c} 
+\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}!m\+\_\+view\+\_\+to\+\_\+projection@{m\+\_\+view\+\_\+to\+\_\+projection}}
+\index{m\+\_\+view\+\_\+to\+\_\+projection@{m\+\_\+view\+\_\+to\+\_\+projection}!mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+view\+\_\+to\+\_\+projection}{m\_view\_to\_projection}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Transform\+Buffer\+::m\+\_\+view\+\_\+to\+\_\+projection\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{structmage_1_1_transform_buffer_af014f4da6aa86484c99c6b429af7da75}{}\label{structmage_1_1_transform_buffer_af014f4da6aa86484c99c6b429af7da75} 
+\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}!m\+\_\+world\+\_\+to\+\_\+view@{m\+\_\+world\+\_\+to\+\_\+view}}
+\index{m\+\_\+world\+\_\+to\+\_\+view@{m\+\_\+world\+\_\+to\+\_\+view}!mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+world\+\_\+to\+\_\+view}{m\_world\_to\_view}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Transform\+Buffer\+::m\+\_\+world\+\_\+to\+\_\+view\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{structmage_1_1_transform_buffer_a334cb416c43803c805bc7b57fe3a908e}{}\label{structmage_1_1_transform_buffer_a334cb416c43803c805bc7b57fe3a908e} 
+\index{mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}!m\+\_\+world\+\_\+to\+\_\+view\+\_\+inverse\+\_\+transpose@{m\+\_\+world\+\_\+to\+\_\+view\+\_\+inverse\+\_\+transpose}}
+\index{m\+\_\+world\+\_\+to\+\_\+view\+\_\+inverse\+\_\+transpose@{m\+\_\+world\+\_\+to\+\_\+view\+\_\+inverse\+\_\+transpose}!mage\+::\+Transform\+Buffer@{mage\+::\+Transform\+Buffer}}
+\subsubsection{\texorpdfstring{m\+\_\+world\+\_\+to\+\_\+view\+\_\+inverse\+\_\+transpose}{m\_world\_to\_view\_inverse\_transpose}}
+{\footnotesize\ttfamily X\+M\+M\+A\+T\+R\+IX mage\+::\+Transform\+Buffer\+::m\+\_\+world\+\_\+to\+\_\+view\+\_\+inverse\+\_\+transpose\hspace{0.3cm}{\ttfamily [private]}}
+

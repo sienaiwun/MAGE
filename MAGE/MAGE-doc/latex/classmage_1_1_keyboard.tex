@@ -21,23 +21,7 @@ void \hyperlink{classmage_1_1_keyboard_abb5fd91a304f8bbf8b15ab1a277dafaf}{Update
 \item 
 H\+W\+ND \hyperlink{classmage_1_1_keyboard_ab9d2244f94faccb9c745b07a8bebc888}{Get\+Handle} () const
 \item 
-bool \hyperlink{classmage_1_1_keyboard_a7ba5a3c47b7116afb5b3362739c2a278}{Get\+Key\+Press} (char key, bool ignore\+\_\+press\+\_\+stamp=false) const
-\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_keyboard_a1d3211c7377529e570bb5cde900f73db}{Initialize\+Keyboard} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+Direct\+Input8 $>$ di)
-\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-uint64\+\_\+t \hyperlink{classmage_1_1_keyboard_a2c638a93d1f61d9d3578a0df8b6a1c39}{m\+\_\+press\+\_\+stamp}
-\item 
-\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+Direct\+Input\+Device8 $>$ \hyperlink{classmage_1_1_keyboard_a992b8b8caf0d858163e5e9af04302324}{m\+\_\+keyboard}
-\item 
-char \hyperlink{classmage_1_1_keyboard_ad3361790f2c9cc5ca19161f0c8e24acd}{m\+\_\+key\+\_\+state} \mbox{[}256\mbox{]}
-\item 
-uint64\+\_\+t \hyperlink{classmage_1_1_keyboard_a8eb4ce7e4e2395bb27d2ac9236655335}{m\+\_\+key\+\_\+press\+\_\+stamp} \mbox{[}256\mbox{]}
+bool \hyperlink{classmage_1_1_keyboard_a94d35ad5ad27e3fc9496f3ab1fa28e4d}{Get\+Key\+Press} (unsigned char key, bool ignore\+\_\+press\+\_\+stamp=false) const
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -45,12 +29,23 @@ uint64\+\_\+t \hyperlink{classmage_1_1_keyboard_a8eb4ce7e4e2395bb27d2ac923665533
 \hyperlink{classmage_1_1_keyboard_a39d07f8a5e37648ca9eba30aa55146bf}{Keyboard} (const \hyperlink{classmage_1_1_keyboard}{Keyboard} \&keyboard)=delete
 \item 
 \hyperlink{classmage_1_1_keyboard}{Keyboard} \& \hyperlink{classmage_1_1_keyboard_ae3ba98190c8c14ea894c676888825f35}{operator=} (const \hyperlink{classmage_1_1_keyboard}{Keyboard} \&keyboard)=delete
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_keyboard_a1d3211c7377529e570bb5cde900f73db}{Initialize\+Keyboard} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+Direct\+Input8 $>$ di)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 H\+W\+ND \hyperlink{classmage_1_1_keyboard_aa7196c689dad6f5aaf35e3929de02791}{m\+\_\+hwindow}
+\item 
+\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+Direct\+Input\+Device8 $>$ \hyperlink{classmage_1_1_keyboard_a992b8b8caf0d858163e5e9af04302324}{m\+\_\+keyboard}
+\item 
+uint64\+\_\+t \hyperlink{classmage_1_1_keyboard_a2c638a93d1f61d9d3578a0df8b6a1c39}{m\+\_\+press\+\_\+stamp}
+\item 
+unsigned char \hyperlink{classmage_1_1_keyboard_a7499df459499f5addd50507ea1e2358c}{m\+\_\+key\+\_\+state} \mbox{[}256\mbox{]}
+\item 
+uint64\+\_\+t \hyperlink{classmage_1_1_keyboard_a8eb4ce7e4e2395bb27d2ac9236655335}{m\+\_\+key\+\_\+press\+\_\+stamp} \mbox{[}256\mbox{]}
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -105,11 +100,11 @@ Returns the window handle of this keyboard.
 \begin{DoxyReturn}{Returns}
 The window handle of this keyboard. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_keyboard_a7ba5a3c47b7116afb5b3362739c2a278}{}\label{classmage_1_1_keyboard_a7ba5a3c47b7116afb5b3362739c2a278} 
+\hypertarget{classmage_1_1_keyboard_a94d35ad5ad27e3fc9496f3ab1fa28e4d}{}\label{classmage_1_1_keyboard_a94d35ad5ad27e3fc9496f3ab1fa28e4d} 
 \index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!Get\+Key\+Press@{Get\+Key\+Press}}
 \index{Get\+Key\+Press@{Get\+Key\+Press}!mage\+::\+Keyboard@{mage\+::\+Keyboard}}
 \subsubsection{\texorpdfstring{Get\+Key\+Press()}{GetKeyPress()}}
-{\footnotesize\ttfamily bool mage\+::\+Keyboard\+::\+Get\+Key\+Press (\begin{DoxyParamCaption}\item[{char}]{key,  }\item[{bool}]{ignore\+\_\+press\+\_\+stamp = {\ttfamily false} }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool mage\+::\+Keyboard\+::\+Get\+Key\+Press (\begin{DoxyParamCaption}\item[{unsigned char}]{key,  }\item[{bool}]{ignore\+\_\+press\+\_\+stamp = {\ttfamily false} }\end{DoxyParamCaption}) const}
 
 Checks whether the given key of this keyboard is pressed.
 
@@ -127,7 +122,7 @@ Checks whether the given key of this keyboard is pressed.
 \index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!Initialize\+Keyboard@{Initialize\+Keyboard}}
 \index{Initialize\+Keyboard@{Initialize\+Keyboard}!mage\+::\+Keyboard@{mage\+::\+Keyboard}}
 \subsubsection{\texorpdfstring{Initialize\+Keyboard()}{InitializeKeyboard()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Keyboard\+::\+Initialize\+Keyboard (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+Direct\+Input8 $>$}]{di }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Keyboard\+::\+Initialize\+Keyboard (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+Direct\+Input8 $>$}]{di }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Initializes the keyboard device of this keyboard.
 
@@ -174,19 +169,19 @@ The handle of the parent window. \hypertarget{classmage_1_1_keyboard_a8eb4ce7e4e
 \index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!m\+\_\+key\+\_\+press\+\_\+stamp@{m\+\_\+key\+\_\+press\+\_\+stamp}}
 \index{m\+\_\+key\+\_\+press\+\_\+stamp@{m\+\_\+key\+\_\+press\+\_\+stamp}!mage\+::\+Keyboard@{mage\+::\+Keyboard}}
 \subsubsection{\texorpdfstring{m\+\_\+key\+\_\+press\+\_\+stamp}{m\_key\_press\_stamp}}
-{\footnotesize\ttfamily uint64\+\_\+t mage\+::\+Keyboard\+::m\+\_\+key\+\_\+press\+\_\+stamp\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}
+{\footnotesize\ttfamily uint64\+\_\+t mage\+::\+Keyboard\+::m\+\_\+key\+\_\+press\+\_\+stamp\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
 
-Stamps the keys pressed in the last frame of this keyboard. \hypertarget{classmage_1_1_keyboard_ad3361790f2c9cc5ca19161f0c8e24acd}{}\label{classmage_1_1_keyboard_ad3361790f2c9cc5ca19161f0c8e24acd} 
+Stamps the keys pressed in the last frame of this keyboard. \hypertarget{classmage_1_1_keyboard_a7499df459499f5addd50507ea1e2358c}{}\label{classmage_1_1_keyboard_a7499df459499f5addd50507ea1e2358c} 
 \index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!m\+\_\+key\+\_\+state@{m\+\_\+key\+\_\+state}}
 \index{m\+\_\+key\+\_\+state@{m\+\_\+key\+\_\+state}!mage\+::\+Keyboard@{mage\+::\+Keyboard}}
 \subsubsection{\texorpdfstring{m\+\_\+key\+\_\+state}{m\_key\_state}}
-{\footnotesize\ttfamily char mage\+::\+Keyboard\+::m\+\_\+key\+\_\+state\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily unsigned char mage\+::\+Keyboard\+::m\+\_\+key\+\_\+state\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
 
-\hyperlink{classmage_1_1_state}{State} of the keys of this keyboard. \hypertarget{classmage_1_1_keyboard_a992b8b8caf0d858163e5e9af04302324}{}\label{classmage_1_1_keyboard_a992b8b8caf0d858163e5e9af04302324} 
+State of the keys of this keyboard. \hypertarget{classmage_1_1_keyboard_a992b8b8caf0d858163e5e9af04302324}{}\label{classmage_1_1_keyboard_a992b8b8caf0d858163e5e9af04302324} 
 \index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!m\+\_\+keyboard@{m\+\_\+keyboard}}
 \index{m\+\_\+keyboard@{m\+\_\+keyboard}!mage\+::\+Keyboard@{mage\+::\+Keyboard}}
 \subsubsection{\texorpdfstring{m\+\_\+keyboard}{m\_keyboard}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+Direct\+Input\+Device8 $>$ mage\+::\+Keyboard\+::m\+\_\+keyboard\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+Direct\+Input\+Device8 $>$ mage\+::\+Keyboard\+::m\+\_\+keyboard\hspace{0.3cm}{\ttfamily [private]}}
 
 The Direct\+Input keyboard device of this keyboard.
 
@@ -194,6 +189,6 @@ The methods of the I\+Direct\+Input\+Device8 interface are used to gain and rele
 \index{mage\+::\+Keyboard@{mage\+::\+Keyboard}!m\+\_\+press\+\_\+stamp@{m\+\_\+press\+\_\+stamp}}
 \index{m\+\_\+press\+\_\+stamp@{m\+\_\+press\+\_\+stamp}!mage\+::\+Keyboard@{mage\+::\+Keyboard}}
 \subsubsection{\texorpdfstring{m\+\_\+press\+\_\+stamp}{m\_press\_stamp}}
-{\footnotesize\ttfamily uint64\+\_\+t mage\+::\+Keyboard\+::m\+\_\+press\+\_\+stamp\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily uint64\+\_\+t mage\+::\+Keyboard\+::m\+\_\+press\+\_\+stamp\hspace{0.3cm}{\ttfamily [private]}}
 
 The current press stamp (incremented every frame). 

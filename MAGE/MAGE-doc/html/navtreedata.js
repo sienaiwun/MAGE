@@ -4,8 +4,8 @@ var NAVTREE =
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
+        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
+        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
@@ -30,8 +30,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classmage_1_1_read_write_mutex.html",
-"structmage_1_1_camera_transform_buffer.html#acf0f9265ffe93c9203993bf573811364",
+"classmage_1_1_main_window.html#afc9afabcf8a52d79f02c8352451863cc",
+"classmage_1_1_rendering_device.html#af4b0fee01c9b70dc769feff9b295738f",
+"functions_func_l.html",
+"structmage_1_1_logging_configuration.html#afd44a8c35f8c2e2f7d75b876ae504b06",
 "structmage_1_1_u_v.html#a9aa55008cd8f18f25817209198cf0ec2"
 ];
 

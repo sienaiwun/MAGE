@@ -81,9 +81,8 @@ $(document).ready(function(){initNavTree('classmage_1_1_mesh.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mage::Mesh Class Reference</div>  </div>
@@ -91,44 +90,23 @@ $(document).ready(function(){initNavTree('classmage_1_1_mesh.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="mesh_8hpp_source.html">mesh.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for mage::Mesh:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classmage_1_1_mesh.png" usemap="#mage::Mesh_map" alt=""/>
-  <map id="mage::Mesh_map" name="mage::Mesh_map">
-<area href="classmage_1_1_resource.html" alt="mage::Resource" shape="rect" coords="0,0,102,24"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec88dd772e8c8d25aa9c263ab155f78b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#aec88dd772e8c8d25aa9c263ab155f78b">Mesh</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, const wstring &amp;name, const wstring &amp;path=MAGE_DEFAULT_RESOURCE_PATH, bool invert_handedness=false, bool clockwise_order=true)</td></tr>
-<tr class="separator:aec88dd772e8c8d25aa9c263ab155f78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7e701f7fcdc611479875a98c465da42"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#ab7e701f7fcdc611479875a98c465da42">~Mesh</a> ()</td></tr>
-<tr class="separator:ab7e701f7fcdc611479875a98c465da42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1116b9b7d66aba46412af418361c5b7"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#af1116b9b7d66aba46412af418361c5b7">BindBuffers</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt; device_context) const</td></tr>
-<tr class="separator:af1116b9b7d66aba46412af418361c5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acef4f55140f0f842791ea4dfa25b7598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#acef4f55140f0f842791ea4dfa25b7598">Update</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt; device_context) const</td></tr>
-<tr class="separator:acef4f55140f0f842791ea4dfa25b7598"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:af7f1ad857f340015630655ab9d34747c"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#af7f1ad857f340015630655ab9d34747c">InitializeBuffers</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, bool invert_handedness, bool clockwise_order)</td></tr>
-<tr class="separator:af7f1ad857f340015630655ab9d34747c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227af05ff8cbb1ad676c93dc8dc5d14b"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a227af05ff8cbb1ad676c93dc8dc5d14b">SetupVertexBuffer</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, const <a class="el" href="structmage_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> *vertices, size_t nb_vertices)</td></tr>
-<tr class="separator:a227af05ff8cbb1ad676c93dc8dc5d14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d3baa68f8cc60f3d260e6ecefc126a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a61d3baa68f8cc60f3d260e6ecefc126a">SetupIndexBuffer</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; device, const uint32_t *indices, size_t nb_indices)</td></tr>
-<tr class="separator:a61d3baa68f8cc60f3d260e6ecefc126a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a5e3baa9e2b2e9b4ce795a456f76d87b2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a5e3baa9e2b2e9b4ce795a456f76d87b2">m_nb_indices</a></td></tr>
-<tr class="separator:a5e3baa9e2b2e9b4ce795a456f76d87b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ae74887eb330201829477cf772ba6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#af5ae74887eb330201829477cf772ba6e">m_vertex_buffer</a></td></tr>
-<tr class="separator:af5ae74887eb330201829477cf772ba6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe29363ebac77b284ca69532fd5b3373"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#abe29363ebac77b284ca69532fd5b3373">m_index_buffer</a></td></tr>
-<tr class="separator:abe29363ebac77b284ca69532fd5b3373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90fac875310053047620e1bec7fe839"><td class="memTemplParams" colspan="2">template&lt;typename VertexT &gt; </td></tr>
+<tr class="memitem:ae90fac875310053047620e1bec7fe839"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#ae90fac875310053047620e1bec7fe839">Mesh</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, const VertexT *vertices, size_t nb_vertices, const uint32_t *indices, size_t nb_indices)</td></tr>
+<tr class="separator:ae90fac875310053047620e1bec7fe839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554dc36fd64af37ccbd445b00cd59237"><td class="memTemplParams" colspan="2">template&lt;typename VertexT &gt; </td></tr>
+<tr class="memitem:a554dc36fd64af37ccbd445b00cd59237"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a554dc36fd64af37ccbd445b00cd59237">Mesh</a> (const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;device, const vector&lt; VertexT &gt; &amp;vertices, const vector&lt; uint32_t &gt; &amp;indices)</td></tr>
+<tr class="separator:a554dc36fd64af37ccbd445b00cd59237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b4b9054a518c1f7e2078fdc65a95b8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a53b4b9054a518c1f7e2078fdc65a95b8">~Mesh</a> ()=default</td></tr>
+<tr class="separator:a53b4b9054a518c1f7e2078fdc65a95b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47732f4ac48000c2a1f5562bdba38a81"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a47732f4ac48000c2a1f5562bdba38a81">GetNumberOfVertices</a> () const</td></tr>
+<tr class="separator:a47732f4ac48000c2a1f5562bdba38a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69991b73609ebf936df5c7d2afd2b767"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a69991b73609ebf936df5c7d2afd2b767">GetNumberOfIndices</a> () const</td></tr>
+<tr class="separator:a69991b73609ebf936df5c7d2afd2b767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb9a42e0ab5f4f482e03a6fa7debd6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#abcb9a42e0ab5f4f482e03a6fa7debd6e">Render</a> (<a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt; device_context) const</td></tr>
+<tr class="separator:abcb9a42e0ab5f4f482e03a6fa7debd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -136,56 +114,60 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a1627e85c72d10bdedbfbf746b108cc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5baf961af32b379671a59a082492bc5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a5baf961af32b379671a59a082492bc5e">operator=</a> (const <a class="el" href="classmage_1_1_mesh.html">Mesh</a> &amp;mesh)=delete</td></tr>
 <tr class="separator:a5baf961af32b379671a59a082492bc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classmage_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmage_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="classmage_1_1_resource.html">mage::Resource</a></td></tr>
-<tr class="memitem:a37c7283a66b4658718465830072d6df6 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a37c7283a66b4658718465830072d6df6">Resource</a> (const wstring &amp;name, const wstring &amp;path=MAGE_DEFAULT_RESOURCE_PATH)</td></tr>
-<tr class="separator:a37c7283a66b4658718465830072d6df6 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26cea6261aac321d95ac745703f1a3e8 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a26cea6261aac321d95ac745703f1a3e8">~Resource</a> ()=default</td></tr>
-<tr class="separator:a26cea6261aac321d95ac745703f1a3e8 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1066ff99a6b3238de9702ddc971ffe0 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#af1066ff99a6b3238de9702ddc971ffe0">GetPath</a> () const</td></tr>
-<tr class="separator:af1066ff99a6b3238de9702ddc971ffe0 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a7e0c571a266b0c3ddf20979c491c8 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a49a7e0c571a266b0c3ddf20979c491c8">GetName</a> () const</td></tr>
-<tr class="separator:a49a7e0c571a266b0c3ddf20979c491c8 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f05385b8c05646989689fc04847a816 inherit pub_methods_classmage_1_1_resource"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a1f05385b8c05646989689fc04847a816">GetFilename</a> () const</td></tr>
-<tr class="separator:a1f05385b8c05646989689fc04847a816 inherit pub_methods_classmage_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a94a983af3aad7327aab525d6b40f90a7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a94a983af3aad7327aab525d6b40f90a7">m_vertex_size</a></td></tr>
+<tr class="separator:a94a983af3aad7327aab525d6b40f90a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a04aa73e98c75dd5b8929296c3af9bb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a5a04aa73e98c75dd5b8929296c3af9bb">m_nb_vertices</a></td></tr>
+<tr class="separator:a5a04aa73e98c75dd5b8929296c3af9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3baa9e2b2e9b4ce795a456f76d87b2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#a5e3baa9e2b2e9b4ce795a456f76d87b2">m_nb_indices</a></td></tr>
+<tr class="separator:a5e3baa9e2b2e9b4ce795a456f76d87b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ae74887eb330201829477cf772ba6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#af5ae74887eb330201829477cf772ba6e">m_vertex_buffer</a></td></tr>
+<tr class="separator:af5ae74887eb330201829477cf772ba6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe29363ebac77b284ca69532fd5b3373"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_mesh.html#abe29363ebac77b284ca69532fd5b3373">m_index_buffer</a></td></tr>
+<tr class="separator:abe29363ebac77b284ca69532fd5b3373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of indexed meshes. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aec88dd772e8c8d25aa9c263ab155f78b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec88dd772e8c8d25aa9c263ab155f78b">&sect;&nbsp;</a></span>Mesh() <span class="overload">[1/2]</span></h2>
+<a id="ae90fac875310053047620e1bec7fe839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90fac875310053047620e1bec7fe839">&sect;&nbsp;</a></span>Mesh() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename VertexT &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">mage::Mesh::Mesh </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const wstring &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramtype">const VertexT *&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const wstring &amp;&#160;</td>
-          <td class="paramname"><em>path</em> = <code>MAGE_DEFAULT_RESOURCE_PATH</code>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nb_vertices</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>invert_handedness</em> = <code>false</code>, </td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>clockwise_order</em> = <code>true</code>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nb_indices</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -195,21 +177,85 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Constructs a mesh.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>vertices</em> may not be equal to <code>nullptr</code> </dd>
+<dd>
+<em>indices</em> may not be equal to <code>nullptr</code> </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VertexT</td><td>The vertex type. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to an D3D11 device. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>A reference to the name of the mesh. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>A reference to the path of the mesh. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">invert_handedness</td><td>Flag indicating whether the handness of the coordinate system of the mesh should be inverted. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">clockwise_order</td><td>Flag indicating whether the vertices of triangles should be in clockwise order. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A reference to the rendering device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>A pointer to an array of vertices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_vertices</td><td>The number of vertices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">indices</td><td>A pointer to an array of indices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_indices</td><td>The number of indices. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab7e701f7fcdc611479875a98c465da42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7e701f7fcdc611479875a98c465da42">&sect;&nbsp;</a></span>~Mesh()</h2>
+<a id="a554dc36fd64af37ccbd445b00cd59237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554dc36fd64af37ccbd445b00cd59237">&sect;&nbsp;</a></span>Mesh() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VertexT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::Mesh::Mesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; VertexT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; uint32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a mesh.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>The number of vertices must be greater than zero. </dd>
+<dd>
+The number of indices must be greater than zero. </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VertexT</td><td>The vertex type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A reference to the rendering device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>A reference to a vector of vertices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">indices</td><td>A reference to a vector of indices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to an D3D11 device. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53b4b9054a518c1f7e2078fdc65a95b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b4b9054a518c1f7e2078fdc65a95b8">&sect;&nbsp;</a></span>~Mesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +272,7 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -235,7 +281,7 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1627e85c72d10bdedbfbf746b108cc73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1627e85c72d10bdedbfbf746b108cc73">&sect;&nbsp;</a></span>Mesh() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1627e85c72d10bdedbfbf746b108cc73">&sect;&nbsp;</a></span>Mesh() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,63 +314,41 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af1116b9b7d66aba46412af418361c5b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1116b9b7d66aba46412af418361c5b7">&sect;&nbsp;</a></span>BindBuffers()</h2>
+<a id="a69991b73609ebf936df5c7d2afd2b767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69991b73609ebf936df5c7d2afd2b767">&sect;&nbsp;</a></span>GetNumberOfIndices()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::Mesh::BindBuffers </td>
+          <td class="memname">size_t mage::Mesh::GetNumberOfIndices </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt;&#160;</td>
-          <td class="paramname"><em>device_context</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the number of indices of this mesh.</p>
+<dl class="section return"><dt>Returns</dt><dd>The number of indices of this mesh. </dd></dl>
 
 </div>
 </div>
-<a id="af7f1ad857f340015630655ab9d34747c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7f1ad857f340015630655ab9d34747c">&sect;&nbsp;</a></span>InitializeBuffers()</h2>
+<a id="a47732f4ac48000c2a1f5562bdba38a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47732f4ac48000c2a1f5562bdba38a81">&sect;&nbsp;</a></span>GetNumberOfVertices()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT mage::Mesh::InitializeBuffers </td>
+          <td class="memname">size_t mage::Mesh::GetNumberOfVertices </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>invert_handedness</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>clockwise_order</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<p>Returns the number of vertices of this mesh.</p>
+<dl class="section return"><dt>Returns</dt><dd>The number of vertices of this mesh. </dd></dl>
 
 </div>
 </div>
@@ -362,98 +386,14 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a61d3baa68f8cc60f3d260e6ecefc126a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61d3baa68f8cc60f3d260e6ecefc126a">&sect;&nbsp;</a></span>SetupIndexBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">HRESULT mage::Mesh::SetupIndexBuffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint32_t *&#160;</td>
-          <td class="paramname"><em>indices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>nb_indices</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a227af05ff8cbb1ad676c93dc8dc5d14b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a227af05ff8cbb1ad676c93dc8dc5d14b">&sect;&nbsp;</a></span>SetupVertexBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">HRESULT mage::Mesh::SetupVertexBuffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmage_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> *&#160;</td>
-          <td class="paramname"><em>vertices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>nb_vertices</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acef4f55140f0f842791ea4dfa25b7598"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acef4f55140f0f842791ea4dfa25b7598">&sect;&nbsp;</a></span>Update()</h2>
+<a id="abcb9a42e0ab5f4f482e03a6fa7debd6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb9a42e0ab5f4f482e03a6fa7debd6e">&sect;&nbsp;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mage::Mesh::Update </td>
+          <td class="memname">void mage::Mesh::Render </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt;&#160;</td>
           <td class="paramname"><em>device_context</em></td><td>)</td>
@@ -480,10 +420,11 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the index buffer of this mesh. </p>
 
 </div>
 </div>
@@ -502,10 +443,34 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The number of indices of this mesh. </p>
+
+</div>
+</div>
+<a id="a5a04aa73e98c75dd5b8929296c3af9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a04aa73e98c75dd5b8929296c3af9bb">&sect;&nbsp;</a></span>m_nb_vertices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mage::Mesh::m_nb_vertices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The number of vertices of this mesh. </p>
 
 </div>
 </div>
@@ -524,10 +489,34 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A pointer to the vertex buffer of this mesh. </p>
+
+</div>
+</div>
+<a id="a94a983af3aad7327aab525d6b40f90a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a983af3aad7327aab525d6b40f90a7">&sect;&nbsp;</a></span>m_vertex_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mage::Mesh::m_vertex_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The size of the vertices of this mesh. </p>
 
 </div>
 </div>

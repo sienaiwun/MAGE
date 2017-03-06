@@ -1,0 +1,133 @@
+\hypertarget{structmage_1_1_point_light}{}\section{mage\+:\+:Point\+Light Struct Reference}
+\label{structmage_1_1_point_light}\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+
+
+{\ttfamily \#include $<$point\+\_\+light.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:Point\+Light\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structmage_1_1_point_light}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_point_light_ac9d479055720799816d0489669cbd986}{Point\+Light} (const string name, float radius, const \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \&intensity)
+\item 
+\hyperlink{structmage_1_1_point_light_a0b0d5b110f1af47091ae682db7320c62}{Point\+Light} (const \hyperlink{structmage_1_1_point_light}{Point\+Light} \&light)
+\item 
+virtual \hyperlink{structmage_1_1_point_light_ae76fc13ca85717694d55d1a3bb195a98}{$\sim$\+Point\+Light} ()=default
+\item 
+\hyperlink{structmage_1_1_point_light}{Point\+Light} \& \hyperlink{structmage_1_1_point_light_ae194c7b6e032ddbbf110009348b08c33}{operator=} (const \hyperlink{structmage_1_1_point_light}{Point\+Light} \&light)
+\item 
+virtual \hyperlink{structmage_1_1_point_light}{Point\+Light} $\ast$ \hyperlink{structmage_1_1_point_light_a5a685d110af3ec491105147a15df7b87}{Clone} () const
+\item 
+float \hyperlink{structmage_1_1_point_light_a6321441e96d79caaacf40056beb288f2}{Get\+Radius} () const
+\item 
+void \hyperlink{structmage_1_1_point_light_ae7b4c301c148bd78348e26e5b6ad8faf}{Set\+Radius} (float radius)
+\item 
+\hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \hyperlink{structmage_1_1_point_light_aee79741f59d9abebfdd77784c4b29381}{Get\+Intensity} () const
+\item 
+void \hyperlink{structmage_1_1_point_light_a40c0790159f687fd653a4792f8b39a21}{Set\+Intensity} (const \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \&intensity)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{structmage_1_1_point_light_a96a5802cc2b06df700f63f8e8a9683eb}{m\+\_\+name}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{structmage_1_1_transform}{Transform} $>$ \hyperlink{structmage_1_1_point_light_a080be38309dd4dba28ac0fc65d99756e}{m\+\_\+transform}
+\item 
+float \hyperlink{structmage_1_1_point_light_a04459adec2eaadc457799e4399b5df1f}{m\+\_\+radius}
+\item 
+\hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \hyperlink{structmage_1_1_point_light_ac021a08c4c700c3b19de5f7491a80e4f}{m\+\_\+intensity}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_point_light_ac9d479055720799816d0489669cbd986}{}\label{structmage_1_1_point_light_ac9d479055720799816d0489669cbd986} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!Point\+Light@{Point\+Light}}
+\index{Point\+Light@{Point\+Light}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{Point\+Light()}{PointLight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Point\+Light\+::\+Point\+Light (\begin{DoxyParamCaption}\item[{const string}]{name,  }\item[{float}]{radius,  }\item[{const \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \&}]{intensity }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_point_light_a0b0d5b110f1af47091ae682db7320c62}{}\label{structmage_1_1_point_light_a0b0d5b110f1af47091ae682db7320c62} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!Point\+Light@{Point\+Light}}
+\index{Point\+Light@{Point\+Light}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{Point\+Light()}{PointLight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Point\+Light\+::\+Point\+Light (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_point_light}{Point\+Light} \&}]{light }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_point_light_ae76fc13ca85717694d55d1a3bb195a98}{}\label{structmage_1_1_point_light_ae76fc13ca85717694d55d1a3bb195a98} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!````~Point\+Light@{$\sim$\+Point\+Light}}
+\index{````~Point\+Light@{$\sim$\+Point\+Light}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{$\sim$\+Point\+Light()}{~PointLight()}}
+{\footnotesize\ttfamily virtual mage\+::\+Point\+Light\+::$\sim$\+Point\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_point_light_a5a685d110af3ec491105147a15df7b87}{}\label{structmage_1_1_point_light_a5a685d110af3ec491105147a15df7b87} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!Clone@{Clone}}
+\index{Clone@{Clone}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{structmage_1_1_point_light}{Point\+Light}$\ast$ mage\+::\+Point\+Light\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\hypertarget{structmage_1_1_point_light_aee79741f59d9abebfdd77784c4b29381}{}\label{structmage_1_1_point_light_aee79741f59d9abebfdd77784c4b29381} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!Get\+Intensity@{Get\+Intensity}}
+\index{Get\+Intensity@{Get\+Intensity}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{Get\+Intensity()}{GetIntensity()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} mage\+::\+Point\+Light\+::\+Get\+Intensity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{structmage_1_1_point_light_a6321441e96d79caaacf40056beb288f2}{}\label{structmage_1_1_point_light_a6321441e96d79caaacf40056beb288f2} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!Get\+Radius@{Get\+Radius}}
+\index{Get\+Radius@{Get\+Radius}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{Get\+Radius()}{GetRadius()}}
+{\footnotesize\ttfamily float mage\+::\+Point\+Light\+::\+Get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{structmage_1_1_point_light_ae194c7b6e032ddbbf110009348b08c33}{}\label{structmage_1_1_point_light_ae194c7b6e032ddbbf110009348b08c33} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_point_light}{Point\+Light}\& mage\+::\+Point\+Light\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_point_light}{Point\+Light} \&}]{light }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_point_light_a40c0790159f687fd653a4792f8b39a21}{}\label{structmage_1_1_point_light_a40c0790159f687fd653a4792f8b39a21} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!Set\+Intensity@{Set\+Intensity}}
+\index{Set\+Intensity@{Set\+Intensity}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{Set\+Intensity()}{SetIntensity()}}
+{\footnotesize\ttfamily void mage\+::\+Point\+Light\+::\+Set\+Intensity (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \&}]{intensity }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_point_light_ae7b4c301c148bd78348e26e5b6ad8faf}{}\label{structmage_1_1_point_light_ae7b4c301c148bd78348e26e5b6ad8faf} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!Set\+Radius@{Set\+Radius}}
+\index{Set\+Radius@{Set\+Radius}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{Set\+Radius()}{SetRadius()}}
+{\footnotesize\ttfamily void mage\+::\+Point\+Light\+::\+Set\+Radius (\begin{DoxyParamCaption}\item[{float}]{radius }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_point_light_ac021a08c4c700c3b19de5f7491a80e4f}{}\label{structmage_1_1_point_light_ac021a08c4c700c3b19de5f7491a80e4f} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!m\+\_\+intensity@{m\+\_\+intensity}}
+\index{m\+\_\+intensity@{m\+\_\+intensity}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{m\+\_\+intensity}{m\_intensity}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} mage\+::\+Point\+Light\+::m\+\_\+intensity\hspace{0.3cm}{\ttfamily [private]}}
+
+The intensity of this point light. \hypertarget{structmage_1_1_point_light_a96a5802cc2b06df700f63f8e8a9683eb}{}\label{structmage_1_1_point_light_a96a5802cc2b06df700f63f8e8a9683eb} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
+{\footnotesize\ttfamily string mage\+::\+Point\+Light\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+The name of this point light. \hypertarget{structmage_1_1_point_light_a04459adec2eaadc457799e4399b5df1f}{}\label{structmage_1_1_point_light_a04459adec2eaadc457799e4399b5df1f} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!m\+\_\+radius@{m\+\_\+radius}}
+\index{m\+\_\+radius@{m\+\_\+radius}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{m\+\_\+radius}{m\_radius}}
+{\footnotesize\ttfamily float mage\+::\+Point\+Light\+::m\+\_\+radius\hspace{0.3cm}{\ttfamily [private]}}
+
+The radius of this point light. \hypertarget{structmage_1_1_point_light_a080be38309dd4dba28ac0fc65d99756e}{}\label{structmage_1_1_point_light_a080be38309dd4dba28ac0fc65d99756e} 
+\index{mage\+::\+Point\+Light@{mage\+::\+Point\+Light}!m\+\_\+transform@{m\+\_\+transform}}
+\index{m\+\_\+transform@{m\+\_\+transform}!mage\+::\+Point\+Light@{mage\+::\+Point\+Light}}
+\subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{structmage_1_1_transform}{Transform} $>$ mage\+::\+Point\+Light\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
+
+The transform of this point light. 

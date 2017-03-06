@@ -1,0 +1,230 @@
+\hypertarget{classmage_1_1_m_t_l_reader}{}\section{mage\+:\+:M\+T\+L\+Reader Class Reference}
+\label{classmage_1_1_m_t_l_reader}\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+
+
+{\ttfamily \#include $<$mtl\+\_\+reader.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:M\+T\+L\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_m_t_l_reader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_m_t_l_reader_a924f813cca170e2592a6e7d2a3255be8}{M\+T\+L\+Reader} (vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&material\+\_\+buffer)
+\item 
+virtual \hyperlink{classmage_1_1_m_t_l_reader_af07011b505c88680a8381c00cb512242}{$\sim$\+M\+T\+L\+Reader} ()=default
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_m_t_l_reader_a884a333063f7682f4238bdebf340d0a3}{Read\+Line} (char $\ast$line) override
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_a53494ca5e0f905b97227b21711a1686a}{Read\+M\+T\+L\+Material\+Name} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_a4d5819606b5ea81862852587b2e1511b}{Read\+M\+T\+L\+Transmission\+Filter} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_a7137e998979a79fe258f226bfbda669e}{Read\+M\+T\+L\+Ambient\+Reflectivity} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_accd087a8e5b2d489b83f70ecf0fe0d18}{Read\+M\+T\+L\+Diffuse\+Reflectivity} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_aa90f43e397bc5fc277b936bdeff4e672}{Read\+M\+T\+L\+Specular\+Reflectivity} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_a0ac9c6202ff7fa921d551e1aaa59b33f}{Read\+M\+T\+L\+Specular\+Exponent} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_a788a80ec60a2e50c1017630afb607f1c}{Read\+M\+T\+L\+Dissolve} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_a06576927d764c9cd2be41871f137fac4}{Read\+M\+T\+L\+Optical\+Density} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_ae5fa12979b84a5880bf560b43d495305}{Read\+M\+T\+L\+Ambient\+Reflectivity\+Texture} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_ad941332bf48f9fd9f7c4cecf5ae6ccc4}{Read\+M\+T\+L\+Diffuse\+Reflectivity\+Texture} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_abb56329a3642b377b006bca6cee60440}{Read\+M\+T\+L\+Specular\+Reflectivity\+Texture} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_a9b68187f940dc05a5d86527843f09d18}{Read\+M\+T\+L\+Specular\+Exponent\+Texture} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_aae7a327ad0c5223041c9e849ea2a88d7}{Read\+M\+T\+L\+Dissolve\+Texture} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_a578df3a55c79fba9d46616791b2e5539}{Read\+M\+T\+L\+Decal\+Texture} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_a9d4f8dea5a5582c5e7b788149110800c}{Read\+M\+T\+L\+Displacement\+Texture} ()
+\item 
+void \hyperlink{classmage_1_1_m_t_l_reader_acf7aacf933f842d3e14af92d161acd5b}{Read\+M\+T\+L\+Bump\+Texture} ()
+\item 
+\hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} \hyperlink{classmage_1_1_m_t_l_reader_ae61a336a53ca8e3bde2648c23f8e0604}{Read\+M\+T\+L\+Spectrum} ()
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ \hyperlink{classmage_1_1_m_t_l_reader_a7ff401dab1b58709debff6cbe2c02d0c}{Read\+M\+T\+L\+Texture} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_m_t_l_reader_adcc57156298b2198c24c041503df2e6d}{M\+T\+L\+Reader} (const \hyperlink{classmage_1_1_m_t_l_reader}{M\+T\+L\+Reader} \&reader)=delete
+\item 
+\hyperlink{classmage_1_1_m_t_l_reader}{M\+T\+L\+Reader} \& \hyperlink{classmage_1_1_m_t_l_reader_ae239ac085326919918a418edabcafeae}{operator=} (const \hyperlink{classmage_1_1_m_t_l_reader}{M\+T\+L\+Reader} \&reader)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \& \hyperlink{classmage_1_1_m_t_l_reader_a6382e0e9fce6581b129d18f5d82994c2}{m\+\_\+material\+\_\+buffer}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_m_t_l_reader_a924f813cca170e2592a6e7d2a3255be8}{}\label{classmage_1_1_m_t_l_reader_a924f813cca170e2592a6e7d2a3255be8} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!M\+T\+L\+Reader@{M\+T\+L\+Reader}}
+\index{M\+T\+L\+Reader@{M\+T\+L\+Reader}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{M\+T\+L\+Reader()}{MTLReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+M\+T\+L\+Reader\+::\+M\+T\+L\+Reader (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \&}]{material\+\_\+buffer }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_m_t_l_reader_af07011b505c88680a8381c00cb512242}{}\label{classmage_1_1_m_t_l_reader_af07011b505c88680a8381c00cb512242} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!````~M\+T\+L\+Reader@{$\sim$\+M\+T\+L\+Reader}}
+\index{````~M\+T\+L\+Reader@{$\sim$\+M\+T\+L\+Reader}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{$\sim$\+M\+T\+L\+Reader()}{~MTLReader()}}
+{\footnotesize\ttfamily virtual mage\+::\+M\+T\+L\+Reader\+::$\sim$\+M\+T\+L\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_adcc57156298b2198c24c041503df2e6d}{}\label{classmage_1_1_m_t_l_reader_adcc57156298b2198c24c041503df2e6d} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!M\+T\+L\+Reader@{M\+T\+L\+Reader}}
+\index{M\+T\+L\+Reader@{M\+T\+L\+Reader}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{M\+T\+L\+Reader()}{MTLReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+M\+T\+L\+Reader\+::\+M\+T\+L\+Reader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_m_t_l_reader}{M\+T\+L\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_m_t_l_reader_ae239ac085326919918a418edabcafeae}{}\label{classmage_1_1_m_t_l_reader_ae239ac085326919918a418edabcafeae} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_m_t_l_reader}{M\+T\+L\+Reader}\& mage\+::\+M\+T\+L\+Reader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_m_t_l_reader}{M\+T\+L\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a884a333063f7682f4238bdebf340d0a3}{}\label{classmage_1_1_m_t_l_reader_a884a333063f7682f4238bdebf340d0a3} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+Line@{Read\+Line}}
+\index{Read\+Line@{Read\+Line}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Line()}{ReadLine()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+M\+T\+L\+Reader\+::\+Read\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classmage_1_1_line_reader_a193ad5c9084eb87e8a98a3c1782d93ff}{mage\+::\+Line\+Reader}.
+
+\hypertarget{classmage_1_1_m_t_l_reader_a7137e998979a79fe258f226bfbda669e}{}\label{classmage_1_1_m_t_l_reader_a7137e998979a79fe258f226bfbda669e} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Ambient\+Reflectivity@{Read\+M\+T\+L\+Ambient\+Reflectivity}}
+\index{Read\+M\+T\+L\+Ambient\+Reflectivity@{Read\+M\+T\+L\+Ambient\+Reflectivity}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Ambient\+Reflectivity()}{ReadMTLAmbientReflectivity()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Ambient\+Reflectivity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_ae5fa12979b84a5880bf560b43d495305}{}\label{classmage_1_1_m_t_l_reader_ae5fa12979b84a5880bf560b43d495305} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Ambient\+Reflectivity\+Texture@{Read\+M\+T\+L\+Ambient\+Reflectivity\+Texture}}
+\index{Read\+M\+T\+L\+Ambient\+Reflectivity\+Texture@{Read\+M\+T\+L\+Ambient\+Reflectivity\+Texture}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Ambient\+Reflectivity\+Texture()}{ReadMTLAmbientReflectivityTexture()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Ambient\+Reflectivity\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_acf7aacf933f842d3e14af92d161acd5b}{}\label{classmage_1_1_m_t_l_reader_acf7aacf933f842d3e14af92d161acd5b} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Bump\+Texture@{Read\+M\+T\+L\+Bump\+Texture}}
+\index{Read\+M\+T\+L\+Bump\+Texture@{Read\+M\+T\+L\+Bump\+Texture}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Bump\+Texture()}{ReadMTLBumpTexture()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Bump\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a578df3a55c79fba9d46616791b2e5539}{}\label{classmage_1_1_m_t_l_reader_a578df3a55c79fba9d46616791b2e5539} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Decal\+Texture@{Read\+M\+T\+L\+Decal\+Texture}}
+\index{Read\+M\+T\+L\+Decal\+Texture@{Read\+M\+T\+L\+Decal\+Texture}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Decal\+Texture()}{ReadMTLDecalTexture()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Decal\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_accd087a8e5b2d489b83f70ecf0fe0d18}{}\label{classmage_1_1_m_t_l_reader_accd087a8e5b2d489b83f70ecf0fe0d18} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Diffuse\+Reflectivity@{Read\+M\+T\+L\+Diffuse\+Reflectivity}}
+\index{Read\+M\+T\+L\+Diffuse\+Reflectivity@{Read\+M\+T\+L\+Diffuse\+Reflectivity}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Diffuse\+Reflectivity()}{ReadMTLDiffuseReflectivity()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Diffuse\+Reflectivity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_ad941332bf48f9fd9f7c4cecf5ae6ccc4}{}\label{classmage_1_1_m_t_l_reader_ad941332bf48f9fd9f7c4cecf5ae6ccc4} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Diffuse\+Reflectivity\+Texture@{Read\+M\+T\+L\+Diffuse\+Reflectivity\+Texture}}
+\index{Read\+M\+T\+L\+Diffuse\+Reflectivity\+Texture@{Read\+M\+T\+L\+Diffuse\+Reflectivity\+Texture}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Diffuse\+Reflectivity\+Texture()}{ReadMTLDiffuseReflectivityTexture()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Diffuse\+Reflectivity\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a9d4f8dea5a5582c5e7b788149110800c}{}\label{classmage_1_1_m_t_l_reader_a9d4f8dea5a5582c5e7b788149110800c} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Displacement\+Texture@{Read\+M\+T\+L\+Displacement\+Texture}}
+\index{Read\+M\+T\+L\+Displacement\+Texture@{Read\+M\+T\+L\+Displacement\+Texture}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Displacement\+Texture()}{ReadMTLDisplacementTexture()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Displacement\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a788a80ec60a2e50c1017630afb607f1c}{}\label{classmage_1_1_m_t_l_reader_a788a80ec60a2e50c1017630afb607f1c} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Dissolve@{Read\+M\+T\+L\+Dissolve}}
+\index{Read\+M\+T\+L\+Dissolve@{Read\+M\+T\+L\+Dissolve}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Dissolve()}{ReadMTLDissolve()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Dissolve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_aae7a327ad0c5223041c9e849ea2a88d7}{}\label{classmage_1_1_m_t_l_reader_aae7a327ad0c5223041c9e849ea2a88d7} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Dissolve\+Texture@{Read\+M\+T\+L\+Dissolve\+Texture}}
+\index{Read\+M\+T\+L\+Dissolve\+Texture@{Read\+M\+T\+L\+Dissolve\+Texture}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Dissolve\+Texture()}{ReadMTLDissolveTexture()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Dissolve\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a53494ca5e0f905b97227b21711a1686a}{}\label{classmage_1_1_m_t_l_reader_a53494ca5e0f905b97227b21711a1686a} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Material\+Name@{Read\+M\+T\+L\+Material\+Name}}
+\index{Read\+M\+T\+L\+Material\+Name@{Read\+M\+T\+L\+Material\+Name}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Material\+Name()}{ReadMTLMaterialName()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Material\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a06576927d764c9cd2be41871f137fac4}{}\label{classmage_1_1_m_t_l_reader_a06576927d764c9cd2be41871f137fac4} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Optical\+Density@{Read\+M\+T\+L\+Optical\+Density}}
+\index{Read\+M\+T\+L\+Optical\+Density@{Read\+M\+T\+L\+Optical\+Density}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Optical\+Density()}{ReadMTLOpticalDensity()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Optical\+Density (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_ae61a336a53ca8e3bde2648c23f8e0604}{}\label{classmage_1_1_m_t_l_reader_ae61a336a53ca8e3bde2648c23f8e0604} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Spectrum@{Read\+M\+T\+L\+Spectrum}}
+\index{Read\+M\+T\+L\+Spectrum@{Read\+M\+T\+L\+Spectrum}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Spectrum()}{ReadMTLSpectrum()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_r_g_b_spectrum}{R\+G\+B\+Spectrum} mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Spectrum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a0ac9c6202ff7fa921d551e1aaa59b33f}{}\label{classmage_1_1_m_t_l_reader_a0ac9c6202ff7fa921d551e1aaa59b33f} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Specular\+Exponent@{Read\+M\+T\+L\+Specular\+Exponent}}
+\index{Read\+M\+T\+L\+Specular\+Exponent@{Read\+M\+T\+L\+Specular\+Exponent}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Specular\+Exponent()}{ReadMTLSpecularExponent()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Specular\+Exponent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a9b68187f940dc05a5d86527843f09d18}{}\label{classmage_1_1_m_t_l_reader_a9b68187f940dc05a5d86527843f09d18} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Specular\+Exponent\+Texture@{Read\+M\+T\+L\+Specular\+Exponent\+Texture}}
+\index{Read\+M\+T\+L\+Specular\+Exponent\+Texture@{Read\+M\+T\+L\+Specular\+Exponent\+Texture}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Specular\+Exponent\+Texture()}{ReadMTLSpecularExponentTexture()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Specular\+Exponent\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_aa90f43e397bc5fc277b936bdeff4e672}{}\label{classmage_1_1_m_t_l_reader_aa90f43e397bc5fc277b936bdeff4e672} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Specular\+Reflectivity@{Read\+M\+T\+L\+Specular\+Reflectivity}}
+\index{Read\+M\+T\+L\+Specular\+Reflectivity@{Read\+M\+T\+L\+Specular\+Reflectivity}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Specular\+Reflectivity()}{ReadMTLSpecularReflectivity()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Specular\+Reflectivity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_abb56329a3642b377b006bca6cee60440}{}\label{classmage_1_1_m_t_l_reader_abb56329a3642b377b006bca6cee60440} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Specular\+Reflectivity\+Texture@{Read\+M\+T\+L\+Specular\+Reflectivity\+Texture}}
+\index{Read\+M\+T\+L\+Specular\+Reflectivity\+Texture@{Read\+M\+T\+L\+Specular\+Reflectivity\+Texture}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Specular\+Reflectivity\+Texture()}{ReadMTLSpecularReflectivityTexture()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Specular\+Reflectivity\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a7ff401dab1b58709debff6cbe2c02d0c}{}\label{classmage_1_1_m_t_l_reader_a7ff401dab1b58709debff6cbe2c02d0c} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Texture@{Read\+M\+T\+L\+Texture}}
+\index{Read\+M\+T\+L\+Texture@{Read\+M\+T\+L\+Texture}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Texture()}{ReadMTLTexture()}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_texture}{Texture} $>$ mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_m_t_l_reader_a4d5819606b5ea81862852587b2e1511b}{}\label{classmage_1_1_m_t_l_reader_a4d5819606b5ea81862852587b2e1511b} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!Read\+M\+T\+L\+Transmission\+Filter@{Read\+M\+T\+L\+Transmission\+Filter}}
+\index{Read\+M\+T\+L\+Transmission\+Filter@{Read\+M\+T\+L\+Transmission\+Filter}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{Read\+M\+T\+L\+Transmission\+Filter()}{ReadMTLTransmissionFilter()}}
+{\footnotesize\ttfamily void mage\+::\+M\+T\+L\+Reader\+::\+Read\+M\+T\+L\+Transmission\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_m_t_l_reader_a6382e0e9fce6581b129d18f5d82994c2}{}\label{classmage_1_1_m_t_l_reader_a6382e0e9fce6581b129d18f5d82994c2} 
+\index{mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}!m\+\_\+material\+\_\+buffer@{m\+\_\+material\+\_\+buffer}}
+\index{m\+\_\+material\+\_\+buffer@{m\+\_\+material\+\_\+buffer}!mage\+::\+M\+T\+L\+Reader@{mage\+::\+M\+T\+L\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+material\+\_\+buffer}{m\_material\_buffer}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$\& mage\+::\+M\+T\+L\+Reader\+::m\+\_\+material\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+

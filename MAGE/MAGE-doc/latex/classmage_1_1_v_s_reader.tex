@@ -1,0 +1,174 @@
+\hypertarget{classmage_1_1_v_s_reader}{}\section{mage\+:\+:V\+S\+Reader Class Reference}
+\label{classmage_1_1_v_s_reader}\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+
+
+{\ttfamily \#include $<$vs\+\_\+reader.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:V\+S\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_v_s_reader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_v_s_reader_a65aef6605c6104a0305937f231ef2106}{V\+S\+Reader} (vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$ $>$ \&variable\+\_\+buffer)
+\item 
+virtual \hyperlink{classmage_1_1_v_s_reader_adb1dc76d802501476f1af285fe22369d}{$\sim$\+V\+S\+Reader} ()=default
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_v_s_reader_a63c6f6fa8ddb0f6a001e3969c5b19c1f}{Read\+Line} (char $\ast$line) override
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_a579233b81762c064739a29ba1c140898}{Read\+V\+S\+Bool} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_abbb6176a73ebddd88fc3ed58c89aa01a}{Read\+V\+S\+Int} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_a4a3b90b47cb5e262a72df719674b9d93}{Read\+V\+S\+Int2} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_a6fa8fa2cbb66a9a1872bb84a0612a32d}{Read\+V\+S\+Int3} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_a64c525d3d87ed248424e4eba359d9ecf}{Read\+V\+S\+Float} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_a18c7821c219354d84f0071a5bfa8651c}{Read\+V\+S\+Float2} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_a63d8c0cb3108d8aa0f582a59b44db6ac}{Read\+V\+S\+Float3} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_aa1230cf0d6305f98172aabeacbfef8e0}{Read\+V\+S\+Float4} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_a42bdfc1fcc6f385e0f88820491d53e04}{Read\+V\+S\+Color} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_a8d00057f90b2a2ed2e84e47530f91227}{Read\+V\+S\+String} ()
+\item 
+void \hyperlink{classmage_1_1_v_s_reader_aaa63e49901b2ef9e5903aff0e13ec4b0}{Read\+V\+S\+Unknown} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_v_s_reader_aec7ec2ea03d5d77c5e78438a60263a73}{V\+S\+Reader} (const \hyperlink{classmage_1_1_v_s_reader}{V\+S\+Reader} \&reader)=delete
+\item 
+\hyperlink{classmage_1_1_v_s_reader}{V\+S\+Reader} \& \hyperlink{classmage_1_1_v_s_reader_ab7d85956947e6b2a28650498573bc055}{operator=} (const \hyperlink{classmage_1_1_v_s_reader}{V\+S\+Reader} \&reader)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$$>$ \& \hyperlink{classmage_1_1_v_s_reader_a32ffea034d4540dd90156452a9d78e52}{m\+\_\+variable\+\_\+buffer}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_v_s_reader_a65aef6605c6104a0305937f231ef2106}{}\label{classmage_1_1_v_s_reader_a65aef6605c6104a0305937f231ef2106} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!V\+S\+Reader@{V\+S\+Reader}}
+\index{V\+S\+Reader@{V\+S\+Reader}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{V\+S\+Reader()}{VSReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+V\+S\+Reader\+::\+V\+S\+Reader (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$ $>$ \&}]{variable\+\_\+buffer }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_v_s_reader_adb1dc76d802501476f1af285fe22369d}{}\label{classmage_1_1_v_s_reader_adb1dc76d802501476f1af285fe22369d} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!````~V\+S\+Reader@{$\sim$\+V\+S\+Reader}}
+\index{````~V\+S\+Reader@{$\sim$\+V\+S\+Reader}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{$\sim$\+V\+S\+Reader()}{~VSReader()}}
+{\footnotesize\ttfamily virtual mage\+::\+V\+S\+Reader\+::$\sim$\+V\+S\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_v_s_reader_aec7ec2ea03d5d77c5e78438a60263a73}{}\label{classmage_1_1_v_s_reader_aec7ec2ea03d5d77c5e78438a60263a73} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!V\+S\+Reader@{V\+S\+Reader}}
+\index{V\+S\+Reader@{V\+S\+Reader}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{V\+S\+Reader()}{VSReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+V\+S\+Reader\+::\+V\+S\+Reader (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_v_s_reader}{V\+S\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_v_s_reader_ab7d85956947e6b2a28650498573bc055}{}\label{classmage_1_1_v_s_reader_ab7d85956947e6b2a28650498573bc055} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_v_s_reader}{V\+S\+Reader}\& mage\+::\+V\+S\+Reader\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_v_s_reader}{V\+S\+Reader} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_v_s_reader_a63c6f6fa8ddb0f6a001e3969c5b19c1f}{}\label{classmage_1_1_v_s_reader_a63c6f6fa8ddb0f6a001e3969c5b19c1f} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+Line@{Read\+Line}}
+\index{Read\+Line@{Read\+Line}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Line()}{ReadLine()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+V\+S\+Reader\+::\+Read\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classmage_1_1_line_reader_a193ad5c9084eb87e8a98a3c1782d93ff}{mage\+::\+Line\+Reader}.
+
+\hypertarget{classmage_1_1_v_s_reader_a579233b81762c064739a29ba1c140898}{}\label{classmage_1_1_v_s_reader_a579233b81762c064739a29ba1c140898} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Bool@{Read\+V\+S\+Bool}}
+\index{Read\+V\+S\+Bool@{Read\+V\+S\+Bool}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Bool()}{ReadVSBool()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_a42bdfc1fcc6f385e0f88820491d53e04}{}\label{classmage_1_1_v_s_reader_a42bdfc1fcc6f385e0f88820491d53e04} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Color@{Read\+V\+S\+Color}}
+\index{Read\+V\+S\+Color@{Read\+V\+S\+Color}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Color()}{ReadVSColor()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_a64c525d3d87ed248424e4eba359d9ecf}{}\label{classmage_1_1_v_s_reader_a64c525d3d87ed248424e4eba359d9ecf} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Float@{Read\+V\+S\+Float}}
+\index{Read\+V\+S\+Float@{Read\+V\+S\+Float}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Float()}{ReadVSFloat()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_a18c7821c219354d84f0071a5bfa8651c}{}\label{classmage_1_1_v_s_reader_a18c7821c219354d84f0071a5bfa8651c} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Float2@{Read\+V\+S\+Float2}}
+\index{Read\+V\+S\+Float2@{Read\+V\+S\+Float2}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Float2()}{ReadVSFloat2()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Float2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_a63d8c0cb3108d8aa0f582a59b44db6ac}{}\label{classmage_1_1_v_s_reader_a63d8c0cb3108d8aa0f582a59b44db6ac} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Float3@{Read\+V\+S\+Float3}}
+\index{Read\+V\+S\+Float3@{Read\+V\+S\+Float3}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Float3()}{ReadVSFloat3()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Float3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_aa1230cf0d6305f98172aabeacbfef8e0}{}\label{classmage_1_1_v_s_reader_aa1230cf0d6305f98172aabeacbfef8e0} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Float4@{Read\+V\+S\+Float4}}
+\index{Read\+V\+S\+Float4@{Read\+V\+S\+Float4}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Float4()}{ReadVSFloat4()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Float4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_abbb6176a73ebddd88fc3ed58c89aa01a}{}\label{classmage_1_1_v_s_reader_abbb6176a73ebddd88fc3ed58c89aa01a} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Int@{Read\+V\+S\+Int}}
+\index{Read\+V\+S\+Int@{Read\+V\+S\+Int}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Int()}{ReadVSInt()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_a4a3b90b47cb5e262a72df719674b9d93}{}\label{classmage_1_1_v_s_reader_a4a3b90b47cb5e262a72df719674b9d93} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Int2@{Read\+V\+S\+Int2}}
+\index{Read\+V\+S\+Int2@{Read\+V\+S\+Int2}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Int2()}{ReadVSInt2()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Int2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_a6fa8fa2cbb66a9a1872bb84a0612a32d}{}\label{classmage_1_1_v_s_reader_a6fa8fa2cbb66a9a1872bb84a0612a32d} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Int3@{Read\+V\+S\+Int3}}
+\index{Read\+V\+S\+Int3@{Read\+V\+S\+Int3}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Int3()}{ReadVSInt3()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Int3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_a8d00057f90b2a2ed2e84e47530f91227}{}\label{classmage_1_1_v_s_reader_a8d00057f90b2a2ed2e84e47530f91227} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+String@{Read\+V\+S\+String}}
+\index{Read\+V\+S\+String@{Read\+V\+S\+String}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+String()}{ReadVSString()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_v_s_reader_aaa63e49901b2ef9e5903aff0e13ec4b0}{}\label{classmage_1_1_v_s_reader_aaa63e49901b2ef9e5903aff0e13ec4b0} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!Read\+V\+S\+Unknown@{Read\+V\+S\+Unknown}}
+\index{Read\+V\+S\+Unknown@{Read\+V\+S\+Unknown}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{Read\+V\+S\+Unknown()}{ReadVSUnknown()}}
+{\footnotesize\ttfamily void mage\+::\+V\+S\+Reader\+::\+Read\+V\+S\+Unknown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_v_s_reader_a32ffea034d4540dd90156452a9d78e52}{}\label{classmage_1_1_v_s_reader_a32ffea034d4540dd90156452a9d78e52} 
+\index{mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}!m\+\_\+variable\+\_\+buffer@{m\+\_\+variable\+\_\+buffer}}
+\index{m\+\_\+variable\+\_\+buffer@{m\+\_\+variable\+\_\+buffer}!mage\+::\+V\+S\+Reader@{mage\+::\+V\+S\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+variable\+\_\+buffer}{m\_variable\_buffer}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$ $>$\& mage\+::\+V\+S\+Reader\+::m\+\_\+variable\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+

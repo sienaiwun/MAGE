@@ -1,0 +1,109 @@
+\hypertarget{structmage_1_1_shaded_material}{}\section{mage\+:\+:Shaded\+Material Struct Reference}
+\label{structmage_1_1_shaded_material}\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+
+
+{\ttfamily \#include $<$shaded\+\_\+material.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_shaded_material_a58594c0008865c68efc6ff6868016236}{Shaded\+Material} (const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \&shader, const \hyperlink{structmage_1_1_material}{Material} \&material)
+\item 
+\hyperlink{structmage_1_1_shaded_material_a8bd45b489933e89f0a16f79e29161c27}{Shaded\+Material} (const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&shaded\+\_\+material)=default
+\item 
+\hyperlink{structmage_1_1_shaded_material_ac7be54322faed90a07b26225e270e571}{$\sim$\+Shaded\+Material} ()=default
+\item 
+\hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \& \hyperlink{structmage_1_1_shaded_material_ade9ec3ee6aae198e695240a5b89a0d72}{operator=} (const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&shaded\+\_\+material)=default
+\item 
+void \hyperlink{structmage_1_1_shaded_material_a64cdb2b88a2cccbc25e35552fa0ff532}{Render} (\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$ device\+\_\+context, const \hyperlink{classmage_1_1_world}{World} \&world, const \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer} \&transform\+\_\+buffer)
+\item 
+\hyperlink{structmage_1_1_material}{Material} \& \hyperlink{structmage_1_1_shaded_material_a785d01e0156c6aba84d479917b62ab03}{Get\+Material} ()
+\item 
+const \hyperlink{structmage_1_1_material}{Material} \& \hyperlink{structmage_1_1_shaded_material_a936a1cb2c79b28818814ac504d059ea3}{Get\+Material} () const
+\item 
+\hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \& \hyperlink{structmage_1_1_shaded_material_a1138a96b289a841920f39553ebb230d1}{Get\+Shader} ()
+\item 
+const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \& \hyperlink{structmage_1_1_shaded_material_ac03da6f1dfd81fc19da5a8f8214662ee}{Get\+Shader} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \hyperlink{structmage_1_1_shaded_material_a712d07ac1995ff592bbb8ab20a294270}{m\+\_\+shader}
+\item 
+\hyperlink{structmage_1_1_material}{Material} \hyperlink{structmage_1_1_shaded_material_a319e1ca2103c50f84ce0605b08bd34b4}{m\+\_\+material}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_shaded_material_a58594c0008865c68efc6ff6868016236}{}\label{structmage_1_1_shaded_material_a58594c0008865c68efc6ff6868016236} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!Shaded\+Material@{Shaded\+Material}}
+\index{Shaded\+Material@{Shaded\+Material}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{Shaded\+Material()}{ShadedMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Shaded\+Material\+::\+Shaded\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} \&}]{shader,  }\item[{const \hyperlink{structmage_1_1_material}{Material} \&}]{material }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_shaded_material_a8bd45b489933e89f0a16f79e29161c27}{}\label{structmage_1_1_shaded_material_a8bd45b489933e89f0a16f79e29161c27} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!Shaded\+Material@{Shaded\+Material}}
+\index{Shaded\+Material@{Shaded\+Material}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{Shaded\+Material()}{ShadedMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Shaded\+Material\+::\+Shaded\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&}]{shaded\+\_\+material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{structmage_1_1_shaded_material_ac7be54322faed90a07b26225e270e571}{}\label{structmage_1_1_shaded_material_ac7be54322faed90a07b26225e270e571} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!````~Shaded\+Material@{$\sim$\+Shaded\+Material}}
+\index{````~Shaded\+Material@{$\sim$\+Shaded\+Material}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{$\sim$\+Shaded\+Material()}{~ShadedMaterial()}}
+{\footnotesize\ttfamily mage\+::\+Shaded\+Material\+::$\sim$\+Shaded\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_shaded_material_a785d01e0156c6aba84d479917b62ab03}{}\label{structmage_1_1_shaded_material_a785d01e0156c6aba84d479917b62ab03} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_material}{Material}\& mage\+::\+Shaded\+Material\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_shaded_material_a936a1cb2c79b28818814ac504d059ea3}{}\label{structmage_1_1_shaded_material_a936a1cb2c79b28818814ac504d059ea3} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_material}{Material}\& mage\+::\+Shaded\+Material\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{structmage_1_1_shaded_material_a1138a96b289a841920f39553ebb230d1}{}\label{structmage_1_1_shaded_material_a1138a96b289a841920f39553ebb230d1} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!Get\+Shader@{Get\+Shader}}
+\index{Get\+Shader@{Get\+Shader}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{Get\+Shader()}{GetShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader}\& mage\+::\+Shaded\+Material\+::\+Get\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_shaded_material_ac03da6f1dfd81fc19da5a8f8214662ee}{}\label{structmage_1_1_shaded_material_ac03da6f1dfd81fc19da5a8f8214662ee} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!Get\+Shader@{Get\+Shader}}
+\index{Get\+Shader@{Get\+Shader}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{Get\+Shader()}{GetShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader}\& mage\+::\+Shaded\+Material\+::\+Get\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{structmage_1_1_shaded_material_ade9ec3ee6aae198e695240a5b89a0d72}{}\label{structmage_1_1_shaded_material_ade9ec3ee6aae198e695240a5b89a0d72} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material}\& mage\+::\+Shaded\+Material\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_shaded_material}{Shaded\+Material} \&}]{shaded\+\_\+material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{structmage_1_1_shaded_material_a64cdb2b88a2cccbc25e35552fa0ff532}{}\label{structmage_1_1_shaded_material_a64cdb2b88a2cccbc25e35552fa0ff532} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!Render@{Render}}
+\index{Render@{Render}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void mage\+::\+Shaded\+Material\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_ae74f374780900893caa5555d1031fd79}{Com\+Ptr}$<$ I\+D3\+D11\+Device\+Context2 $>$}]{device\+\_\+context,  }\item[{const \hyperlink{classmage_1_1_world}{World} \&}]{world,  }\item[{const \hyperlink{structmage_1_1_transform_buffer}{Transform\+Buffer} \&}]{transform\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_shaded_material_a319e1ca2103c50f84ce0605b08bd34b4}{}\label{structmage_1_1_shaded_material_a319e1ca2103c50f84ce0605b08bd34b4} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!m\+\_\+material@{m\+\_\+material}}
+\index{m\+\_\+material@{m\+\_\+material}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+material}{m\_material}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_material}{Material} mage\+::\+Shaded\+Material\+::m\+\_\+material\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{structmage_1_1_shaded_material_a712d07ac1995ff592bbb8ab20a294270}{}\label{structmage_1_1_shaded_material_a712d07ac1995ff592bbb8ab20a294270} 
+\index{mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}!m\+\_\+shader@{m\+\_\+shader}}
+\index{m\+\_\+shader@{m\+\_\+shader}!mage\+::\+Shaded\+Material@{mage\+::\+Shaded\+Material}}
+\subsubsection{\texorpdfstring{m\+\_\+shader}{m\_shader}}
+{\footnotesize\ttfamily \hyperlink{structmage_1_1_combined_shader}{Combined\+Shader} mage\+::\+Shaded\+Material\+::m\+\_\+shader\hspace{0.3cm}{\ttfamily [private]}}
+

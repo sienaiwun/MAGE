@@ -13,7 +13,7 @@ Inheritance diagram for mage\+:\+:Variable\+Script\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_variable_script_a9384d725de051fdf8e260f8cb9cbe373}{Variable\+Script} (const wstring \&name, const wstring \&path=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+A\+TH)
+\hyperlink{classmage_1_1_variable_script_aa7782137aa8154ecda80672024a0dd58}{Variable\+Script} (const wstring \&fname)
 \item 
 virtual \hyperlink{classmage_1_1_variable_script_ae7026e1283b1a1164f02fdc3e1f2b829}{$\sim$\+Variable\+Script} ()
 \item 
@@ -23,7 +23,7 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_variable_script_afd735406842c7df4ccb0
 \item 
 bool \hyperlink{classmage_1_1_variable_script_a8ae619cdc5519a753780360abab87430}{Is\+Empty} () const
 \item 
-size\+\_\+t \hyperlink{classmage_1_1_variable_script_a27ed94a510a3dab0e60b42b650ca6f09}{Get\+Nb\+Of\+Variables} () const
+size\+\_\+t \hyperlink{classmage_1_1_variable_script_ad0bcb7dbb42f705f475c64feb1063fb4}{Get\+Number\+Of\+Variables} () const
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \hyperlink{classmage_1_1_variable_script_aa9a8bb9b6133ce853052820961320ca9}{Add\+Variable} (const string \&name, \hyperlink{namespacemage_a530428e73bac0ba7fe84b29086a9e33a}{Variable\+Type} type, const T $\ast$value)
 \item 
@@ -35,13 +35,6 @@ void \hyperlink{classmage_1_1_variable_script_ac9575fb5f2ca445d9bcf23b63d00124e}
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \hyperlink{classmage_1_1_variable_script_a1b6daa6b226e43564408ab54e4c65eb7}{Set\+Value\+Of\+Variable} (const string \&name, const T $\ast$value)
 \end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_variable_script_a7a89947971dbf15c1538ca2ef6c16877}{Import\+Variable} (const string \&name, F\+I\+LE $\ast$file)
-\item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_variable_script_af60601557b3cdd08b6d060593bd02087}{Export\+Variable} (const \hyperlink{structmage_1_1_variable}{Variable} $\ast$variable, F\+I\+LE $\ast$file)
-\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -52,7 +45,7 @@ H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_variable_script_af60601557b3cdd08b6d0
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-list$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$$>$ \hyperlink{classmage_1_1_variable_script_a14dfd0518fe06cbfaf409fd5223f63e5}{m\+\_\+variables}
+map$<$ string, \hyperlink{structmage_1_1_variable}{Variable} $\ast$$>$ \hyperlink{classmage_1_1_variable_script_a5cfb006355af91d7d73223a54756898e}{m\+\_\+variables}
 \end{DoxyCompactItemize}
 
 
@@ -60,19 +53,17 @@ list$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$$>$ \hyperlink{class
 A class of variable scripts. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_variable_script_a9384d725de051fdf8e260f8cb9cbe373}{}\label{classmage_1_1_variable_script_a9384d725de051fdf8e260f8cb9cbe373} 
+\hypertarget{classmage_1_1_variable_script_aa7782137aa8154ecda80672024a0dd58}{}\label{classmage_1_1_variable_script_aa7782137aa8154ecda80672024a0dd58} 
 \index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!Variable\+Script@{Variable\+Script}}
 \index{Variable\+Script@{Variable\+Script}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
 \subsubsection{\texorpdfstring{Variable\+Script()}{VariableScript()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Variable\+Script\+::\+Variable\+Script (\begin{DoxyParamCaption}\item[{const wstring \&}]{name,  }\item[{const wstring \&}]{path = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+RESOURCE\+\_\+PATH} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Variable\+Script\+::\+Variable\+Script (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
 
 Constructs a variable script.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & A reference to the name of the variable script. \\
-\hline
-\mbox{\tt in}  & {\em path} & A reference to the path of the variable script. \\
+\mbox{\tt in}  & {\em fname} & A reference to the filename of the variable script. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classmage_1_1_variable_script_ae7026e1283b1a1164f02fdc3e1f2b829}{}\label{classmage_1_1_variable_script_ae7026e1283b1a1164f02fdc3e1f2b829} 
@@ -129,7 +120,7 @@ No variable with the name {\itshape name} exists in this variable script.
 \subsubsection{\texorpdfstring{Export\+Script()}{ExportScript()}}
 {\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Variable\+Script\+::\+Export\+Script (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname = {\ttfamily L\char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
 
-Exports this variable script to the file with the given filename.
+Exports this variable script to the file with the given filename. If the filename is not specified the associated filename of this variable script is used.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -139,29 +130,11 @@ Exports this variable script to the file with the given filename.
 \begin{DoxyReturn}{Returns}
 A success/error value. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_variable_script_af60601557b3cdd08b6d060593bd02087}{}\label{classmage_1_1_variable_script_af60601557b3cdd08b6d060593bd02087} 
-\index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!Export\+Variable@{Export\+Variable}}
-\index{Export\+Variable@{Export\+Variable}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
-\subsubsection{\texorpdfstring{Export\+Variable()}{ExportVariable()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Variable\+Script\+::\+Export\+Variable (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_variable}{Variable} $\ast$}]{variable,  }\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Export the given variable from this variable script to the given file.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em variable} & A pointer to the variable variable. \\
-\hline
-\mbox{\tt in}  & {\em file} & A pointer to a file used for exporting. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_variable_script_a27ed94a510a3dab0e60b42b650ca6f09}{}\label{classmage_1_1_variable_script_a27ed94a510a3dab0e60b42b650ca6f09} 
-\index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!Get\+Nb\+Of\+Variables@{Get\+Nb\+Of\+Variables}}
-\index{Get\+Nb\+Of\+Variables@{Get\+Nb\+Of\+Variables}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
-\subsubsection{\texorpdfstring{Get\+Nb\+Of\+Variables()}{GetNbOfVariables()}}
-{\footnotesize\ttfamily size\+\_\+t mage\+::\+Variable\+Script\+::\+Get\+Nb\+Of\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+\hypertarget{classmage_1_1_variable_script_ad0bcb7dbb42f705f475c64feb1063fb4}{}\label{classmage_1_1_variable_script_ad0bcb7dbb42f705f475c64feb1063fb4} 
+\index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!Get\+Number\+Of\+Variables@{Get\+Number\+Of\+Variables}}
+\index{Get\+Number\+Of\+Variables@{Get\+Number\+Of\+Variables}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+Variables()}{GetNumberOfVariables()}}
+{\footnotesize\ttfamily size\+\_\+t mage\+::\+Variable\+Script\+::\+Get\+Number\+Of\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the number of variables in this variable script.
 
@@ -198,32 +171,11 @@ A pointer to the value of the variable.
 \subsubsection{\texorpdfstring{Import\+Script()}{ImportScript()}}
 {\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Variable\+Script\+::\+Import\+Script (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname = {\ttfamily L\char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
 
-Imports this variable script from its associated file.
+Imports this variable script from the file with the given filename. If the filename is not specified the associated filename of this variable script is used.
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em fname} & A reference to the filename. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A success/error value. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_variable_script_a7a89947971dbf15c1538ca2ef6c16877}{}\label{classmage_1_1_variable_script_a7a89947971dbf15c1538ca2ef6c16877} 
-\index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!Import\+Variable@{Import\+Variable}}
-\index{Import\+Variable@{Import\+Variable}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
-\subsubsection{\texorpdfstring{Import\+Variable()}{ImportVariable()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Variable\+Script\+::\+Import\+Variable (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Import the given variable from the given file to this variable script.
-
-\begin{DoxyPrecond}{Precondition}
-No variable with the name {\itshape name} exists in this variable script. 
-\end{DoxyPrecond}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & The name of the variable. \\
-\hline
-\mbox{\tt in}  & {\em file} & A pointer to a file used for importing. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -302,10 +254,10 @@ Nothing happens if no variable with the name {\itshape name} exists in this vari
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_variable_script_a14dfd0518fe06cbfaf409fd5223f63e5}{}\label{classmage_1_1_variable_script_a14dfd0518fe06cbfaf409fd5223f63e5} 
+\hypertarget{classmage_1_1_variable_script_a5cfb006355af91d7d73223a54756898e}{}\label{classmage_1_1_variable_script_a5cfb006355af91d7d73223a54756898e} 
 \index{mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}!m\+\_\+variables@{m\+\_\+variables}}
 \index{m\+\_\+variables@{m\+\_\+variables}!mage\+::\+Variable\+Script@{mage\+::\+Variable\+Script}}
 \subsubsection{\texorpdfstring{m\+\_\+variables}{m\_variables}}
-{\footnotesize\ttfamily list$<$ \hyperlink{structmage_1_1_variable}{Variable} $\ast$ $>$ mage\+::\+Variable\+Script\+::m\+\_\+variables\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily map$<$ string, \hyperlink{structmage_1_1_variable}{Variable} $\ast$ $>$ mage\+::\+Variable\+Script\+::m\+\_\+variables\hspace{0.3cm}{\ttfamily [private]}}
 
 Linked list containing the variables in this variable script. 

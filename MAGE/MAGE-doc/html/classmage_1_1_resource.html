@@ -96,45 +96,48 @@ Inheritance diagram for mage::Resource:</div>
  <div class="center">
   <img src="classmage_1_1_resource.png" usemap="#mage::Resource_map" alt=""/>
   <map id="mage::Resource_map" name="mage::Resource_map">
-<area href="classmage_1_1_mesh.html" alt="mage::Mesh" shape="rect" coords="0,56,129,80"/>
-<area href="classmage_1_1_pixel_shader.html" alt="mage::PixelShader" shape="rect" coords="139,56,268,80"/>
-<area href="classmage_1_1_variable_script.html" alt="mage::VariableScript" shape="rect" coords="278,56,407,80"/>
-<area href="classmage_1_1_vertex_shader.html" alt="mage::VertexShader" shape="rect" coords="417,56,546,80"/>
+<area href="classmage_1_1_model_descriptor.html" alt="mage::ModelDescriptor" shape="rect" coords="0,56,188,80"/>
+<area href="classmage_1_1_pixel_shader.html" alt="mage::PixelShader" shape="rect" coords="198,56,386,80"/>
+<area href="classmage_1_1_texture.html" alt="mage::Texture" shape="rect" coords="396,56,584,80"/>
+<area href="classmage_1_1_variable_script.html" alt="mage::VariableScript" shape="rect" coords="594,56,782,80"/>
+<area href="classmage_1_1_vertex_shader.html" alt="mage::VertexShader" shape="rect" coords="792,56,980,80"/>
+<area href="classmage_1_1_empty_pixel_shader.html" alt="mage::EmptyPixelShader" shape="rect" coords="99,112,287,136"/>
+<area href="classmage_1_1_lambertian_pixel_shader.html" alt="mage::LambertianPixelShader" shape="rect" coords="297,112,485,136"/>
+<area href="classmage_1_1_empty_vertex_shader.html" alt="mage::EmptyVertexShader" shape="rect" coords="693,112,881,136"/>
+<area href="classmage_1_1_lambertian_vertex_shader.html" alt="mage::LambertianVertexShader" shape="rect" coords="891,112,1079,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a37c7283a66b4658718465830072d6df6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a37c7283a66b4658718465830072d6df6">Resource</a> (const wstring &amp;name, const wstring &amp;path=MAGE_DEFAULT_RESOURCE_PATH)</td></tr>
-<tr class="separator:a37c7283a66b4658718465830072d6df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1972d0ea30505d3a27e566aeb74834"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a3a1972d0ea30505d3a27e566aeb74834">Resource</a> (const wstring &amp;fname)</td></tr>
+<tr class="separator:a3a1972d0ea30505d3a27e566aeb74834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab847b406a175fb1fb43713f58854bf81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#ab847b406a175fb1fb43713f58854bf81">Resource</a> (const <a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;resource)=default</td></tr>
+<tr class="separator:ab847b406a175fb1fb43713f58854bf81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26cea6261aac321d95ac745703f1a3e8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a26cea6261aac321d95ac745703f1a3e8">~Resource</a> ()=default</td></tr>
 <tr class="separator:a26cea6261aac321d95ac745703f1a3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1066ff99a6b3238de9702ddc971ffe0"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#af1066ff99a6b3238de9702ddc971ffe0">GetPath</a> () const</td></tr>
-<tr class="separator:af1066ff99a6b3238de9702ddc971ffe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a7e0c571a266b0c3ddf20979c491c8"><td class="memItemLeft" align="right" valign="top">const wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a49a7e0c571a266b0c3ddf20979c491c8">GetName</a> () const</td></tr>
-<tr class="separator:a49a7e0c571a266b0c3ddf20979c491c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f05385b8c05646989689fc04847a816"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a1f05385b8c05646989689fc04847a816">GetFilename</a> () const</td></tr>
 <tr class="separator:a1f05385b8c05646989689fc04847a816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c253886da9b0c3a52ca7a38ba448d74"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a6c253886da9b0c3a52ca7a38ba448d74">GetName</a> () const</td></tr>
+<tr class="separator:a6c253886da9b0c3a52ca7a38ba448d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a540b610f04adc251771ec6fe8e535"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a82a540b610f04adc251771ec6fe8e535">GetPath</a> () const</td></tr>
+<tr class="separator:a82a540b610f04adc251771ec6fe8e535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a4ee2dba2675546b603e03a69a2f2db52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a4ee2dba2675546b603e03a69a2f2db52">Resource</a> (const <a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;resource)=delete</td></tr>
-<tr class="separator:a4ee2dba2675546b603e03a69a2f2db52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8fa57f37eb253b90d18d33383b12875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#ad8fa57f37eb253b90d18d33383b12875">operator=</a> (const <a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;resource)=delete</td></tr>
 <tr class="separator:ad8fa57f37eb253b90d18d33383b12875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a62a281fb52790af4c621bb6aeee3bbe5"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a62a281fb52790af4c621bb6aeee3bbe5">m_name</a></td></tr>
-<tr class="separator:a62a281fb52790af4c621bb6aeee3bbe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa85318935a58bc4f7b3cfa5c19543d94"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#aa85318935a58bc4f7b3cfa5c19543d94">m_path</a></td></tr>
-<tr class="separator:aa85318935a58bc4f7b3cfa5c19543d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79267ab1f2ece139405dbe8b4b4d69fa"><td class="memItemLeft" align="right" valign="top">const wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_resource.html#a79267ab1f2ece139405dbe8b4b4d69fa">m_fname</a></td></tr>
+<tr class="separator:a79267ab1f2ece139405dbe8b4b4d69fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of resources. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a37c7283a66b4658718465830072d6df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37c7283a66b4658718465830072d6df6">&sect;&nbsp;</a></span>Resource() <span class="overload">[1/2]</span></h2>
+<a id="a3a1972d0ea30505d3a27e566aeb74834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1972d0ea30505d3a27e566aeb74834">&sect;&nbsp;</a></span>Resource() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,26 +146,48 @@ Private Attributes</h2></td></tr>
           <td class="memname">mage::Resource::Resource </td>
           <td>(</td>
           <td class="paramtype">const wstring &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>fname</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const wstring &amp;&#160;</td>
-          <td class="paramname"><em>path</em> = <code>MAGE_DEFAULT_RESOURCE_PATH</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs a resource with a given name and path.</p>
+<p>Constructs a resource with a given filename.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>A reference to the name. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>A reference to the path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fname</td><td>A reference to the filename. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab847b406a175fb1fb43713f58854bf81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab847b406a175fb1fb43713f58854bf81">&sect;&nbsp;</a></span>Resource() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::Resource::Resource </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a resource from the given resource.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>A reference to the resource. </td></tr>
   </table>
   </dd>
 </dl>
@@ -195,39 +220,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ee2dba2675546b603e03a69a2f2db52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ee2dba2675546b603e03a69a2f2db52">&sect;&nbsp;</a></span>Resource() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">mage::Resource::Resource </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmage_1_1_resource.html">Resource</a> &amp;&#160;</td>
-          <td class="paramname"><em>resource</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Constructs a resource from the given resource.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>A reference to the resource. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1f05385b8c05646989689fc04847a816"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f05385b8c05646989689fc04847a816">&sect;&nbsp;</a></span>GetFilename()</h2>
@@ -248,14 +240,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a49a7e0c571a266b0c3ddf20979c491c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49a7e0c571a266b0c3ddf20979c491c8">&sect;&nbsp;</a></span>GetName()</h2>
+<a id="a6c253886da9b0c3a52ca7a38ba448d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c253886da9b0c3a52ca7a38ba448d74">&sect;&nbsp;</a></span>GetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const wstring&amp; mage::Resource::GetName </td>
+          <td class="memname">const wstring mage::Resource::GetName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -263,18 +255,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the name of this resource.</p>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the name of this resource. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The name of this resource. </dd></dl>
 
 </div>
 </div>
-<a id="af1066ff99a6b3238de9702ddc971ffe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1066ff99a6b3238de9702ddc971ffe0">&sect;&nbsp;</a></span>GetPath()</h2>
+<a id="a82a540b610f04adc251771ec6fe8e535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a540b610f04adc251771ec6fe8e535">&sect;&nbsp;</a></span>GetPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const wstring&amp; mage::Resource::GetPath </td>
+          <td class="memname">const wstring mage::Resource::GetPath </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -282,7 +274,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the path of this resource.</p>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the path of this resource. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The path of this resource. </dd></dl>
 
 </div>
 </div>
@@ -321,8 +313,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a62a281fb52790af4c621bb6aeee3bbe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62a281fb52790af4c621bb6aeee3bbe5">&sect;&nbsp;</a></span>m_name</h2>
+<a id="a79267ab1f2ece139405dbe8b4b4d69fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79267ab1f2ece139405dbe8b4b4d69fa">&sect;&nbsp;</a></span>m_fname</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +323,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const wstring mage::Resource::m_name</td>
+          <td class="memname">const wstring mage::Resource::m_fname</td>
         </tr>
       </table>
   </td>
@@ -341,29 +333,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The name of this resource. </p>
-
-</div>
-</div>
-<a id="aa85318935a58bc4f7b3cfa5c19543d94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa85318935a58bc4f7b3cfa5c19543d94">&sect;&nbsp;</a></span>m_path</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const wstring mage::Resource::m_path</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The path of this resource. </p>
 
 </div>
 </div>

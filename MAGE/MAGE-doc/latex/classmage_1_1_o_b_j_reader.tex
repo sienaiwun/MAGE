@@ -1,0 +1,285 @@
+\hypertarget{classmage_1_1_o_b_j_reader}{}\section{mage\+:\+:O\+B\+J\+Reader$<$ VertexT $>$ Class Template Reference}
+\label{classmage_1_1_o_b_j_reader}\index{mage\+::\+O\+B\+J\+Reader$<$ Vertex\+T $>$@{mage\+::\+O\+B\+J\+Reader$<$ Vertex\+T $>$}}
+
+
+{\ttfamily \#include $<$obj\+\_\+reader.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:O\+B\+J\+Reader$<$ VertexT $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_o_b_j_reader}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_o_b_j_reader_a87c63bd4beb00ce03be5395a37d2a0ac}{O\+B\+J\+Reader} (\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&model\+\_\+output, const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&mesh\+\_\+desc)
+\item 
+virtual \hyperlink{classmage_1_1_o_b_j_reader_ad6087ff608be5a45559957a076f910e2}{$\sim$\+O\+B\+J\+Reader} ()=default
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_o_b_j_reader_adf891ce9b0634f10d6698b88ed3f8d16}{Preprocess} () override
+\item 
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_o_b_j_reader_a66080ff8e84d61c421e455ae9bf63414}{Read\+Line} (char $\ast$line) override
+\item 
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_o_b_j_reader_a99bc512fd79fb46a688869db6edf5704}{Postprocess} () override
+\item 
+void \hyperlink{classmage_1_1_o_b_j_reader_abc1f67436e50230bd2071b2dc31a4689}{Read\+O\+B\+J\+Material\+Library} ()
+\item 
+void \hyperlink{classmage_1_1_o_b_j_reader_aa4c73ff0e5e3de40cacbebc189037802}{Read\+O\+B\+J\+Material\+Use} ()
+\item 
+void \hyperlink{classmage_1_1_o_b_j_reader_a8159620b12d426073581202fee022662}{Read\+O\+B\+J\+Group} ()
+\item 
+void \hyperlink{classmage_1_1_o_b_j_reader_afc3f17024a006cce3b7869ca8c6a8f07}{Read\+O\+B\+J\+Object} ()
+\item 
+void \hyperlink{classmage_1_1_o_b_j_reader_a70fc61d8cc14dc8efbd73a88188cc511}{Read\+O\+B\+J\+Vertex} ()
+\item 
+void \hyperlink{classmage_1_1_o_b_j_reader_ae0dfedd81f23e6e15725e9ef02dd3034}{Read\+O\+B\+J\+Vertex\+Texture} ()
+\item 
+void \hyperlink{classmage_1_1_o_b_j_reader_aa9ef2ced0ad787b13818722c7dfa0636}{Read\+O\+B\+J\+Vertex\+Normal} ()
+\item 
+void \hyperlink{classmage_1_1_o_b_j_reader_aad770f434e4b50374ac6a3cac472f7fb}{Read\+O\+B\+J\+Triangle\+Face} ()
+\item 
+\hyperlink{structmage_1_1_point3}{Point3} \hyperlink{classmage_1_1_o_b_j_reader_a5aa3c18001c50851d8d9170ca859095e}{Read\+O\+B\+J\+Vertex\+Coordinates} ()
+\item 
+\hyperlink{structmage_1_1_normal3}{Normal3} \hyperlink{classmage_1_1_o_b_j_reader_a0c772e4234e5f4d679030081469b391e}{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates} ()
+\item 
+\hyperlink{structmage_1_1_u_v}{UV} \hyperlink{classmage_1_1_o_b_j_reader_a46d20a3da78ca4ee8a74e388e4a60ef9}{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates} ()
+\item 
+X\+M\+U\+I\+N\+T3 \hyperlink{classmage_1_1_o_b_j_reader_ab49e3c5b60092eaca4673d55fbeeca04}{Read\+O\+B\+J\+Vertex\+Indices} ()
+\item 
+VertexT \hyperlink{classmage_1_1_o_b_j_reader_a5b9b58ee9e0a39c2b0c86fa86fabaab9}{Construct\+Vertex} (const X\+M\+U\+I\+N\+T3 \&vertex\+\_\+indices)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_o_b_j_reader_a8864bc1ca0520bf90e216415db772bbb}{O\+B\+J\+Reader} (const \hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader} \&reader)=delete
+\item 
+\hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader} \& \hyperlink{classmage_1_1_o_b_j_reader_a62e516060267f828c5aa1a3f23dcf55d}{operator=} (const \hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader} \&reader)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \hyperlink{classmage_1_1_o_b_j_reader_a1032eb4a6844a99f1d96fc17c3e52aee}{m\+\_\+vertex\+\_\+coordinates}
+\item 
+vector$<$ \hyperlink{structmage_1_1_u_v}{UV} $>$ \hyperlink{classmage_1_1_o_b_j_reader_aec7c093d380be0b8506f7b8fdf9c3ad1}{m\+\_\+vertex\+\_\+texture\+\_\+coordinates}
+\item 
+vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \hyperlink{classmage_1_1_o_b_j_reader_a765e87afe7bd138dadcfc8c194311ed3}{m\+\_\+vertex\+\_\+normal\+\_\+coordinates}
+\item 
+map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \hyperlink{classmage_1_1_o_b_j_reader_a3783d5387bcba3d593437f9e2c350387}{m\+\_\+mapping}
+\item 
+\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \& \hyperlink{classmage_1_1_o_b_j_reader_ad4691c59a3e3ecefd201a8f03528bbd8}{m\+\_\+model\+\_\+output}
+\item 
+const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \& \hyperlink{classmage_1_1_o_b_j_reader_a3395a44a17a5749a332751465cece640}{m\+\_\+mesh\+\_\+desc}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_o_b_j_reader_a87c63bd4beb00ce03be5395a37d2a0ac}{}\label{classmage_1_1_o_b_j_reader_a87c63bd4beb00ce03be5395a37d2a0ac} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!O\+B\+J\+Reader@{O\+B\+J\+Reader}}
+\index{O\+B\+J\+Reader@{O\+B\+J\+Reader}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{O\+B\+J\+Reader()}{OBJReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::\hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader} (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{model\+\_\+output,  }\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{mesh\+\_\+desc }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_o_b_j_reader_ad6087ff608be5a45559957a076f910e2}{}\label{classmage_1_1_o_b_j_reader_ad6087ff608be5a45559957a076f910e2} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!````~O\+B\+J\+Reader@{$\sim$\+O\+B\+J\+Reader}}
+\index{````~O\+B\+J\+Reader@{$\sim$\+O\+B\+J\+Reader}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{$\sim$\+O\+B\+J\+Reader()}{~OBJReader()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+virtual \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::$\sim$\hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a8864bc1ca0520bf90e216415db772bbb}{}\label{classmage_1_1_o_b_j_reader_a8864bc1ca0520bf90e216415db772bbb} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!O\+B\+J\+Reader@{O\+B\+J\+Reader}}
+\index{O\+B\+J\+Reader@{O\+B\+J\+Reader}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{O\+B\+J\+Reader()}{OBJReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::\hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader} (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader}$<$ VertexT $>$ \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_o_b_j_reader_a5b9b58ee9e0a39c2b0c86fa86fabaab9}{}\label{classmage_1_1_o_b_j_reader_a5b9b58ee9e0a39c2b0c86fa86fabaab9} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Construct\+Vertex@{Construct\+Vertex}}
+\index{Construct\+Vertex@{Construct\+Vertex}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Construct\+Vertex()}{ConstructVertex()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+VertexT \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Construct\+Vertex (\begin{DoxyParamCaption}\item[{const X\+M\+U\+I\+N\+T3 \&}]{vertex\+\_\+indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a62e516060267f828c5aa1a3f23dcf55d}{}\label{classmage_1_1_o_b_j_reader_a62e516060267f828c5aa1a3f23dcf55d} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader}\& \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_o_b_j_reader}{O\+B\+J\+Reader}$<$ VertexT $>$ \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a99bc512fd79fb46a688869db6edf5704}{}\label{classmage_1_1_o_b_j_reader_a99bc512fd79fb46a688869db6edf5704} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Postprocess@{Postprocess}}
+\index{Postprocess@{Postprocess}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Postprocess()}{Postprocess()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Postprocess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classmage_1_1_line_reader_a4c8f2e1a60c6f3c98b4b47f3019c24f3}{mage\+::\+Line\+Reader}.
+
+\hypertarget{classmage_1_1_o_b_j_reader_adf891ce9b0634f10d6698b88ed3f8d16}{}\label{classmage_1_1_o_b_j_reader_adf891ce9b0634f10d6698b88ed3f8d16} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Preprocess@{Preprocess}}
+\index{Preprocess@{Preprocess}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Preprocess()}{Preprocess()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Preprocess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classmage_1_1_line_reader_a9a67c9527f499f19489f0680caa66ac9}{mage\+::\+Line\+Reader}.
+
+\hypertarget{classmage_1_1_o_b_j_reader_a66080ff8e84d61c421e455ae9bf63414}{}\label{classmage_1_1_o_b_j_reader_a66080ff8e84d61c421e455ae9bf63414} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+Line@{Read\+Line}}
+\index{Read\+Line@{Read\+Line}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Line()}{ReadLine()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+Line (\begin{DoxyParamCaption}\item[{char $\ast$}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classmage_1_1_line_reader_a193ad5c9084eb87e8a98a3c1782d93ff}{mage\+::\+Line\+Reader}.
+
+\hypertarget{classmage_1_1_o_b_j_reader_a8159620b12d426073581202fee022662}{}\label{classmage_1_1_o_b_j_reader_a8159620b12d426073581202fee022662} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Group@{Read\+O\+B\+J\+Group}}
+\index{Read\+O\+B\+J\+Group@{Read\+O\+B\+J\+Group}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Group()}{ReadOBJGroup()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_abc1f67436e50230bd2071b2dc31a4689}{}\label{classmage_1_1_o_b_j_reader_abc1f67436e50230bd2071b2dc31a4689} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Material\+Library@{Read\+O\+B\+J\+Material\+Library}}
+\index{Read\+O\+B\+J\+Material\+Library@{Read\+O\+B\+J\+Material\+Library}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Material\+Library()}{ReadOBJMaterialLibrary()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Material\+Library (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_aa4c73ff0e5e3de40cacbebc189037802}{}\label{classmage_1_1_o_b_j_reader_aa4c73ff0e5e3de40cacbebc189037802} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Material\+Use@{Read\+O\+B\+J\+Material\+Use}}
+\index{Read\+O\+B\+J\+Material\+Use@{Read\+O\+B\+J\+Material\+Use}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Material\+Use()}{ReadOBJMaterialUse()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Material\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_afc3f17024a006cce3b7869ca8c6a8f07}{}\label{classmage_1_1_o_b_j_reader_afc3f17024a006cce3b7869ca8c6a8f07} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Object@{Read\+O\+B\+J\+Object}}
+\index{Read\+O\+B\+J\+Object@{Read\+O\+B\+J\+Object}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Object()}{ReadOBJObject()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_aad770f434e4b50374ac6a3cac472f7fb}{}\label{classmage_1_1_o_b_j_reader_aad770f434e4b50374ac6a3cac472f7fb} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Triangle\+Face@{Read\+O\+B\+J\+Triangle\+Face}}
+\index{Read\+O\+B\+J\+Triangle\+Face@{Read\+O\+B\+J\+Triangle\+Face}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Triangle\+Face()}{ReadOBJTriangleFace()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Triangle\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a70fc61d8cc14dc8efbd73a88188cc511}{}\label{classmage_1_1_o_b_j_reader_a70fc61d8cc14dc8efbd73a88188cc511} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex@{Read\+O\+B\+J\+Vertex}}
+\index{Read\+O\+B\+J\+Vertex@{Read\+O\+B\+J\+Vertex}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex()}{ReadOBJVertex()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a5aa3c18001c50851d8d9170ca859095e}{}\label{classmage_1_1_o_b_j_reader_a5aa3c18001c50851d8d9170ca859095e} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Coordinates@{Read\+O\+B\+J\+Vertex\+Coordinates}}
+\index{Read\+O\+B\+J\+Vertex\+Coordinates@{Read\+O\+B\+J\+Vertex\+Coordinates}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Coordinates()}{ReadOBJVertexCoordinates()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_point3}{Point3} \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_ab49e3c5b60092eaca4673d55fbeeca04}{}\label{classmage_1_1_o_b_j_reader_ab49e3c5b60092eaca4673d55fbeeca04} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Indices@{Read\+O\+B\+J\+Vertex\+Indices}}
+\index{Read\+O\+B\+J\+Vertex\+Indices@{Read\+O\+B\+J\+Vertex\+Indices}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Indices()}{ReadOBJVertexIndices()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+X\+M\+U\+I\+N\+T3 \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_aa9ef2ced0ad787b13818722c7dfa0636}{}\label{classmage_1_1_o_b_j_reader_aa9ef2ced0ad787b13818722c7dfa0636} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Normal@{Read\+O\+B\+J\+Vertex\+Normal}}
+\index{Read\+O\+B\+J\+Vertex\+Normal@{Read\+O\+B\+J\+Vertex\+Normal}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Normal()}{ReadOBJVertexNormal()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a0c772e4234e5f4d679030081469b391e}{}\label{classmage_1_1_o_b_j_reader_a0c772e4234e5f4d679030081469b391e} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates}}
+\index{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates@{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Normal\+Coordinates()}{ReadOBJVertexNormalCoordinates()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_normal3}{Normal3} \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Normal\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_ae0dfedd81f23e6e15725e9ef02dd3034}{}\label{classmage_1_1_o_b_j_reader_ae0dfedd81f23e6e15725e9ef02dd3034} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Texture@{Read\+O\+B\+J\+Vertex\+Texture}}
+\index{Read\+O\+B\+J\+Vertex\+Texture@{Read\+O\+B\+J\+Vertex\+Texture}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Texture()}{ReadOBJVertexTexture()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a46d20a3da78ca4ee8a74e388e4a60ef9}{}\label{classmage_1_1_o_b_j_reader_a46d20a3da78ca4ee8a74e388e4a60ef9} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!Read\+O\+B\+J\+Vertex\+Texture\+Coordinates@{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates}}
+\index{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates@{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{Read\+O\+B\+J\+Vertex\+Texture\+Coordinates()}{ReadOBJVertexTextureCoordinates()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_u_v}{UV} \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::Read\+O\+B\+J\+Vertex\+Texture\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_o_b_j_reader_a3783d5387bcba3d593437f9e2c350387}{}\label{classmage_1_1_o_b_j_reader_a3783d5387bcba3d593437f9e2c350387} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!m\+\_\+mapping@{m\+\_\+mapping}}
+\index{m\+\_\+mapping@{m\+\_\+mapping}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+mapping}{m\_mapping}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+map$<$ X\+M\+U\+I\+N\+T3, uint32\+\_\+t, \hyperlink{structmage_1_1_o_b_j_reader_1_1_o_b_j_comparator_x_m_u_i_n_t3}{O\+B\+J\+Comparator\+X\+M\+U\+I\+N\+T3} $>$ \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::m\+\_\+mapping\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a3395a44a17a5749a332751465cece640}{}\label{classmage_1_1_o_b_j_reader_a3395a44a17a5749a332751465cece640} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!m\+\_\+mesh\+\_\+desc@{m\+\_\+mesh\+\_\+desc}}
+\index{m\+\_\+mesh\+\_\+desc@{m\+\_\+mesh\+\_\+desc}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+mesh\+\_\+desc}{m\_mesh\_desc}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$\& \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::m\+\_\+mesh\+\_\+desc\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_ad4691c59a3e3ecefd201a8f03528bbd8}{}\label{classmage_1_1_o_b_j_reader_ad4691c59a3e3ecefd201a8f03528bbd8} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!m\+\_\+model\+\_\+output@{m\+\_\+model\+\_\+output}}
+\index{m\+\_\+model\+\_\+output@{m\+\_\+model\+\_\+output}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+\_\+output}{m\_model\_output}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$\& \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::m\+\_\+model\+\_\+output\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a1032eb4a6844a99f1d96fc17c3e52aee}{}\label{classmage_1_1_o_b_j_reader_a1032eb4a6844a99f1d96fc17c3e52aee} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!m\+\_\+vertex\+\_\+coordinates@{m\+\_\+vertex\+\_\+coordinates}}
+\index{m\+\_\+vertex\+\_\+coordinates@{m\+\_\+vertex\+\_\+coordinates}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+coordinates}{m\_vertex\_coordinates}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+vector$<$ \hyperlink{structmage_1_1_point3}{Point3} $>$ \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::m\+\_\+vertex\+\_\+coordinates\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_a765e87afe7bd138dadcfc8c194311ed3}{}\label{classmage_1_1_o_b_j_reader_a765e87afe7bd138dadcfc8c194311ed3} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!m\+\_\+vertex\+\_\+normal\+\_\+coordinates@{m\+\_\+vertex\+\_\+normal\+\_\+coordinates}}
+\index{m\+\_\+vertex\+\_\+normal\+\_\+coordinates@{m\+\_\+vertex\+\_\+normal\+\_\+coordinates}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+normal\+\_\+coordinates}{m\_vertex\_normal\_coordinates}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+vector$<$ \hyperlink{structmage_1_1_normal3}{Normal3} $>$ \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::m\+\_\+vertex\+\_\+normal\+\_\+coordinates\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_o_b_j_reader_aec7c093d380be0b8506f7b8fdf9c3ad1}{}\label{classmage_1_1_o_b_j_reader_aec7c093d380be0b8506f7b8fdf9c3ad1} 
+\index{mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}!m\+\_\+vertex\+\_\+texture\+\_\+coordinates@{m\+\_\+vertex\+\_\+texture\+\_\+coordinates}}
+\index{m\+\_\+vertex\+\_\+texture\+\_\+coordinates@{m\+\_\+vertex\+\_\+texture\+\_\+coordinates}!mage\+::\+O\+B\+J\+Reader@{mage\+::\+O\+B\+J\+Reader}}
+\subsubsection{\texorpdfstring{m\+\_\+vertex\+\_\+texture\+\_\+coordinates}{m\_vertex\_texture\_coordinates}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+vector$<$ \hyperlink{structmage_1_1_u_v}{UV} $>$ \hyperlink{classmage_1_1_o_b_j_reader}{mage\+::\+O\+B\+J\+Reader}$<$ VertexT $>$\+::m\+\_\+vertex\+\_\+texture\+\_\+coordinates\hspace{0.3cm}{\ttfamily [private]}}
+

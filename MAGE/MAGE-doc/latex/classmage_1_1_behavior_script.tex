@@ -1,0 +1,133 @@
+\hypertarget{classmage_1_1_behavior_script}{}\section{mage\+:\+:Behavior\+Script Class Reference}
+\label{classmage_1_1_behavior_script}\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+
+
+{\ttfamily \#include $<$behavior\+\_\+script.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_behavior_script_a90ac6d3397f54ad95a931c9ef2c47549}{Behavior\+Script} ()=default
+\item 
+\hyperlink{classmage_1_1_behavior_script_a1cc4b4f909124615af4f49f2327c233e}{$\sim$\+Behavior\+Script} ()=default
+\item 
+const string \& \hyperlink{classmage_1_1_behavior_script_a06179af26e24991b5083a5b1d603bc93}{Get\+Name} () const
+\item 
+void \hyperlink{classmage_1_1_behavior_script_a04d2a39a204b9314b1f4b01ad3a93021}{Set\+Name} (const string \&name)
+\item 
+virtual void \hyperlink{classmage_1_1_behavior_script_a9b2954891ee98dcef926b1db42674ce3}{Load} ()
+\item 
+virtual void \hyperlink{classmage_1_1_behavior_script_ac5dcb11634d0d37957d3fe91ee4b1524}{Update} (double elapsed\+\_\+time, const \hyperlink{classmage_1_1_scene}{Scene} \&scene)=0
+\item 
+virtual void \hyperlink{classmage_1_1_behavior_script_a58397c708ec04ca09983bb20cfc0afbe}{Close} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_behavior_script_a776701dc960610d3a08679bc01e1def5}{Behavior\+Script} (const \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&script)=delete
+\item 
+\hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \& \hyperlink{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51}{operator=} (const \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&script)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classmage_1_1_behavior_script_a3e55dd6e720dc72c3f613b917e73344b}{m\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class of behavior scripts. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_behavior_script_a90ac6d3397f54ad95a931c9ef2c47549}{}\label{classmage_1_1_behavior_script_a90ac6d3397f54ad95a931c9ef2c47549} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Behavior\+Script@{Behavior\+Script}}
+\index{Behavior\+Script@{Behavior\+Script}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Behavior\+Script()}{BehaviorScript()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Behavior\+Script\+::\+Behavior\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Constructs a behavior script. \hypertarget{classmage_1_1_behavior_script_a1cc4b4f909124615af4f49f2327c233e}{}\label{classmage_1_1_behavior_script_a1cc4b4f909124615af4f49f2327c233e} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!````~Behavior\+Script@{$\sim$\+Behavior\+Script}}
+\index{````~Behavior\+Script@{$\sim$\+Behavior\+Script}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{$\sim$\+Behavior\+Script()}{~BehaviorScript()}}
+{\footnotesize\ttfamily mage\+::\+Behavior\+Script\+::$\sim$\+Behavior\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Destructs this behavior script. \hypertarget{classmage_1_1_behavior_script_a776701dc960610d3a08679bc01e1def5}{}\label{classmage_1_1_behavior_script_a776701dc960610d3a08679bc01e1def5} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Behavior\+Script@{Behavior\+Script}}
+\index{Behavior\+Script@{Behavior\+Script}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Behavior\+Script()}{BehaviorScript()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Behavior\+Script\+::\+Behavior\+Script (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Constructs a behavior script from the given behavior script.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em script} & A reference to the behavior script. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_behavior_script_a58397c708ec04ca09983bb20cfc0afbe}{}\label{classmage_1_1_behavior_script_a58397c708ec04ca09983bb20cfc0afbe} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Close@{Close}}
+\index{Close@{Close}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily virtual void mage\+::\+Behavior\+Script\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Closes this behavior script. Allows this behavior script to preform any post-\/processing destruction. \hypertarget{classmage_1_1_behavior_script_a06179af26e24991b5083a5b1d603bc93}{}\label{classmage_1_1_behavior_script_a06179af26e24991b5083a5b1d603bc93} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily const string\& mage\+::\+Behavior\+Script\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_behavior_script_a9b2954891ee98dcef926b1db42674ce3}{}\label{classmage_1_1_behavior_script_a9b2954891ee98dcef926b1db42674ce3} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Load@{Load}}
+\index{Load@{Load}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily virtual void mage\+::\+Behavior\+Script\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Loads this behavior script. Allows this behavior script to preform any pre-\/processing construction. \hypertarget{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51}{}\label{classmage_1_1_behavior_script_a0b3327ebf7009e668a7022d254cb1d51} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script}\& mage\+::\+Behavior\+Script\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_behavior_script}{Behavior\+Script} \&}]{script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+Copies the given behavior script to this behavior script.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em script} & A reference to the behavior script to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the copy of the given behavior script (i.\+e. this behavior script). 
+\end{DoxyReturn}
+\hypertarget{classmage_1_1_behavior_script_a04d2a39a204b9314b1f4b01ad3a93021}{}\label{classmage_1_1_behavior_script_a04d2a39a204b9314b1f4b01ad3a93021} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Set\+Name@{Set\+Name}}
+\index{Set\+Name@{Set\+Name}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Set\+Name()}{SetName()}}
+{\footnotesize\ttfamily void mage\+::\+Behavior\+Script\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_behavior_script_ac5dcb11634d0d37957d3fe91ee4b1524}{}\label{classmage_1_1_behavior_script_ac5dcb11634d0d37957d3fe91ee4b1524} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!Update@{Update}}
+\index{Update@{Update}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void mage\+::\+Behavior\+Script\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed\+\_\+time,  }\item[{const \hyperlink{classmage_1_1_scene}{Scene} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Updates this behavior script.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em elapsed\+\_\+time} & The elapsed time since the previous update. \\
+\hline
+\mbox{\tt in}  & {\em scene} & A reference to the current scene. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_behavior_script_a3e55dd6e720dc72c3f613b917e73344b}{}\label{classmage_1_1_behavior_script_a3e55dd6e720dc72c3f613b917e73344b} 
+\index{mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!mage\+::\+Behavior\+Script@{mage\+::\+Behavior\+Script}}
+\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
+{\footnotesize\ttfamily string mage\+::\+Behavior\+Script\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+

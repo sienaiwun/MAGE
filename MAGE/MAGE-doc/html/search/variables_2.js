@@ -5,5 +5,5 @@ var searchData=
   ['caps2',['caps2',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#ada2de9e6468e8d5da2a3e246bc079dc9',1,'mage::DDS_HEADER']]],
   ['caps3',['caps3',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#a85726c8826cc856565e2c978cb37ff4b',1,'mage::DDS_HEADER']]],
   ['caps4',['caps4',['../structmage_1_1_d_d_s___h_e_a_d_e_r.html#a9f36aa53c86e3aa2bd7c667f28460645',1,'mage::DDS_HEADER']]],
-  ['createresource',['CreateResource',['../classmage_1_1_resource_manager.html#a41d5a40aeaef12e2ecef0cb8f5f4a4d5',1,'mage::ResourceManager']]]
+  ['child',['child',['../structmage_1_1_model_part.html#a3ab6e2faae44453d60cf0ff4876f49eb',1,'mage::ModelPart']]]
 ];

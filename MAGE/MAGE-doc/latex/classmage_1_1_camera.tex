@@ -7,7 +7,7 @@
 Inheritance diagram for mage\+:\+:Camera\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classmage_1_1_camera}
+\includegraphics[height=3.000000cm]{classmage_1_1_camera}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -15,7 +15,7 @@ Inheritance diagram for mage\+:\+:Camera\+:\begin{figure}[H]
 \item 
 virtual \hyperlink{classmage_1_1_camera_a181f7fdf168c0d66022edfecb697dd7d}{$\sim$\+Camera} ()=default
 \item 
-\hyperlink{classmage_1_1_camera}{Camera} \& \hyperlink{classmage_1_1_camera_afe33e674f74180d6b9566a85eec51ac4}{operator=} (const \hyperlink{classmage_1_1_camera}{Camera} \&camera)=default
+\hyperlink{classmage_1_1_camera}{Camera} \& \hyperlink{classmage_1_1_camera_ae16a5f66b80f7fa771475aa1eb099634}{operator=} (const \hyperlink{classmage_1_1_camera}{Camera} \&camera)
 \item 
 virtual \hyperlink{classmage_1_1_camera}{Camera} $\ast$ \hyperlink{classmage_1_1_camera_a19301c2256c183db50b5e9406f7b5f3c}{Clone} () const =0
 \item 
@@ -44,9 +44,9 @@ virtual X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_camera_a1f5206864cf18b5548
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_camera_a64980217b5ae3817affab70eb3e61342}{Camera} (float width, float height, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z)
+\hyperlink{classmage_1_1_camera_a6e7f3eaa4d29f780d9389b99c66c21ab}{Camera} (const string \&name, float width, float height, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z)
 \item 
-\hyperlink{classmage_1_1_camera_a7804afa68565efe4c48f95453d6c65f0}{Camera} (const \hyperlink{classmage_1_1_camera}{Camera} \&camera)=default
+\hyperlink{classmage_1_1_camera_a28d9280bd7067ec4d28392558cc2b767}{Camera} (const \hyperlink{classmage_1_1_camera}{Camera} \&camera)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -58,6 +58,8 @@ float \hyperlink{classmage_1_1_camera_a48485eca596702f0e5985ec8b7db35a5}{m\+\_\+
 float \hyperlink{classmage_1_1_camera_a685f8700a29d1f1eff2bec353c3ec970}{m\+\_\+near\+\_\+z}
 \item 
 float \hyperlink{classmage_1_1_camera_abe2eeca725ce3da238256007454b241f}{m\+\_\+far\+\_\+z}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{structmage_1_1_transform}{Transform} $>$ \hyperlink{classmage_1_1_camera_a7fd53bbda894441e788928c50e9776c1}{m\+\_\+transform}
 \end{DoxyCompactItemize}
 
 
@@ -71,16 +73,18 @@ A class of camera.
 \subsubsection{\texorpdfstring{$\sim$\+Camera()}{~Camera()}}
 {\footnotesize\ttfamily virtual mage\+::\+Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-Destructs this camera. \hypertarget{classmage_1_1_camera_a64980217b5ae3817affab70eb3e61342}{}\label{classmage_1_1_camera_a64980217b5ae3817affab70eb3e61342} 
+Destructs this camera. \hypertarget{classmage_1_1_camera_a6e7f3eaa4d29f780d9389b99c66c21ab}{}\label{classmage_1_1_camera_a6e7f3eaa4d29f780d9389b99c66c21ab} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!Camera@{Camera}}
 \index{Camera@{Camera}!mage\+::\+Camera@{mage\+::\+Camera}}
 \subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{near\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+NEAR\+\_\+Z},  }\item[{float}]{far\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FAR\+\_\+Z} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily mage\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{near\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+NEAR\+\_\+Z},  }\item[{float}]{far\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FAR\+\_\+Z} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Constructs a camera.
 
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & A reference to the name of the camera. \\
+\hline
 \mbox{\tt in}  & {\em width} & The width. \\
 \hline
 \mbox{\tt in}  & {\em height} & The height. \\
@@ -90,11 +94,11 @@ Constructs a camera.
 \mbox{\tt in}  & {\em far\+\_\+z} & The position of the far z-\/plane. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_camera_a7804afa68565efe4c48f95453d6c65f0}{}\label{classmage_1_1_camera_a7804afa68565efe4c48f95453d6c65f0} 
+\hypertarget{classmage_1_1_camera_a28d9280bd7067ec4d28392558cc2b767}{}\label{classmage_1_1_camera_a28d9280bd7067ec4d28392558cc2b767} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!Camera@{Camera}}
 \index{Camera@{Camera}!mage\+::\+Camera@{mage\+::\+Camera}}
 \subsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily mage\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily mage\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 Constructs a camera from the given camera.
 
@@ -119,7 +123,7 @@ A pointer to the clone of this camera.
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classmage_1_1_perspective_camera_aa2fae7b2ca5daadeda0fd935fcdb101a}{mage\+::\+Perspective\+Camera}, and \hyperlink{classmage_1_1_orthographic_camera_a3fc2e5cfe7283670937de2a4841a5428}{mage\+::\+Orthographic\+Camera}.
+Implemented in \hyperlink{classmage_1_1_perspective_camera_a08eebf7f3ba10a46b4b23c0ded1192f2}{mage\+::\+Perspective\+Camera}, and \hyperlink{classmage_1_1_orthographic_camera_ae075c08e4af88f74212bf5c84d2e5b2a}{mage\+::\+Orthographic\+Camera}.
 
 \hypertarget{classmage_1_1_camera_a7f293a8711086b3419fe3b4224ff2778}{}\label{classmage_1_1_camera_a7f293a8711086b3419fe3b4224ff2778} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!Get\+FarZ@{Get\+FarZ}}
@@ -180,11 +184,11 @@ Returns the width of this camera.
 \begin{DoxyReturn}{Returns}
 The width of this camera. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_camera_afe33e674f74180d6b9566a85eec51ac4}{}\label{classmage_1_1_camera_afe33e674f74180d6b9566a85eec51ac4} 
+\hypertarget{classmage_1_1_camera_ae16a5f66b80f7fa771475aa1eb099634}{}\label{classmage_1_1_camera_ae16a5f66b80f7fa771475aa1eb099634} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!operator=@{operator=}}
 \index{operator=@{operator=}!mage\+::\+Camera@{mage\+::\+Camera}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_camera}{Camera}\& mage\+::\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_camera}{Camera}\& mage\+::\+Camera\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})}
 
 Copies the given camera to this camera.
 
@@ -314,7 +318,13 @@ The height of this camera. \hypertarget{classmage_1_1_camera_a685f8700a29d1f1eff
 \subsubsection{\texorpdfstring{m\+\_\+near\+\_\+z}{m\_near\_z}}
 {\footnotesize\ttfamily float mage\+::\+Camera\+::m\+\_\+near\+\_\+z\hspace{0.3cm}{\ttfamily [private]}}
 
-The position of the near z-\/plane. \hypertarget{classmage_1_1_camera_acc8f371214af02fdac9a1ff04508c4ca}{}\label{classmage_1_1_camera_acc8f371214af02fdac9a1ff04508c4ca} 
+The position of the near z-\/plane. \hypertarget{classmage_1_1_camera_a7fd53bbda894441e788928c50e9776c1}{}\label{classmage_1_1_camera_a7fd53bbda894441e788928c50e9776c1} 
+\index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+transform@{m\+\_\+transform}}
+\index{m\+\_\+transform@{m\+\_\+transform}!mage\+::\+Camera@{mage\+::\+Camera}}
+\subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{structmage_1_1_transform}{Transform} $>$ mage\+::\+Camera\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [private]}}
+
+The transform of this camera. \hypertarget{classmage_1_1_camera_acc8f371214af02fdac9a1ff04508c4ca}{}\label{classmage_1_1_camera_acc8f371214af02fdac9a1ff04508c4ca} 
 \index{mage\+::\+Camera@{mage\+::\+Camera}!m\+\_\+width@{m\+\_\+width}}
 \index{m\+\_\+width@{m\+\_\+width}!mage\+::\+Camera@{mage\+::\+Camera}}
 \subsubsection{\texorpdfstring{m\+\_\+width}{m\_width}}

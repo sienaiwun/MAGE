@@ -1,13 +1,12 @@
 var classmage_1_1_engine =
 [
-    [ "Engine", "classmage_1_1_engine.html#aa561c09a58a2ab15aab99cf06f770014", null ],
+    [ "Engine", "classmage_1_1_engine.html#a99770cbb017b29c284d7f8e4c7e2b84c", null ],
     [ "~Engine", "classmage_1_1_engine.html#a34628556f8397d70ed018d71e343c2f5", null ],
     [ "Engine", "classmage_1_1_engine.html#afd2f4f32b2e803f59521aafe1924f0ba", null ],
     [ "GetInputManager", "classmage_1_1_engine.html#a728ad054d36cee8eaf9ee3eb6c1e1201", null ],
     [ "GetMainWindow", "classmage_1_1_engine.html#a3bfc843926e0870cd5b8d512fb392607", null ],
     [ "GetRenderer", "classmage_1_1_engine.html#a42a90a61ede031ee768b8aa6d7f808ae", null ],
-    [ "GetScriptManager", "classmage_1_1_engine.html#aefcc06d74537a9d67a3dd923a33fb905", null ],
-    [ "GetStateManager", "classmage_1_1_engine.html#a8708d3e11461ecd3b0325a7c8fec8fa2", null ],
+    [ "GetResourceFactory", "classmage_1_1_engine.html#a1a18dc9775f6ab4c9cd103b07ad47903", null ],
     [ "InitializeSystems", "classmage_1_1_engine.html#a2d0a2669520cce1316a176cc3e891502", null ],
     [ "IsDeactive", "classmage_1_1_engine.html#a83c3ed26138932f8b17daa20526b100e", null ],
     [ "ModeSwitch", "classmage_1_1_engine.html#a54cb08ec26da300b0c7ca4e7f9a35e0b", null ],
@@ -15,11 +14,12 @@ var classmage_1_1_engine =
     [ "Run", "classmage_1_1_engine.html#a246c82d0e55bc29e73aecbc365464ec8", null ],
     [ "SetDeactiveFlag", "classmage_1_1_engine.html#a942bfa9892fa79bb1068d7c7ec4e6732", null ],
     [ "SetModeSwitchFlag", "classmage_1_1_engine.html#a8b574f0d702240d76fa98b2c79856d0d", null ],
+    [ "SetScene", "classmage_1_1_engine.html#aec75ed67f8fb68a383fa892e50b21ea7", null ],
     [ "m_deactive", "classmage_1_1_engine.html#ab8a4b0157403708ae7d1d018a95b4c63", null ],
     [ "m_input_manager", "classmage_1_1_engine.html#a8e9048208a6a5c5b034aaa1cbdab28bc", null ],
     [ "m_main_window", "classmage_1_1_engine.html#a3aea7e8c0c1247cac570334a3d3543d6", null ],
     [ "m_mode_switch", "classmage_1_1_engine.html#aa5cb2e0b7bb2c4a9020e79ab832ee221", null ],
     [ "m_renderer", "classmage_1_1_engine.html#a1248b7c21bc8256c72d372c12ed1ee68", null ],
-    [ "m_script_manager", "classmage_1_1_engine.html#a856b75c6cced7aac36788233b4c46ffc", null ],
-    [ "m_state_manager", "classmage_1_1_engine.html#aa85a18b6064491bc07d52e61ae512e9d", null ]
+    [ "m_resource_factory", "classmage_1_1_engine.html#a0c7c2d4fc75fc3512e02054056cf8a90", null ],
+    [ "m_scene", "classmage_1_1_engine.html#a82158ab9c1b60538ef8c46d5eb263bb8", null ]
 ];

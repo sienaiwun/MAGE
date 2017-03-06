@@ -7,13 +7,13 @@
 Inheritance diagram for mage\+:\+:Orthographic\+Camera\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classmage_1_1_orthographic_camera}
+\includegraphics[height=3.000000cm]{classmage_1_1_orthographic_camera}
 \end{center}
 \end{figure}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_orthographic_camera_a02855f1a1830b51d98cf7c6adb22bf11}{Orthographic\+Camera} (float width, float height, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z)
+\hyperlink{classmage_1_1_orthographic_camera_a7d8b48144b0ef2e2f0aa4f06f3858abd}{Orthographic\+Camera} (const string \&name, float width, float height, float near\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+N\+E\+A\+R\+\_\+Z, float far\+\_\+z=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+A\+R\+\_\+Z)
 \item 
 \hyperlink{classmage_1_1_orthographic_camera_aad12a2901577a187bb53e4c2e2f5a658}{Orthographic\+Camera} (const \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} \&camera)
 \item 
@@ -21,7 +21,7 @@ virtual \hyperlink{classmage_1_1_orthographic_camera_abdad923634e17f217ba975a914
 \item 
 \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} \& \hyperlink{classmage_1_1_orthographic_camera_a8ea679c9b4c3d2c6aef40119dbf60921}{operator=} (const \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} \&orthographic\+\_\+camera)
 \item 
-virtual \hyperlink{classmage_1_1_camera}{Camera} $\ast$ \hyperlink{classmage_1_1_orthographic_camera_a3fc2e5cfe7283670937de2a4841a5428}{Clone} () const
+virtual \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera} $\ast$ \hyperlink{classmage_1_1_orthographic_camera_ae075c08e4af88f74212bf5c84d2e5b2a}{Clone} () const override
 \item 
 virtual X\+M\+M\+A\+T\+R\+IX \hyperlink{classmage_1_1_orthographic_camera_aedd86e56a0f7bc967ad8d9be2631a0cf}{Get\+View\+To\+Projection\+Matrix} () const override
 \item 
@@ -34,16 +34,18 @@ void \hyperlink{classmage_1_1_orthographic_camera_a1ff2b3e4467049b978155d652a687
 A class of orthographic cameras. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_orthographic_camera_a02855f1a1830b51d98cf7c6adb22bf11}{}\label{classmage_1_1_orthographic_camera_a02855f1a1830b51d98cf7c6adb22bf11} 
+\hypertarget{classmage_1_1_orthographic_camera_a7d8b48144b0ef2e2f0aa4f06f3858abd}{}\label{classmage_1_1_orthographic_camera_a7d8b48144b0ef2e2f0aa4f06f3858abd} 
 \index{mage\+::\+Orthographic\+Camera@{mage\+::\+Orthographic\+Camera}!Orthographic\+Camera@{Orthographic\+Camera}}
 \index{Orthographic\+Camera@{Orthographic\+Camera}!mage\+::\+Orthographic\+Camera@{mage\+::\+Orthographic\+Camera}}
 \subsubsection{\texorpdfstring{Orthographic\+Camera()}{OrthographicCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Orthographic\+Camera\+::\+Orthographic\+Camera (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{near\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+NEAR\+\_\+Z},  }\item[{float}]{far\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FAR\+\_\+Z} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily mage\+::\+Orthographic\+Camera\+::\+Orthographic\+Camera (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{near\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+NEAR\+\_\+Z},  }\item[{float}]{far\+\_\+z = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+CAMERA\+\_\+FAR\+\_\+Z} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Constructs an orthographic camera.
 
 
 \begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & A reference to the name of the orthographic camera. \\
+\hline
 \mbox{\tt in}  & {\em width} & The width. \\
 \hline
 \mbox{\tt in}  & {\em height} & The height. \\
@@ -75,11 +77,11 @@ Constructs an orthographic camera from the given orthographic camera.
 Destructs this orthographic camera. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classmage_1_1_orthographic_camera_a3fc2e5cfe7283670937de2a4841a5428}{}\label{classmage_1_1_orthographic_camera_a3fc2e5cfe7283670937de2a4841a5428} 
+\hypertarget{classmage_1_1_orthographic_camera_ae075c08e4af88f74212bf5c84d2e5b2a}{}\label{classmage_1_1_orthographic_camera_ae075c08e4af88f74212bf5c84d2e5b2a} 
 \index{mage\+::\+Orthographic\+Camera@{mage\+::\+Orthographic\+Camera}!Clone@{Clone}}
 \index{Clone@{Clone}!mage\+::\+Orthographic\+Camera@{mage\+::\+Orthographic\+Camera}}
 \subsubsection{\texorpdfstring{Clone()}{Clone()}}
-{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_camera}{Camera}$\ast$ mage\+::\+Orthographic\+Camera\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual \hyperlink{classmage_1_1_orthographic_camera}{Orthographic\+Camera}$\ast$ mage\+::\+Orthographic\+Camera\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 Clones this orthographic camera.
 

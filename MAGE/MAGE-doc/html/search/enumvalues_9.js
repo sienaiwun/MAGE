@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['write',['WRITE',['../namespacemage.html#afd76fcca37ce5c5b2227671290973c74aff9d196f4bda4079f3f1ce90bd644662',1,'mage']]]
+  ['valid_5ftoken',['valid_token',['../namespacemage.html#a2178ba2411db5912f41b2e7698c2037daadeba2cdda999b6fefb8f7921d465be2',1,'mage']]]
 ];

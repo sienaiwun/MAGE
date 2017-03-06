@@ -7,35 +7,33 @@
 Inheritance diagram for mage\+:\+:Resource\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classmage_1_1_resource}
+\includegraphics[height=1.428571cm]{classmage_1_1_resource}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_resource_a37c7283a66b4658718465830072d6df6}{Resource} (const wstring \&name, const wstring \&path=M\+A\+G\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+A\+TH)
+\hyperlink{classmage_1_1_resource_a3a1972d0ea30505d3a27e566aeb74834}{Resource} (const wstring \&fname)
+\item 
+\hyperlink{classmage_1_1_resource_ab847b406a175fb1fb43713f58854bf81}{Resource} (const \hyperlink{classmage_1_1_resource}{Resource} \&resource)=default
 \item 
 virtual \hyperlink{classmage_1_1_resource_a26cea6261aac321d95ac745703f1a3e8}{$\sim$\+Resource} ()=default
 \item 
-const wstring \& \hyperlink{classmage_1_1_resource_af1066ff99a6b3238de9702ddc971ffe0}{Get\+Path} () const
-\item 
-const wstring \& \hyperlink{classmage_1_1_resource_a49a7e0c571a266b0c3ddf20979c491c8}{Get\+Name} () const
-\item 
 const wstring \hyperlink{classmage_1_1_resource_a1f05385b8c05646989689fc04847a816}{Get\+Filename} () const
+\item 
+const wstring \hyperlink{classmage_1_1_resource_a6c253886da9b0c3a52ca7a38ba448d74}{Get\+Name} () const
+\item 
+const wstring \hyperlink{classmage_1_1_resource_a82a540b610f04adc251771ec6fe8e535}{Get\+Path} () const
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
-\item 
-\hyperlink{classmage_1_1_resource_a4ee2dba2675546b603e03a69a2f2db52}{Resource} (const \hyperlink{classmage_1_1_resource}{Resource} \&resource)=delete
 \item 
 \hyperlink{classmage_1_1_resource}{Resource} \& \hyperlink{classmage_1_1_resource_ad8fa57f37eb253b90d18d33383b12875}{operator=} (const \hyperlink{classmage_1_1_resource}{Resource} \&resource)=delete
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-const wstring \hyperlink{classmage_1_1_resource_a62a281fb52790af4c621bb6aeee3bbe5}{m\+\_\+name}
-\item 
-const wstring \hyperlink{classmage_1_1_resource_aa85318935a58bc4f7b3cfa5c19543d94}{m\+\_\+path}
+const wstring \hyperlink{classmage_1_1_resource_a79267ab1f2ece139405dbe8b4b4d69fa}{m\+\_\+fname}
 \end{DoxyCompactItemize}
 
 
@@ -43,32 +41,24 @@ const wstring \hyperlink{classmage_1_1_resource_aa85318935a58bc4f7b3cfa5c19543d9
 A class of resources. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_resource_a37c7283a66b4658718465830072d6df6}{}\label{classmage_1_1_resource_a37c7283a66b4658718465830072d6df6} 
+\hypertarget{classmage_1_1_resource_a3a1972d0ea30505d3a27e566aeb74834}{}\label{classmage_1_1_resource_a3a1972d0ea30505d3a27e566aeb74834} 
 \index{mage\+::\+Resource@{mage\+::\+Resource}!Resource@{Resource}}
 \index{Resource@{Resource}!mage\+::\+Resource@{mage\+::\+Resource}}
 \subsubsection{\texorpdfstring{Resource()}{Resource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Resource\+::\+Resource (\begin{DoxyParamCaption}\item[{const wstring \&}]{name,  }\item[{const wstring \&}]{path = {\ttfamily MAGE\+\_\+DEFAULT\+\_\+RESOURCE\+\_\+PATH} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Resource\+::\+Resource (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
 
-Constructs a resource with a given name and path.
+Constructs a resource with a given filename.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & A reference to the name. \\
-\hline
-\mbox{\tt in}  & {\em path} & A reference to the path. \\
+\mbox{\tt in}  & {\em fname} & A reference to the filename. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classmage_1_1_resource_a26cea6261aac321d95ac745703f1a3e8}{}\label{classmage_1_1_resource_a26cea6261aac321d95ac745703f1a3e8} 
-\index{mage\+::\+Resource@{mage\+::\+Resource}!````~Resource@{$\sim$\+Resource}}
-\index{````~Resource@{$\sim$\+Resource}!mage\+::\+Resource@{mage\+::\+Resource}}
-\subsubsection{\texorpdfstring{$\sim$\+Resource()}{~Resource()}}
-{\footnotesize\ttfamily virtual mage\+::\+Resource\+::$\sim$\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
-
-Destructs this resource. \hypertarget{classmage_1_1_resource_a4ee2dba2675546b603e03a69a2f2db52}{}\label{classmage_1_1_resource_a4ee2dba2675546b603e03a69a2f2db52} 
+\hypertarget{classmage_1_1_resource_ab847b406a175fb1fb43713f58854bf81}{}\label{classmage_1_1_resource_ab847b406a175fb1fb43713f58854bf81} 
 \index{mage\+::\+Resource@{mage\+::\+Resource}!Resource@{Resource}}
 \index{Resource@{Resource}!mage\+::\+Resource@{mage\+::\+Resource}}
 \subsubsection{\texorpdfstring{Resource()}{Resource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily mage\+::\+Resource\+::\+Resource (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_resource}{Resource} \&}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+{\footnotesize\ttfamily mage\+::\+Resource\+::\+Resource (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_resource}{Resource} \&}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 Constructs a resource from the given resource.
 
@@ -77,7 +67,13 @@ Constructs a resource from the given resource.
 \mbox{\tt in}  & {\em resource} & A reference to the resource. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1_resource_a26cea6261aac321d95ac745703f1a3e8}{}\label{classmage_1_1_resource_a26cea6261aac321d95ac745703f1a3e8} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!````~Resource@{$\sim$\+Resource}}
+\index{````~Resource@{$\sim$\+Resource}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{$\sim$\+Resource()}{~Resource()}}
+{\footnotesize\ttfamily virtual mage\+::\+Resource\+::$\sim$\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
+Destructs this resource. 
 
 \subsection{Member Function Documentation}
 \hypertarget{classmage_1_1_resource_a1f05385b8c05646989689fc04847a816}{}\label{classmage_1_1_resource_a1f05385b8c05646989689fc04847a816} 
@@ -91,27 +87,27 @@ Returns the filename of this resource.
 \begin{DoxyReturn}{Returns}
 The filename of this resource. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_resource_a49a7e0c571a266b0c3ddf20979c491c8}{}\label{classmage_1_1_resource_a49a7e0c571a266b0c3ddf20979c491c8} 
+\hypertarget{classmage_1_1_resource_a6c253886da9b0c3a52ca7a38ba448d74}{}\label{classmage_1_1_resource_a6c253886da9b0c3a52ca7a38ba448d74} 
 \index{mage\+::\+Resource@{mage\+::\+Resource}!Get\+Name@{Get\+Name}}
 \index{Get\+Name@{Get\+Name}!mage\+::\+Resource@{mage\+::\+Resource}}
 \subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
-{\footnotesize\ttfamily const wstring\& mage\+::\+Resource\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const wstring mage\+::\+Resource\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the name of this resource.
 
 \begin{DoxyReturn}{Returns}
-A reference to the name of this resource. 
+The name of this resource. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_resource_af1066ff99a6b3238de9702ddc971ffe0}{}\label{classmage_1_1_resource_af1066ff99a6b3238de9702ddc971ffe0} 
+\hypertarget{classmage_1_1_resource_a82a540b610f04adc251771ec6fe8e535}{}\label{classmage_1_1_resource_a82a540b610f04adc251771ec6fe8e535} 
 \index{mage\+::\+Resource@{mage\+::\+Resource}!Get\+Path@{Get\+Path}}
 \index{Get\+Path@{Get\+Path}!mage\+::\+Resource@{mage\+::\+Resource}}
 \subsubsection{\texorpdfstring{Get\+Path()}{GetPath()}}
-{\footnotesize\ttfamily const wstring\& mage\+::\+Resource\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const wstring mage\+::\+Resource\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 Returns the path of this resource.
 
 \begin{DoxyReturn}{Returns}
-A reference to the path of this resource. 
+The path of this resource. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_resource_ad8fa57f37eb253b90d18d33383b12875}{}\label{classmage_1_1_resource_ad8fa57f37eb253b90d18d33383b12875} 
 \index{mage\+::\+Resource@{mage\+::\+Resource}!operator=@{operator=}}
@@ -132,16 +128,10 @@ A reference to the copy of the given resource (i.\+e. this resource).
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classmage_1_1_resource_a62a281fb52790af4c621bb6aeee3bbe5}{}\label{classmage_1_1_resource_a62a281fb52790af4c621bb6aeee3bbe5} 
-\index{mage\+::\+Resource@{mage\+::\+Resource}!m\+\_\+name@{m\+\_\+name}}
-\index{m\+\_\+name@{m\+\_\+name}!mage\+::\+Resource@{mage\+::\+Resource}}
-\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
-{\footnotesize\ttfamily const wstring mage\+::\+Resource\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classmage_1_1_resource_a79267ab1f2ece139405dbe8b4b4d69fa}{}\label{classmage_1_1_resource_a79267ab1f2ece139405dbe8b4b4d69fa} 
+\index{mage\+::\+Resource@{mage\+::\+Resource}!m\+\_\+fname@{m\+\_\+fname}}
+\index{m\+\_\+fname@{m\+\_\+fname}!mage\+::\+Resource@{mage\+::\+Resource}}
+\subsubsection{\texorpdfstring{m\+\_\+fname}{m\_fname}}
+{\footnotesize\ttfamily const wstring mage\+::\+Resource\+::m\+\_\+fname\hspace{0.3cm}{\ttfamily [private]}}
 
-The name of this resource. \hypertarget{classmage_1_1_resource_aa85318935a58bc4f7b3cfa5c19543d94}{}\label{classmage_1_1_resource_aa85318935a58bc4f7b3cfa5c19543d94} 
-\index{mage\+::\+Resource@{mage\+::\+Resource}!m\+\_\+path@{m\+\_\+path}}
-\index{m\+\_\+path@{m\+\_\+path}!mage\+::\+Resource@{mage\+::\+Resource}}
-\subsubsection{\texorpdfstring{m\+\_\+path}{m\_path}}
-{\footnotesize\ttfamily const wstring mage\+::\+Resource\+::m\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
-
-The path of this resource. 
+The name of this resource. 

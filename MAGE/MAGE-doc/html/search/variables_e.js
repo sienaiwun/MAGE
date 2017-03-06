@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['view_5fto_5fprojection',['view_to_projection',['../structmage_1_1_camera_transform_buffer.html#a87d9c65862cb29bbf0b3555b1d990bbe',1,'mage::CameraTransformBuffer']]]
+  ['vertex_5fbuffer',['vertex_buffer',['../structmage_1_1_model_output.html#a8180bf5262d435a394936d50f056c4a3',1,'mage::ModelOutput']]]
 ];

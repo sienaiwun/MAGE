@@ -1,0 +1,102 @@
+\hypertarget{structmage_1_1_mesh_descriptor}{}\section{mage\+:\+:Mesh\+Descriptor$<$ VertexT $>$ Struct Template Reference}
+\label{structmage_1_1_mesh_descriptor}\index{mage\+::\+Mesh\+Descriptor$<$ Vertex\+T $>$@{mage\+::\+Mesh\+Descriptor$<$ Vertex\+T $>$}}
+
+
+{\ttfamily \#include $<$mesh\+\_\+descriptor.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_mesh_descriptor_ae9c4651675fc0600fca01f0614c70762}{Mesh\+Descriptor} (bool invert\+\_\+handedness=false, bool clockwise\+\_\+order=true)
+\item 
+\hyperlink{structmage_1_1_mesh_descriptor_ab6347b2a60fbdf11573ddfe9283616d4}{Mesh\+Descriptor} (const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&desc)=default
+\item 
+\hyperlink{structmage_1_1_mesh_descriptor_adca32db164ab3032164c8dfe17af3db4}{$\sim$\+Mesh\+Descriptor} ()=default
+\item 
+\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor} \& \hyperlink{structmage_1_1_mesh_descriptor_aef6a9568a8d4516dbeff4d8f665ca213}{operator=} (const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&desc)=default
+\item 
+bool \hyperlink{structmage_1_1_mesh_descriptor_a7f63b926282683dcb0f674eca0901f5e}{Invert\+Handness} () const
+\item 
+bool \hyperlink{structmage_1_1_mesh_descriptor_ab81b000d93242ae002227010c4a9446c}{Clockwise\+Order} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structmage_1_1_mesh_descriptor_af7b8124e44ac65ca2088d5d8ca0639f5}{m\+\_\+invert\+\_\+handedness}
+\item 
+bool \hyperlink{structmage_1_1_mesh_descriptor_a7e769c8d1d81b3514b951b306865dc88}{m\+\_\+clockwise\+\_\+order}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_mesh_descriptor_ae9c4651675fc0600fca01f0614c70762}{}\label{structmage_1_1_mesh_descriptor_ae9c4651675fc0600fca01f0614c70762} 
+\index{mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}!Mesh\+Descriptor@{Mesh\+Descriptor}}
+\index{Mesh\+Descriptor@{Mesh\+Descriptor}!mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}}
+\subsubsection{\texorpdfstring{Mesh\+Descriptor()}{MeshDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_mesh_descriptor}{mage\+::\+Mesh\+Descriptor}$<$ VertexT $>$\+::\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor} (\begin{DoxyParamCaption}\item[{bool}]{invert\+\_\+handedness = {\ttfamily false},  }\item[{bool}]{clockwise\+\_\+order = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Constructs a mesh descriptor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em invert\+\_\+handedness} & Flag indicating whether the handness of the coordinate system of the mesh should be inverted. \\
+\hline
+\mbox{\tt in}  & {\em clockwise\+\_\+order} & Flag indicating whether the vertices of triangles should be in clockwise order. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structmage_1_1_mesh_descriptor_ab6347b2a60fbdf11573ddfe9283616d4}{}\label{structmage_1_1_mesh_descriptor_ab6347b2a60fbdf11573ddfe9283616d4} 
+\index{mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}!Mesh\+Descriptor@{Mesh\+Descriptor}}
+\index{Mesh\+Descriptor@{Mesh\+Descriptor}!mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}}
+\subsubsection{\texorpdfstring{Mesh\+Descriptor()}{MeshDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_mesh_descriptor}{mage\+::\+Mesh\+Descriptor}$<$ VertexT $>$\+::\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor} (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{structmage_1_1_mesh_descriptor_adca32db164ab3032164c8dfe17af3db4}{}\label{structmage_1_1_mesh_descriptor_adca32db164ab3032164c8dfe17af3db4} 
+\index{mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}!````~Mesh\+Descriptor@{$\sim$\+Mesh\+Descriptor}}
+\index{````~Mesh\+Descriptor@{$\sim$\+Mesh\+Descriptor}!mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}}
+\subsubsection{\texorpdfstring{$\sim$\+Mesh\+Descriptor()}{~MeshDescriptor()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_mesh_descriptor}{mage\+::\+Mesh\+Descriptor}$<$ VertexT $>$\+::$\sim$\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_mesh_descriptor_ab81b000d93242ae002227010c4a9446c}{}\label{structmage_1_1_mesh_descriptor_ab81b000d93242ae002227010c4a9446c} 
+\index{mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}!Clockwise\+Order@{Clockwise\+Order}}
+\index{Clockwise\+Order@{Clockwise\+Order}!mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}}
+\subsubsection{\texorpdfstring{Clockwise\+Order()}{ClockwiseOrder()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+bool \hyperlink{structmage_1_1_mesh_descriptor}{mage\+::\+Mesh\+Descriptor}$<$ VertexT $>$\+::Clockwise\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{structmage_1_1_mesh_descriptor_a7f63b926282683dcb0f674eca0901f5e}{}\label{structmage_1_1_mesh_descriptor_a7f63b926282683dcb0f674eca0901f5e} 
+\index{mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}!Invert\+Handness@{Invert\+Handness}}
+\index{Invert\+Handness@{Invert\+Handness}!mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}}
+\subsubsection{\texorpdfstring{Invert\+Handness()}{InvertHandness()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+bool \hyperlink{structmage_1_1_mesh_descriptor}{mage\+::\+Mesh\+Descriptor}$<$ VertexT $>$\+::Invert\+Handness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{structmage_1_1_mesh_descriptor_aef6a9568a8d4516dbeff4d8f665ca213}{}\label{structmage_1_1_mesh_descriptor_aef6a9568a8d4516dbeff4d8f665ca213} 
+\index{mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}\& \hyperlink{structmage_1_1_mesh_descriptor}{mage\+::\+Mesh\+Descriptor}$<$ VertexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_mesh_descriptor}{Mesh\+Descriptor}$<$ VertexT $>$ \&}]{desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_mesh_descriptor_a7e769c8d1d81b3514b951b306865dc88}{}\label{structmage_1_1_mesh_descriptor_a7e769c8d1d81b3514b951b306865dc88} 
+\index{mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}!m\+\_\+clockwise\+\_\+order@{m\+\_\+clockwise\+\_\+order}}
+\index{m\+\_\+clockwise\+\_\+order@{m\+\_\+clockwise\+\_\+order}!mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}}
+\subsubsection{\texorpdfstring{m\+\_\+clockwise\+\_\+order}{m\_clockwise\_order}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+bool \hyperlink{structmage_1_1_mesh_descriptor}{mage\+::\+Mesh\+Descriptor}$<$ VertexT $>$\+::m\+\_\+clockwise\+\_\+order\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{structmage_1_1_mesh_descriptor_af7b8124e44ac65ca2088d5d8ca0639f5}{}\label{structmage_1_1_mesh_descriptor_af7b8124e44ac65ca2088d5d8ca0639f5} 
+\index{mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}!m\+\_\+invert\+\_\+handedness@{m\+\_\+invert\+\_\+handedness}}
+\index{m\+\_\+invert\+\_\+handedness@{m\+\_\+invert\+\_\+handedness}!mage\+::\+Mesh\+Descriptor@{mage\+::\+Mesh\+Descriptor}}
+\subsubsection{\texorpdfstring{m\+\_\+invert\+\_\+handedness}{m\_invert\_handedness}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+bool \hyperlink{structmage_1_1_mesh_descriptor}{mage\+::\+Mesh\+Descriptor}$<$ VertexT $>$\+::m\+\_\+invert\+\_\+handedness\hspace{0.3cm}{\ttfamily [private]}}
+

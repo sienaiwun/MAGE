@@ -1,0 +1,85 @@
+\hypertarget{classmage_1_1_view_frustum}{}\section{mage\+:\+:View\+Frustum Class Reference}
+\label{classmage_1_1_view_frustum}\index{mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}}
+
+
+{\ttfamily \#include $<$view\+\_\+frustum.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_view_frustum_ad1fd4a59f6cd0fd38289e66d4c6b5d51}{View\+Frustum} (const \hyperlink{classmage_1_1_camera}{Camera} \&camera)
+\item 
+\hyperlink{classmage_1_1_view_frustum_abbd4ec6c2766d3f630bce16cefa8bc4d}{View\+Frustum} (const \hyperlink{classmage_1_1_view_frustum}{View\+Frustum} \&view\+\_\+frustum)=default
+\item 
+\hyperlink{classmage_1_1_view_frustum_aaa0e10f5401370909694e923c58323a9}{$\sim$\+View\+Frustum} ()=default
+\item 
+\hyperlink{classmage_1_1_view_frustum}{View\+Frustum} \& \hyperlink{classmage_1_1_view_frustum_add514821f691117c0ab139c13f86ef70}{operator=} (const \hyperlink{classmage_1_1_view_frustum}{View\+Frustum} \&view\+\_\+frustum)=default
+\item 
+bool \hyperlink{classmage_1_1_view_frustum_a290ee7b311278ed4701203859773aa42}{Encloses} (const \hyperlink{structmage_1_1_point3}{Point3} \&point) const
+\item 
+bool \hyperlink{classmage_1_1_view_frustum_ab45ef542b3bacf16390a8f223472bcd5}{Overlaps} (const \hyperlink{structmage_1_1_transform}{Transform} \&transform, const \hyperlink{structmage_1_1_b_s}{BS} \&bs) const
+\item 
+bool \hyperlink{classmage_1_1_view_frustum_a302c7b49592bc9e5a297270da0c8b6ec}{Overlaps} (const \hyperlink{structmage_1_1_transform}{Transform} \&transform, const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&aabb) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+X\+M\+F\+L\+O\+A\+T4 \hyperlink{classmage_1_1_view_frustum_aa5d8b90bfc005bd19566983401ccd511}{m\+\_\+planes} \mbox{[}6\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_view_frustum_ad1fd4a59f6cd0fd38289e66d4c6b5d51}{}\label{classmage_1_1_view_frustum_ad1fd4a59f6cd0fd38289e66d4c6b5d51} 
+\index{mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}!View\+Frustum@{View\+Frustum}}
+\index{View\+Frustum@{View\+Frustum}!mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}}
+\subsubsection{\texorpdfstring{View\+Frustum()}{ViewFrustum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+View\+Frustum\+::\+View\+Frustum (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_camera}{Camera} \&}]{camera }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_view_frustum_abbd4ec6c2766d3f630bce16cefa8bc4d}{}\label{classmage_1_1_view_frustum_abbd4ec6c2766d3f630bce16cefa8bc4d} 
+\index{mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}!View\+Frustum@{View\+Frustum}}
+\index{View\+Frustum@{View\+Frustum}!mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}}
+\subsubsection{\texorpdfstring{View\+Frustum()}{ViewFrustum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+View\+Frustum\+::\+View\+Frustum (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_view_frustum}{View\+Frustum} \&}]{view\+\_\+frustum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_view_frustum_aaa0e10f5401370909694e923c58323a9}{}\label{classmage_1_1_view_frustum_aaa0e10f5401370909694e923c58323a9} 
+\index{mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}!````~View\+Frustum@{$\sim$\+View\+Frustum}}
+\index{````~View\+Frustum@{$\sim$\+View\+Frustum}!mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}}
+\subsubsection{\texorpdfstring{$\sim$\+View\+Frustum()}{~ViewFrustum()}}
+{\footnotesize\ttfamily mage\+::\+View\+Frustum\+::$\sim$\+View\+Frustum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_view_frustum_a290ee7b311278ed4701203859773aa42}{}\label{classmage_1_1_view_frustum_a290ee7b311278ed4701203859773aa42} 
+\index{mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}!Encloses@{Encloses}}
+\index{Encloses@{Encloses}!mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}}
+\subsubsection{\texorpdfstring{Encloses()}{Encloses()}}
+{\footnotesize\ttfamily bool mage\+::\+View\+Frustum\+::\+Encloses (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_point3}{Point3} \&}]{point }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_view_frustum_add514821f691117c0ab139c13f86ef70}{}\label{classmage_1_1_view_frustum_add514821f691117c0ab139c13f86ef70} 
+\index{mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_view_frustum}{View\+Frustum}\& mage\+::\+View\+Frustum\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_view_frustum}{View\+Frustum} \&}]{view\+\_\+frustum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_view_frustum_ab45ef542b3bacf16390a8f223472bcd5}{}\label{classmage_1_1_view_frustum_ab45ef542b3bacf16390a8f223472bcd5} 
+\index{mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}}
+\subsubsection{\texorpdfstring{Overlaps()}{Overlaps()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool mage\+::\+View\+Frustum\+::\+Overlaps (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_transform}{Transform} \&}]{transform,  }\item[{const \hyperlink{structmage_1_1_b_s}{BS} \&}]{bs }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_view_frustum_a302c7b49592bc9e5a297270da0c8b6ec}{}\label{classmage_1_1_view_frustum_a302c7b49592bc9e5a297270da0c8b6ec} 
+\index{mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}}
+\subsubsection{\texorpdfstring{Overlaps()}{Overlaps()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool mage\+::\+View\+Frustum\+::\+Overlaps (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_transform}{Transform} \&}]{transform,  }\item[{const \hyperlink{structmage_1_1_a_a_b_b}{A\+A\+BB} \&}]{aabb }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_view_frustum_aa5d8b90bfc005bd19566983401ccd511}{}\label{classmage_1_1_view_frustum_aa5d8b90bfc005bd19566983401ccd511} 
+\index{mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}!m\+\_\+planes@{m\+\_\+planes}}
+\index{m\+\_\+planes@{m\+\_\+planes}!mage\+::\+View\+Frustum@{mage\+::\+View\+Frustum}}
+\subsubsection{\texorpdfstring{m\+\_\+planes}{m\_planes}}
+{\footnotesize\ttfamily X\+M\+F\+L\+O\+A\+T4 mage\+::\+View\+Frustum\+::m\+\_\+planes\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+

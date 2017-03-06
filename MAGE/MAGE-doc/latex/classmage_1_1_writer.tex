@@ -1,0 +1,133 @@
+\hypertarget{classmage_1_1_writer}{}\section{mage\+:\+:Writer Class Reference}
+\label{classmage_1_1_writer}\index{mage\+::\+Writer@{mage\+::\+Writer}}
+
+
+{\ttfamily \#include $<$writer.\+hpp$>$}
+
+Inheritance diagram for mage\+:\+:Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmage_1_1_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_writer_a40b6cd3005d509e670c5a49272d9ef27}{Writer} ()
+\item 
+virtual \hyperlink{classmage_1_1_writer_a04fe27246806384099d518231c75c09f}{$\sim$\+Writer} ()=default
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_writer_ae9250f340229ee80dc5c518045567f7d}{Write\+To\+File} (const wstring \&fname)
+\item 
+const wstring \& \hyperlink{classmage_1_1_writer_aa874f2ee6cdd6663078d213f10d984f1}{Get\+Filename} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_writer_a674375dbb233dea030603212d4090c18}{Write} () const =0
+\item 
+void \hyperlink{classmage_1_1_writer_aaa7908147290e06991ef18d5931e606b}{Write} (char c) const
+\item 
+void \hyperlink{classmage_1_1_writer_a0ac4d904f988028361a99e1f25e273ab}{Write} (const char $\ast$str) const
+\item 
+void \hyperlink{classmage_1_1_writer_ab6f3d56fd4ff285af3a4bb292dba8271}{Write\+Line} (const char $\ast$str) const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmage_1_1_writer_a0988d427f687ad5334c2ba74993e0d6e}{Writer} (const \hyperlink{classmage_1_1_writer}{Writer} \&reader)=delete
+\item 
+\hyperlink{classmage_1_1_writer}{Writer} \& \hyperlink{classmage_1_1_writer_a14fff6d050ad263bd351b26b86ca4186}{operator=} (const \hyperlink{classmage_1_1_writer}{Writer} \&reader)=delete
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+I\+LE $\ast$ \hyperlink{classmage_1_1_writer_a04428b72245b50d45c62cbd23c2f039a}{m\+\_\+file}
+\item 
+wstring \hyperlink{classmage_1_1_writer_afa271ee47897d4961e9d62132d8faeb5}{m\+\_\+fname}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmage_1_1_writer_a40b6cd3005d509e670c5a49272d9ef27}{}\label{classmage_1_1_writer_a40b6cd3005d509e670c5a49272d9ef27} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!Writer@{Writer}}
+\index{Writer@{Writer}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{Writer()}{Writer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily mage\+::\+Writer\+::\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classmage_1_1_writer_a04fe27246806384099d518231c75c09f}{}\label{classmage_1_1_writer_a04fe27246806384099d518231c75c09f} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!````~Writer@{$\sim$\+Writer}}
+\index{````~Writer@{$\sim$\+Writer}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{$\sim$\+Writer()}{~Writer()}}
+{\footnotesize\ttfamily virtual mage\+::\+Writer\+::$\sim$\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\hypertarget{classmage_1_1_writer_a0988d427f687ad5334c2ba74993e0d6e}{}\label{classmage_1_1_writer_a0988d427f687ad5334c2ba74993e0d6e} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!Writer@{Writer}}
+\index{Writer@{Writer}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{Writer()}{Writer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily mage\+::\+Writer\+::\+Writer (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_writer}{Writer} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmage_1_1_writer_aa874f2ee6cdd6663078d213f10d984f1}{}\label{classmage_1_1_writer_aa874f2ee6cdd6663078d213f10d984f1} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!Get\+Filename@{Get\+Filename}}
+\index{Get\+Filename@{Get\+Filename}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
+{\footnotesize\ttfamily const wstring\& mage\+::\+Writer\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classmage_1_1_writer_a14fff6d050ad263bd351b26b86ca4186}{}\label{classmage_1_1_writer_a14fff6d050ad263bd351b26b86ca4186} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_writer}{Writer}\& mage\+::\+Writer\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classmage_1_1_writer}{Writer} \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{classmage_1_1_writer_a674375dbb233dea030603212d4090c18}{}\label{classmage_1_1_writer_a674375dbb233dea030603212d4090c18} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!Write@{Write}}
+\index{Write@{Write}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual H\+R\+E\+S\+U\+LT mage\+::\+Writer\+::\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classmage_1_1_v_s_writer_afda5e71bc0c5c836ab439e2572dcd685}{mage\+::\+V\+S\+Writer}.
+
+\hypertarget{classmage_1_1_writer_aaa7908147290e06991ef18d5931e606b}{}\label{classmage_1_1_writer_aaa7908147290e06991ef18d5931e606b} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!Write@{Write}}
+\index{Write@{Write}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void mage\+::\+Writer\+::\+Write (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_writer_a0ac4d904f988028361a99e1f25e273ab}{}\label{classmage_1_1_writer_a0ac4d904f988028361a99e1f25e273ab} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!Write@{Write}}
+\index{Write@{Write}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void mage\+::\+Writer\+::\+Write (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_writer_ab6f3d56fd4ff285af3a4bb292dba8271}{}\label{classmage_1_1_writer_ab6f3d56fd4ff285af3a4bb292dba8271} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!Write\+Line@{Write\+Line}}
+\index{Write\+Line@{Write\+Line}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{Write\+Line()}{WriteLine()}}
+{\footnotesize\ttfamily void mage\+::\+Writer\+::\+Write\+Line (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classmage_1_1_writer_ae9250f340229ee80dc5c518045567f7d}{}\label{classmage_1_1_writer_ae9250f340229ee80dc5c518045567f7d} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!Write\+To\+File@{Write\+To\+File}}
+\index{Write\+To\+File@{Write\+To\+File}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{Write\+To\+File()}{WriteToFile()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Writer\+::\+Write\+To\+File (\begin{DoxyParamCaption}\item[{const wstring \&}]{fname }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmage_1_1_writer_a04428b72245b50d45c62cbd23c2f039a}{}\label{classmage_1_1_writer_a04428b72245b50d45c62cbd23c2f039a} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!m\+\_\+file@{m\+\_\+file}}
+\index{m\+\_\+file@{m\+\_\+file}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{m\+\_\+file}{m\_file}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ mage\+::\+Writer\+::m\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classmage_1_1_writer_afa271ee47897d4961e9d62132d8faeb5}{}\label{classmage_1_1_writer_afa271ee47897d4961e9d62132d8faeb5} 
+\index{mage\+::\+Writer@{mage\+::\+Writer}!m\+\_\+fname@{m\+\_\+fname}}
+\index{m\+\_\+fname@{m\+\_\+fname}!mage\+::\+Writer@{mage\+::\+Writer}}
+\subsubsection{\texorpdfstring{m\+\_\+fname}{m\_fname}}
+{\footnotesize\ttfamily wstring mage\+::\+Writer\+::m\+\_\+fname\hspace{0.3cm}{\ttfamily [private]}}
+

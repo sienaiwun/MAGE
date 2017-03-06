@@ -81,8 +81,6 @@ $(document).ready(function(){initNavTree('classmage_1_1_input_manager.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_input_manager-members.html">List of all members</a>  </div>
@@ -120,12 +118,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a53cfa5beb9b44bbcda0d6166a54b8cb6 inherit pub_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a53cfa5beb9b44bbcda0d6166a54b8cb6">IsLoaded</a> () const</td></tr>
 <tr class="separator:a53cfa5beb9b44bbcda0d6166a54b8cb6 inherit pub_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a68503617f418bf270dc39bb18019b46d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#a68503617f418bf270dc39bb18019b46d">InputManager</a> (const <a class="el" href="classmage_1_1_input_manager.html">InputManager</a> &amp;input_manager)=delete</td></tr>
+<tr class="separator:a68503617f418bf270dc39bb18019b46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9caa8b7e99a69b774887f342bd5dda0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_input_manager.html">InputManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#ad9caa8b7e99a69b774887f342bd5dda0">operator=</a> (const <a class="el" href="classmage_1_1_input_manager.html">InputManager</a> &amp;input_manager)=delete</td></tr>
+<tr class="separator:ad9caa8b7e99a69b774887f342bd5dda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3ca0717e37916463cc4f40c7d174b33"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#af3ca0717e37916463cc4f40c7d174b33">InitializeDI</a> ()</td></tr>
 <tr class="separator:af3ca0717e37916463cc4f40c7d174b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f114c4c667a4a14ce8236b35d308d8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#a34f114c4c667a4a14ce8236b35d308d8">InitializeInputSystems</a> ()</td></tr>
 <tr class="separator:a34f114c4c667a4a14ce8236b35d308d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a07a1d3a593bc497c747c6d2e4605a229"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#a07a1d3a593bc497c747c6d2e4605a229">m_hwindow</a></td></tr>
+<tr class="separator:a07a1d3a593bc497c747c6d2e4605a229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffbd0e68b5bab33c35f310625884f3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; IDirectInput8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#a0ffbd0e68b5bab33c35f310625884f3a">m_di</a></td></tr>
+<tr class="separator:a0ffbd0e68b5bab33c35f310625884f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196bdd04e169e89d0fa5f6a4a180e4cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_keyboard.html">Keyboard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#a196bdd04e169e89d0fa5f6a4a180e4cb">m_keyboard</a></td></tr>
+<tr class="separator:a196bdd04e169e89d0fa5f6a4a180e4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9773cccf9626a7e2acb99227b42e37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_mouse.html">Mouse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#aab9773cccf9626a7e2acb99227b42e37">m_mouse</a></td></tr>
+<tr class="separator:aab9773cccf9626a7e2acb99227b42e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classmage_1_1_loadable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmage_1_1_loadable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmage_1_1_loadable.html">mage::Loadable</a></td></tr>
 <tr class="memitem:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#afbdcb287b5e20583899a27a1c244bc7d">Loadable</a> (bool loaded=false)</td></tr>
 <tr class="separator:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,27 +153,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a82277616525b6ed9b1e19fd2dcdb4c0d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a932ff8b287c8e68e30a13804cba08ff2">SetLoaded</a> (bool loaded=true)</td></tr>
 <tr class="separator:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a0ffbd0e68b5bab33c35f310625884f3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; IDirectInput8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#a0ffbd0e68b5bab33c35f310625884f3a">m_di</a></td></tr>
-<tr class="separator:a0ffbd0e68b5bab33c35f310625884f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a68503617f418bf270dc39bb18019b46d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#a68503617f418bf270dc39bb18019b46d">InputManager</a> (const <a class="el" href="classmage_1_1_input_manager.html">InputManager</a> &amp;input_manager)=delete</td></tr>
-<tr class="separator:a68503617f418bf270dc39bb18019b46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9caa8b7e99a69b774887f342bd5dda0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_input_manager.html">InputManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#ad9caa8b7e99a69b774887f342bd5dda0">operator=</a> (const <a class="el" href="classmage_1_1_input_manager.html">InputManager</a> &amp;input_manager)=delete</td></tr>
-<tr class="separator:ad9caa8b7e99a69b774887f342bd5dda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a07a1d3a593bc497c747c6d2e4605a229"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#a07a1d3a593bc497c747c6d2e4605a229">m_hwindow</a></td></tr>
-<tr class="separator:a07a1d3a593bc497c747c6d2e4605a229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196bdd04e169e89d0fa5f6a4a180e4cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_keyboard.html">Keyboard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#a196bdd04e169e89d0fa5f6a4a180e4cb">m_keyboard</a></td></tr>
-<tr class="separator:a196bdd04e169e89d0fa5f6a4a180e4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab9773cccf9626a7e2acb99227b42e37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#a8c307fbcc33bce9b7f2aa4c26c3b95cf">UniquePtr</a>&lt; <a class="el" href="classmage_1_1_mouse.html">Mouse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_input_manager.html#aab9773cccf9626a7e2acb99227b42e37">m_mouse</a></td></tr>
-<tr class="separator:aab9773cccf9626a7e2acb99227b42e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of input managers. </p>
@@ -322,7 +317,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -349,7 +344,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -425,7 +420,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

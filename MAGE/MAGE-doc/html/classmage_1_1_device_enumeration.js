@@ -1,7 +1,8 @@
 var classmage_1_1_device_enumeration =
 [
     [ "DeviceEnumeration", "classmage_1_1_device_enumeration.html#aa000048648beb6c2aca70e5ef04e0da2", null ],
-    [ "~DeviceEnumeration", "classmage_1_1_device_enumeration.html#a5124c80acce55a3d539665423f3872dc", null ],
+    [ "~DeviceEnumeration", "classmage_1_1_device_enumeration.html#ae32bc5dacf47b7deca4729d8b3cb66dc", null ],
+    [ "DeviceEnumeration", "classmage_1_1_device_enumeration.html#a90f3dc13cfb413aa8a2a49a31bcb6ae3", null ],
     [ "Enumerate", "classmage_1_1_device_enumeration.html#a4fea0ffef733632456b281f74608a239", null ],
     [ "GetAdapter", "classmage_1_1_device_enumeration.html#ad8a0702abdc70ea8fc1b6e46544839a1", null ],
     [ "GetDisplayMode", "classmage_1_1_device_enumeration.html#a533ac2f6ea91604a3ea3cc8d93c3de87", null ],
@@ -11,6 +12,7 @@ var classmage_1_1_device_enumeration =
     [ "IsFullScreen", "classmage_1_1_device_enumeration.html#a8957ecacc567708e80694b25aa141c4e", null ],
     [ "IsVSynced", "classmage_1_1_device_enumeration.html#a035e2430142e4e4ffcbc712f83e1e7e0", null ],
     [ "IsWindowed", "classmage_1_1_device_enumeration.html#a51479c8c85b286f78730c5622604e524", null ],
+    [ "operator=", "classmage_1_1_device_enumeration.html#a03e3affa2b8bb4837cffda7b11389bea", null ],
     [ "SettingsDialogProc", "classmage_1_1_device_enumeration.html#a5950a6575d9073d6d23b228779f5ace1", null ],
     [ "Engine", "classmage_1_1_device_enumeration.html#a3e1914489e4bed4f9f23cdeab34a43dc", null ],
     [ "SettingsDialogProcDelegate", "classmage_1_1_device_enumeration.html#a3dff4eb8907e2e10f26cc616fe1c104d", null ],

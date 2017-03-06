@@ -13,7 +13,7 @@ Inheritance diagram for mage\+:\+:Engine\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmage_1_1_engine_aa561c09a58a2ab15aab99cf06f770014}{Engine} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&setup=\hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}())
+\hyperlink{classmage_1_1_engine_a99770cbb017b29c284d7f8e4c7e2b84c}{Engine} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&setup)
 \item 
 virtual \hyperlink{classmage_1_1_engine_a34628556f8397d70ed018d71e343c2f5}{$\sim$\+Engine} ()
 \item 
@@ -27,20 +27,11 @@ void \hyperlink{classmage_1_1_engine_a942bfa9892fa79bb1068d7c7ec4e6732}{Set\+Dea
 \item 
 void \hyperlink{classmage_1_1_engine_a8b574f0d702240d76fa98b2c79856d0d}{Set\+Mode\+Switch\+Flag} (bool mode\+\_\+switch)
 \item 
-\hyperlink{classmage_1_1_state_manager}{State\+Manager} \& \hyperlink{classmage_1_1_engine_a8708d3e11461ecd3b0325a7c8fec8fa2}{Get\+State\+Manager} () const
-\item 
-\hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ \& \hyperlink{classmage_1_1_engine_aefcc06d74537a9d67a3dd923a33fb905}{Get\+Script\+Manager} () const
-\item 
 const \hyperlink{classmage_1_1_input_manager}{Input\+Manager} \& \hyperlink{classmage_1_1_engine_a728ad054d36cee8eaf9ee3eb6c1e1201}{Get\+Input\+Manager} () const
-\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
 \item 
-H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_engine_a2d0a2669520cce1316a176cc3e891502}{Initialize\+Systems} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&setup)
+\hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} \& \hyperlink{classmage_1_1_engine_a1a18dc9775f6ab4c9cd103b07ad47903}{Get\+Resource\+Factory} () const
 \item 
-bool \hyperlink{classmage_1_1_engine_a83c3ed26138932f8b17daa20526b100e}{Is\+Deactive} () const
-\item 
-bool \hyperlink{classmage_1_1_engine_a54cb08ec26da300b0c7ca4e7f9a35e0b}{Mode\+Switch} () const
+void \hyperlink{classmage_1_1_engine_aec75ed67f8fb68a383fa892e50b21ea7}{Set\+Scene} (\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ scene)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -48,6 +39,12 @@ bool \hyperlink{classmage_1_1_engine_a54cb08ec26da300b0c7ca4e7f9a35e0b}{Mode\+Sw
 \hyperlink{classmage_1_1_engine_afd2f4f32b2e803f59521aafe1924f0ba}{Engine} (const \hyperlink{classmage_1_1_engine}{Engine} \&engine)=delete
 \item 
 \hyperlink{classmage_1_1_engine}{Engine} \& \hyperlink{classmage_1_1_engine_a1eedff82d4c8207c61676230520648fd}{operator=} (const \hyperlink{classmage_1_1_engine}{Engine} \&engine)=delete
+\item 
+H\+R\+E\+S\+U\+LT \hyperlink{classmage_1_1_engine_a2d0a2669520cce1316a176cc3e891502}{Initialize\+Systems} (const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&setup)
+\item 
+bool \hyperlink{classmage_1_1_engine_a83c3ed26138932f8b17daa20526b100e}{Is\+Deactive} () const
+\item 
+bool \hyperlink{classmage_1_1_engine_a54cb08ec26da300b0c7ca4e7f9a35e0b}{Mode\+Switch} () const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -60,23 +57,24 @@ bool \hyperlink{classmage_1_1_engine_ab8a4b0157403708ae7d1d018a95b4c63}{m\+\_\+d
 \item 
 bool \hyperlink{classmage_1_1_engine_aa5cb2e0b7bb2c4a9020e79ab832ee221}{m\+\_\+mode\+\_\+switch}
 \item 
-\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_state_manager}{State\+Manager} $>$ \hyperlink{classmage_1_1_engine_aa85a18b6064491bc07d52e61ae512e9d}{m\+\_\+state\+\_\+manager}
-\item 
-\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ $>$ \hyperlink{classmage_1_1_engine_a856b75c6cced7aac36788233b4c46ffc}{m\+\_\+script\+\_\+manager}
-\item 
 \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_input_manager}{Input\+Manager} $>$ \hyperlink{classmage_1_1_engine_a8e9048208a6a5c5b034aaa1cbdab28bc}{m\+\_\+input\+\_\+manager}
+\item 
+\hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} $>$ \hyperlink{classmage_1_1_engine_a0c7c2d4fc75fc3512e02054056cf8a90}{m\+\_\+resource\+\_\+factory}
+\item 
+\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ \hyperlink{classmage_1_1_engine_a82158ab9c1b60538ef8c46d5eb263bb8}{m\+\_\+scene}
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 A class of engines. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classmage_1_1_engine_aa561c09a58a2ab15aab99cf06f770014}{}\label{classmage_1_1_engine_aa561c09a58a2ab15aab99cf06f770014} 
+\hypertarget{classmage_1_1_engine_a99770cbb017b29c284d7f8e4c7e2b84c}{}\label{classmage_1_1_engine_a99770cbb017b29c284d7f8e4c7e2b84c} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Engine@{Engine}}
 \index{Engine@{Engine}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Engine()}{Engine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily mage\+::\+Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&}]{setup = {\ttfamily \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup}()} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily mage\+::\+Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&}]{setup }\end{DoxyParamCaption})}
 
 Constructs an engine from the given engine setup.
 
@@ -140,33 +138,22 @@ Returns the renderer of this engine.
 \begin{DoxyReturn}{Returns}
 A reference to the renderer of this engine. 
 \end{DoxyReturn}
-\hypertarget{classmage_1_1_engine_aefcc06d74537a9d67a3dd923a33fb905}{}\label{classmage_1_1_engine_aefcc06d74537a9d67a3dd923a33fb905} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Script\+Manager@{Get\+Script\+Manager}}
-\index{Get\+Script\+Manager@{Get\+Script\+Manager}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{Get\+Script\+Manager()}{GetScriptManager()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$\& mage\+::\+Engine\+::\+Get\+Script\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+\hypertarget{classmage_1_1_engine_a1a18dc9775f6ab4c9cd103b07ad47903}{}\label{classmage_1_1_engine_a1a18dc9775f6ab4c9cd103b07ad47903} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+Resource\+Factory@{Get\+Resource\+Factory}}
+\index{Get\+Resource\+Factory@{Get\+Resource\+Factory}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Get\+Resource\+Factory()}{GetResourceFactory()}}
+{\footnotesize\ttfamily \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory}\& mage\+::\+Engine\+::\+Get\+Resource\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Returns the script manager of this engine.
-
-\begin{DoxyReturn}{Returns}
-A reference to the script manager of this engine. 
-\end{DoxyReturn}
-\hypertarget{classmage_1_1_engine_a8708d3e11461ecd3b0325a7c8fec8fa2}{}\label{classmage_1_1_engine_a8708d3e11461ecd3b0325a7c8fec8fa2} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!Get\+State\+Manager@{Get\+State\+Manager}}
-\index{Get\+State\+Manager@{Get\+State\+Manager}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{Get\+State\+Manager()}{GetStateManager()}}
-{\footnotesize\ttfamily \hyperlink{classmage_1_1_state_manager}{State\+Manager}\& mage\+::\+Engine\+::\+Get\+State\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-Returns the state manager of this engine.
+Returns the resource factory of this engine.
 
 \begin{DoxyReturn}{Returns}
-A reference to the state manager of this engine. 
+A reference to the resource factory of this engine. 
 \end{DoxyReturn}
 \hypertarget{classmage_1_1_engine_a2d0a2669520cce1316a176cc3e891502}{}\label{classmage_1_1_engine_a2d0a2669520cce1316a176cc3e891502} 
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Initialize\+Systems@{Initialize\+Systems}}
 \index{Initialize\+Systems@{Initialize\+Systems}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Initialize\+Systems()}{InitializeSystems()}}
-{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Engine\+::\+Initialize\+Systems (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&}]{setup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT mage\+::\+Engine\+::\+Initialize\+Systems (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_engine_setup}{Engine\+Setup} \&}]{setup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 Initializes the different systems of this engine.
 
@@ -182,7 +169,7 @@ A success/error value.
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Is\+Deactive@{Is\+Deactive}}
 \index{Is\+Deactive@{Is\+Deactive}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Is\+Deactive()}{IsDeactive()}}
-{\footnotesize\ttfamily bool mage\+::\+Engine\+::\+Is\+Deactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily bool mage\+::\+Engine\+::\+Is\+Deactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
 
 Checks whether this engine is deactive.
 
@@ -193,7 +180,7 @@ Checks whether this engine is deactive.
 \index{mage\+::\+Engine@{mage\+::\+Engine}!Mode\+Switch@{Mode\+Switch}}
 \index{Mode\+Switch@{Mode\+Switch}!mage\+::\+Engine@{mage\+::\+Engine}}
 \subsubsection{\texorpdfstring{Mode\+Switch()}{ModeSwitch()}}
-{\footnotesize\ttfamily bool mage\+::\+Engine\+::\+Mode\+Switch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily bool mage\+::\+Engine\+::\+Mode\+Switch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
 
 Checks whether this engine should switch modes.
 
@@ -255,6 +242,17 @@ Sets the mode switch flag of this engine to the given value.
 \mbox{\tt in}  & {\em mode\+\_\+switch} & The new value for the mode switch flag. \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmage_1_1_engine_aec75ed67f8fb68a383fa892e50b21ea7}{}\label{classmage_1_1_engine_aec75ed67f8fb68a383fa892e50b21ea7} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!Set\+Scene@{Set\+Scene}}
+\index{Set\+Scene@{Set\+Scene}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{Set\+Scene()}{SetScene()}}
+{\footnotesize\ttfamily void mage\+::\+Engine\+::\+Set\+Scene (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$}]{scene }\end{DoxyParamCaption})}
+
+Sets the scene of this engine to the given scene.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the scene to set. 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -288,16 +286,16 @@ Flag indicating whether the application should switch between full screen and wi
 \subsubsection{\texorpdfstring{m\+\_\+renderer}{m\_renderer}}
 {\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_renderer}{Renderer} $>$ mage\+::\+Engine\+::m\+\_\+renderer\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the renderer of this engine. \hypertarget{classmage_1_1_engine_a856b75c6cced7aac36788233b4c46ffc}{}\label{classmage_1_1_engine_a856b75c6cced7aac36788233b4c46ffc} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+script\+\_\+manager@{m\+\_\+script\+\_\+manager}}
-\index{m\+\_\+script\+\_\+manager@{m\+\_\+script\+\_\+manager}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{m\+\_\+script\+\_\+manager}{m\_script\_manager}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_manager}{Resource\+Manager}$<$ \hyperlink{classmage_1_1_variable_script}{Variable\+Script} $>$ $>$ mage\+::\+Engine\+::m\+\_\+script\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+A pointer to the renderer of this engine. \hypertarget{classmage_1_1_engine_a0c7c2d4fc75fc3512e02054056cf8a90}{}\label{classmage_1_1_engine_a0c7c2d4fc75fc3512e02054056cf8a90} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+resource\+\_\+factory@{m\+\_\+resource\+\_\+factory}}
+\index{m\+\_\+resource\+\_\+factory@{m\+\_\+resource\+\_\+factory}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+resource\+\_\+factory}{m\_resource\_factory}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_resource_factory}{Resource\+Factory} $>$ mage\+::\+Engine\+::m\+\_\+resource\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer the script manager of this engine \hypertarget{classmage_1_1_engine_aa85a18b6064491bc07d52e61ae512e9d}{}\label{classmage_1_1_engine_aa85a18b6064491bc07d52e61ae512e9d} 
-\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}}
-\index{m\+\_\+state\+\_\+manager@{m\+\_\+state\+\_\+manager}!mage\+::\+Engine@{mage\+::\+Engine}}
-\subsubsection{\texorpdfstring{m\+\_\+state\+\_\+manager}{m\_state\_manager}}
-{\footnotesize\ttfamily \hyperlink{namespacemage_a8c307fbcc33bce9b7f2aa4c26c3b95cf}{Unique\+Ptr}$<$ \hyperlink{classmage_1_1_state_manager}{State\+Manager} $>$ mage\+::\+Engine\+::m\+\_\+state\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+A pointer to the resource factory of this engine. \hypertarget{classmage_1_1_engine_a82158ab9c1b60538ef8c46d5eb263bb8}{}\label{classmage_1_1_engine_a82158ab9c1b60538ef8c46d5eb263bb8} 
+\index{mage\+::\+Engine@{mage\+::\+Engine}!m\+\_\+scene@{m\+\_\+scene}}
+\index{m\+\_\+scene@{m\+\_\+scene}!mage\+::\+Engine@{mage\+::\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+scene}{m\_scene}}
+{\footnotesize\ttfamily \hyperlink{namespacemage_a1e01ae66713838a7a67d30e44c67703e}{Shared\+Ptr}$<$ \hyperlink{classmage_1_1_scene}{Scene} $>$ mage\+::\+Engine\+::m\+\_\+scene\hspace{0.3cm}{\ttfamily [private]}}
 
-A pointer to the state manager of this engine. 
+The current scene of this engine. 

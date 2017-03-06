@@ -1,0 +1,132 @@
+\hypertarget{structmage_1_1_model_output}{}\section{mage\+:\+:Model\+Output$<$ VertexT $>$ Struct Template Reference}
+\label{structmage_1_1_model_output}\index{mage\+::\+Model\+Output$<$ Vertex\+T $>$@{mage\+::\+Model\+Output$<$ Vertex\+T $>$}}
+
+
+{\ttfamily \#include $<$model\+\_\+output.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_model_output_a7d64b57d8207968541eb9c6da6ef0163}{Model\+Output} ()=default
+\item 
+\hyperlink{structmage_1_1_model_output_a69a7f27486ad287943cbf973107ad8e1}{$\sim$\+Model\+Output} ()=default
+\item 
+bool \hyperlink{structmage_1_1_model_output_a23ce6e3b252227781c173149b76e73ee}{Has\+Model\+Part} (const string \&child)
+\item 
+void \hyperlink{structmage_1_1_model_output_a86b2e4d9885193fb796b309e6104abc9}{Start\+Model\+Part} (const string \&child, const string \&parent=M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+L\+\_\+\+P\+A\+R\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+R\+E\+NT)
+\item 
+void \hyperlink{structmage_1_1_model_output_abd614f9f2e9f9dbc0b2c354ee37f2998}{Set\+Material} (const string \&material)
+\item 
+void \hyperlink{structmage_1_1_model_output_a5df0c4240b1fac61ac0cdbf9766bb98d}{End\+Model\+Part} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ VertexT $>$ \hyperlink{structmage_1_1_model_output_a8180bf5262d435a394936d50f056c4a3}{vertex\+\_\+buffer}
+\item 
+vector$<$ uint32\+\_\+t $>$ \hyperlink{structmage_1_1_model_output_a0c49359544b7d3c961118caa629f6405}{index\+\_\+buffer}
+\item 
+vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \hyperlink{structmage_1_1_model_output_a66764a4d8c7e5b099e51013f385f13bf}{material\+\_\+buffer}
+\item 
+vector$<$ \hyperlink{structmage_1_1_model_part}{Model\+Part} $>$ \hyperlink{structmage_1_1_model_output_ac101de6237d4de379f7f85bbdf71dc46}{model\+\_\+parts}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmage_1_1_model_output_aac808e40a66f33da4ea28ebb7443623d}{Model\+Output} (const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&output)=delete
+\item 
+\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \& \hyperlink{structmage_1_1_model_output_a22a473a6e34c6bcc81e645e692a1a1fc}{operator=} (\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&output)=delete
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structmage_1_1_model_output_a7d64b57d8207968541eb9c6da6ef0163}{}\label{structmage_1_1_model_output_a7d64b57d8207968541eb9c6da6ef0163} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Model\+Output@{Model\+Output}}
+\index{Model\+Output@{Model\+Output}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Model\+Output()}{ModelOutput()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::\hyperlink{structmage_1_1_model_output}{Model\+Output} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{structmage_1_1_model_output_a69a7f27486ad287943cbf973107ad8e1}{}\label{structmage_1_1_model_output_a69a7f27486ad287943cbf973107ad8e1} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!````~Model\+Output@{$\sim$\+Model\+Output}}
+\index{````~Model\+Output@{$\sim$\+Model\+Output}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{$\sim$\+Model\+Output()}{~ModelOutput()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::$\sim$\hyperlink{structmage_1_1_model_output}{Model\+Output} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{structmage_1_1_model_output_aac808e40a66f33da4ea28ebb7443623d}{}\label{structmage_1_1_model_output_aac808e40a66f33da4ea28ebb7443623d} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Model\+Output@{Model\+Output}}
+\index{Model\+Output@{Model\+Output}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Model\+Output()}{ModelOutput()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::\hyperlink{structmage_1_1_model_output}{Model\+Output} (\begin{DoxyParamCaption}\item[{const \hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structmage_1_1_model_output_a5df0c4240b1fac61ac0cdbf9766bb98d}{}\label{structmage_1_1_model_output_a5df0c4240b1fac61ac0cdbf9766bb98d} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!End\+Model\+Part@{End\+Model\+Part}}
+\index{End\+Model\+Part@{End\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{End\+Model\+Part()}{EndModelPart()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::End\+Model\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_model_output_a23ce6e3b252227781c173149b76e73ee}{}\label{structmage_1_1_model_output_a23ce6e3b252227781c173149b76e73ee} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Has\+Model\+Part@{Has\+Model\+Part}}
+\index{Has\+Model\+Part@{Has\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Has\+Model\+Part()}{HasModelPart()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+bool \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::Has\+Model\+Part (\begin{DoxyParamCaption}\item[{const string \&}]{child }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_model_output_a22a473a6e34c6bcc81e645e692a1a1fc}{}\label{structmage_1_1_model_output_a22a473a6e34c6bcc81e645e692a1a1fc} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!operator=@{operator=}}
+\index{operator=@{operator=}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$\& \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structmage_1_1_model_output}{Model\+Output}$<$ VertexT $>$ \&}]{output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\hypertarget{structmage_1_1_model_output_abd614f9f2e9f9dbc0b2c354ee37f2998}{}\label{structmage_1_1_model_output_abd614f9f2e9f9dbc0b2c354ee37f2998} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Set\+Material@{Set\+Material}}
+\index{Set\+Material@{Set\+Material}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Set\+Material()}{SetMaterial()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::Set\+Material (\begin{DoxyParamCaption}\item[{const string \&}]{material }\end{DoxyParamCaption})}
+
+\hypertarget{structmage_1_1_model_output_a86b2e4d9885193fb796b309e6104abc9}{}\label{structmage_1_1_model_output_a86b2e4d9885193fb796b309e6104abc9} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!Start\+Model\+Part@{Start\+Model\+Part}}
+\index{Start\+Model\+Part@{Start\+Model\+Part}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{Start\+Model\+Part()}{StartModelPart()}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+void \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::Start\+Model\+Part (\begin{DoxyParamCaption}\item[{const string \&}]{child,  }\item[{const string \&}]{parent = {\ttfamily MAGE\+\_\+MODEL\+\_\+PART\+\_\+DEFAULT\+\_\+PARENT} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmage_1_1_model_output_a0c49359544b7d3c961118caa629f6405}{}\label{structmage_1_1_model_output_a0c49359544b7d3c961118caa629f6405} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!index\+\_\+buffer@{index\+\_\+buffer}}
+\index{index\+\_\+buffer@{index\+\_\+buffer}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{index\+\_\+buffer}{index\_buffer}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+vector$<$ uint32\+\_\+t $>$ \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::index\+\_\+buffer}
+
+\hypertarget{structmage_1_1_model_output_a66764a4d8c7e5b099e51013f385f13bf}{}\label{structmage_1_1_model_output_a66764a4d8c7e5b099e51013f385f13bf} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!material\+\_\+buffer@{material\+\_\+buffer}}
+\index{material\+\_\+buffer@{material\+\_\+buffer}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{material\+\_\+buffer}{material\_buffer}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+vector$<$ \hyperlink{structmage_1_1_material}{Material} $>$ \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::material\+\_\+buffer}
+
+\hypertarget{structmage_1_1_model_output_ac101de6237d4de379f7f85bbdf71dc46}{}\label{structmage_1_1_model_output_ac101de6237d4de379f7f85bbdf71dc46} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!model\+\_\+parts@{model\+\_\+parts}}
+\index{model\+\_\+parts@{model\+\_\+parts}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{model\+\_\+parts}{model\_parts}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+vector$<$ \hyperlink{structmage_1_1_model_part}{Model\+Part} $>$ \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::model\+\_\+parts}
+
+\hypertarget{structmage_1_1_model_output_a8180bf5262d435a394936d50f056c4a3}{}\label{structmage_1_1_model_output_a8180bf5262d435a394936d50f056c4a3} 
+\index{mage\+::\+Model\+Output@{mage\+::\+Model\+Output}!vertex\+\_\+buffer@{vertex\+\_\+buffer}}
+\index{vertex\+\_\+buffer@{vertex\+\_\+buffer}!mage\+::\+Model\+Output@{mage\+::\+Model\+Output}}
+\subsubsection{\texorpdfstring{vertex\+\_\+buffer}{vertex\_buffer}}
+{\footnotesize\ttfamily template$<$typename VertexT$>$ \\
+vector$<$ VertexT $>$ \hyperlink{structmage_1_1_model_output}{mage\+::\+Model\+Output}$<$ VertexT $>$\+::vertex\+\_\+buffer}
+

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variabletype',['VariableType',['../namespacemage.html#a530428e73bac0ba7fe84b29086a9e33a',1,'mage']]]
+  ['tokenresult',['TokenResult',['../namespacemage.html#a2178ba2411db5912f41b2e7698c2037d',1,'mage']]]
 ];

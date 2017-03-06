@@ -81,8 +81,7 @@ $(document).ready(function(){initNavTree('classmage_1_1_renderer.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmage_1_1_renderer-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -109,10 +108,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a997e041f28cc71d069d1ab7d29fe6ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11d47495a47c58a0f67aae3110f9f519"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a11d47495a47c58a0f67aae3110f9f519">GetHandle</a> () const</td></tr>
 <tr class="separator:a11d47495a47c58a0f67aae3110f9f519"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a872e88f421405b06a995a6fb231d59ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a872e88f421405b06a995a6fb231d59ec">GetDevice</a> ()</td></tr>
-<tr class="separator:a872e88f421405b06a995a6fb231d59ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c0c9254fb8295e415c80fff8de99f82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a9c0c9254fb8295e415c80fff8de99f82">GetDeviceContext</a> ()</td></tr>
-<tr class="separator:a9c0c9254fb8295e415c80fff8de99f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e448e5fa4e8b6be0371ff00b97912a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a65e448e5fa4e8b6be0371ff00b97912a">GetWidth</a> () const</td></tr>
+<tr class="separator:a65e448e5fa4e8b6be0371ff00b97912a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c90d8878416dd03b7fdef0b3de29a8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a40c90d8878416dd03b7fdef0b3de29a8">GetHeight</a> () const</td></tr>
+<tr class="separator:a40c90d8878416dd03b7fdef0b3de29a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9465ff1640cb5333ca4e701977ae51ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a9465ff1640cb5333ca4e701977ae51ec">GetDevice</a> () const</td></tr>
+<tr class="separator:a9465ff1640cb5333ca4e701977ae51ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764ee3d8f3dea6aceb05f42bce80b147"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a764ee3d8f3dea6aceb05f42bce80b147">GetDeviceContext</a> () const</td></tr>
+<tr class="separator:a764ee3d8f3dea6aceb05f42bce80b147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de1804c1eedae7dc12435a520a10b9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a1de1804c1eedae7dc12435a520a10b9c">IsWindowed</a> () const</td></tr>
 <tr class="separator:a1de1804c1eedae7dc12435a520a10b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ae3220e19c68f47a8e4d55e3ced4694"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a5ae3220e19c68f47a8e4d55e3ced4694">IsFullScreen</a> () const</td></tr>
@@ -121,6 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afdde83a1e2bc9288f000fb2575c525d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9004ab608659188900c808eacb5f873c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a9004ab608659188900c808eacb5f873c">SwitchMode</a> (bool toggle)</td></tr>
 <tr class="separator:a9004ab608659188900c808eacb5f873c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921f7e037ce57927cef9512582e9e0fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a921f7e037ce57927cef9512582e9e0fe">StartSolidRasterizer</a> ()</td></tr>
+<tr class="separator:a921f7e037ce57927cef9512582e9e0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479f89bf1770828ffcb2395a1f467ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a479f89bf1770828ffcb2395a1f467ed4">StartWireframeRasterizer</a> ()</td></tr>
+<tr class="separator:a479f89bf1770828ffcb2395a1f467ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fea21434ad2ac5bcd9ca09cf5f41852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a5fea21434ad2ac5bcd9ca09cf5f41852">StartFrame</a> () const</td></tr>
 <tr class="separator:a5fea21434ad2ac5bcd9ca09cf5f41852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4932c51d0f6e56269712024d2d0322ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a4932c51d0f6e56269712024d2d0322ef">EndFrame</a> () const</td></tr>
@@ -129,8 +136,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a53cfa5beb9b44bbcda0d6166a54b8cb6 inherit pub_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a53cfa5beb9b44bbcda0d6166a54b8cb6">IsLoaded</a> () const</td></tr>
 <tr class="separator:a53cfa5beb9b44bbcda0d6166a54b8cb6 inherit pub_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:acd6b509da2bd7e7d764b45b912fe5298"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#acd6b509da2bd7e7d764b45b912fe5298">Renderer</a> (const <a class="el" href="classmage_1_1_renderer.html">Renderer</a> &amp;renderer)=delete</td></tr>
+<tr class="separator:acd6b509da2bd7e7d764b45b912fe5298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2762ead5f771ae95e4293cd7eb1a2834"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_renderer.html">Renderer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a2762ead5f771ae95e4293cd7eb1a2834">operator=</a> (const <a class="el" href="classmage_1_1_renderer.html">Renderer</a> &amp;renderer)=delete</td></tr>
+<tr class="separator:a2762ead5f771ae95e4293cd7eb1a2834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafed50e7e14ca597541c091941351929"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#aafed50e7e14ca597541c091941351929">InitializeRenderer</a> ()</td></tr>
 <tr class="separator:aafed50e7e14ca597541c091941351929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a308beaf67b11128f02e87778b6a9c3c7"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a308beaf67b11128f02e87778b6a9c3c7">UnitializeRenderer</a> ()</td></tr>
@@ -143,22 +154,19 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:afe99715a4ae6432ba561dcab048f79b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a34b64e815b0e5e95ce539bbd0f5a3"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a95a34b64e815b0e5e95ce539bbd0f5a3">SetupDepthStencilView</a> ()</td></tr>
 <tr class="separator:a95a34b64e815b0e5e95ce539bbd0f5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f06b86e79a209bc4647a77cb3009c08"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a7f06b86e79a209bc4647a77cb3009c08">SetupRasterizerStates</a> ()</td></tr>
+<tr class="separator:a7f06b86e79a209bc4647a77cb3009c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18937e12912fe18b935893dc6502b92f"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a18937e12912fe18b935893dc6502b92f">SetupViewPort</a> () const</td></tr>
 <tr class="separator:a18937e12912fe18b935893dc6502b92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classmage_1_1_loadable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmage_1_1_loadable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmage_1_1_loadable.html">mage::Loadable</a></td></tr>
-<tr class="memitem:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#afbdcb287b5e20583899a27a1c244bc7d">Loadable</a> (bool loaded=false)</td></tr>
-<tr class="separator:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21364449c045d579cb6090347d83cd54 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a21364449c045d579cb6090347d83cd54">Loadable</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)=default</td></tr>
-<tr class="separator:a21364449c045d579cb6090347d83cd54 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f51b5e1065ebe4dd1da7ef9c9966546 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a7f51b5e1065ebe4dd1da7ef9c9966546">~Loadable</a> ()=default</td></tr>
-<tr class="separator:a7f51b5e1065ebe4dd1da7ef9c9966546 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82277616525b6ed9b1e19fd2dcdb4c0d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a82277616525b6ed9b1e19fd2dcdb4c0d">operator=</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)=default</td></tr>
-<tr class="separator:a82277616525b6ed9b1e19fd2dcdb4c0d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a932ff8b287c8e68e30a13804cba08ff2">SetLoaded</a> (bool loaded=true)</td></tr>
-<tr class="separator:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afc314c8b146c3709edfd5349257a8387"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#afc314c8b146c3709edfd5349257a8387">m_hwindow</a></td></tr>
+<tr class="separator:afc314c8b146c3709edfd5349257a8387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72bb88b17491bd388460afae9d207b0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a72bb88b17491bd388460afae9d207b0a">m_fullscreen</a></td></tr>
+<tr class="separator:a72bb88b17491bd388460afae9d207b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ba5455da0dfa1f68ceeb49d43cf6f0"><td class="memItemLeft" align="right" valign="top">DXGI_MODE_DESC1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#af7ba5455da0dfa1f68ceeb49d43cf6f0">m_display_mode</a></td></tr>
+<tr class="separator:af7ba5455da0dfa1f68ceeb49d43cf6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa97b108ef58f7d41ddb527f6ba2bfdf9"><td class="memItemLeft" align="right" valign="top">D3D_FEATURE_LEVEL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#aa97b108ef58f7d41ddb527f6ba2bfdf9">m_feature_level</a></td></tr>
 <tr class="separator:aa97b108ef58f7d41ddb527f6ba2bfdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9757faeb4de815f024dc8eac89960c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a6c9757faeb4de815f024dc8eac89960c">m_device2</a></td></tr>
@@ -173,19 +181,30 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a9f7f61e09d9c788ab4d3190bc0fa58d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeefc175b9a619f95229a3f8464a7924"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DepthStencilView &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#aaeefc175b9a619f95229a3f8464a7924">m_depth_stencil_view</a></td></tr>
 <tr class="separator:aaeefc175b9a619f95229a3f8464a7924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4aa130b5e1ecd286f7ba05518f325f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11RasterizerState1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#ac4aa130b5e1ecd286f7ba05518f325f7">m_solid_rasterizer_state</a></td></tr>
+<tr class="separator:ac4aa130b5e1ecd286f7ba05518f325f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5049b7bdbf371963dd3e813323921760"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11RasterizerState1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a5049b7bdbf371963dd3e813323921760">m_wireframe_rasterizer_state</a></td></tr>
+<tr class="separator:a5049b7bdbf371963dd3e813323921760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:afc314c8b146c3709edfd5349257a8387"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#afc314c8b146c3709edfd5349257a8387">m_hwindow</a></td></tr>
-<tr class="separator:afc314c8b146c3709edfd5349257a8387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72bb88b17491bd388460afae9d207b0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_renderer.html#a72bb88b17491bd388460afae9d207b0a">m_fullscreen</a></td></tr>
-<tr class="separator:a72bb88b17491bd388460afae9d207b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classmage_1_1_loadable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmage_1_1_loadable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmage_1_1_loadable.html">mage::Loadable</a></td></tr>
+<tr class="memitem:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#afbdcb287b5e20583899a27a1c244bc7d">Loadable</a> (bool loaded=false)</td></tr>
+<tr class="separator:afbdcb287b5e20583899a27a1c244bc7d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21364449c045d579cb6090347d83cd54 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a21364449c045d579cb6090347d83cd54">Loadable</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)=default</td></tr>
+<tr class="separator:a21364449c045d579cb6090347d83cd54 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f51b5e1065ebe4dd1da7ef9c9966546 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a7f51b5e1065ebe4dd1da7ef9c9966546">~Loadable</a> ()=default</td></tr>
+<tr class="separator:a7f51b5e1065ebe4dd1da7ef9c9966546 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82277616525b6ed9b1e19fd2dcdb4c0d inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a82277616525b6ed9b1e19fd2dcdb4c0d">operator=</a> (const <a class="el" href="classmage_1_1_loadable.html">Loadable</a> &amp;loadable)=default</td></tr>
+<tr class="separator:a82277616525b6ed9b1e19fd2dcdb4c0d inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmage_1_1_loadable.html#a932ff8b287c8e68e30a13804cba08ff2">SetLoaded</a> (bool loaded=true)</td></tr>
+<tr class="separator:a932ff8b287c8e68e30a13804cba08ff2 inherit pro_methods_classmage_1_1_loadable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of renderers. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a762dcda433c319af237d1dfd9bc6095f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a762dcda433c319af237d1dfd9bc6095f">&sect;&nbsp;</a></span>Renderer()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a762dcda433c319af237d1dfd9bc6095f">&sect;&nbsp;</a></span>Renderer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,6 +254,39 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="acd6b509da2bd7e7d764b45b912fe5298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6b509da2bd7e7d764b45b912fe5298">&sect;&nbsp;</a></span>Renderer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mage::Renderer::Renderer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_renderer.html">Renderer</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a renderer from the given renderer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">renderer</td><td>A reference to a renderer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4932c51d0f6e56269712024d2d0322ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4932c51d0f6e56269712024d2d0322ef">&sect;&nbsp;</a></span>EndFrame()</h2>
@@ -254,27 +306,27 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a872e88f421405b06a995a6fb231d59ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a872e88f421405b06a995a6fb231d59ec">&sect;&nbsp;</a></span>GetDevice()</h2>
+<a id="a9465ff1640cb5333ca4e701977ae51ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9465ff1640cb5333ca4e701977ae51ec">&sect;&nbsp;</a></span>GetDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11Device2 &gt; mage::Renderer::GetDevice </td>
+          <td class="memname"><a class="el" href="classmage_1_1_rendering_device.html">RenderingDevice</a> mage::Renderer::GetDevice </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the device of this renderer.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the device of this renderer. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The device of this renderer. </dd></dl>
 
 </div>
 </div>
-<a id="a9c0c9254fb8295e415c80fff8de99f82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c0c9254fb8295e415c80fff8de99f82">&sect;&nbsp;</a></span>GetDeviceContext()</h2>
+<a id="a764ee3d8f3dea6aceb05f42bce80b147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a764ee3d8f3dea6aceb05f42bce80b147">&sect;&nbsp;</a></span>GetDeviceContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +335,7 @@ Private Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11DeviceContext2 &gt; mage::Renderer::GetDeviceContext </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,6 +363,44 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a40c90d8878416dd03b7fdef0b3de29a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c90d8878416dd03b7fdef0b3de29a8">&sect;&nbsp;</a></span>GetHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t mage::Renderer::GetHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the height in pixels of the display of this renderer.</p>
+<dl class="section return"><dt>Returns</dt><dd>The height in pixels of the display of this renderer. </dd></dl>
+
+</div>
+</div>
+<a id="a65e448e5fa4e8b6be0371ff00b97912a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e448e5fa4e8b6be0371ff00b97912a">&sect;&nbsp;</a></span>GetWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t mage::Renderer::GetWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the width in pixels of the display of this renderer.</p>
+<dl class="section return"><dt>Returns</dt><dd>The width in pixels of the display of this renderer. </dd></dl>
+
+</div>
+</div>
 <a id="aafed50e7e14ca597541c091941351929"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafed50e7e14ca597541c091941351929">&sect;&nbsp;</a></span>InitializeRenderer()</h2>
 
@@ -329,7 +419,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -394,6 +484,40 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2762ead5f771ae95e4293cd7eb1a2834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2762ead5f771ae95e4293cd7eb1a2834">&sect;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmage_1_1_renderer.html">Renderer</a>&amp; mage::Renderer::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmage_1_1_renderer.html">Renderer</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies the given renderer to this renderer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">renderer</td><td>A reference to a renderer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the copy of the given renderer (i.e. this renderer). </dd></dl>
+
+</div>
+</div>
 <a id="a95a34b64e815b0e5e95ce539bbd0f5a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95a34b64e815b0e5e95ce539bbd0f5a3">&sect;&nbsp;</a></span>SetupDepthStencilView()</h2>
 
@@ -412,7 +536,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -439,11 +563,38 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Setup the D3D11 device and context of this renderer.</p>
+<dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
+
+</div>
+</div>
+<a id="a7f06b86e79a209bc4647a77cb3009c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f06b86e79a209bc4647a77cb3009c08">&sect;&nbsp;</a></span>SetupRasterizerStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT mage::Renderer::SetupRasterizerStates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets up the rasterizer states of this renderer.</p>
 <dl class="section return"><dt>Returns</dt><dd>A success/error value. </dd></dl>
 
 </div>
@@ -466,7 +617,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -493,7 +644,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -520,7 +671,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -544,6 +695,42 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Starts the rendering of the current frame. </p>
+
+</div>
+</div>
+<a id="a921f7e037ce57927cef9512582e9e0fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921f7e037ce57927cef9512582e9e0fe">&sect;&nbsp;</a></span>StartSolidRasterizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Renderer::StartSolidRasterizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Start the solid rasterizer of this renderer. </p>
+
+</div>
+</div>
+<a id="a479f89bf1770828ffcb2395a1f467ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479f89bf1770828ffcb2395a1f467ed4">&sect;&nbsp;</a></span>StartWireframeRasterizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mage::Renderer::StartWireframeRasterizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Start the wireframe rasterizer of this renderer. </p>
 
 </div>
 </div>
@@ -585,7 +772,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -610,7 +797,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -632,7 +819,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -654,7 +841,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -676,7 +863,29 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7ba5455da0dfa1f68ceeb49d43cf6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7ba5455da0dfa1f68ceeb49d43cf6f0">&sect;&nbsp;</a></span>m_display_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DXGI_MODE_DESC1 mage::Renderer::m_display_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -698,7 +907,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -766,7 +975,29 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4aa130b5e1ecd286f7ba05518f325f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4aa130b5e1ecd286f7ba05518f325f7">&sect;&nbsp;</a></span>m_solid_rasterizer_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11RasterizerState1 &gt; mage::Renderer::m_solid_rasterizer_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -788,7 +1019,29 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5049b7bdbf371963dd3e813323921760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5049b7bdbf371963dd3e813323921760">&sect;&nbsp;</a></span>m_wireframe_rasterizer_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemage.html#ae74f374780900893caa5555d1031fd79">ComPtr</a>&lt; ID3D11RasterizerState1 &gt; mage::Renderer::m_wireframe_rasterizer_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

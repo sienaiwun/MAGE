@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 72.992701
+%%BoundingBox: 0 0 500 51.020408
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 6.850000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 9.800000 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 2 def
-/cols 4 def
+/rows 3 def
+/cols 6 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -174,10 +174,15 @@
 boxfont setfont
 1 boundaspect scale
 (mage::Resource) cw
-(mage::Mesh) cw
+(mage::ModelDescriptor) cw
 (mage::PixelShader) cw
+(mage::Texture) cw
 (mage::VariableScript) cw
 (mage::VertexShader) cw
+(mage::EmptyPixelShader) cw
+(mage::LambertianPixelShader) cw
+(mage::EmptyVertexShader) cw
+(mage::LambertianVertexShader) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -189,23 +194,46 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (mage::Resource) 1.500000 1.000000 box
- (mage::Mesh) 0.000000 0.000000 box
- (mage::PixelShader) 1.000000 0.000000 box
- (mage::VariableScript) 2.000000 0.000000 box
- (mage::VertexShader) 3.000000 0.000000 box
+ (mage::Resource) 2.000000 2.000000 box
+ (mage::ModelDescriptor) 0.000000 1.000000 box
+ (mage::PixelShader) 1.000000 1.000000 box
+ (mage::Texture) 2.000000 1.000000 box
+ (mage::VariableScript) 3.000000 1.000000 box
+ (mage::VertexShader) 4.000000 1.000000 box
+ (mage::EmptyPixelShader) 0.500000 0.000000 box
+ (mage::LambertianPixelShader) 1.500000 0.000000 box
+ (mage::EmptyVertexShader) 3.500000 0.000000 box
+ (mage::LambertianVertexShader) 4.500000 0.000000 box
 
 % ----- relations -----
 
 solid
-1 1.500000 0.250000 out
+1 2.000000 1.250000 out
 solid
-0.000000 3.000000 1.000000 conn
-dotted
-0 0.000000 0.750000 in
-dotted
-0 1.000000 0.750000 in
+0.000000 4.000000 2.000000 conn
 solid
-0 2.000000 0.750000 in
-dotted
-0 3.000000 0.750000 in
+0 0.000000 1.750000 in
+solid
+0 1.000000 1.750000 in
+solid
+1 1.000000 0.250000 out
+solid
+0.500000 1.500000 1.000000 conn
+solid
+0 2.000000 1.750000 in
+solid
+0 3.000000 1.750000 in
+solid
+0 4.000000 1.750000 in
+solid
+1 4.000000 0.250000 out
+solid
+3.500000 4.500000 1.000000 conn
+solid
+0 0.500000 0.750000 in
+solid
+0 1.500000 0.750000 in
+solid
+0 3.500000 0.750000 in
+solid
+0 4.500000 0.750000 in
