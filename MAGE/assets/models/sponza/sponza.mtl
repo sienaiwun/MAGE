@@ -62,7 +62,7 @@ newmtl bricks
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\sponza_bricks_a_diff.dds
 	map_Kd textures\sponza_bricks_a_diff.dds
-	map_bump textures\sponza_bricks_a_diff.dds
+	map_bump textures\sponza_bricks_a_bump.dds
 
 newmtl arch
 	Ns 10.0000
@@ -75,6 +75,7 @@ newmtl arch
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\sponza_arch_diff.dds
 	map_Kd textures\sponza_arch_diff.dds
+	map_bump textures\sponza_arch_bump.dds
 
 newmtl ceiling
 	Ns 10.0000
