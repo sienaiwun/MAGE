@@ -10,7 +10,7 @@ newmtl leaf
 	map_Ka textures\sponza_thorn_diff.dds
 	map_Kd textures\sponza_thorn_diff.dds
 	map_d textures\sponza_thorn_mask.dds
-	map_bump textures\sponza_thorn_bump.dds
+	map_normal textures\sponza_thorn_normal.dds
 
 newmtl vase_round
 	Ns 10.0000
@@ -23,7 +23,7 @@ newmtl vase_round
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\vase_round.dds
 	map_Kd textures\vase_round.dds
-	map_bump textures\vase_round_bump.dds
+	map_normal textures\vase_round_normal.dds
 
 newmtl Material__57
 	Ns 10.0000
@@ -49,7 +49,7 @@ newmtl Material__298
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\background.dds
 	map_Kd textures\background.dds
-	map_bump textures\background_bump.dds
+	map_normal textures\background_normal.dds
 
 newmtl bricks
 	Ns 10.0000
@@ -62,7 +62,7 @@ newmtl bricks
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\sponza_bricks_a_diff.dds
 	map_Kd textures\sponza_bricks_a_diff.dds
-	map_bump textures\sponza_bricks_a_bump.dds
+	map_normal textures\sponza_bricks_a_normal.dds
 
 newmtl arch
 	Ns 10.0000
@@ -75,7 +75,7 @@ newmtl arch
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\sponza_arch_diff.dds
 	map_Kd textures\sponza_arch_diff.dds
-	map_bump textures\sponza_arch_bump.dds
+	map_normal textures\sponza_arch_normal.dds
 
 newmtl ceiling
 	Ns 10.0000
@@ -100,7 +100,7 @@ newmtl column_a
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\sponza_column_a_diff.dds
 	map_Kd textures\sponza_column_a_diff.dds
-	map_bump textures\sponza_column_a_bump.dds
+	map_normal textures\sponza_column_a_normal.dds
 
 newmtl floor
 	Ns 10.0000
@@ -125,7 +125,7 @@ newmtl column_c
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\sponza_column_c_diff.dds
 	map_Kd textures\sponza_column_c_diff.dds
-	map_bump textures\sponza_column_c_bump.dds
+	map_normal textures\sponza_column_c_normal.dds
 
 newmtl details
 	Ns 10.0000
@@ -150,7 +150,7 @@ newmtl column_b
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\sponza_column_b_diff.dds
 	map_Kd textures\sponza_column_b_diff.dds
-	map_bump textures\sponza_column_b_bump.dds
+	map_normal textures\sponza_column_b_normal.dds
 
 newmtl Material__47
 	Ns 10.0000
@@ -258,7 +258,7 @@ newmtl chain
 	map_Ka textures\chain_texture.dds
 	map_Kd textures\chain_texture.dds
 	map_d textures\chain_texture_mask.dds
-	map_bump textures\chain_texture_bump.dds
+	map_normal textures\chain_texture_normal.dds
 
 newmtl vase_hanging
 	Ns 10.0000
@@ -283,7 +283,7 @@ newmtl vase
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\vase_dif.dds
 	map_Kd textures\vase_dif.dds
-	map_bump textures\vase_bump.dds
+	map_normal textures\vase_normal.dds
 
 newmtl Material__25
 	Ns 10.0000
@@ -296,7 +296,7 @@ newmtl Material__25
 	Ks 0.0000 0.0000 0.0000
 	map_Ka textures\lion.dds
 	map_Kd textures\lion.dds
-	map_bump textures\lion_bump.dds
+	map_normal textures\lion_normal.dds
 
 newmtl roof
 	Ns 10.0000
