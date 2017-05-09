@@ -228,7 +228,7 @@ ret
 // Approximately 117 instruction slots used
 #endif
 
-const BYTE g_phong_ps[] =
+const BYTE g_phong_bump_ps[] =
 {
      68,  88,  66,  67,  68, 159, 
     126, 205,  88, 225, 192, 198, 
