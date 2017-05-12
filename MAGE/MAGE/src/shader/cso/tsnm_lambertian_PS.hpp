@@ -120,12 +120,12 @@ dcl_temps 10
 //   v3.x <- input.tex.x; v3.y <- input.tex.y; 
 //   o0.x <- <TangentSpaceNormalMapping_Lambertian_PS return value>.x; o0.y <- <TangentSpaceNormalMapping_Lambertian_PS return value>.y; o0.z <- <TangentSpaceNormalMapping_Lambertian_PS return value>.z; o0.w <- <TangentSpaceNormalMapping_Lambertian_PS return value>.w
 //
-#line 479 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 479 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r0.xyz, v1.xyzx  // r0.x <- p.x; r0.y <- p.y; r0.z <- p.z
 nop 
 mov r1.xyz, v2.xyzx
 
-#line 10 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\bump.fx"
+#line 10 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\bump.fx"
 deriv_rtx_coarse r2.xyz, v1.yzxy  // r2.x <- dp_dj.y; r2.y <- dp_dj.z; r2.z <- dp_dj.x
 deriv_rty_coarse r3.xyz, v1.zxyz  // r3.x <- dp_di.z; r3.y <- dp_di.x; r3.z <- dp_di.y
 deriv_rtx_coarse r4.xy, v3.xyxx  // r4.x <- dtex_dj.x; r4.y <- dtex_dj.y
@@ -175,7 +175,7 @@ dp3 r0.w, r3.xyzx, r3.xyzx
 rsq r0.w, r0.w
 mul r1.xyz, r0.wwww, r3.xyzx  // r1.x <- <TangentSpaceNormalMapping_PerturbNormal return value>.x; r1.y <- <TangentSpaceNormalMapping_PerturbNormal return value>.y; r1.z <- <TangentSpaceNormalMapping_PerturbNormal return value>.z
 
-#line 480 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 480 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r1.xyz, r1.xyzx  // r1.x <- n.x; r1.y <- n.y; r1.z <- n.z
 nop 
 mov r0.xyz, r0.xyzx
@@ -186,7 +186,7 @@ nop
 mov r1.xyz, r1.xyzx
 mov r2.xyz, -cb2[2].xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
 nop 
 mov r1.xyz, r1.xyzx
 mov r2.xyz, r2.xyzx
@@ -198,7 +198,7 @@ max r2.xyz, r0.wwww, l(0.000000, 0.000000, 0.000000, 0.000000)  // r2.z <- <max_
 #line 32
 mov r2.xyz, r2.xyzx  // r2.z <- <LambertianBRDF return value>
 
-#line 80 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 80 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r2.xyz, r2.xyzx  // r2.x <- brdf.x; r2.y <- brdf.y; r2.z <- brdf.z
 mul r2.xyz, r2.xyzx, cb2[1].xyzx
 add r2.xyz, r2.xyzx, cb2[0].xyzx  // r2.x <- I_diffuse.x; r2.y <- I_diffuse.y; r2.z <- I_diffuse.z
@@ -229,7 +229,7 @@ loop
   mov r6.xy, r6.xyxx
   mov r8.xyz, r0.xyzx
 
-#line 45 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 45 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r8.xyz, -r8.xyzx
   add r4.xyz, r4.xyzx, r8.xyzx
   dp3 r2.w, r4.xyzx, r4.xyzx
@@ -252,13 +252,13 @@ loop
   mov r2.w, r2.w  // r2.w <- df
   mul r4.xyz, r5.xyzx, r2.wwww  // r4.x <- <OmniLightMaxContribution return value>.x; r4.y <- <OmniLightMaxContribution return value>.y; r4.z <- <OmniLightMaxContribution return value>.z
 
-#line 87 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 87 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r4.xyz, r4.xyzx  // r4.x <- I_light.x; r4.y <- I_light.y; r4.z <- I_light.z
   nop 
   mov r5.xyz, r1.xyzx
   mov r7.xyz, r7.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r5.xyz, r5.xyzx
   mov r7.xyz, r7.xyzx
@@ -270,7 +270,7 @@ loop
 #line 32
   mov r5.xyz, r5.xyzx  // r5.z <- <LambertianBRDF return value>
 
-#line 89 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 89 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r5.xyz, r5.xyzx  // r5.x <- brdf.x; r5.y <- brdf.y; r5.z <- brdf.z
   mul r4.xyz, r4.xyzx, r5.xyzx
   add r3.xyz, r3.xyzx, r4.xyzx
@@ -311,7 +311,7 @@ loop
   mov r9.xyz, r0.xyzx
   mov r8.xyz, r8.xyzx
 
-#line 52 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 52 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r9.xyz, -r9.xyzx
   add r4.xyz, r4.xyzx, r9.xyzx
   dp3 r2.w, r4.xyzx, r4.xyzx
@@ -357,13 +357,13 @@ loop
   mul r2.w, r2.w, r3.w
   mul r4.xyz, r5.xyzx, r2.wwww  // r4.x <- <SpotLightMaxContribution return value>.x; r4.y <- <SpotLightMaxContribution return value>.y; r4.z <- <SpotLightMaxContribution return value>.z
 
-#line 97 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 97 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r4.xyz, r4.xyzx  // r4.x <- I_light.x; r4.y <- I_light.y; r4.z <- I_light.z
   nop 
   mov r5.xyz, r1.xyzx
   mov r8.xyz, r8.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r5.xyz, r5.xyzx
   mov r8.xyz, r8.xyzx
@@ -375,7 +375,7 @@ loop
 #line 32
   mov r5.xyz, r5.xyzx  // r5.z <- <LambertianBRDF return value>
 
-#line 99 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 99 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r5.xyz, r5.xyzx  // r5.x <- brdf.x; r5.y <- brdf.y; r5.z <- brdf.z
   mul r4.xyz, r4.xyzx, r5.xyzx
   add r2.xyz, r2.xyzx, r4.xyzx
@@ -395,10 +395,10 @@ ret
 
 const BYTE g_tsnm_lambertian_ps[] =
 {
-     68,  88,  66,  67, 226, 182, 
-    202, 249,  78,  44, 162,  10, 
-    143,  54, 121,  83,  40,  46, 
-    180,  85,   1,   0,   0,   0, 
+     68,  88,  66,  67, 221,  81, 
+     32, 203,  43, 236, 187, 159, 
+    209,  68, 102,  84,  50, 152, 
+    182,  88,   1,   0,   0,   0, 
      92, 132,   1,   0,   6,   0, 
       0,   0,  56,   0,   0,   0, 
       0,   8,   0,   0, 152,   8, 
@@ -2117,11 +2117,11 @@ const BYTE g_tsnm_lambertian_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
-    148,  46,  49,   1, 129, 129, 
-     19,  89,   1,   0,   0,   0, 
-     35, 106, 183, 230, 124,  69, 
-      0,  71, 131, 205, 136, 206, 
-    136, 122,  92, 115,   0,   0, 
+    148,  46,  49,   1, 191, 170, 
+     21,  89,   1,   0,   0,   0, 
+    235, 155,  95,  89,  41,  41, 
+     37,  71, 168, 229,  48,  67, 
+    116, 126, 204, 237,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       1,   0,   0,   0,   1,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -2204,7 +2204,7 @@ const BYTE g_tsnm_lambertian_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0, 254, 239, 254, 239, 
       1,   0,   0,   0,  46, 118, 
-      0,   0,   0,  67,  58,  92, 
+      0,   0,   0,  68,  58,  92, 
      85, 115, 101, 114, 115,  92, 
      77,  97, 116, 116, 104, 105, 
      97, 115,  92,  68, 111,  99, 
@@ -2221,7 +2221,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     110, 109,  95, 108,  97, 109, 
      98, 101, 114, 116, 105,  97, 
     110,  95,  80,  83,  46, 104, 
-    108, 115, 108,   0,   0,  99, 
+    108, 115, 108,   0,   0, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -2239,7 +2239,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      97, 109,  98, 101, 114, 116, 
     105,  97, 110,  95, 112, 115, 
      46, 104, 108, 115, 108,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -2253,7 +2253,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92,  98,  97, 115, 105,  99, 
-     46, 102, 120,   0,  99,  58, 
+     46, 102, 120,   0, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -2268,7 +2268,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     103, 101,  92, 115, 104,  97, 
     100, 101, 114, 115,  92,  98, 
      97, 115, 105,  99,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -2285,7 +2285,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     105, 110, 112, 117, 116,  95, 
     115, 116, 114, 117,  99, 116, 
     117, 114, 101, 115,  46, 102, 
-    120,   0,  99,  58,  92, 117, 
+    120,   0, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 119, 115, 
       0,   0,  51,  77,   0,   0, 
@@ -2309,9 +2309,9 @@ const BYTE g_tsnm_lambertian_ps[] =
       0,   0, 208,  14,   0,   0, 
      58,  50,   0,   0,  76,  17, 
       0,   0, 234, 107,   0,   0, 
-     63,  24,   0,   0, 113,  46, 
+     63,  24,   0,   0, 243,  37, 
       0,   0,  20,  64,   0,   0, 
-     32,  37,   0,   0,  97,  76, 
+     32,  37,   0,   0, 195,  60, 
       0,   0, 239, 115,   0,   0, 
     185,   3,   0,   0,  44,  16, 
       0,   0, 123, 104,   0,   0, 
@@ -7580,7 +7580,7 @@ const BYTE g_tsnm_lambertian_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0, 114, 115,  92, 108, 
     105, 103, 104, 116,  46, 102, 
-    120,   0,  99,  58,  92, 117, 
+    120,   0, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 100, 111,  99, 117, 
@@ -7678,7 +7678,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     105, 110, 112, 117, 116,  95, 
     115, 116, 114, 117,  99, 116, 
     117, 114, 101, 115,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -7692,7 +7692,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      69,  92,  77,  65,  71,  69, 
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98, 114, 100, 
-    102,  46, 102, 120,   0,  99, 
+    102,  46, 102, 120,   0, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -7707,7 +7707,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      97, 103, 101,  92, 115, 104, 
      97, 100, 101, 114, 115,  92, 
      98, 114, 100, 102,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -7721,7 +7721,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      69,  92,  77,  65,  71,  69, 
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98, 117, 109, 
-    112,  46, 102, 120,   0,  99, 
+    112,  46, 102, 120,   0, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -7736,7 +7736,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      97, 103, 101,  92, 115, 104, 
      97, 100, 101, 114, 115,  92, 
      98, 117, 109, 112,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -7835,8 +7835,8 @@ const BYTE g_tsnm_lambertian_ps[] =
      45,  45,  45,  45,  45,  45, 
      45,  45,  45,  45,  45,  45, 
      45,  45,  27, 226,  48,   1, 
-     92,   1,   0,   0,  47,  72, 
-    190, 177, 209, 201, 210,   1, 
+     92,   1,   0,   0,  27, 191, 
+    208, 115,  27, 203, 210,   1, 
       1,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -10819,14 +10819,14 @@ const BYTE g_tsnm_lambertian_ps[] =
       0,   0,  23,   0,   4,   0, 
      31,  16,   0,   0,  14,   0, 
      23,  21,   0,  16,   0,   0, 
-      3,   2, 176,   0,   0,   0, 
+      3,   2, 144,   0,   0,   0, 
     242, 241,  10,   0,  24,  21, 
      33,  16,   0,   0,   1,   0, 
       1,   0,  10,   0,  24,  21, 
      34,  16,   0,   0,   1,   0, 
       0,   2,  14,   0,  23,  21, 
       0,   0,   0,   0,  10,   2, 
-    176,   0,   0,   0, 242, 241, 
+    144,   0,   0,   0, 242, 241, 
      10,   0,  24,  21,  36,  16, 
       0,   0,   1,   0,   1,   0, 
      10,   0,  24,  21,  37,  16, 
@@ -15780,24 +15780,24 @@ const BYTE g_tsnm_lambertian_ps[] =
      32,  97, 102,  32,  42,  32, 
     108, 105, 103, 104, 116,  46, 
      73,  59,  13,  10, 125,   0, 
-     26,   0,   0,   0,  88,   4, 
-      0,   0,  37, 103,   0,   0, 
-      0,   0,   0,   0, 168,   3, 
-      0,   0,   0,   4,   0,   0, 
-     40,   1,   0,   0, 208,   0, 
-      0,   0, 213,  87,   0,   0, 
-      0,   0,   0,   0, 250,   2, 
-      0,   0,  81,   3,   0,   0, 
-     76,   2,   0,   0, 163,   2, 
-      0,   0, 108,   4,   0,   0, 
-    171, 109,   0,   0,   0,   0, 
+     26,   0,   0,   0, 230,   1, 
+      0,   0, 128,   1,   0,   0, 
+      1,   0,   0,   0, 105,   0, 
+      0,   0,  88,   4,   0,   0, 
+     37, 103,   0,   0, 213,  87, 
+      0,   0,   0,   0,   0,   0, 
+      0,   0,   0,   0,   0,   0, 
+      0,   0, 250,   2,   0,   0, 
+     81,   3,   0,   0,  76,   2, 
+      0,   0, 163,   2,   0,   0, 
+    108,   4,   0,   0, 171, 109, 
       0,   0, 250,  82,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
     104,   0,   0,   0,   0,   0, 
-      0,   0, 128,   1,   0,   0, 
-    230,   1,   0,   0, 105,   0, 
-      0,   0,   1,   0,   0,   0, 
+      0,   0, 168,   3,   0,   0, 
+      0,   4,   0,   0,  40,   1, 
+      0,   0, 208,   0,   0,   0, 
      19,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -16387,7 +16387,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      14,   0, 204,  42,   0,   0, 
       0,   0,   0,   0,  52,  21, 
       0,   0,   6,   0,   0,   0, 
-    216, 227, 154,   0,   0,   0, 
+    216, 218, 178,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
      84,  97, 110, 103, 101, 110, 
     116,  83, 112,  97,  99, 101, 
@@ -16398,7 +16398,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      95,  80,  83,   0, 110, 111, 
     110, 101,   0,   0,   0,   0, 
      45, 186,  46, 241,   1,   0, 
-    162,   0,   0,   0,   0,   0, 
+    186,   0,   0,   0,   0,   0, 
     228,  20,   0,   0,  32,   0, 
       0,  96,   0,   0,  77,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -16415,7 +16415,7 @@ const BYTE g_tsnm_lambertian_ps[] =
       0,   0, 191,   0,   0,   0, 
      37,   1,   0,   0, 124,   1, 
       0,   0, 211,   1,   0,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -16432,7 +16432,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     108,  97, 109,  98, 101, 114, 
     116, 105,  97, 110,  95,  80, 
      83,  46, 104, 108, 115, 108, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -16446,7 +16446,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      92,  77,  65,  71,  69,  92, 
     115, 104,  97, 100, 101, 114, 
     115,  92,  98,  97, 115, 105, 
-     99,  46, 102, 120,   0,  67, 
+     99,  46, 102, 120,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -16463,7 +16463,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     118, 115,  95, 105, 110, 112, 
     117, 116,  95, 115, 116, 114, 
     117,  99, 116, 117, 114, 101, 
-    115,  46, 102, 120,   0,  67, 
+    115,  46, 102, 120,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -16478,7 +16478,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      65,  71,  69,  92, 115, 104, 
      97, 100, 101, 114, 115,  92, 
      98, 114, 100, 102,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -16492,7 +16492,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      69,  92,  77,  65,  71,  69, 
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98, 117, 109, 
-    112,  46, 102, 120,   0,  67, 
+    112,  46, 102, 120,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -16539,10 +16539,10 @@ const BYTE g_tsnm_lambertian_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0, 148,  46,  49,   1, 
-    129, 129,  19,  89,   1,   0, 
-      0,   0,  35, 106, 183, 230, 
-    124,  69,   0,  71, 131, 205, 
-    136, 206, 136, 122,  92, 115, 
+    191, 170,  21,  89,   1,   0, 
+      0,   0, 235, 155,  95,  89, 
+     41,  41,  37,  71, 168, 229, 
+     48,  67, 116, 126, 204, 237, 
     143,   2,   0,   0,  47,  76, 
     105, 110, 107,  73, 110, 102, 
     111,   0,  47, 110,  97, 109, 
@@ -16551,7 +16551,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     101, 114,  98, 108, 111,  99, 
     107,   0,  47, 115, 114,  99, 
      47, 102, 105, 108, 101, 115, 
-     47,  99,  58,  92, 117, 115, 
+     47, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -16570,7 +16570,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     112, 115,  46, 104, 108, 115, 
     108,   0,  47, 115, 114,  99, 
      47, 102, 105, 108, 101, 115, 
-     47,  99,  58,  92, 117, 115, 
+     47, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -16586,7 +16586,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     115,  92,  98,  97, 115, 105, 
      99,  46, 102, 120,   0,  47, 
     115, 114,  99,  47, 102, 105, 
-    108, 101, 115,  47,  99,  58, 
+    108, 101, 115,  47, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -16605,7 +16605,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      99, 116, 117, 114, 101, 115, 
      46, 102, 120,   0,  47, 115, 
     114,  99,  47, 102, 105, 108, 
-    101, 115,  47,  99,  58,  92, 
+    101, 115,  47, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -16621,7 +16621,7 @@ const BYTE g_tsnm_lambertian_ps[] =
     101, 114, 115,  92,  98, 114, 
     100, 102,  46, 102, 120,   0, 
      47, 115, 114,  99,  47, 102, 
-    105, 108, 101, 115,  47,  99, 
+    105, 108, 101, 115,  47, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -16638,7 +16638,7 @@ const BYTE g_tsnm_lambertian_ps[] =
      98, 117, 109, 112,  46, 102, 
     120,   0,  47, 115, 114,  99, 
      47, 102, 105, 108, 101, 115, 
-     47,  99,  58,  92, 117, 115, 
+     47, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -16654,20 +16654,20 @@ const BYTE g_tsnm_lambertian_ps[] =
     115,  92, 108, 105, 103, 104, 
     116,  46, 102, 120,   0,   9, 
       0,   0,   0,  14,   0,   0, 
-      0,   1,   0,   0,   0, 163, 
-     62,   0,   0,   0,   0,   0, 
+      0,   1,   0,   0,   0, 164, 
+     63,   0,   0,   0,   0,   0, 
+      0,  34,   0,   0,   0,   8, 
+      0,   0,   0,  10,   0,   0, 
+      0,   6,   0,   0,   0,   0, 
+      0,   0,   0,   5,   0,   0, 
       0, 247,   0,   0,   0,  10, 
-      0,   0,   0,  44,   2,   0, 
-      0,  13,   0,   0,   0,  10, 
-      0,   0,   0,   6,   0,   0, 
-      0,   0,   0,   0,   0,   5, 
       0,   0,   0,  17,   0,   0, 
-      0,   7,   0,   0,   0, 104, 
-      1,   0,   0,  11,   0,   0, 
-      0, 148,   0,   0,   0,   9, 
-      0,   0,   0,  34,   0,   0, 
-      0,   8,   0,   0,   0, 202, 
+      0,   7,   0,   0,   0, 202, 
       1,   0,   0,  12,   0,   0, 
+      0,  44,   2,   0,   0,  13, 
+      0,   0,   0, 104,   1,   0, 
+      0,  11,   0,   0,   0, 148, 
+      0,   0,   0,   9,   0,   0, 
       0,   0,   0,   0,   0,  65, 
     145,  50,   1,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 

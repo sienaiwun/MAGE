@@ -118,7 +118,7 @@ dcl_temps 13
 //   v3.x <- input.tex.x; v3.y <- input.tex.y; 
 //   o0.x <- <WardDuer_PS return value>.x; o0.y <- <WardDuer_PS return value>.y; o0.z <- <WardDuer_PS return value>.z; o0.w <- <WardDuer_PS return value>.w
 //
-#line 467 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 467 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r0.xyz, v1.xyzx  // r0.x <- p.x; r0.y <- p.y; r0.z <- p.z
 nop 
 mov r0.xyz, r0.xyzx
@@ -138,7 +138,7 @@ nop
 mov r1.xyz, r1.xyzx
 mov r4.xyz, -cb2[2].xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
 nop 
 mov r1.xyz, r1.xyzx
 mov r4.xyz, r4.xyzx
@@ -150,7 +150,7 @@ max r4.xyz, r0.wwww, l(0.000000, 0.000000, 0.000000, 0.000000)  // r4.z <- <max_
 #line 32
 mov r4.xyz, r4.xyzx  // r4.z <- <LambertianBRDF return value>
 
-#line 325 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 325 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r4.xyz, r4.xyzx  // r4.x <- brdf.x; r4.y <- brdf.y; r4.z <- brdf.z
 mul r4.xyz, r4.xyzx, cb2[1].xyzx
 add r4.xyz, r4.xyzx, cb2[0].xyzx  // r4.x <- I_diffuse.x; r4.y <- I_diffuse.y; r4.z <- I_diffuse.z
@@ -182,7 +182,7 @@ loop
   mov r9.xy, r9.xyxx
   mov r11.xyz, r0.xyzx
 
-#line 45 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 45 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r11.xyz, -r11.xyzx
   add r7.xyz, r7.xyzx, r11.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -205,13 +205,13 @@ loop
   mov r2.w, r2.w  // r2.w <- df
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <OmniLightMaxContribution return value>.x; r7.y <- <OmniLightMaxContribution return value>.y; r7.z <- <OmniLightMaxContribution return value>.z
 
-#line 332 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 332 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r10.xyz, r10.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r10.xyz, r10.xyzx
@@ -223,7 +223,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 334 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 334 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r5.xyz, r5.xyzx, r8.xyzx
@@ -232,7 +232,7 @@ loop
   mov r10.xyz, r10.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 85 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 85 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   dp3 r2.w, r8.xyzx, r10.xyzx
   dp3 r3.w, r8.xyzx, r9.xyzx
   mul r2.w, r2.w, r3.w  // r2.w <- a1
@@ -285,7 +285,7 @@ loop
     div r4.w, r3.w, r2.w
   endif 
 
-#line 337 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 337 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r4.wwww  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r6.xyz, r6.xyzx, r7.xyzx
@@ -327,7 +327,7 @@ loop
   mov r12.xyz, r0.xyzx
   mov r11.xyz, r11.xyzx
 
-#line 52 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 52 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r12.xyz, -r12.xyzx
   add r7.xyz, r7.xyzx, r12.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -373,13 +373,13 @@ loop
   mul r2.w, r2.w, r3.w
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <SpotLightMaxContribution return value>.x; r7.y <- <SpotLightMaxContribution return value>.y; r7.z <- <SpotLightMaxContribution return value>.z
 
-#line 345 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 345 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r9.xyz, r11.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r9.xyz, r9.xyzx
@@ -391,7 +391,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 347 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 347 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r3.xyz, r3.xyzx, r8.xyzx
@@ -400,7 +400,7 @@ loop
   mov r11.xyz, r11.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 85 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 85 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   dp3 r2.w, r8.xyzx, r11.xyzx
   dp3 r3.w, r8.xyzx, r9.xyzx
   mul r2.w, r2.w, r3.w  // r2.w <- a1
@@ -453,7 +453,7 @@ loop
     div r4.w, r3.w, r2.w
   endif 
 
-#line 350 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 350 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r4.wwww  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r4.xyz, r4.xyzx, r7.xyzx
@@ -476,10 +476,10 @@ ret
 
 const BYTE g_ward_duer_ps[] =
 {
-     68,  88,  66,  67,  10, 242, 
-    252, 242, 194,  88, 208, 148, 
-    202, 123,  44, 196, 134,  78, 
-     17, 208,   1,   0,   0,   0, 
+     68,  88,  66,  67, 126,  31, 
+    130, 145,  51, 191,  45, 234, 
+     28,  57, 237,  72, 182, 142, 
+     70, 247,   1,   0,   0,   0, 
     144, 154,   1,   0,   6,   0, 
       0,   0,  56,   0,   0,   0, 
     204,   7,   0,   0, 100,   8, 
@@ -2463,11 +2463,11 @@ const BYTE g_ward_duer_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0, 148,  46, 
-     49,   1, 136, 129,  19,  89, 
-      1,   0,   0,   0, 149, 111, 
-     83,  79, 227,  46, 112,  72, 
-    142,  31,   6, 147,  35, 163, 
-     21, 112,   0,   0,   0,   0, 
+     49,   1, 198, 170,  21,  89, 
+      1,   0,   0,   0, 129,  37, 
+    181,  91, 196, 135, 177,  66, 
+    191,  36, 207,  72, 207,   8, 
+    184, 127,   0,   0,   0,   0, 
       0,   0,   0,   0,   1,   0, 
       0,   0,   1,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -2550,7 +2550,7 @@ const BYTE g_ward_duer_ps[] =
       0,   0,   0,   0,   0,   0, 
     254, 239, 254, 239,   1,   0, 
       0,   0,  34, 118,   0,   0, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -2566,7 +2566,7 @@ const BYTE g_ward_duer_ps[] =
     115,  92, 119,  97, 114, 100, 
      95, 100, 117, 101, 114,  95, 
      80,  83,  46, 104, 108, 115, 
-    108,   0,   0,  99,  58,  92, 
+    108,   0,   0, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -2582,7 +2582,7 @@ const BYTE g_ward_duer_ps[] =
     101, 114, 115,  92, 119,  97, 
     114, 100,  95, 100, 117, 101, 
     114,  95, 112, 115,  46, 104, 
-    108, 115, 108,   0,  67,  58, 
+    108, 115, 108,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -2597,7 +2597,7 @@ const BYTE g_ward_duer_ps[] =
      71,  69,  92, 115, 104,  97, 
     100, 101, 114, 115,  92,  98, 
      97, 115, 105,  99,  46, 102, 
-    120,   0,  99,  58,  92, 117, 
+    120,   0, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 100, 111,  99, 117, 
@@ -2612,7 +2612,7 @@ const BYTE g_ward_duer_ps[] =
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98,  97, 115, 
     105,  99,  46, 102, 120,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -2629,7 +2629,7 @@ const BYTE g_ward_duer_ps[] =
     112, 117, 116,  95, 115, 116, 
     114, 117,  99, 116, 117, 114, 
     101, 115,  46, 102, 120,   0, 
-     99,  58,  92, 117, 115, 101, 
+    100,  58,  92, 117, 115, 101, 
     114, 115,  92, 109,  97, 116, 
     116, 104, 105,  97, 115,  92, 
     100, 111,  99, 117, 109, 101, 
@@ -2654,7 +2654,7 @@ const BYTE g_ward_duer_ps[] =
       0,   0, 105, 105,   0,   0, 
     135,  21,   0,   0, 249,  38, 
       0,   0, 234, 107,   0,   0, 
-    172,  22,   0,   0,  21, 100, 
+    172,  22,   0,   0, 102,  82, 
       0,   0, 123,  92,   0,   0, 
      28, 106,   0,   0,  77, 117, 
       0,   0, 152,  71,   0,   0, 
@@ -7924,7 +7924,7 @@ const BYTE g_ward_duer_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
-     99,  58,  92, 117, 115, 101, 
+    100,  58,  92, 117, 115, 101, 
     114, 115,  92, 109,  97, 116, 
     116, 104, 105,  97, 115,  92, 
     100, 111,  99, 117, 109, 101, 
@@ -8022,7 +8022,7 @@ const BYTE g_ward_duer_ps[] =
     112, 117, 116,  95, 115, 116, 
     114, 117,  99, 116, 117, 114, 
     101, 115,  46, 102, 120,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -8036,7 +8036,7 @@ const BYTE g_ward_duer_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92,  98, 114, 100, 102,  46, 
-    102, 120,   0,  99,  58,  92, 
+    102, 120,   0, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -8051,7 +8051,7 @@ const BYTE g_ward_duer_ps[] =
     101,  92, 115, 104,  97, 100, 
     101, 114, 115,  92,  98, 114, 
     100, 102,  46, 102, 120,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -8065,7 +8065,7 @@ const BYTE g_ward_duer_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92,  98, 117, 109, 112,  46, 
-    102, 120,   0,  99,  58,  92, 
+    102, 120,   0, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -8080,7 +8080,7 @@ const BYTE g_ward_duer_ps[] =
     101,  92, 115, 104,  97, 100, 
     101, 114, 115,  92,  98, 117, 
     109, 112,  46, 102, 120,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -8181,8 +8181,8 @@ const BYTE g_ward_duer_ps[] =
      45,  45,  45,  45,  45,  45, 
      45,  45,  45,  45,  45,  45, 
      27, 226,  48,   1,  92,   1, 
-      0,   0,  41, 212,   4, 182, 
-    209, 201, 210,   1,   1,   0, 
+      0,   0,  45,  55, 216, 119, 
+     27, 203, 210,   1,   1,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -11673,7 +11673,7 @@ const BYTE g_ward_duer_ps[] =
      19,  16,   0,   0,  23,   0, 
       4,   0,  30,  16,   0,   0, 
      14,   0,  23,  21,   0,  16, 
-      0,   0,   3,   2, 240,   0, 
+      0,   0,   3,   2, 224,   0, 
       0,   0, 242, 241,  10,   0, 
      24,  21,  32,  16,   0,   0, 
       1,   0,   1,   0,  10,   0, 
@@ -16636,24 +16636,24 @@ const BYTE g_ward_duer_ps[] =
     102,  32,  42,  32, 108, 105, 
     103, 104, 116,  46,  73,  59, 
      13,  10, 125,   0,  26,   0, 
+      0,   0, 218,   1,   0,   0, 
+    116,   1,   0,   0,  76,   4, 
+      0,   0,  25, 103,   0,   0, 
       0,   0,   0,   0,   0,   0, 
-     25, 103,   0,   0,   0,   0, 
-      0,   0, 156,   3,   0,   0, 
-     99,   0,   0,   0,   1,   0, 
-      0,   0, 196,   0,   0,   0, 
-     28,   1,   0,   0, 244,   3, 
-      0,   0, 238,   2,   0,   0, 
-     69,   3,   0,   0,  64,   2, 
-      0,   0, 151,   2,   0,   0, 
-     96,   4,   0,   0, 201,  87, 
+      0,   0, 201,  87,   0,   0, 
+      0,   0,   0,   0,   0,   0, 
+      0,   0,   0,   0,   0,   0, 
+    238,   2,   0,   0,  69,   3, 
+      0,   0,  64,   2,   0,   0, 
+    151,   2,   0,   0,   1,   0, 
+      0,   0,  99,   0,   0,   0, 
+     96,   4,   0,   0, 238,  82, 
       0,   0, 159, 109,   0,   0, 
-    238,  82,   0,   0,   0,   0, 
-      0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,  98,   0, 
       0,   0,   0,   0,   0,   0, 
-    116,   1,   0,   0, 218,   1, 
-      0,   0,   0,   0,   0,   0, 
-     76,   4,   0,   0,  19,   0, 
+    156,   3,   0,   0, 244,   3, 
+      0,   0, 196,   0,   0,   0, 
+     28,   1,   0,   0,  19,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -17244,14 +17244,14 @@ const BYTE g_ward_duer_ps[] =
       0,   0,   2,   0,  14,   0, 
     136,  48,   0,   0,   0,   0, 
       0,   0,  12,  28,   0,   0, 
-      6,   0,   0,   0, 160,  41, 
-    211,   0,   0,   0,   0,   0, 
+      6,   0,   0,   0, 232,  38, 
+      8,   1,   0,   0,   0,   0, 
       0,   0,   0,   0,  87,  97, 
     114, 100,  68, 117, 101, 114, 
      95,  80,  83,   0, 110, 111, 
     110, 101,   0,   0,   0,   0, 
      45, 186,  46, 241,   1,   0, 
-    219,   0,   0,   0,   0,   0, 
+    137,   1,   0,   0,   0,   0, 
      76,  27,   0,   0,  32,   0, 
       0,  96,   0,   0,  77,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -17268,7 +17268,7 @@ const BYTE g_ward_duer_ps[] =
       0,   0, 185,   0,   0,   0, 
      31,   1,   0,   0, 118,   1, 
       0,   0, 205,   1,   0,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -17284,7 +17284,7 @@ const BYTE g_ward_duer_ps[] =
      92, 119,  97, 114, 100,  95, 
     100, 117, 101, 114,  95,  80, 
      83,  46, 104, 108, 115, 108, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -17298,7 +17298,7 @@ const BYTE g_ward_duer_ps[] =
      92,  77,  65,  71,  69,  92, 
     115, 104,  97, 100, 101, 114, 
     115,  92,  98,  97, 115, 105, 
-     99,  46, 102, 120,   0,  67, 
+     99,  46, 102, 120,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -17315,7 +17315,7 @@ const BYTE g_ward_duer_ps[] =
     118, 115,  95, 105, 110, 112, 
     117, 116,  95, 115, 116, 114, 
     117,  99, 116, 117, 114, 101, 
-    115,  46, 102, 120,   0,  67, 
+    115,  46, 102, 120,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -17330,7 +17330,7 @@ const BYTE g_ward_duer_ps[] =
      65,  71,  69,  92, 115, 104, 
      97, 100, 101, 114, 115,  92, 
      98, 114, 100, 102,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -17344,7 +17344,7 @@ const BYTE g_ward_duer_ps[] =
      69,  92,  77,  65,  71,  69, 
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98, 117, 109, 
-    112,  46, 102, 120,   0,  67, 
+    112,  46, 102, 120,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -17396,11 +17396,11 @@ const BYTE g_ward_duer_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
-    148,  46,  49,   1, 136, 129, 
-     19,  89,   1,   0,   0,   0, 
-    149, 111,  83,  79, 227,  46, 
-    112,  72, 142,  31,   6, 147, 
-     35, 163,  21, 112, 137,   2, 
+    148,  46,  49,   1, 198, 170, 
+     21,  89,   1,   0,   0,   0, 
+    129,  37, 181,  91, 196, 135, 
+    177,  66, 191,  36, 207,  72, 
+    207,   8, 184, 127, 137,   2, 
       0,   0,  47,  76, 105, 110, 
     107,  73, 110, 102, 111,   0, 
      47, 110,  97, 109, 101, 115, 
@@ -17408,7 +17408,7 @@ const BYTE g_ward_duer_ps[] =
     104, 101,  97, 100, 101, 114, 
      98, 108, 111,  99, 107,   0, 
      47, 115, 114,  99,  47, 102, 
-    105, 108, 101, 115,  47,  99, 
+    105, 108, 101, 115,  47, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -17426,7 +17426,7 @@ const BYTE g_ward_duer_ps[] =
     117, 101, 114,  95, 112, 115, 
      46, 104, 108, 115, 108,   0, 
      47, 115, 114,  99,  47, 102, 
-    105, 108, 101, 115,  47,  99, 
+    105, 108, 101, 115,  47, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -17443,7 +17443,7 @@ const BYTE g_ward_duer_ps[] =
      98,  97, 115, 105,  99,  46, 
     102, 120,   0,  47, 115, 114, 
      99,  47, 102, 105, 108, 101, 
-    115,  47,  99,  58,  92, 117, 
+    115,  47, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 100, 111,  99, 117, 
@@ -17462,7 +17462,7 @@ const BYTE g_ward_duer_ps[] =
     117, 114, 101, 115,  46, 102, 
     120,   0,  47, 115, 114,  99, 
      47, 102, 105, 108, 101, 115, 
-     47,  99,  58,  92, 117, 115, 
+     47, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -17478,7 +17478,7 @@ const BYTE g_ward_duer_ps[] =
     115,  92,  98, 114, 100, 102, 
      46, 102, 120,   0,  47, 115, 
     114,  99,  47, 102, 105, 108, 
-    101, 115,  47,  99,  58,  92, 
+    101, 115,  47, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -17494,7 +17494,7 @@ const BYTE g_ward_duer_ps[] =
     101, 114, 115,  92,  98, 117, 
     109, 112,  46, 102, 120,   0, 
      47, 115, 114,  99,  47, 102, 
-    105, 108, 101, 115,  47,  99, 
+    105, 108, 101, 115,  47, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -17511,20 +17511,20 @@ const BYTE g_ward_duer_ps[] =
     108, 105, 103, 104, 116,  46, 
     102, 120,   0,   9,   0,   0, 
       0,  14,   0,   0,   0,   1, 
-      0,   0,   0, 163,  62,   0, 
-      0,   0,   0,   0,   0, 241, 
-      0,   0,   0,  10,   0,   0, 
-      0,  34,   0,   0,   0,   8, 
-      0,   0,   0,  10,   0,   0, 
-      0,   6,   0,   0,   0,   0, 
-      0,   0,   0,   5,   0,   0, 
-      0,  17,   0,   0,   0,   7, 
-      0,   0,   0,  98,   1,   0, 
-      0,  11,   0,   0,   0, 142, 
+      0,   0,   0, 161,  63,   0, 
+      0,   0,   0,   0,   0, 142, 
       0,   0,   0,   9,   0,   0, 
-      0, 196,   1,   0,   0,  12, 
-      0,   0,   0,  38,   2,   0, 
-      0,  13,   0,   0,   0,   0, 
+      0,  10,   0,   0,   0,   6, 
+      0,   0,   0,   0,   0,   0, 
+      0,   5,   0,   0,   0, 241, 
+      0,   0,   0,  10,   0,   0, 
+      0,  17,   0,   0,   0,   7, 
+      0,   0,   0, 196,   1,   0, 
+      0,  12,   0,   0,   0,  38, 
+      2,   0,   0,  13,   0,   0, 
+      0,  98,   1,   0,   0,  11, 
+      0,   0,   0,  34,   0,   0, 
+      0,   8,   0,   0,   0,   0, 
       0,   0,   0,  65, 145,  50, 
       1,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 

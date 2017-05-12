@@ -118,7 +118,7 @@ dcl_temps 13
 //   v3.x <- input.tex.x; v3.y <- input.tex.y; 
 //   o0.x <- <CookTorrance_PS return value>.x; o0.y <- <CookTorrance_PS return value>.y; o0.z <- <CookTorrance_PS return value>.z; o0.w <- <CookTorrance_PS return value>.w
 //
-#line 471 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 471 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r0.xyz, v1.xyzx  // r0.x <- p.x; r0.y <- p.y; r0.z <- p.z
 nop 
 mov r0.xyz, r0.xyzx
@@ -138,7 +138,7 @@ nop
 mov r1.xyz, r1.xyzx
 mov r4.xyz, -cb2[2].xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
 nop 
 mov r1.xyz, r1.xyzx
 mov r4.xyz, r4.xyzx
@@ -150,7 +150,7 @@ max r4.xyz, r0.wwww, l(0.000000, 0.000000, 0.000000, 0.000000)  // r4.z <- <max_
 #line 32
 mov r4.xyz, r4.xyzx  // r4.z <- <LambertianBRDF return value>
 
-#line 367 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 367 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r4.xyz, r4.xyzx  // r4.x <- brdf.x; r4.y <- brdf.y; r4.z <- brdf.z
 mul r4.xyz, r4.xyzx, cb2[1].xyzx
 add r4.xyz, r4.xyzx, cb2[0].xyzx  // r4.x <- I_diffuse.x; r4.y <- I_diffuse.y; r4.z <- I_diffuse.z
@@ -182,7 +182,7 @@ loop
   mov r9.xy, r9.xyxx
   mov r11.xyz, r0.xyzx
 
-#line 45 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 45 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r11.xyz, -r11.xyzx
   add r7.xyz, r7.xyzx, r11.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -205,13 +205,13 @@ loop
   mov r2.w, r2.w  // r2.w <- df
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <OmniLightMaxContribution return value>.x; r7.y <- <OmniLightMaxContribution return value>.y; r7.z <- <OmniLightMaxContribution return value>.z
 
-#line 374 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 374 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r10.xyz, r10.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r10.xyz, r10.xyzx
@@ -223,7 +223,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 376 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 376 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r5.xyz, r5.xyzx, r8.xyzx
@@ -232,7 +232,7 @@ loop
   mov r10.xyz, r10.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 99 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 99 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   dp3 r2.w, r8.xyzx, r10.xyzx  // r2.w <- n_dot_l
   dp3 r3.w, r8.xyzx, r9.xyzx  // r3.w <- n_dot_v
   mul r4.w, r2.w, r3.w  // r4.w <- a1
@@ -320,7 +320,7 @@ loop
     endif 
   endif 
 
-#line 379 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 379 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r6.wwww  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r6.xyz, r6.xyzx, r7.xyzx
@@ -362,7 +362,7 @@ loop
   mov r12.xyz, r0.xyzx
   mov r11.xyz, r11.xyzx
 
-#line 52 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 52 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r12.xyz, -r12.xyzx
   add r7.xyz, r7.xyzx, r12.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -408,13 +408,13 @@ loop
   mul r2.w, r2.w, r3.w
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <SpotLightMaxContribution return value>.x; r7.y <- <SpotLightMaxContribution return value>.y; r7.z <- <SpotLightMaxContribution return value>.z
 
-#line 387 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 387 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r9.xyz, r11.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r9.xyz, r9.xyzx
@@ -426,7 +426,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 389 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 389 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r3.xyz, r3.xyzx, r8.xyzx
@@ -435,7 +435,7 @@ loop
   mov r11.xyz, r11.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 99 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 99 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   dp3 r2.w, r8.xyzx, r11.xyzx  // r2.w <- n_dot_l
   dp3 r3.w, r8.xyzx, r9.xyzx  // r3.w <- n_dot_v
   mul r4.w, r2.w, r3.w  // r4.w <- a1
@@ -523,7 +523,7 @@ loop
     endif 
   endif 
 
-#line 392 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 392 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r6.wwww  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r4.xyz, r4.xyzx, r7.xyzx
@@ -546,10 +546,10 @@ ret
 
 const BYTE g_cook_torrance_ps[] =
 {
-     68,  88,  66,  67, 248, 123, 
-    255, 109, 233, 126, 236,  13, 
-      8, 251, 133,  97, 152, 154, 
-    255, 121,   1,   0,   0,   0, 
+     68,  88,  66,  67, 254,  41, 
+    192, 232, 188,  44,  44,  63, 
+     23,  50, 206,  18, 131, 251, 
+     82, 251,   1,   0,   0,   0, 
     232, 167,   1,   0,   6,   0, 
       0,   0,  56,   0,   0,   0, 
     204,   7,   0,   0, 100,   8, 
@@ -2761,11 +2761,11 @@ const BYTE g_cook_torrance_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0, 148,  46, 
-     49,   1, 117, 129,  19,  89, 
-      1,   0,   0,   0, 231, 157, 
-     78,  52, 232,  47,  72,  73, 
-    137, 206, 182, 255, 191,  33, 
-     69,  90,   0,   0,   0,   0, 
+     49,   1, 177, 170,  21,  89, 
+      1,   0,   0,   0, 128,  55, 
+      6,  99,  93, 224, 131,  74, 
+    164,  39,  16,  36, 118,  68, 
+     66,  30,   0,   0,   0,   0, 
       0,   0,   0,   0,   1,   0, 
       0,   0,   1,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -2848,7 +2848,7 @@ const BYTE g_cook_torrance_ps[] =
       0,   0,   0,   0,   0,   0, 
     254, 239, 254, 239,   1,   0, 
       0,   0,  42, 118,   0,   0, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -2865,7 +2865,7 @@ const BYTE g_cook_torrance_ps[] =
      95, 116, 111, 114, 114,  97, 
     110,  99, 101,  95,  80,  83, 
      46, 104, 108, 115, 108,   0, 
-      0,  99,  58,  92, 117, 115, 
+      0, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -2882,7 +2882,7 @@ const BYTE g_cook_torrance_ps[] =
      95, 116, 111, 114, 114,  97, 
     110,  99, 101,  95, 112, 115, 
      46, 104, 108, 115, 108,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -2896,7 +2896,7 @@ const BYTE g_cook_torrance_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92,  98,  97, 115, 105,  99, 
-     46, 102, 120,   0,  99,  58, 
+     46, 102, 120,   0, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -2911,7 +2911,7 @@ const BYTE g_cook_torrance_ps[] =
     103, 101,  92, 115, 104,  97, 
     100, 101, 114, 115,  92,  98, 
      97, 115, 105,  99,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -2928,7 +2928,7 @@ const BYTE g_cook_torrance_ps[] =
     105, 110, 112, 117, 116,  95, 
     115, 116, 114, 117,  99, 116, 
     117, 114, 101, 115,  46, 102, 
-    120,   0,  99,  58,  92, 117, 
+    120,   0, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 119, 115,   0,   0, 
@@ -2954,7 +2954,7 @@ const BYTE g_cook_torrance_ps[] =
       0,   0, 135,  21,   0,   0, 
      54,  66,   0,   0, 234, 107, 
       0,   0, 227, 111,   0,   0, 
-     98, 114,   0,   0,  89,  98, 
+     64,  68,   0,   0,  89,  98, 
       0,   0,  56,  90,   0,   0, 
      77, 117,   0,   0, 224,  40, 
       0,   0, 144,  24,   0,   0, 
@@ -8223,7 +8223,7 @@ const BYTE g_cook_torrance_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
     105, 103, 104, 116,  46, 102, 
-    120,   0,  99,  58,  92, 117, 
+    120,   0, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 100, 111,  99, 117, 
@@ -8321,7 +8321,7 @@ const BYTE g_cook_torrance_ps[] =
     105, 110, 112, 117, 116,  95, 
     115, 116, 114, 117,  99, 116, 
     117, 114, 101, 115,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -8335,7 +8335,7 @@ const BYTE g_cook_torrance_ps[] =
      69,  92,  77,  65,  71,  69, 
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98, 114, 100, 
-    102,  46, 102, 120,   0,  99, 
+    102,  46, 102, 120,   0, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -8350,7 +8350,7 @@ const BYTE g_cook_torrance_ps[] =
      97, 103, 101,  92, 115, 104, 
      97, 100, 101, 114, 115,  92, 
      98, 114, 100, 102,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -8364,7 +8364,7 @@ const BYTE g_cook_torrance_ps[] =
      69,  92,  77,  65,  71,  69, 
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98, 117, 109, 
-    112,  46, 102, 120,   0,  99, 
+    112,  46, 102, 120,   0, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -8379,7 +8379,7 @@ const BYTE g_cook_torrance_ps[] =
      97, 103, 101,  92, 115, 104, 
      97, 100, 101, 114, 115,  92, 
      98, 117, 109, 112,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -8479,8 +8479,8 @@ const BYTE g_cook_torrance_ps[] =
      45,  45,  45,  45,  45,  45, 
      45,  45,  45,  45,  45,  45, 
      27, 226,  48,   1,  92,   1, 
-      0,   0, 108,  19, 182, 170, 
-    209, 201, 210,   1,   1,   0, 
+      0,   0,  27, 170, 159, 107, 
+     27, 203, 210,   1,   1,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -12489,7 +12489,7 @@ const BYTE g_cook_torrance_ps[] =
      23,   0,   4,   0,  32,  16, 
       0,   0,  14,   0,  23,  21, 
       0,  16,   0,   0,   3,   2, 
-     64,   1,   0,   0, 242, 241, 
+     32,   1,   0,   0, 242, 241, 
      10,   0,  24,  21,  34,  16, 
       0,   0,   1,   0,   1,   0, 
      10,   0,  24,  21,  35,  16, 
@@ -17447,24 +17447,24 @@ const BYTE g_cook_torrance_ps[] =
      32,  97, 102,  32,  42,  32, 
     108, 105, 103, 104, 116,  46, 
      73,  59,  13,  10, 125,   0, 
-     26,   0,   0,   0,   0,   0, 
-      0,   0,  33, 103,   0,   0, 
-      0,   0,   0,   0, 164,   3, 
-      0,   0, 252,   3,   0,   0, 
-    204,   0,   0,   0,  36,   1, 
-      0,   0, 209,  87,   0,   0, 
-      0,   0,   0,   0, 246,   2, 
-      0,   0,  77,   3,   0,   0, 
-     72,   2,   0,   0, 159,   2, 
+     26,   0,   0,   0, 124,   1, 
+      0,   0, 226,   1,   0,   0, 
+     84,   4,   0,   0,  33, 103, 
+      0,   0,   0,   0,   0,   0, 
+      0,   0,   0,   0, 209,  87, 
+      0,   0,   0,   0,   0,   0, 
+      0,   0,   0,   0,   0,   0, 
+      0,   0, 246,   2,   0,   0, 
+     77,   3,   0,   0,  72,   2, 
+      0,   0, 159,   2,   0,   0, 
+      1,   0,   0,   0, 103,   0, 
       0,   0, 104,   4,   0,   0, 
-    167, 109,   0,   0,   0,   0, 
-      0,   0, 246,  82,   0,   0, 
+    246,  82,   0,   0, 167, 109, 
       0,   0,   0,   0,   0,   0, 
-      0,   0,   0,   0,   0,   0, 
-    102,   0,   0,   0,   1,   0, 
-      0,   0, 124,   1,   0,   0, 
-    226,   1,   0,   0, 103,   0, 
-      0,   0,  84,   4,   0,   0, 
+    102,   0,   0,   0,   0,   0, 
+      0,   0, 164,   3,   0,   0, 
+    252,   3,   0,   0, 204,   0, 
+      0,   0,  36,   1,   0,   0, 
      19,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -18054,14 +18054,14 @@ const BYTE g_cook_torrance_ps[] =
       0,   0,   2,   0,  14,   0, 
     152,  55,   0,   0,   0,   0, 
       0,   0, 156,  33,   0,   0, 
-      6,   0,   0,   0, 208,  90, 
-    231,   0,   0,   0,   0,   0, 
+      6,   0,   0,   0,  88,  76, 
+     69,   1,   0,   0,   0,   0, 
       0,   0,   0,   0,  67, 111, 
     111, 107,  84, 111, 114, 114, 
      97, 110,  99, 101,  95,  80, 
      83,   0, 110, 111, 110, 101, 
       0,   0,   0,   0,  45, 186, 
-     46, 241,   1,   0, 239,   0, 
+     46, 241,   1,   0, 194,   1, 
       0,   0,   0,   0, 164,  32, 
       0,   0,  32,   0,   0,  96, 
       0,   0,  77,   0,   0,   0, 
@@ -18078,7 +18078,7 @@ const BYTE g_cook_torrance_ps[] =
       0,   0, 101,   0,   0,   0, 
     189,   0,   0,   0,  35,   1, 
       0,   0, 122,   1,   0,   0, 
-    209,   1,   0,   0,  67,  58, 
+    209,   1,   0,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -18095,7 +18095,7 @@ const BYTE g_cook_torrance_ps[] =
     111, 111, 107,  95, 116, 111, 
     114, 114,  97, 110,  99, 101, 
      95,  80,  83,  46, 104, 108, 
-    115, 108,   0,  67,  58,  92, 
+    115, 108,   0,  68,  58,  92, 
      85, 115, 101, 114, 115,  92, 
      77,  97, 116, 116, 104, 105, 
      97, 115,  92,  68, 111,  99, 
@@ -18110,7 +18110,7 @@ const BYTE g_cook_torrance_ps[] =
      69,  92, 115, 104,  97, 100, 
     101, 114, 115,  92,  98,  97, 
     115, 105,  99,  46, 102, 120, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -18127,7 +18127,7 @@ const BYTE g_cook_torrance_ps[] =
     110, 112, 117, 116,  95, 115, 
     116, 114, 117,  99, 116, 117, 
     114, 101, 115,  46, 102, 120, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -18141,7 +18141,7 @@ const BYTE g_cook_torrance_ps[] =
      92,  77,  65,  71,  69,  92, 
     115, 104,  97, 100, 101, 114, 
     115,  92,  98, 114, 100, 102, 
-     46, 102, 120,   0,  67,  58, 
+     46, 102, 120,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -18156,7 +18156,7 @@ const BYTE g_cook_torrance_ps[] =
      71,  69,  92, 115, 104,  97, 
     100, 101, 114, 115,  92,  98, 
     117, 109, 112,  46, 102, 120, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -18206,11 +18206,11 @@ const BYTE g_cook_torrance_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
-    148,  46,  49,   1, 117, 129, 
-     19,  89,   1,   0,   0,   0, 
-    231, 157,  78,  52, 232,  47, 
-     72,  73, 137, 206, 182, 255, 
-    191,  33,  69,  90, 141,   2, 
+    148,  46,  49,   1, 177, 170, 
+     21,  89,   1,   0,   0,   0, 
+    128,  55,   6,  99,  93, 224, 
+    131,  74, 164,  39,  16,  36, 
+    118,  68,  66,  30, 141,   2, 
       0,   0,  47,  76, 105, 110, 
     107,  73, 110, 102, 111,   0, 
      47, 110,  97, 109, 101, 115, 
@@ -18218,7 +18218,7 @@ const BYTE g_cook_torrance_ps[] =
     104, 101,  97, 100, 101, 114, 
      98, 108, 111,  99, 107,   0, 
      47, 115, 114,  99,  47, 102, 
-    105, 108, 101, 115,  47,  99, 
+    105, 108, 101, 115,  47, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -18237,7 +18237,7 @@ const BYTE g_cook_torrance_ps[] =
     101,  95, 112, 115,  46, 104, 
     108, 115, 108,   0,  47, 115, 
     114,  99,  47, 102, 105, 108, 
-    101, 115,  47,  99,  58,  92, 
+    101, 115,  47, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -18254,7 +18254,7 @@ const BYTE g_cook_torrance_ps[] =
     115, 105,  99,  46, 102, 120, 
       0,  47, 115, 114,  99,  47, 
     102, 105, 108, 101, 115,  47, 
-     99,  58,  92, 117, 115, 101, 
+    100,  58,  92, 117, 115, 101, 
     114, 115,  92, 109,  97, 116, 
     116, 104, 105,  97, 115,  92, 
     100, 111,  99, 117, 109, 101, 
@@ -18272,7 +18272,7 @@ const BYTE g_cook_torrance_ps[] =
     114, 117,  99, 116, 117, 114, 
     101, 115,  46, 102, 120,   0, 
      47, 115, 114,  99,  47, 102, 
-    105, 108, 101, 115,  47,  99, 
+    105, 108, 101, 115,  47, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -18289,7 +18289,7 @@ const BYTE g_cook_torrance_ps[] =
      98, 114, 100, 102,  46, 102, 
     120,   0,  47, 115, 114,  99, 
      47, 102, 105, 108, 101, 115, 
-     47,  99,  58,  92, 117, 115, 
+     47, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -18305,7 +18305,7 @@ const BYTE g_cook_torrance_ps[] =
     115,  92,  98, 117, 109, 112, 
      46, 102, 120,   0,  47, 115, 
     114,  99,  47, 102, 105, 108, 
-    101, 115,  47,  99,  58,  92, 
+    101, 115,  47, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -18322,19 +18322,19 @@ const BYTE g_cook_torrance_ps[] =
     103, 104, 116,  46, 102, 120, 
       0,   9,   0,   0,   0,  14, 
       0,   0,   0,   1,   0,   0, 
-      0, 163,  62,   0,   0,   0, 
-      0,   0,   0, 245,   0,   0, 
-      0,  10,   0,   0,   0,  42, 
-      2,   0,   0,  13,   0,   0, 
-      0,  10,   0,   0,   0,   6, 
-      0,   0,   0,   0,   0,   0, 
-      0,   5,   0,   0,   0,  17, 
-      0,   0,   0,   7,   0,   0, 
-      0, 102,   1,   0,   0,  11, 
+      0, 161,  63,   0,   0,   0, 
+      0,   0,   0,  42,   2,   0, 
+      0,  13,   0,   0,   0,  10, 
+      0,   0,   0,   6,   0,   0, 
+      0,   0,   0,   0,   0,   5, 
       0,   0,   0,  34,   0,   0, 
-      0,   8,   0,   0,   0, 146, 
-      0,   0,   0,   9,   0,   0, 
-      0, 200,   1,   0,   0,  12, 
+      0,   8,   0,   0,   0,  17, 
+      0,   0,   0,   7,   0,   0, 
+      0, 245,   0,   0,   0,  10, 
+      0,   0,   0, 200,   1,   0, 
+      0,  12,   0,   0,   0, 102, 
+      1,   0,   0,  11,   0,   0, 
+      0, 146,   0,   0,   0,   9, 
       0,   0,   0,   0,   0,   0, 
       0,  65, 145,  50,   1,   0, 
       0,   0,   0,   0,   0,   0, 
