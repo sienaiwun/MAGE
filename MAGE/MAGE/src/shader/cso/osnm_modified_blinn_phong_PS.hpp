@@ -131,11 +131,11 @@ dcl_temps 13
 //   v3.x <- input.tex.x; v3.y <- input.tex.y; 
 //   o0.x <- <ObjectSpaceNormalMapping_ModifiedBlinnPhong_PS return value>.x; o0.y <- <ObjectSpaceNormalMapping_ModifiedBlinnPhong_PS return value>.y; o0.z <- <ObjectSpaceNormalMapping_ModifiedBlinnPhong_PS return value>.z; o0.w <- <ObjectSpaceNormalMapping_ModifiedBlinnPhong_PS return value>.w
 //
-#line 545 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 545 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r0.xyz, v1.xyzx  // r0.x <- p.x; r0.y <- p.y; r0.z <- p.z
 nop 
 
-#line 35 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\normal_mapping.fx"
+#line 35 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\normal_mapping.fx"
 sample_indexable(texture2d)(float,float,float,float) r1.xyz, v3.xyxx, t4.xyzw, s0
 mov r1.xyz, r1.xyzx  // r1.x <- coefficients.x; r1.y <- coefficients.y; r1.z <- coefficients.z
 mul r1.xyz, r1.xyzx, l(2.000000, 2.000000, 2.000000, 0.000000)
@@ -148,7 +148,7 @@ dp3 r0.w, r2.xyzx, r2.xyzx
 rsq r0.w, r0.w
 mul r1.xyz, r0.wwww, r2.xyzx  // r1.x <- <ObjectSpaceNormalMapping_PerturbNormal return value>.x; r1.y <- <ObjectSpaceNormalMapping_PerturbNormal return value>.y; r1.z <- <ObjectSpaceNormalMapping_PerturbNormal return value>.z
 
-#line 546 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 546 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r1.xyz, r1.xyzx  // r1.x <- n.x; r1.y <- n.y; r1.z <- n.z
 nop 
 mov r0.xyz, r0.xyzx
@@ -168,7 +168,7 @@ nop
 mov r1.xyz, r1.xyzx
 mov r4.xyz, -cb2[2].xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
 nop 
 mov r1.xyz, r1.xyzx
 mov r4.xyz, r4.xyzx
@@ -180,7 +180,7 @@ max r4.xyz, r0.wwww, l(0.000000, 0.000000, 0.000000, 0.000000)  // r4.z <- <max_
 #line 32
 mov r4.xyz, r4.xyzx  // r4.z <- <LambertianBRDF return value>
 
-#line 241 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 241 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r4.xyz, r4.xyzx  // r4.x <- brdf.x; r4.y <- brdf.y; r4.z <- brdf.z
 mul r4.xyz, r4.xyzx, cb2[1].xyzx
 add r4.xyz, r4.xyzx, cb2[0].xyzx  // r4.x <- I_diffuse.x; r4.y <- I_diffuse.y; r4.z <- I_diffuse.z
@@ -212,7 +212,7 @@ loop
   mov r9.xy, r9.xyxx
   mov r11.xyz, r0.xyzx
 
-#line 45 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 45 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r11.xyz, -r11.xyzx
   add r7.xyz, r7.xyzx, r11.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -235,13 +235,13 @@ loop
   mov r2.w, r2.w  // r2.w <- df
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <OmniLightMaxContribution return value>.x; r7.y <- <OmniLightMaxContribution return value>.y; r7.z <- <OmniLightMaxContribution return value>.z
 
-#line 248 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 248 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r10.xyz, r10.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r10.xyz, r10.xyzx
@@ -253,7 +253,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 250 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 250 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r5.xyz, r5.xyzx, r8.xyzx
@@ -262,7 +262,7 @@ loop
   mov r10.xyz, r10.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 49 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 49 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r10.xyz, r10.xyzx
   mov r9.xyz, r9.xyzx
@@ -288,7 +288,7 @@ loop
   mul r2.w, r2.w, cb1[1].w
   exp r8.xyz, r2.wwww  // r8.z <- <ModifiedBlinnPhongBRDF return value>
 
-#line 253 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 253 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r6.xyz, r6.xyzx, r7.xyzx
@@ -330,7 +330,7 @@ loop
   mov r12.xyz, r0.xyzx
   mov r11.xyz, r11.xyzx
 
-#line 52 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 52 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r12.xyz, -r12.xyzx
   add r7.xyz, r7.xyzx, r12.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -376,13 +376,13 @@ loop
   mul r2.w, r2.w, r3.w
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <SpotLightMaxContribution return value>.x; r7.y <- <SpotLightMaxContribution return value>.y; r7.z <- <SpotLightMaxContribution return value>.z
 
-#line 261 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 261 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r9.xyz, r11.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r9.xyz, r9.xyzx
@@ -394,7 +394,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 263 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 263 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r3.xyz, r3.xyzx, r8.xyzx
@@ -403,7 +403,7 @@ loop
   mov r11.xyz, r11.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 49 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 49 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r11.xyz, r11.xyzx
   mov r9.xyz, r9.xyzx
@@ -429,7 +429,7 @@ loop
   mul r2.w, r2.w, cb1[1].w
   exp r8.xyz, r2.wwww  // r8.z <- <ModifiedBlinnPhongBRDF return value>
 
-#line 266 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 266 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r4.xyz, r4.xyzx, r7.xyzx
@@ -452,10 +452,10 @@ ret
 
 const BYTE g_osnm_modified_blinn_phong_ps[] =
 {
-     68,  88,  66,  67, 119, 143, 
-     62, 123, 240, 150, 252, 252, 
-    171, 254, 135,  79,  45, 159, 
-    178, 126,   1,   0,   0,   0, 
+     68,  88,  66,  67, 197,  81, 
+    228,  56, 219,  21, 206, 233, 
+    208,   0, 168, 185,  98, 105, 
+    214, 187,   1,   0,   0,   0, 
      84, 151,   1,   0,   6,   0, 
       0,   0,  56,   0,   0,   0, 
     100,   9,   0,   0, 252,   9, 
@@ -2301,11 +2301,11 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0, 148,  46, 
-     49,   1, 244,  11,  65,  89, 
-      1,   0,   0,   0, 191, 200, 
-    220,  19,  78, 147, 137,  64, 
-    128,  54, 145, 243,  84, 195, 
-     64,  88,   0,   0,   0,   0, 
+     49,   1, 188,  72,  86,  89, 
+      1,   0,   0,   0, 184, 127, 
+    129,  97,  62,  59, 147,  76, 
+    153, 180, 197, 226,  16, 254, 
+     29,  25,   0,   0,   0,   0, 
       0,   0,   0,   0,   1,   0, 
       0,   0,   1,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -2388,7 +2388,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
       0,   0,   0,   0,   0,   0, 
     254, 239, 254, 239,   1,   0, 
       0,   0, 105, 118,   0,   0, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -2407,7 +2407,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     105, 110, 110,  95, 112, 104, 
     111, 110, 103,  95,  80,  83, 
      46, 104, 108, 115, 108,   0, 
-      0,  99,  58,  92, 117, 115, 
+      0, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -2426,7 +2426,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     105, 110, 110,  95, 112, 104, 
     111, 110, 103,  95, 112, 115, 
      46, 104, 108, 115, 108,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -2440,7 +2440,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92,  98,  97, 115, 105,  99, 
-     46, 102, 120,   0,  99,  58, 
+     46, 102, 120,   0, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -2455,7 +2455,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     103, 101,  92, 115, 104,  97, 
     100, 101, 114, 115,  92,  98, 
      97, 115, 105,  99,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -2496,9 +2496,9 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
       0,   0, 169,  27,   0,   0, 
     220, 124,   0,   0,  89,  98, 
       0,   0,  56,  90,   0,   0, 
-     36, 101,   0,   0, 224,  40, 
+    113,  46,   0,   0, 224,  40, 
       0,   0, 144,  24,   0,   0, 
-    104,  32,   0,   0, 179,  31, 
+     97,  76,   0,   0, 179,  31, 
       0,   0,  15,  50,   0,   0, 
      44,  16,   0,   0, 125,  28, 
       0,   0,  78, 121,   0,   0, 
@@ -7770,7 +7770,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92, 108, 105, 103, 104, 116, 
-     46, 102, 120,   0,  99,  58, 
+     46, 102, 120,   0, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -7848,7 +7848,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      45,  45,  45,  45,  45,  45, 
      45,  45,  45,  45,  45,  45, 
      45,  45, 101, 115,  46, 102, 
-    120,   0,  99,  58,  92, 117, 
+    120,   0, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 100, 111,  99, 117, 
@@ -7865,7 +7865,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     105, 110, 112, 117, 116,  95, 
     115, 116, 114, 117,  99, 116, 
     117, 114, 101, 115,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -7879,7 +7879,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      69,  92,  77,  65,  71,  69, 
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98, 114, 100, 
-    102,  46, 102, 120,   0,  99, 
+    102,  46, 102, 120,   0, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -7894,7 +7894,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      97, 103, 101,  92, 115, 104, 
      97, 100, 101, 114, 115,  92, 
      98, 114, 100, 102,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -7910,7 +7910,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     114, 115,  92, 110, 111, 114, 
     109,  97, 108,  95, 109,  97, 
     112, 112, 105, 110, 103,  46, 
-    102, 120,   0,  99,  58,  92, 
+    102, 120,   0, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -7926,7 +7926,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     101, 114, 115,  92, 110, 111, 
     114, 109,  97, 108,  95, 109, 
      97, 112, 112, 105, 110, 103, 
-     46, 102, 120,   0,  67,  58, 
+     46, 102, 120,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -8019,8 +8019,8 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      99,  49,  50,  41,  59,  13, 
      10, 125,  13,  10,  13,  10, 
      27, 226,  48,   1,  92,   1, 
-      0,   0, 112, 246,  58, 172, 
-    246, 228, 210,   1,   1,   0, 
+      0,   0, 164,  44, 173,  62, 
+    159, 241, 210,   1,   1,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -11440,14 +11440,14 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      24,  21,  35,  16,   0,   0, 
       1,   0,   0,   2,  14,   0, 
      23,  21,   0,  16,   0,   0, 
-      3,   2,  96,   1,   0,   0, 
+      3,   2, 176,   0,   0,   0, 
     242, 241,  10,   0,  24,  21, 
      37,  16,   0,   0,   1,   0, 
       1,   0,  10,   0,  24,  21, 
      38,  16,   0,   0,   1,   0, 
       0,   2,  14,   0,  23,  21, 
       0,   0,   0,   0,  10,   2, 
-     96,   1,   0,   0, 242, 241, 
+    176,   0,   0,   0, 242, 241, 
      10,   0,  24,  21,  40,  16, 
       0,   0,   1,   0,   1,   0, 
      10,   0,  24,  21,  41,  16, 
@@ -16400,24 +16400,24 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      42,  32,  97, 102,  32,  42, 
      32, 108, 105, 103, 104, 116, 
      46,  73,  59,  13,  10, 125, 
-      0,  26,   0,   0,   0, 128, 
+      0,  26,   0,   0,   0, 148, 
+      1,   0,   0, 250,   1,   0, 
+      0,  14,   3,   0,   0, 111, 
+      3,   0,   0, 128,   4,   0, 
+      0,   1,   0,   0,   0, 115, 
+      0,   0,   0,  44,  83,   0, 
+      0,  16,  88,   0,   0, 148, 
       4,   0,   0,  96, 103,   0, 
-      0,  44,  83,   0,   0, 208, 
-      3,   0,   0,  40,   4,   0, 
-      0,  60,   1,   0,   0, 228, 
-      0,   0,   0,  16,  88,   0, 
-      0,   0,   0,   0,   0, 148, 
-      4,   0,   0, 115,   0,   0, 
-      0,  96,   2,   0,   0, 183, 
-      2,   0,   0,   1,   0,   0, 
+      0,   0,   0,   0,   0,  96, 
+      2,   0,   0, 183,   2,   0, 
       0, 230, 109,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0, 114,   0,   0,   0,   0, 
-      0,   0,   0, 148,   1,   0, 
-      0, 250,   1,   0,   0,  14, 
-      3,   0,   0, 111,   3,   0, 
+      0,   0,   0, 208,   3,   0, 
+      0,  40,   4,   0,   0,  60, 
+      1,   0,   0, 228,   0,   0, 
       0,  19,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -17082,8 +17082,8 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
       0,   0,   2,   0,  14,   0, 
     124,  50,   0,   0,   0,   0, 
       0,   0, 164,  23,   0,   0, 
-      6,   0,   0,   0, 224, 103, 
-     59,   1,   0,   0,   0,   0, 
+      6,   0,   0,   0, 128,  61, 
+    207,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,  79,  98, 
     106, 101,  99, 116,  83, 112, 
      97,  99, 101,  78, 111, 114, 
@@ -17094,7 +17094,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      80, 104, 111, 110, 103,  95, 
      80,  83,   0, 110, 111, 110, 
     101,   0,  45, 186,  46, 241, 
-      1,   0, 207,   1,   0,   0, 
+      1,   0,  44,   1,   0,   0, 
       0,   0, 120,  22,   0,   0, 
      32,   0,   0,  96,   0,   0, 
      77,   0,   0,   0,   0,   0, 
@@ -17111,7 +17111,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     113,   0,   0,   0, 201,   0, 
       0,   0,  47,   1,   0,   0, 
     134,   1,   0,   0, 231,   1, 
-      0,   0,  67,  58,  92,  85, 
+      0,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -17130,7 +17130,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     108, 105, 110, 110,  95, 112, 
     104, 111, 110, 103,  95,  80, 
      83,  46, 104, 108, 115, 108, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -17144,7 +17144,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      92,  77,  65,  71,  69,  92, 
     115, 104,  97, 100, 101, 114, 
     115,  92,  98,  97, 115, 105, 
-     99,  46, 102, 120,   0,  67, 
+     99,  46, 102, 120,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -17161,7 +17161,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     118, 115,  95, 105, 110, 112, 
     117, 116,  95, 115, 116, 114, 
     117,  99, 116, 117, 114, 101, 
-    115,  46, 102, 120,   0,  67, 
+    115,  46, 102, 120,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -17176,7 +17176,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      65,  71,  69,  92, 115, 104, 
      97, 100, 101, 114, 115,  92, 
      98, 114, 100, 102,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -17192,7 +17192,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     114, 115,  92, 110, 111, 114, 
     109,  97, 108,  95, 109,  97, 
     112, 112, 105, 110, 103,  46, 
-    102, 120,   0,  67,  58,  92, 
+    102, 120,   0,  68,  58,  92, 
      85, 115, 101, 114, 115,  92, 
      77,  97, 116, 116, 104, 105, 
      97, 115,  92,  68, 111,  99, 
@@ -17234,11 +17234,11 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
-    148,  46,  49,   1, 244,  11, 
-     65,  89,   1,   0,   0,   0, 
-    191, 200, 220,  19,  78, 147, 
-    137,  64, 128,  54, 145, 243, 
-     84, 195,  64,  88, 163,   2, 
+    148,  46,  49,   1, 188,  72, 
+     86,  89,   1,   0,   0,   0, 
+    184, 127, 129,  97,  62,  59, 
+    147,  76, 153, 180, 197, 226, 
+     16, 254,  29,  25, 163,   2, 
       0,   0,  47,  76, 105, 110, 
     107,  73, 110, 102, 111,   0, 
      47, 110,  97, 109, 101, 115, 
@@ -17246,7 +17246,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     104, 101,  97, 100, 101, 114, 
      98, 108, 111,  99, 107,   0, 
      47, 115, 114,  99,  47, 102, 
-    105, 108, 101, 115,  47,  99, 
+    105, 108, 101, 115,  47, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -17267,7 +17267,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     103,  95, 112, 115,  46, 104, 
     108, 115, 108,   0,  47, 115, 
     114,  99,  47, 102, 105, 108, 
-    101, 115,  47,  99,  58,  92, 
+    101, 115,  47, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -17284,7 +17284,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     115, 105,  99,  46, 102, 120, 
       0,  47, 115, 114,  99,  47, 
     102, 105, 108, 101, 115,  47, 
-     99,  58,  92, 117, 115, 101, 
+    100,  58,  92, 117, 115, 101, 
     114, 115,  92, 109,  97, 116, 
     116, 104, 105,  97, 115,  92, 
     100, 111,  99, 117, 109, 101, 
@@ -17302,7 +17302,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     114, 117,  99, 116, 117, 114, 
     101, 115,  46, 102, 120,   0, 
      47, 115, 114,  99,  47, 102, 
-    105, 108, 101, 115,  47,  99, 
+    105, 108, 101, 115,  47, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -17319,7 +17319,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
      98, 114, 100, 102,  46, 102, 
     120,   0,  47, 115, 114,  99, 
      47, 102, 105, 108, 101, 115, 
-     47,  99,  58,  92, 117, 115, 
+     47, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -17337,7 +17337,7 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     112, 105, 110, 103,  46, 102, 
     120,   0,  47, 115, 114,  99, 
      47, 102, 105, 108, 101, 115, 
-     47,  99,  58,  92, 117, 115, 
+     47, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -17353,20 +17353,20 @@ const BYTE g_osnm_modified_blinn_phong_ps[] =
     115,  92, 108, 105, 103, 104, 
     116,  46, 102, 120,   0,   9, 
       0,   0,   0,  14,   0,   0, 
-      0,   1,   0,   0,   0, 165, 
-     62,   0,   0,   0,   0,   0, 
+      0,   1,   0,   0,   0, 161, 
+     63,   0,   0,   0,   0,   0, 
+      0,  34,   0,   0,   0,   8, 
+      0,   0,   0,  10,   0,   0, 
+      0,   6,   0,   0,   0,   0, 
+      0,   0,   0,   5,   0,   0, 
       0,   1,   1,   0,   0,  10, 
-      0,   0,   0,  34,   0,   0, 
-      0,   8,   0,   0,   0,  10, 
-      0,   0,   0,   6,   0,   0, 
-      0,   0,   0,   0,   0,   5, 
       0,   0,   0,  17,   0,   0, 
-      0,   7,   0,   0,   0, 114, 
-      1,   0,   0,  11,   0,   0, 
-      0, 158,   0,   0,   0,   9, 
-      0,   0,   0, 212,   1,   0, 
-      0,  12,   0,   0,   0,  64, 
-      2,   0,   0,  13,   0,   0, 
+      0,   7,   0,   0,   0, 212, 
+      1,   0,   0,  12,   0,   0, 
+      0,  64,   2,   0,   0,  13, 
+      0,   0,   0, 114,   1,   0, 
+      0,  11,   0,   0,   0, 158, 
+      0,   0,   0,   9,   0,   0, 
       0,   0,   0,   0,   0,  65, 
     145,  50,   1,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 

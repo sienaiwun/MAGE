@@ -118,7 +118,7 @@ dcl_temps 13
 //   v3.x <- input.tex.x; v3.y <- input.tex.y; 
 //   o0.x <- <ModifiedPhong_PS return value>.x; o0.y <- <ModifiedPhong_PS return value>.y; o0.z <- <ModifiedPhong_PS return value>.z; o0.w <- <ModifiedPhong_PS return value>.w
 //
-#line 451 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 451 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r0.xyz, v1.xyzx  // r0.x <- p.x; r0.y <- p.y; r0.z <- p.z
 nop 
 mov r0.xyz, r0.xyzx
@@ -138,7 +138,7 @@ nop
 mov r1.xyz, r1.xyzx
 mov r4.xyz, -cb2[2].xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
 nop 
 mov r1.xyz, r1.xyzx
 mov r4.xyz, r4.xyzx
@@ -150,7 +150,7 @@ max r4.xyz, r0.wwww, l(0.000000, 0.000000, 0.000000, 0.000000)  // r4.z <- <max_
 #line 32
 mov r4.xyz, r4.xyzx  // r4.z <- <LambertianBRDF return value>
 
-#line 157 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 157 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r4.xyz, r4.xyzx  // r4.x <- brdf.x; r4.y <- brdf.y; r4.z <- brdf.z
 mul r4.xyz, r4.xyzx, cb2[1].xyzx
 add r4.xyz, r4.xyzx, cb2[0].xyzx  // r4.x <- I_diffuse.x; r4.y <- I_diffuse.y; r4.z <- I_diffuse.z
@@ -182,7 +182,7 @@ loop
   mov r9.xy, r9.xyxx
   mov r11.xyz, r0.xyzx
 
-#line 45 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 45 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r11.xyz, -r11.xyzx
   add r7.xyz, r7.xyzx, r11.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -205,13 +205,13 @@ loop
   mov r2.w, r2.w  // r2.w <- df
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <OmniLightMaxContribution return value>.x; r7.y <- <OmniLightMaxContribution return value>.y; r7.z <- <OmniLightMaxContribution return value>.z
 
-#line 164 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 164 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r10.xyz, r10.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r10.xyz, r10.xyzx
@@ -223,7 +223,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 166 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 166 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r5.xyz, r5.xyzx, r8.xyzx
@@ -232,7 +232,7 @@ loop
   mov r10.xyz, r10.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 56 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 56 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r10.xyz, r10.xyzx
@@ -269,7 +269,7 @@ loop
   mul r2.w, r2.w, r3.w
   div r8.xyz, r2.wwww, l(2.000000, 2.000000, 2.000000, 0.000000)  // r8.z <- <ModifiedPhongBRDF return value>
 
-#line 169 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 169 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r6.xyz, r6.xyzx, r7.xyzx
@@ -311,7 +311,7 @@ loop
   mov r12.xyz, r0.xyzx
   mov r11.xyz, r11.xyzx
 
-#line 52 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 52 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r12.xyz, -r12.xyzx
   add r7.xyz, r7.xyzx, r12.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -357,13 +357,13 @@ loop
   mul r2.w, r2.w, r3.w
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <SpotLightMaxContribution return value>.x; r7.y <- <SpotLightMaxContribution return value>.y; r7.z <- <SpotLightMaxContribution return value>.z
 
-#line 177 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 177 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r9.xyz, r11.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r9.xyz, r9.xyzx
@@ -375,7 +375,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 179 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 179 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r3.xyz, r3.xyzx, r8.xyzx
@@ -384,7 +384,7 @@ loop
   mov r11.xyz, r11.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 56 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 56 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r11.xyz, r11.xyzx
@@ -421,7 +421,7 @@ loop
   mul r2.w, r2.w, r3.w
   div r8.xyz, r2.wwww, l(2.000000, 2.000000, 2.000000, 0.000000)  // r8.z <- <ModifiedPhongBRDF return value>
 
-#line 182 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 182 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r4.xyz, r4.xyzx, r7.xyzx
@@ -444,10 +444,10 @@ ret
 
 const BYTE g_modified_phong_ps[] =
 {
-     68,  88,  66,  67,   6, 196, 
-     59,  45,  57, 232,  79, 243, 
-     62,  61,  50,   8,  31,  91, 
-     70, 181,   1,   0,   0,   0, 
+     68,  88,  66,  67,  31,  35, 
+    105, 251, 151,  51, 123, 125, 
+    164, 224, 243, 179,  63, 142, 
+    195,  60,   1,   0,   0,   0, 
     136, 149,   1,   0,   6,   0, 
       0,   0,  56,   0,   0,   0, 
     204,   7,   0,   0, 100,   8, 
@@ -2216,11 +2216,11 @@ const BYTE g_modified_phong_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
-    148,  46,  49,   1, 241,  11, 
-     65,  89,   1,   0,   0,   0, 
-     42,  27,  23,   1, 193, 220, 
-     90,  77, 173, 213,  46,  13, 
-     23,  38, 188,  30,   0,   0, 
+    148,  46,  49,   1, 186,  72, 
+     86,  89,   1,   0,   0,   0, 
+     87, 145, 156,  30,  82, 238, 
+     33,  79, 147,  88, 194,  16, 
+    190, 250, 188,  31,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       1,   0,   0,   0,   1,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -2303,7 +2303,7 @@ const BYTE g_modified_phong_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0, 254, 239, 254, 239, 
       1,   0,   0,   0,  83, 118, 
-      0,   0,   0,  67,  58,  92, 
+      0,   0,   0,  68,  58,  92, 
      85, 115, 101, 114, 115,  92, 
      77,  97, 116, 116, 104, 105, 
      97, 115,  92,  68, 111,  99, 
@@ -2320,7 +2320,7 @@ const BYTE g_modified_phong_ps[] =
     100, 105, 102, 105, 101, 100, 
      95, 112, 104, 111, 110, 103, 
      95,  80,  83,  46, 104, 108, 
-    115, 108,   0,   0,  99,  58, 
+    115, 108,   0,   0, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -2337,7 +2337,7 @@ const BYTE g_modified_phong_ps[] =
     111, 100, 105, 102, 105, 101, 
     100,  95, 112, 104, 111, 110, 
     103,  95, 112, 115,  46, 104, 
-    108, 115, 108,   0,  67,  58, 
+    108, 115, 108,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -2352,7 +2352,7 @@ const BYTE g_modified_phong_ps[] =
      71,  69,  92, 115, 104,  97, 
     100, 101, 114, 115,  92,  98, 
      97, 115, 105,  99,  46, 102, 
-    120,   0,  99,  58,  92, 117, 
+    120,   0, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 100, 111,  99, 117, 
@@ -2367,7 +2367,7 @@ const BYTE g_modified_phong_ps[] =
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98,  97, 115, 
     105,  99,  46, 102, 120,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -2384,7 +2384,7 @@ const BYTE g_modified_phong_ps[] =
     112, 117, 116,  95, 115, 116, 
     114, 117,  99, 116, 117, 114, 
     101, 115,  46, 102, 120,   0, 
-     99,  58,  92, 117, 115, 101, 
+    100,  58,  92, 117, 115, 101, 
     114, 115,  92, 109,  97, 116, 
     116, 104, 105,  97, 119, 115, 
       0,   0,  51,  77,   0,   0, 
@@ -2408,7 +2408,7 @@ const BYTE g_modified_phong_ps[] =
       0,   0, 135,  21,   0,   0, 
     249,  38,   0,   0, 234, 107, 
       0,   0, 172,  22,   0,   0, 
-     49,  47,   0,   0, 123,  92, 
+     36, 101,   0,   0, 123,  92, 
       0,   0,  28, 106,   0,   0, 
      77, 117,   0,   0, 152,  71, 
       0,   0, 190,  30,   0,   0, 
@@ -7682,7 +7682,7 @@ const BYTE g_modified_phong_ps[] =
      71,  69,  92, 115, 104,  97, 
     100, 101, 114, 115,  92, 108, 
     105, 103, 104, 116,  46, 102, 
-    120,   0,  99,  58,  92, 117, 
+    120,   0, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 100, 111,  99, 117, 
@@ -7777,7 +7777,7 @@ const BYTE g_modified_phong_ps[] =
     112, 117, 116,  95, 115, 116, 
     114, 117,  99, 116, 117, 114, 
     101, 115,  46, 102, 120,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -7791,7 +7791,7 @@ const BYTE g_modified_phong_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92,  98, 114, 100, 102,  46, 
-    102, 120,   0,  99,  58,  92, 
+    102, 120,   0, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -7806,7 +7806,7 @@ const BYTE g_modified_phong_ps[] =
     101,  92, 115, 104,  97, 100, 
     101, 114, 115,  92,  98, 114, 
     100, 102,  46, 102, 120,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -7822,7 +7822,7 @@ const BYTE g_modified_phong_ps[] =
      92, 110, 111, 114, 109,  97, 
     108,  95, 109,  97, 112, 112, 
     105, 110, 103,  46, 102, 120, 
-      0,  99,  58,  92, 117, 115, 
+      0, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -7838,7 +7838,7 @@ const BYTE g_modified_phong_ps[] =
     115,  92, 110, 111, 114, 109, 
      97, 108,  95, 109,  97, 112, 
     112, 105, 110, 103,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -7934,8 +7934,8 @@ const BYTE g_modified_phong_ps[] =
      45,  45,  45,  45,  45,  45, 
      45,  45,  45,  45,  45,  45, 
      45,  45,  27, 226,  48,   1, 
-     92,   1,   0,   0, 151, 180, 
-     13, 170, 246, 228, 210,   1, 
+     92,   1,   0,   0, 245, 105, 
+    116,  61, 159, 241, 210,   1, 
       1,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -11427,7 +11427,7 @@ const BYTE g_modified_phong_ps[] =
      23,   0,   4,   0,  30,  16, 
       0,   0,  14,   0,  23,  21, 
       0,  16,   0,   0,   3,   2, 
-     16,   1,   0,   0, 242, 241, 
+     96,   1,   0,   0, 242, 241, 
      10,   0,  24,  21,  32,  16, 
       0,   0,   1,   0,   1,   0, 
      10,   0,  24,  21,  33,  16, 
@@ -16397,24 +16397,24 @@ const BYTE g_modified_phong_ps[] =
      42,  32,  97, 102,  32,  42, 
      32, 108, 105, 103, 104, 116, 
      46,  73,  59,  13,  10, 125, 
-      0,  26,   0,   0,   0,   1, 
-      0,   0,   0, 104,   0,   0, 
-      0, 106,   4,   0,   0, 186, 
-      3,   0,   0,  18,   4,   0, 
-      0,  38,   1,   0,   0, 206, 
-      0,   0,   0,  22,  83,   0, 
-      0, 250,  87,   0,   0, 126, 
-      4,   0,   0,  74, 103,   0, 
-      0,  74,   2,   0,   0, 161, 
-      2,   0,   0,   0,   0,   0, 
+      0,  26,   0,   0,   0, 126, 
+      1,   0,   0, 228,   1,   0, 
+      0, 248,   2,   0,   0,  89, 
+      3,   0,   0,   1,   0,   0, 
+      0, 106,   4,   0,   0,  22, 
+     83,   0,   0, 250,  87,   0, 
+      0,  74, 103,   0,   0, 126, 
+      4,   0,   0,   0,   0,   0, 
+      0,   0,   0,   0,   0,  74, 
+      2,   0,   0, 161,   2,   0, 
       0, 208, 109,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
-      0, 103,   0,   0,   0,   0, 
-      0,   0,   0, 126,   1,   0, 
-      0, 228,   1,   0,   0, 248, 
-      2,   0,   0,  89,   3,   0, 
+      0, 103,   0,   0,   0, 104, 
+      0,   0,   0, 186,   3,   0, 
+      0,  18,   4,   0,   0,  38, 
+      1,   0,   0, 206,   0,   0, 
       0,  19,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -16998,14 +16998,14 @@ const BYTE g_modified_phong_ps[] =
      14,   0,  36,  52,   0,   0, 
       0,   0,   0,   0, 204,  23, 
       0,   0,   6,   0,   0,   0, 
-    248,  36, 247,   0,   0,   0, 
+    232,  34, 114,   1,   0,   0, 
       0,   0,   0,   0,   0,   0, 
      77, 111, 100, 105, 102, 105, 
     101, 100,  80, 104, 111, 110, 
     103,  95,  80,  83,   0, 110, 
     111, 110, 101,   0,   0,   0, 
      45, 186,  46, 241,   1,   0, 
-    116,   1,   0,   0,   0,   0, 
+    207,   1,   0,   0,   0,   0, 
      68,  22,   0,   0,  32,   0, 
       0,  96,   0,   0,  77,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -17022,7 +17022,7 @@ const BYTE g_modified_phong_ps[] =
       0,   0, 190,   0,   0,   0, 
      36,   1,   0,   0, 123,   1, 
       0,   0, 220,   1,   0,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -17039,7 +17039,7 @@ const BYTE g_modified_phong_ps[] =
     105, 101, 100,  95, 112, 104, 
     111, 110, 103,  95,  80,  83, 
      46, 104, 108, 115, 108,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -17053,7 +17053,7 @@ const BYTE g_modified_phong_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92,  98,  97, 115, 105,  99, 
-     46, 102, 120,   0,  67,  58, 
+     46, 102, 120,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -17070,7 +17070,7 @@ const BYTE g_modified_phong_ps[] =
     115,  95, 105, 110, 112, 117, 
     116,  95, 115, 116, 114, 117, 
      99, 116, 117, 114, 101, 115, 
-     46, 102, 120,   0,  67,  58, 
+     46, 102, 120,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -17085,7 +17085,7 @@ const BYTE g_modified_phong_ps[] =
      71,  69,  92, 115, 104,  97, 
     100, 101, 114, 115,  92,  98, 
     114, 100, 102,  46, 102, 120, 
-      0,  67,  58,  92,  85, 115, 
+      0,  68,  58,  92,  85, 115, 
     101, 114, 115,  92,  77,  97, 
     116, 116, 104, 105,  97, 115, 
      92,  68, 111,  99, 117, 109, 
@@ -17101,7 +17101,7 @@ const BYTE g_modified_phong_ps[] =
     115,  92, 110, 111, 114, 109, 
      97, 108,  95, 109,  97, 112, 
     112, 105, 110, 103,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -17150,10 +17150,10 @@ const BYTE g_modified_phong_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0, 148,  46,  49,   1, 
-    241,  11,  65,  89,   1,   0, 
-      0,   0,  42,  27,  23,   1, 
-    193, 220,  90,  77, 173, 213, 
-     46,  13,  23,  38, 188,  30, 
+    186,  72,  86,  89,   1,   0, 
+      0,   0,  87, 145, 156,  30, 
+     82, 238,  33,  79, 147,  88, 
+    194,  16, 190, 250, 188,  31, 
     152,   2,   0,   0,  47,  76, 
     105, 110, 107,  73, 110, 102, 
     111,   0,  47, 110,  97, 109, 
@@ -17162,7 +17162,7 @@ const BYTE g_modified_phong_ps[] =
     101, 114,  98, 108, 111,  99, 
     107,   0,  47, 115, 114,  99, 
      47, 102, 105, 108, 101, 115, 
-     47,  99,  58,  92, 117, 115, 
+     47, 100,  58,  92, 117, 115, 
     101, 114, 115,  92, 109,  97, 
     116, 116, 104, 105,  97, 115, 
      92, 100, 111,  99, 117, 109, 
@@ -17181,7 +17181,7 @@ const BYTE g_modified_phong_ps[] =
     115,  46, 104, 108, 115, 108, 
       0,  47, 115, 114,  99,  47, 
     102, 105, 108, 101, 115,  47, 
-     99,  58,  92, 117, 115, 101, 
+    100,  58,  92, 117, 115, 101, 
     114, 115,  92, 109,  97, 116, 
     116, 104, 105,  97, 115,  92, 
     100, 111,  99, 117, 109, 101, 
@@ -17197,7 +17197,7 @@ const BYTE g_modified_phong_ps[] =
      92,  98,  97, 115, 105,  99, 
      46, 102, 120,   0,  47, 115, 
     114,  99,  47, 102, 105, 108, 
-    101, 115,  47,  99,  58,  92, 
+    101, 115,  47, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -17216,7 +17216,7 @@ const BYTE g_modified_phong_ps[] =
     116, 117, 114, 101, 115,  46, 
     102, 120,   0,  47, 115, 114, 
      99,  47, 102, 105, 108, 101, 
-    115,  47,  99,  58,  92, 117, 
+    115,  47, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 100, 111,  99, 117, 
@@ -17232,7 +17232,7 @@ const BYTE g_modified_phong_ps[] =
     114, 115,  92,  98, 114, 100, 
     102,  46, 102, 120,   0,  47, 
     115, 114,  99,  47, 102, 105, 
-    108, 101, 115,  47,  99,  58, 
+    108, 101, 115,  47, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -17250,7 +17250,7 @@ const BYTE g_modified_phong_ps[] =
     109,  97, 112, 112, 105, 110, 
     103,  46, 102, 120,   0,  47, 
     115, 114,  99,  47, 102, 105, 
-    108, 101, 115,  47,  99,  58, 
+    108, 101, 115,  47, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -17268,19 +17268,19 @@ const BYTE g_modified_phong_ps[] =
     120,   0,   9,   0,   0,   0, 
      14,   0,   0,   0,   1,   0, 
       0,   0, 161,  63,   0,   0, 
-      0,   0,   0,   0, 246,   0, 
-      0,   0,  10,   0,   0,   0, 
+      0,   0,   0,   0, 147,   0, 
+      0,   0,   9,   0,   0,   0, 
      10,   0,   0,   0,   6,   0, 
       0,   0,   0,   0,   0,   0, 
-      5,   0,   0,   0,  34,   0, 
-      0,   0,   8,   0,   0,   0, 
+      5,   0,   0,   0, 246,   0, 
+      0,   0,  10,   0,   0,   0, 
      17,   0,   0,   0,   7,   0, 
-      0,   0, 103,   1,   0,   0, 
-     11,   0,   0,   0, 147,   0, 
-      0,   0,   9,   0,   0,   0, 
-    201,   1,   0,   0,  12,   0, 
-      0,   0,  53,   2,   0,   0, 
-     13,   0,   0,   0,   0,   0, 
+      0,   0, 201,   1,   0,   0, 
+     12,   0,   0,   0,  53,   2, 
+      0,   0,  13,   0,   0,   0, 
+    103,   1,   0,   0,  11,   0, 
+      0,   0,  34,   0,   0,   0, 
+      8,   0,   0,   0,   0,   0, 
       0,   0,  65, 145,  50,   1, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 

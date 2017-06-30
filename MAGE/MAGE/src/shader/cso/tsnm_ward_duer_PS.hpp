@@ -120,12 +120,12 @@ dcl_temps 13
 //   v3.x <- input.tex.x; v3.y <- input.tex.y; 
 //   o0.x <- <TangentSpaceNormalMapping_WardDuer_PS return value>.x; o0.y <- <TangentSpaceNormalMapping_WardDuer_PS return value>.y; o0.z <- <TangentSpaceNormalMapping_WardDuer_PS return value>.z; o0.w <- <TangentSpaceNormalMapping_WardDuer_PS return value>.w
 //
-#line 509 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 509 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r0.xyz, v1.xyzx  // r0.x <- p.x; r0.y <- p.y; r0.z <- p.z
 nop 
 mov r1.xyz, v2.xyzx
 
-#line 10 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\normal_mapping.fx"
+#line 10 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\normal_mapping.fx"
 deriv_rtx_coarse r2.xyz, v1.yzxy  // r2.x <- dp_dj.y; r2.y <- dp_dj.z; r2.z <- dp_dj.x
 deriv_rty_coarse r3.xyz, v1.zxyz  // r3.x <- dp_di.z; r3.y <- dp_di.x; r3.z <- dp_di.y
 deriv_rtx_coarse r4.xy, v3.xyxx  // r4.x <- dtex_dj.x; r4.y <- dtex_dj.y
@@ -175,7 +175,7 @@ dp3 r0.w, r3.xyzx, r3.xyzx
 rsq r0.w, r0.w
 mul r1.xyz, r0.wwww, r3.xyzx  // r1.x <- <TangentSpaceNormalMapping_PerturbNormal return value>.x; r1.y <- <TangentSpaceNormalMapping_PerturbNormal return value>.y; r1.z <- <TangentSpaceNormalMapping_PerturbNormal return value>.z
 
-#line 510 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 510 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r1.xyz, r1.xyzx  // r1.x <- n.x; r1.y <- n.y; r1.z <- n.z
 nop 
 mov r0.xyz, r0.xyzx
@@ -195,7 +195,7 @@ nop
 mov r1.xyz, r1.xyzx
 mov r4.xyz, -cb2[2].xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
 nop 
 mov r1.xyz, r1.xyzx
 mov r4.xyz, r4.xyzx
@@ -207,7 +207,7 @@ max r4.xyz, r0.wwww, l(0.000000, 0.000000, 0.000000, 0.000000)  // r4.z <- <max_
 #line 32
 mov r4.xyz, r4.xyzx  // r4.z <- <LambertianBRDF return value>
 
-#line 325 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 325 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
 mov r4.xyz, r4.xyzx  // r4.x <- brdf.x; r4.y <- brdf.y; r4.z <- brdf.z
 mul r4.xyz, r4.xyzx, cb2[1].xyzx
 add r4.xyz, r4.xyzx, cb2[0].xyzx  // r4.x <- I_diffuse.x; r4.y <- I_diffuse.y; r4.z <- I_diffuse.z
@@ -239,7 +239,7 @@ loop
   mov r9.xy, r9.xyxx
   mov r11.xyz, r0.xyzx
 
-#line 45 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 45 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r11.xyz, -r11.xyzx
   add r7.xyz, r7.xyzx, r11.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -262,13 +262,13 @@ loop
   mov r2.w, r2.w  // r2.w <- df
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <OmniLightMaxContribution return value>.x; r7.y <- <OmniLightMaxContribution return value>.y; r7.z <- <OmniLightMaxContribution return value>.z
 
-#line 332 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 332 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r10.xyz, r10.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r10.xyz, r10.xyzx
@@ -280,7 +280,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 334 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 334 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r5.xyz, r5.xyzx, r8.xyzx
@@ -289,7 +289,7 @@ loop
   mov r10.xyz, r10.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 85 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 85 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   dp3 r2.w, r8.xyzx, r10.xyzx
   dp3 r3.w, r8.xyzx, r9.xyzx
   mul r2.w, r2.w, r3.w  // r2.w <- a1
@@ -342,7 +342,7 @@ loop
     div r4.w, r3.w, r2.w
   endif 
 
-#line 337 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 337 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r4.wwww  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r6.xyz, r6.xyzx, r7.xyzx
@@ -384,7 +384,7 @@ loop
   mov r12.xyz, r0.xyzx
   mov r11.xyz, r11.xyzx
 
-#line 52 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
+#line 52 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\light.fx"
   mov r12.xyz, -r12.xyzx
   add r7.xyz, r7.xyzx, r12.xyzx
   dp3 r2.w, r7.xyzx, r7.xyzx
@@ -430,13 +430,13 @@ loop
   mul r2.w, r2.w, r3.w
   mul r7.xyz, r8.xyzx, r2.wwww  // r7.x <- <SpotLightMaxContribution return value>.x; r7.y <- <SpotLightMaxContribution return value>.y; r7.z <- <SpotLightMaxContribution return value>.z
 
-#line 345 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 345 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r7.xyz, r7.xyzx  // r7.x <- I_light.x; r7.y <- I_light.y; r7.z <- I_light.z
   nop 
   mov r8.xyz, r1.xyzx
   mov r9.xyz, r11.xyzx
 
-#line 32 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 32 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   nop 
   mov r8.xyz, r8.xyzx
   mov r9.xyz, r9.xyzx
@@ -448,7 +448,7 @@ loop
 #line 32
   mov r8.xyz, r8.xyzx  // r8.z <- <LambertianBRDF return value>
 
-#line 347 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 347 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r8.xyzx  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r8.xyz, r7.xyzx, r8.xyzx
   add r3.xyz, r3.xyzx, r8.xyzx
@@ -457,7 +457,7 @@ loop
   mov r11.xyz, r11.xyzx
   mov r9.xyz, r2.xyzx
 
-#line 85 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
+#line 85 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\brdf.fx"
   dp3 r2.w, r8.xyzx, r11.xyzx
   dp3 r3.w, r8.xyzx, r9.xyzx
   mul r2.w, r2.w, r3.w  // r2.w <- a1
@@ -510,7 +510,7 @@ loop
     div r4.w, r3.w, r2.w
   endif 
 
-#line 350 "C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
+#line 350 "D:\Users\Matthias\Documents\Visual Studio 2015\Projects\MAGE\MAGE\MAGE\shaders\basic.fx"
   mov r8.xyz, r4.wwww  // r8.x <- brdf.x; r8.y <- brdf.y; r8.z <- brdf.z
   mul r7.xyz, r7.xyzx, r8.xyzx
   add r4.xyz, r4.xyzx, r7.xyzx
@@ -533,10 +533,10 @@ ret
 
 const BYTE g_tsnm_ward_duer_ps[] =
 {
-     68,  88,  66,  67, 118,  49, 
-      1, 181, 252,  51, 102, 191, 
-     89, 185,  28,  51,  14,  11, 
-    156, 234,   1,   0,   0,   0, 
+     68,  88,  66,  67, 134, 199, 
+     41,  56, 253, 221, 200, 252, 
+    182, 100,  45, 131, 171,  59, 
+    144, 170,   1,   0,   0,   0, 
     104, 167,   1,   0,   6,   0, 
       0,   0,  56,   0,   0,   0, 
       0,   8,   0,   0, 152,   8, 
@@ -2727,10 +2727,10 @@ const BYTE g_tsnm_ward_duer_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0, 148,  46,  49,   1, 
-      3,  12,  65,  89,   1,   0, 
-      0,   0, 253, 136,   2, 227, 
-    163, 247,  35,  68, 177,  40, 
-    130, 179,  48,  85,  23,  25, 
+    194,  72,  86,  89,   1,   0, 
+      0,   0, 100, 186,  25, 103, 
+    148, 186, 128,  72, 181,  20, 
+    156, 170, 241, 107, 154, 232, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   1,   0,   0,   0, 
       1,   0,   0,   0,   0,   0, 
@@ -2813,7 +2813,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0, 254, 239, 
     254, 239,   1,   0,   0,   0, 
-     83, 118,   0,   0,   0,  67, 
+     83, 118,   0,   0,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -2831,7 +2831,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      97, 114, 100,  95, 100, 117, 
     101, 114,  95,  80,  83,  46, 
     104, 108, 115, 108,   0,   0, 
-     99,  58,  92, 117, 115, 101, 
+    100,  58,  92, 117, 115, 101, 
     114, 115,  92, 109,  97, 116, 
     116, 104, 105,  97, 115,  92, 
     100, 111,  99, 117, 109, 101, 
@@ -2848,7 +2848,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     119,  97, 114, 100,  95, 100, 
     117, 101, 114,  95, 112, 115, 
      46, 104, 108, 115, 108,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -2862,7 +2862,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92,  98,  97, 115, 105,  99, 
-     46, 102, 120,   0,  99,  58, 
+     46, 102, 120,   0, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -2877,7 +2877,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     103, 101,  92, 115, 104,  97, 
     100, 101, 114, 115,  92,  98, 
      97, 115, 105,  99,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -2894,7 +2894,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     105, 110, 112, 117, 116,  95, 
     115, 116, 114, 117,  99, 116, 
     117, 114, 101, 115,  46, 102, 
-    120,   0,  99,  58,  92, 117, 
+    120,   0, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     119, 115,   0,   0,  51,  77, 
@@ -2921,9 +2921,9 @@ const BYTE g_tsnm_ward_duer_ps[] =
       0,   0,  58,  50,   0,   0, 
     150,  35,   0,   0, 234, 107, 
       0,   0,  33,  43,   0,   0, 
-    113,  46,   0,   0, 239, 115, 
+     98, 114,   0,   0, 239, 115, 
       0,   0, 185,   3,   0,   0, 
-     97,  76,   0,   0, 244,  60, 
+     70,  43,   0,   0, 244,  60, 
       0,   0, 198, 117,   0,   0, 
      44,  16,   0,   0, 123, 104, 
       0,   0,  78, 121,   0,   0, 
@@ -8192,7 +8192,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      77,  65,  71,  69,  92, 115, 
     104,  97, 100, 101, 114, 115, 
      92, 108, 105, 103, 104, 116, 
-     46, 102, 120,   0,  99,  58, 
+     46, 102, 120,   0, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -8287,7 +8287,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     105, 110, 112, 117, 116,  95, 
     115, 116, 114, 117,  99, 116, 
     117, 114, 101, 115,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -8301,7 +8301,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      69,  92,  77,  65,  71,  69, 
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98, 114, 100, 
-    102,  46, 102, 120,   0,  99, 
+    102,  46, 102, 120,   0, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -8316,7 +8316,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      97, 103, 101,  92, 115, 104, 
      97, 100, 101, 114, 115,  92, 
      98, 114, 100, 102,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -8332,7 +8332,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     114, 115,  92, 110, 111, 114, 
     109,  97, 108,  95, 109,  97, 
     112, 112, 105, 110, 103,  46, 
-    102, 120,   0,  99,  58,  92, 
+    102, 120,   0, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -8348,7 +8348,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     101, 114, 115,  92, 110, 111, 
     114, 109,  97, 108,  95, 109, 
      97, 112, 112, 105, 110, 103, 
-     46, 102, 120,   0,  67,  58, 
+     46, 102, 120,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -8445,7 +8445,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      45,  45,  45,  45,  45,  45, 
      45,  45,  45,  45,  27, 226, 
      48,   1,  92,   1,   0,   0, 
-    253,  53, 166, 180, 246, 228, 
+    101, 199, 146,  66, 159, 241, 
     210,   1,   1,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -12461,14 +12461,14 @@ const BYTE g_tsnm_ward_duer_ps[] =
       0,   0,  23,   0,   4,   0, 
      34,  16,   0,   0,  14,   0, 
      23,  21,   0,  16,   0,   0, 
-      3,   2, 176,   0,   0,   0, 
+      3,   2,  64,   1,   0,   0, 
     242, 241,  10,   0,  24,  21, 
      36,  16,   0,   0,   1,   0, 
       1,   0,  10,   0,  24,  21, 
      37,  16,   0,   0,   1,   0, 
       0,   2,  14,   0,  23,  21, 
       0,   0,   0,   0,  10,   2, 
-    176,   0,   0,   0, 242, 241, 
+     64,   1,   0,   0, 242, 241, 
      10,   0,  24,  21,  39,  16, 
       0,   0,   1,   0,   1,   0, 
      10,   0,  24,  21,  40,  16, 
@@ -17420,24 +17420,24 @@ const BYTE g_tsnm_ward_duer_ps[] =
      32,  42,  32, 108, 105, 103, 
     104, 116,  46,  73,  59,  13, 
      10, 125,   0,  26,   0,   0, 
-      0,   1,   0,   0,   0, 104, 
-      0,   0,   0, 106,   4,   0, 
-      0, 186,   3,   0,   0,  18, 
-      4,   0,   0, 206,   0,   0, 
-      0,  38,   1,   0,   0,  22, 
-     83,   0,   0, 250,  87,   0, 
-      0, 126,   4,   0,   0,  74, 
-    103,   0,   0,  74,   2,   0, 
-      0, 161,   2,   0,   0,   0, 
-      0,   0,   0, 208, 109,   0, 
+      0, 126,   1,   0,   0, 228, 
+      1,   0,   0,   1,   0,   0, 
+      0, 248,   2,   0,   0,  89, 
+      3,   0,   0, 106,   4,   0, 
+      0,  22,  83,   0,   0, 250, 
+     87,   0,   0,  74, 103,   0, 
+      0, 126,   4,   0,   0,   0, 
+      0,   0,   0,   0,   0,   0, 
+      0,  74,   2,   0,   0, 161, 
+      2,   0,   0, 208, 109,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0, 103,   0,   0, 
-      0,   0,   0,   0,   0, 126, 
-      1,   0,   0, 228,   1,   0, 
-      0, 248,   2,   0,   0,  89, 
-      3,   0,   0,  19,   0,   0, 
+      0, 104,   0,   0,   0, 186, 
+      3,   0,   0,  18,   4,   0, 
+      0,  38,   1,   0,   0, 206, 
+      0,   0,   0,  19,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
@@ -18020,7 +18020,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
       2,   0,  14,   0, 196,  56, 
       0,   0,   0,   0,   0,   0, 
     132,  32,   0,   0,   6,   0, 
-      0,   0, 176,  89, 130,   0, 
+      0,   0, 168,  72,  92,   1, 
       0,   0,   0,   0,   0,   0, 
       0,   0,  84,  97, 110, 103, 
     101, 110, 116,  83, 112,  97, 
@@ -18030,7 +18030,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     114, 100,  68, 117, 101, 114, 
      95,  80,  83,   0, 110, 111, 
     110, 101,   0,   0,  45, 186, 
-     46, 241,   1,   0,  63,   1, 
+     46, 241,   1,   0, 217,   1, 
       0,   0,   0,   0, 240,  31, 
       0,   0,  32,   0,   0,  96, 
       0,   0,  77,   0,   0,   0, 
@@ -18047,7 +18047,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
       0,   0, 102,   0,   0,   0, 
     190,   0,   0,   0,  36,   1, 
       0,   0, 123,   1,   0,   0, 
-    220,   1,   0,   0,  67,  58, 
+    220,   1,   0,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -18064,7 +18064,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     115, 110, 109,  95, 119,  97, 
     114, 100,  95, 100, 117, 101, 
     114,  95,  80,  83,  46, 104, 
-    108, 115, 108,   0,  67,  58, 
+    108, 115, 108,   0,  68,  58, 
      92,  85, 115, 101, 114, 115, 
      92,  77,  97, 116, 116, 104, 
     105,  97, 115,  92,  68, 111, 
@@ -18079,7 +18079,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      71,  69,  92, 115, 104,  97, 
     100, 101, 114, 115,  92,  98, 
      97, 115, 105,  99,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -18096,7 +18096,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     105, 110, 112, 117, 116,  95, 
     115, 116, 114, 117,  99, 116, 
     117, 114, 101, 115,  46, 102, 
-    120,   0,  67,  58,  92,  85, 
+    120,   0,  68,  58,  92,  85, 
     115, 101, 114, 115,  92,  77, 
      97, 116, 116, 104, 105,  97, 
     115,  92,  68, 111,  99, 117, 
@@ -18110,7 +18110,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      69,  92,  77,  65,  71,  69, 
      92, 115, 104,  97, 100, 101, 
     114, 115,  92,  98, 114, 100, 
-    102,  46, 102, 120,   0,  67, 
+    102,  46, 102, 120,   0,  68, 
      58,  92,  85, 115, 101, 114, 
     115,  92,  77,  97, 116, 116, 
     104, 105,  97, 115,  92,  68, 
@@ -18127,7 +18127,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     110, 111, 114, 109,  97, 108, 
      95, 109,  97, 112, 112, 105, 
     110, 103,  46, 102, 120,   0, 
-     67,  58,  92,  85, 115, 101, 
+     68,  58,  92,  85, 115, 101, 
     114, 115,  92,  77,  97, 116, 
     116, 104, 105,  97, 115,  92, 
      68, 111,  99, 117, 109, 101, 
@@ -18172,11 +18172,11 @@ const BYTE g_tsnm_ward_duer_ps[] =
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
       0,   0,   0,   0, 148,  46, 
-     49,   1,   3,  12,  65,  89, 
-      1,   0,   0,   0, 253, 136, 
-      2, 227, 163, 247,  35,  68, 
-    177,  40, 130, 179,  48,  85, 
-     23,  25, 152,   2,   0,   0, 
+     49,   1, 194,  72,  86,  89, 
+      1,   0,   0,   0, 100, 186, 
+     25, 103, 148, 186, 128,  72, 
+    181,  20, 156, 170, 241, 107, 
+    154, 232, 152,   2,   0,   0, 
      47,  76, 105, 110, 107,  73, 
     110, 102, 111,   0,  47, 110, 
      97, 109, 101, 115,   0,  47, 
@@ -18184,7 +18184,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      97, 100, 101, 114,  98, 108, 
     111,  99, 107,   0,  47, 115, 
     114,  99,  47, 102, 105, 108, 
-    101, 115,  47,  99,  58,  92, 
+    101, 115,  47, 100,  58,  92, 
     117, 115, 101, 114, 115,  92, 
     109,  97, 116, 116, 104, 105, 
      97, 115,  92, 100, 111,  99, 
@@ -18203,7 +18203,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
      95, 112, 115,  46, 104, 108, 
     115, 108,   0,  47, 115, 114, 
      99,  47, 102, 105, 108, 101, 
-    115,  47,  99,  58,  92, 117, 
+    115,  47, 100,  58,  92, 117, 
     115, 101, 114, 115,  92, 109, 
      97, 116, 116, 104, 105,  97, 
     115,  92, 100, 111,  99, 117, 
@@ -18219,7 +18219,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     114, 115,  92,  98,  97, 115, 
     105,  99,  46, 102, 120,   0, 
      47, 115, 114,  99,  47, 102, 
-    105, 108, 101, 115,  47,  99, 
+    105, 108, 101, 115,  47, 100, 
      58,  92, 117, 115, 101, 114, 
     115,  92, 109,  97, 116, 116, 
     104, 105,  97, 115,  92, 100, 
@@ -18238,7 +18238,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     117,  99, 116, 117, 114, 101, 
     115,  46, 102, 120,   0,  47, 
     115, 114,  99,  47, 102, 105, 
-    108, 101, 115,  47,  99,  58, 
+    108, 101, 115,  47, 100,  58, 
      92, 117, 115, 101, 114, 115, 
      92, 109,  97, 116, 116, 104, 
     105,  97, 115,  92, 100, 111, 
@@ -18255,7 +18255,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     114, 100, 102,  46, 102, 120, 
       0,  47, 115, 114,  99,  47, 
     102, 105, 108, 101, 115,  47, 
-     99,  58,  92, 117, 115, 101, 
+    100,  58,  92, 117, 115, 101, 
     114, 115,  92, 109,  97, 116, 
     116, 104, 105,  97, 115,  92, 
     100, 111,  99, 117, 109, 101, 
@@ -18273,7 +18273,7 @@ const BYTE g_tsnm_ward_duer_ps[] =
     105, 110, 103,  46, 102, 120, 
       0,  47, 115, 114,  99,  47, 
     102, 105, 108, 101, 115,  47, 
-     99,  58,  92, 117, 115, 101, 
+    100,  58,  92, 117, 115, 101, 
     114, 115,  92, 109,  97, 116, 
     116, 104, 105,  97, 115,  92, 
     100, 111,  99, 117, 109, 101, 
@@ -18289,20 +18289,20 @@ const BYTE g_tsnm_ward_duer_ps[] =
      92, 108, 105, 103, 104, 116, 
      46, 102, 120,   0,   9,   0, 
       0,   0,  14,   0,   0,   0, 
-      1,   0,   0,   0, 163,  62, 
+      1,   0,   0,   0, 161,  63, 
       0,   0,   0,   0,   0,   0, 
+     34,   0,   0,   0,   8,   0, 
+      0,   0,  10,   0,   0,   0, 
+      6,   0,   0,   0,   0,   0, 
+      0,   0,   5,   0,   0,   0, 
     246,   0,   0,   0,  10,   0, 
-      0,   0,  53,   2,   0,   0, 
-     13,   0,   0,   0,  10,   0, 
-      0,   0,   6,   0,   0,   0, 
-      0,   0,   0,   0,   5,   0, 
       0,   0,  17,   0,   0,   0, 
-      7,   0,   0,   0, 103,   1, 
-      0,   0,  11,   0,   0,   0, 
-    147,   0,   0,   0,   9,   0, 
-      0,   0,  34,   0,   0,   0, 
-      8,   0,   0,   0, 201,   1, 
+      7,   0,   0,   0, 201,   1, 
       0,   0,  12,   0,   0,   0, 
+     53,   2,   0,   0,  13,   0, 
+      0,   0, 103,   1,   0,   0, 
+     11,   0,   0,   0, 147,   0, 
+      0,   0,   9,   0,   0,   0, 
       0,   0,   0,   0,  65, 145, 
      50,   1,   0,   0,   0,   0, 
       0,   0,   0,   0,   0,   0, 
